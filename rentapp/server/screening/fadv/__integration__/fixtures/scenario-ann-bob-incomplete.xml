@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicantScreening xsi:noNamespaceSchemaLocation="ResidentScreening3_0.xsd" xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Request>
+    <PropertyID>
+      <Identification IDType="Property ID">
+        <IDValue>123456</IDValue>
+      </Identification>
+      <MarketingName>My Properties</MarketingName>
+    </PropertyID>
+    <RequestType>View</RequestType>
+    <ReportOptions>
+      <ReportName>01</ReportName>
+    </ReportOptions>
+    <ReportID>6490560</ReportID>
+    <OriginatorID>26694</OriginatorID>
+    <MarketingSource>Rent.com</MarketingSource>
+    <UserName>rsuser</UserName>
+    <UserPassword>rspassword</UserPassword>
+  </Request>
+  <LeaseTerms>
+    <MonthlyRent>5000.00</MonthlyRent>
+    <LeaseMonths>12</LeaseMonths>
+    <AffordableLease SubsidyAmount="200.00">true</AffordableLease>
+    <SecurityDeposit>500.00</SecurityDeposit>
+  </LeaseTerms>
+  <Applicant>
+    <Other>
+      <CurrentRent>1200.00</CurrentRent>
+      <ConsentObtained>YES</ConsentObtained>
+    </Other>
+    <Income>
+      <EmploymentStatus>Employed</EmploymentStatus>
+      <EmploymentType>Current</EmploymentType>
+      <EmployerName>Nordstrom</EmployerName>
+      <EmploymentGrossIncome>900.00</EmploymentGrossIncome>
+      <EmploymentStartDate>2000-10-15</EmploymentStartDate>
+      <OtherIncomeAmount>1500</OtherIncomeAmount>
+      <OtherIncomeType>Child Support</OtherIncomeType>
+      <OtherIncomePeriod>120 months</OtherIncomePeriod>
+    </Income>
+    <AS_Information>
+      <ApplicantIdentifier>{{applicantsIdentifiers.[0]}}</ApplicantIdentifier>
+      <ApplicantType>Applicant</ApplicantType>
+      <Spouse>t0003505</Spouse>
+      <Birthdate>1965-10-19</Birthdate>
+      <SocSecNumber>555559999</SocSecNumber>
+      <DriversLicenseID>027239657</DriversLicenseID>
+      <DriversLicenseState>GA</DriversLicenseState>
+      <AddressTerms MoveInDate="2000-10-10">
+        <Address AddressType="current">
+          <Address>404 NW Napp Street</Address>
+          <City>De Kalb</City>
+          <State>TX</State>
+          <PostalCode>75559</PostalCode>
+          <UnparsedAddress>404 NW Napp St Dekalb TX 75559</UnparsedAddress>
+          <Email>testemail@gmail.com</Email>
+        </Address>
+      </AddressTerms>
+      <AddressTerms MoveInDate="1989-01-08" MoveOutDate="2000-10-10">
+        <Address AddressType="previous">
+          <Address>5555 Hollister Avenue</Address>
+          <City>Goleta</City>
+          <State>CA</State>
+          <PostalCode>93117</PostalCode>
+          <UnparsedAddress>5555 Hollister Avenue Goleta CA 93117</UnparsedAddress>
+        </Address>
+      </AddressTerms>
+    </AS_Information>
+    <Customers>
+      <Customer>
+        <Identification IDType="applicant">
+          <IDValue>t0003504</IDValue>
+        </Identification>
+        <Name>
+          <FirstName>Ann</FirstName>
+          <LastName>Smith</LastName>
+        </Name>
+        <Phone PhoneType="home">
+          <PhoneNumber>714-982-1000</PhoneNumber>
+        </Phone>
+        <Lease>
+          <Identification>
+            <IDValue>t0003504</IDValue>
+          </Identification>
+          <ExpectedMoveInDate>2010-12-01</ExpectedMoveInDate>
+          <ExpectedMoveOutDate>2011-11-30</ExpectedMoveOutDate>
+          <LeaseFromDate>2010-12-01</LeaseFromDate>
+          <LeaseToDate>2011-11-30</LeaseToDate>
+          <ActualMoveIn>2010-12-01</ActualMoveIn>
+          <ResponsibleForLease>true</ResponsibleForLease>
+          <LeaseSignDate>2010-11-15</LeaseSignDate>
+          <AccountNumber>123456</AccountNumber>
+          <CurrentNumberOccupants Total="3" Child="1">3</CurrentNumberOccupants>
+        </Lease>
+      </Customer>
+    </Customers>
+  </Applicant>
+  <Applicant>
+    <Other>
+      <CurrentRent>1200.00</CurrentRent>
+      <ConsentObtained>YES</ConsentObtained>
+    </Other>
+    <Income>
+      <EmploymentType>Current</EmploymentType>
+      <EmployerName>Marsh Law Office</EmployerName>
+      <EmploymentGrossIncome>900.00</EmploymentGrossIncome>
+    </Income>
+    <AS_Information>
+      <ApplicantIdentifier>{{applicantsIdentifiers.[1]}}</ApplicantIdentifier>
+      <ApplicantType>CoApplicant</ApplicantType>
+      <Spouse>t0003504</Spouse>
+      <Birthdate>1968-08-14</Birthdate>
+      <SocSecNumber>444449999</SocSecNumber>
+      <AddressTerms MoveInDate="2000-10-10">
+        <Address AddressType="current">
+          <Address>404 NW Napp Street</Address>
+          <City>De Kalb</City>
+          <State>TX</State>
+          <PostalCode>75559</PostalCode>
+          <UnparsedAddress>404 NW Napp St Dekalb TX 75559</UnparsedAddress>
+          <Email>test2email@gmail.com</Email>
+        </Address>
+      </AddressTerms>
+      <AddressTerms MoveInDate="1989-01-08" MoveOutDate="2000-10-10">
+        <Address AddressType="previous">
+          <Address>5555 Hollister Avenue</Address>
+          <City>Goleta</City>
+          <State>CA</State>
+          <PostalCode>93117</PostalCode>
+          <UnparsedAddress>5555 Hollister Avenue Goleta CA 93117</UnparsedAddress>
+        </Address>
+      </AddressTerms>
+    </AS_Information>
+    <Customers>
+      <Customer>
+        <Identification IDType="coapplicant">
+          <IDValue>t0003505</IDValue>
+        </Identification>
+        <Name>
+          <FirstName>Bob</FirstName>
+          <LastName>O'Doole</LastName>
+        </Name>
+        <Lease>
+          <Identification>
+            <IDValue>t0003504</IDValue>
+          </Identification>
+          <ExpectedMoveInDate>2010-12-01</ExpectedMoveInDate>
+          <ExpectedMoveOutDate>2011-11-30</ExpectedMoveOutDate>
+          <LeaseFromDate>2010-12-01</LeaseFromDate>
+          <LeaseToDate>2011-11-30</LeaseToDate>
+          <ActualMoveIn>2010-12-01</ActualMoveIn>
+          <ResponsibleForLease>true</ResponsibleForLease>
+          <LeaseSignDate>2010-11-15</LeaseSignDate>
+          <AccountNumber>123456</AccountNumber>
+          <CurrentNumberOccupants Total="3" Child="1">3</CurrentNumberOccupants>
+        </Lease>
+      </Customer>
+    </Customers>
+  </Applicant>
+  <Response>
+    <TransactionNumber>1001</TransactionNumber>
+    <ReportDate>2011-04-08</ReportDate>
+    <ApplicantDecision>Smith, Ann - APPROVED WITH CONDITIONS
+    ODoole, Bob - APPROVED WITH CONDITIONS
+    </ApplicantDecision>
+    <ApplicationDecision></ApplicationDecision>
+    <Status>Incomplete</Status>
+    <RequestID_Returned>414926</RequestID_Returned>
+    <ServiceStatus>
+      <Applicant>Ann Smith</Applicant>
+      <Service Name="Criminal">In Process</Service>
+      <Service Name="Collections">Completed</Service>
+      <Service Name="Credit">Blocked By NOAMIND01APP49-2</Service>
+	</ServiceStatus>
+	<ServiceStatus>
+	  <Applicant>Bob O'Doole</Applicant>
+	  <Service Name="Criminal">In Process</Service>
+	  <Service Name="Collections">Completed</Service>
+	  <Service Name="Credit">Blocked By Criminal</Service>
+	</ServiceStatus>
+  </Response>
+  <CustomRecords>
+    <Record>
+      <Name>screeningRequestId</Name>
+      <Value>{{screeningRequestId}}</Value>
+    </Record>
+  </CustomRecords>
+  <CustomRecordsExtended>
+		<Record>
+			<Name>XMLReport</Name>
+			<Value>Sequence contains no elements</Value>
+		</Record>
+	</CustomRecordsExtended>
+</ApplicantScreening>

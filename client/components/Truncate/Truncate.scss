@@ -1,0 +1,82 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.truncate {
+  position: relative;
+
+  &.horizontal {
+    white-space: nowrap;
+
+    .fade {
+      top: 0;
+      right: 0;
+      width: 4rem;
+      height: auto;
+    }
+
+    &.expanded {
+      padding-bottom: 0;
+    }
+  }
+
+  &.vertical {
+    display: block;
+  }
+
+  &.has-scroll-content {
+    .fade {
+      display: block;
+    }
+
+    .toggle-component {
+      display: block;
+    }
+  }
+
+  &.expanded {
+    padding-bottom: (30rem/16);
+
+    .toggle-component {
+      bottom: 0;
+      display: block;
+    }
+
+    &.no-collapsible {
+      padding-bottom: 0;
+
+      .toggle-component {
+        display: none;
+      }
+    }
+  }
+}
+
+.inner-wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.toggle-component {
+  position: absolute;
+  bottom: -1.5rem;
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  height: 4rem;
+  animation: fadeIn .5s ease-out;
+  pointer-events: none;
+}

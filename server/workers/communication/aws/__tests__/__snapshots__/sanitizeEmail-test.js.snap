@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sanitizeEmail should allow size and color attributes in emails 1`] = `
+"<div>
+  <font size=\\"6\\" color=\\"#ff9900\\">This is a test that will happen to see if this is working</font>
+  <div>
+    <br />
+  </div>
+  <div>Nothing else will happen here</div>
+  <div><br /></div>
+  <div>
+    <b>
+      <font color=\\"#0000ff\\">
+        <i>This should have a big font</i>
+      </font>
+    </b> and some color
+  </div>
+</div>
+<div>
+  <br />
+  <div>On Fri, Aug 11, 2017 at 8:40 PM, Bill Smith <span>&lt;<a href=\\"mailto:parkmerced@royr.local.envmail.reva.tech\\" target=\\"_blank\\">parkmerced@royr.local.envmail.reva.tech</a>&gt;</span> wrote:
+  <br />
+  <blockquote style=\\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\\">So this is a nice<br /><br />
+——<br />
+Bill Smith<br />
+Leasing Consultant<br />
+<br />
+Parkmerced Apartments<br />
+(800) 123-1234<br />
+<a href=\\"mailto:bill.smith@parkmerced.com\\">bill.smith@parkmerced.com</a><br />
+</blockquote></div><br /></div>"
+`;

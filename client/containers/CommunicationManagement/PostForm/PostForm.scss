@@ -1,0 +1,134 @@
+@import '../../../sass/_colors.scss';
+
+.postForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: (800rem/16);
+  margin: 2rem auto;
+
+  .message textarea {
+    font-size: 13px;
+  }
+};
+
+.formContainer,
+.uploaderContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.alertFormContainer {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - (64em/16));
+}
+
+.dropzoneInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+
+  .icon {
+    fill: #dadada;
+  }
+};
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: .5rem;
+
+  fill: rgba($black, .54);
+};
+
+.dropzone-placeholder {
+  display: flex;
+
+  > p {
+    margin-right: 1em;
+  }
+}
+
+.sendBtn {
+  z-index: 1;
+  margin-top: 1.5rem;
+  margin-left: auto;
+}
+
+.postError {
+  z-index: 1;
+  margin-top: (15rem/16);
+  margin-left: auto;
+}
+
+.watermark {
+  position: absolute;
+  z-index: 0;
+  top: -1.5rem;
+  right: -12rem;
+  width: 44rem;
+  height: 44rem;
+
+  fill: $grey100;
+}
+
+.retractContainer {
+  margin-top: 1.5rem;
+  margin-left: auto;
+}
+
+.retractedResonBanner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-top: 1px solid rgba($black, .26);
+  background-color: #fff7d9;
+}
+
+.alert-icon {
+  width: (24rem/16);
+  height: (24rem/16);
+  margin: 0 (8rem/16) 0 0;
+
+  svg {
+    fill: $amber500;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .watermark {
+    width: 45rem;
+    height: 45rem;
+  }
+}
+
+.uploadMessage {
+  display: flex;
+  margin-top: .5em;
+}
+
+.uploadCompleteMsg {
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: .5em;
+  color: #a0f;
+}
+
+.downloadMessage {
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #a0f;
+}
+
+.richEditorWrapper {
+  .characterRemaining {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+  }
+}

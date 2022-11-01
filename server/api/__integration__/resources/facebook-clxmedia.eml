@@ -1,0 +1,38 @@
+Return-Path: <noreply_oxboapartments@clxmedia.com>
+Received: from mailer-sa-01.caspiomail.com (mailer-sa-01.caspiomail.com [18.231.38.135])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id amd0bfmda8jcung5d0ma2mmr6f99tv9a4m9g2fo1
+ for facebook1ad.oxbo.vanity@customerold.mail.reva.tech;
+ Wed, 18 Mar 2020 05:27:11 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of clxmedia.com does not designate 18.231.38.135 as permitted sender) client-ip=18.231.38.135; envelope-from=noreply_oxboapartments@clxmedia.com; helo=mailer-sa-01.caspiomail.com;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of clxmedia.com does not designate 18.231.38.135 as permitted sender) client-ip=18.231.38.135; envelope-from=noreply_oxboapartments@clxmedia.com; helo=mailer-sa-01.caspiomail.com;
+ dmarc=none header.from=clxmedia.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIQmgxdEZGSlkyK2t1RDNVbzc1TTFQWVY0R1pKQTNBQkxZOEIyWTBWNXgzejBqd3RET09SVWJpMk1tU0psM1lKdEFZb1lNN1FwTUxQcDRQdW53bk1ZNTZKeXpwQkF5VHUzeGtkRmxJNUNrQW1xSGVEd3IydGQ4VkFtMFBhNXNRcUlBOGJTRU1LQURNQW9mc1FyWEYzYXZTMHFRbTB0S2ZaVjc4ZzlvR290RnZCRmhZQno4aFZZQWlnWHdNZHFtZERUcUJsYUFMOWRNZUdjQ2hPK3pwV3JBUjJ6bUVlVm9hdVAwYStBTUV5MVNBUXcweGU4cWZpSkFxaGEzQTM3N3pJKytaSTRtRGh0WDZKQVRnbjMvUVdHbnRLTjNXck9xenNSZytFL3VQbEpKZUN5SWVaZ1pJYVFUcXk5eDZ4MldGb1k9
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Gl4ubyaa3XLZwZyNlIKgjfdUT1vvjPOGjjNhxmMRw7hM/TZ1Y93NDpAGHTelsvC1mkgyF/NcHhkO6ld2VrfVYFkOibmgo4ZcR5xsodac8NnmfFJgrSRt7v3jGuHd3HRYhzwj/vLpTBqGE7mZ1J63A3xvfwKMnnOmX/SRQPKdNpo=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1584509231; v=1; bh=jJ54aYHdO/kyirkfMkkknnkECZ2rGklPTBC5OE83wbo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from mailer-us-01.caspiomail.com (mailer-us-01.caspiomail.com [34.195.1.189])
+	by mailer-sa-01.caspiomail.com (Postfix) with ESMTP id 3BAE541455
+	for <facebook1ad.oxbo.vanity@customerold.mail.reva.tech>; Wed, 18 Mar 2020 05:27:10 +0000 (UTC)
+Received: from EC2AMAZ-2VVB045 (ip-20-0-1-178.ec2.internal [20.0.1.178])
+	by mailer-us-01.caspiomail.com (Postfix) with ESMTPA id C5514403A2
+	for <facebook1ad.oxbo.vanity@customerold.mail.reva.tech>; Wed, 18 Mar 2020 05:27:09 +0000 (UTC)
+Received: from ip-2800017B ([127.0.0.1]) by EC2AMAZ-2VVB045 with Microsoft SMTPSVC(10.0.14393.2608);
+	 Tue, 17 Mar 2020 22:27:09 -0700
+X-BridgeMailID: f00d1000762dc12af34047cfba40
+MIME-Version: 1.0
+From: noreply_oxboapartments@clxmedia.com
+To: Melissas@clxmedia.com, facebook1ad.oxbo.vanity@customerold.mail.reva.tech,
+ marissav@clxmedia.com
+Reply-To: noreply_oxboapartments@clxmedia.com
+Date: 17 Mar 2020 22:27:09 -0700
+Subject: --New Facebook Lead For Oxbo Apartments--
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+Message-ID: <IP-2800017Bnn7hoBcc00000036@EC2AMAZ-2VVB045>
+X-OriginalArrivalTime: 18 Mar 2020 05:27:09.0764 (UTC) FILETIME=[DF140840:01D5FCE5]
+
+TmFtZSA6IFBlcm91c2hpbmkgVmlsbGlhbW1hCkVtYWlsIDogcHZpbGxpYW1AbWFjYWxl
+c3Rlci5lZHUKUGhvbmUgOiA2MTItODE5LTAzNTAKTGVhZCBDaGFubmVsOiBGYWNlYm9v
+ayBBZA==
+

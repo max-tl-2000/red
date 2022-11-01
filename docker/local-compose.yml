@@ -1,0 +1,76 @@
+# main local deployments compose file, other compose files in this directory provide
+# additional overrides to these settings.
+# coredb-compose.yml - allows use of dev coredb as the database
+# mydb-compose.yml - deploys with a local postgres service
+# browser-compose.yml - standalone selenium with browsers for local cucumber testing
+version: '2.1'
+services:
+  web:
+    image: registry.corp.reva.tech/red_web
+    entrypoint: ["./run.sh"]
+    command: $RED_WEB_COMMAND
+    container_name: web
+    environment:
+      DOMAIN: local.env.reva.tech
+      CLOUD_ENV: ${CLOUD_ENV}
+      DATABASE_PASSWORD: revauser
+      DATABASE_MARTPASSWORD: revamartuser
+      DEVTOOLS: ${DEVTOOLS}
+      SKIP_HOT_RELOAD: ${SKIP_HOT_RELOAD}
+      KNEX_DEBUG: ${KNEX_DEBUG}
+      AMQP_HOST: amqp://rabbitmq
+      RED_LOG_LEVEL: ${RED_LOG_LEVEL}
+      SELENIUM_BROWSER: ${SELENIUM_BROWSER}
+      SELENIUM_DOMAIN: selenium
+    ports:
+      - "3000:3000"
+      - "3030:3030"
+      - "3001:3001"
+      - "3040:3040"
+      - "4000:4000"
+      - "5000:5000"
+      - "3500:3500"
+    volumes:
+      - ../:/src
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      dev-proxy:
+        condition: service_started
+    extra_hosts:
+      - "ws.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      # add these entries to /etc/hosts since http proxy
+      # is running in host network mode
+      # These are ONLY here needed because cucumber tests are
+      # run from the web container.
+      # admin is needed because the tests use server API's to create auth tokens
+      - "admin.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      # selenium is needed because that is the hostname used to locate the webdriver
+      - "selenium:${LOCAL_IP_ADDRESS}"
+
+  rabbitmq:
+    # hostname is required as actual persisted data is stored
+    # in directory called: "rabbit@[hostname]" if not set
+    # docker creates container with random hostname,
+    # thus new container will not use persisted data
+    hostname: rabbitmq
+    image: registry.corp.reva.tech/rabbitmq
+    container_name: rabbitmq
+    ports:
+      - "4369:4369"
+      - "5672:5672"
+      - "25672:25672"
+      - "15672:15672"
+    volumes:
+      - ${HOME}/.red/rabbitmq:/var/lib/rabbitmq
+
+  dev-proxy:
+    image: registry.corp.reva.tech/dev-proxy:proxied-api
+    container_name: web-proxy
+    environment:
+      TZ: UTC
+      PROXIED_HOSTNAME: ${PROXIED_HOSTNAME:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    network_mode: "host"

@@ -1,0 +1,35 @@
+@import '../../sass/_typography.scss';
+@import '../../sass/_colors';
+
+.party-type-container {
+  .suggestions {
+    text-align: left;
+
+    p {
+      margin-top: 0;
+    }
+
+    ul {
+      margin-left: (24rem/16);
+
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+
+  .confirmation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: (24rem/16);
+
+    [data-component='icon'] {
+      margin-right: (10em/16);
+
+      svg {
+        fill: $red500;
+      }
+    }
+  }
+}

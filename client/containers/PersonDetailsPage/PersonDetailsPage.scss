@@ -1,0 +1,89 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.panelWrapper {
+  padding: 1.25rem;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.title {
+  width: 100%;
+  padding: (10rem/16) 0;
+}
+
+.appBarActions {
+  display: flex;
+
+  [data-component='card-menu'] {
+    min-width: 40px;
+  }
+}
+
+.personalDetailsContainer {
+  padding-left: 1.5em;
+
+  [data-component='textbox'] {
+    display: block;
+    padding-top: 2.5em;
+  }
+
+  input {
+    &[disabled] {
+      color: $black !important;
+    }
+  }
+
+  .mailAndPhonePanel {
+    > p {
+      font-size: (15rem/16);
+      font-weight: 400;
+      line-height: 1.5em;
+    }
+
+    p:first-child {
+      font-size: .75rem;
+      padding-top: 1.9em;
+      padding-bottom: .75em;
+      color: rgba(0,0,0,.54);
+    }
+  }
+}
+
+.associatedParties {
+  padding: .7rem 0 1rem 0;
+}
+
+.detailsColumn {
+  display: inline-flex;
+  width: 100%;
+  vertical-align: top;
+}
+
+@include from('large') {
+  .detailsColumn {
+    display: inline-flex;
+    width: 33%;
+    vertical-align: top;
+  }
+}
+
+.apptDialog {
+  > div {
+    min-width: (360rem/16);
+  }
+
+  div[data-component='dialog-body'] {
+    padding: 0;
+  }
+}
+
+.contactBlockedSection {
+  background-color: $yellow100;
+}

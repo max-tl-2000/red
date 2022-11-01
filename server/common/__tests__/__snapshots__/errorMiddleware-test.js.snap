@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`API/error handling middleware should handle JsonSchemaValidation errors differently than normal errors 1`] = `
+Object {
+  "jsonSchemaValidation": true,
+  "statusText": "Bad Request",
+  "validations": Object {
+    "body": Array [
+      Object {
+        "messages": Array [
+          "is not one of enum values: prospect,bronze,silver,gold",
+        ],
+        "property": "request.body.score",
+        "value": "violet",
+      },
+    ],
+  },
+}
+`;
+
+exports[`API/error handling middleware when config.logMiddlewareErrors is true should log 412 errors as warnings 1`] = `"Precondition Failed: SOME_TOKEN"`;
+
+exports[`API/error handling middleware when config.logMiddlewareErrors is true should log InvalidJWTError errors as info 1`] = `"INVALID_TOKEN"`;
+
+exports[`API/error handling middleware when config.logMiddlewareErrors is true should log authorization errors as info 1`] = `"ACCOUNT_BLOCKED"`;
+
+exports[`API/error handling middleware when config.logMiddlewareErrors is true should log errors with status code 498 as info 1`] = `"INVALID_TOKEN"`;

@@ -1,0 +1,26 @@
+@import '../../sass/_colors.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  height: (1rem/16);
+  border-bottom: (1rem/16) solid $grey300;
+
+  flex-grow: 1;
+}
+
+.lineLeft {
+  @extend .line;
+
+  margin-right: 1rem;
+}
+
+.lineRight {
+  @extend .line;
+
+  margin-left: 1rem;
+}

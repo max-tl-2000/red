@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getStartAppCommand if production is set the NODE_ENV should be integration 1`] = `
+Object {
+  "cmd": "node --require ./enable-ts.js ./common/server/forever.js ./bin/server",
+  "env": Object {
+    "API_PORT": 3030,
+    "BABEL_CACHE_PATH": "node_modules/.cache/babel/leasing-server",
+    "NODE_ENV": "integration",
+    "NODE_PATH": "./server",
+    "PORT": 3000,
+    "RED_LOGGER_USE_STDOUT": false,
+    "RED_PROCESS_NAME": "leasing-server",
+    "TZ": "UTC",
+  },
+}
+`;
+
+exports[`getStartAppCommand if production is set the NODE_ENV should be production 1`] = `
+Object {
+  "cmd": "node --require ./enable-ts.js ./common/server/forever.js ./bin/server",
+  "env": Object {
+    "API_PORT": 3030,
+    "BABEL_CACHE_PATH": "node_modules/.cache/babel/leasing-server",
+    "NODE_ENV": "production",
+    "NODE_PATH": "./server",
+    "PORT": 3000,
+    "RED_LOGGER_USE_STDOUT": false,
+    "RED_PROCESS_NAME": "leasing-server",
+    "TZ": "UTC",
+  },
+}
+`;
+
+exports[`getStartAppCommand it should create a command to execute the app in development mode by default 1`] = `
+Object {
+  "cmd": "babel-node --extensions '.ts,.js,.json'  ./bin/server",
+  "env": Object {
+    "API_PORT": 3030,
+    "BABEL_CACHE_PATH": "node_modules/.cache/babel/leasing-server",
+    "NODE_ENV": "development",
+    "NODE_PATH": "./server",
+    "PORT": 3000,
+    "RED_LOGGER_USE_STDOUT": true,
+    "RED_PROCESS_NAME": "leasing-server",
+    "TZ": "UTC",
+  },
+}
+`;
+
+exports[`getStartAppCommand should RED_LOGGER_STDOUT also when production is true even if quiet was specified 1`] = `
+Object {
+  "cmd": "node --require ./enable-ts.js ./common/server/forever.js ./bin/server",
+  "env": Object {
+    "API_PORT": 3030,
+    "BABEL_CACHE_PATH": "node_modules/.cache/babel/leasing-server",
+    "NODE_ENV": "production",
+    "NODE_PATH": "./server",
+    "PORT": 3000,
+    "RED_LOGGER_USE_STDOUT": false,
+    "RED_PROCESS_NAME": "leasing-server",
+    "TZ": "UTC",
+  },
+}
+`;
+
+exports[`getStartAppCommand should create a command to start an app in debug mode 1`] = `
+Object {
+  "cmd": "babel-node --extensions '.ts,.js,.json' --inspect=9229 ./bin/server",
+  "env": Object {
+    "API_PORT": 3030,
+    "BABEL_CACHE_PATH": "node_modules/.cache/babel/leasing-server",
+    "DEBUG": true,
+    "NODE_ENV": "development",
+    "NODE_PATH": "./server",
+    "PORT": 3000,
+    "RED_LOGGER_USE_STDOUT": false,
+    "RED_PROCESS_NAME": "leasing-server",
+    "TZ": "UTC",
+  },
+}
+`;
+
+exports[`getStartAppCommand should create a command to start an app in debug mode with debugBrk set if required as well as a different port 1`] = `
+Object {
+  "cmd": "babel-node --extensions '.ts,.js,.json' --inspect=9888 --debug-brk ./bin/server",
+  "env": Object {
+    "API_PORT": 3030,
+    "BABEL_CACHE_PATH": "node_modules/.cache/babel/leasing-server",
+    "DEBUG": true,
+    "NODE_ENV": "development",
+    "NODE_PATH": "./server",
+    "PORT": 3000,
+    "RED_LOGGER_USE_STDOUT": false,
+    "RED_PROCESS_NAME": "leasing-server",
+    "TZ": "UTC",
+  },
+}
+`;
+
+exports[`getStartAppCommand should set RED_LOGGER_STDOUT to false in case quiet option is set 1`] = `
+Object {
+  "cmd": "babel-node --extensions '.ts,.js,.json'  ./bin/server",
+  "env": Object {
+    "API_PORT": 3030,
+    "BABEL_CACHE_PATH": "node_modules/.cache/babel/leasing-server",
+    "NODE_ENV": "development",
+    "NODE_PATH": "./server",
+    "PORT": 3000,
+    "RED_LOGGER_USE_STDOUT": false,
+    "RED_PROCESS_NAME": "leasing-server",
+    "TZ": "UTC",
+  },
+}
+`;

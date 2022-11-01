@@ -1,0 +1,29 @@
+{
+    "leaseTerms": { "monthlyRent": 4577, "leaseMonths": 12 },
+    "applicants" : [
+        {
+            "income": { "employmentGrossIncome": 5000 },
+            "as_information" : { "applicantType" : "Applicant" },
+            "criminalRecord": {
+                "information": { "criminalRecordType": "Felony", "criminalRecordDescription": "Assault", "criminalRecordDate": "2005-01-01" }
+            },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Edgar", "lastName": "Smith" }
+                }
+            }
+        },
+        {
+            "income": { "employmentGrossIncome": 5000 },
+            "as_information" : { "applicantType" : "CoApplicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Florence", "lastName": "Smith" }
+                }
+            }
+        }
+    ],
+    "transactionNumber": 2002,
+    "applicantDecision": "Smith, Edgar - DENIED\nSmith, Florence - APPROVED",
+    "applicationDecision": "DENIED"
+}

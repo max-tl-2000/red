@@ -1,0 +1,69 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "definitions": {
+    "Address": {
+      "type": "object",
+      "description": "Person application's address information",
+      "properties": {
+        "hasInternationalAddress": {
+          "type": "boolean"
+        },
+        "addressLine": {
+          "type": "string"
+        },
+        "addressLine1": {
+          "type": "string"
+        },
+        "addressLine2": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "number"
+        }
+      }
+    },
+    "ContactInfo": {
+      "description": "Contact info data",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "ContactInfo id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "type": {
+          "description": "ContactInfo type (email, phone)",
+          "type": "string"
+        },
+        "value": {
+          "description": "ContactInfo value",
+          "type": "string"
+        }
+      }
+    },
+    "Error": {
+      "properties": {
+        "status": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

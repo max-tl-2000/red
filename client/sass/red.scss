@@ -1,0 +1,20 @@
+:global {
+  @import './_fonts.scss';
+  @import './_colors.scss';
+  @import './_layout.scss';
+  @import './_waves.scss';
+  @import './_typography.scss';
+  @import './_flyout-sizes.scss';
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  // To centralize the padding bottom where the zendex help button is shown.
+
+  .padded-scrollable {
+    padding-bottom: (100rem/16);
+  }
+}

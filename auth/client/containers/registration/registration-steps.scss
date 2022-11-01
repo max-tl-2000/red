@@ -1,0 +1,53 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+ul.steps {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+
+  li {
+    width: 33.3%;
+
+    > div {
+      display: block;
+      width: 5em;
+      height: 5em;
+      margin: 0 auto;
+
+      .step-tab {
+        line-height: 5em;
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 5em;
+        height: 5em;
+        border: solid (2em/16) $grey400;
+        border-radius: (100em/16);
+        background-color: $grey200;
+
+        .icon {
+          position: absolute;
+          top: .8em;
+          left: 1em;
+          width: 2.8em;
+          height: 2.8em;
+
+          svg {
+            fill: $grey500;
+          }
+        }
+      }
+    }
+
+    .step-info {
+      @include to('xsmall1') {
+        width: auto;
+      }
+
+      width: (180em/16);
+      margin-top: (24em/16);
+      text-align: center;
+    }
+  }
+}

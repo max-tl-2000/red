@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <style>
+    html, body{
+      height: 100%;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90%;
+      height: 90%;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    .message {
+      margin: 24px 0;
+    }
+
+    i {
+      font-size: 40px !important;
+      color: green;
+    }
+
+    i.red {
+      font-size: 2.875rem !important;
+      color: red;
+    }
+
+    .btn,
+    .btn-large,
+    .btn-flat {
+      font-size: .875rem;
+      font-weight: bold;
+      line-height: 1.15em;
+      line-height: 1.15em;
+      display: inline-block;
+      height: 2.25rem;
+      padding: 0 2rem;
+      cursor: pointer;
+      vertical-align: middle;
+      letter-spacing: .00625em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: .125rem;
+      outline: 0;
+    }
+
+    .btn,
+    .primary {
+      color: #fff;
+      background: #2196f3;
+    }
+
+    .btn:hover,
+    .primary:hover {
+      background: #1d84d5;
+    }
+
+    #continue-link {
+      cursor: pointer;
+      color: #2196f3;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <i id="result-icon" class="large material-icons ${iconColor}">${icon}</i>
+    <div id="message" class="message">
+      ${displayedMessage}
+    </div>
+  </div>
+  <script type="text/javascript">
+    /* eslint-disable */
+    function isLoadedInsideAnIframe() {
+      try {
+        return window.self !== window.top;
+      } catch (e) {
+        return true;
+      }
+    }
+
+    (function () {
+      var isRNWebView = window.hasOwnProperty('ReactNativeWebView');
+      var data = {
+        message: JSON.stringify({
+          action: "${action}",
+          payload: "${payload}",
+        }),
+      };
+      if (isLoadedInsideAnIframe() || isRNWebView) {
+        var container = document.getElementById('container');
+        container.style.display = 'none';
+        try {
+          isRNWebView ? window.ReactNativeWebView.postMessage(data.message) : window.parent.postMessage(data,'*');
+        } catch (err) {
+          console.error('Unable to notify parent!', err);
+          throw err;
+        }
+      }
+    })();
+  </script>
+
+</body>
+</html>

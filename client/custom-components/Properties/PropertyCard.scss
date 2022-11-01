@@ -1,0 +1,120 @@
+@import '../../sass/_colors.scss';
+
+.mainContent {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: (184rem/16);
+  margin: (6rem/16) 0;
+  cursor: pointer;
+  background-color: $grey200;
+
+  &:hover {
+    .imageGradient {
+      display: block;
+    }
+
+    .matchCount {
+      display: block;
+    }
+
+    .checked {
+      display: block;
+    }
+  }
+
+  &.selected {
+    .checked {
+      display: block;
+    }
+  }
+}
+
+.imageGradient,
+.matchDetails {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.imageGradient {
+  display: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,0) 35%);
+}
+
+.matchCount {
+  display: none;
+  padding: (8rem/16);
+  text-align: right;
+  color: $white;
+}
+
+.image {
+  width: 100%;
+  height: (132rem/16);
+
+  &.selected {
+    width: calc(100% - 1rem);
+    height: (116rem/16);
+    margin: (8rem/16);
+  }
+}
+
+.checked {
+  position: absolute;
+  top: (3rem/16);
+  left: (3rem/16);
+  display: none;
+
+  &:before {
+    position: absolute;
+    top: (2rem/16);
+    left: (2rem/16);
+    width: (20rem/16);
+    height: (20rem/16);
+    content: '';
+    border-radius: (2rem/16);
+    background-color: transparent;
+  }
+
+  [data-red-icon] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: (24rem/16);
+    height: (24rem/16);
+  }
+
+  svg {
+    fill: $white;
+  }
+
+  &.selected {
+    &:before {
+      background-color: $white;
+    }
+
+    svg {
+      fill: #2196f3;
+    }
+  }
+}
+
+.details {
+  width: 100%;
+  height: (52rem/16);
+  padding: (5rem/16);
+
+  .location {
+    font-size: (11rem/16);
+  }
+}
+
+.noImageFound {
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  color: $grey400;
+}

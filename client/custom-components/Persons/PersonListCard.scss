@@ -1,0 +1,33 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.main-content {
+  position: relative;
+  padding: .825rem;
+  cursor: pointer;
+
+  flex-wrap: wrap;
+
+  &:hover {
+    cursor: pointer;
+    background: $hoverBGColor;
+  }
+}
+
+.avatar {
+  position: absolute;
+  top: .8rem;
+  left: .6rem;
+}
+
+.fullName {
+  margin-bottom: .5rem;
+}
+
+.meta {
+  padding-left: 3rem;
+
+  [data-component='caption'] {
+    margin-top: (3rem/16);
+  }
+}

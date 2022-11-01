@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<mri_s-pmrm_selectunit>	
+{{#each this}}	
+{{#with this}}	
+  <entry>	
+    <Rent>{{Rent}}</Rent>	
+    <Concession>{{Concession}}</Concession>	
+  </entry>	
+{{/with}}	
+{{/each}}	
+</mri_s-pmrm_selectunit> 

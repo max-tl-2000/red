@@ -1,0 +1,125 @@
+@import '../../../client/sass/colors';
+
+.side-nav-overlay {
+  width: (290rem/16);
+  height: 100vh;
+  border-radius: 0;
+
+  .switch {
+    width: 75px;
+  }
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sideNavOptions {
+  overflow: auto;
+  flex: 1;
+  padding: 0 0 (150rem/16) 0;
+}
+
+.sideNavOptions div[data-component='list-item'] {
+  padding-left: (.9rem);
+}
+
+.selected {
+  background-color: $grey200;
+}
+
+.hero {
+  position: relative;
+  background: #2196f3;
+
+  .avatarSize {
+    width: (64rem/16);
+    height: (64rem/16);
+    color: rgba(0,0,0,.87);
+
+    &.available {
+      > div[data-part='badge'] {
+        [data-red-icon] {
+          width: 24px;
+          height: 24px;
+
+          svg {
+            fill: rgba($greenA400, .87);
+          }
+        }
+      }
+    }
+
+    &.busy {
+      > div[data-part='badge'] {
+        [data-red-icon] {
+          width: 24px;
+          height: 24px;
+
+          svg {
+            fill: rgba($red500, .87);
+          }
+        }
+      }
+    }
+
+    &.not-available {
+      > div[data-part='badge'] {
+        [data-red-icon] {
+          width: 24px;
+          height: 24px;
+
+          svg {
+            fill: rgba($grey600, .87);
+          }
+        }
+      }
+    }
+  }
+
+  .hero-profile {
+    width: 100%;
+    padding: (15rem/16) (15rem/16) 0;
+  }
+
+  .user-info {
+    position: relative;
+    padding: (15rem/16);
+  }
+}
+
+.highlightedMenuItem {
+  color: $deepOrangeA700;
+}
+
+.navButton {
+  position: relative;
+}
+
+.navBadgeIcon {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 16px;
+  height: 16px;
+
+  &.available {
+    svg {
+      fill: rgba($greenA400, .87);
+    }
+  }
+
+  &.busy {
+    svg {
+      fill: rgba($red500, .87);
+    }
+  }
+
+  &.not-available {
+    svg {
+      fill: rgba($grey600, .87);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../../../client/sass/_colors.scss';
+
+.fake-dialog-body [data-component='dialog-body'] {
+  padding: 0;
+}
+
+.payment-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  border-bottom: 1px solid $grey300;
+  background-color: $white;
+}
+
+.aptx-dialog-body [data-component='dialog-body'] {
+  overflow-y: hidden;
+  height: 80vh;
+  max-height: 800px;
+  padding: 0;
+}
+
+.aptx-iframe {
+  width: (404em/16);
+  height: 100%;
+  margin: -50px 0 0 0;
+  padding: 0 0 2em;
+  border: none;
+}
+
+.fake-iframe {
+  width: (404em/16);
+  height: (370em/16);
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &.isXSmall {
+    width: 100%;
+  }
+}
+
+.iframe-preloader {
+  width: (404em/16);
+  height: (370em/16);
+
+  &.isXSmall {
+    width: 100%;
+  }
+}

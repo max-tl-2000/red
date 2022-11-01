@@ -1,0 +1,26 @@
+{
+    "leaseTerms": { "monthlyRent": 4577, "leaseMonths": 12 },
+    "applicants" : [
+        {
+            "income": { "employmentGrossIncome": 900 },
+            "as_information" : { "applicantType" : "Applicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Ann", "lastName": "Smith" }
+                }
+            }
+        },
+        {
+            "income": { "employmentGrossIncome": 900 },
+            "as_information" : { "applicantType" : "CoApplicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Bob", "lastName": "Smith" }
+                }
+            }
+        }
+    ],
+    "transactionNumber": 1001,
+    "applicantDecision": "Smith, Ann - DENIED\nSmith, Bob - DENIED",
+    "applicationDecision": "DENIED"
+}

@@ -1,0 +1,84 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_fonts.scss';
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: $grey100;
+}
+
+.wrapper {
+  display: flex;
+  padding: 1rem 1.5rem;
+
+  &.centerContent {
+    > * {
+      margin: auto;
+    }
+  }
+}
+
+.row-directtion {
+  flex-direction: row;
+}
+
+.column-directtion {
+  flex-direction: column;
+}
+
+.scrollable-content {
+  width: 100%;
+  height: calc(100vh - 4.5rem);
+}
+
+.app-bar {
+  height: (72rem/16);
+}
+
+.page {
+  .app-bar {
+    background: $white;
+    // Avoid importants...
+    // no need to use important. Increasing the specificity of the selector does the trick nicely
+    //
+    // background: $white !important; // The below code dosent work, so I had to use !important
+  }
+}
+
+.app-bar-actions {
+  display: flex;
+  flex-direction: row;
+  margin-right: (10rem/16);
+}
+
+.app-bar-action {
+  margin-left: 1rem;
+  padding-top: .35rem;
+}
+
+.icon-section {
+  width: (351rem/16);
+  margin: (17rem/16) 0 (17rem/16) (15rem/16);
+}
+
+.title {
+  height: (1rem/16);
+  padding-left: (12rem/16);
+  color: $blueGrey400;
+}
+
+.transparent-background {
+  position: absolute;
+  top: (34rem/16);
+  right: 0;
+  width: (664rem/16);
+  height: (707rem/16);
+  pointer-events: none;
+  opacity: .12;
+}
+
+.clickable {
+  cursor: pointer;
+}

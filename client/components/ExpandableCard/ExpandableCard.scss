@@ -1,0 +1,15 @@
+.card[data-state='closed'] {
+  .header {
+    margin-bottom: 0;
+  }
+
+  .content-card {
+    display: none;
+  }
+}
+
+.card[data-state='opened'] {
+  .content-card {
+    display: block;
+  }
+}

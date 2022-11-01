@@ -1,0 +1,5 @@
+some:
+  deep:
+    key: 'hello world from common'
+  foo:
+    bar: 'This key is referring another one here: $t(common:some.deep.key)'

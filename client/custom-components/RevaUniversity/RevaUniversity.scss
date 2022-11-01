@@ -1,0 +1,120 @@
+@import '../../sass/_colors';
+
+.revaUniversityContainer {
+  max-width: 87.5em;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.gettingStartedSection {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-right: .75em;
+
+    [data-component='text-heavy'] {
+      font-size: (34rem/16);
+    }
+
+    [data-component='headline'] {
+      margin-top: 1em;
+    }
+  }
+}
+
+.inTheComputer {
+  margin-left: .75em;
+}
+
+.beginnerLeasingSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0 2.5em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+
+  .beginnerLeasingContent {
+    margin-right: .75em;
+  };
+
+  .sandboxSection {
+    position: relative;
+    margin: 1.5em 0 0 .75em;
+
+    [data-component='text'] {
+      margin-top: 1em;
+    }
+
+    [data-component='button'] {
+      margin-top: 2em;
+    }
+  };
+}
+
+.groupList {
+  margin-left: 1em;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+
+  svg {
+    fill: $grey700;
+  }
+}
+
+.beginnerLeasingContent > .mediumMargin > div > [data-component='list-item'] {
+  min-height: 1.5em;
+  margin-top: .25em;
+  cursor: initial;
+}
+
+[data-component='list-item'] > .mainSection > div {
+  padding: 0;
+}
+
+.advancedLeasingSection {
+  display: flex;
+  flex-direction: column;
+  min-height: 13em;
+  padding: 1.5em .75em 1.5em 0;
+}
+
+.smallMargin {
+  margin-top: .5em;
+}
+
+.mediumMargin {
+  margin-top: 1em;
+}
+
+.halfSection {
+  width: 50%;
+  max-width: 37.5em;
+}
+
+.avatarSection {
+  min-width: 1.5em;
+  min-height: .5em;
+}
+
+@media (max-width: 940px) {
+  .gettingStartedSection,
+  .beginnerLeasingSection {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advancedLeasingSection {
+    margin: 0 auto;
+  }
+
+  .halfSection {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+diff --git a/node_modules/graceful-fs/graceful-fs.js b/node_modules/graceful-fs/graceful-fs.js
+index 3e1a9eb..1e44f5c 100644
+--- a/node_modules/graceful-fs/graceful-fs.js
++++ b/node_modules/graceful-fs/graceful-fs.js
+@@ -92,6 +92,7 @@ if (process.env.TEST_GRACEFUL_FS_GLOBAL_PATCH && !fs.__patched) {
+ }
+ 
+ function patch (fs) {
++  if (fs.gracefulify) return fs;
+   // Everything that references the open() function needs to be in here
+   polyfills(fs)
+   fs.gracefulify = patch

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mri_s-pmrm_acceptlease>
+  <entry>
+    <ProspectID>{{nameId}}</ProspectID>
+    <EstimatedMoveInDate>2018-06-25T00:00:00.0000000</EstimatedMoveInDate>
+    <LogID>17</LogID>
+    <ProposedRentAmount>1280.00</ProposedRentAmount>
+    <ApplicationFeesAmount>49.00</ApplicationFeesAmount>
+    <NonRefundableDepositsAndFees>0.00</NonRefundableDepositsAndFees>
+    <RefundableDepositsAndFees>375.00</RefundableDepositsAndFees>
+    <ProposedRentConcessionAmount>0.00</ProposedRentConcessionAmount>
+  </entry>
+</mri_s-pmrm_acceptlease>

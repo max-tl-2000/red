@@ -1,0 +1,27 @@
+@import '../../sass/_colors';
+
+.uploadImageButtonWrapper {
+  display: inline-block;
+
+  .uploadImageButton {
+    font-size: 1.5em;
+    width: 36px;
+    height: 34px;
+    vertical-align: bottom;
+    border: 0;
+    background: #fbfbfb;
+
+    svg {
+      fill: $brown500;
+    }
+  }
+
+  .uploadImageButton:hover,
+  .uploadImageButton:focus {
+    background: #f3f3f3;
+  }
+
+  .fileUploader {
+    display: none;
+  }
+}

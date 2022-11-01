@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AddressValidateRequest USERID="{{userId}}">
+  <Address ID="0">
+    <Address1>{{address.address1}}</Address1>
+    <Address2>{{address.address2}}</Address2>
+    <City>{{address.city}}</City>
+    <State>{{address.state}}</State>
+    <Zip5>{{address.zip5}}</Zip5>
+    <Zip4>{{address.zip4}}</Zip4>
+  </Address>
+</AddressValidateRequest>

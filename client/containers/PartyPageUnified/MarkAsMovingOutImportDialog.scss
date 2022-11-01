@@ -1,0 +1,9 @@
+.import-moveout-dialog {
+  display: flex;
+  width: (490rem/16);
+  height: (248rem/16);
+
+  & > div {
+    width: inherit;
+  }
+}

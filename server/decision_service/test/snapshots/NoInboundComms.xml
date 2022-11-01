@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <urn:CorticonResponse xmlns:urn="urn:Corticon" decisionServiceName="InboundComm">
+      <WorkDocuments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Party id="Party_id_1">
+          <assignedProperty>97d549b0-756e-43e5-9ea9-62fab7e395cb</assignedProperty>
+          <created_at>10/16/2019 17:23:44 GMT</created_at>
+          <mostRecentInboundCommTime>10/16/2019 17:23:45 GMT</mostRecentInboundCommTime>
+          <NoResponseCounter>3</NoResponseCounter>
+          <partyOwner>4578f1e9-0e8e-45e9-ac64-60f09969688d</partyOwner>
+          <UUID>2561586b-7adf-4cf1-99e6-220873f115c5</UUID>
+          <Comms id="CommRecord_id_1">
+            <callDurationSeconds/>
+            <callLengthReqSeconds/>
+            <commAgent>4578f1e9-0e8e-45e9-ac64-60f09969688d</commAgent>
+            <created_at>10/16/2019 17:31:10 GMT</created_at>
+            <direction>out</direction>
+            <eventType>Sms</eventType>
+            <callConnectedWithAgent/>
+            <UUID>32a81010-923d-470d-b563-857409910666</UUID>
+            <isLeadCreated>{{ isLeadCreated }}</isLeadCreated>
+          </Comms>
+          <partyMembers id="PartyMember_id_1">
+            <created_at>10/16/2019 17:23:44 GMT</created_at>
+            <dateApplicationCompleted nil="true"/>
+            <dateApplicationPaid nil="true"/>
+            <hasOpenedApplication nil="true">true</hasOpenedApplication>
+            <lastCommunicationDate>10/16/2019 17:23:45 GMT</lastCommunicationDate>
+            <UUID>dcd48eee-6aef-4b99-bb9c-9d8a2d9bed64</UUID>
+            <personApplication id="PersonApplication_id_1">
+              <applicationStatus nil="true"/>
+              <completionDate nil="true"/>
+              <created_at nil="true"/>
+              <dateApplicationOpened nil="true"/>
+              <dateLinkSent nil="true"/>
+              <paidDate nil="true"/>
+              <paymentCompleted nil="true">false</paymentCompleted>
+              <UUID nil="true"/>
+            </personApplication>
+          </partyMembers>
+          <theApp id="PartyApplication_id_1">
+            <completelyPaidDate nil="true"/>
+            <completionDate nil="true"/>
+            <created_at nil="true">10/16/2019 17:23:45 GMT</created_at>
+            <UUID nil="true">d08cbbda-60e9-43ef-8f5d-70057b35fc6a</UUID>
+          </theApp>
+          <theLease id="Lease_id_1">
+            <created_at nil="true"/>
+            <status/>
+            <UUID nil="true"/>
+          </theLease>
+        </Party>
+      </WorkDocuments>
+      <Messages version="1.0"/>
+    </urn:CorticonResponse>
+  </soap:Body>
+</soap:Envelope>

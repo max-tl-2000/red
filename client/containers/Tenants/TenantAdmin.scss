@@ -1,0 +1,63 @@
+@import '../../components/Table/table.scss';
+
+.phoneSection {
+  margin-left: (8rem/16);
+}
+
+.teamsTable {
+  margin-top: (20rem/16);
+}
+
+.preloaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerTableHeader {
+  padding-top: (10rem/16);
+}
+
+.cellWithIcon {
+  > div {
+    > div {
+      display: flex !important;
+    }
+  }
+
+  &.inactive {
+    opacity: .26;
+  }
+}
+
+.rowHeaderWithWarnings {
+  [data-component='text'] {
+    font-size: .75rem;
+    font-weight: 500;
+  }
+}
+
+.rowHeaderFont {
+  color: rgba($black, .57);
+}
+
+.alert-icon {
+  display: inline-block;
+  height: (16rem/16);
+
+  svg {
+    fill: $redA200;
+  }
+}
+
+.clearTenantDialog {
+  width: (384rem/16);
+}
+
+.teamMemberTableContainer {
+  overflow: visible !important;
+}
+
+.inactive-text-cell {
+  opacity: .26;
+}

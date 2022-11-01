@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <urn:CorticonResponse xmlns:urn="urn:Corticon" decisionServiceName="InboundComm">
+      <WorkDocuments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Party id="Party_id_1">
+          <assignedProperty>97d549b0-756e-43e5-9ea9-62fab7e395cb</assignedProperty>
+          <created_at>10/16/2019 17:23:44 GMT</created_at>
+          <mostRecentInboundCommTime>10/16/2019 19:03:17 GMT</mostRecentInboundCommTime>
+          <NoResponseCounter>5</NoResponseCounter>
+          <partyOwner>4578f1e9-0e8e-45e9-ac64-60f09969688d</partyOwner>
+          <UUID>2561586b-7adf-4cf1-99e6-220873f115c5</UUID>
+          <Comms id="CommRecord_id_1">
+            <callDurationSeconds/>
+            <callLengthReqSeconds/>
+            <commAgent>4578f1e9-0e8e-45e9-ac64-60f09969688d</commAgent>
+            <created_at>10/16/2019 19:10:28 GMT</created_at>
+            <direction>out</direction>
+            <eventType>Email</eventType>
+            <callConnectedWithAgent/>
+            <UUID>76accb23-9ad3-4abf-9e67-6db8614320c4</UUID>
+            <isLeadCreated>{{ isLeadCreated }}</isLeadCreated>
+          </Comms>
+          <partyMembers id="PartyMember_id_1">
+            <created_at>10/16/2019 19:03:17 GMT</created_at>
+            <dateApplicationCompleted nil="true"/>
+            <dateApplicationPaid nil="true"/>
+            <hasOpenedApplication nil="true">true</hasOpenedApplication>
+            <lastCommunicationDate>10/16/2019 19:03:17 GMT</lastCommunicationDate>
+            <UUID>4e1a6385-c8ae-4ddb-8105-2347264b68ae</UUID>
+            <personApplication id="PersonApplication_id_1">
+              <applicationStatus nil="true"/>
+              <completionDate nil="true"/>
+              <created_at nil="true"/>
+              <dateApplicationOpened nil="true"/>
+              <dateLinkSent nil="true"/>
+              <paidDate nil="true"/>
+              <paymentCompleted nil="true">false</paymentCompleted>
+              <UUID nil="true"/>
+            </personApplication>
+          </partyMembers>
+          <partyMembers id="PartyMember_id_2">
+            <created_at>10/16/2019 17:23:44 GMT</created_at>
+            <dateApplicationCompleted nil="true"/>
+            <dateApplicationPaid nil="true">10/16/2019 19:06:19 GMT</dateApplicationPaid>
+            <hasOpenedApplication nil="true">true</hasOpenedApplication>
+            <lastCommunicationDate>10/16/2019 17:23:45 GMT</lastCommunicationDate>
+            <UUID>dcd48eee-6aef-4b99-bb9c-9d8a2d9bed64</UUID>
+            <personApplication id="PersonApplication_id_1">
+              <applicationStatus nil="true">completed</applicationStatus>
+              <completionDate nil="true">10/16/2019 19:07:10 GMT</completionDate>
+              <created_at nil="true">10/16/2019 19:05:59 GMT</created_at>
+              <dateApplicationOpened nil="true">10/16/2019 19:05:59 GMT</dateApplicationOpened>
+              <dateLinkSent nil="true">10/16/2019 19:05:48 GMT</dateLinkSent>
+              <paidDate nil="true">10/16/2019 19:06:19 GMT</paidDate>
+              <paymentCompleted nil="true">true</paymentCompleted>
+              <UUID nil="true">35a5f667-272d-438a-a52c-6550e652e9d8</UUID>
+            </personApplication>
+          </partyMembers>
+          <Tasks id="Task_id_1">
+            <category>Contract signing</category>
+            <created_at>10/16/2019 19:10:25 GMT</created_at>
+            <dueDate nil="true">10/16/2019 19:10:25 GMT</dueDate>
+            <name>COUNTERSIGN_LEASE</name>
+            <state>Active</state>
+            <taskOwner>a722c54f-6536-4abe-96f5-21a0dc95a62b</taskOwner>
+            <UUID>30e5107b-1dd7-4213-995f-0ad5b6c40e0b</UUID>
+          </Tasks>
+          <Tasks id="Task_id_2">
+            <category>Contract signing</category>
+            <created_at>10/16/2019 19:10:25 GMT</created_at>
+            <dueDate nil="true">10/16/2019 19:10:25 GMT</dueDate>
+            <name>SEND_CONTRACT</name>
+            <state>Active</state>
+            <taskOwner>4578f1e9-0e8e-45e9-ac64-60f09969688d</taskOwner>
+            <UUID>b7e3cf89-db8e-4554-9eb1-23c70118bf9c</UUID>
+          </Tasks>
+          <Tasks id="Task_id_3">
+            <category>Application approval</category>
+            <created_at>10/16/2019 19:10:25 GMT</created_at>
+            <dueDate nil="true">10/16/2019 19:10:25 GMT</dueDate>
+            <name>PROMOTE_APPLICATION</name>
+            <state>Active</state>
+            <taskOwner>4578f1e9-0e8e-45e9-ac64-60f09969688d</taskOwner>
+            <UUID>3eb42552-6f75-49b8-8ba2-4002ea23ef68</UUID>
+          </Tasks>
+          <Tasks id="Task_id_4">
+            <category>Manual</category>
+            <created_at>10/16/2019 18:59:12 GMT</created_at>
+            <dueDate nil="true">10/19/2019 06:59:59 GMT</dueDate>
+            <name>Call Resident</name>
+            <state>Completed</state>
+            <taskOwner>4578f1e9-0e8e-45e9-ac64-60f09969688d</taskOwner>
+            <UUID>795a7b84-8cad-4e16-a66b-b5c89b9f72c4</UUID>
+          </Tasks>
+          <theApp id="PartyApplication_id_1">
+            <completelyPaidDate nil="true">10/16/2019 19:06:19 GMT</completelyPaidDate>
+            <completionDate nil="true">10/16/2019 19:07:10 GMT</completionDate>
+            <created_at nil="true">10/16/2019 17:23:45 GMT</created_at>
+            <UUID nil="true">d08cbbda-60e9-43ef-8f5d-70057b35fc6a</UUID>
+          </theApp>
+          <theLease id="Lease_id_1">
+            <created_at nil="true">10/16/2019 19:08:12 GMT</created_at>
+            <status>executed</status>
+            <UUID nil="true">e94b27fb-86b9-4ec2-981b-7d26802a0460</UUID>
+          </theLease>
+        </Party>
+      </WorkDocuments>
+      <Messages version="1.0"/>
+    </urn:CorticonResponse>
+  </soap:Body>
+</soap:Envelope>

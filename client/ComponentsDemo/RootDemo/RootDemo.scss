@@ -1,0 +1,125 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 0;
+
+  & * {
+    box-sizing: border-box;
+  }
+}
+
+header {
+  @include from('small1') {
+    padding: 10px 15px;
+  }
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-height: 60px;
+  padding: 0;
+  padding: 10px;
+  background: $blue600;
+  box-shadow: 0 1px 10px 5px rgba($black, .2);
+
+  .hamburger {
+    margin-right: (10em/16);
+  }
+
+  h1 {
+    @include textTitle();
+    @include from('small2') {
+      @include headline();
+
+      font-weight: 300;
+    }
+
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.container-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.nav {
+  @include from('small2') {
+    position: relative;
+    top: initial;
+    bottom: initial;
+    display: block;
+    overflow: hidden;
+    height: calc(100vh - 60px);
+  }
+
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  bottom: 0;
+  display: none;
+  overflow: auto;
+  width: 200px;
+  background: #fff;
+  box-shadow: 1px 0 10px 2px rgba(0,0,0,.2);
+
+  &[data-open='true'] {
+    display: block;
+  }
+
+  a {
+    @include body();
+
+    display: block;
+    padding: 12px 18px;
+    cursor: pointer;
+    color: #333;
+    border-bottom: 1px solid rgba(#eee, .6);
+    background: #fff;
+
+    &:global(.selected) {
+      background: $grey200;
+
+      &:hover {
+        background: rgba($grey300, .8);
+      }
+    }
+
+    &:hover {
+      background: rgba($grey300, .8);
+    }
+  }
+}
+
+.page-container {
+  overflow-x: visible;
+  overflow-y: auto;
+  flex: 1;
+  background: #fff;
+}
+
+ul:global(.list) {
+  padding-left: 24px;
+
+  li {
+    @include body();
+
+    list-style-type: square;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../sass/colors';
+
+.dialogTitle {
+  margin-bottom: 1em;
+}
+
+.dialogContent {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  .icon {
+    width: 30%;
+    height: 100%;
+    margin-right: 1em;
+
+    fill: $redA700;
+  }
+}

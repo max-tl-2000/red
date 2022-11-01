@@ -1,0 +1,71 @@
+@import '../../../../client/sass/_colors.scss';
+
+.card {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.details-container {
+  padding: .3rem 1rem 0;
+}
+
+.details {
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+  min-height: (70rem/16);
+  padding: .8rem 0 (4rem/16) 0;
+
+  [data-component='avatar'] {
+    position: absolute;
+    top: .65rem;
+  }
+}
+
+.info {
+  display: block;
+  padding: 0 0 (10rem/16) (60rem/16);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  [data-component='caption'] {
+    line-height: (20rem/16);
+  }
+}
+
+.truncate {
+  margin-bottom: (5rem/16);
+}
+
+.actions-section {
+  position: relative;
+  padding: .15rem 0;
+}
+
+.full-profile-btn {
+  .caption-text {
+    display: inline-block;
+    padding-top: (5.5em/16);
+  }
+
+  > svg {
+    width: (24rem/16);
+    height: (24rem/16);
+    margin-left: (3rem/16);
+    vertical-align: middle;
+    opacity: .54;
+  }
+}
+
+.footer-container {
+  padding: (3rem/16) 0;
+  border-top: (1rem/16) solid rgba(0, 0, 0, .12);
+}
+
+.footer {
+  padding: 0 (8rem/16);
+}

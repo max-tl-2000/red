@@ -1,0 +1,37 @@
+@import '../../../client/sass/_colors.scss';
+
+.block-row {
+  display: flex;
+  flex-direction: column;
+
+  .column-block {
+    width: 100%;
+    min-height: (32rem/16);
+
+    span {
+      vertical-align: top;
+    }
+  }
+}
+
+.warning-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  .icon {
+    width: (20em/16);
+    height: (20em/16);
+    margin-right: (9em/16);
+    padding-bottom: (1.5em/16);
+
+    svg {
+      fill: $redA700;
+    }
+  }
+
+  .message {
+    flex: 1 0 75%;
+    color: $redA700;
+  }
+}

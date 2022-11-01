@@ -1,0 +1,5 @@
+PropertyID,Building,UnitID,AmenityCode,Description,Amount,ChangeDate,UnitIdentifier,ID
+11190,1,101,1,1st Floor,15000,08/29/2018,11190-01-101,1
+11500,1,101,CA,Central Air Conditioninggg,0,08/28/2018,11500-01-101,2
+11190,1,101,CONT,Controlled Access,,05/07/2018,11190-01-101,3
+11190,1,101,DW,Dishwasher,30,05/07/2018,11190-01-101,4

@@ -1,0 +1,29 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.icon-selector {
+  display: flex;
+  flex-direction: column;
+
+  .options {
+    .select {
+      @include span(6, 12, 24px, after);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.icon-animation {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  .icon {
+    width: 200px;
+    height: 200px;
+  }
+}

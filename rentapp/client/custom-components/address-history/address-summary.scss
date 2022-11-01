@@ -1,0 +1,14 @@
+.address-summary {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  > div {
+    width: 33%;
+  }
+}
+
+.address-card {
+  padding: 0;
+}

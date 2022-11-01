@@ -1,0 +1,127 @@
+{  
+    "id":"d21d994e-3b60-4d67-95d4-86f42d7bfb88",
+    "pets":null,
+    "comms":[  ],
+    "score":"prospect",
+    "state":"Applicant",
+    "workflowName": "newLease",
+    "workflowState": "active", 
+    "tasks":[  
+       {  
+          "id":"ba367f2c-533b-4fa9-8692-fc5f476db1d1",
+          "name":"PROMOTE_APPLICATION",
+          "state":"Active",
+          "dueDate":"2019-01-24T15:06:16.418+00:00",
+          "partyId":"d21d994e-3b60-4d67-95d4-86f42d7bfb88",
+          "userIds":[  
+             "38c65764-4f1e-4951-bf5a-8b1b7ee45396"
+          ],
+          "category":"Application approval",
+          "metadata":{  
+             "originalAssignees":[  
+                "38c65764-4f1e-4951-bf5a-8b1b7ee45396"
+             ],
+             "originalPartyOwner":"38c65764-4f1e-4951-bf5a-8b1b7ee45396"
+          },
+          "created_at":"2019-01-24T15:06:16.434142+00:00",
+          "updated_at":"2019-01-24T15:06:16.434142+00:00",
+          "modified_by":null,
+          "completionDate":null
+       }
+    ],
+    "teams":[  ],
+    "events":[ ],
+    "leases":null,
+    "quotes":[ ],
+    "userId":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+    "endDate":null,
+    "members":[  
+       {  
+          "person":{  },
+          "contactInfo":[  ],
+          "partyMember":{  
+             "id":"122b3b49-1c0f-4499-8eee-c4e767a24f2d",
+             "isSpam":false,
+             "endDate":null,
+             "partyId":"d21d994e-3b60-4d67-95d4-86f42d7bfb88",
+             "external":{  
+ 
+             },
+             "personId":"3bc3f686-15b6-43fa-bacb-c2723110b50f",
+             "startDate":"2019-01-24T15:06:44.845697+00:00",
+             "created_at":"2019-01-24T15:06:44.854+00:00",
+             "externalId":null,
+             "memberType":"Resident",
+             "updated_at":"2019-01-24T15:06:44.854+00:00",
+             "memberState":"Lead",
+             "modified_by":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+             "guaranteedBy":null
+          }
+       },
+       {  
+          "person":{  },
+          "contactInfo":[  ],
+          "partyMember":{  
+             "id":"099bf868-59e8-431d-b052-943badd8d79e",
+             "isSpam":false,
+             "endDate":null,
+             "partyId":"d21d994e-3b60-4d67-95d4-86f42d7bfb88",
+             "external":{  
+ 
+             },
+             "personId":"9cdfcaf5-3b09-4a8b-938b-07aeb04056d8",
+             "startDate":"2019-01-24T15:05:03.095707+00:00",
+             "created_at":"2019-01-24T15:05:03.297+00:00",
+             "externalId":null,
+             "memberType":"Resident",
+             "updated_at":"2019-01-24T15:05:58.32502+00:00",
+             "memberState":"Applicant",
+             "modified_by":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+             "guaranteedBy":null
+          }
+       }
+    ],
+    "children":null,
+    "invoices":[ ],
+    "metadata":{ },
+    "vehicles":null,
+    "leaseType":"traditional",
+    "ownerTeam":"8c67daf0-c796-49cd-bccf-7b221ae17006",
+    "startDate":"2019-01-24T15:05:03.095707+00:00",
+    "created_at":"2019-01-24T15:05:03.123+00:00",
+    "invOnHolds":null,
+    "mergedWith":null,
+    "promotions":null,
+    "updated_at":"2019-01-24T15:05:58.32502+00:00",
+    "modified_by":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+    "transactions":null,
+    "collaborators":[ "38c65764-4f1e-4951-bf5a-8b1b7ee45396" ],
+    "emailIdentifier":"d21d994e3b604d6795d4",
+    "partyApplications":[  ],
+    "assignedPropertyId":"86eb84f2-a15e-4a85-b5f8-59a36b71de86",
+    "personApplications":[  
+       {  
+          "id":"39cabd15-adec-4067-a143-75f89101a0ff",
+          "ssn":null,
+          "itin":null,
+          "partyId":"d21d994e-3b60-4d67-95d4-86f42d7bfb88",
+          "personId":"9cdfcaf5-3b09-4a8b-938b-07aeb04056d8",
+          "tosEvents":[  ],
+          "created_at":"2019-01-24T15:05:36.868+00:00",
+          "updated_at":"2019-01-24T15:06:16.323548+00:00",
+          "applicantId":"3978c090-ad32-4515-b7cc-70da3d64a11a",
+          "isFeeWaived":false,
+          "additionalData":{  },
+          "sendSsnEnabled":false,
+          "applicationData":{  },
+          "endedAsMergedAt":null,
+          "feeWaiverReason":null,
+          "paymentCompleted":true,
+          "applicationStatus":"completed",
+          "partyApplicationId":"947ed24a-1e18-4253-959a-484280741288"
+       }
+    ],
+    "storedUnitsFilters":{  },
+    "teamPropertyProgramId":null,
+    "qualificationQuestions":{ }
+ }

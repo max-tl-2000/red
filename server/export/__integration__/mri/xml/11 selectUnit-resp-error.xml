@@ -1,0 +1,21 @@
+{{#with this}}	
+<?xml version="1.0" encoding="utf-8"?>	
+<mri_s-pmrm_selectunit>	
+  <entry>	
+    <Error>	
+      <Message>The selected prospect is already assigned to the given Unit.</Message>	
+    </Error>	
+    <ProspectID>{{nameId}}</ProspectID>	
+    <ProspectID>{{nameId}}</ProspectID>	
+    <PropertyID>13780</PropertyID>	
+    <BuildingID>02</BuildingID>	
+    <UnitID>130</UnitID>	
+    <LeaseTerm>3</LeaseTerm>	
+    <OccupyDate>2018-06-25T00:00:00.0000000</OccupyDate>	
+    <ExpirationDate>2018-09-24T00:00:00.0000000</ExpirationDate>	
+    <MonthlyRent>910.00</MonthlyRent>	
+    <Concessions>0.00</Concessions>	
+    <EffectiveRent>910.00</EffectiveRent>	
+  </entry>	
+</mri_s-pmrm_selectunit>	
+{{/with}}

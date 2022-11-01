@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mri_s-pmrm_petinformation>
+    <entry>
+        <ResidentID>{{nameId}}</ResidentID>
+        <PetID />
+        <PetType>C</PetType>
+        <PetDescription />
+        <PetWeight />
+        <PetSize>Medium</PetSize>
+        <ServiceAnimalForSpecialNeeds>N</ServiceAnimalForSpecialNeeds>
+        <LicenseOrTag />
+        <PetName>Molly</PetName>
+        <ExternalID />
+    </entry>
+</mri_s-pmrm_petinformation>

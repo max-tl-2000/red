@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicantScreening xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ResidentScreening3_0.xsd">
+    <Request>
+        <PropertyID>
+            <Identification IDType="Property ID">
+                <IDValue>e94b3393-0ff3-55a7-0aed-1b56e450dd66</IDValue>
+            </Identification>
+            <MarketingName>Test Data - My Properties</MarketingName>
+        </PropertyID>
+        <RequestType>Modify</RequestType>
+        <ReportOptions>
+            <ReportName>01</ReportName>
+        </ReportOptions>
+        <ReportID>12345</ReportID>
+        <OriginatorID>26694</OriginatorID>
+        <MarketingSource></MarketingSource>
+        <UserName>Reuser1</UserName>
+		    <UserPassword>Winter2016</UserPassword>
+    </Request>
+    <LeaseTerms>
+        <MonthlyRent>3000</MonthlyRent>
+        <LeaseMonths>12</LeaseMonths>
+        <SecurityDeposit>1000</SecurityDeposit>
+    </LeaseTerms>
+    <Applicant>
+        <Other>
+            <CurrentRent>3000</CurrentRent>
+            <ConsentObtained>YES</ConsentObtained>
+        </Other>
+        <Income>
+            <EmploymentGrossIncome>4000</EmploymentGrossIncome>
+        </Income>
+        <CriminalRecord />
+        <AS_Information>
+            <ApplicantIdentifier>5ac64195-fed8-49f9-ac15-5d2865aa2289:e9d46f19-3534-b417-47df-17f88ed32527</ApplicantIdentifier>
+            <ApplicantType>Applicant</ApplicantType>
+            <Birthdate>1965-10-19</Birthdate>
+            <SocSecNumber>555559999</SocSecNumber>
+            <AddressTerms>
+                <Address AddressType="current">
+                    <Address>404 NW Napp Street</Address>
+                    <City>De Kalb</City>
+                    <State>TX</State>
+                    <PostalCode>75559</PostalCode>
+                    <UnparsedAddress>404 NW Napp Street De Kalb TX 75559</UnparsedAddress>
+                    <Email>testemail@reva.tech</Email>
+                </Address>
+            </AddressTerms>
+        </AS_Information>
+        <Customers>
+            <Customer>
+                <Identification IDType="Applicant">
+                    <IDValue>e94b3393-0ff3-55a7-0aed-1b56e450dd66</IDValue>
+                </Identification>
+                <Name>
+                    <FirstName>Dennis</FirstName>
+                    <MiddleName>Will</MiddleName>
+                    <LastName>Smith</LastName>
+				</Name>
+                <Lease>
+                    <Identification>
+                        <IDValue>e94b3393-0ff3-55a7-0aed-1b56e450dd66</IDValue>
+					</Identification>
+                </Lease>
+            </Customer>
+        </Customers>
+    </Applicant>
+    <CustomRecords>
+      <Record>
+        <Name>screeningRequestId</Name>
+        <Value>527d4ca4-074d-ce67-223e-64c8e056f8b5</Value>
+      </Record>
+      <Record>
+        <Name>User Defined 1</Name>
+        <Value>ABC123</Value>
+      </Record>
+      <Record>
+        <Name>User Defined 2</Name>
+        <Value>999999</Value>
+      </Record>
+      <Record>
+        <Name>Unit Number</Name>
+        <Value>951</Value>
+      </Record>
+    </CustomRecords>
+</ApplicantScreening>

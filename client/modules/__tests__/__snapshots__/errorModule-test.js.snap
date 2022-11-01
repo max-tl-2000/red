@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`errorModule should add a listener to \`unhandledrejection\` event 1`] = `
+Array [
+  Array [
+    Object {
+      "reason": "error",
+      "stack": undefined,
+    },
+    "mockId, unhandled rejection",
+  ],
+]
+`;
+
+exports[`errorModule should call logger.error if an error is received with a proper Error object 1`] = `
+Array [
+  Array [
+    Object {
+      "col": 20,
+      "errorMessage": "An interesting error",
+      "errorObject": Object {
+        "message": "This is a mock error",
+        "stack": "
+        This is a mock stack at file:10:1
+        This is another mock at file:20:1
+      ",
+      },
+      "file": "some/path/to/file",
+      "line": 17,
+    },
+    "mockId, application error",
+  ],
+]
+`;
+
+exports[`errorModule should throw if no apiClient is provided 1`] = `"logger object not provided"`;
+
+exports[`errorModule should throw if no id is provided 1`] = `"id not provided"`;

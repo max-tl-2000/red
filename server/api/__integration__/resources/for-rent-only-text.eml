@@ -1,0 +1,90 @@
+Return-Path: <bounces+1964667-4299-forrent.parkmerced=maximus.mail.reva.tech@tem.forrent.com>
+Received: from o2.tem.forrent.com (o2.tem.forrent.com [50.31.39.21])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id s8l9mm8qllk13f1e35juqtbps00m5udt2iria6o1
+ for forrent.parkmerced@maximus.mail.reva.tech;
+ Fri, 13 Oct 2017 07:08:04 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of tem.forrent.com designates 50.31.39.21 as permitted sender) client-ip=50.31.39.21; envelope-from=bounces+1964667-4299-forrent.parkmerced=maximus.mail.reva.tech@tem.forrent.com; helo=o2.tem.forrent.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of tem.forrent.com designates 50.31.39.21 as permitted sender) client-ip=50.31.39.21; envelope-from=bounces+1964667-4299-forrent.parkmerced=maximus.mail.reva.tech@tem.forrent.com; helo=o2.tem.forrent.com;
+ dkim=pass header.i=@forrent.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIVXhvV3JPU2VINEhjL1E2eGZodWVHcEN3dE1DS0lZQXB4eTI1a1VGcnkvR2l1UzFScVBxQXBMaG1yazZwT0Joc2d6QWZxOVFDN2hLUDdYNkl1Tm9scXZaMUg0d2NjcEhNUFVaOGpNWFg3RDBXT25mTlpwcHVna1NqSEd4cXYxcXlWcTlSaEpiOFRidVgzeWg4ajJRdkpGUmJueERITk1VQytjUGVGMDEzY2lESERHSysyWDY0MXp6MEtaaVBOTkdWNG5ucjhqaU1FYjBOOUxTN0Y0VlpyWjU3bjhubXh3ZEVSb2VFZVhhQmVSd0Y0ZWNoR3MwN1V4TENlKy9DVkkwWDRDeUJJK1FZOUY3NHVBOVdjaStqL1E1MUhBajRrTnBPSm9MczI4TGxKNjhBcWlSN1N6bXFmMDhzL1NVWGdWSlUyNzk3ZTE4aE16Ri9iNFlZUVpDUDQ=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=NuKKX5OFN9MsRY3CDnF4Idek6+UQUb7DNlMeTl9ZxNQLiz94QXePtPzRipYP5udlbuBWZLMuBEIybWG3ApI1oj1x6K6PgK2Ze3ZFfvYrYlWyDbUuQN41cmyUdvUbXL+SYfVm/eoyqACDN2QjXazO1Tj9DsoCeBY13h0FO2450hQ=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1507878484; v=1; bh=7lNFyYqqcbs9FgwiqvQSdMBLtKqN56YWOA1lmNkh8OQ=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=forrent.com; 
+	h=content-transfer-encoding:content-type:from:mime-version:reply-to:subject:to; 
+	s=s1; bh=0owobScRSXjNkMvVLLub4A+aU94=; b=STQV7RZ6dbvU54t9SGhqzSV
+	KSV5xmn8RNhtojSYd9mLW+ya+3TrQeQQcPYy121f+t1adns5NaNl2cfmx3L8WGdx
+	k/0CCTVOoVN5RjiXXiWqWnYPeTI4o38PU9g5FLtzRRLX7cDABGq5QBfDhIZoK1dM
+	SAa7bA1OpJI+6kv8gd1s=
+Received: by filter1160p1mdw1.sendgrid.net with SMTP id filter1160p1mdw1-17270-59E06653-16
+        2017-10-13 07:08:03.601685448 +0000 UTC
+Received: from MTk2NDY2Nw (outbound-mail.forrent.com [204.154.41.228])
+	by ismtpd0002p1iad1.sendgrid.net (SG) with HTTP id 68E6JZRUSve7gWRmEqAhqA
+	for <forrent.parkmerced@maximus.mail.reva.tech>; Fri, 13 Oct 2017 07:08:03.521 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Date: Fri, 13 Oct 2017 07:08:03 +0000 (UTC)
+From: "ForRent.com | Lead Insights" <guestcards@forrent.com>
+Mime-Version: 1.0
+Reply-To: ruby.underhill@me.com
+Subject: =?UTF-8?Q?=F0=9F=93=8C_New_ForRent_Lead_|_Ruby_Underhill_-_Parkmerced?=
+To: forrent.parkmerced@maximus.mail.reva.tech
+Message-ID: <68E6JZRUSve7gWRmEqAhqA@ismtpd0002p1iad1.sendgrid.net>
+X-SG-EID: EXuLMcQ2BFckeaAEh/ygLbb0wv+JdMBUXFme6ETAXRhHOgEcxSY8u+JR1fDSvuJ2lvzVrjpfDLJRE9
+ hvOjcyBsEna44tEZvQGUKwm6e/+hvYr8CdwtzUlBegGVwkVKb+hYhInxK2P7A0w6yMrbO51vffd3mh
+ cMkz5RNRw+AqoraBKVKmSgxObD2gQb812xriWDCtlcYt627XFSmnC7MZG4aUMPSWObm5h5y6g43n7B
+ zhTEZchWWdQi3/vuC1S1sAvh4i8XUl5XyXe9FFitSJaA==
+
+---------------------------------------------------------------------------=
+---
+FORRENT.COM GUESTCARD & LEAD INSIGHTS
+---------------------------------------------------------------------------=
+---
+
+The following LEAD is a direct result of your property listing on ForRent.c=
+om:
+
+Parkmerced / 3711 19th Ave, San Francisco CA 94132
+ForRent.com Site ID: 1023547
+___________________________________________________________________________=
+__________
+[Prospect Name]  Ruby Underhill
+[Email]  ruby.underhill@me.com
+[Phone]  (650) 336-8157
+[# Beds]  Any Bed
+[# Baths]  Any Bath
+[Moving Date]  immediately
+[Comments]  =E2=80=9CHello Parkmerced,
+This is just a test. Please do not close the party. We will close the party=
+ after completing the test.
+Thank you for your patience.
+
+Warm regards,
+Ganesh.=E2=80=9D
+[Submitted] 10/13/2017 03:06:37 am
+___________________________________________________________________________=
+__________
+
+
+---------------------------------------------------------------------------=
+---
+LEAD INSIGHTS BY FORRENT.COM
+---------------------------------------------------------------------------=
+---
+
+>> See these consumer insights as easy-to-read graphics! Visit this link:
+http://www.forrent.com/lead-insights-email/?token=3D78fd630a-fb70-4151-a4f1=
+-e9334c74011e-leadinsight-html
+
+
+
+
+
+___________________________________________________________________________=
+__________
+
+>> View My Property:
+http://www.forrent.com/apartment-community-profile/1023547
+>> View My LEADs:
+https://manage.forrent.com/reports/leads-dashboard-report?Sites=3D1023547

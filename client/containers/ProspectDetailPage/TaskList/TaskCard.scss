@@ -1,0 +1,13 @@
+@import '../../../sass/_typography-mixins.scss';
+
+.completeIcon {
+  cursor: pointer;
+}
+
+.taskDetails {
+  padding: (4/16 * 1rem) 0;
+
+  &.clickable {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,15 @@
+.telephonyBanner {
+  display: flex;
+  align-items: center;
+  padding: 20px 12px;
+  background-color: #fff7d9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .24);
+}
+
+.connectionInterruptedContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: content-box;
+  width: 100%;
+}

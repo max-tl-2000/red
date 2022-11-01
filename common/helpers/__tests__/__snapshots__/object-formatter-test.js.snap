@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`objectFormatter.format when format receives an object like: should format err as expected: err 1`] = `
+"[31mError: Pool was destroyed
+    at processImmediate [as _immediateCallback] (timers.js:383:17)[39m
+"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format error as expected: error 1`] = `
+"[31mError: Pool was destroyed
+    at processImmediate [as _immediateCallback] (timers.js:383:17)[39m
+"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format header as expected: header 1`] = `
+"HTTP/1.1 200 OK
+X-Request-Id: 78525e46-287e-4103-ad6c-4a765f44d410
+Content-Type: application/json; charset=utf-8
+Content-Length: 388
+ETag: W/\\"184-QQ9FH8wt/CPcyjrEx9bPpw\\"
+Date: Thu, 30 Jun 2016 08:55:41 GMT
+Connection: close"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format headers as expected: headers 1`] = `
+"host: 127.0.0.1:65439
+accept-encoding: gzip, deflate
+user-agent: node-superagent/1.8.3
+connection: close
+authorization: Bearer eyJ0eXAiOiJKV..."
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format req as expected: req 1`] = `
+"[36m⇠⇠ [31150b4a-a680-430f-8a30-095cac9c1506] ⇠⇠
+[39m[90m  GET /users
+[39m[90m  headers: 
+[39m[90m    cookie: i18next=en-US
+    accept-language: en-US,en;q=0.8,es;q=0.6
+    accept-encoding: gzip, deflate, sdch
+    referer: http://red.localhost.com:3000/
+    accept: */*
+    user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+    cache-control: no-cache
+    pragma: no-cache
+    connection: close
+    host: red.localhost.com:3000
+    authorization: Bearer eyJ0eXAiOiJKV...
+[39m[90m  body: 
+{ some: 'parameter', was: 'provided' }
+[39m[36m⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠
+[39m"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format req as expected: req 2`] = `
+"[36m⇠⇠ [31150b4a-a680-430f-8a30-095cac9c1506] ⇠⇠
+[39m[90m  GET /users
+[39m[90m  headers: 
+[39m[90m    cookie: i18next=en-US
+    accept-language: en-US,en;q=0.8,es;q=0.6
+    accept-encoding: gzip, deflate, sdch
+    referer: http://red.localhost.com:3000/
+    accept: */*
+    user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+    cache-control: no-cache
+    pragma: no-cache
+    connection: close
+    host: red.localhost.com:3000
+    authorization: Bearer eyJ0eXAiOiJKV...
+[39m[36m⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠
+[39m"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format res as expected: res 1`] = `
+"[31m⇢⇢ [a0b20b83-9364-4864-8e55-7d867afb5e13] ⇢⇢
+[39m[90m  status: [31m404[90m
+[39m[90m  duration (ms): 68
+[39m[90m  headers: 
+[39m[90m    HTTP/1.1 404 Not Found
+    x-powered-by: Express
+    X-Request-Id: a0b20b83-9364-4864-8e55-7d867afb5e13
+    x-content-type-options: nosniff
+    content-type: text/html; charset=utf-8
+    content-length: 54
+    date: Thu, 30 Jun 2016 15:17:25 GMT
+    connection: close
+[39m[31m⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢
+[39m"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format res as expected: res 2`] = `
+"[33m⇢⇢ [31150b4a-a680-430f-8a30-095cac9c1506] ⇢⇢
+[39m[90m  status: [31m500[90m
+[39m[90m  duration (ms): 19
+[39m[33m⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢
+[39m"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format res as expected: res 3`] = `
+"[33m⇢⇢ [31150b4a-a680-430f-8a30-095cac9c1506] ⇢⇢
+[39m[90m  status: [32m200[90m
+[39m[90m  duration (ms): 19
+[39m[90m  headers: 
+[39m[90m    HTTP/1.1 200 OK
+    X-Request-Id: 31150b4a-a680-430f-8a30-095cac9c1506
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 1972
+    ETag: W/\\"7b4-gQ9mq+61b//bdnqoDPDz4A\\"
+    Date: Sat, 02 Jul 2016 03:15:24 GMT
+    Connection: close
+[39m[33m⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢
+[39m"
+`;
+
+exports[`objectFormatter.format when format receives an object like: should format src as expected: src 1`] = `"[90m  /Users/roy/royws/red/server/server.js:190[39m"`;
+
+exports[`objectFormatter.format when format receives an object like: should format unknown as expected: unknown 1`] = `"unknown: { somekey: 'object', boolean: true, arr: [ 1, 2, 3 ] }"`;

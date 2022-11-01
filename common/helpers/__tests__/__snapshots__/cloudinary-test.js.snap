@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cloudinary getBigAvatar should create the url to retrieve big avatars 1`] = `"https://res.cloudinary.com/roy/image/fetch/w_64,z_0.8,ar_1:1,c_thumb,g_face:center,f_auto,q_auto:good,r_max,e_auto_brightness,fl_force_strip/http%3A%2F%2Fsome%2Fpath%2Fto%2Fimage.jpg"`;
+
+exports[`cloudinary getSmallAvatar should create the url to retrieve small avatars 1`] = `"https://res.cloudinary.com/roy/image/fetch/ar_1:1,c_thumb,g_face:center,f_auto,q_auto:good,r_max,e_auto_brightness,fl_force_strip,cs_no_cmyk,dpr_1.0,w_40,z_0.9/l_fetch:,fl_cutter/http%3A%2F%2Fsome%2Fpath%2Fto%2Fimage.jpg"`;
+
+exports[`cloudinary getUrlFromCloudinary should handle passing optional options as well 1`] = `"https://res.cloudinary.com/roy/image/fetch/w_200,h_400/http%3A%2F%2Fsome%2Fpath%2Fto%2Fimage.jpg"`;
+
+exports[`cloudinary getUrlFromCloudinary should return a wrapped url if cloudinary cloudName is set 1`] = `"https://res.cloudinary.com/roy/image/fetch/http%3A%2F%2Fsome%2Fpath%2Fto%2Fimage.jpg"`;
+
+exports[`cloudinary getUrlFromCloudinary should return a wrapped url when not running from a cucumber like environmet 1`] = `"https://res.cloudinary.com/testCloud/image/fetch/http%3A%2F%2Fhandle%2Fpath%2Fto%2Fimage.png"`;

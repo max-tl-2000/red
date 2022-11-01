@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CorticonResponse xmlns="urn:Corticon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" decisionServiceName="InsertDecisionServiceName">
+  <WorkDocuments>
+    <Application id="Application_id_1">
+      <individual id="Individual_id_1">
+        <creditScore>650.000000</creditScore>
+        <hasBankruptcy>false</hasBankruptcy>
+        <hasForeclosure>false</hasForeclosure>
+        <hasGlobalSanctions>false</hasGlobalSanctions>
+        <id>ABC-123</id>
+        <liquidAssets>50000.000000</liquidAssets>
+        <monthlyIncome>5000.000000</monthlyIncome>
+        <type>resident</type>
+        <guarantor id="Guarantor_id_1">
+          <creditScore>700</creditScore>
+          <hasBankruptcy>false</hasBankruptcy>
+          <hasForeclosure>false</hasForeclosure>
+          <id>DEF-456</id>
+          <liquidAssets>100000.000000</liquidAssets>
+          <monthlyIncome>10000.000000</monthlyIncome>
+        </guarantor>
+        <iFlagResults id="IndivScreenResults_id_3">
+          <numConditions>0</numConditions>
+          <summary>approved</summary>
+          <guarFlagResults>approved</guarFlagResults>
+          <globalSanctionsResult>passed</globalSanctionsResult>
+          <bankruptcyResult>approved</bankruptcyResult>
+          <foreclosureResult>approved</foreclosureResult>
+          <excessiveIssuesResult>approved</excessiveIssuesResult>
+          <creditScoreResult>approved</creditScoreResult>
+        </iFlagResults>
+      </individual>
+      <individual id="Individual_id_2">
+        <creditScore>600.000000</creditScore>
+        <hasBankruptcy>false</hasBankruptcy>
+        <hasForeclosure>false</hasForeclosure>
+        <hasGlobalSanctions>false</hasGlobalSanctions>
+        <id>GHI-789</id>
+        <liquidAssets>80000.000000</liquidAssets>
+        <monthlyIncome>4500.000000</monthlyIncome>
+        <type>resident</type>
+        <guarantor id="Guarantor_id_2">
+          <creditScore>700</creditScore>
+          <hasBankruptcy>false</hasBankruptcy>
+          <hasForeclosure>false</hasForeclosure>
+          <id>JKL-123</id>
+          <liquidAssets>50000.000000</liquidAssets>
+          <monthlyIncome>60000.000000</monthlyIncome>
+        </guarantor>
+        <iFlagResults id="IndivScreenResults_id_2">
+          <numConditions>0</numConditions>
+          <summary>approved</summary>
+          <guarFlagResults>approved</guarFlagResults>
+          <globalSanctionsResult>passed</globalSanctionsResult>
+          <bankruptcyResult>approved</bankruptcyResult>
+          <foreclosureResult>approved</foreclosureResult>
+          <excessiveIssuesResult>approved</excessiveIssuesResult>
+          <creditScoreResult>approved</creditScoreResult>
+        </iFlagResults>
+      </individual>
+      <individual id="Individual_id_3">
+        <creditScore xsi:nil="true"/>
+        <hasBankruptcy xsi:nil="true"/>
+        <hasForeclosure xsi:nil="true"/>
+        <hasGlobalSanctions>false</hasGlobalSanctions>
+        <id>MNO-456</id>
+        <liquidAssets xsi:nil="true"/>
+        <monthlyIncome xsi:nil="true"/>
+        <type>occupant</type>
+        <iFlagResults id="IndivScreenResults_id_1">
+          <numConditions>0</numConditions>
+          <globalSanctionsResult>passed</globalSanctionsResult>
+        </iFlagResults>
+      </individual>
+      <prop id="Property_id_1">
+        <allowLiquidAssets>true</allowLiquidAssets>
+        <applicantsBankruptcy>guarantorRequired</applicantsBankruptcy>
+        <applicantsCreditScoreApproved>approved</applicantsCreditScoreApproved>
+        <applicantsCreditScoreBetween>increasedDepositRequired</applicantsCreditScoreBetween>
+        <applicantsCreditScoreDeclined>declined</applicantsCreditScoreDeclined>
+        <applicantsExcessiveIssues>guarantorRequired</applicantsExcessiveIssues>
+        <applicantsForeclosure>increasedDepositRequired</applicantsForeclosure>
+        <applicantsInsufficientIncome>increasedDepositRequired</applicantsInsufficientIncome>
+        <approvedGuarantorCreditScore>600</approvedGuarantorCreditScore>
+        <approvedResidentCreditScore>600</approvedResidentCreditScore>
+        <declinedGuarCreditScore>400</declinedGuarCreditScore>
+        <declinedResidentCreditScore>400</declinedResidentCreditScore>
+        <excessiveIssuesCount>4</excessiveIssuesCount>
+        <fullLeaseLiquidAssetMultiple>2.000000</fullLeaseLiquidAssetMultiple>
+        <globalSanctions>declined</globalSanctions>
+        <guarantorsBankruptcy>increasedDepositRequired</guarantorsBankruptcy>
+        <guarantorsCreditScoreApproved>approved</guarantorsCreditScoreApproved>
+        <guarantorsCreditScoreBetween>increasedDepositRequired</guarantorsCreditScoreBetween>
+        <guarantorsCreditScoreDeclined>declined</guarantorsCreditScoreDeclined>
+        <guarantorsForeclosure>increasedDepositRequired</guarantorsForeclosure>
+        <guarantorsInsufficientIncome>increasedDepositRequired</guarantorsInsufficientIncome>
+        <hasGroupGuarantorCreditScore>false</hasGroupGuarantorCreditScore>
+        <hasGroupGuarantorIncome>false</hasGroupGuarantorIncome>
+        <hasGroupResidentCreditScore>false</hasGroupResidentCreditScore>
+        <hasGroupResidentIncome>false</hasGroupResidentIncome>
+        <incomeMultipleGuarantor>1.500000</incomeMultipleGuarantor>
+        <incomeMultipleResident>1.500000</incomeMultipleResident>
+      </prop>
+      <quote id="Quote_id_1">
+        <agent>ABC</agent>
+        <monthlyRent>2000.000000</monthlyRent>
+        <monthlyTotalRent>2500.000000</monthlyTotalRent>
+        <property>XYZ BUILDING</property>
+        <termLength>12</termLength>
+        <iFinQuoteRes id="ResFinQuoteResult_id_1">
+          <minLiquidAssets>30000.000000</minLiquidAssets>
+          <minMonthlyIncome>1875.000000</minMonthlyIncome>
+          <incomeResult>approved</incomeResult>
+          <isGuarRequired>false</isGuarRequired>
+          <guarFinQuoteResult id="GuarFinQuoteResult_id_1">
+            <minMonthlyIncome>1875.000000</minMonthlyIncome>
+            <guarantor href="#Guarantor_id_1"/>
+          </guarFinQuoteResult>
+          <individual href="#Individual_id_1"/>
+        </iFinQuoteRes>
+        <iFinQuoteRes id="ResFinQuoteResult_id_3">
+          <minLiquidAssets>30000.000000</minLiquidAssets>
+          <minMonthlyIncome>1875.000000</minMonthlyIncome>
+          <incomeResult>approved</incomeResult>
+          <isGuarRequired>false</isGuarRequired>
+          <guarFinQuoteResult id="GuarFinQuoteResult_id_3">
+            <minMonthlyIncome>1875.000000</minMonthlyIncome>
+            <guarantor href="#Guarantor_id_2"/>
+          </guarFinQuoteResult>
+          <individual href="#Individual_id_2"/>
+        </iFinQuoteRes>
+        <reqMonthlyIncome>3750.000000</reqMonthlyIncome>
+        <numApplicants>2</numApplicants>
+        <reqLiquidAsset>60000.000000</reqLiquidAsset>
+        <reqGuarMonthlyIncome>3750.000000</reqGuarMonthlyIncome>
+        <sumGuarIncome>70000.000000</sumGuarIncome>
+        <sumGuarLiquidAsset>150000.000000</sumGuarLiquidAsset>
+        <finalQuoteResult id="PartyDecision_id_1">
+          <incomeDecision>approved</incomeDecision>
+          <applicationDecision>approved</applicationDecision>
+        </finalQuoteResult>
+      </quote>
+      <quote id="Quote_id_2">
+        <agent>ABC</agent>
+        <monthlyRent>1500.000000</monthlyRent>
+        <monthlyTotalRent>2000.000000</monthlyTotalRent>
+        <property>SERENE ACRES APTS</property>
+        <termLength>6</termLength>
+        <iFinQuoteRes id="ResFinQuoteResult_id_2">
+          <minLiquidAssets>12000.000000</minLiquidAssets>
+          <minMonthlyIncome>1500.000000</minMonthlyIncome>
+          <incomeResult>approved</incomeResult>
+          <isGuarRequired>false</isGuarRequired>
+          <guarFinQuoteResult id="GuarFinQuoteResult_id_2">
+            <minMonthlyIncome>1500.000000</minMonthlyIncome>
+            <guarantor href="#Guarantor_id_1"/>
+          </guarFinQuoteResult>
+          <individual href="#Individual_id_1"/>
+        </iFinQuoteRes>
+        <iFinQuoteRes id="ResFinQuoteResult_id_4">
+          <minLiquidAssets>12000.000000</minLiquidAssets>
+          <minMonthlyIncome>1500.000000</minMonthlyIncome>
+          <incomeResult>approved</incomeResult>
+          <isGuarRequired>false</isGuarRequired>
+          <guarFinQuoteResult id="GuarFinQuoteResult_id_4">
+            <minMonthlyIncome>1500.000000</minMonthlyIncome>
+            <guarantor href="#Guarantor_id_2"/>
+          </guarFinQuoteResult>
+          <individual href="#Individual_id_2"/>
+        </iFinQuoteRes>
+        <reqMonthlyIncome>3000.000000</reqMonthlyIncome>
+        <numApplicants>2</numApplicants>
+        <reqLiquidAsset>24000.000000</reqLiquidAsset>
+        <reqGuarMonthlyIncome>3000.000000</reqGuarMonthlyIncome>
+        <sumGuarIncome>70000.000000</sumGuarIncome>
+        <sumGuarLiquidAsset>150000.000000</sumGuarLiquidAsset>
+        <finalQuoteResult id="PartyDecision_id_2">
+          <incomeDecision>approved</incomeDecision>
+          <applicationDecision>approved</applicationDecision>
+        </finalQuoteResult>
+      </quote>
+      <flagSummary id="FlagSummary_id_1">
+        <financialFlagSummary>approved</financialFlagSummary>
+        <criminalFlagSummary>passed</criminalFlagSummary>
+        <excessiveIssuesResult>approved</excessiveIssuesResult>
+        <creditScoreDecision>approved</creditScoreDecision>
+        <iFlagResults href="#IndivScreenResults_id_1"/>
+        <iFlagResults href="#IndivScreenResults_id_2"/>
+        <iFlagResults href="#IndivScreenResults_id_3"/>
+      </flagSummary>
+    </Application>
+  </WorkDocuments>
+  <Messages>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,A0] Create financial quote result entity for each resident on the application.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,A0] Create financial quote result entity for each resident on the application.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,A0] Create financial quote result entity for each resident on the application.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,A0] Create financial quote result entity for each resident on the application.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,C0] Determine the required monthly income for the quote by multiplying the Total rent by the property-defined resident income multiple.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,C0] Determine the required monthly income for the quote by multiplying the Total rent by the property-defined resident income multiple.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,B0] Save the number of applicants for each quote</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,B0] Save the number of applicants for each quote</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Determine each applicant's portion of the liquid asset requirement for each quote.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Set the liquid asset requirement for the quote by multiplying total rent times the term length times the poperty's liquid asset multiple.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Determine each applicant's portion of the liquid asset requirement for each quote.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Set the liquid asset requirement for the quote by multiplying total rent times the term length times the poperty's liquid asset multiple.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Determine each applicant's portion of the liquid asset requirement for each quote.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Set the liquid asset requirement for the quote by multiplying total rent times the term length times the poperty's liquid asset multiple.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Determine each applicant's portion of the liquid asset requirement for each quote.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,1] Set the liquid asset requirement for the quote by multiplying total rent times the term length times the poperty's liquid asset multiple.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,D0] For each applicant's result, set the minimum Monthly Income to the quote's required monthly income divided by the number of applicants</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,D0] For each applicant's result, set the minimum Monthly Income to the quote's required monthly income divided by the number of applicants</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,D0] For each applicant's result, set the minimum Monthly Income to the quote's required monthly income divided by the number of applicants</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantFinancialPreprocessing,D0] For each applicant's result, set the minimum Monthly Income to the quote's required monthly income divided by the number of applicants</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantIncomeIndividualAssessment1,1] If the individual's monthly income is more than the required inidividual income for the quote, set the individual's income result to 'approved'</text>
+      <entityReference href="ResFinQuoteResult_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantIncomeIndividualAssessment1,1] If the individual's monthly income is more than the required inidividual income for the quote, set the individual's income result to 'approved'</text>
+      <entityReference href="ResFinQuoteResult_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantIncomeIndividualAssessment1,1] If the individual's monthly income is more than the required inidividual income for the quote, set the individual's income result to 'approved'</text>
+      <entityReference href="ResFinQuoteResult_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantIncomeIndividualAssessment1,1] If the individual's monthly income is more than the required inidividual income for the quote, set the individual's income result to 'approved'</text>
+      <entityReference href="ResFinQuoteResult_id_4"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create a new guarantor financial quote result and associate it with the individual financial quote results and the guarantor</text>
+      <entityReference href="ResFinQuoteResult_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create new guarantor financial result entities and associate with guarantors associated with individuals.</text>
+      <entityReference href="ResFinQuoteResult_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create a new guarantor financial quote result and associate it with the individual financial quote results and the guarantor</text>
+      <entityReference href="ResFinQuoteResult_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create new guarantor financial result entities and associate with guarantors associated with individuals.</text>
+      <entityReference href="ResFinQuoteResult_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create a new guarantor financial quote result and associate it with the individual financial quote results and the guarantor</text>
+      <entityReference href="ResFinQuoteResult_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create new guarantor financial result entities and associate with guarantors associated with individuals.</text>
+      <entityReference href="ResFinQuoteResult_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create a new guarantor financial quote result and associate it with the individual financial quote results and the guarantor</text>
+      <entityReference href="ResFinQuoteResult_id_4"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,A0] Create new guarantor financial result entities and associate with guarantors associated with individuals.</text>
+      <entityReference href="ResFinQuoteResult_id_4"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Determine the monthly rent that has to be covered based on the property's guarantor multiple and the monthly total rent on the qutoe.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Set the required monthly income for guarantor to the monthly rent times the guarantor multiple.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Determine the monthly rent that has to be covered based on the property's guarantor multiple and the monthly total rent on the qutoe.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Set the required monthly income for guarantor to the monthly rent times the guarantor multiple.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Determine the monthly rent that has to be covered based on the property's guarantor multiple and the monthly total rent on the qutoe.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Set the required monthly income for guarantor to the monthly rent times the guarantor multiple.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Determine the monthly rent that has to be covered based on the property's guarantor multiple and the monthly total rent on the qutoe.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,B0] Set the required monthly income for guarantor to the monthly rent times the guarantor multiple.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,E0] Calculate the sum of all guarantors income and save it in the quote.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,E0] Calculate the sum of all guarantors income and save it in the quote.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,E0] Calculate the sum of all guarantors income and save it in the quote.</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,E0] Calculate the sum of all guarantors income and save it in the quote.</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Determine the minMonthlyIncome for each guarantor by dividing the required monthly income for the quote by the number of Applicants and then the number for Guarantors for each applicant.</text>
+      <entityReference href="GuarFinQuoteResult_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Each guarantor's minimum income is the required total guarantor income divided by the number of applicants</text>
+      <entityReference href="GuarFinQuoteResult_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Determine the minMonthlyIncome for each guarantor by dividing the required monthly income for the quote by the number of Applicants and then the number for Guarantors for each applicant.</text>
+      <entityReference href="GuarFinQuoteResult_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Each guarantor's minimum income is the required total guarantor income divided by the number of applicants</text>
+      <entityReference href="GuarFinQuoteResult_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Determine the minMonthlyIncome for each guarantor by dividing the required monthly income for the quote by the number of Applicants and then the number for Guarantors for each applicant.</text>
+      <entityReference href="GuarFinQuoteResult_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Each guarantor's minimum income is the required total guarantor income divided by the number of applicants</text>
+      <entityReference href="GuarFinQuoteResult_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Determine the minMonthlyIncome for each guarantor by dividing the required monthly income for the quote by the number of Applicants and then the number for Guarantors for each applicant.</text>
+      <entityReference href="GuarFinQuoteResult_id_4"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing1,C0] Each guarantor's minimum income is the required total guarantor income divided by the number of applicants</text>
+      <entityReference href="GuarFinQuoteResult_id_4"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GuarantorFinancialPreprocessing2,2] If the property allows liquid assets, sum the liquid assets for all guarantors and store it on the quote entity;</text>
+      <entityReference href="Quote_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,A0] Create a new Flag Summary entity for the application with criminal and financial flags set to approved</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,B0] Create a new individual screen result entity for each individual</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,B0] Create a new individual screen result entity for each individual</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,B0] Create a new individual screen result entity for each individual</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,C0] Associate each indiivual's screen result with the flag summary.</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,C0] Associate each indiivual's screen result with the flag summary.</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,C0] Associate each indiivual's screen result with the flag summary.</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,1] Set guarantor flag results to default approved for residents.</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ScreeningSetup,1] Set guarantor flag results to default approved for residents.</text>
+      <entityReference href="Application_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GlobalSanctions1,2] If the global sanction flag is false, set global sanctions result to passed</text>
+      <entityReference href="IndivScreenResults_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GlobalSanctions1,2] If the global sanction flag is false, set global sanctions result to passed</text>
+      <entityReference href="IndivScreenResults_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[GlobalSanctions1,2] If the global sanction flag is false, set global sanctions result to passed</text>
+      <entityReference href="IndivScreenResults_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantBankruptcy1,1] If an individual's bankruptcy flag is false, set their results banckruptcy flags to 'approved'</text>
+      <entityReference href="IndivScreenResults_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantBankruptcy1,1] If an individual's bankruptcy flag is false, set their results banckruptcy flags to 'approved'</text>
+      <entityReference href="IndivScreenResults_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantForeclosure1,1] If an individual's foreclosure flag is false, set their results foreclosure flags to 'approved'</text>
+      <entityReference href="IndivScreenResults_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ApplicantForeclosure1,1] If an individual's foreclosure flag is false, set their results foreclosure flags to 'approved'</text>
+      <entityReference href="IndivScreenResults_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ExcessConditionsFinancial1,A0] Set the excessive issues result on the summary to 'approved' by default</text>
+      <entityReference href="FlagSummary_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ExcessConditionsFinancial1,1] If the number of conditions is less than the excessive conditions count, set the individual results to 'approved'</text>
+      <entityReference href="IndivScreenResults_id_3"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[ExcessConditionsFinancial1,1] If the number of conditions is less than the excessive conditions count, set the individual results to 'approved'</text>
+      <entityReference href="IndivScreenResults_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[CreditScoreIndiv,1] For individual assessment, if the resident's credit score is above the property's approved level, set the individual's result to approved</text>
+      <entityReference href="Individual_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[CreditScoreIndiv,1] For individual assessment, if the resident's credit score is above the property's approved level, set the individual's result to approved</text>
+      <entityReference href="Individual_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[FinalCreditScoreDecision,A0] Set the credit score decision to approved.</text>
+      <entityReference href="FlagSummary_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[FinalIncomeDecision,A0] Create a new final quote result and set the income result to 'approved' by default</text>
+      <entityReference href="PartyDecision_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[FinalIncomeDecision,A0] Create a new final quote result and set the income result to 'approved' by default</text>
+      <entityReference href="PartyDecision_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[FinalDecision,A0] Set default decision to conditional</text>
+      <entityReference href="PartyDecision_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[FinalDecision,A0] Set default decision to conditional</text>
+      <entityReference href="PartyDecision_id_2"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[FinalDecision,6] Happy Path: all final decisions are approved, party decision is approved</text>
+      <entityReference href="PartyDecision_id_1"/>
+    </Message>
+    <Message>
+      <severity>Info</severity>
+      <text>[FinalDecision,6] Happy Path: all final decisions are approved, party decision is approved</text>
+      <entityReference href="PartyDecision_id_2"/>
+    </Message>
+  </Messages>
+</CorticonResponse>

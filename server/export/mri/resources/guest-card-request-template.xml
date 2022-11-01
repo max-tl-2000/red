@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+{{#each this}}
+{{#with this}}
+<mri_s-pmrm_guestcardsbysiteid>
+	<entry>
+		<NameID>{{NameID}}</NameID>
+		<FirstName>{{FirstName}}</FirstName>
+		<LastName>{{LastName}}</LastName>
+		<PropertyId>{{PropertyId}}</PropertyId>
+		<Notes/>
+		<PrimaryMarketingSource>@</PrimaryMarketingSource>
+		<LeasingConsultant>{{LeasingConsultant}}</LeasingConsultant>
+		<Email>{{Email}}</Email>
+		<Phone>{{Phone}}</Phone>
+		<Type>{{Type}}</Type>
+		<PrimaryNameID>{{PrimaryNameID}}</PrimaryNameID>
+		<ApplicantStatus>{{ApplicantStatus}}</ApplicantStatus>
+		<Guarantor>{{Guarantor}}</Guarantor>
+		<ProspectiveTenant>
+			<entry>
+				{{#with ProspectiveTenant}}
+				<DesiredMoveInDate>{{DesiredMoveInDate}}</DesiredMoveInDate>
+				<PropertyPreference>{{PropertyPreference}}</PropertyPreference>
+				<UnitTypePreference>{{UnitTypePreference}}</UnitTypePreference>
+				<VisitDate>{{VisitDate}}</VisitDate>
+				{{/with}}
+			</entry>
+		</ProspectiveTenant>
+	</entry>
+</mri_s-pmrm_guestcardsbysiteid>
+{{/with}}
+{{/each}}

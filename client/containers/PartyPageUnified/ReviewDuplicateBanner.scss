@@ -1,0 +1,17 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 3.5em;
+  margin-bottom: 0;
+  padding-right: .5em;
+  background-color: rgba(207, 216,	220, .87);
+
+  [data-typography-element='true'] {
+    font-size: (13rem/16);
+    font-weight: 500;
+    line-height: 1.25em;
+    margin: 1em;
+  }
+}

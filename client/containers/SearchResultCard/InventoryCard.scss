@@ -1,0 +1,25 @@
+$imageWidth: (120rem/16);
+
+.card {
+  position: relative;
+  min-height: (125rem/16);
+  margin-bottom: (16rem/16);
+  padding-right: $imageWidth;
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: $imageWidth;
+  }
+
+  .cardDetails {
+    padding: 1rem;
+  }
+
+  .inventoryCardImageBg {
+    width: 100%;
+    height: 100%;
+  }
+}

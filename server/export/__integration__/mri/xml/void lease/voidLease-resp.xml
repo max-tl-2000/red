@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<VoidLeaseResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NameID>{{nameId}}</NameID>
+	<EstimatedMovein>11/15/2018</EstimatedMovein>
+	<PropertyID>13780</PropertyID>
+	<BuildingID>01</BuildingID>
+	<UnitID>{{unitId}}</UnitID>
+	<leaseNumber>4</leaseNumber>
+	<Result>Success</Result>
+</VoidLeaseResult>

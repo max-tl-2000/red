@@ -1,0 +1,67 @@
+{
+    "id": "3820c5e3-38ea-4128-9389-088b1a40b052",
+    "created_at": "2/4/2020 19:19:02 GMT",
+    "assignedProperty": "92cad3d6-7954-443c-bc66-d7ad4010c183",
+    "mostRecentInboundCommTime": "2/4/2020 19:24:22 GMT",
+    "noResponseCounter": 0,
+    "partyOwnerUUID": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+    "eventCommRecord": [],
+    "comms": [{
+            "id": "cf83b3d1-4b91-4a69-9486-99b3e80bee51",
+            "created_at": "2/4/2020 19:19:02 GMT",
+            "callDurationSeconds": "",
+            "commAgentUUID": null,
+            "direction": "in",
+            "eventType": "Call",
+            "isLeadCreated": true,
+            "isCallbackRequested": true,
+            "isVideoLinkRequested": false,
+            "callConnectedWithAgent": false,
+            "category": "User communication",
+            "isCommForAllPartyMembers": true
+        },
+        {
+            "id": "b5b577e0-1d88-4300-aaea-23eb0a696509",
+            "created_at": "2/4/2020 19:24:22 GMT",
+            "callDurationSeconds": "",
+            "commAgentUUID": null,
+            "direction": "in",
+            "eventType": "Call",
+            "isLeadCreated": false,
+            "isCallbackRequested": true,
+            "isVideoLinkRequested": false,
+            "callConnectedWithAgent": false,
+            "category": "User communication",
+            "isCommForAllPartyMembers": true
+        }
+    ],
+    "partyMembers": [{
+        "id": "3307341b-89e0-4aa6-96fe-811920e6fb32",
+        "created_at": "2/4/2020 19:19:02 GMT",
+        "lastCommunicationDate": "2/4/2020 19:24:22 GMT",
+        "personApplication": {},
+        "hasContactInfo": true,
+        "personId": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+        "modifiedBy": null,
+        "isActive": true,
+        "partyMemberTasks": [],
+        "hasAnonymousEmail": false
+    }],
+    "tasks": [{
+        "id": "de073237-2dcc-42e1-b940-e5450dbb0fbd",
+        "createdBy": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "created_at": "2/5/2020 15:53:39 GMT",
+        "category": "Manual",
+        "dueDate": "2/7/2020 07:59:59 GMT",
+        "name": "Contact lead",
+        "state": "Active",
+        "taskOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+    }],
+    "createdFromCommId": "cf83b3d1-4b91-4a69-9486-99b3e80bee51",
+    "workflowState": "active",
+    "workflowName": "newLease",
+    "leaseType": "traditional",
+    "quotes": [],
+    "propertyTimeZone": "GMT",
+    "moveoutNoticePeriodDays": 60
+}

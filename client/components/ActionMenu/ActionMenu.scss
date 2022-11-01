@@ -1,0 +1,16 @@
+.popover {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+  padding: 20px 0 8px 0;
+  pointer-events: none;
+
+  > div {
+    pointer-events: auto;
+  }
+
+  &.open {
+    display: block;
+  }
+}

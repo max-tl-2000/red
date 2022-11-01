@@ -1,0 +1,31 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  min-height: (125rem/16);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contactData {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 20em;
+    padding-top: .25rem;
+    padding-bottom: .35rem;
+
+    .phoneNumberSection {
+      width: 15em;
+      padding-bottom: .5em;
+    }
+
+    .emailAddressSection {
+      width: 15em;
+    }
+  }
+}

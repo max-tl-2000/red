@@ -1,0 +1,23 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - (64em/16));
+}
+
+.card {
+  width: (408rem/16);
+}
+
+.form {
+  padding: (22rem/16) (32rem/16) (32rem/16);
+}
+
+.form-actions {
+  margin-top: (36rem/16);
+
+  > button {
+    width: (149rem/16);
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{#each assets}}
+  <url entityId="{{propertyName}}">
+    {{#each images}}
+    <image:image imageType="{{imageType}}" {{#if shouldAddNameAttribute}}entity="{{name}}"{{/if}}>
+      <image:loc>{{url}}</image:loc>
+      <image:caption>{{escapeContent caption}}</image:caption>
+    </image:image>
+    {{/each}}
+    {{#each units}}
+    <image:image imageType="unit" entityId="{{externalId}}" imageLayoutId="{{assetLayoutName}}" layoutName="{{layoutName}}" layoutDisplayName="{{layoutDisplayName}}" marketingLayoutDisplayName="{{marketingLayoutDisplayName}}" />
+    {{/each}}
+  </url>
+  {{/each}}
+</urlset>

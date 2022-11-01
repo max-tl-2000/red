@@ -1,0 +1,46 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.overlay {
+  width: (380rem/16);
+}
+
+.overlay-wrapper {
+  overflow: auto;
+  max-height: (250rem/16);
+}
+
+.actions {
+  position: absolute;
+  bottom: .5rem;
+  left: 0;
+  padding: 0 .5rem;
+
+  &.model {
+    top: 0;
+    right: -1rem;
+    bottom: auto;
+    left: auto;
+
+    [data-component='button'] {
+      margin-right: 0;
+    }
+  }
+
+  [data-component='button'] {
+    margin-right: .25rem;
+  }
+
+  &.small {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    padding: .25rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    [data-component='button'] {
+      margin: 0;
+    }
+  }
+}

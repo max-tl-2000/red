@@ -1,0 +1,75 @@
+diff --git a/node_modules/@babel/register/lib/cache.js b/node_modules/@babel/register/lib/cache.js
+index 0a18213..74c9fb6 100644
+--- a/node_modules/@babel/register/lib/cache.js
++++ b/node_modules/@babel/register/lib/cache.js
+@@ -36,6 +36,46 @@ const FILENAME = process.env.BABEL_CACHE_PATH || DEFAULT_FILENAME;
+ let data = {};
+ let cacheDisabled = false;
+ 
++const write = (stream, data) => {
++  return new Promise(resolve => {
++    if (!stream.write(data)) {
++      stream.removeAllListeners('drain'); // avoid memory leak warning
++      stream.once('drain', resolve);
++    } else {
++      process.nextTick(resolve);
++    }
++  });
++}
++const writeInChunks = (filePath, data, done) => {
++  (0, _makeDir.sync)(_path.default.dirname(filePath));
++
++  var stream = _fs.default.createWriteStream(filePath);
++
++  stream.on('open', async () => {
++    var chunkCount = 0;
++    var charsPerChunk = 100;
++    var maxChunks = Math.ceil(data.length / charsPerChunk);
++    do {
++
++      const currentChunk = data.substr(chunkCount * charsPerChunk, charsPerChunk);
++
++      await write(stream, currentChunk);
++
++      chunkCount++;
++    } while (chunkCount < maxChunks)
++
++    stream.end(() => {
++      done && done();
++    });
++
++  });
++
++  stream.on('error', err => {
++    done(err);
++  });
++};
++
++
+ function isCacheDisabled() {
+   var _process$env$BABEL_DI;
+ 
+@@ -58,9 +98,11 @@ function save() {
+   }
+ 
+   try {
+-    (0, _makeDir.sync)(_path.default.dirname(FILENAME));
+-
+-    _fs.default.writeFileSync(FILENAME, serialised);
++    writeInChunks(FILENAME, serialised, err => {
++      if (err) {
++        console.warn('error writing babel cache to file', err);
++      }
++    });
+   } catch (e) {
+     switch (e.code) {
+       case "ENOENT":
+@@ -89,7 +131,7 @@ function load() {
+     return;
+   }
+ 
+-  process.on("exit", save);
++  process.once("beforeExit", save);
+   process.nextTick(save);
+   let cacheContent;
+ 

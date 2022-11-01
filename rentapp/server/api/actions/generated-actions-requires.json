@@ -1,0 +1,101 @@
+{
+  "addPartyApplication": {
+    "module": "./party-application"
+  },
+  "getDocumentsMetadataByPartyApplicationId": {
+    "module": "./party-application"
+  },
+  "holdApplicationStatus": {
+    "module": "./party-application"
+  },
+  "getPartyApplicationApplicationData": {
+    "module": "./party-application"
+  },
+  "updatePartyApplicationApplicationData": {
+    "module": "./party-application"
+  },
+  "createOrUpdatePersonApplication": {
+    "module": "./person-application"
+  },
+  "updatePersonApplication": {
+    "module": "./person-application"
+  },
+  "getPersonApplication": {
+    "module": "./person-application"
+  },
+  "getDocumentsForPersonApplication": {
+    "module": "./person-application"
+  },
+  "getPersonApplicationAdditionalData": {
+    "module": "./person-application"
+  },
+  "updatePersonApplicationAdditionalData": {
+    "module": "./person-application"
+  },
+  "completePersonApplication": {
+    "module": "./person-application"
+  },
+  "getFeesByPersonApplication": {
+    "module": "./person-application"
+  },
+  "getPersonApplicationsByPartyId": {
+    "module": "./person-application"
+  },
+  "updateWaivedFee": {
+    "module": "./person-application"
+  },
+  "saveEvent": {
+    "module": "./person-application"
+  },
+  "getDocumentCategory": {
+    "module": "./documents"
+  },
+  "getApplicationDocumentByDocId": {
+    "module": "./documents"
+  },
+  "handleScreeningResponse": {
+    "module": "./webhooks"
+  },
+  "handlePaymentNotification": {
+    "module": "./webhooks"
+  },
+  "initiatePayment": {
+    "module": "./payment"
+  },
+  "getApplicant": {
+    "module": "./applicant"
+  },
+  "getApplications": {
+    "module": "./applicant"
+  },
+  "addApplicationInvoice": {
+    "module": "./application-invoices"
+  },
+  "simulatePayment": {
+    "module": "./aptexx"
+  },
+  "cancelPayment": {
+    "module": "./aptexx"
+  },
+  "getScreeningSummary": {
+    "module": "./screening"
+  },
+  "getScreeningReportSummary": {
+    "module": "./screening"
+  },
+  "rerunScreening": {
+    "module": "./screening"
+  },
+  "forceRescreening": {
+    "module": "./screening"
+  },
+  "getFullStoryContent": {
+    "module": "./full-story"
+  },
+  "getApplicationSettings": {
+    "module": "./application-settings"
+  },
+  "validResetToken": {
+    "module": "./tokens"
+  }
+}

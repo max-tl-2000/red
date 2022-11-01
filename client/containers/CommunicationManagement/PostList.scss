@@ -1,0 +1,17 @@
+.subtitle {
+  padding: 1rem 0rem;
+}
+
+.itemsList {
+  overflow: auto;
+  height: calc(100vh - 64px);
+  padding: 0rem 1rem;
+}
+
+.no-post-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}

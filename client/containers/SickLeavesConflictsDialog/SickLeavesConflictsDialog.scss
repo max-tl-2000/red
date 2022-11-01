@@ -1,0 +1,32 @@
+@import '../../sass/_colors.scss';
+
+.property-selection-dialog {
+  width: (432rem/16);
+
+  [data-component='dialog-body'] {
+    padding: 0 (20em/16) (20em/16);
+  }
+
+  .info-text {
+    padding-bottom: (10em/16);
+  }
+
+  .actions {
+    padding-right: (12em/16);
+    padding-left: (12em/16);
+  }
+
+  .conflict-unit {
+    margin-left: .5em;
+    opacity: .54;
+  }
+
+  .conflicts-wrapper {
+    margin-top: 1em;
+  }
+
+  .conflict-date {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}

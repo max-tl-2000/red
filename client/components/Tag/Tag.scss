@@ -1,0 +1,24 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.tag {
+  display: inline-block;
+  max-width: (250rem/16);
+  height: (20rem/16);
+  margin: (1rem/16) 0 (1rem/16) (12rem/16);
+  transition: background-color .5s ease-out;
+  border-radius: 1rem;
+
+  &.info {
+    background-color: $grey200;
+  }
+
+  &.warn {
+    background-color: $red100;
+  }
+}
+
+.wrapper {
+  position: relative;
+  padding: (3rem/16) (8rem/16);
+}

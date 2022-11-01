@@ -1,0 +1,30 @@
+@import '../../sass/_colors.scss';
+
+.property {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  [data-red-icon] {
+    width: (16rem/16);
+    height: (16rem/16);
+  }
+}
+
+.propertyInfo {
+  display: inline-block;
+
+  svg {
+    fill: $grey500;
+  }
+
+  &.matching {
+    svg {
+      fill: $grey800;
+    }
+  }
+}
+
+.propertyInfo:nth-child(n+2) {
+  margin-left: (6rem/16);
+}

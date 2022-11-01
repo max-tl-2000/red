@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lease xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  {{#with this}}
+  <NameID>{{nameID}}</NameID>
+  <LeaseExpirationDate>{{leaseEndDate}}</LeaseExpirationDate>
+  {{/with}}
+  {{#if this.charges}}
+  <ChargeAmounts>
+  {{/if}}
+  {{#each this.charges}}
+    <ChargeAmount name={{{externalChargeCode}}} type={{{type}}}>{{amount}}</ChargeAmount>
+    {{#if concessionEndDate}}
+    <ChargeAmount name={{{externalChargeCode}}} type={{{type}}} asofdate={{{concessionEndDate}}}>0</ChargeAmount>
+    {{/if}}
+  {{/each}}
+  {{#if this.charges}}
+  </ChargeAmounts>
+  {{/if}}
+</Lease>

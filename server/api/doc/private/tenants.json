@@ -1,0 +1,804 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/tenants": {
+      "get": {
+        "tags": [
+          "Tenant"
+        ],
+        "summary": "Retrieves a list of tenants",
+        "responses": {
+          "200": {
+            "description": "The tenants were successfully retrieved",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/Tenant"
+              },
+              "type": "array"
+            }
+          }
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "A tenant object",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Tenant"
+            }
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "summary": "Create a tenat",
+        "responses": {
+          "200": {
+            "description": "Tenant was created successfully",
+            "schema": {
+              "$ref": "#/definitions/Tenant"
+            }
+          },
+          "400": {
+            "description": "Bad input, can not create a tenant with the given data"
+          }
+        }
+      }
+    },
+    "/tenants/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the tenant to load",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The tenant",
+            "schema": {
+              "$ref": "#/definitions/Tenant"
+            }
+          },
+          "400": {
+            "description": "Invalid tenant id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Tenant not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads a tenant",
+        "tags": [
+          "Tenant"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a tenant by id",
+        "tags": [
+          "Tenant"
+        ],
+        "parameters": [
+          {
+            "description": "A tenant id.",
+            "required": true,
+            "in": "path",
+            "name": "id",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The tenant was successfully deleted"
+          },
+          "400": {
+            "description": "There is no tenant with the given id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update a tenant",
+        "tags": [
+          "Tenant"
+        ],
+        "parameters": [
+          {
+            "description": "A tenant id.",
+            "required": true,
+            "in": "path",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "description": "A partial tenant object",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Tenant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The tenant was successfully updated"
+          },
+          "400": {
+            "description": "Invalid phone number or reserved tenant name",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "There is no tenant with the given id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{id}/refreshTenantSchema": {
+      "post": {
+        "summary": "Triggers the refresh of database schema and Elastic Search index for tenant",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          }
+        }
+      }
+    },
+    "/tenants/{id}/clearTenantSchema": {
+      "post": {
+        "summary": "Triggers the clear of database schema without deleting admin user",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "404": {
+            "description": "There is no tenant with the given id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{id}/teams": {
+      "get": {
+        "summary": "Returns all the teams present on the tenant",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "400": {
+            "description": "Invalid tenant id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/teams/{teamId}": {
+      "patch": {
+        "summary": "Updates a team from the specified tenant",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "A team id",
+            "in": "path",
+            "name": "teamId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "A partial team object",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Team"
+            }
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "The team was successfully updated",
+            "schema": {
+              "$ref": "#/definitions/Team"
+            }
+          },
+          "400": {
+            "description": "Invalid team id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "There is no team with the given id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/passwordForType": {
+      "patch": {
+        "summary": "Updates the password for Admin, Reva Admin, User Default(tenant password), SFTP, and LRO for the specified tenant",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "Data to be use to update the password for Admin, Reva Admin, User Default(tenant password), SFTP, and LRO",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PasswordForTypes"
+            }
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "The password was successfully updated"
+          },
+          "400": {
+            "description": "Invalid password",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "There is no te with the given id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/closeImportedParties": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the tenant",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Closes imported parties with last activity of a specific property",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "propertyId": {
+                  "description": "The propery id",
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "activityDate": {
+                  "description": "The last activity date",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "propertyId",
+                "activityDate"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "close imported parties Successfully"
+          },
+          "400": {
+            "description": "Invalid inactivity date."
+          },
+          "404": {
+            "description": "The property was not found."
+          }
+        },
+        "summary": "Close all imported parties that had no activity on or after the specified date.",
+        "tags": [
+          "Tenant"
+        ]
+      }
+    },
+    "/tenants/availablePhoneNumbers": {
+      "get": {
+        "tags": [
+          "Tenant"
+        ],
+        "summary": "Retrieves a list available phone numbers for tenants",
+        "responses": {
+          "200": {
+            "description": "The available phone numbers were successfully retrieved",
+            "schema": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/communicationProviderCleanup": {
+      "post": {
+        "tags": [
+          "Tenant"
+        ],
+        "summary": "Triggers a communication provider cleanup",
+        "responses": {
+          "200": {
+            "description": "Cleanup succesfully triggered",
+            "schema": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/refreshLeaseTemplates": {
+      "post": {
+        "summary": "Refresh lease templates for tenant",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was queued for processing succesfully"
+          },
+          "500": {
+            "description": "Server cannot process the request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/ringCentral/token/refresh": {
+      "post": {
+        "summary": "Refreshes a Ring central Auth token",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "500": {
+            "description": "Server cannot process the request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/ringCentral/token": {
+      "post": {
+        "summary": "Requests a Ring Central Auth token based on an auth code",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "500": {
+            "description": "Server cannot process the request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/ringCentral/renewSubscription": {
+      "post": {
+        "summary": "Renews a Ring Center subscription",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "500": {
+            "description": "Server cannot process the request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/ringCentral/authUrl": {
+      "get": {
+        "summary": "Retrieves the url needed as callback for the auth process",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "500": {
+            "description": "Server cannot process the request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{id}/programs": {
+      "get": {
+        "summary": "Returns all the in programs present on the tenant",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tenant"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/Program"
+              },
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid tenant id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/tenants/{tenantId}/generateDomainToken": {
+      "patch": {
+        "summary": "Generates a new domain token",
+        "parameters": [
+          {
+            "description": "A tenant id",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "domain",
+            "in": "body",
+            "type": "string",
+            "description": "The Reva domain (allowed referrer) where this token is valid.",
+            "required": true
+          },
+          {
+            "name": "allowedEndpoints",
+            "in": "body",
+            "type": "array",
+            "description": "The endpoints allowed to be authenticated using this token. If missing, then the 'contactUs` default value will be used",
+            "required": true
+          },
+          {
+            "name": "expiresIn",
+            "in": "body",
+            "type": "string",
+            "description": "Token expiration period. If missing, it will be 1y by default.",
+            "required": true
+          }
+        ],
+        "tags": [
+          "Tenant",
+          "SFTP"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "500": {
+            "description": "Server cannot process the request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Tenant": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "An UUID representing a tenant",
+          "type": "string"
+        },
+        "name": {
+          "description": "Tenant name",
+          "type": "string"
+        }
+      }
+    },
+    "PasswordForTypes": {
+      "properties": {
+        "password": {
+          "description": "new password for admin user",
+          "type": "string"
+        },
+        "prefix": {
+          "description": "The prefix for the SFTP user name (e.g. sftp, lro)",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of the updating process",
+          "enum": [
+            "admin",
+            "reva admin",
+            "user default",
+            "SFTP",
+            "LRO"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "password"
+      ],
+      "type": "object"
+    },
+    "Program": {
+      "properties": {
+        "programId": {
+          "description": "The program id",
+          "type": "string"
+        },
+        "commDirection": {
+          "description": "Since this retuns only in programs, direction will be always 'in'",
+          "type": "string"
+        },
+        "created_at": {
+          "description": "Date when the program was imported",
+          "type": "string"
+        },
+        "updated_at": {
+          "description": "Date when the program was updated",
+          "type": "string"
+        },
+        "description": {
+          "description": "Program description",
+          "type": "string"
+        },
+        "directEmailIdentifier": {
+          "description": "Incoming emails with this identifier will be assciated with this program",
+          "type": "string"
+        },
+        "directPhoneIdentifier": {
+          "description": "Incoming phone communications to this phone number will be associated with this program",
+          "type": "string"
+        },
+        "displayEmail": {
+          "description": "Display email",
+          "type": "string"
+        },
+        "displayPhoneNumber": {
+          "description": "Display phone number",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Program display name",
+          "type": "string"
+        },
+        "name": {
+          "description": "Program name. This is uniq and is used to identify the program on import",
+          "type": "string"
+        },
+        "keywords": {
+          "description": "Program keywords",
+          "schema": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "outsideDedicatedEmail": {
+          "description": "List of emails. Forword incoming emails from the emails list, will be associated with this program",
+          "schema": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "propertyId": {
+          "description": "Property id associated with this program",
+          "type": "string",
+          "format": "uuid"
+        },
+        "sourceId": {
+          "description": "Source id associated with this program",
+          "type": "string",
+          "format": "uuid"
+        },
+        "teamId": {
+          "description": "Team id associated with this program",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "type": "object"
+    },
+    "Team": {
+      "properties": {
+        "name": {
+          "description": "Team name",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Team display name",
+          "type": "string"
+        },
+        "module": {
+          "description": "Team Module",
+          "type": "string"
+        },
+        "description": {
+          "description": "Team description",
+          "type": "string"
+        },
+        "directEmailIdentifier": {
+          "description": "Team Email",
+          "type": "string"
+        },
+        "directPhoneIdentifier": {
+          "description": "Team Phone",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

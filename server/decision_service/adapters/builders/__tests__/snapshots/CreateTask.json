@@ -1,0 +1,14 @@
+{
+  "partyId": "76e2a2e8-f431-11e9-ae2b-6f90233d2346",
+  "category": "Manual",
+  "dueDate": "2019-10-25 00:59:59",
+  "name": "First Task",
+  "state": "Active",
+  "userIds": [
+    "e6231d6c-e3b7-46a3-b548-f95106a1087f"
+  ],
+  "metadata": {
+    "createdByType": "SYSTEM",
+    "unique": true
+  }
+}

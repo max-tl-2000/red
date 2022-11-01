@@ -1,0 +1,298 @@
+{
+  "id": "6a23b998-fd0b-4dc2-b561-afd019e7dd94",
+  "inventoryId": "9e07bc6b-2961-4a10-b18c-198bcd1a66ad",
+  "partyId": "cc74c41f-7cf1-4115-ba59-9506d561fcae",
+  "publishDate": null,
+  "expirationDate": null,
+  "leaseStartDate": null,
+  "created_at": "2016-10-24T20:42:11.704Z",
+  "updated_at": "2016-10-24T20:42:11.704Z",
+  "defaultLeaseLengths": [6, 12],
+  "selections": {
+    "selectedLeaseTerms": [
+      {
+        "id": "c3963322-2b10-49e1-91c7-852bb10a2093",
+        "concessions": [
+        ]
+      },
+      {
+        "id": "7ff28ac0-e7d0-4961-89a1-bbbaf98a9b2e",
+        "concessions": [  
+        ]
+      },
+      {
+        "id": "2f17c406-9c1b-4a52-b3d5-908565f39865",
+        "concessions": [
+          {
+            "id": "0be47cba-c0f0-4601-abdb-dd98dd395f3c"
+          }
+        ]
+      }
+    ],
+    "selectedAdditionalAndOneTimeCharges" :[]
+  },
+  "confirmationNumber": null,
+  "publishedQuoteData": null,
+  "leaseTerms": [
+    {
+      "id": "c3963322-2b10-49e1-91c7-852bb10a2093",
+      "termLength": 6,
+      "period": "month",
+      "leaseNameId": "d3954b09-279e-4c19-a206-bb1ba34c000f",
+      "concessions": [
+        {
+          "id": "e1636625-00f0-4f0c-bcfe-1c7da01dae38",
+          "displayName": "Gift card incentive",
+          "variableAdjustment": false,
+          "relativeAdjustment": "0.00",
+          "absoluteAdjustment": "-100.00",
+          "recurring": false,
+          "recurringCount": 0,
+          "nonRecurringAppliedAt": "first",
+          "optional": true,
+          "hideInSelfService": true,
+          "excludeFromRentFlag": true,
+          "matchingCriteria": "{\"leaseNames\":[\"d3954b09-279e-4c19-a206-bb1ba34c000f\"],\"leaseLengths\":[6,9]}",
+          "startDate": "2016-01-01T00:00:00.000Z",
+          "endDate": null
+        },
+        {
+          "id": "3d123ac9-6719-4f15-a808-21d3ff63f377",
+          "displayName": "Employee rent credit",
+          "variableAdjustment": false,
+          "relativeAdjustment": "0.00",
+          "absoluteAdjustment": "-25.00",
+          "recurring": true,
+          "recurringCount": 0,
+          "nonRecurringAppliedAt": "first",
+          "optional": true,
+          "hideInSelfService": true,
+          "excludeFromRentFlag": false,
+          "matchingCriteria": "{\"leaseNames\":[\"d3954b09-279e-4c19-a206-bb1ba34c000f\"]}",
+          "startDate": "2016-01-01T00:00:00.000Z",
+          "endDate": null
+        }
+      ],
+      "specials": false,
+      "adjustedMarketRent": 3879.7
+    },
+    {
+      "id": "7ff28ac0-e7d0-4961-89a1-bbbaf98a9b2e",
+      "termLength": 9,
+      "period": "month",
+      "leaseNameId": "d3954b09-279e-4c19-a206-bb1ba34c000f",
+      "concessions": [
+        {
+          "id": "e1636625-00f0-4f0c-bcfe-1c7da01dae38",
+          "displayName": "Gift card incentive",
+          "variableAdjustment": false,
+          "relativeAdjustment": "0.00",
+          "absoluteAdjustment": "-100.00",
+          "recurring": false,
+          "recurringCount": 0,
+          "nonRecurringAppliedAt": "first",
+          "optional": true,
+          "hideInSelfService": true,
+          "excludeFromRentFlag": true,
+          "matchingCriteria": "{\"leaseNames\":[\"d3954b09-279e-4c19-a206-bb1ba34c000f\"],\"leaseLengths\":[6,9]}",
+          "startDate": "2016-01-01T00:00:00.000Z",
+          "endDate": null
+        },
+        {
+          "id": "3d123ac9-6719-4f15-a808-21d3ff63f377",
+          "displayName": "Employee rent credit",
+          "variableAdjustment": false,
+          "relativeAdjustment": "0.00",
+          "absoluteAdjustment": "-25.00",
+          "recurring": true,
+          "recurringCount": 0,
+          "nonRecurringAppliedAt": "first",
+          "optional": true,
+          "hideInSelfService": true,
+          "excludeFromRentFlag": false,
+          "matchingCriteria": "{\"leaseNames\":[\"d3954b09-279e-4c19-a206-bb1ba34c000f\"]}",
+          "startDate": "2016-01-01T00:00:00.000Z",
+          "endDate": null
+        }
+      ],
+      "specials": false,
+      "adjustedMarketRent": 3703.35
+    },
+    {
+      "id": "2f17c406-9c1b-4a52-b3d5-908565f39865",
+      "termLength": 12,
+      "period": "month",
+      "leaseNameId": "d3954b09-279e-4c19-a206-bb1ba34c000f",
+      "concessions": [
+        {
+          "id": "0be47cba-c0f0-4601-abdb-dd98dd395f3c",
+          "displayName": "1 month free",
+          "variableAdjustment": false,
+          "relativeAdjustment": "-100.00",
+          "absoluteAdjustment": "0.00",
+          "recurring": false,
+          "recurringCount": 0,
+          "nonRecurringAppliedAt": "first",
+          "optional": false,
+          "hideInSelfService": false,
+          "excludeFromRentFlag": false,
+          "matchingCriteria": "{\"leaseNames\":[\"d3954b09-279e-4c19-a206-bb1ba34c000f\"],\"leaseLengths\":[12]}",
+          "startDate": "2016-01-01T00:00:00.000Z",
+          "endDate": null
+        },
+        {
+          "id": "26ecc993-053d-453a-9505-2980ad338b6a",
+          "displayName": "Special one time incentive",
+          "variableAdjustment": true,
+          "relativeAdjustment": "0.00",
+          "absoluteAdjustment": "-500.00",
+          "recurring": false,
+          "recurringCount": 0,
+          "nonRecurringAppliedAt": "first",
+          "optional": true,
+          "hideInSelfService": true,
+          "excludeFromRentFlag": false,
+          "matchingCriteria": "{\"leaseNames\":[\"d3954b09-279e-4c19-a206-bb1ba34c000f\"],\"leaseLengths\":[12]}",
+          "startDate": "2016-01-01T00:00:00.000Z",
+          "endDate": null
+        },
+        {
+          "id": "3d123ac9-6719-4f15-a808-21d3ff63f377",
+          "displayName": "Employee rent credit",
+          "variableAdjustment": false,
+          "relativeAdjustment": "0.00",
+          "absoluteAdjustment": "-25.00",
+          "recurring": true,
+          "recurringCount": 0,
+          "nonRecurringAppliedAt": "first",
+          "optional": true,
+          "hideInSelfService": true,
+          "excludeFromRentFlag": false,
+          "matchingCriteria": "{\"leaseNames\":[\"d3954b09-279e-4c19-a206-bb1ba34c000f\"]}",
+          "startDate": "2016-01-01T00:00:00.000Z",
+          "endDate": null
+        }
+      ],
+      "specials": true,
+      "adjustedMarketRent": 3527
+    }
+  ],
+  "additionalAndOneTimeCharges": [
+    {
+      "name": "month",
+      "fees": [
+        {
+          "id": "0983603d-1dbf-47ea-b937-33c8e3fa2875--560e2db4-6333-49b1-8652-dba275fb41dc--f4ee8c29-cc3c-489d-8ad6-9998e1f1a4d69",
+          "name": "Appliance Deposit",
+          "displayName": "Appliance deposit",
+          "feeType": "deposit",
+          "quoteSectionName": "deposit",
+          "maxQuantityInQuote": 1,
+          "servicePeriod": null,
+          "variableAdjustment": false,
+          "estimated": false,
+          "relativePrice": null,
+          "absolutePrice": "100.00",
+          "propertyId": "19c29e75-10b5-429f-8c05-c29b49ffd2b2",
+          "originalId": "0983603d-1dbf-47ea-b937-33c8e3fa2875",
+          "isAdditional": true,
+          "parentFeeDisplayName": "Washer-Dryer combo",
+          "parentFeeAmount": 50,
+          "price": "100.00",
+          "amount": "100.00",
+          "visible": false,
+          "selected": false,
+          "quantity": 1
+        },
+        {
+          "id": "bcfab5e6-b92b-490a-a80a-43461a450cc9--811862bd-5455-4253-9408-9b524a60d7990",
+          "name": "Pet Deposit",
+          "displayName": "Pet deposit",
+          "feeType": "deposit",
+          "quoteSectionName": "deposit",
+          "maxQuantityInQuote": 1,
+          "servicePeriod": null,
+          "variableAdjustment": false,
+          "estimated": false,
+          "relativePrice": null,
+          "absolutePrice": "300.00",
+          "propertyId": "19c29e75-10b5-429f-8c05-c29b49ffd2b2",
+          "originalId": "bcfab5e6-b92b-490a-a80a-43461a450cc9",
+          "isAdditional": true,
+          "parentFeeDisplayName": "Pet small (25 lb or less)",
+          "parentFeeAmount": "50.00",
+          "price": "300.00",
+          "amount": "300.00",
+          "visible": false,
+          "selected": false,
+          "quantity": 1
+        },
+        {
+          "id": "3c2cf18e-b64b-4592-9706-e63cc51f2ee2--0b499ccf-8b23-4152-b9e5-68514683a4142",
+          "name": "Pet Deposit Large",
+          "displayName": "Pet deposit",
+          "feeType": "deposit",
+          "quoteSectionName": "deposit",
+          "maxQuantityInQuote": 1,
+          "servicePeriod": null,
+          "variableAdjustment": false,
+          "estimated": false,
+          "relativePrice": null,
+          "absolutePrice": "600.00",
+          "propertyId": "19c29e75-10b5-429f-8c05-c29b49ffd2b2",
+          "originalId": "3c2cf18e-b64b-4592-9706-e63cc51f2ee2",
+          "isAdditional": true,
+          "parentFeeDisplayName": "Pet large (26-60 lb)",
+          "parentFeeAmount": "100.00",
+          "price": "600.00",
+          "amount": "600.00",
+          "visible": false,
+          "selected": false,
+          "quantity": 1
+        },
+        {
+          "id": "f505851e-c4f8-41cf-a41c-7d25ff20711f",
+          "name": "Unit Deposit",
+          "displayName": "Security deposit",
+          "feeType": "deposit",
+          "quoteSectionName": "deposit",
+          "maxQuantityInQuote": 1,
+          "servicePeriod": null,
+          "variableAdjustment": false,
+          "estimated": false,
+          "relativePrice": "100.00",
+          "absolutePrice": null,
+          "propertyId": "19c29e75-10b5-429f-8c05-c29b49ffd2b2",
+          "isAdditional": true,
+          "originalId": "f505851e-c4f8-41cf-a41c-7d25ff20711f",
+          "firstFee": true,
+          "price": null,
+          "amount": null,
+          "visible": true,
+          "selected": true,
+          "leaseTerms": [
+            {
+              "id": "c3963322-2b10-49e1-91c7-852bb10a2093",
+              "termLength": 6,
+              "period": "month",
+              "adjustedMarketRent": 3879.7
+            },
+            {
+              "id": "7ff28ac0-e7d0-4961-89a1-bbbaf98a9b2e",
+              "termLength": 9,
+              "period": "month",
+              "adjustedMarketRent": 3703.35
+            },
+            {
+              "id": "2f17c406-9c1b-4a52-b3d5-908565f39865",
+              "termLength": 12,
+              "period": "month",
+              "adjustedMarketRent": 3527
+            }
+          ],
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

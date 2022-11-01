@@ -1,0 +1,10 @@
+.AppVersion {
+  position: fixed;
+  z-index: 9999;
+  bottom: 36px;
+  left: 102px;
+
+  &.leftAligned {
+    left: 30px;
+  }
+}

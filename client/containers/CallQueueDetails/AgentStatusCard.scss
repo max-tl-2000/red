@@ -1,0 +1,41 @@
+@import '../../sass/_colors.scss';
+
+.avatar {
+  &.available {
+    > div[data-part='badge'] {
+      [data-red-icon] svg {
+        fill: rgba($greenA400, .87);
+      }
+    }
+  }
+
+  &.busy {
+    > div[data-part='badge'] {
+      [data-red-icon] svg {
+        fill: rgba($red500, .87);
+      }
+    }
+  }
+
+  &.not-available {
+    > div[data-part='badge'] {
+      [data-red-icon] svg {
+        fill: rgba($grey600, .87);
+      }
+    }
+  }
+}
+
+.avatarSection {
+  min-width: (32rem/16);
+  min-height: (32rem/16);
+  padding-right: (17rem/16);
+}
+
+.mainSection {
+  justify-content: flex-start;
+
+  > div {
+    padding: .6em .3em !important;
+  }
+}

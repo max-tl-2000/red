@@ -1,0 +1,5 @@
+@import '../../sass/_typography-mixins.scss';
+
+.linkify {
+  @include body();
+}

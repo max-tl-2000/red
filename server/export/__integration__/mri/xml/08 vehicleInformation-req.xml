@@ -1,0 +1,13 @@
+{{#with this}}
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MRI_S-PMRM_VehicleInformation>
+  <entry>
+    <ResidentID>{{nameId}}</ResidentID>
+    <LicensePlate>CJ 01 WEX</LicensePlate>
+    <State>IN</State>
+    <Color>Red</Color>
+    <Make>Ford</Make>
+    <Model>F500</Model>
+  </entry>
+</MRI_S-PMRM_VehicleInformation>
+{{/with}}

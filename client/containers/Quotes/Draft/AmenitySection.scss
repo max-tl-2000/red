@@ -1,0 +1,49 @@
+@import '../../../sass/_colors.scss';
+@import '../../../sass/_responsive.mixins.scss';
+
+.section-content {
+  padding: (24rem/16);
+}
+
+.block,
+.section-content {
+  [data-component='subheader'],
+  [data-component='text'],
+  [data-component='title'] {
+    margin-bottom: 1rem;
+  }
+}
+
+.block {
+  width: 50%;
+  padding-bottom: (32rem/16);
+
+  .simple-table {
+    .header {
+      background: $green200;
+    }
+  }
+
+  &:last-child:nth-child(odd) {
+    width: 100%;
+  }
+
+  &:nth-child(odd):not(:last-child) {
+    padding-right: (16rem/16);
+    border-right: 1px solid $grey200;
+  }
+
+  &:nth-child(even):not(:last-child) {
+    padding-left: (16rem/16);
+  }
+}
+
+@include to('xsmall2') {
+  .block {
+    width: 100%;
+
+    &:nth-child(even):not(:last-child) {
+      padding: 0;
+    }
+  }
+}

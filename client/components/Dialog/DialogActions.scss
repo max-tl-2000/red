@@ -1,0 +1,38 @@
+@import '../../sass/_colors.scss';
+
+.actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  height: (48rem/16);
+  padding: .35rem .5rem;
+
+  &.dividerOnTop {
+    border-top: 1px solid $grey300;
+  }
+
+  &.balancedItems {
+    justify-content: space-between;
+
+    > div > button[data-component='button'] {
+      margin-left: (8rem/16);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  button[data-component='button'] {
+    margin-left: (8rem/16);
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

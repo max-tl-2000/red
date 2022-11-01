@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`logger-util-test normalizeFields when passing a nest object with multiple 2 levels should return stringify all second level 1`] = `
+Object {
+  "levelDifficulty": "easy",
+  "levelId": "level1",
+  "nestedLevelTwo": Object {
+    "levelDifficulty": "medium",
+    "levelId": "level2",
+    "nestedLevelThreeV1": "{\\"levelId\\":\\"level3v1\\",\\"levelDifficulty\\":\\"hard\\"}",
+    "nestedLevelTwoV2": "{\\"levelId\\":\\"level2v2\\",\\"levelDifficulty\\":\\"medium\\"}",
+  },
+}
+`;
+
+exports[`logger-util-test normalizeFields when passing a nested object with 2 levels should return stringify the second level 1`] = `
+Object {
+  "levelDifficulty": "easy",
+  "levelId": "level1",
+  "nestedLevelTwo": Object {
+    "levelDifficulty": "medium",
+    "levelId": "level2",
+  },
+}
+`;
+
+exports[`logger-util-test normalizeFields when passing a nested object with 3 levels or more should return stringify the second level and beyond 1`] = `
+Object {
+  "levelDifficulty": "easy",
+  "levelId": "level1",
+  "nestedLevelTwo": Object {
+    "levelDifficulty": "medium",
+    "levelId": "level2",
+    "nestedLevelThree": "{\\"levelId\\":\\"level3\\",\\"levelDifficulty\\":\\"hard\\",\\"nestedLevelFour\\":{\\"levelId\\":\\"level4\\",\\"levelDifficulty\\":\\"extremly hard\\",\\"nestedLevelFive\\":{\\"levelId\\":\\"level5\\",\\"levelDifficulty\\":\\"Stormy Ascent\\"}}}",
+  },
+}
+`;
+
+exports[`logger-util-test normalizeFields when passing an object with a valid moment object should return the moment property formated 1`] = `
+Object {
+  "levelDifficulty": "easy",
+  "levelId": "level1",
+  "momentValue": "27 Jan, 2021",
+}
+`;
+
+exports[`logger-util-test normalizeFields when passing an object with an invalid moment object should return the moment property as null 1`] = `
+Object {
+  "levelDifficulty": "easy",
+  "levelId": "level1",
+  "momentValue": null,
+}
+`;
+
+exports[`logger-util-test obscureObject should obscure properties on arrays as well 1`] = `
+Object {
+  "anArray": Array [
+    Object {
+      "socSecNumber": "REDACTED",
+    },
+    Object {
+      "token": "REDACTED",
+    },
+    Object {
+      "Token": "REDACTED",
+    },
+    Object {
+      "key": "REDACTED",
+    },
+    Object {
+      "Key": "REDACTED",
+    },
+    Object {
+      "authorization": "REDACTED",
+    },
+    Object {
+      "Authorization": "REDACTED",
+    },
+    Object {
+      "ssn": "REDACTED",
+    },
+    Object {
+      "exceptMe": "I should not be redacted",
+      "password": "REDACTED",
+    },
+    Object {
+      "exceptMe": "I should not be redacted",
+    },
+    "I should not be changed",
+    "Or me since we are strings",
+    Object {
+      "IShouldNotBeRedacted": Object {
+        "foo": "bar",
+      },
+    },
+  ],
+  "another": Object {
+    "field": Object {
+      "foo": "bar",
+    },
+  },
+  "anotherField": "some field",
+  "obscureMe": Object {
+    "ifYouCan": Object {
+      "whenNestedAsArray": Array [
+        Object {
+          "socSecNumber": "REDACTED",
+        },
+        Object {
+          "token": "REDACTED",
+        },
+        Object {
+          "Token": "REDACTED",
+        },
+        Object {
+          "key": "REDACTED",
+        },
+        Object {
+          "Key": "REDACTED",
+        },
+        Object {
+          "authorization": "REDACTED",
+        },
+        Object {
+          "Authorization": "REDACTED",
+        },
+        Object {
+          "ssn": "REDACTED",
+        },
+        Object {
+          "exceptMe": "I should not be redacted",
+          "password": "REDACTED",
+        },
+        Object {
+          "exceptMe": "I should not be redacted",
+        },
+        "I should not be changed",
+        "Or me since we are strings",
+        Object {
+          "IShouldNotBeRedacted": Object {
+            "foo": "bar",
+          },
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`logger-util-test obscureObject should obscure properties on nested objects 1`] = `
+Object {
+  "another": Object {
+    "field": Object {
+      "foo": "bar",
+    },
+  },
+  "anotherField": "some field",
+  "obscureMe": Object {
+    "ifYouCan": Object {
+      "whenNested": Object {
+        "Authorization": "REDACTED",
+        "Key": "REDACTED",
+        "Token": "REDACTED",
+        "authorization": "REDACTED",
+        "exceptMe": "I should not be redacted",
+        "key": "REDACTED",
+        "password": "REDACTED",
+        "socSecNumber": "REDACTED",
+        "ssn": "REDACTED",
+        "token": "REDACTED",
+      },
+    },
+  },
+}
+`;
+
+exports[`logger-util-test obscureObject should obscure the fields on an object 1`] = `
+Object {
+  "Authorization": "REDACTED",
+  "Key": "REDACTED",
+  "Token": "REDACTED",
+  "authorization": "REDACTED",
+  "key": "REDACTED",
+  "password": "REDACTED",
+  "socSecNumber": "REDACTED",
+  "ssn": "REDACTED",
+  "token": "REDACTED",
+}
+`;
+
+exports[`logger-util-test obscureObject should obscure the fields on an object except the ones that do not match the properties to obscure 1`] = `
+Object {
+  "Authorization": "REDACTED",
+  "Key": "REDACTED",
+  "Token": "REDACTED",
+  "another": Object {
+    "field": Object {
+      "foo": "bar",
+    },
+  },
+  "anotherField": "some field",
+  "authorization": "REDACTED",
+  "key": "REDACTED",
+  "password": "REDACTED",
+  "socSecNumber": "REDACTED",
+  "ssn": "REDACTED",
+  "token": "REDACTED",
+}
+`;
+
+exports[`logger-util-test when passing an object with a nested quote object it should remove all quote object properties except the id as quoteId, and remove any cache objects 1`] = `
+Object {
+  "application": Object {
+    "deepQuote": "{\\"deepQuoteId\\":\\"1234\\",\\"quote\\":{\\"id\\":3}}",
+    "quote": 2,
+  },
+  "levelDifficulty": "easy",
+  "levelId": "level1",
+  "nestedLevelTwo": Object {
+    "levelDifficulty": "medium",
+    "levelId": "level2",
+  },
+  "person": Object {
+    "isYedi": true,
+    "name": "yoda",
+  },
+  "quote": "quoteTopLevelId",
+}
+`;

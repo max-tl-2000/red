@@ -1,0 +1,26 @@
+.mainContent {
+  display: inline-block;
+  width: 100%;
+  height: (96rem/16);
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-top: (20rem/16);
+  opacity: .54;
+
+  &.selected {
+    opacity: 1;
+
+    svg {
+      fill: #44a7f5;
+    }
+  }
+}
+
+.text {
+  padding-top: (8rem/16);
+  text-align: center;
+}

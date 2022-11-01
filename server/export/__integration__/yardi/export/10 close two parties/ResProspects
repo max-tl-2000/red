@@ -1,0 +1,4 @@
+ResProspects,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Prospect_Code,Ref_Prospect_Id,Tenant_Code,Ext_Ref_Tenant_Id,FirstName,MiddleName,LastName,Address1,City,State,Zipcode,HowLong,CellPhone,Email,LeaseStep,Status,Preferred_Rent,Preferred_Bedrooms,Preferred_Bath,Preferred_MoveIn,Property_Code,UnitType_Code,Unit_Code,LeaseFrom,LeaseTo,Source,Agent,First_Contacted_On,Date_Show,Date_Applied,Date_Approved,Date_Canceled,Date_Denied,Notes,LeaseTerm,FirstContactType
+"0001000p",,"0000001t",,"Luke Skywalker ""Jedi",,"house""",,,,,,"2025550163","luke@reva.tech","90","3",,"0",,"9/4/2018","cove","RevaApp","RevaApp","9/4/2018","9/4/2019","Reva","Foo","9/4/2018",,,,"9/4/2018",,":Reva","0","Other"
+"0001001p",,"0000002t",,"Luke Skywalker ""Jedi",,"house""",,,,,,"2025550163",,"90","4",,"0",,"9/4/2018","cove","RevaApp","RevaApp","9/4/2018","9/4/2019","Reva","Foo","9/4/2018",,,,"9/4/2018",,":Reva","0","Other"

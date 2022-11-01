@@ -1,0 +1,301 @@
+diff --git a/node_modules/babel-plugin-auto-logger/lib/index.js b/node_modules/babel-plugin-auto-logger/lib/index.js
+index c080bae..be06f46 100644
+--- a/node_modules/babel-plugin-auto-logger/lib/index.js
++++ b/node_modules/babel-plugin-auto-logger/lib/index.js
+@@ -39,7 +39,7 @@ function babelPluginAutoLogger(api) {
+     post: _setup.default.post,
+     pre: _setup.default.pre,
+     visitor: {
+-      'Function|CatchClause': _visitors.default.insertExpressionStatement,
++      Function: _visitors.default.insertExpressionStatement,
+       Program: _visitors.default.program
+     }
+   };
+diff --git a/node_modules/babel-plugin-auto-logger/lib/utils.js b/node_modules/babel-plugin-auto-logger/lib/utils.js
+index ea8d420..8c2cfb6 100644
+--- a/node_modules/babel-plugin-auto-logger/lib/utils.js
++++ b/node_modules/babel-plugin-auto-logger/lib/utils.js
+@@ -1,25 +1,25 @@
+-"use strict";
++'use strict';
+ 
+-Object.defineProperty(exports, "__esModule", {
+-  value: true
++Object.defineProperty(exports, '__esModule', {
++  value: true,
+ });
+ exports.default = exports.privateApi = void 0;
+ 
+-var types = _interopRequireWildcard(require("@babel/types"));
++const types = _interopRequireWildcard(require('@babel/types'));
+ 
+-var _arguments = _interopRequireDefault(require("./arguments"));
++const _arguments = _interopRequireDefault(require('./arguments'));
+ 
+-var _logging = _interopRequireDefault(require("./logging"));
++const _logging = _interopRequireDefault(require('./logging'));
+ 
+-var _sourceFile = _interopRequireDefault(require("./source-file"));
++const _sourceFile = _interopRequireDefault(require('./source-file'));
+ 
+-var _constants = _interopRequireDefault(require("./constants"));
++const _constants = _interopRequireDefault(require('./constants'));
+ 
+ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+ 
+-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
++function _getRequireWildcardCache() { if (typeof WeakMap !== 'function') return null; const cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+ 
+-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
++function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== 'object' && typeof obj !== 'function') { return { default: obj }; } const cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } const newObj = {}; const hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (const key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { const desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+ 
+ // services
+ // constants
+@@ -140,15 +140,48 @@ privateApi.getLocation = path => {
+     loc: {
+       start: {
+         column,
+-        line
+-      } = {}
+-    } = {}
++        line,
++      } = {},
++    } = {},
+   } = path.node || {};
+   return {
+     column,
+-    line
++    line,
+   };
+ };
++
++const findIdentifierName = path => {
++  let count = 0;
++  while (true) {
++    const parentPath = path.parentPath;
++    count++;
++    if (!parentPath || count === 5) return '';
++    if (parentPath.type === 'CallExpression') {
++      const callee = ((parentPath.node || {}).callee || {});
++      const name = callee.name;
++
++      if (name && name !== 'withCachedPromise' && name !== '_asyncGenerator') {
++        return name;
++      }
++
++      const object = callee.object;
++      const property = callee.property;
++
++      if (object && object.name && property && property.name) {
++        return `${object.name}.${property.name}`;
++      }
++
++    }
++
++    if (parentPath.type === 'VariableDeclarator') {
++      const name = ((parentPath.node || {}).id || {}).name;
++      if (name) return name;
++    }
++
++    path = parentPath;
++  }
++};
++
+ /**
+  * Get the name for the path where we want to call logger.
+  * If the node under path represents a function will return function name
+@@ -157,7 +190,6 @@ privateApi.getLocation = path => {
+  * @return {String|undefined} name - function name if found
+  */
+ 
+-
+ privateApi.getName = path => {
+   const isCatchClause = types.isCatchClause(path);
+ 
+@@ -168,7 +200,7 @@ privateApi.getName = path => {
+   const {
+     container = {},
+     node = {},
+-    parent = {}
++    parent = {},
+   } = path;
+ 
+   if (node.id) {
+@@ -187,11 +219,25 @@ privateApi.getName = path => {
+   }
+ 
+   if (parent.left && parent.left.property) {
++    let name = parent.left.property.name;
++
++    const parentPath = (((((path.parentPath || {}).parentPath || {}).parentPath || {}).parentPath || {}).parentPath || {});
++
++    if (parentPath.type === 'ClassBody') {
++      const parentParentPath = parentPath.parentPath || {};
++
++      if (parentParentPath.type === 'ClassDeclaration') {
++        const parentNode = parentParentPath.node || {};
++        const id = parentNode.id || {};
++        name = `${id.name}:${name}`;
++      }
++    }
++
+     // expression declaration (value is a function)
+     // example:
+     //    obj.prop = () => {/* code */}
+     //    obj.prop = function () {/* code */}
+-    return parent.left.property.name;
++    return name;
+   }
+ 
+   if (parent.left && parent.left.name) {
+@@ -203,7 +249,7 @@ privateApi.getName = path => {
+   }
+ 
+   const {
+-    key: nodeKey = {}
++    key: nodeKey = {},
+   } = node;
+ 
+   if (nodeKey && nodeKey.name) {
+@@ -213,11 +259,26 @@ privateApi.getName = path => {
+     //    class MyClass {
+     //      methodName() {/* code */}
+     //    }
+-    return nodeKey.name;
++
++
++    let name = nodeKey.name;
++    const parentPath = path.parentPath || {};
++
++    if (parentPath.type === 'ClassBody') {
++      const parentParentPath = parentPath.parentPath || {};
++
++      if (parentParentPath.type === 'ClassDeclaration') {
++        const parentNode = parentParentPath.node || {};
++        const id = parentNode.id || {};
++        name = `${id.name}:${name}`;
++      }
++    }
++
++    return name;
+   }
+ 
+   const {
+-    key: parentKey = {}
++    key: parentKey = {},
+   } = parent;
+ 
+   if (parentKey && parentKey.name) {
+@@ -234,8 +295,8 @@ privateApi.getName = path => {
+ 
+   const {
+     callee: {
+-      property
+-    } = {}
++      property,
++    } = {},
+   } = parent;
+ 
+   if (property && property.name === 'catch') {
+@@ -246,10 +307,16 @@ privateApi.getName = path => {
+   }
+ 
+   if (path.inList && Number.isInteger(path.key)) {
++    let outName = `array-item-${path.key}`;
++
++    const name = findIdentifierName(path);
++    if (name) {
++      outName = `${name}:${outName}`;
++    }
+     // anonymous function that is an item of Array
+     // example:
+     //    arr = [(p) => {/*code*/}]
+-    return `array-item-${path.key}`;
++    return outName;
+   }
+ 
+   return undefined;
+@@ -305,7 +372,7 @@ privateApi.getDefaultLogLevelName = (path, state, knownData) => {
+   const {
+     levelForMemberExpressionCatch,
+     levelForTryCatch,
+-    levels
++    levels,
+   } = state.babelPluginLoggerSettings.loggingData;
+   const isCatchClause = types.isCatchClause(path);
+ 
+@@ -343,7 +410,7 @@ privateApi.getDefaultLogLevelName = (path, state, knownData) => {
+ 
+ privateApi.getLoggingMethod = (path, state, knownData, defaultLogLevelName) => {
+   const {
+-    levels
++    levels,
+   } = state.babelPluginLoggerSettings.loggingData;
+ 
+   const levelsByPriority = _logging.default.getLevelsByPriority();
+@@ -394,7 +461,7 @@ privateApi.insertLogging = (path, insertPath, state, partialData) => {
+     column: partialData.column,
+     line: partialData.line,
+     name: partialData.name,
+-    source
++    source,
+   };
+   const useLogLevel = privateApi.getLogLevel(path, state, knownData);
+ 
+@@ -439,11 +506,11 @@ service.isValidPathAndState = (path, state) => {
+   }
+ 
+   const {
+-    filename
++    filename,
+   } = state.file.opts;
+   const {
+     sourceMatcher,
+-    sourceExcludeMatcher
++    sourceExcludeMatcher,
+   } = state.babelPluginLoggerSettings;
+   const allowFromSource = sourceMatcher.test(filename);
+ 
+@@ -454,8 +521,17 @@ service.isValidPathAndState = (path, state) => {
+ 
+   const excludeFromSource = sourceExcludeMatcher.test(filename); // if file is excluded from sources => stop
+ 
++  if (!excludeFromSource) {
++    const { loggingData = {} } = state.opts;
++
++    if (typeof loggingData.skipLogger === 'function') {
++      return !loggingData.skipLogger(path);
++    }
++  }
++
+   return !excludeFromSource;
+ };
++
+ /**
+  * Add logger to the source code.
+  * Source code can represent a function or catch.
+@@ -488,7 +564,7 @@ service.addLogger = (path, state) => {
+ 
+   const {
+     column,
+-    line
++    line,
+   } = privateApi.getLocation(insertPath);
+   const sourceCode = column !== undefined && line !== undefined;
+ 
+@@ -503,7 +579,7 @@ service.addLogger = (path, state) => {
+     privateApi.insertLogging(path, insertPath, state, {
+       column,
+       line,
+-      name
++      name,
+     });
+     return true;
+   }
+@@ -512,5 +588,5 @@ service.addLogger = (path, state) => {
+ }; // only for testing
+ 
+ 
+-var _default = service;
++const _default = service;
+ exports.default = _default;

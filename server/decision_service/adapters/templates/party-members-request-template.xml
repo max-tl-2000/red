@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:Corticon" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <soapenv:Header/>
+  <soapenv:Body>
+    {{#with this}}
+    <urn:CorticonRequest decisionServiceName="{{dsName}}">
+      <WorkDocuments>
+        <Party id="Party_id_1">
+          <created_at>{{ created_at }}</created_at>
+          <assignedProperty>{{ assignedProperty }}</assignedProperty>
+          <mostRecentInboundCommTime>{{ mostRecentInboundCommTime }}</mostRecentInboundCommTime>
+          <NoResponseCounter>{{ noResponseCounter }}</NoResponseCounter>
+          <partyOwnerUUID>{{ partyOwnerUUID }}</partyOwnerUUID>
+          <createdFromCommId>{{ createdFromCommId }}</createdFromCommId>
+          <UUID>{{ id }}</UUID>
+          <workflowState>{{ workflowState }}</workflowState>
+          <workflowName>{{ workflowName }}</workflowName>
+          <leaseType>{{ leaseType }}</leaseType>
+          <propertyTimeZone>{{ propertyTimeZone }}</propertyTimeZone>
+        </Party>
+        {{#each partyMembers}}
+        <PartyMember id="PartyMember_id_{{increment @index}}">
+          <created_at>{{ created_at }}</created_at>
+          <lastCommunicationDate>{{ lastCommunicationDate }}</lastCommunicationDate>
+          <UUID>{{ id }}</UUID>
+          <modifiedByUUID>{{ modifiedBy }}</modifiedByUUID>
+          <hasContactInfo>{{ hasContactInfo }}</hasContactInfo>
+          <personUUID>{{ personId }}</personUUID>
+          <isActive>{{ isActive }}</isActive>
+          <hasAnonymousEmail>{{ hasAnonymousEmail }}</hasAnonymousEmail>
+          {{#with personApplication}}
+          <personApplication id="PersonApplication_id_1">
+            <applicationStatus xsi:nil="true">{{ applicationStatus }}</applicationStatus>
+            <completionDate xsi:nil="true">{{ completionDate }}</completionDate>
+            <created_at xsi:nil="true">{{ created_at }}</created_at>
+            <dateApplicationOpened xsi:nil="true">{{ dateApplicationOpened }}</dateApplicationOpened>
+            <dateApplicationPaid xsi:nil="true">{{ dateApplicationPaid }}</dateApplicationPaid>
+            <dateLinkSent xsi:nil="true">{{ dateLinkSent }}</dateLinkSent>
+            <UUID xsi:nil="true">{{ id }}</UUID>
+          </personApplication>
+          {{/with}}
+          {{#each partyMemberTasks}}
+          <task id="Task_id_{{id}}_{{increment @index}}">
+            <category>{{ category }}</category>
+            <dueDate xsi:nil="true">{{ dueDate }}</dueDate>
+            <name>{{ name }}</name>
+            <state>{{ state }}</state>
+            <taskOwnerUUID>{{ taskOwner }}</taskOwnerUUID>
+            <UUID>{{ id }}</UUID>
+            <created_at>{{ created_at }}</created_at>
+            <personUUID>{{ personId }}</personUUID>
+            <createdByUUID>{{ createdBy }}</createdByUUID>
+            <completionDate>{{ completionDate }}</completionDate>
+          </task>
+          {{/each}}
+        </PartyMember>
+        {{/each}}
+        <ThresholdsAndSLAs id="ThresholdsAndSLAs_id_1">
+          <ApplicationCompletedTimeSeconds xsi:nil="true" />
+          <ApplicationOpenTimeSeconds xsi:nil="true" />
+          <ApplicationPaidTimeSeconds xsi:nil="true" />
+          <CallLengthRequirementsSeconds xsi:nil="true" />
+          <NoResponseCount xsi:nil="true" />
+          <SecondsSinceProspectCommunication xsi:nil="true" />
+          <MoveOutNoticePeriodDays xsi:nil="true">{{ moveoutNoticePeriodDays }}</MoveOutNoticePeriodDays>
+        </ThresholdsAndSLAs>
+      </WorkDocuments>
+    </urn:CorticonRequest>
+    {{/with}}
+  </soapenv:Body>
+</soapenv:Envelope>

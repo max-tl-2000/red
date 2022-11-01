@@ -1,0 +1,24 @@
+@import '../../sass/_responsive.mixins.scss';
+
+.form {
+  padding: 2rem 1.8rem 0;
+}
+
+.subheader {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.bedrooms-field {
+  margin-top: 1rem;
+}
+
+.cashAvailable {
+  [data-component='sg-elements'] {
+    margin-top: .8rem;
+  }
+}
+
+.buttonbar-item {
+  width: 20%;
+}

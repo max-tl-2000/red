@@ -1,0 +1,35 @@
+@import '../../sass/_colors.scss';
+
+.closedAppBar {
+  background-color: $grey500;
+}
+
+.appBarMainSection {
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+
+.page-title {
+  padding-left: 1rem;
+}
+
+.appBarActions {
+  width: 40%;
+  min-width: (230rem/16);
+}
+
+.commBox {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+.partyStateBar {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}

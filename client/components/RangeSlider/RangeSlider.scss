@@ -1,0 +1,128 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: (15em/16);
+
+  label {
+    @include caption();
+    @include textSecondary();
+  }
+}
+
+.input-textbox {
+  display: inline-block;
+}
+
+.range-slider {
+  padding: 0 (7.5rem/16);
+  vertical-align: top;
+
+  > label {
+    @include caption();
+    @include textSecondary();
+
+    line-height: 1.8rem;
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: -.5rem;
+
+    .current-value {
+      @include textPrimary();
+
+      margin-left: .5rem;
+    }
+  }
+
+  .noUi-horizontal {
+    position: relative;
+    top: (25em/16);
+
+    .noUi-handle {
+      background: $white;
+    }
+  }
+
+  .range-field {
+    height: 15px;
+
+    &.hasInput {
+      position: relative;
+      top: (16em/16);
+      float: left;
+      width: 70%;
+    }
+
+    .range-label {
+      border: (3em/16) solid $blue500;
+      background-color: $white;
+    }
+  }
+
+  :global {
+    .input-field {
+      display: inline-block;
+      margin-left: (25em/16);
+
+      input {
+        width: (50em/16);
+        text-align: center;
+      }
+    }
+
+    .noUi-connect {
+      height: (1rem/16);
+      background-color: $blue500;
+    }
+
+    .noUi-horizontal {
+      height: (1rem/16);
+
+      .noUi-handle {
+        left: 0;
+        transform: translateX(-50%);
+        background-color: $white;
+
+        &.noUi-active {
+          background-color: $blue500;
+        }
+      }
+    }
+
+    .noUi-background {
+      height: (1rem/16);
+    }
+
+    .noUi-target .range-label {
+      top: (-18em/16);
+      border: (3em/16) solid $blue500;
+      background-color: $white;
+    }
+
+    .noUi-target .noUi-active.noUi-handle {
+      width: 0;
+      height: 0;
+    }
+
+    .noUi-target .noUi-active .range-label {
+      border: none;
+      background-color: $blue500;
+    }
+  }
+}
+
+.hasSlider {
+  :global {
+    .noUi-target .noUi-active .range-label {
+      transform: none;
+      border-radius: (15em/16);
+
+      span {
+        opacity: 0;
+      }
+    }
+  }
+}

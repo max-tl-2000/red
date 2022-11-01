@@ -1,0 +1,44 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_fonts.scss';
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: (48rem/16);
+  height: (48rem/16);
+  margin: 1.5rem auto 0 auto;
+  border-radius: 50%;
+  background: #d8d8d8;
+
+  [data-red-icon] {
+    width: (32rem/16);
+    height: (32rem/16);
+  }
+}
+
+.noResults {
+  width: (250rem/16);
+  margin: 0 auto;
+  padding: (24rem/16);
+}
+
+.message {
+  margin-top: 1rem;
+  margin-bottom: (32rem/16);
+  text-align: center;
+}
+
+.suggestionsTitle {
+  font-size: (14rem/16);
+  margin-top: 1rem;
+}
+
+.suggestionsList {
+  margin-left: 1rem;
+
+  li {
+    list-style-type: disc;
+    color: $grey600;
+  }
+}

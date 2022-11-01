@@ -1,0 +1,15 @@
+.flyout {
+  min-width: auto;
+  max-width: 400px;
+  margin: (5rem/16);
+
+  .content {
+    font-size: 13px;
+    line-height: 1.3em;
+    padding: 1em 1.3em;
+    text-align: left;
+    color: #fff;
+    border-radius: 3rem/16;
+    background: #000;
+  }
+}

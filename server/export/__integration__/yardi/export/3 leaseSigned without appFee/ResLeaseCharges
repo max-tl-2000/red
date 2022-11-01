@@ -1,0 +1,10 @@
+ResLeaseCharges,,,,,,
+Tenant_Code,Ext_Ref_Tenant_Id,Charge_Code,From_Date,To_Date,Amount,Property_Code
+"0000001t",,"chargeCode-oneTime-A","6/27/2017","7/27/2017","65.00","cove"
+"0000001t",,"chargeCode-oneTime-B","6/27/2017","7/27/2017","66.00","cove"
+"0000001t",,"chargeCode-oneTime-C","6/27/2017","7/27/2017","67.00","cove"
+"0000001t",,"chargeCode-additional-A","6/27/2017",,"65.00","cove"
+"0000001t",,"chargeCode-additional-B","6/27/2017",,"66.00","cove"
+"0000001t",,"chargeCode-additional-C","6/27/2017",,"67.00","cove"
+"0000001t",,"brconces","6/27/2017","7/27/2017","-100","cove"
+"0000001t",,"brconces","6/27/2017","8/27/2017","-50","cove"

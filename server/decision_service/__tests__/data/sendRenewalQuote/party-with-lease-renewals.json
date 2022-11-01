@@ -1,0 +1,156 @@
+
+{
+    "id": "46d54c18-d7e7-4a08-afc0-e4b4f9e40054",
+    "pets": null,
+    "comms": [],
+    "score": "prospect",
+    "state": "Applicant",
+    "tasks": [],
+    "teams": ["e4143bcd-aabe-486f-ba2c-a8b1f6b539d9"],
+    "events": [],
+    "leases": [],
+    "quotes": [{ "id": "testId" }],
+    "userId": "cb40d533-6793-4d3e-8450-0a8d03f95ae7",
+    "endDate": null,
+    "members": 
+    [
+        {
+            "person": {
+                "id": "7291d3cb-55f6-4a9a-a110-ca94f4989df9",
+                "dob": null,
+                "idType": "State",
+                "idState": null,
+                "idValue": null,
+                "fullName": "Darius-2",
+                "idCountry": null,
+                "created_at": "2019-06-14T11:40:38.174738+00:00",
+                "idProvince": null,
+                "mergedWith": null,
+                "updated_at": "2019-06-14T11:40:38.174738+00:00",
+                "modified_by": "cb40d533-6793-4d3e-8450-0a8d03f95ae7",
+                "preferredName": null,
+                "isSuspiciousContent": false
+            },
+            "contactInfo": [
+                {
+                    "id": "bf8bb37a-868e-4312-8a35-5b20278d65f0",
+                    "type": "email",
+                    "value": "dbucsa+2@reva.tech",
+                    "isSpam": false,
+                    "imported": false,
+                    "metadata": {},
+                    "personId": "7291d3cb-55f6-4a9a-a110-ca94f4989df9",
+                    "isPrimary": true,
+                    "created_at": "2019-06-14T11:40:38.174738+00:00",
+                    "updated_at": "2019-06-14T11:40:38.174738+00:00",
+                    "markedAsSpamBy": null
+                }
+            ],
+            "partyMember": {
+                "id": "55c82f24-91d4-4a47-835e-3fd536b7fb3e",
+                "isSpam": false,
+                "endDate": null,
+                "partyId": "46d54c18-d7e7-4a08-afc0-e4b4f9e40054",
+                "external": {},
+                "personId": "7291d3cb-55f6-4a9a-a110-ca94f4989df9",
+                "startDate": "2019-06-14T11:40:38.174738+00:00",
+                "created_at": "2019-06-14T11:40:38.184+00:00",
+                "externalId": null,
+                "memberType": "Resident",
+                "updated_at": "2019-06-14T11:40:38.184+00:00",
+                "memberState": "Lead",
+                "modified_by": "cb40d533-6793-4d3e-8450-0a8d03f95ae7",
+                "guaranteedBy": null
+            }
+        },
+        {
+            "person": {
+                "id": "50ceade4-070a-4d7a-a5d3-474b19c0875b",
+                "dob": null,
+                "idType": "State",
+                "idState": null,
+                "idValue": null,
+                "fullName": "Darius-1",
+                "idCountry": null,
+                "created_at": "2019-06-14T11:40:16.557924+00:00",
+                "idProvince": null,
+                "mergedWith": null,
+                "updated_at": "2019-06-14T11:40:16.557924+00:00",
+                "modified_by": "cb40d533-6793-4d3e-8450-0a8d03f95ae7",
+                "preferredName": null,
+                "isSuspiciousContent": false
+            },
+            "contactInfo": [
+                {
+                    "id": "3c2dd88e-8132-4f40-bb4c-fb95d6e1e876",
+                    "type": "email",
+                    "value": "dbucsa+1@reva.tech",
+                    "isSpam": false,
+                    "imported": false,
+                    "metadata": {},
+                    "personId": "50ceade4-070a-4d7a-a5d3-474b19c0875b",
+                    "isPrimary": true,
+                    "created_at": "2019-06-14T11:40:16.557924+00:00",
+                    "updated_at": "2019-06-14T11:40:16.557924+00:00",
+                    "markedAsSpamBy": null
+                }
+            ],
+            "partyMember": {
+                "id": "f4f79f66-80d4-4f56-b655-b43d9e9c36c2",
+                "isSpam": false,
+                "endDate": null,
+                "partyId": "46d54c18-d7e7-4a08-afc0-e4b4f9e40054",
+                "external": {},
+                "personId": "50ceade4-070a-4d7a-a5d3-474b19c0875b",
+                "startDate": "2019-06-14T11:40:16.557924+00:00",
+                "created_at": "2019-06-14T11:40:16.681+00:00",
+                "externalId": null,
+                "memberType": "Resident",
+                "updated_at": "2019-06-14T11:40:16.681+00:00",
+                "memberState": "Contact",
+                "modified_by": "cb40d533-6793-4d3e-8450-0a8d03f95ae7",
+                "guaranteedBy": null
+            }
+        }
+    ],    
+    "children": null,
+    "invoices": null,
+    "metadata": {},
+    "vehicles": null,
+    "leaseType": "traditional",
+    "ownerTeam": "e4143bcd-aabe-486f-ba2c-a8b1f6b539d9",
+    "startDate": "2019-06-14T11:40:16.557924+00:00",
+    "created_at": "2019-06-14T11:40:16.601+00:00",
+    "invOnHolds": null,
+    "mergedWith": null,
+    "promotions": [],
+    "updated_at": "2019-06-14T11:42:19.867621+00:00",
+    "modified_by": "cb40d533-6793-4d3e-8450-0a8d03f95ae7",
+    "partyGroupId": "638aec34-80da-49c9-bdf0-ec3bbf95601c",
+    "transactions": null,
+    "workflowName": "renewal",
+    "collaborators": ["cb40d533-6793-4d3e-8450-0a8d03f95ae7"],
+    "activeLeaseData": [
+        {
+            "id": "1ca17c58-7e21-4190-a98f-2afab175e3eb",
+            "state": "none",
+            "leaseId": "642616c2-369d-4059-98f7-b09af53ded8d",
+            "partyId": "46d54c18-d7e7-4a08-afc0-e4b4f9e40054",
+            "created_at": "2019-06-14T11:42:26.416368+00:00",
+            "updated_at": "2019-06-14T11:42:26.416368+00:00"
+        }
+    ],
+    "workflowState": "active",
+    "emailIdentifier": "46d54c18d7e74a08afc0",
+    "screeningResults": {
+        "submissionRequests": null,
+        "submissionResponses": null
+    },
+    "partyApplications": [],
+    "assignedPropertyId": "fef001b1-756e-4360-b38a-0e732b0b0ea0",
+    "personApplications": null,
+    "storedUnitsFilters": {},
+    "teamPropertyProgramId": null,
+    "qualificationQuestions": {},
+    "version": "5072d13b-b2de-49e9-9805-7312545dd6d4"
+}

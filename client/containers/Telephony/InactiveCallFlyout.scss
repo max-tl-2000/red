@@ -1,0 +1,42 @@
+@import '../../sass/_colors';
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  > [data-component] {
+    max-width: 8.25rem;
+  }
+}
+
+.overflow-icon {
+  [data-red-icon] {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.overflow-menu {
+  padding-left: .5em;
+
+  [data-component='text'],
+  [data-component='title'],
+  [data-component='subheader'] {
+    color: $black;
+
+    > span {
+      color: $black;
+    }
+  }
+}
+
+.block-sender-dialog {
+  [data-component='dialog-overlay'] {
+    max-width: 35rem;
+  }
+}
+
+.undo-admin {
+  padding-top: 1em;
+}

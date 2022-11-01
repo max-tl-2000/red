@@ -1,0 +1,257 @@
+@import '../../sass/_colors.scss';
+$titleHeight: (48rem/16);
+$columnPadding: (12rem/16);
+
+.pageStyle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dashboardNavbar {
+  flex: 0 0 auto;
+}
+
+.dashboardContainer {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  background: $grey100;
+}
+
+:global .kanbanColumn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  min-height: 100%;
+
+  &.hide-nav {
+    right: 0;
+    left: 0;
+
+    .kanbanNavigator {
+      display: none;
+    }
+  }
+}
+
+.kanbanPlaceholder {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: (48rem/16);
+  background: $blue500;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, .15);
+}
+
+:global .kanbanContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: (48rem/16);
+  display: flex;
+  width: 125%;
+  transition: transform .7s cubic-bezier(.03,1.01,.48,1);
+
+  &.shouldLeaveRoomForBanner {
+    .swimlane .swimlane-content {
+      top: 6.5rem;
+    }
+  }
+
+  .swimlane {
+    position: relative;
+    flex: 1 1 auto;
+
+    .swimlane-title {
+      font-size: 1.071rem;
+      font-weight: 500;
+      line-height: (24rem/16);
+      position: relative;
+      z-index: 1;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      height: $titleHeight;
+      padding: (11rem/16) $columnPadding 0;
+      letter-spacing: (.1rem/16);
+
+      .count {
+        margin-left: (12rem/16);
+        opacity: .69;
+      }
+    }
+
+    .swimlane-content {
+      position: absolute;
+      top: $titleHeight;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      .gm-scroll-view {
+        > div {
+          padding: (2 * $columnPadding) $columnPadding;
+        }
+      }
+    }
+  }
+}
+
+:global .kanbanNavigator {
+  div {
+    position: absolute;
+    z-index: 1;
+    top: $titleHeight;
+    bottom: 0;
+    left: 0;
+    width: (48rem/16);
+    padding: (12rem/16);
+
+    span {
+      display: none;
+    }
+
+    [data-red-icon] {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -$columnPadding;
+      margin-left: -$columnPadding;
+    }
+
+    &.navigatorRight {
+      right: 0;
+      left: auto;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: rgba(0,0,0,.05);
+    }
+  }
+}
+
+.action-menu-trigger {
+  position: fixed;
+  z-index: 2; // navigation bars use zIndex, that's why we need to add this
+  right: (24rem/16);
+  bottom: (24rem/16);
+}
+
+@media only screen and (max-width: 960px) {
+  // medium starts at 961
+
+  .action-menu-trigger {
+    bottom: (62rem/16);
+  }
+
+  :global .kanbanContainer .swimlane .swimlane-content {
+    bottom: $titleHeight;
+  }
+
+  :global .kanbanContainer {
+    left: 1rem;
+  }
+
+  :global .kanbanNavigator {
+    div {
+      line-height: (24rem/16);
+      top: auto;
+      bottom: 0;
+      width: 50%;
+      height: $titleHeight;
+      text-align: center;
+      background: #eee;
+
+      i {
+        display: none;
+      }
+
+      span {
+        display: inline;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .pageStyle {
+    :global .fixed-action-btn {
+      bottom: (56rem/16);
+    }
+  }
+}
+
+.calendarColumn {
+  flex: 0 0 auto;
+}
+
+:global .toast {
+  margin: (20rem/16);
+  padding: 0;
+  text-align: center;
+}
+
+:global #toast-container {
+  top: auto;
+  right: auto;
+  bottom: 1%;
+  left: 1%;
+}
+
+:global {
+  .swimlane-title {
+    color: rgba(#fff, .75);
+  }
+
+  .swimlane {
+    &:hover {
+      background: rgba(0,0,0,.05);
+
+      .swimlane-title {
+        color: #fff;
+        background: rgba(0,0,0,.12);
+      }
+    }
+  }
+}
+
+.banner {
+  position: absolute;
+  z-index: 1; // cards will appear on top of the shadow otherwise
+  top: 48px;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 56px;
+  padding-right: 8px;
+  background-color: rgba(207, 216, 220, .54);
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, .15);
+
+  [data-typography-element='true'] {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-right: 16px;
+    color: $purpleA400;
+  }
+
+  [data-component='button'] {
+    z-index: 2;
+  }
+}
+
+.telephonyErrorBanner {
+  position: absolute;
+  z-index: 1;
+  top: 48px;
+  right: 0;
+  left: 0;
+  height: 56px;
+  padding: 0 1em;
+}

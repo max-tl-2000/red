@@ -1,0 +1,11 @@
+@import '../../../../client/sass/_colors.scss';
+
+.payment-received {
+  max-width: 25em;
+
+  align-content: center;
+
+  .count-down {
+    margin-top: 1em;
+  }
+}

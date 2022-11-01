@@ -1,0 +1,93 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/amenities": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The property id",
+            "in": "query",
+            "name": "propertyId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The category",
+            "in": "query",
+            "name": "category",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The subCategory",
+            "in": "query",
+            "name": "subCategory",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All existing amenities associated to the given property or to the given category and subCategory",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/Amenity"
+              },
+              "type": "array"
+            }
+          },
+          "500": {
+            "description": "Error getting amenities",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Load all the amenities associated to the given propertyId or to the given category and subCategory with their respectives amenity type",
+        "tags": ["Amenities"]
+      }
+    }
+  },
+  "definitions": {
+    "Amenity": {
+      "properties": {
+        "adjustment": {
+          "description": "extra amount per amenity",
+          "type": "integer"
+        },
+        "type": {
+          "description": "the type of amenity",
+          "type": "string"
+        },
+        "amenityTypeName": {
+          "description": "the amenity type name",
+          "type": "string"
+        },
+        "description": {
+          "description": "the description of the amenity",
+          "type": "string"
+        },
+        "id": {
+          "description": "the id of the amenity",
+          "type": "string"
+        },
+        "name": {
+          "description": "the name of the amenity",
+          "type": "string"
+        },
+        "targetType": {
+          "description": "the id of the type of amenity (mainly Inventory, Building or Property)",
+          "type": "string"
+        }
+      },
+      "required": ["id", "name", "type", "description", "adjustment"],
+      "type": "object"
+    }
+  }
+}

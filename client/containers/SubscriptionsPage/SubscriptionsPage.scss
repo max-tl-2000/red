@@ -1,0 +1,51 @@
+.subscriptionsContainer {
+  width: 100%;
+}
+
+.subscriptionRow {
+  width: 65%;
+  margin: 1.5em;
+
+  [data-component='textbox'] {
+    margin-bottom: 1em;
+  }
+}
+
+.eventsRow {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 1em;
+
+  [data-component='dropdown'] {
+    width: 80%;
+  }
+
+  .dropdownButton {
+    margin-left: .5em;
+  }
+}
+
+.deleteButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.buttonBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2em;
+  padding-left: 1em;
+
+  [data-component='button'] {
+    margin-left: 1em;
+  }
+}
+
+.subscriptionsPage {
+  width: 100%;
+}

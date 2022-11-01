@@ -1,0 +1,46 @@
+{
+    "id": "819c43a6-35c9-48d2-a6f6-3dd3b55898b2",
+    "created_at": "3/28/2020 03:31:42 GMT",
+    "assignedProperty": "d453a22e-0d7e-4655-ab0e-c4c6a9f416f8",
+    "noResponseCounter": 0,
+    "partyOwnerUUID": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+    "eventCommRecord": [],
+    "comms": [],
+    "partyMembers": [{
+        "id": "4f183e64-6c99-4c67-8460-84d668806300",
+        "created_at": "3/28/2020 03:31:42 GMT",
+        "personApplication": {},
+        "personId": "9f44632e-415a-471b-91f1-b5e92367808c",
+        "modifiedBy": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+        "hasContactInfo": true,
+        "isActive": true,
+        "partyMemberTasks": [],
+        "hasAnonymousEmail": false
+    }],
+    "tasks": [{
+        "id": "6d5b74a0-4da2-4c34-9117-4acfc90dcef2",
+        "created_at": "3/28/2020 03:31:44 GMT",
+        "category": "Quote",
+        "dueDate": "3/28/2020 03:31:43 GMT",
+        "name": "SEND_RENEWAL_QUOTE",
+        "state": "Active",
+        "taskOwner": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98"
+    }],
+    "createdFromCommId": null,
+    "workflowState": "active",
+    "leaseType": "traditional",
+    "workflowName": "renewal",
+    "activeLeaseData": {
+        "id": "36bb24e8-a156-4403-ae75-371e882907d6",
+        "created_at": "3/27/2020 17:06:22 GMT",
+        "state": "none",
+        "leaseEndDate": "3/26/2021 17:02:32 GMT"
+    },
+    "quotes": [{
+        "id": "5b0f5aee-0f3b-4cf1-98c6-11978a73b8d5",
+        "created_at": "3/28/2020 03:32:39 GMT",
+        "isQuotePrinted": true
+    }],
+    "propertyTimeZone": "America/Los_Angeles",
+    "moveoutNoticePeriodDays": 60
+}

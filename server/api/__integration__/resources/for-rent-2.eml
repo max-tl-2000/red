@@ -1,0 +1,540 @@
+Return-Path: <bounces+1604048-e48b-forrent.wood=maximus.mail.reva.tech@tem.forrent.com>
+Received: from o5.tem.forrent.com (o5.tem.forrent.com [167.89.94.128])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 0su5qee8g8icae1fqv59bn8juobnad4hvlgf5j01
+ for forrent.wood@maximus.mail.reva.tech;
+ Fri, 29 Sep 2017 16:18:21 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of tem.forrent.com designates 167.89.94.128 as permitted sender) client-ip=167.89.94.128; envelope-from=bounces+1604048-e48b-forrent.wood=maximus.mail.reva.tech@tem.forrent.com; helo=o5.tem.forrent.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of tem.forrent.com designates 167.89.94.128 as permitted sender) client-ip=167.89.94.128; envelope-from=bounces+1604048-e48b-forrent.wood=maximus.mail.reva.tech@tem.forrent.com; helo=o5.tem.forrent.com;
+ dkim=pass header.i=@forrent.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIYTNTVXk1YzNOQjdXK09GMUtFeVR1T3ZjS2kxbkJuT0xYL1gyQXBsNjVQNVlENlA4WDRLU1MwbWNaNUtBbTVZdmRjdXQvN3gvdWFlOEdDOExVZXBqTnRZWmZlM0FFSDMvdnNacXROcTE3VEhaWCtXUmdsSThXZnEwSjVobWw4bEZrdDFyL2VPVzE0eWc1Tm9VUXUyWjJqenpNN1lHOWxtYXFzRlM1VWVZOUJqL2ZnL2JpN3FBWVdSdFNuN2lQTVhVSGVVeUF3VENNb2xzam5ONjRMVDh1R1hXOThPMHhGK3RVVGNsaHVDQUovb3NldmhCZ2piYm1meVBvTGZVQU5LN1oyNEVFSDQyajNTN1FBTGJUWTVlMWFMYmJLN0N0a01pQWlLNmV4OVFQSXN0V0h0S1dnWS82a0Y5NGIvUm9ZVkdzb05VTnlBYnlya09lYWJJaTB3RTk=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=JnqAnpqtgCOmZMfoojPqpdUBv6NGomXUKwDXexGbfrJCIvgfWQbMmoT3DtyF5SnCgmPDOq7ip558Ncmpf/8mTX/DG3f0v/93Q8tgz/nP8UneApUerdHZJ4vAvUC5LEBWWbQM+buizuSWeIPFM2BSXJ02HLj3lindVl4zDy/pQBE=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1506701902; v=1; bh=hvmqLZbaO0cOBWhsiOzDmBm2A3owQfTtmUDJ0puDvto=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=forrent.com; 
+	h=to:subject:from:reply-to:mime-version:content-type:content-transfer-encoding; 
+	s=smtpapi; bh=0NKsb5tdZMq1OcypwKqL09le+d8=; b=b4/4I0tpT7+LEBZnyQ
+	FginoCXxrvUhKdK1HYQkko99rAP2kn/HcuRrwjVRxf296os4JfbCVeIcDblrNXi6
+	WlxD5xyxc5cCSbp6X4JxLxYwiP/6BYfLOZRkUvCUUPbSHf+cchGvtIZil0yN0KUi
+	td8VzpdQoaJ13k71Bk53IwGRY=
+Received: by filter0947p1mdw1.sendgrid.net with SMTP id filter0947p1mdw1-15765-59CE724B-15
+        2017-09-29 16:18:19.549622915 +0000 UTC
+Received: from dsfrcsmtp02.frmsystems.net (outbound-mail.forrent.com [204.154.41.228])
+	by ismtpd0004p1iad1.sendgrid.net (SG) with ESMTP id 3-NVBRmfQNeVUCc_YA7u9Q
+	for <forrent.wood@maximus.mail.reva.tech>; Fri, 29 Sep 2017 16:18:19.504 +0000 (UTC)
+Received: from dsfrcsvc01.frmsystems.net (dsfrcsvc01.frmad.frmsystems.net [10.93.90.177])
+	by dsfrcsmtp02.frmsystems.net (Postfix) with ESMTP id D686D80497
+	for <forrent.wood@maximus.mail.reva.tech>; Fri, 29 Sep 2017 12:15:11 -0400 (EDT)
+Received: by dsfrcsvc01.frmsystems.net (Postfix, from userid 48)
+	id 67EF312B611; Fri, 29 Sep 2017 12:18:19 -0400 (EDT)
+To: forrent.wood@maximus.mail.reva.tech
+Subject: =?utf-8?Q?=F0=9F=93=8C?= New ForRent Lead | Fredegar Gamgee - Woodchase
+Message-ID: <9cd972ed9d9165f821eebc1791d033e3@swift.generated>
+Date: Fri, 29 Sep 2017 16:18:19 +0000 (UTC)
+From: guestcards@forrent.com
+Reply-To: fredegar.gamgee@me.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-SG-EID: NkAXwVQL5yWK22PThkbm7IEWLOLgZSjRfFUlPtj1c7akQEFM03R5cgvrCR8R/OJclor9e9jRqNmQAD
+ uRdbzf6edhrbh/FwYDcn5VczAUodmdEk7Wx1QyYLBH1jq1vNhV4tqUS2zvQ/8tzILh3dDHaPuRZkok
+ 254dgaOnOMjuCXm5OQQXhlmLd6euyCkXzQObPOmcjYpWvic+80HN60BsHHXPumXuYzohBeHsgyj9nk
+ w=
+
+<html>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <link href=3D'https://fonts.googleapis.com/css?family=3DOpen+Sans:400,6=
+00italic,600,400italic,700,700italic' rel=3D'stylesheet' type=3D'text/css'>
+    <link href=3D'https://fonts.googleapis.com/css?family=3DLato:300,700,40=
+0' rel=3D'stylesheet' type=3D'text/css'>
+    <title>Insights By ForRent.com</title>
+    <style type=3D"text/css">
+        /*Hotmail and Yahoo specific code*/
+        .ReadMsgBody {
+            width: 100%;
+        }
+        .ExternalClass {
+            width: 100%;
+        }
+        .yshortcuts {
+            color: #ffffff;
+        }
+        .yshortcuts a span {
+            color: #ffffff;
+            border-bottom: none !important;
+            background: none !important;
+        }
+        /*Hotmail and Yahoo specific code*/
+        body {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+        p {
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        th {
+            font-weight: normal !important;
+        }
+        @media only screen and (max-width:649px) {
+            body {
+                width: auto !important;
+            }
+            table[class=3D"table610"] {
+                max-width: 500px !important;
+                width: 100% !important;
+            }
+            img[class=3D"banner"] {
+                max-width: 500px !important;
+                width: 100% !important;
+                height: auto;
+                display: block;
+            }
+            img[class=3D"logo"] {
+                max-width: 150px !important;
+                width: 100% !important;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+            th[class=3D"stack1"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+            }
+            th[class=3D"stack2"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                margin-top: 20px !important;
+            }
+            th[class=3D"stack3"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+                margin-top: 10px !important;
+            }
+            th[class=3D"sphide22"] {
+                display: none !important;
+                width: 0px;
+            }
+            table[class=3D"box270"] {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            table[class=3D"box1"] {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            table[class=3D"box2"] {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-top: 20px;
+                height: auto !important;
+            }
+            td[class=3D"center"] {
+                text-align: center !important;
+            }
+            td[class=3D"center2"] {
+                text-align: center !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+            td[class=3D"hide01"] {
+                display: none !important;
+                width: 0px;
+            }
+            td[class=3D"space01"] {
+                height: 30px !important;
+            }
+            table[class=3D"box011"]{ max-width:100% !important; width: 100%=
+ !important; margin:0 auto !important;}
+            table[class=3D"box022"]{ max-width:100% !important; width: 100%=
+ !important; margin:20px auto !important; margin-bottom:inherit !important;}
+        }
+        @media only screen and (max-width: 479px) {
+            body {
+                width: auto !important;
+            }
+            table[class=3D"table610"] {
+                max-width: 500px !important;
+                width: 100% !important;
+            }
+            img[class=3D"image22"] {
+                max-width: 80px !important;
+                width: 100% !important;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+            td[class=3D"box011"]{ max-width:100% !important; width: 100% !i=
+mportant; margin:0 auto !important; display:block; text-align:center !impor=
+tant;}
+            td[class=3D"box022"]{ max-width:100% !important; width: 100% !i=
+mportant; margin:25px auto !important; margin-bottom:inherit !important; di=
+splay:block; text-align:center !important;}
+            th[class=3D"stack1"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+            }
+            th[class=3D"stack2"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                margin-top: 20px !important;
+            }
+            th[class=3D"stack3"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+                margin-top: 10px !important;
+            }
+            th[class=3D"sphide22"] {
+                display: none !important;
+                width: 0px;
+            }
+            td[class=3D"space"] {
+                width: 30px !important;
+            }
+        }
+    </style>
+</head>
+<body style=3D"margin:0px;" bgcolor=3D"#eeeeee">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#eeeeee">
+    <tr>
+        <td align=3D"center"><table width=3D"600" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#ffffff" class=3D"tabl=
+e610">
+            <tr>
+                <td valign=3D"top"><table width=3D"100%" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td bgcolor=3D"#1b7aba"><table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                            <tr>
+                                <td width=3D"50" class=3D"space"></td>
+                                <td valign=3D"top"><table width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                        <td height=3D"20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><table width=3D"100%" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+                                            <tr>
+                                                <th width=3D"40" class=3D"s=
+phide22"></th>
+                                                <th class=3D"stack1" width=
+=3D"110" style=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-si=
+ze:12px; line-height:20px; color:#ffffff; text-align:center;"><a href=3D"ht=
+tp://tem.forrent.com/wf/click?upn=3Dx4XOdmZFUIYFWMyKj6I1L9fnWSsY-2BSWdwKCh3=
+ThVGkje-2FB2yChEovGAeIYVFalSa4zcN6IxMusSt3l0kUSMzfjA7AvzP2GNaY5zfu5xLrjs-3D=
+_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa=
+-2Bv9BVjSvEzGIFvgPcM8-2B-2F48hiOEYKv67JGJrDLUUH2ypvncMyf4JMqHvXIeItHkulTcrZ=
+hTnWn6aNvJ2mKBmdcXDd40nf5z6eOKi6ga-2BAwB-2FmeX49gmzqvr2yHKMnfHIvy8hY7HyPzpq=
+nOzlaPtxM6TZoyrrgv-2FOSmXcLhJPqv3mEM59fngzrjpJTR" target=3D"_blank" style=
+=3D"color:#ffffff; text-decoration:none;">View my Property</a></th>
+                                                <th width=3D"40" class=3D"s=
+phide22"></th>
+                                                <th class=3D"stack3"><table=
+ width=3D"270" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"bo=
+x270">
+                                                    <tr>
+                                                        <td><table width=3D=
+"120" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" clas=
+s=3D"box011">
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:12px; line-=
+height:20px; color:#ffffff; text-align:center;"><a href=3D"http://tem.forre=
+nt.com/wf/click?upn=3DmtD66s9-2FUD7WMHQEt9lL-2FooCxJ7oY45CLkHuXYbz6HWZkXpWg=
+Yv9MTkoJFAPMeDwYWGHYQf3EviOGxju1-2Br6HYVbfq1UQfHmtUGegesq0NI-3D_2j9DhfBTGFK=
+9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa-2Bv9BVjSvEz=
+GIFvgP5-2FZr-2FWIDi3u51qyvCKamTEvxZ13ZNTjpvTePjM1i0l61EW2Ehj6ySRvC0iBaIpzsi=
+1d6fVXljcUHzYYlxS7oboLXjeQI8PRFTyK9gukemiDla-2BH8Kq20E3BSr-2B5EEsSG-2FTx-2F=
+EMBeeRa3O-2BjEOdlyCejwaXyjOx9s-2BZ3odchhsm" target=3D"_blank" style=3D"colo=
+r:#ffffff; text-decoration:none;">View my LEADS&trade;</a></td>
+                                                            </tr>
+                                                        </table>
+                                                            <table width=3D=
+"125" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=
+=3D"box022">
+                                                                <tr>
+                                                                    <td ali=
+gn=3D"center"><a href=3D"http://tem.forrent.com/wf/click?upn=3Dx4XOdmZFUIYF=
+WMyKj6I1L4-2BMpopXIEPpFO-2BiV-2F21icY-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdck=
+wP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa-2Bv9BVjSvEzGIFvgOFgu2ifa08BLRhxzEH=
+pZuAI7Y0JXN7Z4-2F1eh8Y30sPx-2F1yL1FNubF-2B9iHWV-2FHX10U0BhOHhCUVHOs-2FaK2bt=
+1m4PikUx1BdnLh1hwMI-2BtSaV2zl42foPmH01UVt5gKTuhNdVkOFJFk3muUYXUFf6o7KaDlqzR=
+nnIZ-2B1onrFeWVHl" target=3D"_blank"><img style=3D"display:block;" src=3D"h=
+ttp://localhost:5000/images/logo.png" width=3D"125" height=3D"16" alt=3D"Lo=
+go" border=3D"0" class=3D"logo"></a></td>
+                                                                </tr>
+                                                            </table></td>
+                                                    </tr>
+                                                </table>
+                                                </th>
+                                                <th width=3D"40" class=3D"s=
+phide22"></th>
+                                            </tr>
+                                        </table></td>
+                                    </tr>
+                                    <tr>
+                                        <td height=3D"30"></td>
+                                    </tr>
+                                    <tr>
+                                        <td valign=3D"top"><table width=3D"=
+100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff" =
+style=3D"border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2=
+px;">
+                                            <tr>
+                                                <td width=3D"20"></td>
+                                                <td valign=3D"top"><table w=
+idth=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                    <tr>
+                                                        <td height=3D"20"><=
+/td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><table width=3D=
+"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:18px; line-=
+height:22px; color:#000000; text-align:center; font-weight:300;">Woodchase =
+Guest Card</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height=
+=3D"15"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:30px; line-=
+height:32px; color:#333333; text-align:center;">Fredegar Gamgee</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height=
+=3D"4"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:20px; line-=
+height:28px; color:#024c96; text-align:center; font-weight:300;">
+                                                                    <a href=
+=3D"mailto:fredegar.gamgee@me.com" style=3D"color:#024c96; text-decoration:=
+none;">fredegar.gamgee@me.com</a><br>
+                                                                    (650) 3=
+36-8157
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height=
+=3D"12"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:16px; line-=
+height:22px; color:#070707; text-align:center;">
+                                                                           =
+                                                                 <span styl=
+e=3D"font-weight:300; color:#959595">Looking to Move:</span> About a Month<=
+br>
+                                                                           =
+                                                                           =
+                                                          <span style=3D"fo=
+nt-weight:300; color:#959595">Comments:</span> Hello Woodchase,
+This is just a test. Please do not close the party. We will close the party=
+ after completing the test.
+
+Thanks and regards,
+Ganesh.
+                                                                           =
+                                                         </td>
+                                                            </tr>
+                                                                           =
+                                                 <tr>
+                                                                    <td hei=
+ght=3D"25"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td ali=
+gn=3D"center"><table width=3D"127" style=3D"border:1px solid #c5772b;" bgco=
+lor=3D"#ec7200" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"c=
+enter">
+                                                                        <tr>
+                                                                           =
+ <td height=3D"38" style=3D"font-family:'Open Sans', Arial, Helvetica, sans=
+-serifS; font-size:14px; color:#ffffff; text-align:center; line-height:22px=
+; font-weight:600;"><a style=3D"color: #ffffff; text-align:center;text-deco=
+ration: none;" href=3D"http://tem.forrent.com/wf/click?upn=3DmtD66s9-2FUD7W=
+MHQEt9lL-2FooCxJ7oY45CLkHuXYbz6HW9P1oifbpvpVitxCxxI5CpQ1urU8A-2FfEKet7Ta50i=
+x1rcv7evw1-2FH9t8cwfaJRKNnAdzirdAwa-2BM5GABKAV1H7rJqlSePNg1i8J-2FTFAJZZ1A-3=
+D-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQo=
+Giwa-2Bv9BVjSvEzGIFvgF7yoIgX0-2BpiBBlPIht2O6AVpIq7ij-2BvXBJDeirPBXfUTJuwAot=
+5zeh3MCqfqounDV5jTJndb29dx7P43r9lglZG2N6sfRot2khLCXzHB795P44V38178W6Ggm4o2V=
+xX4vs0vtUUnso4pvZzfTvraXFIC-2B6QhoV6OCf6cHJiqrsn" target=3D"_blank">REPLY N=
+OW</a></td>
+                                                                        </t=
+r>
+                                                                    </table=
+></td>
+                                                                </tr>
+                                                                           =
+                                         </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"25"><=
+/td>
+                                                    </tr>
+                                                </table></td>
+                                                <td width=3D"20"></td>
+                                            </tr>
+                                        </table></td>
+                                    </tr>
+                                    <tr>
+                                        <td height=3D"35"></td>
+                                    </tr>
+                                </table></td>
+                                <td width=3D"50" class=3D"space"></td>
+                            </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                        <td><table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+                            <tr>
+                                <td width=3D"50" class=3D"space"></td>
+                                <td valign=3D"top"><table width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                        <td height=3D"40"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"font-family:'Open Sans=
+', Arial, Helvetica, sans-serifS; font-size:11px; color:#999999; text-align=
+:center;">This message was sent to <a style=3D"text-decoration: none; color=
+: #1b7aba;" href=3D"mailto:forrent.wood@maximus.mail.reva.tech">forrent.woo=
+d@maximus.mail.reva.tech</a></span>
+                                            <br/>
+                                            Copyright &copy; 2015 Dominion =
+Enterprises, All Rights Reserved. <a href=3D"#" style=3D"cursor: text; text=
+-decoration: none; color: #818181;">150 Granby St. Norfolk, VA 23510</a><br=
+/>
+                                            All photographs copyrighted by =
+United Advertising Publications, Inc. dba <a href=3D"http://tem.forrent.com=
+/wf/click?upn=3Dx4XOdmZFUIYFWMyKj6I1LzaQtHlBaNqRi6kdbyWsQGo-3D_2j9DhfBTGFK9=
+slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa-2Bv9BVjSvEzG=
+IFvgOPIYmxKgDVPWT-2Bt0c84xxORbJoxRfcUTcJVmECr-2FR3TpxboyoXO3CaD24Yc4KnG65MM=
+o7OakDTX3HukjqQPAVtFThZdSaAXl0WYJtqvUJkVnyk-2FPGEEa2C4cvCYVwo6y8UTb0Umew4sA=
+LmxYerZ0CJP-2F3Lf2L1zfC6eg57BfSPd" style=3D"text-decoration: none; color: #=
+818181;">ForRent.com&trade;</a>.<br/>
+                                            <a style=3D"text-decoration: no=
+ne; color: #1b7aba;" href=3D"http://tem.forrent.com/wf/click?upn=3Dx4XOdmZF=
+UIYFWMyKj6I1L6X-2FjFkY-2FA1VuWgvTpt1lhu2XMv8tUOHWvGu0McGu0RYSDP96ezJAjKvf4K=
+CfOHYlA-3D-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI=
+27-2BvEQoGiwa-2Bv9BVjSvEzGIFvgNIbchYMhgnOMWo-2BIv23ilexGST7YuPw4q0wzPe8Yc0e=
+MB25t7-2Bml9MDiG9euaPuzm9t6YI5QPKmWBIKE3vD5Nh4KM1geKc69IvoooxAMfjUMbsx1Nj3C=
+tm0nqlHYDrPLL4Ty4EGmUfdUJqp5i3cFj7ONLeYqu84ArJFSpdGscfc">Privacy Policy</a>=
+ &bullet;
+                                            <a style=3D"text-decoration: no=
+ne; color: #1b7aba;" href=3D"http://tem.forrent.com/wf/click?upn=3Dx4XOdmZF=
+UIYFWMyKj6I1L6X-2FjFkY-2FA1VuWgvTpt1lhsinLXn5HiwO2fqTuEe-2BYuUXoiZcvDaE-2Bw=
+qXFUDfk3Sww-3D-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LM=
+QmwI27-2BvEQoGiwa-2Bv9BVjSvEzGIFvgLGeNrL-2BiymEsAH40S04iJOUWYtYYwaJzzsytuSU=
+LnvVIkkD5Vdk3UieKreV0pSndDYUOHqMfWMSNM1Ye-2BUdDUZdcBJH-2B2lWBTMDcGLFH4LCOr4=
+IbvqGO2ycMQSNaFO-2F-2FuzFi3SnLGrFld3DTHwXysnbqZd0dMt1gco-2B88JnJC1d">Terms =
+and Conditions</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height=3D"15"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"font-family:'Open Sans=
+', Arial, Helvetica, sans-serifS; font-size:11px; color:#999999; text-align=
+:center;">
+                                            If you believe have received a =
+fraudulent message or have a concern about fraudulent activity
+                                            regarding <a href=3D"http://tem=
+.forrent.com/wf/click?upn=3Dx4XOdmZFUIYFWMyKj6I1LzaQtHlBaNqRi6kdbyWsQGo-3D_=
+2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa-=
+2Bv9BVjSvEzGIFvgMLgaGGvhZQyClPQVunz3mp6gyrOOeVJzJ18TUCq1Eoeng4admhqTjYB6vYZ=
+2NqkiZL2JFCoUYJE45FvRqXOGqi2hzd8dDL4tKtIcQ2wVE-2FPnKHqw-2BC9s2s3i6skRZQalfZ=
+-2BJ4UOqy5Aju4jB2smVGG4kZt-2BPLYddWT5g4-2BwfCPe" style=3D"text-decoration: =
+none; color: #818181;">ForRent.com</a>, <a href=3D"http://tem.forrent.com/w=
+f/click?upn=3Dx4XOdmZFUIYFWMyKj6I1L5G9n7dUEJsWTvRz0r1iLTd9ADMFC0-2FZMpgTxow=
+wG-2BIV_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2Bv=
+EQoGiwa-2Bv9BVjSvEzGIFvgFFofliP66R7bDqAQ0LncmeVjPOxpMX86Kl7QraMlkIr5UYodsmg=
+9w57qcaj-2FpKmuce7oGqBRYWlrsLM7UeSKjT5hSrWLUSLdWcY4DreR3109Zcw7WnXIcImNnpNl=
+y6O9WG2RPZSlZclkMTXjSkrdNUWeRN5YuXdKs7U3sbXFZXe" style=3D"text-decoration: =
+none; color: #818181;">CorporateHousing.com</a>, or <a href=3D"http://tem.f=
+orrent.com/wf/click?upn=3Dx4XOdmZFUIYFWMyKj6I1L5632HmEua3JTd7k5ElU41-2B1rnr=
+7O-2BfO5BBPll-2BuNS10_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ue=
+C1LMQmwI27-2BvEQoGiwa-2Bv9BVjSvEzGIFvgJPNETSBLVEOt1kkd3MQEvEuPIWGbYhfr3gJkv=
+Tn-2B9-2FPHo6nflGMkZYC2ffpgd-2B9bA9S0XXV-2FhWs6FpfncPXz8elYoJvQ1EzZ9GnpaXSH=
+ff1mTkkn9YbCSTk5orRBI9-2FWQcsyXzScQDavTa9Y-2BhOBtBkF7yJhr7T72R7-2FJZYSdqE" =
+style=3D"text-decoration: none; color: #818181;">SeniorOutlook.com</a>, get=
+ information on how to
+                                            <a style=3D"text-decoration: no=
+ne; color: #1b7aba;" href=3D"http://tem.forrent.com/wf/click?upn=3Dx4XOdmZF=
+UIYFWMyKj6I1L9-2BJRaVGMg9GIaLsqouUHq6q3IwJCARV07qC28vgyY1t_2j9DhfBTGFK9slNU=
+D01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa-2Bv9BVjSvEzGIFvg=
+IxTSjDrr87doAJRbLkPwqC6-2BK4BuAoOTQm1zSXdPzaMq38JJwsXHvmaHkSznncfb7hlNYiotb=
+GQF55A18bC9dW3ZiR3k54OAeb8VDD7LgbQDn45C7wXHncHt0GVeTttuNuwN96BYMJzz9a2Lweb2=
+A-2F8R7-2FO0AT-2Bl6m0EYq6eCFw">report fraud</a>
+                                            or contact us at <a href=3D"tel=
+:888-539-1150" value=3D"+888-539-1150" target=3D"_blank" style=3D"vertical-=
+align: top; text-decoration: none; color: #1b7aba;">888-539-1150</a>
+                                            <br/>
+                                            Please visit <a style=3D"text-d=
+ecoration: none; color: #1b7aba;" href=3D"http://tem.forrent.com/wf/click?u=
+pn=3Dx4XOdmZFUIYFWMyKj6I1Lyb4rAMSvgOVZ-2BByExi2Kmq755Muw31ffZuQ6DxPvrMu5Jdi=
+THH3gdjhoSRZH9EnKWpGEqI6GJSvAL-2BF-2FfGpebY-3D_2j9DhfBTGFK9slNUD01hz1L-2FsW=
+fyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa-2Bv9BVjSvEzGIFvgGcnXiLZxjqud=
+d0TsVbehObsZ5tymNcCRrcd75-2FiAvU9cJ2R9cERPKc4H1TV0MQQSzfyPxiIogfDnQ0TEg4ahQ=
+mBD4dJFD3mEysHIOWE6opV47OJVU7gCJot8GkHB5tr8KkLY4sNf6OFjtmqFbUP5INJlPat8sS5Z=
+XHv8pPBmw5c">Dominion Enterprises' Fraud Prevention Tips</a> to learn how t=
+o protect yourself from fraudulent activity.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height=3D"40"></td>
+                                    </tr>
+                                </table></td>
+                                <td width=3D"50" class=3D"space"></td>
+                            </tr>
+                        </table></td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table></td>
+    </tr>
+</table>
+
+<img src=3D"http://tem.forrent.com/wf/open?upn=3D2j9DhfBTGFK9slNUD01hz1L-2F=
+sWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEQoGiwa-2Bv9BVjSvEzGIFvgKZGKoohfq-=
+2BvGMBcufm1l9FaMHHYLsY7pDImMfYAUIqSoBpF8k-2B7-2BViK3fiX7hcf3pchXqX4AtLq9BV6=
+WgoYkuwx6O8HpH9DbOIfKRulyj10zMQnh3UCBaqqragKhrjnlwoVoG53NrPWzjDGcv3EFkWFbWy=
+Aw-2FLYofnSRzIvX7aX" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=
+=3D"height:1px !important;width:1px !important;border-width:0 !important;ma=
+rgin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;=
+margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !importa=
+nt;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>

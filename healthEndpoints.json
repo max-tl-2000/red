@@ -1,0 +1,13 @@
+{
+  "healthEndpoints": [
+    "localhost:3000/ping",
+    "localhost:3030/ping",
+    "localhost:3500/ping",
+    "localhost:4000/ping",
+    "localhost:3070/ping",
+    "localhost:3080/ping",
+    "BASE_URL/api/health/db",
+    "BASE_URL/api/health/ws",
+    "BASE_URL/api/health/mq"
+  ]
+}

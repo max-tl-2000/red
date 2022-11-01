@@ -1,0 +1,1 @@
+Your appointment has been confirmed for {date}. You will meet with {appointmentOwnerName} at our Leasing Office located at {propertyAddress}. If you would like to modify or cancel this appointment, simply reply to this text message with your change.

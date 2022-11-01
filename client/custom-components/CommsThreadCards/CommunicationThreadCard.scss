@@ -1,0 +1,98 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-top: (12rem/16);
+  padding-right: 1rem;
+  padding-bottom: (12rem/16);
+  padding-left: 1rem;
+  border-top: (1rem/16) solid rgba(0,0,0,.08);
+
+  &:hover {
+    cursor: pointer;
+    background: $grey50;
+  }
+
+  &:active {
+    background: $grey200;
+  }
+
+  .avatarSection {
+    padding-right: (18rem/16);
+    padding-left: (5rem/16);
+  }
+
+  .commSection {
+    width: 100%;
+
+    .cardHeader {
+      @include subHeader();
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      opacity: .87;
+
+      .timeStampSection {
+        line-height: (24rem/16);
+        white-space: nowrap;
+        opacity: .54;
+
+        align-self: baseline;
+      }
+
+      .unreadState {
+        font-weight: 500;
+      }
+
+      .secondaryParticipants {
+        @include textSecondary();
+      }
+
+      .cardHeaderRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+      }
+
+      .subjectWithNoOfMessages {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .noOfMessages {
+          padding-left: (8rem/16);
+        }
+      }
+
+      .attachment-icon {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+
+    .messageSection {
+      padding-right: (10rem/16);
+      word-break: break-word;
+
+      .messageDuration {
+        padding-right: (4rem/16);
+      }
+    }
+  }
+}
+
+.messagesCount {
+  line-height: .8rem;
+  padding-left: .15rem;
+}
+
+.messageTitle {
+  line-height: 1.2rem;
+  margin-bottom: .5rem;
+  padding-right: 4rem;
+}

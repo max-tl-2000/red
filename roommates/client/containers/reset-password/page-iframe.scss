@@ -1,0 +1,13 @@
+@import '../../../../client/sass/_colors.scss';
+
+.page {
+  background-color: $grey100;
+  background-position: right;
+}
+
+.iframe {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - (64em/16));
+  border: 0;
+}

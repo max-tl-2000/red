@@ -1,0 +1,11 @@
+{{#with this}}
+<?xml version="1.0" encoding="UTF-8"?>
+<mri_s-pmrm_modifyrentableitemsandfees>
+	<entry>
+		<ProspectID>{{ProspectID}}</ProspectID>
+		<Quantity>{{Quantity}}</Quantity>
+		<ItemType>{{ItemType}}</ItemType>
+		<FeeType>{{FeeType}}</FeeType>
+	</entry>
+</mri_s-pmrm_modifyrentableitemsandfees>
+{{/with}}

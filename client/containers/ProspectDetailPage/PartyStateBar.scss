@@ -1,0 +1,10 @@
+@import '../../sass/_colors.scss';
+
+.bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: (72rem/16);
+  padding: (18rem/16) (24rem/16);
+  background-color: $blueGrey50;
+}

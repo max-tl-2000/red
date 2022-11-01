@@ -1,0 +1,750 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskCard Active introduce yourself TaskCard should have a blank checkbox, have the text "Introduce yourself" 1`] = `
+<TaskCard
+  currentUser={
+    Object {
+      "id": "0e3c5587-b27f-4e2a-bb45-9368cd2727b3",
+    }
+  }
+  formattedValue="Introduce yourself"
+  party={
+    Object {
+      "partyMembers": Array [
+        Object {
+          "fullName": "Client Name 1",
+        },
+        Object {
+          "fullName": "Client Name 2",
+        },
+      ],
+    }
+  }
+  selectorData={
+    Object {
+      "users": Array [
+        Object {
+          "created_at": "2016-11-19T22:30:39.232Z",
+          "fullName": "Alice Altimes",
+          "id": "25e5702d-ef29-4996-8948-c1fc593e5b36",
+          "preferredName": "Alice",
+          "teams": Array [
+            Object {
+              "displayName": "Parkmerced Pod",
+              "id": "d491d706-6129-4edc-a69a-ee5cd026ca68",
+              "mainRoles": Array [
+                "PM",
+              ],
+            },
+          ],
+        },
+      ],
+    }
+  }
+  task={
+    Object {
+      "category": "Party",
+      "created_at": "2016-11-23T22:30:39.232Z",
+      "dueDate": "2017-05-18T20:00:11Z",
+      "id": "d5a906a9-5a9b-4e41-a40b-3a57f81d9791",
+      "metadata": Object {},
+      "name": "INTRODUCE_YOURSELF",
+      "partyId": "d5a906a9-5a9b-4e41-a40b-3a57f81d979a",
+      "state": "Active",
+      "updated_at": "2017-05-18T20:00:11Z",
+      "userIds": Array [
+        "25e5702d-ef29-4996-8948-c1fc593e5b36",
+      ],
+    }
+  }
+>
+  <Row
+    data-id="appointment-row"
+  >
+    <div
+      className="row"
+      data-component="row"
+      data-id="appointment-row"
+      style={Object {}}
+    >
+      <Cell
+        width={70}
+      >
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "width": 70,
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <Tooltip
+                appendToBody={true}
+                hoverDelay={300}
+                position="top"
+                text="INTRODUCE_YOURSELF_TOOLTIP"
+              >
+                <FlyOut
+                  appendToBody={true}
+                  closeOnTapAway={true}
+                  expandTo="top"
+                  hoverDelay={300}
+                  useHover={true}
+                >
+                  <Icon
+                    className=""
+                    disabled={true}
+                    name="checkbox-blank-outline"
+                  >
+                    <section
+                      className="icon disabled"
+                      data-component="icon"
+                      data-red-icon="true"
+                      name="checkbox-blank-outline"
+                    >
+                      <svg
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "<path d=\\"M19,5v14H5V5h2h3h7H19V3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5c0-1.1-0.9-2-2-2V5z M11,16L11,16L11,16
+	L11,16L11,16L11,16L11,16z\\"></path>",
+                            }
+                          }
+                          id="checkbox-blank-outline"
+                        />
+                      </svg>
+                    </section>
+                  </Icon>
+                </FlyOut>
+              </Tooltip>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell>
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "flex": 1,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <div
+                className="taskDetails"
+                onClick={[Function]}
+              >
+                <text
+                  disabled={false}
+                >
+                  <p
+                    className="text"
+                    data-component="text"
+                    data-typography-element={true}
+                  >
+                    Introduce yourself
+                  </p>
+                </text>
+                <text
+                  disabled={false}
+                  error={true}
+                  secondary={false}
+                >
+                  <p
+                    className="text error"
+                    data-component="text"
+                    data-typography-element={true}
+                  >
+                    1 DAY OVERDUE
+                  </p>
+                </text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell
+        width="30%"
+      >
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "width": "30%",
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <text
+                data-id="taskOwnerName"
+                disabled={false}
+              >
+                <p
+                  className="text"
+                  data-component="text"
+                  data-id="taskOwnerName"
+                  data-typography-element={true}
+                />
+              </text>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell
+        data-id="manualTask_menu"
+        textAlign="center"
+        type="ctrlCell"
+        width={86}
+      >
+        <div
+          data-component="cell"
+          data-id="manualTask_menu"
+          style={
+            Object {
+              "width": 86,
+            }
+          }
+        >
+          <div
+            className="cell no-padding"
+            style={
+              Object {
+                "justifyContent": "center",
+                "textAlign": "center",
+              }
+            }
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            />
+          </div>
+        </div>
+      </Cell>
+    </div>
+  </Row>
+</TaskCard>
+`;
+
+exports[`TaskCard Completed introduce yourself TaskCard should have a check icon, and task name and task date disabled 1`] = `
+<TaskCard
+  currentUser={
+    Object {
+      "id": "0e3c5587-b27f-4e2a-bb45-9368cd2727b3",
+    }
+  }
+  formattedValue="Introduce yourself"
+  party={
+    Object {
+      "partyMembers": Array [
+        Object {
+          "fullName": "Client Name 1",
+        },
+        Object {
+          "fullName": "Client Name 2",
+        },
+      ],
+    }
+  }
+  selectorData={
+    Object {
+      "users": Array [
+        Object {
+          "created_at": "2016-11-19T22:30:39.232Z",
+          "fullName": "Alice Altimes",
+          "id": "25e5702d-ef29-4996-8948-c1fc593e5b36",
+          "preferredName": "Alice",
+          "teams": Array [
+            Object {
+              "displayName": "Parkmerced Pod",
+              "id": "d491d706-6129-4edc-a69a-ee5cd026ca68",
+              "mainRoles": Array [
+                "PM",
+              ],
+            },
+          ],
+        },
+      ],
+    }
+  }
+  task={
+    Object {
+      "category": "Party",
+      "created_at": "2016-11-23T22:30:39.232Z",
+      "dueDate": "2017-05-18T20:00:11Z",
+      "id": "d5a906a9-5a9b-4e41-a40b-3a57f81d9791",
+      "metadata": Object {},
+      "name": "INTRODUCE_YOURSELF",
+      "partyId": "d5a906a9-5a9b-4e41-a40b-3a57f81d979a",
+      "state": "Completed",
+      "updated_at": "2017-05-18T20:00:11Z",
+      "userIds": Array [
+        "25e5702d-ef29-4996-8948-c1fc593e5b36",
+      ],
+    }
+  }
+>
+  <Row
+    data-id="appointment-row"
+  >
+    <div
+      className="row"
+      data-component="row"
+      data-id="appointment-row"
+      style={Object {}}
+    >
+      <Cell
+        width={70}
+      >
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "width": 70,
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <Icon
+                disabled={true}
+                name="check"
+              >
+                <section
+                  className="icon disabled"
+                  data-component="icon"
+                  data-red-icon="true"
+                  name="check"
+                >
+                  <svg
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "<path d=\\"M19.6,5.6L9,16.2l-4.1-4.1l0,0L9,16.2L19.6,5.6L19.6,5.6L19.6,5.6L19.6,5.6L9,16.2l-4.1-4.1l-1.4,1.4l0,0L9,19l0,0L21,7
+	L19.6,5.6L19.6,5.6z M11,16L11,16L11,16L11,16L11,16L11,16L11,16z\\"></path>",
+                        }
+                      }
+                      id="check"
+                    />
+                  </svg>
+                </section>
+              </Icon>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell>
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "flex": 1,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <div
+                className="taskDetails"
+                onClick={[Function]}
+              >
+                <text
+                  disabled={true}
+                >
+                  <p
+                    className="text disabled"
+                    data-component="text"
+                    data-typography-element={true}
+                  >
+                    Introduce yourself
+                  </p>
+                </text>
+                <text
+                  disabled={true}
+                  error={false}
+                  secondary={true}
+                >
+                  <p
+                    className="text secondary disabled"
+                    data-component="text"
+                    data-typography-element={true}
+                  >
+                    1 DAY OVERDUE
+                  </p>
+                </text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell
+        width="30%"
+      >
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "width": "30%",
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <text
+                data-id="taskOwnerName"
+                disabled={true}
+              >
+                <p
+                  className="text disabled"
+                  data-component="text"
+                  data-id="taskOwnerName"
+                  data-typography-element={true}
+                />
+              </text>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell
+        data-id="manualTask_menu"
+        textAlign="center"
+        type="ctrlCell"
+        width={86}
+      >
+        <div
+          data-component="cell"
+          data-id="manualTask_menu"
+          style={
+            Object {
+              "width": 86,
+            }
+          }
+        >
+          <div
+            className="cell no-padding"
+            style={
+              Object {
+                "justifyContent": "center",
+                "textAlign": "center",
+              }
+            }
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            />
+          </div>
+        </div>
+      </Cell>
+    </div>
+  </Row>
+</TaskCard>
+`;
+
+exports[`TaskCard Overdue introduce yourself TaskCard should have a blank icon, use regular text to show task name and have the taskDate highlighted 1`] = `
+<TaskCard
+  currentUser={
+    Object {
+      "id": "0e3c5587-b27f-4e2a-bb45-9368cd2727b3",
+    }
+  }
+  formattedValue="Introduce yourself"
+  party={
+    Object {
+      "partyMembers": Array [
+        Object {
+          "fullName": "Client Name 1",
+        },
+        Object {
+          "fullName": "Client Name 2",
+        },
+      ],
+    }
+  }
+  selectorData={
+    Object {
+      "users": Array [
+        Object {
+          "created_at": "2016-11-19T22:30:39.232Z",
+          "fullName": "Alice Altimes",
+          "id": "25e5702d-ef29-4996-8948-c1fc593e5b36",
+          "preferredName": "Alice",
+          "teams": Array [
+            Object {
+              "displayName": "Parkmerced Pod",
+              "id": "d491d706-6129-4edc-a69a-ee5cd026ca68",
+              "mainRoles": Array [
+                "PM",
+              ],
+            },
+          ],
+        },
+      ],
+    }
+  }
+  task={
+    Object {
+      "category": "Party",
+      "created_at": "2016-11-23T22:30:39.232Z",
+      "dueDate": "2017-05-16T20:00:11+00:00",
+      "id": "d5a906a9-5a9b-4e41-a40b-3a57f81d9791",
+      "metadata": Object {},
+      "name": "INTRODUCE_YOURSELF",
+      "partyId": "d5a906a9-5a9b-4e41-a40b-3a57f81d979a",
+      "state": "Active",
+      "updated_at": "2017-05-18T20:00:11Z",
+      "userIds": Array [
+        "25e5702d-ef29-4996-8948-c1fc593e5b36",
+      ],
+    }
+  }
+>
+  <Row
+    data-id="appointment-row"
+  >
+    <div
+      className="row"
+      data-component="row"
+      data-id="appointment-row"
+      style={Object {}}
+    >
+      <Cell
+        width={70}
+      >
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "width": 70,
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <Tooltip
+                appendToBody={true}
+                hoverDelay={300}
+                position="top"
+                text="INTRODUCE_YOURSELF_TOOLTIP"
+              >
+                <FlyOut
+                  appendToBody={true}
+                  closeOnTapAway={true}
+                  expandTo="top"
+                  hoverDelay={300}
+                  useHover={true}
+                >
+                  <Icon
+                    className=""
+                    disabled={true}
+                    name="checkbox-blank-outline"
+                  >
+                    <section
+                      className="icon disabled"
+                      data-component="icon"
+                      data-red-icon="true"
+                      name="checkbox-blank-outline"
+                    >
+                      <svg
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "<path d=\\"M19,5v14H5V5h2h3h7H19V3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5c0-1.1-0.9-2-2-2V5z M11,16L11,16L11,16
+	L11,16L11,16L11,16L11,16z\\"></path>",
+                            }
+                          }
+                          id="checkbox-blank-outline"
+                        />
+                      </svg>
+                    </section>
+                  </Icon>
+                </FlyOut>
+              </Tooltip>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell>
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "flex": 1,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <div
+                className="taskDetails"
+                onClick={[Function]}
+              >
+                <text
+                  disabled={false}
+                >
+                  <p
+                    className="text"
+                    data-component="text"
+                    data-typography-element={true}
+                  >
+                    Introduce yourself
+                  </p>
+                </text>
+                <text
+                  disabled={false}
+                  error={true}
+                  secondary={false}
+                >
+                  <p
+                    className="text error"
+                    data-component="text"
+                    data-typography-element={true}
+                  >
+                    1 DAY OVERDUE
+                  </p>
+                </text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell
+        width="30%"
+      >
+        <div
+          data-component="cell"
+          style={
+            Object {
+              "width": "30%",
+            }
+          }
+        >
+          <div
+            className="cell"
+            style={Object {}}
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            >
+              <text
+                data-id="taskOwnerName"
+                disabled={false}
+              >
+                <p
+                  className="text"
+                  data-component="text"
+                  data-id="taskOwnerName"
+                  data-typography-element={true}
+                />
+              </text>
+            </div>
+          </div>
+        </div>
+      </Cell>
+      <Cell
+        data-id="manualTask_menu"
+        textAlign="center"
+        type="ctrlCell"
+        width={86}
+      >
+        <div
+          data-component="cell"
+          data-id="manualTask_menu"
+          style={
+            Object {
+              "width": 86,
+            }
+          }
+        >
+          <div
+            className="cell no-padding"
+            style={
+              Object {
+                "justifyContent": "center",
+                "textAlign": "center",
+              }
+            }
+          >
+            <div
+              className="cell-inner"
+              style={Object {}}
+            />
+          </div>
+        </div>
+      </Cell>
+    </div>
+  </Row>
+</TaskCard>
+`;

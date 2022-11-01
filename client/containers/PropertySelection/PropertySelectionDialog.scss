@@ -1,0 +1,30 @@
+@import '../../sass/_colors.scss';
+
+.property-selection-dialog {
+  width: (432rem/16);
+
+  [data-component='dialog-body'] {
+    padding: 0 (20em/16) (20em/16);
+  }
+
+  .info-text {
+    padding-bottom: (10em/16);
+    text-align: left;
+    white-space: normal;
+  }
+
+  .label {
+    padding-top: (20em/16);
+    text-align: left;
+  }
+
+  .main-section {
+    width: 100%;
+    height: (460rem/16);
+  }
+
+  .actions {
+    padding-right: (12em/16);
+    padding-left: (12em/16);
+  }
+}

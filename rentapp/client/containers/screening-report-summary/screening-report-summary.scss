@@ -1,0 +1,13 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_typography-mixins.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-top: (20rem/16);
+  margin-bottom: (10rem/16);
+}

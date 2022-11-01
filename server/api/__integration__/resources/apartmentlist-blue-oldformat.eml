@@ -1,0 +1,670 @@
+Return-Path: <bounces+907926-a614-apt-list.serenity=maximus.mail.reva.tech@em.apartmentlist.com>
+Received: from o3.em.apartmentlist.com (o3.em.apartmentlist.com [167.89.20.184])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 6ppiqk9m8f7ncfi5d398gnv15f59ce6vo2b08eg1
+ for apt-list.serenity@maximus.mail.reva.tech;
+ Mon, 04 Dec 2017 10:57:03 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of em.apartmentlist.com designates 167.89.20.184 as permitted sender) client-ip=167.89.20.184; envelope-from=bounces+907926-a614-apt-list.serenity=maximus.mail.reva.tech@em.apartmentlist.com; helo=o3.em.apartmentlist.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of em.apartmentlist.com designates 167.89.20.184 as permitted sender) client-ip=167.89.20.184; envelope-from=bounces+907926-a614-apt-list.serenity=maximus.mail.reva.tech@em.apartmentlist.com; helo=o3.em.apartmentlist.com;
+ dkim=pass header.i=@apartmentlist.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHbVBwa096QWl4K1B4WGJTeWpjZFdiby9JbkttQ1JDUGdRZEFMUzY3eThOMUU2MFFBSE5vZXIwSE5VUjUyb29hRWJNRW9vdDljNHZnZFQzZmtyTkQ2M0JGckZTN1ZaNDRQNnlXRW5yUzV0c0V0cWRQTGVwSVg1NHlmZ3VIeGI2bEpTd0EyVWEzaWI5b3E5Uk5acVdscElwSzZhSTdwdUM0NW51NFEwRGcvYzJEYjJZbjNaTm5LMmgvRk5JNUVkNTNnUmk1L2RDSWxKNWV3YmZoTUdTZW5oSWpYUUlQUk1mQmxMU0RDU0FUNENRWThvMUVxVmlHemkyOHpiNHF6MjM5YlpYU0FIbzRjV29xRmhmYzRtditsSkFuTW84Yks4OFFiTC9DN2dPRzJTQUJYdGZnSk9XbFc3SG5KNkdMK1cva1VWTGlYWEx6MGxPRk9pK05OUHpaRXh1N25WclQ1c3BxZzY2T2s0OGpET1h0amdtUjM4ZEZhbWxnNEtHNW83QklvPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=N8RKVpIx9BXA7C1Ks+LphseyvTD19p2lshxhx1SZG4sWHjBLVPbN4FBUK8IsKOZIu7mfnn44pTkMewmxal5qaOSJLHgTnZVMRNs8I3GKZAwgEF1oLFQdwhsGr1VAY4AYwwNUif9p+K9UbtwElB9/XS9tXcHGSIILSG+aQT2KmJo=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1512385024; v=1; bh=LyDkLZa0jieE1ZgQMO3ATYvEC2rA0FfpAivKDWlrhSo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=apartmentlist.com; 
+	h=content-type:from:mime-version:reply-to:subject:to; s=s1; 
+	bh=NdwJH/4R+ojiT6AD0QGPeSHYdrA=; b=ZQZRNRNvaB0LKxt8WOXUml+maZNTi
+	bgvTQH/fd25cA2Ba3cB4uzhpHYGbhzGYIyBvUyocFhhOKnJDC9BnYP1ZpaM+1Tif
+	XzA23sNt03upxUaUpjCOYTR9psT5AKCAHo7UuHWkoXeRIOxScveSfikqgH684QNI
+	IvDIOhFk4nvqwk=
+Received: by filter0332p1iad2.sendgrid.net with SMTP id filter0332p1iad2-9681-5A2529FE-10
+        2017-12-04 10:57:02.900310125 +0000 UTC
+Received: from OTA3OTI2 (ec2-34-225-111-125.compute-1.amazonaws.com [34.225.111.125])
+	by ismtpd0013p1iad2.sendgrid.net (SG) with HTTP id gmn0NYBATLiCS5LeIzzwwA
+	Mon, 04 Dec 2017 10:57:02.923 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=91e995c560290998c406a413efe4b48fa34f7066fe67acb2b690e8ad754d
+Date: Mon, 04 Dec 2017 10:57:03 +0000 (UTC)
+From: "Apartment List Interests" <interests@apartmentlist.com>
+Mime-Version: 1.0
+Reply-To: jpompa1998@gmail.com
+Subject: Jazmin Pompa is interested in renting with you at Serenity at Larkspur
+To: apt-list.serenity@maximus.mail.reva.tech
+Message-ID: <gmn0NYBATLiCS5LeIzzwwA@ismtpd0013p1iad2.sendgrid.net>
+X-SG-EID: zyONSjpi7q5EPMmbPeu8r/bslk83Hwa0IjSnLov7wzhI+KGxpPWIryhK3BG/sPT/F0hupMbwWdvMwJ
+ VmyZdT9UEi04NXsewwCllo3Yq+Er7lgWF6x1lJBIJn2Z7U63M7Qz8117w1WFudtkyi6gXhs7tEv5S+
+ iSWyJyBjhG/GZTjzEtedwAxbdWSxzF8oNlwipvBJycm7AA56s0jkMNfgz29zUXdM9w0VDd1gG1+Od0
+ ZF608BZXOon4gkMKEiiD8uT/lH0nciFno4yhBNfSg0Vg==
+X-SG-ID: abJri/z89ozyEJuJkS5UoEgbMspEmIushEJUQhh7RJCBVXDP3ZWivsgGhspsQ5C3e18n4C33QKbJ+A
+ p5yRh7JQ==
+
+--91e995c560290998c406a413efe4b48fa34f7066fe67acb2b690e8ad754d
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+A New, Hot QUALIFIED RENTER from Apartment List
+
+Meet Jazmin Pompa
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+property: Serenity at Larkspur
+
+Contact Jazmin directly:
+Phone: (713) 448-0600
+Email: jpompa1998@gmail.com
+
+We've also prequalified Jazmin for you:
+Income: Meets your income requirement of 2.5x the monthly rent.
+Eviction History: Never been evicted.
+
+Jazmin's preferences are
+Beds: Studio, 1
+Baths: Unspecified
+Move-in: 2018-01-08
+Rent: $3500
+Desired amenities: In unit laundry
+Pets: Renter has no pets.
+Pet details:=20
+
+
+
+Jazmin specifically expressed interest in living at Serenity at Larkspur. A=
+bove are Jazmin's ideal preferences. They might not match your community ex=
+actly, but that's ok. No one can sell your place better than you!
+
+Jazmin's actively looking, and has already:
+Shown interest in 2 other places
+Decided against 1 other place
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+At Apartment List we work hard to make your lives easier. Here's how:
+We Deliver Interested Renters
+Really! We only show renters properties we think they'd actually lease at. =
+We don't even show them properties we don't think they would ever consider.=
+ You can rest assured you have someone you can sell.
+
+We Only Send Qualified Leads
+We check the income and eviction status of renters prior to sending your wa=
+y. Our technology qualifies renters so you're not wasting your time.
+
+We Schedule Appointments
+If your property has signed up with us for this service, we'll also take th=
+e work out of scheduling visits.
+
+
+We love feedback. Let us know how we can improve!
+feedback@apartmentlist.com
+
+--91e995c560290998c406a413efe4b48fa34f7066fe67acb2b690e8ad754d
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html xmlns=3D'https://www.w3.org/1999/xhtml'>
+<head>
+<title>Apartment List</title>
+<meta content=3D'text/html; charset=3Dutf-8' http-equiv=3D'Content-Type'>
+<meta content=3D'width=3Ddevice-width, initial-scale=3D1' name=3D'viewport'>
+<style>
+  body {
+    width: 100%;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    mso-margin-top-alt: 0px;
+    mso-margin-bottom-alt: 0px;
+    mso-padding-alt: 0px 0px 0px 0px;
+  }
+  p,h1,h2,h3,h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+=20=20
+  .ExternalClass {
+    width: 100%;
+  }
+=20=20
+=20=20
+=20=20
+  @media only screen and (max-width: 600px) {
+    .table600 {
+      width: 100% !important;
+    }
+    .app {
+      width: 100% !important;
+    }
+    .text {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+=20=20
+  @media only screen and (max-width: 460px) {
+    .table600 {
+      width: 100% !important;
+    }
+    .col {
+      width: 100% !important;
+      display: block !important;
+      overflow: hidden !important;
+    }
+  }
+</style>
+</head>
+<body>
+<img border=3D'0' height=3D'1' src=3D'https://link.p0.com/1x1.dyn' width=3D=
+'1'>
+<table align=3D'center' bgcolor=3D'#eeeeee' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' height=3D'100%' width=3D'100%'>
+<tr>
+<td align=3D'center'>
+<table align=3D'center' border=3D'0' cellpadding=3D'0' cellspacing=3D'0' cl=
+ass=3D'table600' width=3D'600'>
+<tr>
+<td align=3D'center'>
+<table align=3D'center' border=3D'0' cellpadding=3D'0' cellspacing=3D'0' cl=
+ass=3D'logo' width=3D'250'>
+<tr>
+<td align=3D'center' style=3D'padding-top:10px;padding-bottom:10px;'>
+<a href=3D'https://www.apartmentlist.com/'>
+<img border=3D'0' class=3D'logo' src=3D'https://zeppelin-production.s3.amaz=
+onaws.com/templates/booked_email/logo-2.png' style=3D'border:none;outline:n=
+one;text-decoration:none' width=3D'240'>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- body row started -->
+<tr>
+<td align=3D'center'>
+<table align=3D'center' bgcolor=3D'#FFFFFF' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' class=3D'table600' width=3D'600'>
+<tr>
+<td align=3D'center' bgcolor=3D'#00ADF2' class=3D'text' style=3D'padding-to=
+p:30px;padding-bottom:20px;padding-left:20px;padding-right:20px'>
+<table border=3D'0' cellpadding=3D'0' cellspacing=3D'0' width=3D'100%'>
+<tr>
+<td align=3D'center' style=3D"font-family:'Helvetica Neue',Helvetica,arial,=
+sans-serif;font-size:28px;font-weight:300;line-height:36px;color:#FFFFFF;te=
+xt-align:center">
+A New, Hot
+<span style=3D'font-weight:500'>QUALIFIED RENTER</span>
+from Apartment List
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D'20'></td>
+</tr>
+<tr>
+<td align=3D'center' bgcolor=3D'#FFFFFF'>
+<table align=3D'center' bgcolor=3D'#FFFFFF' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' width=3D'100%'>
+<tr>
+<td align=3D'center' style=3D"font-family:'Helvetica Neue',Helvetica,arial,=
+sans-serif;color:#4A4A4A;line-height:30px;font-weight:300;font-size:24px">
+Meet
+</td>
+</tr>
+<tr>
+<td height=3D'0'></td>
+</tr>
+<tr>
+<td align=3D'center' style=3D"font-family:'Helvetica Neue',Helvetica,arial,=
+sans-serif;color:#008AC2;line-height:30px;font-weight:normal;font-size:24px=
+">
+Jazmin Pompa
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align=3D'center' bgcolor=3D'#FFFFFF'>
+<!--[if !mso]><!--><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"padding-top:20px;padding-left:30px;padding-right:=
+30px;" width=3D"100%"><!--<![endif]-->
+<!--[if gte mso 9]>
+<table align=3D'center' border=3D'0' cellpadding=3D'0' cellspacing=3D'0' st=
+yle=3D'padding-top:20px;padding-left:30px;padding-right:30px;' width=3D'600=
+'>
+<![endif]-->
+<tr>
+<td class=3D'col' valign=3D'top' width=3D'45%'>
+<table border=3D'0' cellpadding=3D'0' cellspacing=3D'0' class=3D'renter_con=
+tact' width=3D'100%'>
+<tr>
+<td style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font-w=
+eight:300;font-size:14px;color:#00202C;line-height:21px">
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:500;font-size:14px;color:#008AC2;line-height:21px;">Contact</span>
+Jazmin directly:
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Email</span>:
+<a href=3D"mailto:jpompa1998@gmail.com">jpompa1998@gmail.com</a>
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Phone</span>:
+<a href=3D'tel:7134480600'>713-448-0600</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D'center' bgcolor=3D'#FFFFFF'>
+<!--[if !mso]><!--><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"padding-top:20px;padding-left:30px;padding-right:=
+30px;padding-bottom:30px" width=3D"100%"><!--<![endif]-->
+<!--[if gte mso 9]>
+<table align=3D'center' border=3D'0' cellpadding=3D'0' cellspacing=3D'0' st=
+yle=3D'padding-top:20px;padding-left:30px;padding-right:30px;padding-bottom=
+:30px' width=3D'600'>
+<![endif]-->
+<tr>
+<td class=3D'col' width=3D'45%'>
+<table border=3D'0' cellpadding=3D'0' cellspacing=3D'0' class=3D'renter_pre=
+ferences' width=3D'100%'>
+<tr>
+<td style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font-w=
+eight:300;font-size:14px;color:#00202C;line-height:21px">
+Jazmin's
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:500;font-size:14px;color:#008AC2;line-height:21px;">preferences</sp=
+an>
+are:
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Location</span=
+>:
+San Rafael, CA
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Bedrooms</span=
+>:
+S-1 Bedrooms
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Price</span>:
+$2,450 - $3,500
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Move-In Date</=
+span>:
+Around January 8th
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Pets</span>:
+None
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Amenities</spa=
+n>:
+Prefers In unit laundry
+</td>
+</tr>
+</table>
+</td>
+<td class=3D'col' height=3D'20' style=3D'font-size:1px' width=3D'10%'></td>
+<td class=3D'col' valign=3D'top' width=3D'45%'>
+<table border=3D'0' cellpadding=3D'0' cellspacing=3D'0' class=3D'renter_con=
+tact' width=3D'100%'>
+<tr class=3D'renter_prequalified'>
+<td style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font-w=
+eight:300;font-size:14px;color:#00202C;line-height:21px">
+Jazmin is
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:500;font-size:14px;color:#008AC2;line-height:21px;">pre-qualified</=
+span>:
+<br>
+<div class=3D'income'>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Income</span>:
+Meets your income requirement
+of 2.5x the monthly rent.
+<br>
+</div>
+<div class=3D'eviction_history'>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:bold;font-size:14px;color:#00202C;line-height:21px;">Eviction Histo=
+ry</span>:
+Never been evicted.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D'10'></td>
+</tr>
+
+<tr class=3D'preferences_disclaimer'>
+<td align=3D'left' colspan=3D'3' style=3D"font-family:'Helvetica Neue',Helv=
+etica,arial,sans-serif;font-weight:300;font-size:14px;color:#00202C;line-he=
+ight:21px;border-top:1px solid #E1E1E1;padding-top:10px;">
+Jazmin specifically expressed interest in living at Serenity at Larkspur. A=
+bove are Jazmin's ideal preferences. They might not match your community ex=
+actly, but that's ok. No one can sell your place better than you!
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D'1' height=3D'8'>
+<!--[if !mso]><!--><img border=3D"0" height=3D"8" src=3D"https://zeppelin-p=
+roduction.s3.amazonaws.com/templates/booked_email/hshadow.jpg" style=3D"dis=
+play: block;" width=3D"100%"><!--<![endif]-->
+<!--[if gte mso 9]>
+<img border=3D'0' height=3D'8' src=3D'https://zeppelin-production.s3.amazon=
+aws.com/templates/booked_email/hshadow.jpg' style=3D'display: block;' width=
+=3D'600' />
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D'20' style=3D'font-size:1px'></td>
+</tr>
+<tr>
+<td align=3D'center'>
+<table align=3D'center' bgcolor=3D'#FAF5EE' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' class=3D'table600' style=3D'padding-top:5px;padding-botto=
+m:5px' width=3D'600'>
+<tbody>
+<tr>
+<td align=3D'center' style=3D'border-top:1px solid #E1E1E1;border-bottom:1p=
+x solid #E1E1E1'>
+<!--[if !mso]><!--><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%"><!--<![endif]-->
+<!--[if gte mso 9]>
+<table align=3D'center' border=3D'0' cellpadding=3D'0' cellspacing=3D'0' wi=
+dth=3D'600'>
+<![endif]-->
+<tbody>
+<tr>
+<td height=3D'20' style=3D'font-size:1px'></td>
+</tr>
+<tr>
+<td align=3D'center' style=3D"font-family:'Helvetica Neue',Helvetica,arial,=
+sans-serif;font-weight:300;font-size:14px;color:#00202C;line-height:21px;pa=
+dding-left:30px;padding-right:20px;padding-bottom:10px">
+For your guest card records, Jazmin found you on Apartment List.
+</td>
+</tr>
+<tr>
+<td align=3D'center' class=3D'col' width=3D'32%'>
+<img height=3D'44' src=3D'https://zeppelin-production.s3.amazonaws.com/temp=
+lates/booked_email/logo-1.png' width=3D'218'>
+</td>
+</tr>
+<tr>
+<td height=3D'15' style=3D'font-size:1px'></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table align=3D'center' bgcolor=3D'#FAF5EE' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' class=3D'table600' style=3D'padding-top:0px;padding-botto=
+m:0px' width=3D'600'>
+<tbody>
+<tr>
+<td colspan=3D'1' height=3D'8'>
+<!--[if !mso]><!--><img border=3D"0" height=3D"8" src=3D"https://zeppelin-p=
+roduction.s3.amazonaws.com/templates/booked_email/hshadow.jpg" style=3D"dis=
+play: block;" width=3D"100%"><!--<![endif]-->
+<!--[if gte mso 9]>
+<img border=3D'0' height=3D'8' src=3D'https://zeppelin-production.s3.amazon=
+aws.com/templates/booked_email/hshadow.jpg' style=3D'display: block;' width=
+=3D'600' />
+<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td rowspan=3D'10' style=3D'background-color: #EEEEEE' valign=3D'bottom' wi=
+dth=3D'5'>
+<img border=3D'0' height=3D'1' src=3D'https://zeppelin-production.s3.amazon=
+aws.com/templates/booked_email/vshadow.jpg' style=3D'display: block;' width=
+=3D'5'>
+</td>
+</tr>
+<tr>
+<td height=3D'20' style=3D'font-size:1px'></td>
+</tr>
+<tr class=3D'actively_looking'>
+<td align=3D'center'>
+<table align=3D'center' bgcolor=3D'#EEF3F5' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' class=3D'table600' width=3D'600'>
+<tbody>
+<tr>
+<td align=3D'center' style=3D'padding-top:20px;padding-bottom:20px;padding-=
+left:20px;padding-right:20px'>
+<table border=3D'0' cellpadding=3D'0' cellspacing=3D'0' width=3D'100%'>
+<tbody>
+<tr>
+<td align=3D'center' colspan=3D'3' style=3D"font-family:'Helvetica Neue',He=
+lvetica,arial,sans-serif;font-weight:normal;font-size:21px;color:#00202C ;l=
+ine-height:23px;">
+Jazmin's actively looking, and has already:
+</td>
+</tr>
+<tr>
+<td height=3D'20' style=3D'font-size:1px'></td>
+</tr>
+<tr style=3D'&#x000A;   height: 80px;&#x000A;   min-height: 80px;'>
+<td class=3D'col' width=3D'45%'>
+<table align=3D'center' bgcolor=3D'#00B1A6' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' style=3D'padding-top:10px;padding-left:10px;padding-right=
+:10px;padding-bottom:10px;height: 80px;' width=3D'90%'>
+<tbody>
+<tr>
+<td align=3D'center' width=3D'20%'>
+<img src=3D'https://zeppelin-production.s3.amazonaws.com/templates/booked_e=
+mail/thumbs-up.png'>
+</td>
+<td width=3D'5%'></td>
+<td style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font-w=
+eight:normal;font-size:17px;color:#FFFFFF;line-height:20px;" width=3D'45%'>
+Shown interest in 2 other places
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D'col' height=3D'20' style=3D'font-size:1px' width=3D'1%'></td>
+<td class=3D'col' width=3D'45%'>
+<table align=3D'center' bgcolor=3D'#C26B84' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' style=3D'padding-top:10px;padding-left:10px;padding-right=
+:10px;padding-bottom:10px;height: 80px;' width=3D'90%'>
+<tbody>
+<tr>
+<td align=3D'center' width=3D'20%'>
+<img src=3D'https://zeppelin-production.s3.amazonaws.com/templates/booked_e=
+mail/thumbs-down.png'>
+</td>
+<td width=3D'5%'></td>
+<td style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font-w=
+eight:normal;font-size:17px;color:#FFFFFF ;line-height:20px;" width=3D'45%'>
+Decided against 1 other place
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D'1' height=3D'8'>
+<!--[if !mso]><!--><img border=3D"0" height=3D"8" src=3D"https://zeppelin-p=
+roduction.s3.amazonaws.com/templates/booked_email/hshadow.jpg" style=3D"dis=
+play: block;" width=3D"100%"><!--<![endif]-->
+<!--[if gte mso 9]>
+<img border=3D'0' height=3D'8' src=3D'https://zeppelin-production.s3.amazon=
+aws.com/templates/booked_email/hshadow.jpg' style=3D'display: block;' width=
+=3D'600' />
+<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+<tr>
+<td height=3D'20' style=3D'font-size:1px'></td>
+</tr>
+<tr>
+<td align=3D'center'>
+<table align=3D'center' bgcolor=3D'#00ADF2' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' class=3D'table600' style=3D'padding:20px' width=3D'600'>
+<tr>
+<td align=3D'center' style=3D"font-family:'Helvetica Neue',Helvetica,arial,=
+sans-serif;font-weight:normal;font-size:21px;color:#FFFFFF;line-height:23px=
+;">
+About
+</td>
+</tr>
+<tr>
+<td align=3D'center'>
+<img src=3D'https://zeppelin-production.s3.amazonaws.com/templates/booked_e=
+mail/footer-logo.png'>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- text row started -->
+<tr>
+<td align=3D'center'>
+<table align=3D'center' bgcolor=3D'#FFFFFF' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' class=3D'table600' style=3D'padding-top:20px;padding-righ=
+t:20px;padding-bottom:20px;padding-left:20px' width=3D'600'>
+<tr>
+<td style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font-w=
+eight:300;font-size:14px;color:#00202C;line-height:17px;">
+At Apartment List we work hard to make your lives easier. Here's how:
+<br>
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:500;font-size:14px;color:#008AC2;line-height:17px;">We Deliver Inte=
+rested Renters</span>:
+Really! We only show renters properties we think they'd actually lease at. =
+We don't even show them properties we don't think they would ever consider.=
+ You can rest assured you have someone you can sell.
+<br>
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:500;font-size:14px;color:#008AC2;line-height:17px;">We Only Send Qu=
+alified Leads</span>.
+We check the income and eviction status of renters prior to sending your wa=
+y. Our technology qualifies renters so you're not wasting your time.
+<br>
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:500;font-size:14px;color:#008AC2;line-height:17px;">We Schedule App=
+ointments</span>.
+If your property has signed up with us for this service, we'll also take th=
+e work out of scheduling visits. Contact the renter directly to reschedule =
+if you need to.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- text row ended -->
+<!-- footer row started -->
+<tr>
+<td align=3D'center'>
+<table align=3D'center' bgcolor=3D'#00202C' border=3D'0' cellpadding=3D'0' =
+cellspacing=3D'0' class=3D'table600' width=3D'600'>
+<tr>
+<td align=3D'center'>
+<img class=3D'app' src=3D'https://zeppelin-production.s3.amazonaws.com/temp=
+lates/booked_email/footer-image.png' width=3D'600'>
+</td>
+</tr>
+<tr>
+<td align=3D'center' style=3D"font-family:'Helvetica Neue',Helvetica,arial,=
+sans-serif;font-weight:300;font-size:14px;color:#FFFFFF;line-height:17px;pa=
+dding-top:10px;padding-bottom:10px;padding-left:10px;padding-right:10px">
+We love feedback. Let us know how we can improve!
+<br>
+<span style=3D"font-family:'Helvetica Neue',Helvetica,arial,sans-serif;font=
+-weight:300;font-size:14px;color:#00ADF2;line-height:17px;">
+<a href=3D'#' style=3D'color:#00ADF2;text-decoration:none'>feedback@apartme=
+ntlist.com</a>
+</span>
+</td>
+</tr>
+<tr>
+<td colspan=3D'1' height=3D'8'>
+<!--[if !mso]><!--><img border=3D"0" height=3D"8" src=3D"https://zeppelin-p=
+roduction.s3.amazonaws.com/templates/booked_email/hshadow.jpg" style=3D"dis=
+play: block;" width=3D"100%"><!--<![endif]-->
+<!--[if gte mso 9]>
+<img border=3D'0' height=3D'8' src=3D'https://zeppelin-production.s3.amazon=
+aws.com/templates/booked_email/hshadow.jpg' style=3D'display: block;' width=
+=3D'600' />
+<![endif]-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- footer row ended -->
+<tr>
+<td height=3D'20' style=3D'font-size:1px'></td>
+</tr>
+<!-- body row ended -->
+</table>
+
+<img src=3D"http://clicks.apartmentlist.com/wf/open?upn=3Di5YPVX7ohE7hqbI4Q=
+C10lW9KwVpUZThWbPO-2BA5eBL-2FBhH65fNhm1bvTWTk2oyvo-2BqECAufO-2BHfCoeuAmabn-=
+2B9mvAdjD61JiApQ9U754oYr7yjfog3Q7gETLwgAZFRYcbXNiOtIMlFxfw3yPoiHwPunWmwRbbK=
+Ze0PcmVbXb8dyyN0ImZHSTIipydorlX3oymzq2lw9bN4qp43Ha9na0AOoatAkbjq60BvRPeWqYY=
+8BdSIhzn7pmkoszpgE4QMLwjEQFknUVyQbTNcytMA1mMCd6r3CMoFd6DLdHSLCCW85g6QGbmb9q=
+8xvYyay0XfwwgOukE-2FitZ4PA-2FgHvYNlvOCw-3D-3D" alt=3D"" width=3D"1" height=
+=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important;bor=
+der-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;m=
+argin-right:0 !important;margin-left:0 !important;padding-top:0 !important;=
+padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !impo=
+rtant;"/>
+</body>
+</html>
+
+
+--91e995c560290998c406a413efe4b48fa34f7066fe67acb2b690e8ad754d--

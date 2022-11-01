@@ -1,0 +1,55 @@
+@import '../../sass/colors';
+@import '../../sass/flyout-sizes';
+
+.main {
+  width: $largeFlyoutWidth;
+  min-height: $largeFlyoutHeight;
+  background: $grey50;
+}
+
+.field {
+  margin: 0;
+  padding: 0 .8rem;
+
+  [data-component='field-middle-wrapper'] {
+    min-height: (40rem/16);
+  }
+
+  &.textarea {
+    padding-top: .3rem;
+    padding-left: .9rem;
+  }
+
+  &.to {
+    background: $white;
+  }
+}
+
+.footer {
+  padding: 0 .5rem .5rem;
+  text-align: right;
+
+  .dropzone {
+    display: none;
+  }
+
+  .fileQueue {
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+
+  [data-component='icon-button'] {
+    float: left;
+  }
+}
+
+.backgroundEmailQuote {
+  width: 100%;
+  height: (453rem/16);
+  min-height: (400rem/16);
+  margin-bottom: (11rem/16);
+  padding: 0 1rem;
+  padding-top: (15rem/16);
+  background: #eee;
+}

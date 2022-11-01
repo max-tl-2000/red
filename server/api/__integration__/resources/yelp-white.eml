@@ -1,0 +1,856 @@
+Return-Path: <bounces+6746021-b8b3-yelp=parkmerced.com@em.yelp.com>
+Received: from NAM05-DM3-obe.outbound.protection.outlook.com (mail-eopbgr730069.outbound.protection.outlook.com [40.107.73.69])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id hdea7p8ahfjgje5s7tbrpf57fmecmpedk7j78ig1
+ for yelp.parkmerced@maximus.mail.reva.tech;
+ Tue, 04 Jun 2019 07:28:16 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: fail (spfCheck: domain of em.yelp.com does not designate 40.107.73.69 as permitted sender) client-ip=40.107.73.69; envelope-from=bounces+6746021-b8b3-yelp=parkmerced.com@em.yelp.com; helo=mail-eopbgr730069.outbound.protection.outlook.com;
+Authentication-Results: amazonses.com;
+ spf=fail (spfCheck: domain of em.yelp.com does not designate 40.107.73.69 as permitted sender) client-ip=40.107.73.69; envelope-from=bounces+6746021-b8b3-yelp=parkmerced.com@em.yelp.com; helo=mail-eopbgr730069.outbound.protection.outlook.com;
+ dkim=pass header.i=@maximusrepartners.onmicrosoft.com;
+ dkim=pass header.i=@yelp.com;
+ dmarc=pass header.from=messaging.yelp.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIcHlRMFJsNWJoZlgvdmxGcEw5Zmt1YVl0K3ZsVk9EU1ppbUM0blNDakYwWkxnYkR6LzYvR05HcVBaWUhCQW96aUJpb0VFVlFzalNSNWxSZUNKd1NpZFBOci96eThuWFRxY0NwYlNkSzV4Ym1GN3E0N0dsaGxVYURsUy9rWHZUMHFIZkd1RGp4NXd6NldGQmhkbkgyK1lOVVVsaklacW9TSHpraDNZSDNuM1Y1ak9XUVpDQTV0SmdlcndTdFRib1l2M3lrNUZSM3V3RFByR0tLQXpwckR5NkdLWmg5ME43N3hXZmVxbjl6c0ptRDg2bEdhcmpTNnFKMDA1TFFYajhDODhidmdBemJLc1lsbHU0dHpidDQwdkRYK0x4ekhkWHdnODZKL3hhNTJGVkhvMnhDVVpqb1hoNlJmRTZMTDh5WUtJbk5LMXpQS1lQRG5nR3k0Nm5mYjk=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=I9Mt83iBd1bcQ5B6W1gWHaUH9i/3LnNDvsZh7svOHQhAw4s8VRe0oucYf7jZ3vn4Fjl0ZAX2+zgZ9eBfyozIPMLpuBhrsvIf5whLFfHRC9UpPEz3O7YjfkymBySLpQf6ckX1utSRGi4KUz2ztsS88/L92E+Tz6CEK4FgxGpKfa8=; c=relaxed/simple; s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1559633296; v=1; bh=0X/5jTbGsDKa/h9GjnQk1o7PCnJPB6nSLO5lwgWPnbs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=maximusrepartners.onmicrosoft.com;
+ s=selector1-maximusrepartners-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=AZ9kL5a+x8DqUz0bazjZE7WDWKGYq5g0uMbro+YIRYI=;
+ b=lIgCLIeQ1iNPzVuWoltcECpDjw5+KPS7kcFav8UwN+fFxcTZmydlYnyvVWZfPmoE3diT/0I1ZQkO4YEceykPNnr3Y0nFX0IGBW5cQFY9uiqEgg1fJQ1DzZPCbjvaKDQxR6PCxQzRToh3m+RhSKjn4p2z2ojnl8gkhV6NBAY7+Kc=
+Received: from BN7PR06CA0042.namprd06.prod.outlook.com (2603:10b6:408:34::19)
+ by DM6PR06MB4380.namprd06.prod.outlook.com (2603:10b6:5:1d::25) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1943.16; Tue, 4 Jun
+ 2019 07:28:14 +0000
+Received: from SN1NAM01FT005.eop-nam01.prod.protection.outlook.com
+ (2a01:111:f400:7e40::208) by BN7PR06CA0042.outlook.office365.com
+ (2603:10b6:408:34::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1943.18 via Frontend
+ Transport; Tue, 4 Jun 2019 07:28:13 +0000
+Authentication-Results: spf=fail (sender IP is 67.231.154.164)
+ smtp.mailfrom=em.yelp.com; parkmerced.com; dkim=pass (signature was verified)
+ header.d=yelp.com;parkmerced.com; dmarc=pass action=none
+ header.from=messaging.yelp.com;compauth=pass reason=100
+Received-SPF: Fail (protection.outlook.com: domain of em.yelp.com does not
+ designate 67.231.154.164 as permitted sender)
+ receiver=protection.outlook.com; client-ip=67.231.154.164;
+ helo=dispatch1-us1.ppe-hosted.com;
+Received: from dispatch1-us1.ppe-hosted.com (67.231.154.164) by
+ SN1NAM01FT005.mail.protection.outlook.com (10.152.65.22) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.1943.19 via Frontend Transport; Tue, 4 Jun 2019 07:28:13 +0000
+X-Virus-Scanned: Proofpoint Essentials engine
+Received: from o4.em.yelp.com (o4.em.yelp.com [168.245.63.216])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mx1-us4.ppe-hosted.com (PPE Hosted ESMTP Server) with ESMTPS id 0F28814006E
+	for <yelp@parkmerced.com>; Tue,  4 Jun 2019 07:28:11 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=yelp.com; 
+	h=mime-version:content-type:subject:from:to:list-unsubscribe; 
+	s=s1; bh=FvLCUFAZiXw2c8Rfx5c82lZOCAA=; b=EvLNxWgbZg9JGYmU79gE9xe
+	z3VN7mk0Dm62+OoIe3m/ICNUqLsV/aJmK2R0y/PsxyrGSuDYFAlYbZFtL+gM5qrw
+	A/g+170z7TSC+osL769IFn7UWNaH0NMgEcYVW1zG5i0axR/1tJZE5NPs+1DEisGQ
+	RfxJaY9NSzvhiqXGZlFY=
+Received: by filter0874p1las1.sendgrid.net with SMTP id filter0874p1las1-9059-5CF61D8B-7
+        2019-06-04 07:28:11.1306846 +0000 UTC m=+467792.945442837
+Received: from smtp-sendgrid.yelpcorp.com (ec2-52-41-131-247.us-west-2.compute.amazonaws.com [52.41.131.247])
+	by ismtpd0005p1las1.sendgrid.net (SG) with ESMTP id DTW1i2mfTViM8DLe0_vE1g
+	for <yelp@parkmerced.com>; Tue, 04 Jun 2019 07:28:10.965 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============4721217528594677962=="
+Subject: New Message: Miranda is requesting a quote from Parkmerced
+From: Yelp for Business Owners
+ <reply+c2743541d05d47f1bb1413ec3506dae4@messaging.yelp.com>
+To: "Timur T." <yelp@parkmerced.com>
+Message-ID: <20190604072810.8.78566.917594cb15db4e2da373513b4124e123@yelp.com>
+List-Unsubscribe: <mailto:returnto+bn+rOQzHvs6oEDIZoSKbVz_X1pCtUN1QITDvYANBYUOVd-oYQkZz-QGbQ@yelp.com>
+Date: Tue, 4 Jun 2019 07:28:11 +0000
+X-SG-EID: iRz81Ii6nupQaI7NDyGRbdZ8Hj2sOaFrN0p6UuCx6ry18yZlo0nQa5ewkbauJZm3XegfFSgGOtdtfR
+ cUhAd4OrQhKTwNXxHMzTISYVLmOGuLYM0r6nyD01J9YcacyioSubGN7jJq3lREOctgN3FfRXgYyhb7
+ GDUWaiwRX9T+/5tTXtmDvPB83gxMuggmIYHFcRayXmxw3l3T3rfKiOUmG9tdF2EzphCBhcRHTRwEI2
+ /pPPBdGe5/IW6i1htUgTYRIBIQb1sPnrOZhwe6NrDGDg==
+X-SG-ID: rrAhLvaSoEhkBBFHTC1ezZRj0NOCGPAGwHY0w6eBuiWzE9DpstH6R0jIbbVV9c8IYvEUEWA3r0mvPB
+ j7SHEyzdzfsltIPvGjev70ckZ6Q73M6mvKl9TDiefKdVeCIoNZeUABUNXAhZdgvTj9bOkVhArEOxwK
+ ceEzAoEwCgSJ5F6ryU52VbPfmwAiTOjbmRZG
+X-MDID: 1559633292-Ff1DXBAF7dcY
+Return-Path: bounces+6746021-b8b3-yelp=parkmerced.com@em.yelp.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: a1213313-39a4-470f-9cea-e824afd0357d:0
+X-Forefront-Antispam-Report:
+ CIP:67.231.154.164;IPV:CAL;SCL:-1;CTRY:US;EFV:NLI;SFV:NSPM;SFS:(10009020)(39850400004)(376002)(396003)(136003)(346002)(2980300002)(1110001)(339900001)(52294003)(189003)(199004)(76236002)(42882007)(105004)(236005)(9686003)(336012)(7636002)(105606002)(14444005)(6306002)(85426001)(7596002)(18926415008)(2906002)(58536013)(16586007)(16003)(316002)(71190400001)(89386003)(26826003)(15650500001)(24616004)(33964004)(498600001)(19627405001)(111066002)(1076003)(84326002)(733005)(5660300002)(6862004)(55176004)(356004)(53416004)(118296001)(606006)(126002)(70586007)(36756003)(476003)(68406010)(486006)(956004)(103116003)(246002)(146002)(26005)(8676002)(76130400001)(227083002);DIR:OUT;SFP:1101;SCL:1;SRVR:DM6PR06MB4380;H:dispatch1-us1.ppe-hosted.com;FPR:;SPF:Fail;LANG:en;PTR:dispatch1-us1.ppe-hosted.com;MX:1;A:0;
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: e05d9f04-bf1f-4734-9e03-08d6e8be3439
+X-Microsoft-Antispam:
+ BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(5600148)(711020)(4605104)(4709080)(8001031)(1402095)(71702078);SRVR:DM6PR06MB4380;
+X-MS-TrafficTypeDiagnostic: DM6PR06MB4380:
+X-MS-Exchange-PUrlCount: 15
+X-LD-Processed: a1213313-39a4-470f-9cea-e824afd0357d,ExtAddr
+X-Microsoft-Antispam-PRVS:
+ <DM6PR06MB43801D988CD599F7AAC5CF7F82150@DM6PR06MB4380.namprd06.prod.outlook.com>
+X-MS-Oob-TLC-OOBClassifiers: OLM:6790;
+X-Forefront-PRVS: 0058ABBBC7
+X-MS-Exchange-SenderADCheck: 0
+X-Microsoft-Antispam-Message-Info:
+ FQUbzDcYZhs3gLpMK3x4A1W0U2mGAnLGBxrr1ixKtI21vbbTh/DPBr2et8Mx8GPsx4LadfYhjkfxqTu6xpn0h0JQHyecXFBENQ+6nABzv+dV4vHmFw/084D/BkzVxmZKcQf8mGVtULqZR3cfozUwObwgNxBSOLWVYHErdZ56MARJ3NIq6wfb6GvxvRET3NYE/T2RWT7BJHauWPV47tezSZZJDAMojTngJw2h+Ez5EPedGKxzWwfZd5Xt2vFX7hnHqyjvywcvdZqgZPHoecAQ2em1XisbeDqcktqPFyAZYqiBQriwXt+iVFyFxDntF9HwEcHQJM6hpe8cCbx3Yik8qT3MtgQh+vSi56pMDamYncP9ZzBbAoJ6x1NH+8vkHXMx6cUnj17abBnj5ouSvFgG82mRvnM85LVi/Og3nVZ2UC0Sn5szs9/0/j267xIcX+YKoxeDIuYWm0F/7jNaYFhqTJn6F2isYL8aqGLpElqIBiPs86Tv/hjdNvWa23BPc6lL
+X-ExternalRecipientOutboundConnectors: a1213313-39a4-470f-9cea-e824afd0357d
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-OriginatorOrg: maximusrepartners.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Jun 2019 07:28:13.5253
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e05d9f04-bf1f-4734-9e03-08d6e8be3439
+X-MS-Exchange-CrossTenant-Id: a1213313-39a4-470f-9cea-e824afd0357d
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR06MB4380
+
+--===============4721217528594677962==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+The clock is ticking! Respond to this request soon.=20
+
+|  |  |=20
+
+|  for Business Owners=20=20=20
+---|---=20=20
+---=20=20
+=20=20
+Miranda is interested in working with you!=20=20=20
+=20=20
+---=20=20
+---=20=20
+=20=20
+Sent to Parkmerced at 3711 19th Ave, San Francisco, CA 94132=20=20=20
+=20=20
+---=20=20
+---=20=20
+|  |  |  [ Miranda ](https://yelp.com/user_details?userid=3DIypbtk9TqAVbB27=
+aucuP4g&ytl_=3D917594cb15db4e2da373513b4124e123&utm_medium=3Demail&utm_sour=
+ce=3Dfirst_message_email&utm_campaign=3DJun-04-2019)=20=20
+---=20=20
+****=20=20
+|  |  0  |  |  0=20=20=20
+---|---|---|---=20=20
+---=20=20
+=20=20
+Hi there, I'm looking for an agent to help me with my project. Here are my =
+answers to Yelp's questions regarding the project:=20=20
+=20=20
+In which ZIP code are you looking for agents?=20=20
+94132=20=20
+=20=20
+Describe your need:=20=20
+This is a test to see how this appears in the CRM.=20=20=20
+=20=20
+---=20=20
+---=20=20
+|=20=20=20
+=20=20
+---=20=20
+---=20=20
+=20=20
+Your average response time is 10 hours=20=20=20
+=20=20
+---=20=20
+---=20=20
+=20=20
+Our data shows that Yelp users value prompt responses from business owners =
+when making a purchasing decision. Let Yelp users know you care about their=
+ business by responding now with pricing information.=20=20=20
+=20=20
+---=20=20
+---=20=20
+|  [ Respond Now ](https://biz.yelp.com/messaging/tOUV2MufqMJCkX_TVgtl5w/th=
+read/0idBo6mMTnRKV52_beajSg?ytl_=3D917594cb15db4e2da373513b4124e123&utm_med=
+ium=3Demail&utm_source=3Dfirst_message_email&utm_campaign=3DJun-04-2019)=20=
+=20
+---=20=20
+=20=20
+Or simply respond by replying to this email=20=20=20
+=20=20
+|=20=20=20
+=20=20
+---=20=20
+---=20=20
+|  |  |=20
+
+Did you know? 79% of Yelp users are looking for a business they can visit m=
+ultiple times, so aim to start a conversation that will form the basis of a=
+ customer relationship.=20=20=20
+=20=20
+---=20=20
+---=20=20
+=20=20
+Want more? We=D5=9Ave got you covered with [a step-by-step guide](https://y=
+elp.com/redir?s=3Dcf7243a60506f6a6f8b54a201fa49940c39d302bfa578e48cb8f617c4=
+0244089&url=3Dhttps%3A%2F%2Fwww.yelpblog.com%2F2016%2F08%2Fwin-customers-ye=
+lps-request-quote-tool&ytl_=3D917594cb15db4e2da373513b4124e123&utm_medium=
+=3Demail&utm_source=3Dfirst_message_email&utm_campaign=3DJun-04-2019) for p=
+reparing and responding to requests. Cheers, The Yelp Team=20
+
+*Nielsen, 2016=20=20=20
+=20=20
+---=20=20
+---=20=20
+=20=20
+|=20=20=20
+---=20=20
+=20=20
+---=20=20
+=20=20
+---=20=20
+[Update preferences](https://biz.yelp.com/settings/email?ytl_=3D917594cb15d=
+b4e2da373513b4124e123&utm_medium=3Demail&utm_source=3Dfirst_message_email&u=
+tm_campaign=3DJun-04-2019) | [Unsubscribe](https://biz.yelp.com/block_notif=
+ications/rOQzHvs6oEDIZoSKbVz_X1pCtUN1QITDvYANBYUOVd-oYQkZz-QGbQ/message_the=
+_business?ytl_=3D917594cb15db4e2da373513b4124e123&utm_medium=3Demail&utm_so=
+urce=3Dfirst_message_email&utm_campaign=3DJun-04-2019) |=20=20=20
+---=20=20
+Copyright =C2=A9 2019 Yelp Inc., 140 New Montgomery, San Francisco, CA 9410=
+5, U.S.A.=20
+
+--===============4721217528594677962==
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><img src=3D"https://www.yelp.com/tracking/track.gif?ytl_=3D9175=
+94cb15db4e2da373513b4124e123&amp;utm_medium=3Demail&amp;utm_source=3Dfirst_=
+message_email&amp;utm_campaign=3DJun-04-2019" width=3D"0" height=3D"0" alig=
+n=3D"right"><div class=3D"preview-message" style=3D"
+            display: none !important;
+            visibility: hidden;
+            mso-hide: all;
+            font-size: 1px;
+            color: #ffffff;
+            line-height: 1px;
+            max-height: 0px;
+            max-width: 0px;
+            opacity: 0;
+            overflow: hidden;">
+        The clock is ticking! Respond to this request soon.
+    </div>
+
+
+=20=20=20=20
+=20=20=20=20=20=20=20=20
+            <meta charset=3D"utf-8">
+            <style>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+    body {
+        width: 100% !important;
+        margin: 0 !important;
+        -webkit-text-size-adjust: none;=20
+        -ms-text-size-adjust: none;
+    }
+
+    div[style*=3D"margin: 16px 0"] { margin:0 !important; font-size:100% !i=
+mportant; }
+
+    a {
+        color: #0073bb
+    }
+
+    h1, h2, h3, h4, h5, h6  {
+        color: #333333 !important;
+        line-height: 100% !important;
+        font-weight: bold !important;
+    }
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: #0073bb !important;
+    }
+
+    p {
+        margin: 1em 0;
+    }
+
+    table,
+    table td {
+        border-collapse: collapse;
+    }
+
+    .ExternalClass {
+        width: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+        line-height: 100%;
+    }
+
+    .apple-links-stylefix a {
+        color: inherit !important;
+    }
+
+    .apple-links-no-underline a {
+        color: inherit !important;
+        text-decoration: none;
+    }
+
+    .show-mobile-only {
+        max-height: 0 !important;
+        overflow: hidden !important;
+        display: none !important;
+        mso-hide: all;
+    }
+
+    .show-mobile-only table {
+        mso-hide: all;
+    }
+
+    @media only screen and (max-width: 480px) {
+
+        .paragraph-container p {
+            font-size: 16px;
+        }
+
+        .show-desktop-only {
+            max-height: 0 !important;
+            overflow: hidden !important;
+            display: none !important;
+        }
+
+        .show-mobile-only {
+            max-height: none !important;
+            display: block !important;
+            overflow: visible !important;
+        }
+    }
+
+            </style>
+=20=20=20=20=20=20=20=20
+
+=20=20=20=20=20=20=20=20
+
+
+            <table class=3D"email-body-container" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: collapse;=
+ border-spacing: 0; border: none;" align=3D"center">
+                <tr>
+                    <td>
+                        <div class=3D"email-body" style=3D"
+                            max-width: 620px;
+                            min-width: 320px;
+                            margin: 0 auto;">
+
+
+
+    <table width=3D"100%" style=3D"border-spacing: 0;">
+        <tr><td class=3D"text" style=3D"
+            border-collapse: collapse;
+            padding: 20px 15px 20px 15px;
+            font-family: Helvetica Neue, Arial, sans-serif;">
+                                    <table class=3D"padded-gutter" width=3D=
+"100%" style=3D"border-collapse: collapse; border-spacing: 0; border: none;=
+">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+        <table style=3D"border-collapse: collapse; border-spacing: 0; borde=
+r: none;">
+            <tr>
+                <td>
+                    <div class=3D"responsive-logo">
+                        <div class=3D"show-desktop-only">
+                                <img src=3D"https://s3-media3.fl.yelpcdn.co=
+m/assets/srv0/yelp_styleguide/b91705af4a43/assets/img/email/burst@2x.png" w=
+idth=3D"55" height=3D"auto" style=3D"display: block;">
+
+                        </div>
+
+                        <div class=3D"show-mobile-only" style=3D"max-height=
+: 0px; font-size: 0; overflow: hidden; display: none; mso-hide: all;">
+                                <img src=3D"https://s3-media3.fl.yelpcdn.co=
+m/assets/srv0/yelp_styleguide/b91705af4a43/assets/img/email/burst@2x.png" w=
+idth=3D"34" height=3D"auto" style=3D"display: block;">
+
+                        </div>
+                    </div>
+                </td>
+                    <td style=3D"color: #333333; font-family: Helvetica Neu=
+e, Arial, sans-serif;; font-size: 18px; font-weight: bold; padding-left: 21=
+px;">
+                        for Business Owners
+                    </td>
+            </tr>
+        </table>
+            </td>
+        </tr>
+    </table>
+
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0"><tr><td height=3D"18"></td></tr></table>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+        <div class=3D"h1-container" style=3D"text-align: left; color: #3333=
+33; font-family: Helvetica Neue, Arial, sans-serif;; font-size: 36px; line-=
+height: 42px; font-weight: bold;">
+        Miranda is interested in working with you!
+        </div>
+            </td>
+        </tr>
+    </table>
+
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"6"></td></tr></table>
+
+
+            <table class=3D"padded-gutter" width=3D"100%" style=3D"border-c=
+ollapse: collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+=20=20=20=20=20=20=20=20
+    <div class=3D"paragraph-container" style=3D"text-align: left; color: #3=
+33333; font-family: Helvetica Neue, Arial, sans-serif;; font-size: 16px; li=
+ne-height: 24px;">
+        <p>
+            Sent to Parkmerced at 3711 19th Ave, San Francisco, CA 94132
+        </p>
+    </div>
+
+            </td>
+        </tr>
+    </table>
+
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"36"></td></tr></table>
+
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%">
+        <tr>
+            <td width=3D"72" valign=3D"top">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+
+    <img alt=3D"Guest U." height=3D"60" src=3D"https://s3-media2.fl.yelpcdn=
+.com/assets/srv0/yelp_styleguide/514f6997a318/assets/img/default_avatars/us=
+er_60_square.png" style=3D"display: block; -webkit-border-radius: 3px; bord=
+er-radius: 3px;" width=3D"60">
+
+            </td>
+            <td valign=3D"top">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                        <tr>
+        <td>
+            <a href=3D"https://yelp.com/user_details?userid=3DIypbtk9TqAVbB=
+27aucuP4g&amp;ytl_=3D917594cb15db4e2da373513b4124e123&amp;utm_medium=3Demai=
+l&amp;utm_source=3Dfirst_message_email&amp;utm_campaign=3DJun-04-2019" styl=
+e=3D"
+                color: #0073bb;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 14px;
+            ">
+                Miranda
+            </a>
+        </td>
+    </tr>
+
+                        <tr>
+        <td style=3D"font-size: 12px;">
+            <b></b>
+        </td>
+    </tr>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+
+    <tr>
+        <td>
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"font-weight: bold; font-size: 12px;">
+                <tr>
+                    <td width=3D"22">
+                        <img width=3D"18" height=3D"18" style=3D"display: b=
+lock;" src=3D"https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_styleguide/=
+87a39ff01990/assets/img/email/18x18_friends_c@2x.png">
+                    </td>
+                    <td style=3D"padding-top: 3px;">
+                        0
+                    </td>
+                    <td width=3D"22" style=3D"padding-left: 5px;">
+                        <img width=3D"18" height=3D"18" style=3D"display: b=
+lock;" src=3D"https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/=
+7cb9701e51bb/assets/img/email/18x18_review_c@2x.png">
+                    </td>
+                    <td style=3D"padding-top: 3px;">
+                        0
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+            </td>
+        </tr>
+    </table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"6"></td></tr></table>
+
+
+            <table class=3D"padded-gutter" width=3D"100%" style=3D"border-c=
+ollapse: collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+=20=20=20=20=20=20=20=20
+    <div class=3D"paragraph-container" style=3D"text-align: left; color: #3=
+33333; font-family: Helvetica Neue, Arial, sans-serif;; font-size: 16px; li=
+ne-height: 24px;">
+        <p>
+            Hi there, I'm looking for an agent to help me with my project. =
+Here are my answers to Yelp's questions regarding the project:<br><br>In wh=
+ich ZIP code are you looking for agents?<br>94132<br><br>Describe your need=
+:<br>This is a test to see how this appears in the CRM.
+        </p>
+    </div>
+
+            </td>
+        </tr>
+    </table>
+
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"18"></td></tr></table>
+
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+=20=20=20=20=20=20=20=20=20=20=20=20
+
+
+    <table width=3D"100%" style=3D"border-spacing: 0;">
+        <tr><td class=3D"" style=3D"
+            border-collapse: collapse;
+            padding: 12px 0px 12px 0px;
+            font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style=3D"height: 1px; background-color: #e6e6e6; line_height: =
+24px;"></div>
+        </td></tr>
+    </table>
+
+            </td>
+        </tr>
+    </table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"18"></td></tr></table>
+
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+                <div style=3D"color: #666666; font-size: 16px; line-height:=
+ 24px;">
+                    Your average response time is 10 hours
+                </div>
+            </td>
+        </tr>
+    </table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"18"></td></tr></table>
+
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+            <div style=3D"color: #999999; font-size: 14px; line-height: 24p=
+x;">
+                Our data shows that Yelp users value prompt responses from =
+business owners when making a purchasing decision. Let Yelp users know you =
+care about their business by responding now with pricing information.
+            </div>
+            </td>
+        </tr>
+    </table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"36"></td></tr></table>
+
+
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+=20=20=20=20=20=20=20=20=20=20=20=20
+    <table width=3D"100%" style=3D"border-collapse: collapse; border-spacin=
+g: 0; border: none;">
+        <tr>
+            <td align=3D"center">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+    <!--[if mso]>
+    <span style=3D"
+        width: 300px;
+        display: inline-block;
+        margin-bottom: 6px;
+        text-align: center;
+        background-color: #1273B9;
+        border: 1px solid #1273B9;">
+
+        <a  href=3D"https://biz.yelp.com/messaging/tOUV2MufqMJCkX_TVgtl5w/t=
+hread/0idBo6mMTnRKV52_beajSg" style=3D"
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica Neue, Arial, sans-serif;;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            width: 300px;
+            white-space: nowrap;
+            border-color: #1273B9;
+            border-width: 12px 28px;
+            border-style: solid;">
+            Respond Now
+        </a>
+    </span>&nbsp;=20
+    <div style=3D"display:none;">
+    <![endif]-->
+
+
+    <a href=3D"https://biz.yelp.com/messaging/tOUV2MufqMJCkX_TVgtl5w/thread=
+/0idBo6mMTnRKV52_beajSg?ytl_=3D917594cb15db4e2da373513b4124e123&amp;utm_med=
+ium=3Demail&amp;utm_source=3Dfirst_message_email&amp;utm_campaign=3DJun-04-=
+2019" style=3D"display: inline-block; padding: 12px 28px; text-align: cente=
+r; text-decoration: none; border: 1px solid #1273B9; font-family: Helvetica=
+ Neue, Arial, sans-serif;; font-size: 14px; font-weight: bold; color: white=
+; -webkit-border-radius: 7px; border-radius: 7px; width: 300px; white-space=
+: nowrap; background: #1273B9;">
+        Respond Now
+    </a>
+    <!--[if mso]>
+    </div>
+    <![endif]-->
+
+            </td>
+        </tr>
+            <tr>
+                <td align=3D"center">
+                    <div style=3D"text-align: center; color: #999999; font-=
+family: Helvetica Neue, Arial, sans-serif;; font-size: 12px; line-height: 2=
+4px;">
+                        <p>
+                            Or simply respond by replying to this email
+                        </p>
+                    </div>
+                </td>
+            </tr>
+    </table>
+
+            </td>
+        </tr>
+    </table>
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+=20=20=20=20=20=20=20=20=20=20=20=20
+
+
+    <table width=3D"100%" style=3D"border-spacing: 0;">
+        <tr><td class=3D"" style=3D"
+            border-collapse: collapse;
+            padding: 12px 0px 12px 0px;
+            font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style=3D"height: 1px; background-color: #e6e6e6; line_height: =
+24px;"></div>
+        </td></tr>
+    </table>
+
+            </td>
+        </tr>
+    </table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"18"></td></tr></table>
+
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+
+    <table style=3D"">
+        <tr>
+            <td style=3D"">
+                    <img src=3D"https://s3-media2.fl.yelpcdn.com/assets/srv=
+0/yelp_email_assets/5d6276dd2149/assets/img/biz_illustration_2x.png" alt=3D=
+"" style=3D"height: 68px; width: 60px;">
+            </td>
+            <td style=3D"">
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+                    <div style=3D"color: #333333; font-size: 14px; line-hei=
+ght: 24px; padding-left: 10px;">
+                        Did you know? 79% of Yelp users are looking for a b=
+usiness they can visit multiple times, so aim to start a conversation that =
+will form the basis of a customer relationship.
+                    </div>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ height=3D"36"></td></tr></table>
+
+
+    <table class=3D"padded-gutter" width=3D"100%" style=3D"border-collapse:=
+ collapse; border-spacing: 0; border: none;">
+        <tr>
+            <td style=3D"padding: 0px 15px;">
+            <div style=3D"color: #333333; font-size: 14px; line-height: 24p=
+x; padding-left: 30px;">
+                Want more? We&#1370;ve got you covered with <a href=3D"http=
+s://yelp.com/redir?s=3Dcf7243a60506f6a6f8b54a201fa49940c39d302bfa578e48cb8f=
+617c40244089&amp;url=3Dhttps%3A%2F%2Fwww.yelpblog.com%2F2016%2F08%2Fwin-cus=
+tomers-yelps-request-quote-tool&amp;ytl_=3D917594cb15db4e2da373513b4124e123=
+&amp;utm_medium=3Demail&amp;utm_source=3Dfirst_message_email&amp;utm_campai=
+gn=3DJun-04-2019">a step-by-step guide</a> for preparing and responding to =
+requests. Cheers, The Yelp Team
+            </div>
+            <p>
+            </p><div style=3D"color: #333333; font-size: 14px; line-height:=
+ 24px; padding-left: 30px;">
+                *Nielsen, 2016
+            </div>
+=20=20=20=20=20=20=20=20=20=20=20=20
+            </td>
+        </tr>
+    </table>
+
+
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0"><tr><td height=3D"48"></td></tr></table>
+
+                                    <table class=3D"email-footer" align=3D"=
+center" style=3D"
+        text-align: center;
+        color: #666666;
+        font-family: Helvetica Neue, Arial, sans-serif;;
+        font-size: 12px;">
+        <tr>
+            <td>
+                <div class=3D"show-desktop-only">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+        <tr>
+            <td>
+                <img src=3D"https://s3-media3.fl.yelpcdn.com/assets/srv0/ye=
+lp_styleguide/6066155895d3/assets/img/email/skyline_web@2x.png" height=3D"a=
+uto" width=3D"100%" style=3D"
+                    display: block;
+                    max-width: 620px;">
+            </td>
+        </tr>
+    </table>
+
+                </div>
+
+                <div class=3D"show-mobile-only" style=3D"max-height: 0px; f=
+ont-size: 0; overflow: hidden; display: none; mso-hide: all;">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+        <tr>
+            <td>
+                <img src=3D"https://s3-media3.fl.yelpcdn.com/assets/srv0/ye=
+lp_styleguide/613ba4508512/assets/img/email/skyline_mobile@2x.png" height=
+=3D"auto" width=3D"100%" style=3D"
+                    display: block;
+                    max-width: 620px;">
+            </td>
+        </tr>
+    </table>
+
+                </div>
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+><tr><td height=3D"24"></td></tr></table>
+
+            </td>
+        </tr>
+            <tr>
+                <td style=3D"color: #666666;">
+                    <a class=3D"update-pref-link" href=3D"https://biz.yelp.=
+com/settings/email?ytl_=3D917594cb15db4e2da373513b4124e123&amp;utm_medium=
+=3Demail&amp;utm_source=3Dfirst_message_email&amp;utm_campaign=3DJun-04-201=
+9" style=3D"color: #666666; text-decoration: underline;">Update preferences=
+</a> | <a class=3D"unsub-link" href=3D"https://biz.yelp.com/block_notificat=
+ions/rOQzHvs6oEDIZoSKbVz_X1pCtUN1QITDvYANBYUOVd-oYQkZz-QGbQ/message_the_bus=
+iness?ytl_=3D917594cb15db4e2da373513b4124e123&amp;utm_medium=3Demail&amp;ut=
+m_source=3Dfirst_message_email&amp;utm_campaign=3DJun-04-2019" style=3D"col=
+or: #666666; text-decoration: underline;">Unsubscribe</a>
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td height=3D"6"></td></tr></table>
+
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <span class=3D"legal-text apple-links-stylefix apple-links-=
+no-underline">
+                    Copyright &#169; 2019 Yelp Inc., 140 New Montgomery, Sa=
+n Francisco, CA 94105, U.S.A.
+                </span>
+            </td>
+        </tr>
+    </table>
+
+        </td></tr>
+    </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+=20=20=20=20=20=20=20=20
+=20=20=20=20
+
+<img src=3D"https://u6746021.ct.sendgrid.net/wf/open?upn=3DuygW6QgiB9ITKqU4=
+aOh-2Fm-2FBcPPUq6F2JqEaxlJVs6EbPYqqaR25Qvdtj0j8WXSz0QiHPs8F5H8hrlML4ZETA2xz=
+ONMmg0aOZuXwCned50RP5rjpDAOtp0f47ZBmmm2gup4ffXjwg3e3DPztKnELpyPLzoetKaUWqgS=
+Gw9EWD-2Fab6UK67KGtIWY5ZyKrqHi3gIU-2FoLuTjD8yf8RBs4L56Oc6zNTyMEmcgFcg3Vgmfp=
+GVxpeAxoSlGohXY02Fz-2FVbkkc-2BsdQeid-2FjjOxutFbZptsVyFUaz9NWMXAMXaGMOlx5okN=
+a311trXCIrCCKI-2BRwUw4t0p0nmp4udBvkcZ3n5LsSKkoRR2asp5CJaTAKQJND2UpoYU601F4C=
+mTN8Hl5DBllrVcBi3u0iclh7h1z8gtawlbIWjbFVcjJvasRQbQb0-3D" alt=3D"" width=3D"=
+1" height=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !impo=
+rtant;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !im=
+portant;margin-right:0 !important;margin-left:0 !important;padding-top:0 !i=
+mportant;padding-bottom:0 !important;padding-right:0 !important;padding-lef=
+t:0 !important;"/>
+</body></html>
+
+--===============4721217528594677962==--

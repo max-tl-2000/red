@@ -1,0 +1,76 @@
+@import '../../sass/_colors.scss';
+
+.file-uploader {
+  padding: 1em (24em/16);
+
+  .info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1em;
+
+    [data-component='icon'] {
+      margin-right: (8em/16);
+    }
+
+    svg {
+      opacity: .26;
+
+      fill: rbga($black, .12);
+    }
+  }
+
+  .dropzone-area {
+    width: 100%;
+    height: (132em/16);
+    opacity: .87;
+    border: dashed (2em/16) rgba($black, .12);
+    border-radius: (5em/16);
+
+    &.active {
+      border-color: $blue500;
+    }
+
+    .placeholder {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: .5rem .5rem 1rem;
+      text-align: center;
+
+      align-content: center;
+
+      > p {
+        height: 30%;
+        padding-top: (12em/16);
+      }
+
+      > p:last-child {
+        text-transform: uppercase;
+        opacity: .7;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 30%;
+        padding-top: (12em/16);
+        background: none !important;
+
+        [data-component='icon'] {
+          margin-right: (8em/16);
+        }
+
+        svg {
+          fill: $blue500;
+        }
+      }
+
+      p.option {
+        padding-top: 1em;
+      }
+    }
+  }
+}

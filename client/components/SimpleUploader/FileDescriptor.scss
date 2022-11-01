@@ -1,0 +1,73 @@
+@import '../../sass/_colors.scss';
+
+.fileEntry {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: .7rem;
+
+  .fileName {
+    margin-right: .5rem;
+
+    overflow-wrap: anywhere;
+  }
+
+  .fileSize {
+    min-width: 4rem;
+    margin-right: .5rem;
+  }
+
+  .fileOptions {
+    margin-left: auto;
+  }
+}
+
+.fileEntryInfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &.error {
+    border: 1px solid $redA400;
+  }
+}
+
+.optionsButtons {
+  display: flex;
+}
+
+.itemDescription {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  fill: rgba($black, .26);
+
+  &.margin {
+    margin-right: .5rem;
+  }
+}
+
+.fileOptions {
+  display: flex;
+
+  .icon {
+    cursor: pointer;
+
+    fill: rgba($black, .54);
+  }
+}
+
+.progressBar {
+  position: absolute;
+  height: 2.5rem;
+  background: $blue500;
+}
+
+.error {
+  color: $redA400;
+}

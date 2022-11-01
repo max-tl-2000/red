@@ -1,0 +1,70 @@
+@import '../../sass/_colors.scss';
+$warningColor: $red500;
+$infoColor: $blue700;
+$successColor: $green600;
+$mergeColor: $blueGrey50;
+$warningBg: #f4e3e2;
+
+.NotificationBanner {
+  &.warning {
+    background: $warningBg;
+
+    [data-typography-element='true'] {
+      color: $warningColor;
+    }
+
+    .icon,
+    .iconClose {
+      svg {
+        fill: $warningColor;
+      }
+    }
+  }
+
+  &.info {
+    background: rgba($infoColor, .1);
+
+    [data-typography-element='true'] {
+      color: $infoColor;
+    }
+
+    .icon,
+    .iconClose {
+      svg {
+        fill: $infoColor;
+      }
+    }
+  }
+
+  &.success {
+    background: rgba($successColor, .1);
+
+    [data-typography-element='true'] {
+      color: $successColor;
+    }
+
+    .icon,
+    .iconClose {
+      svg {
+        fill: $successColor;
+      }
+    }
+  }
+
+  &.merge {
+    background: $mergeColor;
+
+    [data-typography-element='true'] {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px;
+      margin: (6.2em/16) (13em/16);
+      color: $purpleA400;
+    }
+
+    .icon,
+    .iconClose {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.footer {
+  cursor: pointer;
+  text-align: center;
+
+  div.inline > p {
+    display: inline-block;
+
+    span {
+      padding: 0 (14rem/16);
+    }
+  }
+
+  p.copyright {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:Corticon" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <urn:CorticonRequest decisionServiceName="Screening">
+			<WorkDocuments><Application id="9062c303-c19b-4dbf-9189-d81e5b42e390">
+          <individual id="c2897bb4-5d25-43ae-9261-b6a3a69b91a8">
+            <creditScore>738</creditScore>
+            <hasBankruptcy>false</hasBankruptcy>
+            <hasForeclosure>false</hasForeclosure>
+            <hasGlobalSanctions>false</hasGlobalSanctions>
+            <id>c2897bb4-5d25-43ae-9261-b6a3a69b91a8</id>
+            <liquidAssets></liquidAssets>
+            <monthlyIncome>5000</monthlyIncome>
+            <type>resident</type>
+          </individual>
+          <individual id="82252d05-56ee-4f56-986e-8feada615146">
+            <creditScore>738</creditScore>
+            <hasBankruptcy>false</hasBankruptcy>
+            <hasForeclosure>false</hasForeclosure>
+            <hasGlobalSanctions>false</hasGlobalSanctions>
+            <id>82252d05-56ee-4f56-986e-8feada615146</id>
+            <liquidAssets></liquidAssets>
+            <monthlyIncome>5000</monthlyIncome>
+            <type>resident</type>
+          </individual>
+          <individual id="fe262c9d-1c9b-44c6-81ae-9a64e86547ba">
+            <creditScore>738</creditScore>
+            <hasBankruptcy>false</hasBankruptcy>
+            <hasForeclosure>false</hasForeclosure>
+            <hasGlobalSanctions>false</hasGlobalSanctions>
+            <id>fe262c9d-1c9b-44c6-81ae-9a64e86547ba</id>
+            <liquidAssets></liquidAssets>
+            <monthlyIncome>5000</monthlyIncome>
+            <type>occupant</type>
+          </individual>
+          <individual id="47e19704-6b8c-4df1-ad51-f03fa9ddfca7">
+            <creditScore>738</creditScore>
+            <hasBankruptcy>false</hasBankruptcy>
+            <hasForeclosure>false</hasForeclosure>
+            <hasGlobalSanctions>false</hasGlobalSanctions>
+            <id>47e19704-6b8c-4df1-ad51-f03fa9ddfca7</id>
+            <liquidAssets></liquidAssets>
+            <monthlyIncome>5000</monthlyIncome>
+            <type>guarantor</type>
+          </individual>
+          <prop id="Property_id_1"><allowLiquidAssets>true</allowLiquidAssets>
+            <applicantsBankruptcy>guarantorRequired</applicantsBankruptcy>
+            <applicantsCreditScoreApproved>approved</applicantsCreditScoreApproved>
+            <applicantsCreditScoreBetween>increasedDepositRequired</applicantsCreditScoreBetween>
+            <applicantsCreditScoreDeclined>declined</applicantsCreditScoreDeclined>
+            <applicantsExcessiveIssues>guarantorRequired</applicantsExcessiveIssues>
+            <applicantsForeclosure>increasedDepositRequired</applicantsForeclosure>
+            <applicantsInsufficientIncome>increasedDepositRequired</applicantsInsufficientIncome>
+            <approvedGuarantorCreditScore>600</approvedGuarantorCreditScore>
+            <approvedResidentCreditScore>600</approvedResidentCreditScore>
+            <declinedGuarCreditScore>400</declinedGuarCreditScore>
+            <declinedResidentCreditScore>400</declinedResidentCreditScore>
+            <excessiveIssuesCount>4</excessiveIssuesCount>
+            <fullLeaseLiquidAssetMultiple>2.000000</fullLeaseLiquidAssetMultiple>
+            <globalSanctions>declined</globalSanctions>
+            <guarantorsBankruptcy>increasedDepositRequired</guarantorsBankruptcy>
+            <guarantorsCreditScoreApproved>approved</guarantorsCreditScoreApproved>
+            <guarantorsCreditScoreBetween>increasedDepositRequired</guarantorsCreditScoreBetween>
+            <guarantorsCreditScoreDeclined>declined</guarantorsCreditScoreDeclined>
+            <guarantorsForeclosure>increasedDepositRequired</guarantorsForeclosure>
+            <guarantorsInsufficientIncome>increasedDepositRequired</guarantorsInsufficientIncome>
+            <hasGroupGuarantorCreditScore>false</hasGroupGuarantorCreditScore>
+            <hasGroupGuarantorIncome>false</hasGroupGuarantorIncome>
+            <hasGroupResidentCreditScore>false</hasGroupResidentCreditScore>
+            <hasGroupResidentIncome>false</hasGroupResidentIncome>
+            <incomeMultipleGuarantor>1.500000</incomeMultipleGuarantor>
+            <incomeMultipleResident>1.500000</incomeMultipleResident>
+          </prop>
+          <quote id="6929f465-990e-4a4d-9fd9-3f42271381cb"><agent></agent>
+            <monthlyRent>2924</monthlyRent>
+            <monthlyTotalRent>2924</monthlyTotalRent>
+            <property>XYZ BUILDING</property>
+            <termLength>6</termLength>
+          </quote>
+          <quote id="6929f465-990e-4a4d-9fd9-3f42271381cb"><agent></agent>
+            <monthlyRent>2924</monthlyRent>
+            <monthlyTotalRent>2924</monthlyTotalRent>
+            <property>XYZ BUILDING</property>
+            <termLength>12</termLength>
+          </quote>
+          <quote id="147df813-bb3e-423a-a8ba-14083dd4dec1"><agent></agent>
+            <monthlyRent>2915</monthlyRent>
+            <monthlyTotalRent>2915</monthlyTotalRent>
+            <property>XYZ BUILDING</property>
+            <termLength>12</termLength>
+          </quote>
+          <quote id="d13ee172-0b61-4b71-9758-9faea12f1919"><agent></agent>
+            <monthlyRent>2990</monthlyRent>
+            <monthlyTotalRent>2990</monthlyTotalRent>
+            <property>XYZ BUILDING</property>
+            <termLength>6</termLength>
+          </quote>
+          <quote id="bd421552-db57-447e-9e68-8e0d8fbc5d1f"><agent></agent>
+            <monthlyRent>2924</monthlyRent>
+            <monthlyTotalRent>2924</monthlyTotalRent>
+            <property>XYZ BUILDING</property>
+            <termLength>6</termLength>
+          </quote>
+				</Application></WorkDocuments>
+		</urn:CorticonRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

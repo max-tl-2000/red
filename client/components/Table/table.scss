@@ -1,0 +1,217 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: (64rem/16);
+  padding: (10rem/16) (24rem/16);
+}
+
+.header-inner {
+  display: block;
+}
+
+.table {
+  display: block;
+}
+
+.title {
+  @include textTitle();
+}
+
+.subtitle {
+  @include caption();
+  @include textSecondary();
+
+  font-weight: 500;
+}
+
+.row-footer,
+.row-header,
+.group-title-outer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: (56rem/16);
+}
+
+.group-title-outer {
+  padding: .5rem (24rem/16) 0;
+}
+
+.group-title,
+.row-header .cell {
+  @include caption();
+  @include textSecondary();
+
+  font-weight: 500;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: (48rem/16);
+  transition: background .3s ease-out;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    background: $hoverBGColor;
+  }
+
+  &:active,
+  &.selected {
+    background: $activeBGColor;
+
+    &:hover {
+      background: rgba($activeBGColor, .15);
+    }
+  }
+
+  &.no-hover {
+    &:hover {
+      background-color: unset;
+    }
+  }
+
+  &.fullWidthDivider {
+    &:after {
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+.read-only {
+  .row {
+    &:hover,
+    &:focus,
+    &:active,
+    &.selected {
+      background: transparent;
+    }
+  }
+}
+
+.cell {
+  @include body();
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 (24rem/16);
+
+  &.no-padding {
+    padding-right: 0;
+    padding-left: (14rem/16);
+  }
+
+  &.no-side-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.smallPadding {
+    padding: 0 (8rem/16);
+  }
+
+  &.noPaddingLeft {
+    padding-left: 0;
+  }
+}
+
+.wide {
+  .cell:first-of-type {
+    padding-left: 0;
+  }
+
+  .cell:last-of-type {
+    padding-right: 0;
+  }
+
+  .row-header:before,
+  .row-header:after,
+  .row:after {
+    right: 0;
+    left: 0;
+  }
+}
+
+.cell-inner {
+  padding: (6rem/16) 0;
+}
+
+.row-header:after,
+.row:after {
+  position: absolute;
+  right: (24rem/16);
+  bottom: 0;
+  left: (24rem/16);
+  content: ' ';
+  border-bottom: 1px solid #eee;
+}
+
+.indented:after {
+  border-bottom: none;
+}
+
+.no-divider:after {
+  border-bottom: none;
+}
+
+.indented:last-of-type {
+  &:after {
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.row-header:before {
+  position: absolute;
+  top: 0;
+  right: (24rem/16);
+  left: (24rem/16);
+  content: ' ';
+}
+
+.text-primary {
+  @include body();
+}
+
+.text-secondary {
+  @include body();
+  @include textSecondary();
+
+  line-height: 1rem;
+}
+
+.highlight {
+  @include body();
+  @include lightHighlight();
+
+  line-height: 1rem;
+}
+
+.header-actions {
+  position: absolute;
+  right: 0;
+  bottom: (12rem/16);
+  padding-right: (17rem/16);
+  text-align: right;
+
+  > button {
+    margin-left: (10rem/16);
+  }
+}
+
+.inline {
+  margin-right: (6rem/16);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

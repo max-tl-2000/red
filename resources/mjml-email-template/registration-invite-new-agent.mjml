@@ -1,0 +1,40 @@
+<mjml>
+  <mj-body>
+    <mj-container>
+      <mj-wrapper border="1px solid #ddd" padding="0px">
+        <!-- header-short -->
+        <mj-section background-color="#0098EF">
+          <mj-column vertical-align="top">
+            <mj-text line-height="28px" font-family="Roboto" font-weight="400" font-size="20px" color="#ffffff">
+              Reva
+            </mj-text>
+          </mj-column>
+        </mj-section>
+        <!-- hero-image -->
+        <mj-section padding-top="0px" padding-bottom="0px" background-color="#ffffff">
+          <mj-column border="mediumpx none black">
+            <mj-image src="%$register-invite.heroImageSrc%" padding-top="0px" padding-bottom="0px" padding-right="0px" padding-left="0px" alt="Reva"/>
+          </mj-column>
+        </mj-section>
+        <!-- email-body -->
+        <mj-section padding-top="0px" padding-bottom="0px" background-color="#ffffff">
+          <mj-column>
+            <mj-text font-family="Roboto" color="#212121" line-height="24px" font-size="15px"padding-top="32px" padding-bottom="32px" align="center">
+              <span style="font-size:24px;">You're invited</span>
+              <br /><br />
+              You're invited to join Reva, the next generation property management solution. Follow the link below to set a password and finish creating your account.
+            </mj-text>
+          </mj-column>
+        </mj-section>
+        <!-- CTA -->
+        <mj-section padding-top="0px" padding-bottom="48px" background-color="#ffffff">
+          <mj-column>
+            <mj-button background-color="#0098ef" border-radius="2px 2px 2px 2px" font-size="14px" font-weight="500" padding-bottom="0px" font-family="Roboto" padding-top="0px" padding-left="16px" padding-right="16px" href="%$registerAgent.url%" text-transform="uppercase">
+              Create account
+            </mj-button>
+          </mj-column>
+        </mj-section>
+      </mj-wrapper>
+    </mj-container>
+  </mj-body>
+</mjml>

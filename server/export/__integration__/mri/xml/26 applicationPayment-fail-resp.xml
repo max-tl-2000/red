@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<PaymentResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<nameID>{{nameId}}</nameID>
+	<description>App fee</description>
+	<amount>1.50</amount>
+	<convenienceFee>0</convenienceFee>
+	<securityCode>0</securityCode>
+	<transactionReference>transaction-externalId</transactionReference>
+	<transactionOutcome>Processed</transactionOutcome>
+	<paymentSucceded>Y</paymentSucceded>
+	<Result>Failed</Result>
+</PaymentResult>

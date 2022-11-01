@@ -1,0 +1,12 @@
+@import '../../sass/_typography-mixins.scss';
+
+.value {
+  @include body();
+}
+
+.unit {
+  @include body();
+  @include textSecondary();
+
+  margin-left: .25em;
+}

@@ -1,0 +1,106 @@
+@import '../../sass/_colors';
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: .25rem 1rem;
+
+  .username {
+    font-size: .75rem;
+    font-weight: bold;
+    line-height: 1rem;
+    margin-bottom: .25rem;
+    text-align: right;
+  }
+
+  .failure-notice {
+    font-size: (10rem/16);
+    line-height: 1rem;
+  }
+
+  .time {
+    font-size: (10rem/16);
+    line-height: 1rem;
+    text-align: right;
+  }
+
+  .senderName {
+    font-size: (10rem/16);
+    line-height: 1rem;
+    width: 100%;
+    text-align: right;
+  }
+
+  .body-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .icon {
+      margin-top: (10rem/16);
+    }
+
+    .body-section {
+      max-width: 75%;
+
+      --lh: 1.25rem;
+
+      .title {
+        font-weight: 700;
+      }
+
+      .clamped-text {
+        font-size: (13rem/16);
+        line-height: var(--lh);
+
+        > p {
+          margin: 0;
+        }
+
+        > button {
+          padding: 0;
+          cursor: pointer;
+          text-decoration: underline;
+          color: $blue900;
+          border: none;
+          background: none;
+        }
+      }
+
+      .retracted {
+        margin-top: .375rem;
+      }
+
+      > div {
+        float: left;
+        padding: .375rem .5rem;
+        white-space: pre-wrap;
+        word-break: break-word;
+        border-radius: .375rem .375rem 0 .375rem;
+        background: $blue50;
+      }
+
+      p {
+        line-height: var(--lh);
+      }
+    }
+  }
+
+  .meta-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: .25rem;
+
+    .icon {
+      width: auto;
+      height: auto;
+
+      svg {
+        width: (24rem/16);
+        height: (16rem/16);
+      }
+    }
+  }
+}

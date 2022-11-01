@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:Corticon" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <soapenv:Header/>
+  <soapenv:Body>
+    {{#with this}}
+    <urn:CorticonRequest decisionServiceName="{{dsName}}">
+      <WorkDocuments>
+        <Party id="Party_id_1">
+          <created_at>{{ created_at }}</created_at>
+          <assignedProperty>{{ assignedProperty }}</assignedProperty>
+          <mostRecentInboundCommTime>{{ mostRecentInboundCommTime }}</mostRecentInboundCommTime>
+          <NoResponseCounter>{{ noResponseCounter }}</NoResponseCounter>
+          <partyOwnerUUID>{{ partyOwnerUUID }}</partyOwnerUUID>
+          <createdFromCommId>{{ createdFromCommId }}</createdFromCommId>
+          <UUID>{{ id }}</UUID>
+          <workflowState>{{ workflowState }}</workflowState>
+          <workflowName>{{ workflowName }}</workflowName>
+          <leaseType>{{ leaseType }}</leaseType>
+          <propertyTimeZone>{{ propertyTimeZone }}</propertyTimeZone>
+          {{#each eventCommRecord}}
+          <Comms id="CommRecord_id_{{increment @index}}">
+            <callDurationSeconds>{{ callDurationSeconds }}</callDurationSeconds>
+            <callLengthReqSeconds>{{ callLengthReqSeconds }}</callLengthReqSeconds>
+            <commAgentUUID>{{ commAgentUUID }}</commAgentUUID>
+            <created_at>{{ created_at }}</created_at>
+            <direction>{{ direction }}</direction>
+            <eventType>{{ eventType }}</eventType>
+            <callConnectedWithAgent>{{ callConnectedWithAgent }}</callConnectedWithAgent>
+            <UUID>{{ id }}</UUID>
+            <isLeadCreated>{{ isLeadCreated }}</isLeadCreated>
+            <isCallbackRequested>{{ isCallbackRequested }}</isCallbackRequested>
+            <isVideoLinkRequested>{{ isVideoLinkRequested }}</isVideoLinkRequested>
+            <category>{{ category }}</category>
+            <isCommForAllPartyMembers>{{ isCommForAllPartyMembers }}</isCommForAllPartyMembers>
+          </Comms>
+          {{/each}}
+          {{#each comms}}
+          <CommList id="CommList_id_{{increment @index}}">
+            <callDurationSeconds>{{ callDurationSeconds }}</callDurationSeconds>
+            <callLengthReqSeconds>{{ callLengthReqSeconds }}</callLengthReqSeconds>
+            <commAgentUUID>{{ commAgentUUID }}</commAgentUUID>
+            <created_at>{{ created_at }}</created_at>
+            <direction>{{ direction }}</direction>
+            <eventType>{{ eventType }}</eventType>
+            <callConnectedWithAgent>{{ callConnectedWithAgent }}</callConnectedWithAgent>
+            <UUID>{{ id }}</UUID>
+            <isLeadCreated>{{ isLeadCreated }}</isLeadCreated>
+            <isCallbackRequested>{{ isCallbackRequested }}</isCallbackRequested>
+            <isVideoLinkRequested>{{ isVideoLinkRequested }}</isVideoLinkRequested>
+            <category>{{ category }}</category>
+            <isCommForAllPartyMembers>{{ isCommForAllPartyMembers }}</isCommForAllPartyMembers>
+          </CommList>
+          {{/each}}
+          {{#each partyMembers}}
+          <partyMembers id="PartyMember_id_{{increment @index}}">
+            <created_at>{{ created_at }}</created_at>
+            <lastCommunicationDate>{{ lastCommunicationDate }}</lastCommunicationDate>
+            <UUID>{{ id }}</UUID>
+            <modifiedByUUID>{{ modifiedBy }}</modifiedByUUID>
+            <hasContactInfo>{{ hasContactInfo }}</hasContactInfo>
+            <personUUID>{{ personId }}</personUUID>
+            <isActive>{{ isActive }}</isActive>
+            <hasAnonymousEmail>{{ hasAnonymousEmail }}</hasAnonymousEmail>
+            {{#with personApplication}}
+            <personApplication id="PersonApplication_id_1">
+              <applicationStatus xsi:nil="true">{{ applicationStatus }}</applicationStatus>
+              <completionDate xsi:nil="true">{{ completionDate }}</completionDate>
+              <created_at xsi:nil="true">{{ created_at }}</created_at>
+              <dateApplicationOpened xsi:nil="true">{{ dateApplicationOpened }}</dateApplicationOpened>
+              <dateApplicationPaid xsi:nil="true">{{ dateApplicationPaid }}</dateApplicationPaid>
+              <dateLinkSent xsi:nil="true">{{ dateLinkSent }}</dateLinkSent>
+              <UUID xsi:nil="true">{{ id }}</UUID>
+            </personApplication>
+            {{/with}}
+          </partyMembers>
+          {{/each}}
+          {{#each quotes}}
+          <quote id="Quote_id_{{increment @index}}">
+            <created_at xsi:nil="true">{{ created_at }}</created_at>
+            <dateLinkSent xsi:nil="true">{{ dateLinkSent }}</dateLinkSent>
+            <id xsi:nil="true">{{ id }}</id>
+            <isQuotePrinted xsi:nil="true">{{ isQuotePrinted }}</isQuotePrinted>
+          </quote>
+          {{/each}}
+          {{#each tasks}}
+          <Tasks id="Task_id_{{increment @index}}">
+            <category>{{ category }}</category>
+            <dueDate xsi:nil="true">{{ dueDate }}</dueDate>
+            <name>{{ name }}</name>
+            <state>{{ state }}</state>
+            <taskOwnerUUID>{{ taskOwner }}</taskOwnerUUID>
+            <UUID>{{ id }}</UUID>
+            <created_at>{{ created_at }}</created_at>
+            <personUUID>{{ personId }}</personUUID>
+            <createdByUUID>{{ createdBy }}</createdByUUID>
+            <completionDate>{{ completionDate }}</completionDate>
+          </Tasks>
+          {{/each}}
+          {{#if partyApplication}}
+          {{#with partyApplication}}
+          <theApp id="PartyApplication_id_1">
+            <completelyPaidDate xsi:nil="true">{{ completelyPaidDate }}</completelyPaidDate>
+            <completionDate xsi:nil="true">{{ completionDate }}</completionDate>
+            <created_at xsi:nil="true">{{ created_at }}</created_at>
+            <UUID xsi:nil="true">{{ id }}</UUID>
+          </theApp>
+          {{/with}}
+          {{/if}}
+          {{#if lease}}
+          {{#with lease}}
+          <theLease id="Lease_id_1">
+            <created_at xsi:nil="true">{{ created_at }}</created_at>
+            <status>{{ status }}</status>
+            <UUID xsi:nil="true">{{ id }}</UUID>
+          </theLease>
+          {{/with}}
+          {{/if}}
+          {{#if activeLeaseData}}
+          {{#with activeLeaseData}}
+          <theActiveLeaseData id="ActiveLeaseData_id_1">
+            <id xsi:nil="true">{{ id }}</id>
+            <created_at xsi:nil="true">{{ created_at }}</created_at>
+            <state xsi:nil="true">{{ state }}</state>
+            <leaseEndDate xsi:nil="true">{{ leaseEndDate }}</leaseEndDate>
+          </theActiveLeaseData>
+          {{/with}}
+          {{/if}}
+        </Party>
+        <ThresholdsAndSLAs id="ThresholdsAndSLAs_id_1">
+          <ApplicationCompletedTimeSeconds xsi:nil="true" />
+          <ApplicationOpenTimeSeconds xsi:nil="true" />
+          <ApplicationPaidTimeSeconds xsi:nil="true" />
+          <CallLengthRequirementsSeconds xsi:nil="true" />
+          <NoResponseCount xsi:nil="true" />
+          <SecondsSinceProspectCommunication xsi:nil="true" />
+          <MoveOutNoticePeriodDays xsi:nil="true">{{ moveoutNoticePeriodDays }}</MoveOutNoticePeriodDays>
+        </ThresholdsAndSLAs>
+      </WorkDocuments>
+    </urn:CorticonRequest>
+    {{/with}}
+  </soapenv:Body>
+</soapenv:Envelope>

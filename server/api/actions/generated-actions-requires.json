@@ -1,0 +1,1021 @@
+{
+    "sendInvite": {
+        "module": "./userInvite"
+    },
+    "sendInviteImportedUsers": {
+        "module": "./userInvite"
+    },
+    "updateInvite": {
+        "module": "./userInvite"
+    },
+    "validateToken": {
+        "module": "./validateToken",
+        "default": true
+    },
+    "sendResetPasswordMail": {
+        "module": "./sendResetPasswordMail",
+        "default": true
+    },
+    "validateResetToken": {
+        "module": "./validateResetToken"
+    },
+    "globalSearch": {
+        "module": "./search"
+    },
+    "searchPersons": {
+        "module": "./search"
+    },
+    "searchCompanies": {
+        "module": "./search"
+    },
+    "getRankedUnits": {
+        "module": "./search"
+    },
+    "saveSearchHistory": {
+        "module": "./search"
+    },
+    "loadSearchHistory": {
+        "module": "./search"
+    },
+    "getPersonMatches": {
+        "module": "./search"
+    },
+    "swagger": {
+        "module": "./swagger",
+        "default": true
+    },
+    "addParty": {
+        "module": "./party"
+    },
+    "loadParty": {
+        "module": "./party"
+    },
+    "loadAllParties": {
+        "module": "./party"
+    },
+    "addPartyMember": {
+        "module": "./party"
+    },
+    "loadPartiesByPartyGroupId": {
+        "module": "./party"
+    },
+    "updatePartyMember": {
+        "module": "./party"
+    },
+    "loadPartyMembers": {
+        "module": "./party"
+    },
+    "loadPartyAgent": {
+        "module": "./party"
+    },
+    "getPartyStates": {
+        "module": "./party"
+    },
+    "getMemberTypes": {
+        "module": "./party"
+    },
+    "getPersonIdTypes": {
+        "module": "./party"
+    },
+    "updateParty": {
+        "module": "./party"
+    },
+    "assignParty": {
+        "module": "./party"
+    },
+    "closeParty": {
+        "module": "./party"
+    },
+    "markAsSpam": {
+        "module": "./party"
+    },
+    "reopenParty": {
+        "module": "./party"
+    },
+    "removePartyMember": {
+        "module": "./party"
+    },
+    "loadAllPartyAdditionalInfo": {
+        "module": "./party"
+    },
+    "loadPartyAdditionalInfo": {
+        "module": "./party"
+    },
+    "addPartyAdditionalInfo": {
+        "module": "./party"
+    },
+    "updatePartyAdditionalInfo": {
+        "module": "./party"
+    },
+    "removePartyAdditionalInfo": {
+        "module": "./party"
+    },
+    "loadAllApplicationStatus": {
+        "module": "./party"
+    },
+    "loadAllScreeningResults": {
+        "module": "./party"
+    },
+    "loadAllQuotePromotions": {
+        "module": "./party"
+    },
+    "insertQuotePromotion": {
+        "module": "./party"
+    },
+    "loadQuotePromotion": {
+        "module": "./party"
+    },
+    "updateQuotePromotion": {
+        "module": "./party"
+    },
+    "getImpersonationToken": {
+        "module": "./party"
+    },
+    "getApplicationInvoices": {
+        "module": "./party"
+    },
+    "sendApplicationInvitationToContact": {
+        "module": "./party"
+    },
+    "demoteApplication": {
+        "module": "./party"
+    },
+    "exportParty": {
+        "module": "./party"
+    },
+    "linkPartyMember": {
+        "module": "./party"
+    },
+    "createMergePartySession": {
+        "module": "./party"
+    },
+    "generateNextPartyMatch": {
+        "module": "./party"
+    },
+    "resolvePartyMatch": {
+        "module": "./party"
+    },
+    "closeImportedParties": {
+        "module": "./party"
+    },
+    "migrateRenewalV1": {
+        "module": "./party"
+    },
+    "restartCai": {
+        "module": "./party"
+    },
+    "validatePartyId": {
+        "module": "./party"
+    },
+    "validatePartyIds": {
+        "module": "./party"
+    },
+    "validatePartyGroupId": {
+        "module": "./party"
+    },
+    "exportPartyFromHtml": {
+        "module": "./party"
+    },
+    "archivePartiesFromSoldProperties": {
+        "module": "./party"
+    },
+    "copyPersonApplication": {
+        "module": "./party"
+    },
+    "addTransferReasonActivityLogAndComm": {
+        "module": "./party"
+    },
+    "getInventoryItem": {
+        "module": "./inventory"
+    },
+    "getInventoryItems": {
+        "module": "./inventory"
+    },
+    "getInventoryItemDetails": {
+        "module": "./inventory"
+    },
+    "getAmenitiesFromInventory": {
+        "module": "./inventory"
+    },
+    "getInventoryItemsByFee": {
+        "module": "./inventory"
+    },
+    "setInventoryOnHold": {
+        "module": "./inventory"
+    },
+    "releaseManuallyHeldInventory": {
+        "module": "./inventory"
+    },
+    "getScheduleOverview": {
+        "module": "./schedule"
+    },
+    "getScheduleForDays": {
+        "module": "./schedule"
+    },
+    "loadLayouts": {
+        "module": "./layout"
+    },
+    "loadBuildings": {
+        "module": "./building"
+    },
+    "updatePerson": {
+        "module": "./person"
+    },
+    "loadPersons": {
+        "module": "./person"
+    },
+    "loadPersonById": {
+        "module": "./person"
+    },
+    "loadRawLeads": {
+        "module": "./person"
+    },
+    "mergePersons": {
+        "module": "./person"
+    },
+    "validatePersonId": {
+        "module": "./person"
+    },
+    "getBlacklist": {
+        "module": "./blacklist"
+    },
+    "addToBlacklist": {
+        "module": "./blacklist"
+    },
+    "removeFromBlacklist": {
+        "module": "./blacklist"
+    },
+    "handleWebInquiry": {
+        "module": "./webInquiry"
+    },
+    "getAvailableSlots": {
+        "module": "./webInquiry"
+    },
+    "getAppointmentForSelfService": {
+        "module": "./webInquiry"
+    },
+    "updateAppointmentFromSelfService": {
+        "module": "./webInquiry"
+    },
+    "handleMarketingContact": {
+        "module": "./marketingContact"
+    },
+    "handleMarketingForm": {
+        "module": "./marketingForm"
+    },
+    "loadUsers": {
+        "module": "./users"
+    },
+    "loadUsersByIds": {
+        "module": "./users"
+    },
+    "loadUserById": {
+        "module": "./users"
+    },
+    "registerWithInvite": {
+        "module": "./users"
+    },
+    "login": {
+        "module": "./users"
+    },
+    "autoLogin": {
+        "module": "./users"
+    },
+    "resetPassword": {
+        "module": "./users"
+    },
+    "updateUser": {
+        "module": "./users"
+    },
+    "updateUserStatus": {
+        "module": "./users"
+    },
+    "logoutUser": {
+        "module": "./users"
+    },
+    "createIpPhoneCredentials": {
+        "module": "./users"
+    },
+    "removeIpPhoneCredentials": {
+        "module": "./users"
+    },
+    "enqueueInboundEmailReceived": {
+        "module": "./webhooks"
+    },
+    "enqueueOutboundEmailStatusChange": {
+        "module": "./webhooks"
+    },
+    "enqueueInboundSmsReceived": {
+        "module": "./webhooks"
+    },
+    "enqueueOutboundSmsStatusChange": {
+        "module": "./webhooks"
+    },
+    "respondToCallRequest": {
+        "module": "./webhooks"
+    },
+    "respondToPostCallRequest": {
+        "module": "./webhooks"
+    },
+    "respondToDialCallbackRequest": {
+        "module": "./webhooks"
+    },
+    "saveCallRecording": {
+        "module": "./webhooks"
+    },
+    "respondToDigitsPressedRequest": {
+        "module": "./webhooks"
+    },
+    "respondToCallReadyForDequeueRequest": {
+        "module": "./webhooks"
+    },
+    "respondToConferenceCallbackRequest": {
+        "module": "./webhooks"
+    },
+    "respondToRCEvent": {
+        "module": "./webhooks"
+    },
+    "transferFromQueue": {
+        "module": "./webhooks"
+    },
+    "transferToVoicemail": {
+        "module": "./webhooks"
+    },
+    "respondToAgentCallForQueueRequest": {
+        "module": "./webhooks"
+    },
+    "respondToCalendarDelegatedAccessCallback": {
+        "module": "./webhooks"
+    },
+    "userRevaCalendarEventUpdatedCallback": {
+        "module": "./webhooks"
+    },
+    "userPersonalCalendarEventUpdatedCallback": {
+        "module": "./webhooks"
+    },
+    "teamCalendarEventUpdatedCallback": {
+        "module": "./webhooks"
+    },
+    "externalCalendarRsvpStatus": {
+        "module": "./webhooks"
+    },
+    "sendGridStats": {
+        "module": "./webhooks"
+    },
+    "getFilteredAmenities": {
+        "module": "./amenity"
+    },
+    "saveUnitsFilters": {
+        "module": "./unitsFilters"
+    },
+    "createTenant": {
+        "module": "./tenants"
+    },
+    "clearTenantSchema": {
+        "module": "./tenants"
+    },
+    "downloadExportedDatabaseFileFromS3": {
+        "module": "./tenants"
+    },
+    "patchTenant": {
+        "module": "./tenants"
+    },
+    "getAllTenants": {
+        "module": "./tenants"
+    },
+    "getTenantById": {
+        "module": "./tenants"
+    },
+    "deleteTenantById": {
+        "module": "./tenants"
+    },
+    "getAvailableTenantPhoneNumbers": {
+        "module": "./tenants"
+    },
+    "refreshTenantSchema": {
+        "module": "./tenants"
+    },
+    "triggerCommunicationProviderCleanup": {
+        "module": "./tenants"
+    },
+    "deassignPhoneNumbers": {
+        "module": "./tenants"
+    },
+    "getTenantTeams": {
+        "module": "./tenants"
+    },
+    "getTenantPrograms": {
+        "module": "./tenants"
+    },
+    "passwordForType": {
+        "module": "./tenants"
+    },
+    "refreshLeaseTemplates": {
+        "module": "./tenants"
+    },
+    "refreshRingCentralToken": {
+        "module": "./tenants"
+    },
+    "requestRingCentralToken": {
+        "module": "./tenants"
+    },
+    "getRingCentralAuthUrl": {
+        "module": "./tenants"
+    },
+    "renewRingCentralSubscription": {
+        "module": "./tenants"
+    },
+    "generateDomainToken": {
+        "module": "./tenants"
+    },
+    "getPropertyByName": {
+        "module": "./tenants"
+    },
+    "saveUnitsPricingByPropertyId": {
+        "module": "./tenants"
+    },
+    "getProgramByName": {
+        "module": "./tenants"
+    },
+    "loadCommunicationsByParty": {
+        "module": "./communication/messaging"
+    },
+    "loadCommunicationsForParties": {
+        "module": "./communication/messaging"
+    },
+    "addCommunication": {
+        "module": "./communication/messaging"
+    },
+    "storeCommunicationDraft": {
+        "module": "./communication/messaging"
+    },
+    "getDraftsForUserAndParty": {
+        "module": "./communication/messaging"
+    },
+    "deleteDraftById": {
+        "module": "./communication/messaging"
+    },
+    "updateCommunication": {
+        "module": "./communication/messaging"
+    },
+    "updateCommunications": {
+        "module": "./communication/messaging"
+    },
+    "transferCall": {
+        "module": "./communication/messaging"
+    },
+    "stopRecording": {
+        "module": "./communication/messaging"
+    },
+    "holdCall": {
+        "module": "./communication/messaging"
+    },
+    "unholdCall": {
+        "module": "./communication/messaging"
+    },
+    "makeCallFromPhone": {
+        "module": "./communication/messaging"
+    },
+    "getInfoForIncomingCall": {
+        "module": "./communication/messaging"
+    },
+    "getCommunication": {
+        "module": "./communication/messaging"
+    },
+    "getDataForActiveCall": {
+        "module": "./communication/messaging"
+    },
+    "getDataForInactiveCall": {
+        "module": "./communication/messaging"
+    },
+    "getExternalPhones": {
+        "module": "./communication/messaging"
+    },
+    "commsWereReadByUser": {
+        "module": "./communication/messaging"
+    },
+    "computeSmsThreadId": {
+        "module": "./communication/messaging"
+    },
+    "markCommsAsReadForPartyByUser": {
+        "module": "./communication/messaging"
+    },
+    "logPrintCommunication": {
+        "module": "./communication/messaging"
+    },
+    "sendCommunication": {
+        "module": "./communication/commsTemplates"
+    },
+    "getActivityLogs": {
+        "module": "./activityLog"
+    },
+    "getActivityLog": {
+        "module": "./activityLog"
+    },
+    "addActivityLog": {
+        "module": "./activityLog"
+    },
+    "getAQuoteDraft": {
+        "module": "./quotes"
+    },
+    "getAQuotePublish": {
+        "module": "./quotes"
+    },
+    "patchAQuote": {
+        "module": "./quotes"
+    },
+    "deleteAQuote": {
+        "module": "./quotes"
+    },
+    "createAQuote": {
+        "module": "./quotes"
+    },
+    "duplicateQuote": {
+        "module": "./quotes"
+    },
+    "getAllQuotes": {
+        "module": "./quotes"
+    },
+    "publishAQuote": {
+        "module": "./quotes"
+    },
+    "printAQuote": {
+        "module": "./quotes"
+    },
+    "sendQuoteMail": {
+        "module": "./quotes"
+    },
+    "renderPublishedQuote": {
+        "module": "./quotes"
+    },
+    "getPersonDetailsData": {
+        "module": "./appDataLoader"
+    },
+    "getPartyDetailsData": {
+        "module": "./appDataLoader"
+    },
+    "getFilteredDashboard": {
+        "module": "./appDataLoader"
+    },
+    "getDashboardParty": {
+        "module": "./appDataLoader"
+    },
+    "getGlobalData": {
+        "module": "./appDataLoader"
+    },
+    "loadProperties": {
+        "module": "./property"
+    },
+    "loadPropertiesByTeams": {
+        "module": "./property"
+    },
+    "refreshPaymentProvider": {
+        "module": "./property"
+    },
+    "uploadDataImportFiles": {
+        "module": "./import"
+    },
+    "getSheetData": {
+        "module": "./sheets"
+    },
+    "updateDBFromSheets": {
+        "module": "./sheets"
+    },
+    "exportDatabaseToSpreadsheet": {
+        "module": "./export"
+    },
+    "uploadAndConvertFiles": {
+        "module": "./importThirdParty"
+    },
+    "uploadUpdates": {
+        "module": "./importThirdParty"
+    },
+    "importRms": {
+        "module": "./importThirdParty"
+    },
+    "updateTeam": {
+        "module": "./teams"
+    },
+    "log": {
+        "module": "./log"
+    },
+    "clearQueues": {
+        "module": "./queues"
+    },
+    "getAnAvailableCucumberPhoneNumber": {
+        "module": "./testing"
+    },
+    "fakeSmsReceiver": {
+        "module": "./testing"
+    },
+    "sendGuestSMS": {
+        "module": "./testing"
+    },
+    "sendGuestEmail": {
+        "module": "./testing"
+    },
+    "verifyGuestReceivedMessageFromNumber": {
+        "module": "./testing"
+    },
+    "verifyEmailIsDeliveredToGuest": {
+        "module": "./testing"
+    },
+    "replyToEmailWith": {
+        "module": "./testing"
+    },
+    "deleteMessagesFromNumber": {
+        "module": "./testing"
+    },
+    "createGuestApplication": {
+        "module": "./testing"
+    },
+    "forceLogout": {
+        "module": "./testing"
+    },
+    "disableAutomaticLogout": {
+        "module": "./testing"
+    },
+    "createDummyParty": {
+        "module": "./testing"
+    },
+    "getProgramByEmailIdentifier": {
+        "module": "./testing"
+    },
+    "createTruncanteFn": {
+        "module": "./testing"
+    },
+    "truncateSchemaTables": {
+        "module": "./testing"
+    },
+    "importActiveLeases": {
+        "module": "./testing"
+    },
+    "getCommunicationsForParty": {
+        "module": "./testing"
+    },
+    "createAnAppointmentForParty": {
+        "module": "./testing"
+    },
+    "updateFeePricingByPropertyId": {
+        "module": "./testing"
+    },
+    "getAllJobs": {
+        "module": "./jobs/job"
+    },
+    "getFilteredJobs": {
+        "module": "./jobs/job"
+    },
+    "getJobById": {
+        "module": "./jobs/job"
+    },
+    "enableRecurringJobs": {
+        "module": "./jobs/job"
+    },
+    "disableRecurringJobs": {
+        "module": "./jobs/job"
+    },
+    "validateAssets": {
+        "module": "./assets"
+    },
+    "getAssetUrlByEntityId": {
+        "module": "./assets"
+    },
+    "getGlobalMarketingAssetByPath": {
+        "module": "./assets"
+    },
+    "getPropertyMarketingAssetByPath": {
+        "module": "./assets"
+    },
+    "getPropertyMarketingAssetsByDirectoryPath": {
+        "module": "./assets"
+    },
+    "getPropertyAssetsSitemap": {
+        "module": "./assets"
+    },
+    "getPropertyRxpAssetByCategory": {
+        "module": "./assets"
+    },
+    "getTenantRxpAssetByCategory": {
+        "module": "./assets"
+    },
+    "getTasks": {
+        "module": "./tasks"
+    },
+    "getTasksForParty": {
+        "module": "./tasks"
+    },
+    "addTask": {
+        "module": "./tasks"
+    },
+    "updateTask": {
+        "module": "./tasks"
+    },
+    "updateTasks": {
+        "module": "./tasks"
+    },
+    "getDayEventsForUserAndTeam": {
+        "module": "./tasks"
+    },
+    "getTeamCalendarSlots": {
+        "module": "./tasks"
+    },
+    "getNextAgentForAppointment": {
+        "module": "./tasks"
+    },
+    "sendRegistrationEmail": {
+        "module": "./sendRegistrationMail"
+    },
+    "uploadDocuments": {
+        "module": "./documents"
+    },
+    "getAllDocuments": {
+        "module": "./documents"
+    },
+    "updateDocumentMetadata": {
+        "module": "./documents"
+    },
+    "deleteDocuments": {
+        "module": "./documents"
+    },
+    "downloadDocument": {
+        "module": "./documents"
+    },
+    "uploadImageFile": {
+        "module": "./publicDocuments"
+    },
+    "fetchPublicImage": {
+        "module": "./publicDocuments"
+    },
+    "downloadImage": {
+        "module": "./publicDocuments"
+    },
+    "deleteUploadedImage": {
+        "module": "./publicDocuments"
+    },
+    "getConfig": {
+        "module": "./config"
+    },
+    "getTenantAndPropertyIds": {
+        "module": "./config"
+    },
+    "loadDisclosures": {
+        "module": "./disclosures"
+    },
+    "loadLeasesForParty": {
+        "module": "./leases"
+    },
+    "patchLease": {
+        "module": "./leases"
+    },
+    "publishLease": {
+        "module": "./leases"
+    },
+    "contractStatus": {
+        "module": "./leases"
+    },
+    "contractStatusPing": {
+        "module": "./leases"
+    },
+    "emailLease": {
+        "module": "./leases"
+    },
+    "createLease": {
+        "module": "./leases"
+    },
+    "voidLease": {
+        "module": "./leases"
+    },
+    "getResidentSignatureToken": {
+        "module": "./leases"
+    },
+    "getInOfficeSignatureToken": {
+        "module": "./leases"
+    },
+    "getLeaseStatus": {
+        "module": "./leases"
+    },
+    "getLeaseAdditionalData": {
+        "module": "./leases"
+    },
+    "updateEnvelopeStatus": {
+        "module": "./leases"
+    },
+    "wetSign": {
+        "module": "./leases"
+    },
+    "downloadLeaseForResident": {
+        "module": "./leases"
+    },
+    "downloadLeaseForAgent": {
+        "module": "./leases"
+    },
+    "downloadPreviewLeaseForAgent": {
+        "module": "./leases"
+    },
+    "importMovingOut": {
+        "module": "./leases"
+    },
+    "importCancelMoveout": {
+        "module": "./leases"
+    },
+    "reassignActiveLeasesToRS": {
+        "module": "./leases"
+    },
+    "voidExecutedLease": {
+        "module": "./leases"
+    },
+    "syncLeaseSignatures": {
+        "module": "./leases"
+    },
+    "getSftpUsers": {
+        "module": "./sftp"
+    },
+    "zendeskLogin": {
+        "module": "./zendesk",
+        "localName": "login"
+    },
+    "zendeskLogout": {
+        "module": "./zendesk",
+        "localName": "logout"
+    },
+    "zendeskPrivateContentToken": {
+        "module": "./zendesk"
+    },
+    "loginToSisense": {
+        "module": "./sisense"
+    },
+    "checkDatabase": {
+        "module": "./health"
+    },
+    "checkWebSocket": {
+        "module": "./health"
+    },
+    "checkMessageQueue": {
+        "module": "./health"
+    },
+    "loadNavigationHistoryForUser": {
+        "module": "./navigationHistory"
+    },
+    "addNavigationHistoryEntry": {
+        "module": "./navigationHistory"
+    },
+    "getAuthorizationUrlForEnterpriseConnect": {
+        "module": "./externalCalendars"
+    },
+    "requestAccessTokenForEnterpriseConnect": {
+        "module": "./externalCalendars"
+    },
+    "syncCalendarEvents": {
+        "module": "./externalCalendars"
+    },
+    "fetchAppSettings": {
+        "module": "./appSettings"
+    },
+    "updateAppSettings": {
+        "module": "./appSettings"
+    },
+    "fetchSubscriptions": {
+        "module": "./subscriptions"
+    },
+    "updateSubscriptions": {
+        "module": "./subscriptions"
+    },
+    "deleteSubscriptions": {
+        "module": "./subscriptions"
+    },
+    "addSubscriptions": {
+        "module": "./subscriptions"
+    },
+    "mjmlToHtml": {
+        "module": "./template"
+    },
+    "mjmlComponentToHtml": {
+        "module": "./template"
+    },
+    "getTemplatesShortCodes": {
+        "module": "./template"
+    },
+    "renderTemplate": {
+        "module": "./template"
+    },
+    "renderTemplateByName": {
+        "module": "./template"
+    },
+    "getAgentAvailability": {
+        "module": "./floatingAgents"
+    },
+    "saveAgentAvailability": {
+        "module": "./floatingAgents"
+    },
+    "getAgentSickLeaves": {
+        "module": "./sickLeaves"
+    },
+    "addSickLeave": {
+        "module": "./sickLeaves"
+    },
+    "removeSickLeave": {
+        "module": "./sickLeaves"
+    },
+    "uploadVoiceMessages": {
+        "module": "./voiceMessages"
+    },
+    "getMarketingProperties": {
+        "module": "./marketingProperties"
+    },
+    "getMarketingLayoutGroup": {
+        "module": "./marketingProperties"
+    },
+    "getMarketingProperty": {
+        "module": "./marketingProperties"
+    },
+    "getMarketingInventory": {
+        "module": "./marketingProperties"
+    },
+    "getMarketingInventoryPricing": {
+        "module": "./marketingProperties"
+    },
+    "searchMarketingProperties": {
+        "module": "./marketingProperties"
+    },
+    "searchRelatedProperties": {
+        "module": "./marketingProperties"
+    },
+    "getMarketingInventoryQuoteQuestions": {
+        "module": "./marketingProperties"
+    },
+    "getMarketingInventoryAndLayouts": {
+        "module": "./marketingProperties"
+    },
+    "requestSandboxCreation": {
+        "module": "./university"
+    },
+    "createSandbox": {
+        "module": "./university"
+    },
+    "checkSandboxStatus": {
+        "module": "./university"
+    },
+    "getSandboxUrl": {
+        "module": "./university"
+    },
+    "createRenewal": {
+        "module": "./renewals"
+    },
+    "updateMarketingPartyPreferences": {
+        "module": "./marketingParty"
+    },
+    "sendCustomerOldRentDefermentDoc": {
+        "module": "./customerold/actions"
+    },
+    "getPosts": {
+        "module": "./cohortComms"
+    },
+    "getPostById": {
+        "module": "./cohortComms"
+    },
+    "createPost": {
+        "module": "./cohortComms"
+    },
+    "updatePost": {
+        "module": "./cohortComms"
+    },
+    "sendPost": {
+        "module": "./cohortComms"
+    },
+    "deletePost": {
+        "module": "./cohortComms"
+    },
+    "retractPost": {
+        "module": "./cohortComms"
+    },
+    "uploadRecipientFile": {
+        "module": "./cohortComms"
+    },
+    "deleteRecipientFile": {
+        "module": "./cohortComms"
+    },
+    "downloadRecipientFile": {
+        "module": "./cohortComms"
+    },
+    "getDraftPosts": {
+        "module": "./cohortComms"
+    },
+    "downloadPostRecipientFile": {
+        "module": "./cohortComms"
+    },
+    "sendResidentInviteMail": {
+        "module": "./resident"
+    },
+    "getCallQueueForUserTeams": {
+        "module": "./callQueue"
+    },
+    "chatbotConversation": {
+        "module": "./chatbot"
+    },
+    "updateCompany": {
+        "module": "./party"
+    },
+    "addCompany": {
+        "module": "./party"
+    }
+}

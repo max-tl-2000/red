@@ -1,0 +1,1473 @@
+{
+  "id": "819c43a6-35c9-48d2-a6f6-3dd3b55898b2",
+  "pets": null,
+  "comms": null,
+  "score": "prospect",
+  "state": "Prospect",
+  "tasks": [
+    {
+      "id": "6d5b74a0-4da2-4c34-9117-4acfc90dcef2",
+      "name": "SEND_RENEWAL_QUOTE",
+      "state": "Active",
+      "dueDate": "2020-03-28T03:31:43.978+00:00",
+      "partyId": "819c43a6-35c9-48d2-a6f6-3dd3b55898b2",
+      "userIds": [
+        "ad782aa3-c128-46d9-a31b-0cdfd30b5b98"
+      ],
+      "category": "Quote",
+      "metadata": {
+        "unique": true,
+        "externalId": "2cd49e41-6dec-4a6d-9afd-4d177c1a2482",
+        "originalAssignees": [
+          "ad782aa3-c128-46d9-a31b-0cdfd30b5b98"
+        ],
+        "originalPartyOwner": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98"
+      },
+      "created_at": "2020-03-28T03:31:44.2151+00:00",
+      "updated_at": "2020-03-28T03:31:44.2151+00:00",
+      "modified_by": null,
+      "completionDate": null,
+      "createdFromCommId": null
+    }
+  ],
+  "teams": [
+    "c884fe33-3cca-4266-95a0-0976549c93ce"
+  ],
+  "events": [
+    {
+      "id": "ccc81916-b3ec-489b-a0f9-458e0c985bdd",
+      "event": "quote_printed",
+      "userId": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+      "partyId": "819c43a6-35c9-48d2-a6f6-3dd3b55898b2",
+      "metadata": {
+        "quoteId": "5b0f5aee-0f3b-4cf1-98c6-11978a73b8d5",
+        "isQuotePrinted": true
+      },
+      "created_at": "2020-03-28T03:32:54.41397+00:00",
+      "requestIds": [
+        "eeade88a-4f71-454b-b39e-8ef1b825856c"
+      ],
+      "updated_at": "2020-03-28T03:32:54.41397+00:00",
+      "partyMemberId": null,
+      "transaction_id": 17896
+    }
+  ],
+  "leases": null,
+  "quotes": [
+    {
+      "id": "5b0f5aee-0f3b-4cf1-98c6-11978a73b8d5",
+      "partyId": "819c43a6-35c9-48d2-a6f6-3dd3b55898b2",
+      "created_at": "2020-03-28T03:32:39.493+00:00",
+      "leaseState": "renewal",
+      "selections": {
+        "selectedLeaseTerms": [
+          {
+            "id": "09ad02f4-0504-4715-ba0e-f264e34a2946",
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27"
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4"
+              }
+            ],
+            "paymentSchedule": [
+              {
+                "amount": "603.99",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "3926.01",
+                "timeframe": "Apr 2021"
+              }
+            ],
+            "originalBaseRent": 4450,
+            "overwrittenBaseRent": 4450
+          },
+          {
+            "id": "fc5eb0a4-708f-4377-a2ff-c7e2db1b2172",
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27"
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4"
+              }
+            ],
+            "paymentSchedule": [
+              {
+                "amount": "549.59",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4122.00",
+                "timeframe": "Apr - May 2021"
+              },
+              {
+                "amount": "3572.41",
+                "timeframe": "Jun 2021"
+              }
+            ],
+            "originalBaseRent": 4042,
+            "overwrittenBaseRent": 4042
+          },
+          {
+            "id": "afe28dc5-911f-409d-8987-18b299882162",
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27"
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4"
+              }
+            ],
+            "paymentSchedule": [
+              {
+                "amount": "576.79",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4326.00",
+                "timeframe": "Apr - Aug 2021"
+              },
+              {
+                "amount": "3749.21",
+                "timeframe": "Sep 2021"
+              }
+            ],
+            "originalBaseRent": 4246,
+            "overwrittenBaseRent": 4246
+          },
+          {
+            "id": "e7119ae1-2e5f-4c5f-adef-87f137c54ea9",
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27"
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4"
+              }
+            ],
+            "paymentSchedule": [
+              {
+                "amount": "563.19",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4224.00",
+                "timeframe": "Apr - Nov 2021"
+              },
+              {
+                "amount": "3660.81",
+                "timeframe": "Dec 2021"
+              }
+            ],
+            "originalBaseRent": 4144,
+            "overwrittenBaseRent": 4144
+          },
+          {
+            "id": "2e35fceb-d3fb-4e2e-9a1a-e15a72fcc52f",
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27"
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4"
+              }
+            ],
+            "paymentSchedule": [
+              {
+                "amount": "549.59",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4122.00",
+                "timeframe": "Apr 2021 - Feb 2022"
+              },
+              {
+                "amount": "3572.41",
+                "timeframe": "Mar 2022"
+              }
+            ],
+            "originalBaseRent": 4042,
+            "overwrittenBaseRent": 4042
+          },
+          {
+            "id": "5ab6fff5-7d00-4848-a30a-3271be093674",
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27"
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4"
+              }
+            ],
+            "paymentSchedule": [
+              {
+                "amount": "549.59",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4122.00",
+                "timeframe": "Apr 2021 - May 2022"
+              },
+              {
+                "amount": "3572.41",
+                "timeframe": "Jun 2022"
+              }
+            ],
+            "originalBaseRent": 4042,
+            "overwrittenBaseRent": 4042
+          }
+        ],
+        "selectedAdditionalAndOneTimeCharges": {
+          "fees": [
+            {
+              "id": "05a8567f-8090-44b1-a6d2-1b27be9002b1--bcd53704-504b-456d-8e10-d5b3db1e4b6d",
+              "amount": "0.00",
+              "isIGFee": true,
+              "quantity": 1,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "48491770-226e-4317-9507-8f1e5bbaf75f",
+              "name": "Gas",
+              "amount": 25,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": true,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "0cef7d63-60be-4209-baae-999417aaa640",
+              "name": "ComplimentaryLocker",
+              "amount": 0,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": false,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "179c500a-5c75-4a64-bf13-1ff98a32e6e0",
+              "name": "Unit Deposit",
+              "amount": null,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": false,
+              "isUnitDepositFee": true,
+              "isMinAndMaxRentEqual": true,
+              "relativeAmountsByLeaseTerm": [
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "09ad02f4-0504-4715-ba0e-f264e34a2946"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "fc5eb0a4-708f-4377-a2ff-c7e2db1b2172"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "afe28dc5-911f-409d-8987-18b299882162"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "e7119ae1-2e5f-4c5f-adef-87f137c54ea9"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "2e35fceb-d3fb-4e2e-9a1a-e15a72fcc52f"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "5ab6fff5-7d00-4848-a30a-3271be093674"
+                }
+              ]
+            },
+            {
+              "id": "d2ee3481-b1a8-4798-b37c-2db98182bc01",
+              "name": "Sewer",
+              "amount": 10,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": true,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "2562f805-0c5f-42dd-8244-db5d3f5e5ef3",
+              "name": "Trash",
+              "amount": 20,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": false,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "66c49dd2-fde6-4294-924f-b1e9adbccf48",
+              "name": "Water",
+              "amount": 25,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": true,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            }
+          ],
+          "name": "month"
+        }
+      },
+      "updated_at": "2020-03-28T03:32:44.455375+00:00",
+      "inventoryId": "970a4d9c-9fd1-4d9c-adff-dade8c4c89cf",
+      "modified_by": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+      "publishDate": "2020-03-28T03:32:44.871+00:00",
+      "expirationDate": "2020-04-02T06:59:59.999+00:00",
+      "leaseStartDate": "2021-03-27T17:02:32.435+00:00",
+      "propertyTimezone": "America/Los_Angeles",
+      "createdFromCommId": null,
+      "confirmationNumber": "a7ba03c6-b0e4-42d3-835e-0d2822a85257",
+      "publishedQuoteData": {
+        "id": "5b0f5aee-0f3b-4cf1-98c6-11978a73b8d5",
+        "userId": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+        "partyId": "819c43a6-35c9-48d2-a6f6-3dd3b55898b2",
+        "leaseType": "traditional",
+        "created_at": "2020-03-28T03:32:39.493Z",
+        "leaseState": "renewal",
+        "leaseTerms": [
+          {
+            "id": "09ad02f4-0504-4715-ba0e-f264e34a2946",
+            "state": null,
+            "period": "month",
+            "specials": true,
+            "termLength": 1,
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Gift card incentive",
+                "computedValue": 100,
+                "recurringCount": 0,
+                "matchingCriteria": "{\"leaseNames\":[\"f6681a9a-6ed6-4b26-9e03-8add55415b1e\",\"79179579-6ff6-42d1-ba07-d955e5a6220b\"]}",
+                "hideInSelfService": false,
+                "absoluteAdjustment": -100,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": true,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Upshift in market rent",
+                "computedValue": 111.25,
+                "recurringCount": 0,
+                "matchingCriteria": null,
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 2.5,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": true,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              }
+            ],
+            "leaseNameId": "f6681a9a-6ed6-4b26-9e03-8add55415b1e",
+            "paymentSchedule": [
+              {
+                "amount": "603.99",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "3926.01",
+                "timeframe": "Apr 2021"
+              }
+            ],
+            "originalBaseRent": 4450,
+            "chargeConcessions": [],
+            "adjustedMarketRent": 4450,
+            "overwrittenBaseRent": 4450,
+            "maxBakedFeesAdjustment": "",
+            "minBakedFeesAdjustment": "",
+            "allowBaseRentAdjustment": false
+          },
+          {
+            "id": "fc5eb0a4-708f-4377-a2ff-c7e2db1b2172",
+            "state": null,
+            "period": "month",
+            "specials": true,
+            "termLength": 3,
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Gift card incentive",
+                "computedValue": 300,
+                "recurringCount": 0,
+                "matchingCriteria": "{\"leaseNames\":[\"f6681a9a-6ed6-4b26-9e03-8add55415b1e\",\"79179579-6ff6-42d1-ba07-d955e5a6220b\"]}",
+                "hideInSelfService": false,
+                "absoluteAdjustment": -100,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": true,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Upshift in market rent",
+                "computedValue": 101.05,
+                "recurringCount": 0,
+                "matchingCriteria": null,
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 2.5,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": true,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              }
+            ],
+            "leaseNameId": "f6681a9a-6ed6-4b26-9e03-8add55415b1e",
+            "paymentSchedule": [
+              {
+                "amount": "549.59",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4122.00",
+                "timeframe": "Apr - May 2021"
+              },
+              {
+                "amount": "3572.41",
+                "timeframe": "Jun 2021"
+              }
+            ],
+            "originalBaseRent": 4042,
+            "chargeConcessions": [],
+            "adjustedMarketRent": 4042,
+            "overwrittenBaseRent": 4042,
+            "maxBakedFeesAdjustment": "",
+            "minBakedFeesAdjustment": "",
+            "allowBaseRentAdjustment": false
+          },
+          {
+            "id": "afe28dc5-911f-409d-8987-18b299882162",
+            "state": null,
+            "period": "month",
+            "specials": true,
+            "termLength": 6,
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Gift card incentive",
+                "computedValue": 600,
+                "recurringCount": 0,
+                "matchingCriteria": "{\"leaseNames\":[\"f6681a9a-6ed6-4b26-9e03-8add55415b1e\",\"79179579-6ff6-42d1-ba07-d955e5a6220b\"]}",
+                "hideInSelfService": false,
+                "absoluteAdjustment": -100,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": true,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Upshift in market rent",
+                "computedValue": 106.15,
+                "recurringCount": 0,
+                "matchingCriteria": null,
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 2.5,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": true,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              }
+            ],
+            "leaseNameId": "f6681a9a-6ed6-4b26-9e03-8add55415b1e",
+            "paymentSchedule": [
+              {
+                "amount": "576.79",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4326.00",
+                "timeframe": "Apr - Aug 2021"
+              },
+              {
+                "amount": "3749.21",
+                "timeframe": "Sep 2021"
+              }
+            ],
+            "originalBaseRent": 4246,
+            "chargeConcessions": [],
+            "adjustedMarketRent": 4246,
+            "overwrittenBaseRent": 4246,
+            "maxBakedFeesAdjustment": "",
+            "minBakedFeesAdjustment": "",
+            "allowBaseRentAdjustment": false
+          },
+          {
+            "id": "e7119ae1-2e5f-4c5f-adef-87f137c54ea9",
+            "state": null,
+            "period": "month",
+            "specials": true,
+            "termLength": 9,
+            "concessions": [
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Gift card incentive",
+                "computedValue": 900,
+                "recurringCount": 0,
+                "matchingCriteria": "{\"leaseNames\":[\"f6681a9a-6ed6-4b26-9e03-8add55415b1e\",\"79179579-6ff6-42d1-ba07-d955e5a6220b\"]}",
+                "hideInSelfService": false,
+                "absoluteAdjustment": -100,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": true,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Upshift in market rent",
+                "computedValue": 103.6,
+                "recurringCount": 0,
+                "matchingCriteria": null,
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 2.5,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": true,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              }
+            ],
+            "leaseNameId": "f6681a9a-6ed6-4b26-9e03-8add55415b1e",
+            "paymentSchedule": [
+              {
+                "amount": "563.19",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4224.00",
+                "timeframe": "Apr - Nov 2021"
+              },
+              {
+                "amount": "3660.81",
+                "timeframe": "Dec 2021"
+              }
+            ],
+            "originalBaseRent": 4144,
+            "chargeConcessions": [],
+            "adjustedMarketRent": 4144,
+            "overwrittenBaseRent": 4144,
+            "maxBakedFeesAdjustment": "",
+            "minBakedFeesAdjustment": "",
+            "allowBaseRentAdjustment": false
+          },
+          {
+            "id": "2e35fceb-d3fb-4e2e-9a1a-e15a72fcc52f",
+            "state": null,
+            "period": "month",
+            "specials": true,
+            "termLength": 12,
+            "concessions": [
+              {
+                "id": "7a34f850-5789-4b49-b419-76b138afbf2e",
+                "endDate": null,
+                "optional": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Employee rent credit",
+                "recurringCount": 0,
+                "matchingCriteria": "{\"leaseNames\":[\"f6681a9a-6ed6-4b26-9e03-8add55415b1e\"],\"minLeaseLength\":12,\"maxLeaseLength\":12}",
+                "hideInSelfService": true,
+                "absoluteAdjustment": -25,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Gift card incentive",
+                "computedValue": 1200,
+                "recurringCount": 0,
+                "matchingCriteria": "{\"leaseNames\":[\"f6681a9a-6ed6-4b26-9e03-8add55415b1e\",\"79179579-6ff6-42d1-ba07-d955e5a6220b\"]}",
+                "hideInSelfService": false,
+                "absoluteAdjustment": -100,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": true,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Upshift in market rent",
+                "computedValue": 101.05,
+                "recurringCount": 0,
+                "matchingCriteria": null,
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 2.5,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": true,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "d4617180-cc96-4fd8-95ab-09759c234c85",
+                "endDate": null,
+                "optional": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Special one time incentive",
+                "recurringCount": 0,
+                "matchingCriteria": "{\"minLeaseLength\":12,\"maxLeaseLength\":18}",
+                "hideInSelfService": true,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": -6,
+                "variableAdjustment": true,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "last",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "5ebc8c90-636f-4234-9840-0b8bba4676ba",
+                "endDate": null,
+                "optional": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Special month incentive -",
+                "recurringCount": 0,
+                "matchingCriteria": "{\"minLeaseLength\":12,\"maxLeaseLength\":18}",
+                "hideInSelfService": true,
+                "absoluteAdjustment": -300,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": true,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              }
+            ],
+            "leaseNameId": "f6681a9a-6ed6-4b26-9e03-8add55415b1e",
+            "paymentSchedule": [
+              {
+                "amount": "549.59",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4122.00",
+                "timeframe": "Apr 2021 - Feb 2022"
+              },
+              {
+                "amount": "3572.41",
+                "timeframe": "Mar 2022"
+              }
+            ],
+            "originalBaseRent": 4042,
+            "chargeConcessions": [],
+            "adjustedMarketRent": 4042,
+            "overwrittenBaseRent": 4042,
+            "maxBakedFeesAdjustment": "",
+            "minBakedFeesAdjustment": "",
+            "allowBaseRentAdjustment": false
+          },
+          {
+            "id": "5ab6fff5-7d00-4848-a30a-3271be093674",
+            "state": null,
+            "period": "month",
+            "specials": true,
+            "termLength": 15,
+            "concessions": [
+              {
+                "id": "5ebc8c90-636f-4234-9840-0b8bba4676ba",
+                "endDate": null,
+                "optional": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Special month incentive -",
+                "recurringCount": 0,
+                "matchingCriteria": "{\"minLeaseLength\":12,\"maxLeaseLength\":18}",
+                "hideInSelfService": true,
+                "absoluteAdjustment": -300,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": true,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "ac8a0c9c-b0fa-4b38-b52b-c4e4a74d0d27",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Gift card incentive",
+                "computedValue": 1500,
+                "recurringCount": 0,
+                "matchingCriteria": "{\"leaseNames\":[\"f6681a9a-6ed6-4b26-9e03-8add55415b1e\",\"79179579-6ff6-42d1-ba07-d955e5a6220b\"]}",
+                "hideInSelfService": false,
+                "absoluteAdjustment": -100,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 0,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": true,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "05768cbe-71d4-4653-aa35-946fd93814d4",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Upshift in market rent",
+                "computedValue": 101.05,
+                "recurringCount": 0,
+                "matchingCriteria": null,
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 2.5,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": true,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "d4617180-cc96-4fd8-95ab-09759c234c85",
+                "endDate": null,
+                "optional": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Special one time incentive",
+                "recurringCount": 0,
+                "matchingCriteria": "{\"minLeaseLength\":12,\"maxLeaseLength\":18}",
+                "hideInSelfService": true,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": -6,
+                "variableAdjustment": true,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "last",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              }
+            ],
+            "leaseNameId": "f6681a9a-6ed6-4b26-9e03-8add55415b1e",
+            "paymentSchedule": [
+              {
+                "amount": "549.59",
+                "timeframe": "Mar 2021"
+              },
+              {
+                "amount": "4122.00",
+                "timeframe": "Apr 2021 - May 2022"
+              },
+              {
+                "amount": "3572.41",
+                "timeframe": "Jun 2022"
+              }
+            ],
+            "originalBaseRent": 4042,
+            "chargeConcessions": [],
+            "adjustedMarketRent": 4042,
+            "overwrittenBaseRent": 4042,
+            "maxBakedFeesAdjustment": "",
+            "minBakedFeesAdjustment": "",
+            "allowBaseRentAdjustment": false
+          }
+        ],
+        "rentMatrix": {
+          "1": {
+            "2020-03-27": {
+              "rent": 4450.4,
+              "endDate": "2120-03-27",
+              "originalBaseRent": 4450,
+              "adjustedMarketRent": 4450,
+              "overwrittenBaseRent": 4450,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "3": {
+            "2020-03-27": {
+              "rent": 4042,
+              "endDate": "2120-03-27",
+              "originalBaseRent": 4042,
+              "adjustedMarketRent": 4042,
+              "overwrittenBaseRent": 4042,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "6": {
+            "2020-03-27": {
+              "rent": 4246.2,
+              "endDate": "2120-03-27",
+              "originalBaseRent": 4246,
+              "adjustedMarketRent": 4246,
+              "overwrittenBaseRent": 4246,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "9": {
+            "2020-03-27": {
+              "rent": 4144.1,
+              "endDate": "2120-03-27",
+              "originalBaseRent": 4144,
+              "adjustedMarketRent": 4144,
+              "overwrittenBaseRent": 4144,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "12": {
+            "2020-03-27": {
+              "rent": 4042,
+              "endDate": "2120-03-27",
+              "originalBaseRent": 4042,
+              "adjustedMarketRent": 4042,
+              "overwrittenBaseRent": 4042,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "15": {
+            "2020-03-27": {
+              "rent": 4042,
+              "endDate": "2120-03-27",
+              "originalBaseRent": 4042,
+              "adjustedMarketRent": 4042,
+              "overwrittenBaseRent": 4042,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          }
+        },
+        "updated_at": "2020-03-28T03:32:39.493Z",
+        "inventoryId": "970a4d9c-9fd1-4d9c-adff-dade8c4c89cf",
+        "publishDate": "2020-03-28T03:32:44.871Z",
+        "leasingAgent": {
+          "id": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+          "email": "sara@reva.tech",
+          "teams": [
+            {
+              "id": "c884fe33-3cca-4266-95a0-0976549c93ce",
+              "name": "BayAreaCenter L",
+              "module": "callCenter",
+              "metadata": {
+                "call": {
+                  "wrapUpDelayAfterCallEnds": 20
+                },
+                "comms": {
+                  "nativeCommsEnabled": true,
+                  "allowBlockContactFlag": false,
+                  "sendCalendarCommsFlag": true
+                },
+                "teamId": "c884fe33-3cca-4266-95a0-0976549c93ce",
+                "features": {
+                  "disableNewLeasePartyCreation": false
+                },
+                "callQueue": {
+                  "enabled": true,
+                  "timeToVoiceMail": 300
+                },
+                "callRecordingSetup": "NO_RECORDING",
+                "associatedTeamNames": "",
+                "callRoutingStrategy": "Round Robin",
+                "partyRoutingStrategy": "Round Robin"
+              },
+              "timeZone": "America/Los_Angeles",
+              "mainRoles": [
+                "LA"
+              ],
+              "created_at": "2020-03-27T16:49:49.142Z",
+              "updated_at": "2020-03-27T16:49:55.567Z",
+              "description": "Central call center for sales and resident services in the Bay Area",
+              "displayName": "Bay Area Call Center",
+              "officeHours": {
+                "Friday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Monday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Sunday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Tuesday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Saturday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Thursday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Wednesday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                }
+              },
+              "voiceMessageId": "56312c6e-5a77-4e8e-af0c-69e095839028",
+              "functionalRoles": [
+                "LWA"
+              ],
+              "externalCalendars": {
+                "calendars": [],
+                "teamCalendarId": ""
+              },
+              "associatedProperties": [
+                {
+                  "id": "d453a22e-0d7e-4655-ab0e-c4c6a9f416f8",
+                  "displayName": "Parkmerced Apartments",
+                  "propertyLegalName": "Parkmerced LLC"
+                },
+                {
+                  "id": "96d16bed-7e23-458d-85e5-1f13297142f0",
+                  "displayName": "The Cove at Tiburon",
+                  "propertyLegalName": "The Cove LLC"
+                }
+              ],
+              "callCenterPhoneNumber": ""
+            }
+          ],
+          "teamIds": [
+            "c884fe33-3cca-4266-95a0-0976549c93ce"
+          ],
+          "fullName": "Sara Jones",
+          "metadata": {
+            "status": "Available",
+            "businessTitle": "Leasing Consultant",
+            "wrapUpCallTimeoutId": ""
+          },
+          "avatarUrl": "https://s3.amazonaws.com/red-local-assets/test/tenants/c7efd0a5-7c34-471a-8d22-941f3606196b/images/ea179d49-1c95-4df0-b479-f902e89485fc",
+          "ringPhones": [],
+          "sipEndpoints": [],
+          "preferredName": "Sara",
+          "externalCalendars": {
+            "calendars": []
+          },
+          "associatedProperties": [
+            {
+              "id": "d453a22e-0d7e-4655-ab0e-c4c6a9f416f8",
+              "displayName": "Parkmerced Apartments",
+              "propertyLegalName": "Parkmerced LLC"
+            },
+            {
+              "id": "96d16bed-7e23-458d-85e5-1f13297142f0",
+              "displayName": "The Cove at Tiburon",
+              "propertyLegalName": "The Cove LLC"
+            }
+          ]
+        },
+        "expirationDate": "2020-04-02T06:59:59.999Z",
+        "leaseStartDate": "2021-03-27T17:02:32.435Z",
+        "propertyTimezone": "America/Los_Angeles",
+        "screeningRequired": false,
+        "confirmationNumber": "a7ba03c6-b0e4-42d3-835e-0d2822a85257",
+        "defaultLeaseStartDate": "2020-03-27T07:00:00.000Z",
+        "additionalAndOneTimeCharges": {
+          "oneTimeCharges": [
+            {
+              "id": "179c500a-5c75-4a64-bf13-1ff98a32e6e0",
+              "name": "Unit Deposit",
+              "price": null,
+              "amount": 0,
+              "quantity": 1,
+              "estimated": false,
+              "displayName": "Security deposit",
+              "quoteSectionName": "deposit",
+              "isMinAndMaxRentDiff": false,
+              "relativeAmountsByLeaseTerm": [
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "09ad02f4-0504-4715-ba0e-f264e34a2946"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "fc5eb0a4-708f-4377-a2ff-c7e2db1b2172"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "afe28dc5-911f-409d-8987-18b299882162"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "e7119ae1-2e5f-4c5f-adef-87f137c54ea9"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "2e35fceb-d3fb-4e2e-9a1a-e15a72fcc52f"
+                },
+                {
+                  "amount": 4042,
+                  "selected": true,
+                  "leaseTermId": "5ab6fff5-7d00-4848-a30a-3271be093674"
+                }
+              ]
+            }
+          ],
+          "additionalCharges": [
+            {
+              "id": "05a8567f-8090-44b1-a6d2-1b27be9002b1--bcd53704-504b-456d-8e10-d5b3db1e4b6d",
+              "price": 0,
+              "amount": 0,
+              "quantity": 1,
+              "concessions": [],
+              "displayName": "Door Fob",
+              "parentFeeAmount": "0.00",
+              "quoteSectionName": "appliance",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "48491770-226e-4317-9507-8f1e5bbaf75f",
+              "name": "Gas",
+              "price": "25.00",
+              "amount": 25,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Gas",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "0cef7d63-60be-4209-baae-999417aaa640",
+              "name": "ComplimentaryLocker",
+              "price": "0.00",
+              "amount": 0,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Locker",
+              "quoteSectionName": "storage",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "d2ee3481-b1a8-4798-b37c-2db98182bc01",
+              "name": "Sewer",
+              "price": "10.00",
+              "amount": 10,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Sewer",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "2562f805-0c5f-42dd-8244-db5d3f5e5ef3",
+              "name": "Trash",
+              "price": "20.00",
+              "amount": 20,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Trash",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "66c49dd2-fde6-4294-924f-b1e9adbccf48",
+              "name": "Water",
+              "price": "25.00",
+              "amount": 25,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Water",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "userId": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "9f44632e-415a-471b-91f1-b5e92367808c",
+        "dob": "1984-07-07T00:00:00+00:00",
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "John Doe",
+        "idCountry": null,
+        "created_at": "2020-03-27T16:58:20.715913+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2020-03-27T17:03:18.26759+00:00",
+        "modified_by": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+        "preferredName": null,
+        "isSuspiciousContent": false
+      },
+      "contactInfo": [
+        {
+          "id": "df1d65e6-37d7-47cc-88b9-b599a2c1e156",
+          "type": "email",
+          "value": "johndoe@reva.tech",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {},
+          "personId": "9f44632e-415a-471b-91f1-b5e92367808c",
+          "isPrimary": true,
+          "created_at": "2020-03-27T16:58:20.715913+00:00",
+          "updated_at": "2020-03-27T16:58:20.715913+00:00",
+          "markedAsSpamBy": null
+        }
+      ],
+      "partyMember": {
+        "id": "4f183e64-6c99-4c67-8460-84d668806300",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "819c43a6-35c9-48d2-a6f6-3dd3b55898b2",
+        "external": {},
+        "personId": "9f44632e-415a-471b-91f1-b5e92367808c",
+        "startDate": "2020-03-28T03:31:42.622222+00:00",
+        "created_at": "2020-03-28T03:31:42.623+00:00",
+        "memberType": "Resident",
+        "updated_at": "2020-03-28T03:31:42.623+00:00",
+        "vacateDate": null,
+        "memberState": "Applicant",
+        "modified_by": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "children": null,
+  "invoices": null,
+  "metadata": {
+    "creationType": "user",
+    "originalTeam": "c884fe33-3cca-4266-95a0-0976549c93ce",
+    "favoriteUnits": [
+      "970a4d9c-9fd1-4d9c-adff-dade8c4c89cf"
+    ],
+    "screeningVersion": "v1",
+    "firstCollaborator": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+    "firstContactedDate": "2020-03-27T16:58:20.702Z",
+    "firstContactChannel": "Chat",
+    "qualQuestionsCompleted": "2020-03-27T17:00:58.606Z"
+  },
+  "vehicles": null,
+  "leaseType": "traditional",
+  "ownerTeam": "c884fe33-3cca-4266-95a0-0976549c93ce",
+  "startDate": "2020-03-28T03:31:42.469944+00:00",
+  "created_at": "2020-03-28T03:31:42.471+00:00",
+  "invOnHolds": null,
+  "mergedWith": null,
+  "promotions": null,
+  "updated_at": "2020-03-28T03:31:42.471+00:00",
+  "archiveDate": null,
+  "modified_by": "ad782aa3-c128-46d9-a31b-0cdfd30b5b98",
+  "seedPartyId": "e03c9674-b0b2-4514-be15-09ac859bbeb2",
+  "partyGroupId": "46073496-503e-4c8b-8c9e-be88eebde22a",
+  "transactions": null,
+  "workflowName": "renewal",
+  "collaborators": [
+    "ad782aa3-c128-46d9-a31b-0cdfd30b5b98"
+  ],
+  "workflowState": "active",
+  "activeLeaseData": [
+    {
+      "id": "36bb24e8-a156-4403-ae75-371e882907d6",
+      "state": "none",
+      "leaseId": "cdc9233b-29a3-4151-935f-e046574b44a1",
+      "partyId": "e03c9674-b0b2-4514-be15-09ac859bbeb2",
+      "metadata": {
+        "moveOutConfirmed": false
+      },
+      "leaseData": {
+        "unitName": "350 Arballo-1015",
+        "unitRent": 4042,
+        "leaseTerm": 12,
+        "moveInDate": "2020-03-27T17:02:32.435Z",
+        "inventoryId": "970a4d9c-9fd1-4d9c-adff-dade8c4c89cf",
+        "leaseEndDate": "2021-03-26T17:02:32.435Z",
+        "inventoryType": "unit",
+        "leaseStartDate": "2020-03-27T17:02:32.435Z"
+      },
+      "created_at": "2020-03-27T17:06:22.483789+00:00",
+      "isImported": false,
+      "updated_at": "2020-03-28T00:53:38.17535+00:00",
+      "concessions": [],
+      "isExtension": false,
+      "rentableItems": {},
+      "rolloverPeriod": "none",
+      "externalLeaseId": null,
+      "recurringCharges": [
+        {
+          "code": "brcredit",
+          "amount": 0,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-27T07:00:00.000Z",
+          "description": "",
+          "displayName": "Locker"
+        },
+        {
+          "code": "trash",
+          "amount": 20,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-27T07:00:00.000Z",
+          "description": "",
+          "displayName": "Trash"
+        },
+        {
+          "code": "gaspass",
+          "amount": 25,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-27T07:00:00.000Z",
+          "description": "",
+          "displayName": "Gas"
+        },
+        {
+          "code": "reimwatr",
+          "amount": 25,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-27T07:00:00.000Z",
+          "description": "",
+          "displayName": "Water"
+        },
+        {
+          "code": "reimswer",
+          "amount": 10,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-27T07:00:00.000Z",
+          "description": "",
+          "displayName": "Sewer"
+        },
+        {
+          "code": "furnish",
+          "amount": 0,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-27T07:00:00.000Z",
+          "description": "",
+          "displayName": "Door Fob"
+        }
+      ]
+    }
+  ],
+  "emailIdentifier": "819c43a635c948d2a6f6",
+  "isTransferLease": false,
+  "screeningResults": {
+    "submissionRequests": null,
+    "submissionResponses": null
+  },
+  "createdFromCommId": null,
+  "partyApplications": null,
+  "assignedPropertyId": "d453a22e-0d7e-4655-ab0e-c4c6a9f416f8",
+  "personApplications": null,
+  "storedUnitsFilters": {
+    "floor": [],
+    "partyId": "57e84cd2-6788-4c78-8458-e5a53a92e53f",
+    "unitName": "1015",
+    "amenities": [],
+    "lifestyles": [],
+    "marketRent": {
+      "max": null,
+      "min": null
+    },
+    "moveInDate": {
+      "max": "2020-04-27T07:00:00.000Z",
+      "min": "2020-03-27T07:00:00.000Z"
+    },
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS",
+      "THREE_BEDS",
+      "FOUR_PLUS_BEDS",
+      "STUDIO"
+    ],
+    "propertyIds": [
+      "d453a22e-0d7e-4655-ab0e-c4c6a9f416f8"
+    ]
+  },
+  "teamPropertyProgramId": null,
+  "qualificationQuestions": {
+    "moveInTime": "NEXT_4_WEEKS",
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS",
+      "THREE_BEDS",
+      "FOUR_PLUS_BEDS",
+      "STUDIO"
+    ],
+    "groupProfile": "FAIR_MARKET",
+    "cashAvailable": "YES"
+  },
+  "property": [
+    {
+      "id": "d453a22e-0d7e-4655-ab0e-c4c6a9f416f8",
+      "name": "swparkme",
+      "settings": {
+        "moveoutNoticePeriod": 60
+      },
+      "timeZone": "America/Los_Angeles",
+      "displayName": "Parkmerced Apartments",
+      "propertyLegalName": "Parkmerced LLC"
+    }
+  ]
+}

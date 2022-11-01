@@ -1,0 +1,30 @@
+.text-wrapper {
+  position: relative;
+  margin-bottom: .25rem;
+  padding-right: (35rem/16);
+
+  &.has-label {
+    margin-bottom: 1.25rem;
+
+    .btn {
+      top: (22rem/16);
+    }
+  }
+
+  &.last {
+    margin-bottom: 0;
+  }
+}
+
+.btn {
+  position: absolute;
+  top: (4rem/16);
+  right: (-4rem/16);
+  width: (30rem/16);
+  height: (30rem/16);
+
+  [data-red-icon] {
+    width: 1rem;
+    height: 1rem;
+  }
+}

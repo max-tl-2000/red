@@ -1,0 +1,51 @@
+@import '../../../sass/_colors.scss';
+
+// There are some content inside of RichText editor which are overlapping the postPreview panel on floating mode
+// the image alignment menu has z-index of 2 that is why this value of 2 is required
+
+.rPanel {
+  z-index: 2;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  fill: $white;
+}
+
+.postStatus {
+  font-weight: 300;
+  margin-top: .3rem;
+  margin-left: 1rem;
+  color: $white;
+}
+
+.alertDescription {
+  margin-bottom: 1rem;
+}
+
+.watermarkMsgDialog {
+  position: absolute;
+  z-index: 0;
+  top: -2rem;
+  right: -2rem;
+  width: 12rem;
+  height: 12rem;
+
+  fill: $grey100;
+}
+
+.alertMsgDialog {
+  position: relative;
+  overflow: hidden;
+}
+
+.alertDialogBody {
+  position: relative;
+}
+
+.draftLabel {
+  margin-top: .2rem;
+  margin-left: .6rem;
+}

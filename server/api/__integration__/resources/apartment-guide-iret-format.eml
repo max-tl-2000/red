@@ -1,0 +1,558 @@
+Return-Path: <bounce-473_HTML-169202686-986397-7001514-70881@bounce.message.my.apartmentguide.com>
+Received: from mta.message.my.apartmentguide.com (mta.message.my.apartmentguide.com [68.232.200.241])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 17huh9iiv027e44ddn18s2prj5s23g1ph6agee81
+ for aptguide.southpointe@customerold.mail.reva.tech;
+ Fri, 24 Aug 2018 23:08:56 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of bounce.message.my.apartmentguide.com designates 68.232.200.241 as permitted sender) client-ip=68.232.200.241; envelope-from=bounce-473_HTML-169202686-986397-7001514-70881@bounce.message.my.apartmentguide.com; helo=mta.message.my.apartmentguide.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of bounce.message.my.apartmentguide.com designates 68.232.200.241 as permitted sender) client-ip=68.232.200.241; envelope-from=bounce-473_HTML-169202686-986397-7001514-70881@bounce.message.my.apartmentguide.com; helo=mta.message.my.apartmentguide.com;
+ dkim=pass header.i=@message.my.apartmentguide.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIQURDSjNrM0wwUEhvOWYxVmJENTB0TkJjOTB6cmtKSzEzWVZJZFNRd2NIcEoyNERNOW1mQXNDVWlVSm5JZHgxa1B5dFpVVnd0STR5TDZhYys3TENLOG9tcThJOXFiK3VxWGtPYUFBL0pOdXVXTUpRNzlpc2ZRc09lSGNuMWtxK3pWRWYzUk5SMlViSkVaUDFtTEpRTDJIbjBmRGlVSEFRcVNpb0xPN3dDazNXNStDRUlkSE1MdVcwZ2NjMWFzbG1WVHM0L0pGWVUrbjJrSDZEOWFBbnFLYk1yMm1KWXZMYXBFN1ZRVmI1aCtDR1VUUDRWTERtdGErY0JvUngwSEpoaXh1NzBGN0tib0w1M0F2VFE5Rkxjci8rQnJmRUVpSyt5UldxaEFlNldaRzZBSXRIYjRPNjBDbjgvTmlORHhRMW4yNTJLNUhnS2RWQUtZb3I0QkhRZW5CL2FxUGNJNzh1WGxpM3lWbTFyRmE3dXgrZ2hDTFhiaHdiTyswdExZcHVrPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=AmeAq7DBGoZSE/j9ugzG7cQ3lF5eCdpCApTflBQ2Z6deDsQHV2uvyYwDCLgh/aElJHrM5nzX2EBBbPofP1IapPLQr3ZrvogsrmdHHhyMODJavwJFi4jz2Ejymp5tOJkiT/qtgHseDS/LWvlUmN8DR6muDDi+28aH8A7qRRcSq5c=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1535152137; v=1; bh=lBw6QqC74gW4vUfyfo2cgfeXBt8dWS+U/eYgsQ/OhxY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=apartmentguide.com;
+ h=From:To:Subject:Date:MIME-Version:List-ID:Reply-To:Message-ID:Content-Type; i=comments@message.my.apartmentguide.com;
+ bh=XU6+A1ME5GxHoBGMk+Ej75nW0RE=;
+ b=Cli6tKJZb3O9RIE05XAfPH96ir1KzoRSSjbY1IupUxbum9hFN/VJb+2tD9ivO+7LOHxbCDHxwGnl
+   vl3cDfe7YzzRBR9IjT7FG/b0zAqnYlkwgU09PyX+c3qqCKhYKyZ7qlEPUCqyPueVx9c2Gjj6i2d/
+   9cNHztjg1n7tbozitTc=
+Received: by mta.message.my.apartmentguide.com id hg280g163hsi for <aptguide.southpointe@customerold.mail.reva.tech>; Fri, 24 Aug 2018 17:08:38 -0600 (envelope-from <bounce-473_HTML-169202686-986397-7001514-70881@bounce.message.my.apartmentguide.com>)
+From: "Apartment Guide" <comments@message.my.apartmentguide.com>
+To: <aptguide.southpointe@customerold.mail.reva.tech>
+Subject: AG Lead from Amaranth Burrows (South Pointe Apartments)
+Date: Fri, 24 Aug 2018 17:08:38 -0600
+MIME-Version: 1.0
+List-ID: <7001514_986397.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 7001514_986397
+Reply-To: "Amaranth Burrows" <reply-feb51d7873670d7a-473_HTML-169202686-7001514-70881@message.my.apartmentguide.com>
+Message-ID: <9ea3db77-ef01-4c78-b18b-a4b8d2f07f8b@xtinp2mta444.xt.local>
+Content-Type: multipart/alternative;
+	boundary="3bAWtCGRlPSE=_?:"
+
+This is a multi-part message in MIME format.
+
+--3bAWtCGRlPSE=_?:
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+
+
+To ensure that you receive our e-mails, please add comments@message.my.apartmentguide.com to your address book.
+
+Lead from ApartmentGuide.com. Think Big.
+
+Lead Date: 08-24-2018
+Property Name: South Pointe Apartments
+Property ID: 100049880
+Property City, State: Minot, ND
+
+:: LEAD INFORMATION ::
+
+First Name: Amaranth
+Last Name: Burrows
+Email: amaranth.burrows@me.com
+Phone: (650) 336-8157
+Date of Move: 09-07-2018
+# Beds: 
+# Baths: 
+Price Range: 
+Reason for Moving: 
+Pets: 
+Appointment Request: 
+Comments: Hello CUSTOMEROLD,
+This is just a test. Please do not close the party. We will close the party after completing the test. 
+
+Thanks,
+Ganesh.
+
+------------------------------------------------------------
+
+Click Here to Reply >>
+http://pages.message.my.apartmentguide.com/page.aspx?qs=5c591a8916642e73a4f517eaef08acaf5632b2e02b78dfe31b7d7e8527f2675547ce1bd5041f203f0b095a070bd766168da247a4fe28363cd580f69fb1232b1ff63a3618438522c1579f6d5f16255d656865caa5fb44cdb433251635519ce9697b3c3c127e5e1cc5919d0f3d2aac56bfd84c7a127391d913dd75200f759b0f6ba9ae29b40dd97c92bccd8366203fed056d8454bf8c2bc878ba5ce47043955adb
+
+Log in to My.ApartmentGuide.com to access reports or to change your preferences.
+http://click.message.my.apartmentguide.com/?qs=b84af2e035a1a7d3c414f7eb341ef032154224c45773f0970cc0b1d687c7d2d975fd4674be2569d3c2abd3b6b3448ca85b4be14c864e6e09
+
+------------------------------------------------------------
+
+(c) 2013-2018 RentPath, Inc.  All rights reserved.  All photos, videos, text and other content are the property of RentPath, Inc.  APARTMENT GUIDE and the APARTMENT GUIDE Trade Dress are registered trademarks of RentPath, Inc. or its affiliates.
+3585 Engineering Drive, Suite 100. Norcross Georgia 30092 | 800-216-1423 
+
+View our Privacy Policy.
+http://click.message.my.apartmentguide.com/?qs=54821cd6867eca5bd8ec2f75ccfb1a13dc1d57252c6e396b4fa648c015f887af937abf328fd4e378b14510a170cf1c2143d85b2df9cdde86
+
+--3bAWtCGRlPSE=_?:
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+
+<table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"></td></tr></table>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>AG HTML Lead</title>
+  
+  <!--
+  DISABLE MOBILE SCALING 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  -->
+  
+<style type="text/css">
+/* Reset styles */
+#outlook a {padding:0;} 
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+    .ExternalClass {width:100%;} 
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} 
+    #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+    img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+    a img {border:none;}
+    .image_fix {display:block;}
+    p {margin: 1em 0;}
+
+   /* AG styles begin */
+
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+      margin:0;
+      padding:0;
+    }
+    /*
+    table {
+      border-collapse:collapse;
+      border-spacing:0;
+    }
+    */
+    tbody {
+      border-collapse: collapse;
+      border:0;
+      padding:0;
+      margin:0;
+      spacing:0;
+    }
+    fieldset,img { 
+      border:0;
+    }
+    address,caption,cite,code,dfn,em,strong,th,var {
+      font-style:normal;
+      font-weight:normal;
+    }
+    ol,ul {
+      list-style:none;
+    }
+    caption,th {
+      text-align:left;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      font-size:100%;
+      font-weight:normal;
+    }
+    q:before,q:after {
+      content:'';
+    }
+    abbr,acronym {
+      border:0;
+    }
+
+
+    body {
+      margin:0;
+      font-family:"Helvetica Neue", "Helvetica", arial, sans-serif;
+      font-weight:400;
+      font-size:14px;
+      color:#99999c;
+    }
+
+    a {
+      font-weight:800;
+      color:#6699cc;
+    }
+
+
+
+
+
+    h1 {
+      font-weight:100;
+      letter-spacing:-1px;
+      color:#cccccf;
+      font-size:28px;
+      margin:0;
+    }
+
+    h3 {
+      font-weight:100;
+      letter-spacing:0px;
+      color:#cccccf;
+      font-size:22px;
+      margin:0;
+    }
+
+
+
+
+
+    .container {
+      background-color:#ffffff;
+      border:0;
+      margin:0;
+      width:600px;
+    }
+
+    .hide {
+      display:none !important;
+    }
+
+    .clear {
+      clear:both;
+    }
+
+    .nowrap {
+      white-space:nowrap;
+    }
+
+    .res {
+      width:600px;
+      clear:both;
+      float:none;
+    }
+
+    .width-100 {
+      width:100%;
+    }
+
+
+
+
+
+    .center {
+      text-align:center;
+    }
+
+    .left {
+      text-align:left;
+    }
+
+    .right {
+      text-align:right;
+    }
+
+    .left-to-center {
+      text-align:left;
+    }
+
+    .right-to-center {
+      text-align:right;
+    }
+
+    .pad-5 {
+      padding:5px;
+    }
+
+    .pad-10 {
+      padding:10px;
+    }
+
+    .pad-20 {
+      padding:20px;
+    }
+
+    .pad-left {
+      padding-left:20px;
+    }
+
+    .pad-right {
+      padding-right:20px;
+    }
+
+
+
+
+
+    /* PRE-RESPONSIVE */
+
+    .float {
+      float:left;
+    }
+
+    /*
+    li {
+      width:50%;
+      float:left;
+    }
+    */
+
+    .columns-2 {
+      width:290px;
+    }
+
+    .columns-3 {
+      width:190px;
+    }
+
+    .columns-4 {
+      width:140px;
+    }
+
+
+
+
+
+    @media screen and (max-width: 599px) {
+
+    .columns-2 {
+      width:100% !important;
+      clear:both !important;
+      float:none !important;
+    }
+
+    .columns-3 {
+      width:100% !important;
+      clear:both !important;
+      float:none !important;
+    }
+
+    .columns-4 {
+      width:100% !important;
+      clear:both !important;
+      float:none !important;
+    }
+
+    .container {
+      width:100% !important;
+    }
+
+    .res {
+      width:100% !important;
+    }
+
+    .fill {
+      width:100% !important;
+    }
+
+    .width-100 {
+      width:100% !important;
+    }
+
+    .left-to-center {
+      text-align:center !important;
+    }
+
+    .right-to-center {
+      text-align:center !important;
+    }
+
+    .pad-left,
+    .pad-right {
+      padding:0 !important;
+    }
+
+    /*
+    li {
+      width:auto !important;
+      clear:both !important;
+    }
+    */
+
+    .right {
+      text-align:center !important;
+    }
+
+    .left {
+      text-align:center !important;
+    }
+
+    .nowrap {
+      /*float:left !important;*/
+    }
+
+    }
+
+    /* END @MEDIA SCREEN */
+
+
+
+
+
+</style>
+
+</head>
+
+<body id="the_body" bgcolor="#eeeeef">
+
+
+<font face="Helvetica Neue, Helvetica, arial, sans-serif">
+
+
+<div id="specs"></div>
+
+
+
+
+
+<!-- edit - bgcolor -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+<tr>
+<td bgcolor="#ffffff">
+
+
+
+
+
+<!-- edit - bgcolor -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="res" bgcolor="#f5f5f5">
+  <tr>
+    <td align="center" width="100%" style="font-size: 12px; padding:10px 10px; line-height: 16px;"><font face="Helvetica Neue, Helvetica, arial, sans-serif" color="#909096">
+      Please add <a href="mailto:comments@message.my.apartmentguide.com" style="color:#a20000; font-weight:normal;">comments@message.my.apartmentguide.com</a> to your address book.
+      </td>
+  </tr>
+</table>
+
+
+
+
+
+<!-- edit - header photo -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="res" bgcolor="#FFFFFF">
+  <tr>
+    <td width="100%" style="padding:5px 20px;">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" class="fill">
+        <tr>
+          <td width="70%" style="padding:10px 0px 10px 0px;" class="left-to-center"><img src="http://image.message.my.apartmentguide.com/lib/fe9d13707565017c71/m/14/AG_RentPathNetwork_logo.jpg" alt="Apartment Guide part of the RentPath network" width="182" height="62" style="width: 164px;" border="0" /></td>
+          <td width="30%" style="padding:10px 0px 10px 0px;" class="right-to-center" align="right"><a style="font-weight:normal;" href="http://click.message.my.apartmentguide.com/?qs=ba89ac2790cf2df012ce7126a00f2d6add8c52b4e22c50f938853313e1037841ae3e1c6c04450d346f28a15eed1dc68e3a0df7d8f8262430"><font face="Helvetica Neue, helvetica, arial, sans-serif" color="#a20000">
+          Manager Login
+        </font></a></td>
+        </tr>
+      </table>
+      </td>
+  </tr>
+</table>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="res" bgcolor="#f5f5f5">
+  <tr>
+    <td width="100%" align="left" style="padding:10px 20px;">
+      <h4 style="padding:0;margin:0;text-transform:none;">
+        <font face="Helvetica Neue, helvetica, arial, sans-serif" color="#000" style="font-size:18px; line-height:23px;">
+          Lead from ApartmentGuide.com
+        </font>
+      </h4></td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="res">
+  <tr>
+    <td width="100%">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" class="fill">
+        <tr>
+          <td width="100%" style="padding:0px 20px;line-height:14px;"><font face="Helvetica Neue, helvetica, arial, sans-serif" color="#303036">
+          <br />
+          <br />
+          <p style="font: Helvetica Neue, helvetica, arial, sans-serif; font-family: Helvetica Neue, helvetica, arial, sans-serif; font-size: 18px; padding:0;margin:0;line-height:21px; float:left; text-decoration:underline; color:#a20000;"><b>Lead Information:</b></p>
+          <br />&nbsp;
+          <br />
+          <p style="padding:0;margin:0;line-height:21px;"><b>Lead Date:</b> August 24, 2018</p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>Lead Type:</b> Desktop</p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>First Name:</b> Amaranth</p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>Last Name:</b> Burrows</p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>Email: </b><a href="mailto:amaranth.burrows@me.com">amaranth.burrows@me.com</a></p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>Phone: </b><a href="tel:(650) 336-8157" style="text-decoration:none;">(650) 336-8157</a></p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>Number of Bedrooms:</b> </p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>Number of Bathrooms:</b> </p>
+          <p style="padding:0;margin:0;line-height:21px;"><b>Move Date:</b>  09-07-2018</p>
+                               
+                               
+                               
+          <p style="padding:0;margin:0;line-height:21px"><b>Comments:</b> Hello CUSTOMEROLD,
+This is just a test. Please do not close the party. We will close the party after completing the test. 
+
+Thanks,
+Ganesh.</p>
+          <br />&nbsp;
+          <br />&nbsp;
+
+          <a style="padding: 10px 20px; float: left; background: #005F96; border-radius: 2px; color: #fff; font-weight: normal; text-decoration: none;" href="http://pages.message.my.apartmentguide.com/page.aspx?qs=c76003443ff9837d2436de5c9ae79441f09b04d2727c054e1126f2920fd88a71bf0ddd8c25691947721a439889863b2d113be863ce790985f9a28f97b6ea82fef717b5189cd38496b8095c00766d29ecd690894b24da1db9889cc8d93af7345ec227ef06e6de48fdbd62b91b97e1c041239eb9e06cbca503005f22f1695aecefe3cf156f93a3ede939f7c23ed91b68f2606f1a1d8bf030a39f7aca1a2c67fee5"   target="_blank">
+          Click Here to Reply</a>
+
+          <br />&nbsp;
+          <br />&nbsp;<br />
+
+          <br />
+          <p style="font: Helvetica Neue, helvetica, arial, sans-serif; font-family: Helvetica Neue, helvetica, arial, sans-serif; font-size: 18px; padding:0;margin:0;line-height:21px; float:left; text-decoration:underline; color:#a20000;"><b>Property Information</b></p>
+          <br />&nbsp;
+          <p style="padding:0;margin:0;line-height:21px; color:#000000; text-decoration:none;"><b >Property Name:</b> South Pointe Apartments</p>
+          <p style="padding:0;margin:0;line-height:21px; color:#000000; text-decoration:none;"><b>Property Address:</b> 1201 31st Avenue SW </p>
+          <p style="padding:0;margin:0;line-height:21px; color:#000000; text-decoration:none;"><b >Property City:</b> Minot</p>
+          <p style="padding:0;margin:0;line-height:21px; color:#000000; text-decoration:none;"><b >Property State:</b> ND</p>
+          <p style="padding:0;margin:0;line-height:21px; color:#000000; text-decoration:none;"><b >Property ID:</b> 100049880</p>
+          <br />&nbsp;
+
+          </font></td>
+        </tr>
+      </table>
+      </td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="res" bgcolor="#f5f5f5">
+  <tr>
+    <td width="100%" style="padding:0px 20px;">
+      <table border="0" cellpadding="0" cellspacing="0" width="400" align="left" class="fill">
+        <tr>
+          <td width="100%" style="font-size: 18px; line-height: 20px; padding:10px 0px;"><font style="font-size: 14px; color:#191919; line-height: 20px;"><br />Visit <font style="font-size: 14px; color:#69C; line-height: 20px; font-weight:normal;"><a style="font-size: 14px; color:#69C; line-height: 20px; font-weight:normal;" href="http://click.message.my.apartmentguide.com/?qs=258b7665c5bcb2e4e80dcd59481f71ffdacca617284420400c055f8fbc2e5520ea1f8ebbead30b6e836ef3e0452bedb83599ce02d4b86784">My.ApartmentGuide.com</a></font><font style="font-size: 14px; color:#191919; line-height: 20px;"> to access Reports &amp; Analytics, Listing Editor, Certified Resident Ratings &amp; Reviews&#8480; and more!</font></font></td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" width="130" align="right" class="fill">
+        <tr>
+          <td width="100%" style="padding:25px 0px 20px 0px;" class="left-to-center"><a href="http://click.message.my.apartmentguide.com/?qs=ba89ac2790cf2df012ce7126a00f2d6add8c52b4e22c50f938853313e1037841ae3e1c6c04450d346f28a15eed1dc68e3a0df7d8f8262430"><img src="http://image.message.my.apartmentguide.com/lib/fe9d13707565017c71/m/13/myaglogo.png" border="0" alt="My.Apartment.Guide" /></a></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+<!-- edit - bgcolor -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="res">
+
+  <tr>
+    <td width="100%" align="left" style="font-size: 12px; line-height: 16px; padding:30px 20px;"><font face="Helvetica Neue, helvetica, arial, sans-serif" color="#333333">
+    This email has been sent to aptguide.southpointe@customerold.mail.reva.tech.<br />&nbsp;<br />
+
+
+    If you are no longer involved in the receipt of these notifications or have received this email in error, please <a href="mailto:contact@apartmentguide.com?subject=Remove%20contact%20from%20receiving%20LEADS%3F"  style="color:#a20000; font-weight:normal;">click here</a> to send an email to contact@apartmentguide.com and we will remove you from these emails.<br />&nbsp;<br />
+
+    If you are unable to see the message, <a href="http://view.message.my.apartmentguide.com/?qs=d5cc60e962aa52204ef9c8ec4d739acaef1c03c88b569c3baa7ad877760e25d520f9fff9eb78ca2591c6377e4ca69babbaafa7d4af542c863d3504e77c985bed0eb88711d1b994136411331ed868713f" style="color:#a20000; font-weight:normal;">click here</a> to view. View our <a  style="color:#a20000;text-decoration:underline;font-weight:normal;" href="http://click.message.my.apartmentguide.com/?qs=a3ef7246884990ca827c9da29465b9319c6d1457241bdcb8314a1d21664636fd473b1d3f876712947970bd0908eb469db1612c17bf599c0f">Privacy Policy</a>
+    </font></td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" style="font-size: 12px; line-height: 16px; padding:30px 20px;"><font face="Helvetica Neue, helvetica, arial, sans-serif" color="#909096">&#169; 2018 RentPath, Inc. All rights reserved. All photos, videos, text and other content are the property of RentPath, Inc. APARTMENT GUIDE and the APARTMENT GUIDE Trade Dress are registered trademarks of RentPath, Inc. or its affiliates.
+      <br />&nbsp;
+      <br />3585 Engineering Drive, Suite 100. Norcross, GA 30092 | <a alias="32 Privacy" style="color:#69C;text-decoration:underline;font-weight:normal;" href="tel:800-216-1423">800-216-1423</a></font>
+      <br />&nbsp;
+    </td>
+  </tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<!-- ET Open Tracking Pixel -->
+<img src="http://click.message.my.apartmentguide.com/open.aspx?ffcb10-feb51d7873670d7a-fe0315707363047a75117077-fe9d13707565017c71-ff61107776-fe2715767c66047f731c76-fef713707d6c05" width="1" height="1">
+
+</body>
+</html>
+
+--3bAWtCGRlPSE=_?:--
+

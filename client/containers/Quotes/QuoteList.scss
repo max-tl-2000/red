@@ -1,0 +1,160 @@
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_colors.scss';
+@import '../../sass/_shapes-mixins.scss';
+@import '../../components/Dropdown/Dropdown.scss';
+
+.promote-action {
+  cursor: pointer;
+}
+
+.multi-line-cell {
+  padding-top: (4rem/16);
+  padding-bottom: (4rem/16);
+  text-align: right;
+
+  p {
+    @include body();
+    @include textSecondary();
+
+    margin-bottom: .2em;
+  }
+}
+
+.quotes-list {
+  padding: 1rem 0;
+}
+
+.text-cell div:last-of-type {
+  span {
+    font-size: (13rem/16);
+  }
+
+  > span {
+    &:last-of-type {
+      margin-left: .25em;
+    }
+  }
+}
+
+.text-cell {
+  pointer-events: none;
+}
+
+.row-shape {
+  display: flex;
+  align-items: center;
+
+  > span {
+    justify-content: space-between;
+    margin-right: (8em/16);
+    margin-left: (4em/16);
+
+    align-self: center;
+  }
+
+  .circle {
+    &.grey {
+      fill: $grey400;
+    }
+
+    &.green {
+      fill: $green800;
+    }
+  }
+
+  .square {
+    &.red {
+      fill: $red500;
+    }
+  }
+
+  .triangle {
+    &.orange {
+      fill: $orange600;
+    }
+  }
+
+  &.grey-out {
+    color: $grey400;
+
+    .square {
+      fill: $red500;
+    }
+  }
+}
+
+.grey-out {
+  color: $grey500;
+}
+
+.information-text {
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+.information-text {
+  width: 90%;
+  margin-top: 1em;
+
+  p:first-child {
+    margin-bottom: 1em;
+  }
+}
+
+.recommendations {
+  margin-left: 1em;
+}
+
+.promoted-quote[data-component='lease-term-row'] {
+  margin-top: (1rem/16);
+  background-color: $focusBGColor;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:hover {
+    background-color: $focusBGColor;
+  }
+}
+
+.left-padding {
+  padding-left: 1em;
+}
+
+.lease-term-row {
+  min-height: (24em/16) !important;
+
+  > div {
+    > div {
+      > div {
+        padding: (2rem/16) 0;
+      }
+    }
+  }
+}
+
+.quote-row {
+  > div {
+    > div {
+      > div {
+        padding: (2rem/16) 0;
+      }
+    }
+  }
+
+  // TODO: refactor this to handle the expired state on the components directly instead of
+  // using the cascade here because this affects other elements inside the row too (like menu actions)
+
+  &.expired * {
+    @include textSecondary();
+  }
+}
+
+.tag {
+  display: inline-flex;
+}
+
+.card-menu {
+  min-width: (150rem/16);
+}

@@ -1,0 +1,61 @@
+.searchHistory {
+  display: block;
+  max-width: 870px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.appBarMainSection {
+  > div {
+    padding-right: .825rem;
+  }
+}
+
+.globalSearch {
+  height: 100vh;
+}
+
+.containerStyle {
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-bottom: (72rem/16);
+}
+
+@media (min-width: 420px) {
+  .containerStyle {
+    padding-left: 4rem;
+  }
+}
+
+.pageContent {
+  overflow: hidden;
+  height: calc(100vh - 64px);
+}
+
+[data-component='search-result-card'] {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (min-width: 800px) {
+  [data-component='search-result-card'] {
+    width: 50%;
+
+    &:nth-of-type(2n+1) {
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media (min-width: 940px) {
+  .appBarMainSection {
+    > div {
+      padding-right: (64rem/16);
+    }
+  }
+
+  .containerStyle {
+    padding-right: 4rem;
+  }
+}

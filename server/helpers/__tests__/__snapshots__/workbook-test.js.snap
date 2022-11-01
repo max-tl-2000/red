@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`workbook-utils parse Pass for simple file 1`] = `
+Object {
+  "Sheet1": Object {
+    "columnHeaders": Array [
+      "Col1",
+      "Col2",
+      "Col3",
+    ],
+    "data": Array [
+      Object {
+        "Col1": "Val1",
+        "Col2": "Val2",
+        "Col3": "Val3",
+      },
+    ],
+  },
+  "Sheet2": Object {
+    "columnHeaders": Array [
+      "ColA",
+      "ColB",
+    ],
+    "data": Array [
+      Object {
+        "ColA": "ValA",
+        "ColB": "ValB",
+      },
+    ],
+  },
+  "SheetNameWithSpaces": Object {
+    "columnHeaders": Array [],
+    "data": Array [],
+  },
+}
+`;
+
+exports[`workbook-utils parse Pass for simple file with special char (* and ()) in column name 1`] = `
+Array [
+  Object {
+    "Col1": "Val1",
+    "Col2": "Val2",
+    "Col3": "Val3",
+  },
+]
+`;

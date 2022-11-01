@@ -1,0 +1,37 @@
+# Start all the storage containers locally without running the application inside docker
+version: '2.1'
+services:
+  coredb:
+    image: registry.corp.reva.tech/postgres:14.3
+    environment:
+      POSTGRES_USER: revaadmin
+      POSTGRES_PASSWORD: revaadmin
+      TZ: UTC
+    ports:
+      - "5432:5432"
+
+  rabbitmq:
+    # hostname is required as actual persisted data is stored
+    # in directory called: "rabbit@[hostname]" if not set
+    # docker creates container with random hostname,
+    # thus new container will not use persisted data
+    hostname: rabbitmq
+    environment:
+      TZ: UTC
+    image: registry.corp.reva.tech/rabbitmq
+    ports:
+      - "4369:4369"
+      - "5671:5671"
+      - "5672:5672"
+      - "25672:25672"
+      - "15672:15672"
+
+  dev-proxy:
+    image: registry.corp.reva.tech/dev-proxy:proxied-api
+    environment:
+      TZ: UTC
+      PROXIED_HOSTNAME: ${PROXIED_HOSTNAME:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    network_mode: "${WEB_PROXY_NETWORK_MODE:-host}"

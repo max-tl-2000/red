@@ -1,0 +1,12 @@
+@import '../../sass/_colors.scss';
+
+.avatarSize {
+  width: 125px;
+  height: 125px;
+}
+
+.avatarBlue {
+  svg {
+    background: $blue300;
+  }
+}

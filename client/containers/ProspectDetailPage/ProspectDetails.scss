@@ -1,0 +1,253 @@
+@import '../../sass/_responsive.mixins.scss';
+@import '../../sass/_colors.scss';
+
+.st-helper-text {
+  margin-left: .5rem;
+}
+
+.st-helper-word-spacing {
+  margin-left: .3rem;
+}
+
+.st-red {
+  color: $redA400;
+}
+
+.message-hold-validator {
+  line-height: (37rem/16);
+  padding-left: 1.5rem;
+  background-color: $red50;
+
+  [data-component='validator'] {
+    font-size: inherit;
+    padding-top: 0;
+
+    > div {
+      height: 100%;
+    }
+
+    .link-learn-more-hold {
+      padding-left: 1rem;
+      cursor: pointer;
+      text-decoration: underline;
+      color: $red400;
+    }
+  }
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.corporate-application {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.closedAppBar {
+  background-color: $grey500;
+}
+
+.partyStateBar {
+  position: absolute;
+  z-index: 1;
+  top: (64rem/16);
+  width: 100%;
+}
+
+.closedParty {
+  padding-top: (72rem/16);
+
+  :global(.gm-scrollbar) {
+    z-index: 2;
+  }
+
+  .closedLeftPanel {
+    position: relative;
+  }
+
+  .readOnlyOverlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh - (132rem/16));
+    background-color: rgba($black, .26);
+  }
+}
+
+.saving-affordance {
+  margin-top: .75rem;
+  vertical-align: top;
+}
+
+.heightMax {
+  overflow: hidden;
+  height: calc(100% - 4rem);
+  margin: 0;
+}
+
+.searchSection {
+  height: (700rem/16);
+  border-color: #000;
+  border-left: 1px;
+  background: #c2c6e9;
+}
+
+:global .toast {
+  margin: (20rem/16);
+  padding: 0;
+  text-align: center;
+}
+
+:global #toast-container {
+  top: auto;
+  right: auto;
+  bottom: 1%;
+  left: 1%;
+}
+
+.prospect-container {
+  position: relative;
+}
+
+.quotes {
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.vertical-scrollbar {
+  :global(.gm-scroll-view) {
+    overflow-x: hidden;
+  }
+
+  :global(.gm-scrollbar.-horizontal) {
+    display: none;
+  }
+}
+
+.list-wrapper {
+  margin: 1.25rem 1.25rem 0;
+}
+
+.comms-wrapper {
+  margin: 0;
+}
+
+.panel-wrapper {
+  position: relative;
+
+  .inventory-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    animation: fadeInLeft .4s ease-out;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  .comms-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    animation: fadeInRight .4s ease-out;
+
+    &.visible {
+      display: block;
+    }
+  }
+}
+
+.appBarActions {
+  width: 40%;
+}
+
+.appBarMainSection {
+  overflow: hidden;
+
+  > div {
+    height: (40rem/16);
+  }
+}
+
+.closedAffordance {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.triggerWrapper {
+  position: absolute;
+  top: 0;
+}
+
+.members-trigger {
+  position: relative;
+
+  &.closed {
+    padding-left: 2.8rem;
+  }
+}
+
+.commBox {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+.linkQuote span {
+  color: #1e88e5;
+}
+
+.private-documents {
+  margin: 0 1.5em;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 3.5em;
+  margin-bottom: 1.5em;
+  padding-right: .5em;
+  background-color: rgba(207, 216,	220, .87);
+
+  [data-typography-element='true'] {
+    font-size: (13rem/16);
+    font-weight: 500;
+    line-height: 1.25em;
+    margin: 1em;
+    color: $purpleA400;
+  }
+}

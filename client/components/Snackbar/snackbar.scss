@@ -1,0 +1,125 @@
+@import '../../sass/_responsive.mixins.scss';
+@import '../../sass/_colors.scss';
+
+@keyframes fadeInUpFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutDownToBottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.snackbar {
+  position: fixed;
+  z-index: 99999;
+  bottom: (-48em/14);
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  pointer-events: none;
+
+  &:global(.on) {
+    display: block;
+
+    &:global(.enter) {
+      animation: fadeInUpFromBottom .3s ease-out;
+    }
+
+    &:global(.exit) {
+      animation: fadeOutDownToBottom .3s ease-out;
+    }
+  }
+}
+
+.snackbar-content {
+  display: block;
+  max-width: (568rem/16);
+  margin: 0 auto;
+  pointer-events: auto;
+  border-radius: (2rem/16);
+  background: $grey800;
+}
+
+.snackbar-wrapper {
+  position: relative;
+  display: block;
+  min-height: 48px;
+  padding-right: (94rem/16);
+
+  &.no-button {
+    padding-right: 0;
+  }
+
+  &.small {
+    // since we set the styles with javascript
+    // we need important to override those styles
+    padding-right: 0 !important;
+
+    .button {
+      position: relative;
+      // since we set the styles with javascript
+      // we need important to override those styles
+      width: 100% !important;
+    }
+  }
+}
+
+.truncate {
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: (48rem/16);
+  padding: (14rem/16) (24rem/16);
+
+  [data-component='text'] {
+    line-height: 1rem;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: (94rem/16);
+  padding: .4rem .9rem;
+  white-space: nowrap;
+
+  .snackbar-button {
+    min-width: (48rem/16);
+
+    > span {
+      color: #fff;
+    }
+  }
+}
+
+.small {
+  .text {
+    padding: 1.2rem 1.5rem;
+  }
+}

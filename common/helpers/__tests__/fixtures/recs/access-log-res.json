@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "hostname": "Roys-MacBook-Pro.local",
+  "pid": 43433,
+  "type": "middleware",
+  "subType": "access-log",
+  "reqId": "4dfcb8cd-4c30-46eb-bf1d-eca656a41982",
+  "level": 10,
+  "url": "/",
+  "res": {
+    "statusCode": 200,
+    "header": "HTTP/1.1 200 OK\r\nX-Powered-By: Express\r\nX-Request-Id: 4dfcb8cd-4c30-46eb-bf1d-eca656a41982\r\nSet-Cookie: i18next=en-US; path=/; expires=Sun, 02 Jul 2017 03:15:14 GMT\r\nContent-Type: text/html; charset=utf-8\r\nETag: W/\"9db-cLcxPlPR976GFlmuXCJTvQ\"\r\nVary: Accept-Encoding\r\nContent-Encoding: gzip\r\nDate: Sat, 02 Jul 2016 03:15:14 GMT\r\nConnection: keep-alive\r\nTransfer-Encoding: chunked\r\n\r\n"
+  },
+  "duration": 10,
+  "msg": "request finish",
+  "time": "2016-07-02T03:15:14.429Z",
+  "src": {
+    "file": "/Users/roy/royws/red/common/helpers/logger-middleware.js",
+    "line": 122
+  },
+  "v": 0
+}

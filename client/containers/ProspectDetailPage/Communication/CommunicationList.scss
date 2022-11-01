@@ -1,0 +1,16 @@
+@import '../../../sass/_colors.scss';
+
+.containerStyle {
+  margin-left: 0;
+  border-bottom: (1rem/16) solid $grey200;
+}
+
+.loadingError {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5.75rem;
+  text-align: center;
+}

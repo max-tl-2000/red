@@ -1,0 +1,19 @@
+@import '../../sass/_colors.scss';
+
+.loading-dialog {
+  width: (432rem/16);
+
+  [data-component='dialog-body'] {
+    padding: 0 (20em/16) 0;
+  }
+}
+
+.spinner {
+  min-height: 3rem;
+  margin-top: 8rem;
+}
+
+.loading-label {
+  padding: 3rem 2rem 14rem 2rem;
+  text-align: center;
+}

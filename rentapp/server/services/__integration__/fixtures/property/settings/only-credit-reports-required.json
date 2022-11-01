@@ -1,0 +1,32 @@
+{
+  "applicationSettings": {
+    "traditional": {
+      "occupant": {
+        "creditReportRequiredFlag": true,
+        "criminalReportRequiredFlag": false
+      },
+      "resident": {
+        "creditReportRequiredFlag": true,
+        "criminalReportRequiredFlag": false
+      },
+      "guarantor": {
+        "creditReportRequiredFlag": true,
+        "criminalReportRequiredFlag": false
+      }
+    },
+    "corporate": {
+      "occupant": {
+        "creditReportRequiredFlag": true,
+        "criminalReportRequiredFlag": false
+      },
+      "resident": {
+        "creditReportRequiredFlag": true,
+        "criminalReportRequiredFlag": false
+      },
+      "guarantor": {
+        "creditReportRequiredFlag": true,
+        "criminalReportRequiredFlag": false
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+Return-Path: <leads@digible.com>
+Received: from mail-ej1-f53.google.com (mail-ej1-f53.google.com [209.85.218.53])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 9n67le97a01m61bq943h59c8qkq7m2afdduuvk81
+ for facebook-ad.woodridge.vanity@customerold.mail.reva.tech;
+ Mon, 17 Aug 2020 17:52:36 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of digible.com designates 209.85.218.53 as permitted sender) client-ip=209.85.218.53; envelope-from=leads@digible.com; helo=mail-ej1-f53.google.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of digible.com designates 209.85.218.53 as permitted sender) client-ip=209.85.218.53; envelope-from=leads@digible.com; helo=mail-ej1-f53.google.com;
+ dkim=pass header.i=@digible-com.20150623.gappssmtp.com;
+ dmarc=pass header.from=digible.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIeks3eGR1YW1KZVFYZ3FabjJxRExnTkJaUk9Nekp3QzVTSGQrZ2MyQXF4WlRlUjZlckoxNSttTjE4alpYSXZ1cDRicGlPcGNHamU1bEViUWhCT3BvZUlzUkZtRG1jREV3MkYvNmVxc1NOWFVqVlhrbmhsRzdQZ2pyYVg0ajdwOGd1N3ordzd6K3Q3YXo1dC9kOVpjaHJkaEcrV1dSSUtXZTJNR3NHeUhqQ2FCMkdOQzFia0kxbVZkRGVyMlBtZ2p3dUNGcFQvczNSUE1hSG4zMTQxTUFiazQxa0tQZFpuazhCR3duOW1OSG5qYXdaaWlOYlFPNkVibmg3TFRVNndBQ3hSNURUSUE5TXZycHBwNmFKem04R3ozTEhmb0RRT0VjYnhRKzJvMkMvd3c9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=go/30bySlaO9A7z919Xpe02spxM2QpQ0Tcqu+q1HPLL8ImVlbysPsuk6tDEdiIrrVpRn+c1hVjpuzTofnxxgyFpRo5dgULkgX7TPgyVQUZxWYIHgihdJnhjDIV/pPhV1DMqqp6uQ4b4gmDqYWpq+CJytHA0ZRROxJjcMnb0S2jI=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1597686756; v=1; bh=p4DERxy/IiUUVDD5Y7V4jIkDPC6Ov0sWD6SGZI6snAY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: by mail-ej1-f53.google.com with SMTP id t10so18765559ejs.8
+        for <facebook-ad.woodridge.vanity@customerold.mail.reva.tech>; Mon, 17 Aug 2020 10:52:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=digible-com.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:reply-to:date:message-id:subject:to;
+        bh=p4DERxy/IiUUVDD5Y7V4jIkDPC6Ov0sWD6SGZI6snAY=;
+        b=VaoJ8Zkogizm43v8iN9fEZb9AEnzVxPxWDBiAL6ued+epjEY0QTITZAZrp5m6dda96
+         0+ukOhbZzIDBIsPeRcu2VXCV321q0Rj4J3pIfimBPORzFibMeJQmnKBuLhUoMytxTDRE
+         N0idcRtT58QW4JekFiiPetPqkV5U0NMo0ETbXqeeYFHPWxO2uud9KP/nWoA7Wef2ZhIF
+         Yx6bB0ZYJB+D4G4dRIZaBxHSmssrWTQBfJ6N6eSz+2ArSbmup1E4dsYXzyxxF8E4LcA+
+         EAOhFe910XG10TLulFdHFuX10wA9wq+zVI0EOn1h4O4brKep3E8XAFc9Lw87MmlFZ0cG
+         STVA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:reply-to:date:message-id
+         :subject:to;
+        bh=p4DERxy/IiUUVDD5Y7V4jIkDPC6Ov0sWD6SGZI6snAY=;
+        b=NSyol/hIpmI8hyXv6XV7gPDLZ7lc/RAyBndzZihTCX0+BQMO4MwD7HA9kXbk09ZolE
+         jINe6qFFRX3nAmg5+SIMZj+ZM3vG2bSkGKTBPiA54qF8eGryI9x3TVlpReykc/N7KPXA
+         F8K8Xh4S17MIUR0Qf3GBxrgG3vWjg8HWhBW+lFCRPT+kXO18p9CABqoUT1l3SzRng1iF
+         ye37sU6osAloXp46Sn5M4QMiW5c7d+mCW8LXaQVdBeF87a3LBxPTtyGUC452JZwNM9mc
+         ASXFj47JblOpFpKT6KclJDJ7HWiavm5UY74Cf2KykcN7uSOMXn+qE0Xb0lKMB9bXJnrx
+         ZL+w==
+X-Gm-Message-State: AOAM532Wy9AYnKG9PmXIICnIbCZEAG8P0kl5kgTQmpQv3GFG1OEGn8//
+	ojPCt53xApCStATN9WUcB3FXqNUCKOxlDxrKaKZL9+XC5pY=
+X-Google-Smtp-Source: ABdhPJygEyIUy9obpuGvbkKpxO3TeaDZG8j4y9F0cxs7S3SiItuchZ5uZndFVBnjpmhI3QfyDX3CrXkRqfKEEmp54X8=
+X-Received: by 2002:a17:907:36b:: with SMTP id rs11mr16836937ejb.544.1597686755244;
+ Mon, 17 Aug 2020 10:52:35 -0700 (PDT)
+Received: from 927538837578 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 17 Aug 2020 10:52:34 -0700
+MIME-Version: 1.0
+From: "Digible, Inc." <leads@digible.com>
+Reply-To: ashketchum@icloud.com
+Date: Mon, 17 Aug 2020 10:52:34 -0700
+Message-ID: <CAPfms9KYtXk1+E4+T7OJMG=RdOThafmoORApk3+00A9wYYEuwA@mail.gmail.com>
+Subject: New Lead from Facebook for Woodridge Apartments
+To: facebook-ad.woodridge.vanity@customerold.mail.reva.tech
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+You have received a new lead from a Facebook ad:
+Ash K.
+Johnson-Hice
++19137311288
+ashketchum@icloud.com
+Oct 1, 2020
+Studio
+9137311288

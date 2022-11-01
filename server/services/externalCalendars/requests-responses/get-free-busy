@@ -1,0 +1,26 @@
+GET: /v1/free_busy?from={FROM_DATE}&to={TO_DATE}&tzid={TZID}
+Host: api.cronofy.com
+Authorization: Bearer {ACCESS_TOKEN}
+
+response:
+{
+  "pages": {
+    "current": 1,
+    "total": 2,
+    "next_page": "https://api.cronofy.com/v1/free_busy/pages/caa2dca822d5d74d98104489"
+  },
+  "free_busy": [
+    {
+      "calendar_id": "cal_U9uuErStTG@EAAAB_IsAsykA2DBTWqQTf-f0kJw",
+      "start": "2014-09-06T08:00:00Z",
+      "end": "2014-09-08T08:30:00Z",
+      "free_busy_status": "busy",
+    },
+    {
+      "calendar_id": "cal_U9uuErStTG@EAAAB_IsAsykA2DBTWqQTf-f0kJw",
+      "start": "2014-09-10",
+      "end": "2014-09-11",
+      "free_busy_status": "free",
+    }
+  ]
+}

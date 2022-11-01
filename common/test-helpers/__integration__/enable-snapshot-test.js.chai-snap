@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enable-snapshot should edit created_at and updated_at fields 1`] = `
+Object {
+  "created_at": "[DATE_EDITED]",
+  "nonId": 1213,
+  "normal": "Simple and normal",
+  "updated_at": "[DATE_EDITED]",
+}
+`;
+
+exports[`enable-snapshot should edit date fields 1`] = `
+Object {
+  "nonId": 123,
+  "normal": "Simple and normal",
+  "startDate": "[DATE_EDITED]",
+}
+`;
+
+exports[`enable-snapshot should edit date string fields 1`] = `
+Object {
+  "nonId": 1213,
+  "normal": "Simple and normal",
+  "startDate": "[DATE_EDITED]",
+}
+`;
+
+exports[`enable-snapshot should edit guid fields 1`] = `
+Object {
+  "guid": "[UUID_EDITED]",
+  "id": "[UUID_EDITED]",
+  "nonId": 123,
+  "normal": "Simple and normal",
+}
+`;
+
+exports[`enable-snapshot should edit guid values in arrays 1`] = `
+Object {
+  "nonEditable": "nonEditable",
+  "teams": Array [
+    "[UUID_EDITED]",
+    "[UUID_EDITED]",
+  ],
+}
+`;
+
+exports[`enable-snapshot should ignore other fields set using the ignore prop 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "notIgnored": "not to be ignored",
+      "toIgnore": "[EDITED]",
+    },
+  ],
+  "teams": "[EDITED]",
+}
+`;
+
+exports[`enable-snapshot should process a nested structure 1`] = `
+Array [
+  Object {
+    "assignedPropertyId": null,
+    "collaborators": Array [],
+    "created_at": "[DATE_EDITED]",
+    "endDate": null,
+    "id": "[UUID_EDITED]",
+    "metadata": Object {
+      "creationType": "system",
+      "firstContactChannel": "Email",
+      "firstContactedDate": "[DATE_EDITED]",
+      "leadFromExistingResident": false,
+      "programId": "",
+      "propertyId": "",
+      "qualQuestionsCompleted": "[DATE_EDITED]",
+      "residentInfo": Object {},
+      "source": "",
+    },
+    "ownerTeam": "[UUID_EDITED]",
+    "partyMembers": Array [
+      Object {
+        "contactInfo": Object {
+          "all": Array [
+            Object {
+              "id": "[UUID_EDITED]",
+              "isPrimary": true,
+              "isSpam": false,
+              "metadata": Object {
+                "sms": true,
+              },
+              "personId": "[UUID_EDITED]",
+              "type": "phone",
+              "value": "15109444422",
+            },
+            Object {
+              "id": "[UUID_EDITED]",
+              "isPrimary": true,
+              "isSpam": false,
+              "metadata": Object {},
+              "personId": "[UUID_EDITED]",
+              "type": "email",
+              "value": "lois.reports@gmail.com",
+            },
+          ],
+          "defaultEmail": "lois.reports@gmail.com",
+          "defaultEmailId": "[UUID_EDITED]",
+          "defaultPhone": "15109444422",
+          "defaultPhoneId": "[UUID_EDITED]",
+          "emails": Array [
+            Object {
+              "id": "[UUID_EDITED]",
+              "isPrimary": true,
+              "isSpam": false,
+              "metadata": Object {},
+              "personId": "[UUID_EDITED]",
+              "type": "email",
+              "value": "lois.reports@gmail.com",
+            },
+          ],
+          "isSpam": false,
+          "phones": Array [
+            Object {
+              "id": "[UUID_EDITED]",
+              "isPrimary": true,
+              "isSpam": false,
+              "metadata": Object {
+                "sms": true,
+              },
+              "personId": "[UUID_EDITED]",
+              "type": "phone",
+              "value": "15109444422",
+            },
+          ],
+        },
+        "created_at": "[DATE_EDITED]",
+        "dob": null,
+        "endDate": null,
+        "fullName": "Lois Lane",
+        "guaranteedBy": null,
+        "id": "[UUID_EDITED]",
+        "isSpam": false,
+        "memberState": "Contact",
+        "memberType": "Resident",
+        "partyId": "[UUID_EDITED]",
+        "personId": "[UUID_EDITED]",
+        "preferredName": "Lois",
+        "startDate": "[DATE_EDITED]",
+        "updated_at": "[DATE_EDITED]",
+      },
+    ],
+    "qualificationQuestions": Object {
+      "moveInTime": "NEXT_2_MONTHS",
+      "numBedrooms": Array [
+        "TWO_BEDS",
+      ],
+    },
+    "score": "prospect",
+    "startDate": "[DATE_EDITED]",
+    "state": "Contact",
+    "storedUnitsFilters": Object {
+      "moveInDate": Object {
+        "max": "2017-10-24",
+        "min": "2017-09-24",
+      },
+      "numBedrooms": Array [
+        "TWO_BEDS",
+      ],
+    },
+    "teams": Array [
+      "[UUID_EDITED]",
+    ],
+    "updated_at": "[DATE_EDITED]",
+    "userId": "[UUID_EDITED]",
+  },
+]
+`;

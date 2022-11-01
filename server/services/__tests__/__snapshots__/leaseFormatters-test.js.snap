@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`services/leaseFormatters When formatting a unit address using formatUnitAddress should use the building address when the inventory address is not set 1`] = `"2300 Lincoln village circle, Unit 164, Tiburon, CA 94920"`;
+
+exports[`services/leaseFormatters When formatting a unit address using formatUnitAddress should use the inventory address when the inventory has one set 1`] = `"370 Channing Way, Tiburon, CA 94920"`;
+
+exports[`services/leaseFormatters when formatting an address using formatPropertyAddress should construct an address string from the provided data omitting blanks 1`] = `"373 E El Camino Real, Sunnyvale, CA 95041"`;
+
+exports[`services/leaseFormatters when formatting an address using formatPropertyAddress should construct an address string from the provided data omitting blanks 2`] = `"373 E El Camino Real, Apt 1207, Sunnyvale, CA 95041"`;

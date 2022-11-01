@@ -1,0 +1,13 @@
+.term-row {
+  min-height: 0;
+}
+
+.term-cell > div {
+  padding: 0;
+}
+
+.row-header-custom {
+  &:after {
+    left: 0;
+  }
+}

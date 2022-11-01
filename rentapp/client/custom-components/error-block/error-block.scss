@@ -1,0 +1,20 @@
+.picto {
+  display: inline-block;
+  width: 370px;
+  height: 306px;
+  background: url('./imgs/balloon.png');
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: (34rem/16);
+  margin-top: (18rem/16);
+  opacity: .54;
+}
+
+.msg {
+  margin-top: (20rem/16);
+}

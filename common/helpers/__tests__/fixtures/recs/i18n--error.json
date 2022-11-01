@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "hostname": "Roys-MacBook-Pro.local",
+  "pid": 43433,
+  "subType": "i18n",
+  "level": 50,
+  "args": [],
+  "err": {
+    "message": "color is not defined",
+    "name": "ReferenceError",
+    "stack": "ReferenceError: color is not defined\n    at getColorForRecordBasedOnLevel (record-formatter.js:22:5)\n    at Object.format (record-formatter.js:88:42)\n    at Logger.overrideLevel [as _emit] (logger.js:53:41)\n    at Logger.info (/Users/roy/royws/red/node_modules/bunyan/lib/bunyan.js:1037:24)\n    at Server.<anonymous> (server.js:142:12)\n    at Server.g (events.js:273:16)\n    at emitNone (events.js:85:20)\n    at Server.emit (events.js:179:7)\n    at emitListeningNT (net.js:1253:10)\n    at nextTickCallbackWith1Arg (node.js:464:9)"
+  },
+  "msg": "currentLng set to: en-US",
+  "time": "2016-07-02T03:15:14.420Z",
+  "src": {
+    "file": "/Users/roy/royws/red/server/helpers/i18n.js",
+    "line": 34,
+    "func": "log"
+  },
+  "v": 0
+}

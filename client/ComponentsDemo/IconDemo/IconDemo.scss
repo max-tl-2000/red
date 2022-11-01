@@ -1,0 +1,47 @@
+@import '../../sass/_colors.scss';
+
+.vertical-bar {
+  display: flex;
+  flex-direction: column;
+  width: 56px;
+  background: $grey900;
+}
+
+.ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+}
+
+.menu-bar {
+  background: #fff;
+}
+
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+
+  :global(p) {
+    padding-left: 5px;
+
+    align-self: center;
+  }
+}
+
+.ri-item {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+  }
+}

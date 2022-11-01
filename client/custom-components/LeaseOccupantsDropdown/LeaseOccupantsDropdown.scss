@@ -1,0 +1,32 @@
+@import '../../sass/colors';
+
+.list-item {
+  padding-left: .5rem !important;
+}
+
+.occupants-dropdown {
+  width: (480rem/16);
+
+  &.readOnly {
+    pointer-events: none;
+  }
+}
+
+.heading {
+  height: 1rem;
+  vertical-align: middle;
+}
+
+.value {
+  font-size: (12rem/16);
+  color: $grey500;
+}
+
+.flyout-overlay {
+  width: (480rem/16);
+}
+
+.unit-row {
+  display: flex;
+  flex-direction: row;
+}

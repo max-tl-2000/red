@@ -1,0 +1,19 @@
+@import '../../sass/_colors.scss';
+
+.itemBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.itemMainText {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  white-space: pre-wrap;
+}
+
+.iconSection {
+  width: (70rem/16);
+}

@@ -1,0 +1,8 @@
+.deactivate-dialog-wrapper {
+  max-width: (390rem/16);
+  padding: 0 (22rem/16);
+
+  [data-component='text'] {
+    margin-bottom: 1rem;
+  }
+}

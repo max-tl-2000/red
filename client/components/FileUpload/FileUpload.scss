@@ -1,0 +1,44 @@
+@import '../../sass/_responsive.mixins.scss';
+
+.upload-messages {
+  padding-top: .3em;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: row;
+
+  > div:first-child {
+    height: 3.2em !important;
+    padding-left: .3em;
+  }
+
+  .upload-actions {
+    padding: 0 (20rem/16);
+  }
+
+  .upload-messages {
+    display: none;
+  }
+}
+
+@include to('small1') {
+  .file-upload {
+    flex-direction: column;
+
+    .upload-actions,
+    .upload-status {
+      padding: (20rem/16) 0 0 0;
+    }
+
+    .upload-messages {
+      display: block;
+    }
+  }
+
+  .upload-messages {
+    &.reflow {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "e8281d92-c449-475a-8220-4432572351d1",
+  "score": "prospect",
+  "state": "Contact",
+  "tasks": [{
+    "id": "596c6b54-8303-49e2-bc09-dd4b1d969c65",
+    "name": "REMOVE_ANONYMOUS_EMAIL",
+    "partyId": "e8281d92-c449-475a-8220-4432572351d1",
+    "state": "Active",
+    "metadata": {
+        "personId": "22c1c2b1-a917-467f-a6cd-428c2abdeb8d"
+    }
+  }],
+  "teams": [
+    "2aa0608c-1154-4a46-9784-9df7ab5f07a6",
+    "9be10ad1-d97d-46a7-907b-3b540dc07d73"
+  ],
+  "leases": null,
+  "quotes": null,
+  "userId": "919fe742-9dae-4464-b921-e62ff4d35e8a",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "22c1c2b1-a917-467f-a6cd-428c2abdeb8d",
+        "dob": null,
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "Jane Doe",
+        "idCountry": null,
+        "created_at": "2018-01-16T11:36:21.16654+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2018-01-16T11:36:21.16654+00:00",
+        "modified_by": "919fe742-9dae-4464-b921-e62ff4d35e8a",
+        "preferredName": null,
+        "isSuspiciousContent": false
+      },
+      "contactInfo": [{
+        "id": "0448a5cc-db5b-4528-a895-f1ef1b383f0e",
+        "type": "email",
+        "value": "thisIsAnAnonymousEmailAddr@zlead.co",
+        "personId": "22c1c2b1-a917-467f-a6cd-428c2abdeb8d"
+      }],
+      "partyMember": {
+        "id": "cff4009d-ae1d-4334-8d05-13205b19f0a0",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "e8281d92-c449-475a-8220-4432572351d1",
+        "external": {},
+        "personId": "22c1c2b1-a917-467f-a6cd-428c2abdeb8d",
+        "startDate": "2018-01-16T11:36:21.16654+00:00",
+        "created_at": "2018-01-16T11:36:21.172+00:00",
+        "externalId": null,
+        "memberType": "Resident",
+        "updated_at": "2018-01-16T11:36:21.172+00:00",
+        "memberState": "Contact",
+        "modified_by": "919fe742-9dae-4464-b921-e62ff4d35e8a",
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "invoices": null,
+  "metadata": {
+    "creationType": "user",
+    "firstContactedDate": "2018-01-16T11:36:10.561Z",
+    "firstContactChannel": "Walk-in"
+  },
+  "leaseType": "traditional",
+  "ownerTeam": "2aa0608c-1154-4a46-9784-9df7ab5f07a6",
+  "startDate": "2018-01-16T11:36:10.573123+00:00",
+  "created_at": "2018-01-16T11:36:10.573+00:00",
+  "invOnHolds": null,
+  "mergedWith": null,
+  "promotions": null,
+  "updated_at": "2018-01-16T11:36:10.573+00:00",
+  "modified_by": "919fe742-9dae-4464-b921-e62ff4d35e8a",
+  "transactions": null,
+  "collaborators": [
+    "919fe742-9dae-4464-b921-e62ff4d35e8a"
+  ],
+  "emailIdentifier": "e8281d92c449475a8220",
+  "partyApplications": [],
+  "assignedPropertyId": "e4d7f0d0-5e08-48c1-8ef2-655e8a3d9183",
+  "personApplications": [],
+  "storedUnitsFilters": {
+    "propertyIds": [
+      "e4d7f0d0-5e08-48c1-8ef2-655e8a3d9183"
+    ]
+  },
+  "qualificationQuestions": {
+    "moveInTime": "",
+    "numBedrooms": [],
+    "groupProfile": "",
+    "cashAvailable": ""
+  },
+  "workflowName": "newLease",
+  "workflowState": "active"
+}

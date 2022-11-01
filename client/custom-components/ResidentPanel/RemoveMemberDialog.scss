@@ -1,0 +1,11 @@
+.subtitle {
+  position: relative;
+  margin-bottom: .5rem;
+  padding-left: 2rem;
+
+  [data-red-icon] {
+    position: absolute;
+    top: -(1rem/16);
+    left: 0;
+  }
+}

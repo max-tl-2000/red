@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`assetsHelper when parseMetadataInFilePath is called should extract metadata (highValue, floorPlan, rank, label) 1`] = `
+Array [
+  Object {
+    "fileName": "01-FP-HV-some name.ext",
+    "floorPlan": true,
+    "highValue": true,
+    "label": "some name",
+    "rank": 1,
+  },
+  Object {
+    "fileName": "01-Office.jpg",
+    "floorPlan": false,
+    "highValue": false,
+    "label": "Office",
+    "rank": 1,
+  },
+  Object {
+    "fileName": "02-FP-1x1 TH 691-799 SF.png",
+    "floorPlan": true,
+    "highValue": false,
+    "label": "1x1 TH 691-799 SF",
+    "rank": 2,
+  },
+  Object {
+    "fileName": "01 - Living dining.jpg",
+    "floorPlan": false,
+    "highValue": false,
+    "label": "Living dining",
+    "rank": 1,
+  },
+  Object {
+    "fileName": "02-HV-Patio.jpg",
+    "floorPlan": false,
+    "highValue": true,
+    "label": "Patio",
+    "rank": 2,
+  },
+  Object {
+    "fileName": "HV-Patio.jpg",
+    "floorPlan": false,
+    "highValue": false,
+    "label": "",
+    "rank": 0,
+  },
+]
+`;
+
+exports[`assetsHelper when parseMetadataInRxpFilePath is called and filename is correct should extract metadata (dimensions, shape, theme) 1`] = `
+Array [
+  Object {
+    "dimensions": "64x64",
+    "shape": "square",
+    "theme": "dark",
+  },
+  Object {
+    "dimensions": "64x64",
+    "shape": "square",
+    "theme": "dark",
+  },
+  Object {
+    "dimensions": "32x32",
+    "shape": "square",
+    "theme": "dark",
+  },
+  Object {
+    "dimensions": "32x32",
+    "shape": "circle",
+    "theme": "dark",
+  },
+  Object {
+    "dimensions": "32x32",
+    "shape": "circle",
+    "theme": "light",
+  },
+]
+`;
+
+exports[`assetsHelper when parseMetadataInRxpFilePath is called and filename is incorrect should throw error: INCORRECT_RXP_ASSET_NAME 1`] = `
+Array [
+  "INCORRECT_RXP_ASSET_NAME",
+  "INCORRECT_RXP_ASSET_NAME",
+  "INCORRECT_RXP_ASSET_NAME",
+]
+`;

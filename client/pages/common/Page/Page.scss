@@ -1,0 +1,11 @@
+.Page {
+  box-sizing: border-box;
+  min-height: calc(100vh - 8.5rem);
+  padding-top: (88rem/16);
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+}

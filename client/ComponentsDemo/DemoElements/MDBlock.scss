@@ -1,0 +1,89 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+:global {
+  .md-content {
+    p {
+      @include body();
+
+      line-height: 1.7em;
+      margin: 0 0 1em 0;
+      text-align: justify;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-weight: normal;
+      margin: 1.5em 0 1.5em 0;
+    }
+
+    ul {
+      @include body();
+
+      margin: 0 0 1.2em 0;
+
+      li {
+        margin-bottom: .5em;
+        margin-left: 1em;
+        list-style-type: disc;
+      }
+    }
+
+    code {
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
+      padding: .5em .5em .25em;
+      color: #c12c7d;
+      background: rgba(#eee, .5);
+    }
+
+    pre {
+      padding: 10px 15px;
+      background: rgba(#eee, .5);
+
+      code {
+        color: #24589b;
+        background: none;
+      }
+    }
+  }
+
+  pre {
+    max-height: 500px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+
+    code.hljs {
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
+      padding: 0 20px 20px 20px;
+    }
+  }
+
+  .p {
+    margin: 1em 0;
+  }
+}

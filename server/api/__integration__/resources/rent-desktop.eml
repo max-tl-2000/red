@@ -1,0 +1,274 @@
+Return-Path: <bounce-473_HTML-166810988-936888-6237193-117936@bounce.email.rent.com>
+Received: from mta4.email.rent.com (mta4.email.rent.com [136.147.138.102])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id n9qa30gg5omi304euabah9f61blr9op1rv844v01
+ for rentcom.parkmerced@maximus.mail.reva.tech;
+ Thu, 07 Jun 2018 02:18:39 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of bounce.email.rent.com designates 136.147.138.102 as permitted sender) client-ip=136.147.138.102; envelope-from=bounce-473_HTML-166810988-936888-6237193-117936@bounce.email.rent.com; helo=mta4.email.rent.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of bounce.email.rent.com designates 136.147.138.102 as permitted sender) client-ip=136.147.138.102; envelope-from=bounce-473_HTML-166810988-936888-6237193-117936@bounce.email.rent.com; helo=mta4.email.rent.com;
+ dkim=pass header.i=@email.rent.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIOG1yT3ZvUHhMSmN2UWlDdEI4OTU2NnlPbmdnNGlYWi9ZZGFteGo3N25mek42Rk1IenFrSHZva2pSbWM2azNKbyswT3UrZS83eTREYW8zSnVvZnY0dnZxSFhUM1FTWDlkVDIybTFqR0t5R1ZvdHk5M1UxU0tnZ3pqajMvV3NjekpWRDNIanlTYW5lL2RPTEZHQmtrNWFBVERIUC9yMjRHS2l6Ym1SRXhaYmQrWVc0c0E1N2FnSzgweG5wVy9RR2Y1b1o3am1PN1kxSFd6SkdHb1hGaEdiVVNqSGQ5ZlZOdnFlTUh0UkJBSEJkbHk1d0hrUWphc1dmR3puWkxzbjl2S3pjL0NhNHRpQjZHb3lWbkp5L2VFK0czTTNNQmFEOGl6QlpsL0tpWjA3dGF1aWdHb0lqbVBUTG1TWHh2LzBaUjRORUlwZ3pNMm5IUG9FRmtRM0N2R1EvdmtHNUVnYUxvTEZyMmxlV1JOQUdBPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=PlEyg3GaRRdDnVEpnB0fwvQY5r9Ys9A72UTAVbNrqRt/oLl+ZgqONS2gOUe2XLXQZFzFxB5IZ6/N7GlYDlfKKTEZwopFHRS14uix9tJxS2nTcFCixdt6T2L7sOBSVZgIgzPt1VD2Csm7aMQYmxagYfbK7+FIP5eT+7D3JGKs2Ck=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1528337920; v=1; bh=lj8p8r6PQ+3prbrMGPLoWkvW14r7lvPiN7O1G0PsyCg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=email.rent.com;
+ h=From:To:Subject:Date:MIME-Version:List-ID:Reply-To:Message-ID:Content-Type:Content-Transfer-Encoding; i=reply@email.rent.com;
+ bh=MGFichUVzwZnyBthYwwoBqQZooo=;
+ b=LBiALd6uz207kZ3EDkKAU7LI/oi2ngKI7hnAPCO6skRkbVyaQpMhGeUptJCHQ7jmMfWZOknAMHZK
+   R8ii5L4/iWr5so1dBFcl4iSah0JXAbArakzHXZIOq6QCiEsnIfom5dvRy4fqPft81ctv6dV/jGFU
+   TGx/VQy/ZskzRqjrsmk=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=200608; d=email.rent.com;
+ b=gmYBlpwf8rw5qapFQQmlxelAGLrZU4QNyF6QtyEVtgsBdajCCifpm965TgVGypPS/Jiq53vn6Nhx
+   jjMJfSU21m9Onte/OdaFijqu5RNUopk5tZf3sqe9XuC8l7C1Drb11wvRzn2tw20qZhm8py2tBva5
+   74JGVASdnmNpXGdNLL4=;
+Received: by mta4.email.rent.com id h32avu163hsi for <rentcom.parkmerced@maximus.mail.reva.tech>; Thu, 7 Jun 2018 02:18:38 +0000 (envelope-from <bounce-473_HTML-166810988-936888-6237193-117936@bounce.email.rent.com>)
+From: "Rent.com" <reply@email.rent.com>
+To: <rentcom.parkmerced@maximus.mail.reva.tech>
+Subject: Rent.com Lead from Uffo Hogpen (Parkmerced Apartments)
+Date: Wed, 06 Jun 2018 20:18:37 -0600
+MIME-Version: 1.0
+List-ID: <6237193_936888.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 6237193_936888
+Reply-To: "Uffo Hogpen" <reply-feb51d73736c0c75-473_HTML-166810988-6237193-117936@email.rent.com>
+Message-ID: <3e5ec9fb-a14b-4632-beaf-d4fae0b3bde9@xtinp2mta4826.xt.local>
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+
+<table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"></td></tr></table>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;">
+		<meta name="x-apple-disable-message-reformatting">
+		<title>Rent.com Text Lead</title>
+		<link rel="stylesheet" type="text/css" href="BaseCss.css">
+		<link rel="stylesheet" type="text/css" href="BaseMobileCss.css">
+		<style type="text/css">
+		* { padding: 0px; margin: 0px;}
+		html {-webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased;}
+		a {outline: 0;}
+		img {display: block;}
+		td {mso-line-height-rule: exactly;}
+		.outlookFix {text-decoration: underline;}
+		/* Base Media Queries */
+		@media (max-width: 480px) {
+		* { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-font-smoothing: antialiased;}/*Stop iproducts from auto-resizing text*/
+		.container {width:318px !important;}/*container width*/
+		.height {height:auto !important;}/*See Movie cell height size adjust*/
+		.hide {display:none !important;}
+		.w100P {width:100% !important; height:auto !important;}/
+		.width {width:318px !important;}/*cell width adjust*/
+		.W300 {width:300px !important;}/*cell width adjust*/
+		.paddingsides {padding:5px !important;}/*Footer side padding*/
+		.show {display: block !important; max-height: none !important; overflow:visible !important; line-height:normal !important;}
+		.showTable {display: block !important;}
+		.posRel {position:relative !important;}
+		.posAbs {position:absolute !important;display:block !important;}
+		
+		/*.CWU {top:0px !important;left:98px !important;}/*positioning example*/
+		
+		}
+		@media only screen and (max-width: 1025px) {
+		/*Tablet Example*/
+		td[id="MBimg"] {padding-bottom: 10px !important;}
+		}
+		</style>
+	</head>
+	<img src="http://click.email.rent.com/open.aspx?ffcb10-feb51d73736c0c75-fe0115707063037f71177074-fe9012727663057476-ff61107776-fe201576736c057d7c1c78-fec41571726d077b" width="1" height="1">
+	<body  bgcolor="#ffffff" style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-font-smoothing: antialiased;">
+		<!--[if t]><![endif]--><!--[if t]><![endif]--><!--[if t]><![endif]-->
+		<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="table-layout:fixed;">
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0" align="center" width="90%" bgcolor="#ffffff" class="container" style="margin:0 auto;">
+						<tr>
+							<td align="center">
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											<a href="http://pages.email.rent.com/page.aspx?qs=330c754b5e92df74d7da067b5b2e8f63d14e05c1446261accf1d300af4eadc52ffb55d655b4df4917d9193096b50484fafa3ef3d0880c21c485fce0e499a2b9bd237b1287ba1fe357461a33ef313a4b1b2bc1a14f5f07f561c2a6306d8b8bb242420fb404b12f0776a3974a98b23fca6f55b62fa8120ca09d0e936ba1d0a25a8f91a5b4f6a1d5aa8a556f104d806462d13cdd799d49b87acd3864f087abc7c31fdd5efabb5ffb3aa06d162d34fdab2ef202058046702f591" target="_blank"  style="color: #006699; text-decoration:underline;">Click Here to Reply >></a>
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Uffo Hogpen checked you guys out on Rent.com and is interested in moving to your community!
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Information for <strong>Uffo Hogpen</strong>
+										</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Email:&nbsp;<a href="mailto:uffo.hogpen@me.com" style="color: #333333; text-decoration:none;">uffo.hogpen@me.com</a>
+										</td>
+									</tr>
+									
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											*Phone:&nbsp;<a href="tel:(650) 336-8157" style="text-decoration:none; color: #333333;">(650) 336-8157</a>
+										</td>
+									</tr>
+									
+									
+									
+									
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Initiated From:&nbsp;Desktop
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+									</tr>
+									
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Date Submitted:&nbsp;June 06, 2018
+										</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Move Date:&nbsp;July 01, 2018
+										</td>
+									</tr>
+									
+									
+									
+									
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Comments:&nbsp;Hello, Im interested in Parkmerced Apartments. Please send me current availability and additional details. Thanks!
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+									</tr>
+									
+									
+										
+									
+									
+									
+									<!-- /FLOOR PLAN -->
+									<tr>
+										<td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+									</tr>
+									
+										
+									
+									
+									<!-- /SEARCH FILTERS -->
+									
+									<tr>
+										<td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Property Information
+										</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Property Name:&nbsp;Parkmerced Apartments
+										</td>
+									</tr>
+									
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Property ID:&nbsp;438626
+										</td>
+									</tr>
+									
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Property Address:&nbsp;3711 19th Avenue
+San Francisco, CA  94132
+										</td>
+									</tr>
+									
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											Property City, State:&nbsp;San Francisco, CA
+										</td>
+									</tr>
+									
+									<tr>
+										<td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+									</tr>
+									<!-- FOOTER -->
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											*You may not send SMS/text messages unless you have prior express written consent. Compliance with this requirement is solely your responsibility.
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											To ensure that you receive our emails, please add <a href="mailto:reply@email.rent.com" target="_blank" alias="" title="" style="color:#006699; text-decoration:none;">reply@email.rent.com</a> to your address book.
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											If you are no longer involved in the receipt of these notifications or have received this email in error, please click here to send an email to <a href="mailto:contact@rentpath.com" target="_blank" alias="" title="" style="color:#006699; text-decoration:none;">contact@rentpath.com</a> and we will remove you from these emails.
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											If you are unable to see the message, <a style="color: #006699; text-decoration:none;" href="http://view.email.rent.com/?qs=69f4bf9e1bc59b693a269117659ae7c7990aa06e91a3526ad53e1ae7f07bd4c677acabbfb762ff1efe1515d01fc227581e89944a8d51743909b99116899fdd13e2ca91190621aeb6c2325c1fd9e593b9">click here</a> to view.
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											&copy; 2018 RentPath, LLC. All rights reserved.
+										</td>
+									</tr>
+									<tr>
+										<td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+											<a href="tel:+877-394-9599" target="_blank" alias="FTR_Telephohne" title="Telephone" style="color:#006699; text-decoration:none;">877-394-9599</a> | <a href="http://click.email.rent.com/?qs=1c2362d7e9a8c92b37a028cab14bd9192a9ad525c5afd36a4fc12cab449db48ff146c156b0675aa9f50ac1e082d4800510bed437c46cd64d" target="_blank"  title="Manage Email Preferences" style="color:#006699; text-decoration:none;">Manage Email Preferences</a> | <a href="http://click.email.rent.com/?qs=938e7720e89e0c30bb6311c83e4a95e7ed94ba6065512b6a7171e5cf656065232423f7b85846e8a1142eccba47d51fd60151f53b2073027cd06aa0ee8e23de25" target="_blank"  title="Privacy Policy" style="color:#006699; text-decoration:none;">Privacy Policy</a>
+										</td>
+									</tr>
+									<!-- /FOOTER -->
+									<tr>
+										<td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

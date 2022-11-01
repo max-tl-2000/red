@@ -1,0 +1,55 @@
+@import '../../sass/_colors.scss';
+
+.add-sick-leave-dialog {
+  width: (432em/16);
+
+  [data-component='dialog-body'] {
+    padding: 0 (20em/16) 0;
+  }
+
+  .info-text {
+    padding-bottom: (10em/16);
+  }
+
+  .actions {
+    padding: 0 (12em/16);
+  }
+
+  .conflict-unit {
+    margin-left: .5em;
+    opacity: .54;
+  }
+
+  .conflicts-wrapper {
+    margin-top: 1em;
+  }
+}
+
+.date-selector {
+  width: 50%;
+  padding: (16rem/16) 0 (32rem/16);
+}
+
+.time-selector {
+  margin-left: 2rem;
+  padding: (33.6rem/16) 0 (32rem/16);
+
+  button {
+    width: 8.35rem;
+  }
+}
+
+.start-wrapper,
+.end-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-element {
+  display: block;
+  width: 100%;
+}
+
+.checkbox {
+  margin-left: -.6rem;
+}

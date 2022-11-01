@@ -1,0 +1,185 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/guestCard/availableSlots": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The start date from which to return available slots",
+            "in": "query",
+            "name": "from",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The number of days",
+            "in": "query",
+            "name": "noOfDays",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The program email",
+            "in": "query",
+            "name": "programEmail",
+            "required": true,
+            "type": "string"
+          }
+
+        ],
+        "responses": {
+          "200": {
+            "description": "The available slots for each day",
+            "schema": {
+              "$ref": "#/definitions/AvailableSlots"
+            }
+          },
+          "400": {
+            "description": "The number of days should be 1 or higher",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The email is not associated with a program",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the available slots for appointment booking for specified period",
+        "tags": [
+          "webInquire"
+        ]
+      }
+    },
+    "/guestCard": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The guestCard data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/GuestCardData"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "no data is returned"
+          },
+          "400": {
+            "description": "Missing or invalid email, phone number or startDate",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The program for the specified email was not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412": {
+            "description": "The selected slot is no longer available",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "tags": [
+          "webInquire"
+        ],
+        "summary": "Creates a new lead using the data from guestCard form and saves the communication entry. Created appointment for the desired time slot"
+      }
+    }
+  },
+  "definitions": {
+    "AvailableSlots": {
+      "properties": {
+        "propertyTimezone": {
+          "description": "The property timezone",
+          "type": "string"
+        },
+        "calendar": {
+          "description": "array of days with available slots",
+          "type": "array",
+          "items": {
+            "properties": {
+              "day": {
+                "description": "the day date in ISO format",
+                "type": "string"
+              },
+              "officeClosed": {
+                "description": "flag set to true if office is colse for this day",
+                "type": "boolean"
+              },
+              "slots": {
+                "description": "start date time for available slots",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+
+            },
+            "type": "object"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "GuestCardData": {
+      "properties": {
+        "name": {
+          "description": "the name of the customer",
+          "type": "string"
+        },
+        "phone": {
+          "description": "the customer's phone number (phone or email are required)",
+          "type": "string"
+        },
+        "email": {
+          "description": "the customer's email address (phone or email are required)",
+          "type": "string"
+        },
+        "message": {
+          "description": "the message from the customer",
+          "type": "string"
+        },
+        "programEmail": {
+          "description": "the email that is associated with the program",
+          "type": "string"
+        },
+        "source": {
+          "description": "the source of the message (e.g. the website or company name that called the endpoint)",
+          "type": "string"
+        },
+        "requestAppointment": {
+          "$ref": "#/definitions/RequestAppointmentData",
+        }
+      },
+      "required": [
+        "programEmail"
+      ],
+      "type": "object"
+    },
+    "RequestAppointmentData": {
+      "properties": {
+        "startDate": {
+          "description": "The date for the appointment",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

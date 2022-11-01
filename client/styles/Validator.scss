@@ -1,0 +1,9 @@
+@import '../../sass/_colors.scss';
+
+.errorBlock {
+  font-size: .9rem;
+  margin-top: -.5rem;
+  text-align: justify;
+  opacity: inherit;
+  color: $redA400;
+}

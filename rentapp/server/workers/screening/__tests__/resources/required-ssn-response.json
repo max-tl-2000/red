@@ -1,0 +1,517 @@
+{
+  "ApplicantScreening": {
+    "$": {
+      "xsi:noNamespaceSchemaLocation": "ResidentScreening3_0.xsd",
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+    },
+    "Request": [
+      {
+        "PropertyID": [
+          {
+            "Identification": [
+              {
+                "$": {
+                  "IDType": "Property ID"
+                },
+                "IDValue": [
+                  "151604"
+                ]
+              }
+            ],
+            "MarketingName": [
+              "shore"
+            ]
+          }
+        ],
+        "RequestType": [
+          "Modify"
+        ],
+        "ReportOptions": [
+          {
+            "ReportName": [
+              "01"
+            ]
+          }
+        ],
+        "ReportID": [
+          "26125702"
+        ],
+        "OriginatorID": [
+          "100016"
+        ],
+        "MarketingSource": [
+          ""
+        ],
+        "UserName": [
+          "Maximus"
+        ],
+        "UserPassword": [
+          "REDACTED"
+        ]
+      }
+    ],
+    "LeaseTerms": [
+      {
+        "MonthlyRent": [
+          "3425"
+        ],
+        "LeaseMonths": [
+          "12"
+        ],
+        "SecurityDeposit": [
+          "750"
+        ]
+      }
+    ],
+    "Applicant": [
+      {
+        "Other": [
+          {
+            "CurrentRent": [
+              "3425"
+            ],
+            "ConsentObtained": [
+              "YES"
+            ]
+          }
+        ],
+        "Income": [
+          {
+            "EmploymentGrossIncome": [
+              "4458.5"
+            ]
+          }
+        ],
+        "CriminalRecord": [
+          ""
+        ],
+        "AS_Information": [
+          {
+            "ApplicantIdentifier": [
+              "9f27b14e-6973-48a5-b746-434828265538:50f690d7-2004-4ee9-815e-356794269c01"
+            ],
+            "ApplicantType": [
+              "Applicant"
+            ],
+            "Birthdate": [
+              "1971-06-15"
+            ],
+            "SocSecNumber": [
+              "37196XXXX"
+            ],
+            "AddressTerms": [
+              {
+                "Address": [
+                  {
+                    "$": {
+                      "AddressType": "current"
+                    },
+                    "Address": [
+                      "1519 PRESCOTT ST"
+                    ],
+                    "City": [
+                      "OAKLAND"
+                    ],
+                    "State": [
+                      "CA"
+                    ],
+                    "PostalCode": [
+                      "94607"
+                    ],
+                    "UnparsedAddress": [
+                      "1519 PRESCOTT ST OAKLAND CA 94607-1585"
+                    ],
+                    "Email": [
+                      "chuckxb1@yahoo.com"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Customers": [
+          {
+            "Customer": [
+              {
+                "Identification": [
+                  {
+                    "$": {
+                      "IDType": "Applicant"
+                    },
+                    "IDValue": [
+                      "1e28787f-ba1d-4572-982e-12f3a28e8ffc"
+                    ]
+                  }
+                ],
+                "Name": [
+                  {
+                    "FirstName": [
+                      "Charles"
+                    ],
+                    "LastName": [
+                      "Hynek"
+                    ]
+                  }
+                ],
+                "Lease": [
+                  {
+                    "Identification": [
+                      {
+                        "IDValue": [
+                          "1e28787f-ba1d-4572-982e-12f3a28e8ffc"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Other": [
+          {
+            "CurrentRent": [
+              "3425"
+            ],
+            "ConsentObtained": [
+              "YES"
+            ]
+          }
+        ],
+        "Income": [
+          {
+            "EmploymentGrossIncome": [
+              "4458.5"
+            ]
+          }
+        ],
+        "CriminalRecord": [
+          ""
+        ],
+        "AS_Information": [
+          {
+            "ApplicantIdentifier": [
+              "9f27b14e-6973-48a5-b746-434828265538:97c119cb-fae6-4d52-a764-4165ac8fb471"
+            ],
+            "ApplicantType": [
+              "Applicant"
+            ],
+            "Birthdate": [
+              "1971-04-26"
+            ],
+            "AddressTerms": [
+              {
+                "Address": [
+                  {
+                    "$": {
+                      "AddressType": "current"
+                    },
+                    "Address": [
+                      "1519 PRESCOTT ST"
+                    ],
+                    "City": [
+                      "OAKLAND"
+                    ],
+                    "State": [
+                      "CA"
+                    ],
+                    "PostalCode": [
+                      "94607"
+                    ],
+                    "UnparsedAddress": [
+                      "1519 PRESCOTT ST OAKLAND CA 94607-1585"
+                    ],
+                    "Email": [
+                      "universalnetwork.it@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Customers": [
+          {
+            "Customer": [
+              {
+                "Identification": [
+                  {
+                    "$": {
+                      "IDType": "Applicant"
+                    },
+                    "IDValue": [
+                      "b56df36f-59e8-4ae3-b4a1-522c39fddccf"
+                    ]
+                  }
+                ],
+                "Name": [
+                  {
+                    "FirstName": [
+                      "Lucia"
+                    ],
+                    "LastName": [
+                      "Trozzi"
+                    ]
+                  }
+                ],
+                "Lease": [
+                  {
+                    "Identification": [
+                      {
+                        "IDValue": [
+                          "b56df36f-59e8-4ae3-b4a1-522c39fddccf"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Response": [
+      {
+        "TransactionNumber": [
+          "26125702"
+        ],
+        "ReportDate": [
+          "2019-05-26"
+        ],
+        "ApplicantDecision": [
+          "Hynek, Charles - APPROVED\r\nTrozzi, Lucia - APPROVED\r\n"
+        ],
+        "ApplicationDecision": [
+          "APPROVED"
+        ],
+        "BackgroundReport": [
+          "<HTML>\r\n\t<HEAD>\r\n\t\t<META http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n\t\t<STYLE type=\"text/css\">\r\n\t\t.information \r\n\t\t{\r\n\t        font-family: Arial, Verdana, Helvetica, sans-serif;\r\n\t        padding: 5px;\r\n\t        background: #909090;\r\n\t        color: #ffffff;\r\n\t        border-top: 1px solid #CCCCCC;\r\n\t        border-right: 1px solid #CCCCCC;\r\n\t        border-left: 1px solid #CCCCCC;\r\n            text-align: left;\r\n        }\r\n        .yellowtab \r\n        {\r\n            font-family: Arial, Verdana, Helvetica, sans-serif;\r\n\t        margin-bottom: 10px;\r\n\t        padding: 5px;\r\n\t        background: #E8E8E8;\r\n\t        color: #000000;\r\n\t        border:1px solid #CCCCCC;\r\n\t        overflow: hidden;\r\n        }\r\n        .button \r\n        {\r\n\t        padding: 2px;\r\n\t        background-color: #990033;\r\n\t        font-family: Arial, Verdana, Helvetica, sans-serif;\r\n\t        font-size: 12px;\r\n\t        color: #ffffff;\r\n\t        font-weight: bold;\r\n\t        border-color: #ffffff;\r\n\t        cursor: pointer;\r\n        }\r\n        .tableStyle\r\n        {\r\n            BORDER-RIGHT: black 1px solid; \r\n            BORDER-TOP: black 1px solid; \r\n            BORDER-LEFT: black 1px solid; \r\n            BORDER-BOTTOM: black 1px solid;\r\n        }\r\n</STYLE>\r\n\t</HEAD>\r\n\t<body>\r\n\t\t<FORM id=\"Form1\" method=\"post\" runat=\"server\">\r\n        @@YARDIREDIRECT@@\r\n\t\t\t<TABLE class=\"tableStyle\" cellSpacing=\"0\" cellPadding=\"2\" width=\"580\">\r\n\t\t\t\t<TR>\r\n\t\t\t\t\t<TD class=\"information\" vAlign=\"top\" align=\"left\"><SPAN style=\"FONT-WEIGHT: bold\">Unit Application Detail&nbsp;</SPAN></TD>\r\n\t\t\t\t</TR>\r\n\t\t\t\t<TR>\r\n\t\t\t\t\t<TD class=\"yellowtab\" vAlign=\"top\" align=\"left\">\r\n\t\t\t\t\t\t<TABLE id=\"Table2\" cellSpacing=\"1\" cellPadding=\"1\" width=\"500\" align=\"left\" border=\"0\">\r\n\t\t\t\t\t\t\t<TR>\r\n\t\t\t\t\t\t\t\t<TD>\r\n\t\t\t\t\t\t\t\t\t<TABLE style=\"FONT-SIZE: 14px\" cellSpacing=\"3\" cellPadding=\"1\" width=\"500\" border=\"0\">\r\n\t\t\t\t\t\t\t\t\t\t<TR>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD width=\"120\"><STRONG>UnitApplicantId :</STRONG></TD>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD>26125702</TD>\r\n\t\t\t\t\t\t\t\t\t\t</TR>\r\n\t\t\t\t\t\t\t\t\t\t<TR>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD width=\"120\"><STRONG>Submitted On :</STRONG></TD>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD>5/26/2019</TD>\r\n\t\t\t\t\t\t\t\t\t\t</TR>\r\n\t\t\t\t\t\t\t\t\t\t<TR>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD width=\"120\"><STRONG>Completed :</STRONG></TD>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD>5/27/2019, 11:45 AM</TD>\r\n\t\t\t\t\t\t\t\t\t\t</TR>\r\n\t\t\t\t\t\t\t\t\t\t<TR>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD width=\"120\"><STRONG>Last Modified :</STRONG></TD>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD>5/28/2019, 1:55 PM</TD>\r\n\t\t\t\t\t\t\t\t\t\t</TR>\r\n\t\t\t\t\t\t\t\t\t\t<TR>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD width=\"120\"><STRONG>Submitted By :</STRONG></TD>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD>Maximus</TD>\r\n\t\t\t\t\t\t\t\t\t\t</TR>\r\n\t\t\t\t\t\t\t\t\t\t<TR>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD width=\"120\"><STRONG>Recommendation :</STRONG></TD>\r\n\t\t\t\t\t\t\t\t\t\t\t<TD>APPROVED</TD>\r\n\t\t\t\t\t\t\t\t\t\t</TR>\r\n\t\t\t\t\t\t\t\t\t</TABLE>\r\n                                    </TD>\r\n\t\t\t\t\t\t\t</TR>\r\n\t\t\t\t\t\t</TABLE>\r\n\t\t\t\t\t</TD>\r\n\t\t\t\t</TR>\r\n\t\t\t</TABLE>\r\n\t\t\t<BR>\r\n\t\t\t<TABLE class=\"tableStyle\" cellSpacing=\"2\" cellPadding=\"2\" width=\"580\">\r\n\t\t\t\t<TR>\r\n\t\t\t\t\t<TD class=\"yellowtab\" vAlign=\"top\" align=\"left\">\r\n                        <TABLE class=\"tableStyle\" cellSpacing=\"0\" cellPadding=\"2\" width=\"580\"><TR><TD valign=\"top\" align=\"left\"><table cellSpacing=\"1\" cellPadding=\"1\" width=\"580\" border=\"0\"><tr><th class=\"information\" colspan=\"3\">Charles Hynek (31719437)</th></tr><tr><td><b>Global Sanctions</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Global Sanctions</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 8:30 PM)</td></tr><tr><td><b>SSN</b></b></td><td> ............................................................ </td><td>Completed (5/28/2019, 11:11 AM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/28/2019, 11:11 AM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/28/2019, 11:11 AM)</td></tr><tr><td><b>Credit</b></td><td> ............................................................ </td><td>Completed (5/28/2019, 11:11 AM)</td></tr><tr><td><b>Eviction</b></td><td> ............................................................ </td><td>Completed (5/28/2019, 11:11 AM)</td></tr><tr><td><b>Collections</b></td><td> ............................................................ </td><td>Completed (5/28/2019, 11:11 AM)</td></tr><tr><td><b>SkipWatch</b></td><td> ............................................................ </td><td>Completed (5/28/2019, 11:11 AM)</td></tr><tr><th class=\"information\" colspan=\"3\">Lucia Trozzi (31719438)</th></tr><tr><td><b>Global Sanctions</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Global Sanctions</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>SSN</b></b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Criminal</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>Credit</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:45 PM)</td></tr><tr><td><b>Eviction</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:45 PM)</td></tr><tr><td><b>Collections</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr><tr><td><b>SkipWatch</b></td><td> ............................................................ </td><td>Completed (5/26/2019, 5:44 PM)</td></tr></table></TD></TR></TABLE>\r\n\t\t\t\t\t\t</TD>\r\n\t\t\t\t</TR>\r\n\t\t\t</TABLE>\r\n\t\t</FORM>\r\n\t</body>\r\n</HTML>\r\n\r\n"
+        ],
+        "Status": [
+          "Incomplete"
+        ],
+        "RequestID_Returned": [
+          "68381379"
+        ],
+        "ServiceStatus": [
+          {
+            "Applicant": [
+              "Charles Hynek"
+            ],
+            "Service": [
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Global Sanctions",
+                  "Date": "5/26/2019 5:44:54 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "SSN",
+                  "Date": "5/28/2019 11:11:39 AM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Criminal",
+                  "Date": "5/28/2019 11:11:39 AM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Credit",
+                  "Date": "5/28/2019 11:11:40 AM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Eviction",
+                  "Date": "5/28/2019 11:11:54 AM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "SexOffender",
+                  "Date": "5/28/2019 11:11:39 AM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Collections",
+                  "Date": "5/28/2019 11:11:39 AM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "SkipWatch",
+                  "Date": "5/28/2019 11:11:39 AM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Criminal Offline",
+                  "Date": "5/26/2019 5:44:55 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Sex Offender Offline",
+                  "Date": "5/26/2019 5:44:55 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Global Sanctions Offline",
+                  "Date": "5/26/2019 8:30:42 PM"
+                }
+              }
+            ]
+          },
+          {
+            "Applicant": [
+              "Lucia Trozzi"
+            ],
+            "Service": [
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Global Sanctions",
+                  "Date": "5/26/2019 5:44:54 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "SSN",
+                  "Date": "5/26/2019 5:44:54 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Criminal",
+                  "Date": "5/26/2019 5:44:54 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Credit",
+                  "Date": "5/26/2019 5:45:02 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Eviction",
+                  "Date": "5/26/2019 5:45:14 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "SexOffender",
+                  "Date": "5/26/2019 5:44:54 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Collections",
+                  "Date": "5/26/2019 5:44:54 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "SkipWatch",
+                  "Date": "5/26/2019 5:44:54 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Criminal Offline",
+                  "Date": "5/26/2019 5:44:55 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Sex Offender Offline",
+                  "Date": "5/26/2019 5:44:55 PM"
+                }
+              },
+              {
+                "_": "Completed",
+                "$": {
+                  "Name": "Global Sanctions Offline",
+                  "Date": "5/26/2019 5:44:55 PM"
+                }
+              }
+            ]
+          }
+        ],
+        "BlockedStatus": [
+          "SSN encountered a problem processing applicant (31719437) for Unit Application (26125702).\n\nError Code: 901 - Error has been returned back from Choicepoint response in SSN/InstantId Service.\n\n\nError Description: SSNV Service FAILURE: (403/SS# REQUIRED TO ACCESS CONSUMERS FILE)"
+        ],
+        "BlockedTime": [
+          "5/26/2019 5:45:07 PM"
+        ]
+      }
+    ],
+    "CustomRecords": [
+      {
+        "Record": [
+          {
+            "Name": [
+              "screeningRequestId"
+            ],
+            "Value": [
+              "2a30ea23-5131-4990-b421-a67f058d1b06"
+            ]
+          },
+          {
+            "Name": [
+              "version"
+            ],
+            "Value": [
+              "v1"
+            ]
+          },
+          {
+            "Name": [
+              "tenantId"
+            ],
+            "Value": [
+              "9f27b14e-6973-48a5-b746-434828265538"
+            ]
+          },
+          {
+            "Name": [
+              "environment"
+            ],
+            "Value": [
+              "prod"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

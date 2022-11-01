@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`browser-detector In case of Edge should be supported if version >= 12 1`] = `
+Object {
+  "isABot": false,
+  "name": "Edge",
+  "supported": true,
+  "unknownBrowser": false,
+  "version": 12,
+}
+`;
+
+exports[`browser-detector In case of Edge should not be supported if version < 12 1`] = `
+Object {
+  "isABot": false,
+  "name": "Edge",
+  "supported": false,
+  "unknownBrowser": false,
+  "version": 11,
+}
+`;
+
+exports[`browser-detector In case of Firefox should be supported if version >= 52 1`] = `
+Object {
+  "isABot": false,
+  "name": "Firefox",
+  "supported": true,
+  "unknownBrowser": false,
+  "version": 54,
+}
+`;
+
+exports[`browser-detector In case of Firefox should not be supported if version < 52 1`] = `
+Object {
+  "isABot": false,
+  "name": "Firefox",
+  "supported": false,
+  "unknownBrowser": false,
+  "version": 51,
+}
+`;
+
+exports[`browser-detector In case of IE should not be supported if version < 11 1`] = `
+Object {
+  "isABot": false,
+  "name": "IE",
+  "supported": false,
+  "unknownBrowser": false,
+  "version": 10,
+}
+`;
+
+exports[`browser-detector In case of IE should not be supported if version >= 11 1`] = `
+Object {
+  "isABot": false,
+  "name": "IE",
+  "supported": true,
+  "unknownBrowser": false,
+  "version": 11,
+}
+`;
+
+exports[`browser-detector In case of chrome should be supported if version >= 56 1`] = `
+Object {
+  "isABot": false,
+  "name": "Chrome",
+  "supported": true,
+  "unknownBrowser": false,
+  "version": 60,
+}
+`;
+
+exports[`browser-detector In case of chrome should not be supported if version < 56 1`] = `
+Object {
+  "isABot": false,
+  "name": "Chrome",
+  "supported": false,
+  "unknownBrowser": false,
+  "version": 54,
+}
+`;
+
+exports[`browser-detector In case of safari should be supported if version >= 11 1`] = `
+Object {
+  "isABot": false,
+  "name": "Safari",
+  "supported": true,
+  "unknownBrowser": false,
+  "version": 11,
+}
+`;
+
+exports[`browser-detector In case of safari should not be supported if version < 10 1`] = `
+Object {
+  "isABot": false,
+  "name": "Safari",
+  "supported": false,
+  "unknownBrowser": false,
+  "version": 9,
+}
+`;
+
+exports[`browser-detector firefox should detect Firefox on mobile 1`] = `
+Object {
+  "isABot": false,
+  "name": "Firefox",
+  "supported": false,
+  "unknownBrowser": false,
+  "version": 68,
+}
+`;
+
+exports[`browser-detector mobile browsers should detect Samsung Mobile browser 1`] = `
+Object {
+  "isABot": false,
+  "name": "Samsung Browser",
+  "supported": true,
+  "unknownBrowser": false,
+  "version": 11,
+}
+`;

@@ -1,0 +1,575 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description":
+      "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/users": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "All the users",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        },
+        "summary": "Loads all users",
+        "tags": ["Users"]
+      },
+      "post": {
+        "summary": "Load users by ids",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "ids": {
+                  "description": "List users IDs",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of users",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description":
+              "ids parameter is not an array or invalid user id in the array.",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "tags": ["Users"]
+      }
+    },
+    "/users/{userId}/status": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the user to update",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The new status for the user",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "status": {
+                  "description":
+                    "The new status for user: Available, Busy, Not Available",
+                  "type": "string"
+                }
+              },
+              "required": ["status"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated user",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Invalid user id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/users/{userId}/logoutUser": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the user to logout",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User was successfully updated and logged out of all active sessions",
+          },
+          "400": {
+            "description": "Invalid user id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "User id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Marks user as unavailable and forces a logout for all active sessions of the user"
+      }
+    },
+    "/users/{userId}/ipPhoneCredentials": {
+      "post": {
+        "parameters": [
+          {
+            "description":
+              "The id of the user for which to generate IP Phone credentials",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "request accepted"
+          },
+          "400": {
+            "description": "Invalid user id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Creates IP Phone credentials for the user with the provided ID",
+        "tags": ["Users"]
+      },
+      "delete": {
+        "parameters": [
+          {
+            "description":
+              "The id of the user for which to remove IP Phone credentials",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The SIP username to remove",
+            "in": "body",
+            "name": "sipUsername",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "request accepted"
+          },
+          "400": {
+            "description": "Invalid user id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Deletes the IP Phone credentials with the sipUsername provided for the user with the ID provided",
+        "tags": ["Users"]
+      }
+    },
+    "/users/{userId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the user to load",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The user",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Invalid user id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "User not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads a user",
+        "tags": ["Users"]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the user to update",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "A partial user object",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The user was updated successfully"
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "User not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a user",
+        "tags": ["Users"]
+      }
+    },
+    "/sendInvite": {
+      "post": {
+        "parameters": [
+          {
+            "description":
+              "Email of the user who is requesting the reset password",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "mail": {
+                  "description": "Email of the user that will get the invite",
+                  "type": "string"
+                },
+                "organization": {
+                  "description":
+                    "Name of the organization that the user belongs to",
+                  "type": "string"
+                },
+                "userType": {
+                  "description": "User type",
+                  "type": "string"
+                }
+              },
+              "required": ["mail"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Email sent to the user successfully"
+          },
+          "400": {
+            "description": "Invalid/missing data",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send an invite to a given email",
+        "tags": ["Users"]
+      }
+    },
+    "/sendRegistrationEmail": {
+      "post": {
+        "parameters": [
+          {
+            "description": "Email of the user who is being invite to register",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "mail": {
+                  "description": "Email of the user that will get the invite",
+                  "type": "string"
+                }
+              },
+              "required": ["mail"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Email sent to the user successfully"
+          },
+          "400": {
+            "description": "Invalid/missing data",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send a registration mail to a given email",
+        "tags": ["Users"]
+      }
+    },
+    "/sendInviteImportedUsers": {
+      "post": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Email invites were sent successfully"
+          },
+          "400": {
+            "description": "Invalid/missing data",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Send an invite to imported users which haven't been invited yet",
+        "tags": ["Users"]
+      }
+    },
+    "/sendResetPasswordMail": {
+      "post": {
+        "parameters": [
+          {
+            "description":
+              "Email of the user who is requesting the reset password",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": {
+                  "type": "string"
+                }
+              },
+              "required": ["email"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Email sent to the user successfully"
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send request to reset password",
+        "tags": ["Users"]
+      }
+    },
+    "/validateResetToken": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The token that should be validated",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "token": {
+                  "description":
+                    "The token that belongs to a reset password request",
+                  "type": "string"
+                }
+              },
+              "required": ["token"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data about the authenticated user",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameter",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "498": {
+            "description": "Invalid token",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Validates that the given token belongs to a reset password request",
+        "tags": ["Users"]
+      }
+    },
+    "/validateToken": {
+      "post": {
+        "parameters": [
+          {
+            "description":
+              "The token that will be validated at the registering",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "token": {
+                  "description": "The token that should be validated",
+                  "type": "string"
+                }
+              },
+              "required": ["token"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description":
+              "Email of the user that requested the send invite email"
+          },
+          "400": {
+            "description": "Invalid/missing parameter",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Validates that the given token belongs to an user that has requested the sendInvite",
+        "tags": ["Users"]
+      }
+    },
+    "/public/party/{partyId}/users/{role}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The party of which's ownerTeam's users to retrieve",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description":
+              "The functional role to filter the retrieved users by",
+            "in": "path",
+            "name": "role",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description":
+              "An array of users matching the criteria from the path",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "partyId is missing",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Gets all the users with a given functional role in the owner team of the given party",
+        "tags": ["Users"]
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "properties": {
+        "fullName": {
+          "description": "User full name",
+          "type": "string"
+        },
+        "preferredName": {
+          "description": "User preferred name",
+          "type": "string"
+        },
+        "email": {
+          "description": "User email",
+          "type": "string"
+        },
+        "directEmailIdentifier": {
+          "description": "User's direct email identifier",
+          "type": "string"
+        },
+        "directPhoneIdentifier": {
+          "description": "User's direct phone identifier",
+          "type": "string"
+        },
+        "ringPhones": {
+          "description": "User's ring phones",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "outsideDedicatedEmails": {
+          "description": "User's outside dedicated emails",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "type": "object"
+    }
+  }
+}

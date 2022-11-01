@@ -1,0 +1,260 @@
+{
+  "id": "3820c5e3-38ea-4128-9389-088b1a40b052",
+  "pets": null,
+  "comms": [
+    {
+      "id": "cf83b3d1-4b91-4a69-9486-99b3e80bee51",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "33314c3e-4783-11ea-b668-491f5fddd37b",
+      "created_at": "2020-02-04T19:19:02.992+00:00"
+    },
+    {
+      "id": "b5b577e0-1d88-4300-aaea-23eb0a696509",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "f282e1c4-4783-11ea-9604-f9c22247203a",
+      "created_at": "2020-02-04T19:24:22.961+00:00"
+    }
+  ],
+  "score": "gold",
+  "state": "Lead",
+  "tasks": [
+    {
+      "id": "de073237-2dcc-42e1-b940-e5450dbb0fbd",
+      "name": "Contact lead",
+      "state": "Active",
+      "dueDate": "2020-02-07T07:59:59.999+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      ],
+      "category": "Manual",
+      "metadata": {
+        "note": "Contact lead",
+        "teamId": "193b119e-e609-47d1-8be0-d52ed36d2450",
+        "createdBy": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T15:53:39.4552+00:00",
+      "updated_at": "2020-02-05T15:53:39.4552+00:00",
+      "modified_by": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "completionDate": null,
+      "createdFromCommId": null
+    }
+  ],
+  "teams": [
+    "193b119e-e609-47d1-8be0-d52ed36d2450"
+  ],
+  "events": [
+    {
+      "id": "c24c8d05-6734-40bc-a66e-f3898b6d7d4c",
+      "event": "task_added",
+      "userId": null,
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "metadata": {
+        "taskId": "de073237-2dcc-42e1-b940-e5450dbb0fbd",
+        "category": "Manual"
+      },
+      "created_at": "2020-02-05T15:53:39.4552+00:00",
+      "requestIds": [
+        "f5147ade-ad5b-4ca2-8428-248fd6dd7828"
+      ],
+      "updated_at": "2020-02-05T15:53:39.4552+00:00",
+      "partyMemberId": null,
+      "transaction_id": 41825
+    }
+  ],
+  "leases": null,
+  "quotes": null,
+  "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+        "dob": null,
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "",
+        "idCountry": null,
+        "created_at": "2020-02-04T19:19:01.996844+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2020-02-04T19:19:01.996844+00:00",
+        "modified_by": null,
+        "preferredName": "",
+        "isSuspiciousContent": false
+      },
+      "contactInfo": [
+        {
+          "id": "16ad9a76-e15a-40d1-bb5b-af51834fabf4",
+          "type": "phone",
+          "value": "16502736663",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {
+            "sms": true,
+            "thirdPartyCallResult": {
+              "url": "https://lookups.twilio.com/v1/PhoneNumbers/+16502736663?Type=carrier&Type=caller-name",
+              "add_ons": null,
+              "carrier": {
+                "name": "Google (Grand Central) BWI - Bandwidth.com - SVR",
+                "type": "voip",
+                "error_code": null,
+                "mobile_country_code": null,
+                "mobile_network_code": null
+              },
+              "caller_name": {
+                "error_code": null,
+                "caller_name": null,
+                "caller_type": null
+              },
+              "country_code": "US",
+              "phone_number": "+16502736663",
+              "national_format": "(650) 273-6663"
+            }
+          },
+          "personId": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+          "isPrimary": true,
+          "created_at": "2020-02-04T19:19:01.996844+00:00",
+          "updated_at": "2020-02-04T19:19:01.996844+00:00",
+          "markedAsSpamBy": null
+        }
+      ],
+      "partyMember": {
+        "id": "3307341b-89e0-4aa6-96fe-811920e6fb32",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+        "external": {},
+        "personId": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+        "startDate": "2020-02-04T19:19:01.996844+00:00",
+        "created_at": "2020-02-04T19:19:02.021+00:00",
+        "memberType": "Resident",
+        "updated_at": "2020-02-04T19:19:02.021+00:00",
+        "vacateDate": null,
+        "memberState": "Contact",
+        "modified_by": null,
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "children": null,
+  "invoices": null,
+  "metadata": {
+    "propertyId": "92cad3d6-7954-443c-bc66-d7ad4010c183",
+    "creationType": "system",
+    "originalTeam": "193b119e-e609-47d1-8be0-d52ed36d2450",
+    "residentInfo": {},
+    "favoriteUnits": [
+      "7f0fefe8-b616-4fe8-ab60-b53716b3d5a2"
+    ],
+    "teamMemberSource": "",
+    "firstContactedDate": "2020-02-04T19:19:02.017Z",
+    "firstContactChannel": "Call",
+    "qualQuestionsCompleted": null,
+    "leadFromExistingResident": false
+  },
+  "vehicles": null,
+  "leaseType": "traditional",
+  "ownerTeam": "193b119e-e609-47d1-8be0-d52ed36d2450",
+  "startDate": "2020-02-04T19:19:01.996844+00:00",
+  "created_at": "2020-02-04T19:19:02.018+00:00",
+  "invOnHolds": null,
+  "mergedWith": null,
+  "promotions": null,
+  "updated_at": "2020-02-04T19:19:02.033+00:00",
+  "archiveDate": null,
+  "modified_by": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+  "seedPartyId": null,
+  "partyGroupId": "c0fdb348-545e-4fd8-b8f1-d589ddcaa7d2",
+  "transactions": null,
+  "workflowName": "newLease",
+  "collaborators": [
+    "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+  ],
+  "workflowState": "active",
+  "activeLeaseData": null,
+  "emailIdentifier": "3820c5e338ea41289389",
+  "isTransferLease": false,
+  "screeningResults": {
+    "submissionRequests": null,
+    "submissionResponses": null
+  },
+  "createdFromCommId": "cf83b3d1-4b91-4a69-9486-99b3e80bee51",
+  "partyApplications": null,
+  "assignedPropertyId": "92cad3d6-7954-443c-bc66-d7ad4010c183",
+  "personApplications": null,
+  "storedUnitsFilters": {
+    "propertyIds": [
+      "92cad3d6-7954-443c-bc66-d7ad4010c183"
+    ]
+  },
+  "teamPropertyProgramId": "b9b2fd1a-ba47-40ff-b098-5f30348e7b60",
+  "qualificationQuestions": {}
+}

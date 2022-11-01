@@ -1,0 +1,1506 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/parties/{partyId}/demoteApplication": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "the promotion of quote for update",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "quotePromotionId": {
+                  "description": "The id of the promotion of the quote",
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "required": [
+                "quotePromotionId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Application demoted"
+          },
+          "400": {
+            "description": "Invalid party Id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412": {
+            "description": "Quote promotion not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Demote the promoted quote, if the application has a contract it will void the contract",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/partyApplications/{partyApplicationId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party application to load",
+            "in": "path",
+            "name": "partyApplicationId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The party application",
+            "schema": {
+              "$ref": "#/definitions/PartyApplication"
+            }
+          },
+          "400": {
+            "description": "Invalid party application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads a party application",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/personApplications/current/screeningData": {
+      "post": {
+        "parameters": [
+          {
+            "description": "A Person Application",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PersonApplication"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person application",
+            "schema": {
+              "$ref": "#/definitions/PersonApplication"
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Creates a new a person application.  If a party application for the provided party does not exist, one will be created.",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/personApplications/current": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "A person application's complete status",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/applicationStatusObject"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person application's updated additional data",
+            "schema": {
+              "$ref": "#/definitions/PersonApplicationAdditionalData"
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This service will get the personApplicationId from the headers and then use it to set a person application's as complete",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+
+    "/personApplications/current/events": {
+      "post": {
+        "parameters": [
+          {
+            "description": "A person application's complete status",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/applicationEvents"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person application's updated tosEvents",
+            "schema": {
+              "$ref": "#/definitions/PersonApplication"
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This service will update the personApplication table with the events that the applicant do in the welcome application screen",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+
+    "/personApplications/current/additionalData": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "The person application's additional data",
+            "schema": {
+              "$ref": "#/definitions/PersonApplicationAdditionalData"
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This service will get the personApplicationId from the headers and then use it to load a person application's additional data.",
+        "tags": [
+          "Applications"
+        ]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "A person application's additional data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PersonApplicationAdditionalData"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person application's additional data",
+            "schema": {
+              "$ref": "#/definitions/PersonApplicationAdditionalData"
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This service will get the personApplicationId from the headers and then use it to update a person application's additional data",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/screeningSummary/{partyId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the screening summary data",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "The id of the quote related to the screening summary data",
+            "in": "query",
+            "name": "quoteId",
+            "required": false,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "The id of the lease term related to the screening summary data",
+            "in": "query",
+            "name": "leaseTermId",
+            "required": false,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return the screening summary data",
+            "schema": {
+              "$ref": "#/definitions/ScreeningSummary"
+            }
+          },
+          "400": {
+            "description": "Invalid submission response id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Submission response not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This service will get the user's role from the header token and then validate that the role is LAA before get screening summary data.",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/screeningSummary/{partyId}/view/report": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the screening summary report",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "Token with authUser information",
+            "in": "query",
+            "name": "token",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the lease term related to the screening summary data",
+            "in": "query",
+            "name": "leaseTermId",
+            "required": false,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return the screening summary report as raw HTML",
+            "schema": {
+              "description": "Screening summary report as raw HTML",
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Invalid partyId",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "401": {
+            "description": "Not a LAA for the party",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Screening summary report not found for given partyId",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This service will validate that the role of the user who requested the api is LAA and then will get screening summary report.",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/personApplications/{personApplicationId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the person application to load",
+            "in": "path",
+            "name": "personApplicationId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person application",
+            "schema": {
+              "$ref": "#/definitions/PersonApplication"
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads a person application",
+        "tags": [
+          "Applications"
+        ]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the person application to update",
+            "in": "path",
+            "name": "personApplicationId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "A Person Application",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PersonApplication"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person application",
+            "schema": {
+              "$ref": "#/definitions/PersonApplication"
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Update a person application",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/personApplications/{personApplicationId}/fees": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Person application id",
+            "in": "path",
+            "name": "personApplicationId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fees to be charged to person application",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApplicationFee"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Return the fees for the given person application",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/party/{partyId}/personApplications": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the person applications",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person applications",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/PersonApplication"
+              },
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid party application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads person applications",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/applications": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Application list for logged user",
+            "schema": {
+              "$ref": "#/definitions/Application"
+            }
+          },
+          "400": {
+            "description": "Invalid values on token",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads all the application for the logged user  (this is from prospect)",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/parties/{partyId}/holdApplicationStatus": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Hold application status",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "isHeld": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "isHeld"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated party application",
+            "schema": {
+              "$ref": "#/definitions/PartyApplication"
+            }
+          },
+          "400": {
+            "description": "Invalid party id"
+          }
+        },
+        "summary": "Hold application status",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/parties/{partyId}/screeningResult": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the screening results for",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The screening results for the party",
+            "schema": {
+              "$ref": "#/definitions/ScreeningResult"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the screening results for a party",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/parties/{partyId}/members/{memberId}/applicationInvitation": {
+      "post": {
+        "parameters": [
+          {
+            "description": "Party id to send the application invitation link",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "Party member id to send the application invitation link",
+            "in": "path",
+            "name": "memberId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "Data required to generate the application invitation link token and fill the email template or sms template",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "propertyId": {
+                  "description": "The id of the property",
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "contactInfo": {
+                  "$ref": "../commons.json#/definitions/ContactInfo"
+                }
+              },
+              "required": [
+                "contactInfo"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The application link was sent to the applicant"
+          },
+          "400": {
+            "description": "Invalid party id or member id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found or party member not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send application link to applicant",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/disclosures": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "The disclosures available",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/Disclosure"
+              },
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the list of available disclosures",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/applicant": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "reload",
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Applications"
+        ],
+        "responses": {
+          "200": {
+            "description": "Return information from token JWT",
+            "schema": {
+              "$ref": "#/definitions/Applicant"
+            }
+          }
+        }
+      }
+    },
+    "/applicationFeeWaivers": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "Person application id of the applicant",
+            "in": "query",
+            "name": "personApplicationId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "the values to waive an application",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "partyId": {
+                  "description": "The id of the party",
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "isFeeWaived": {
+                  "description": "The condition to waive the application",
+                  "type": "boolean"
+                },
+                "partyMemberId": {
+                  "description": "The id of the party member",
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "required": [
+                "partyId",
+                "isFeeWaived",
+                "partyMemberId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person application",
+            "schema": {
+              "$ref": "#/definitions/PersonApplication"
+            }
+          },
+          "400": {
+            "description": "User not allowed to modify the party",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person application not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Waive the application, creates a new a person application if this does not exist.",
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/applicationSettings/{propertyId}/partyType/{partyType}/memberType/{memberType}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the property",
+            "in": "path",
+            "name": "propertyId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "The party type",
+            "in": "path",
+            "name": "partyType",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The member type",
+            "in": "path",
+            "name": "memberType",
+            "required": true,
+            "type": "string"
+          }
+        ],        
+        "responses": {
+          "200": {
+            "description": "The application settings",
+            "schema": {
+              "$ref": "#/definitions/ApplicationSettings"
+            }
+          },
+          "400": {
+            "description": "Invalid parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This service will get the application settings for a given property.",
+        "tags": [
+          "Applications"
+        ]
+      }
+    }
+  },
+  "definitions": {
+      "Disclosure": {
+      "properties": {
+        "id": {
+          "description": "Disclosure's Id",
+          "type": "string"
+        },
+        "name": {
+          "description": "Disclosure's name",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Display name",
+          "type": "string"
+        },
+        "displayOrder": {
+          "description": "Display order top to bottom",
+          "type": "integer"
+        },
+        "displayHelp": {
+          "description": "Help text that can show additional information",
+          "type": "string"
+        },
+        "descriptionHelper": {
+          "description": "Description text field when a disclosure is checked by the user",
+          "type": "string"
+        },
+        "requireApplicationReview": {
+          "description": "Indicates if the disclosure requires application review",
+          "type": "boolean"
+        },
+        "showInApplication": {
+          "description": "Indicates if the disclosure is shown in application",
+          "type": "boolean"
+        },
+        "showInParty": {
+          "description": "Indicates if the disclosure is shown in party",
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "PartyApplication": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "partyId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "isHeld": {
+          "type": "boolean"
+        },
+        "applicationData": {
+          "$ref": "#/definitions/PartyApplicationData"
+        }
+      }
+    },
+    "PartyApplicationData": {
+      "type": "object"
+    },
+    "PersonApplication": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "personId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "partyId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "paymentCompleted": {
+          "type": "boolean"
+        },
+        "applicationData": {
+          "$ref": "#/definitions/PersonApplicationData"
+        }
+      },
+      "required": [
+        "partyId"
+      ]
+    },
+    "PersonApplicationData": {
+      "properties": {
+        "lastName": {
+          "type": "string"
+        },
+        "middleName": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "emailAddress": {
+          "type": "string",
+          "format": "email"
+        },
+        "socSecNumber": {
+          "type": "string",
+          "description": "Social Security or other Tax-ID number, without dashes or spaces"
+        },
+        "grossIncome": {
+          "type": "number",
+          "format": "float",
+          "description": "gross income for the applicant (not household), including both employment and other income"
+        }
+      }
+    },
+    "PersonApplicationAdditionalData": {
+      "type": "object",
+      "properties": {
+        "addressHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AddressHistory"
+          }
+        },
+        "incomeSourceHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IncomeSourceHistory"
+          }
+        },
+        "disclosures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Disclosure"
+          }
+        }
+      }
+    },
+    "AddressHistory": {
+      "type": "object",
+      "description": "Person application's address history information",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "ownOrRent": {
+          "type": "string"
+        },
+        "ownerName": {
+          "type": "string"
+        },
+        "ownerPhone": {
+          "type": "string"
+        },
+        "moveInDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "monthlyPayment": {
+          "type": "number"
+        },
+        "address": {
+          "$ref": "../commons.json#/definitions/Address"
+        }
+      }
+    },
+    "IncomeSourceHistory": {
+      "type": "object",
+      "description": "Person application's income source history information",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "incomeSourceType": {
+          "type": "string"
+        },
+        "sourceDescription": {
+          "type": "string"
+        },
+        "employerName": {
+          "type": "string"
+        },
+        "jobTitle": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "managerName": {
+          "type": "string"
+        },
+        "managerPhone": {
+          "type": "string"
+        },
+        "grossIncome": {
+          "type": "number"
+        },
+        "grossIncomeFrequency": {
+          "type": "string"
+        },
+        "address": {
+          "$ref": "../commons.json#/definitions/Address"
+        }
+      }
+    },
+    "ScreeningSummary": {
+      "description": "Approval process summary information which contains data from FADV response and application details.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "recommendedConditions": {
+          "type": "array",
+          "$ref": "#/definitions/RecommendedCondition"
+        },
+        "residents": {
+          "description": "List of residents with information related to the screening response information received from FADV and application details.",
+          "type": "array",
+          "$ref": "#/definitions/ApplicationSummary"
+        },
+        "guarantors": {
+          "description": "List of guarantors with information related to the screening response information received from FADV and application details.",
+          "type": "array",
+          "$ref": "#/definitions/ApplicationSummary"
+        },
+        "screeningCriterias": {
+          "description": "List of screening criteria received in the FADV response for the application",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ScreeningCriteria"
+          }
+        },
+        "screeningCriteriaResults": {
+          "description": "List of screening criteria results (for each applicant) received in the FADV response for the application",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ScreeningCriteriaResult"
+          }
+        }
+      }
+    },
+    "RecommendedCondition": {
+      "description": "Override criteria provided by FADV to get the approval",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "ApplicationSummary": {
+      "description": "Information related to the screening response information received from FADV and application details.",
+      "type": "object",
+      "properties": {
+        "partyApplicationId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "personId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "applicantName": {
+          "type": "string"
+        },
+        "applicantDetails": {
+          "$ref": "#/definitions/ApplicantDetails"
+        },
+        "incomeSourceHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IncomeSourceHistory"
+          }
+        },
+        "addressHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AddressHistory"
+          }
+        },
+        "privateDocuments": {
+          "type": "array",
+          "items": {
+            "$ref": "documents.json#/definitions/UploadedDocument"
+          }
+        },
+        "disclosures": {
+          "type": "object",
+          "$ref": "#/definitions/DisclosureSummary"
+        },
+        "children": {
+          "type": "array",
+          "$ref": "parties.json#/definitions/PartyAdditionalInfo"
+        },
+        "pets": {
+          "type": "array",
+          "$ref": "parties.json#/definitions/PartyAdditionalInfo"
+        },
+        "vehicles": {
+          "type": "array",
+          "$ref": "parties.json#/definitions/PartyAdditionalInfo"
+        },
+        "sharedDocuments": {
+          "type": "array",
+          "items": {
+            "$ref": "documents.json#/definitions/UploadedDocument"
+          }
+        }
+      }
+    },
+    "ApplicantDetails": {
+      "description": "Information related to the applicant",
+      "type": "object",
+      "properties": {
+        "applicantData": {
+          "$ref": "#/definitions/PersonApplicationData"
+        },
+        "address": {
+          "$ref": "../commons.json#/definitions/Address"
+        }
+      }
+    },
+    "DisclosureSummary": {
+      "description": "Object that contains one entry for each self-disclosure made by an applicant of the party",
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "ScreeningCriteria": {
+      "description": "Object that contains information related to screening evaluation criteria.",
+      "type": "object",
+      "properties": {
+        "criteriaId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "criteriaDescription": {
+          "type": "string"
+        }
+      }
+    },
+    "ScreeningCriteriaResult": {
+      "description": "Object that contains information related to the criteria and the result for each applicant.",
+      "type": "object",
+      "properties": {
+        "key": {
+          "description": "Criteria Id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "value": {
+          "description": "List of applicants's result for one criteria.",
+          "$ref": "#/definitions/ApplicantCriteriaResult"
+        }
+      }
+    },
+    "ApplicantCriteriaResult": {
+      "description": "Object that contains information related to applicant's criteria result.",
+      "type": "object",
+      "properties": {
+        "key": {
+          "description": "Person Id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "value": {
+          "description": "Result of the criteria. Possible values are P(Pass), F(Fail), N(Not applicable), --(Unavailable).",
+          "type": "string"
+        }
+      }
+    },
+    "ApplicationData": {
+      "type": "object",
+      "properties": {
+        "parties": {
+          "type": "array",
+          "items": {
+            "$ref": "parties.json#/definitions/Party"
+          },
+          "description": "Array of parties"
+        },
+        "persons": {
+          "type": "array",
+          "items": {
+            "$ref": "persons.json#/definitions/Person"
+          },
+          "description": "Array of Persons"
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "$ref": "partyMembers.json#/definitions/PartyMember"
+          },
+          "description": "Array of party members"
+        }
+      }
+    },
+    "Applicant": {
+      "type": "object",
+      "properties": {
+        "personId": {
+          "type": "integer"
+        },
+        "personName": {
+          "type": "string"
+        },
+        "quoteId": {
+          "type": "string"
+        },
+        "partyId": {
+          "type": "string"
+        },
+        "tenantId": {
+          "type": "string",
+          "description": "Id of the tenant that will associate the data"
+        },
+        "tenantDomain": {
+          "type": "string",
+          "description": "Domain Url of the tenant that will associate the data"
+        },
+        "personApplicationId": {
+          "description": "Person application id of the applicant",
+          "type": "string",
+          "format": "uuid"
+        },
+        "partyType": {
+          "type": "string"
+        }        
+      }
+    },
+    "ScreeningResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "description": "Contains the Screening Response information from FADV MITS API",
+          "type": "object"
+        }
+      }
+    },
+    "applicationStatusObject": {
+      "type": "object",
+      "properties": {
+        "applicationStatus": {
+          "description": "Person application status. Supported value: COMPLETED",
+          "type": "string"
+        }
+      }
+    },
+    "applicationEvents": {
+      "type": "object",
+      "properties": {
+        "eventType": {
+          "description": "Type of the event in the application welcome screen",
+          "type": "string"
+        },
+        "ip": {
+          "description": "IP of the applicant",
+          "type": "string"
+        },
+        "personApplicationId": {
+          "description": "Person application id of the applicant",
+          "type": "string"
+        }
+      }
+    },
+    "ApplicationFee": {
+      "type": "object",
+      "properties": {
+        "feeId": {
+          "description": "Fee's id",
+          "type": "string"
+        },
+        "feeType": {
+          "description": "Fee's type",
+          "type": "string"
+        },
+        "feeName": {
+          "description": "Fee's name",
+          "type": "string"
+        },
+        "amount": {
+          "description": "Amount's fee",
+          "type": "number",
+          "format": "float"
+        },
+        "isRequired": {
+          "description": "if is a mandatory",
+          "type": "boolean"
+        },
+        "unitInfo": {
+          "description": "Name of the unit person was charged for",
+          "type": "string"
+        },
+        "holdDurationInHours": {
+          "description": "Duration of the hold in hours",
+          "type": "string"
+        },
+        "payer": {
+          "description": "Name of the person who paid the fee",
+          "type": "string"
+        }
+      }
+    },
+    "ScreeningResult": {
+      "properties": {
+        "rentData": {
+          "description": "the rent data of the submission request",
+          "type": "object"
+        },
+        "applicationDecision": {
+          "description": "the application decision of the submission response",
+          "type": "string"
+        },
+        "applicantDecision": {
+          "description": "the applicant decision of the submission response",
+          "type": "object"
+        },
+        "criteriaResult": {
+          "description": "the criteria result of the submission response",
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "Application": {
+      "properties": {
+        "id": {
+          "description": "Application id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "alongWith": {
+          "description": "other members",
+          "type": "string"
+        },
+        "numberOfPets": {
+          "description": "number of pets",
+          "type": "number"
+        },
+        "numberOfChildren": {
+          "description": "number of children",
+          "type": "number"
+        },
+        "lastUpdated": {
+          "description": "last time updated",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "ApplicationSettings": {
+      "properties": {
+        "addressHistorySection": {
+          "description": "Visualization of adress history section",
+          "type": "string"
+        },
+        "childrenSection": {
+          "description": "Visualization of children section",
+          "type": "string"
+        },
+        "disclosuresSection": {
+          "description": "Visualization of disclosure section",
+          "type": "number"
+        },
+        "holdDeposit": {
+          "description": "Visualization of hold deposit",
+          "type": "number"
+        },
+        "petsSection": {
+          "description": "Visualization of pet section",
+          "type": "string"
+        },
+        "privateDocumentsSection": {
+          "description": "Visualization of private documents section",
+          "type": "string"
+        },
+        "rentersInsuranceSection": {
+          "description": "Visualization of renters insurance section",
+          "type": "string"
+        },
+        "sharedDocumentsSection": {
+          "description": "Visualization of shared documents section",
+          "type": "string"
+        },
+        "vehiclesSection": {
+          "description": "Visualization of vehicles section",
+          "type": "string"
+        },
+        "holdDepositWithoutUnit": {
+          "description": "Visualization of hold deposit without a unit",
+          "type": "number"
+        }
+      },
+      "type": "object"
+    }
+    
+  }
+}

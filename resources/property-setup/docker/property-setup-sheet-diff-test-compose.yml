@@ -1,0 +1,9 @@
+version: '2.1'
+services:
+  sheets-diff-test:
+    container_name: sheets-diff-test
+    image: registry.corp.reva.tech/excel_cmp
+    command: "\"${BASE_LINE_SHEET}\" \"${SHEET_TO_COMPARE}\" ${IGNORE_COL_METADATA} ${IGNORE_SHEETS}"
+    # place sheets into ./temp directory so they are accessible inside the test container
+    volumes:
+      - ../../../.temp:/excel_cmp/sheets

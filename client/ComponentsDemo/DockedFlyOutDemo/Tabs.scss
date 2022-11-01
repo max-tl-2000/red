@@ -1,0 +1,51 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+.tab {
+  display: block;
+  height: 100%;
+}
+
+.tabs {
+  position: relative;
+  display: block;
+  min-height: (200rem/16);
+  padding-bottom: (56rem/16);
+}
+
+.content {
+  display: block;
+  height: 100%;
+}
+
+.triggers-section {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: (56rem/16);
+  background: $grey300;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    height: (56rem/16);
+    cursor: pointer;
+    border: 0;
+    background: none;
+
+    -webkit-appearance: none;
+
+    &[data-selected='true'] {
+      background: $grey400;
+    }
+  }
+
+  [data-red-icon] svg {
+    fill: rgba($black, .87);
+  }
+}

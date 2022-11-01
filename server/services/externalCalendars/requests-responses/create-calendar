@@ -1,0 +1,25 @@
+POST https://api.cronofy.com/v1/calendars
+Authorization: Bearer kClaJRK0cslk1NCnQd9207krDqVWKQB_
+
+body:
+{
+  "profile_id": "pro_Wp-aZI2@z1PPAAMx",
+  "name": "{calendar_name}",
+  "readonly": "false",
+  "color": "#49BED8"
+}
+
+response:
+{
+  calendar: {
+    provider_name: 'google',
+    profile_id: 'pro_Wp-aZI2@z1PPAAMx',
+    profile_name: 'cristi@reva.tech',
+    calendar_id: 'cal_Wp-aZI2@z1PPAAMd_fQWSb5C9YOCdU6g2AUXPRT',
+    calendar_name: 'Reva Appointments',
+    calendar_readonly: false,
+    calendar_deleted: false,
+    calendar_primary: false,
+    permission_level: 'unrestricted'
+  }
+}

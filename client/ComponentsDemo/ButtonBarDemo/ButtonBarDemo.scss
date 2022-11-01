@@ -1,0 +1,21 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.container {
+  [data-component='sg-item'] {
+    display: block;
+  }
+}
+
+.demo-container {
+  [data-component='switch'] {
+    display: block;
+  }
+}
+
+.my-button-bar {
+  [data-component='sg-item'] {
+    width: 20%;
+  }
+}

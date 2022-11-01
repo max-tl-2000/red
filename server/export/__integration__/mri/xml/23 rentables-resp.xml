@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mri_s-pmrm_modifyrentableitemsandfees>
+  <entry>
+    <ItemType>ig-external-id</ItemType>
+    <FeeType/>
+    <Quantity>1</Quantity>
+    <ProspectID>{{nameId}}</ProspectID>
+  </entry>
+</mri_s-pmrm_modifyrentableitemsandfees>

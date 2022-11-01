@@ -1,0 +1,15 @@
+.git
+.box
+.cache
+docker
+docs
+.nyc_output
+.vagrant
+coverage
+deploy.sh
+*.yml
+report
+client/ComponentsDemo
+*-test.js
+node_shrinkwrap
+node_cache

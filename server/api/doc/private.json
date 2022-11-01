@@ -1,0 +1,258 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+  "host": "#HOST#",
+  "basePath": "/api",
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+
+    "/jobs": {
+      "$ref": "private/jobs.json#/paths/~1jobs"
+    },
+    "/jobs/{jobId}": {
+      "$ref": "private/jobs.json#/paths/~1jobs~1{jobId}"
+    },
+
+
+    "/fullStory/content": {
+      "$ref": "private/logs.json#/paths/~1fullStory~1content"
+    },
+    "/log": {
+      "$ref": "private/logs.json#/paths/~1log"
+    },
+
+
+    "/aptexx/simulatePayment": {
+      "$ref": "private/payments.json#/paths/~1aptexx~1simulatePayment"
+    },
+    "/aptexx/cancelPayment": {
+      "$ref": "private/payments.json#/paths/~1aptexx~1cancelPayment"
+    },
+
+
+    "/profiles/{userId}": {
+      "$ref": "private/roommates.json#/paths/~1profiles~1{userId}"
+    },
+    "/roommates": {
+      "$ref": "private/roommates.json#/paths/~1roommates"
+    },
+    "/roommates/messages/send": {
+      "$ref": "private/roommates.json#/paths/~1roommates~1messages~1send"
+    },
+    "/register/generateToken": {
+      "$ref": "private/roommates.json#/paths/~1register~1generateToken"
+    },
+
+
+    "/sftpUsers": {
+      "$ref": "private/sftpUsers.json#/paths/~1sftpUsers"
+    },
+
+
+    "/zendesk/generatePrivateContentToken": {
+      "$ref": "private/sso.json#/paths/~1zendesk~1generatePrivateContentToken"
+    },
+
+
+    "/tenants": {
+      "$ref": "private/tenants.json#/paths/~1tenants"
+    },
+    "/tenants/{id}": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{id}"
+    },
+    "/tenants/{id}/refreshTenantSchema": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{id}~1refreshTenantSchema"
+    },
+    "/tenants/{id}/clearTenantSchema": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{id}~1clearTenantSchema"
+    },
+    "/tenants/{id}/teams": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{id}~1teams"
+    },
+    "/tenants/{tenantId}/teams/{teamId}": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1teams~1{teamId}"
+    },
+    "/tenants/{tenantId}/passwordForType": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1passwordForType"
+    },
+    "/tenants/{tenantId}/closeImportedParties": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1closeImportedParties"
+    },
+    "/tenants/availablePhoneNumbers": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1availablePhoneNumbers"
+    },
+    "/tenants/communicationProviderCleanup": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1communicationProviderCleanup"
+    },
+    "/tenants/{tenantId}/refreshLeaseTemplates": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1refreshLeaseTemplates"
+    },
+    "/tenants/{tenantId}/ringCentral/token/refresh": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1ringCentral~1token~1refresh"
+    },
+    "/tenants/{tenantId}/ringCentral/token": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1ringCentral~1token"
+    },
+    "/tenants/{tenantId}/ringCentral/renewSubscription": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1ringCentral~1renewSubscription"
+    },
+    "/tenants/{tenantId}/ringCentral/authUrl": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1ringCentral~1authUrl"
+    },
+    "/tenants/{tenantId}/generateDomainToken": {
+      "$ref": "private/tenants.json#/paths/~1tenants~1{tenantId}~1generateDomainToken"
+    },
+
+
+
+    "/parties/{partyId}/rerunScreening": {
+      "$ref": "private/tests.json#/paths/~1parties~1{partyId}~1rerunScreening"
+    },
+    "/parties/{partyId}/rescreen": {
+      "$ref": "private/tests.json#/paths/~1parties~1{partyId}~1rescreen"
+    },
+    "/payment/initiate": {
+      "$ref": "private/tests.json#/paths/~1payment~1initiate"
+    },
+    "/test/availableCucumberPhoneNumber": {
+      "$ref": "private/tests.json#/paths/~1test~1availableCucumberPhoneNumber"
+    },
+    "/test/updateInvite": {
+      "$ref": "private/tests.json#/paths/~1test~1updateInvite"
+    },
+    "/test/clearQueues": {
+      "$ref": "private/tests.json#/paths/~1test~1clearQueues"
+    },
+    "/test/createGuestApplication": {
+      "$ref": "private/tests.json#/paths/~1test~1createGuestApplication"
+    },
+    "/test/deleteMessagesFromNumber": {
+      "$ref": "private/tests.json#/paths/~1test~1deleteMessagesFromNumber"
+    },
+    "/test/sendGuestSMS": {
+      "$ref": "private/tests.json#/paths/~1test~1sendGuestSMS"
+    },
+    "/test/verifyGuestReceivedMessageFromNumber": {
+      "$ref": "private/tests.json#/paths/~1test~1verifyGuestReceivedMessageFromNumber"
+    },
+    "/webhooks/guest-sms-receiver": {
+      "$ref": "private/tests.json#/paths/~1webhooks~1guest-sms-receiver"
+    },
+    "/test/deassignPhoneNumbers": {
+      "$ref": "private/tests.json#/paths/~1test~1deassignPhoneNumbers"
+    },
+    "/test/program": {
+      "$ref": "private/tests.json#/paths/~1test~1program"
+    },
+    "/test/createDummyParty": {
+      "$ref": "private/tests.json#/paths/~1test~1createDummyParty"
+    },
+    "/test/replyToEmailWith": {
+      "$ref": "private/tests.json#/paths/~1test~1replyToEmailWith"
+    },
+    "/test/sendGuestEmail": {
+      "$ref": "private/tests.json#/paths/~1test~1sendGuestEmail"
+    },
+    "/test/verifyEmailIsDeliveredToGuest": {
+      "$ref": "private/tests.json#/paths/~1test~1verifyEmailIsDeliveredToGuest"
+    },
+
+
+    "/webhooks/email": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1email"
+    },
+    "/webhooks/email/status": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1email~1status"
+    },
+    "/webhooks/sms": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1sms"
+    },
+    "/webhooks/sms/status": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1sms~1status"
+    },
+    "/webhooks/directDial": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1directDial"
+    },
+    "/webhooks/postDial": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1postDial"
+    },
+    "/webhooks/callRecording": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1callRecording"
+    },
+    "/webhooks/callbackDial": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1callbackDial"
+    },
+    "/webhooks/agentCallForQueue": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1agentCallForQueue"
+    },
+    "/webhooks/callReadyForDequeue": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1callReadyForDequeue"
+    },
+    "/webhooks/conferenceCallback": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1conferenceCallback"
+    },
+    "/webhooks/screeningResponse": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1screeningResponse"
+    },
+    "/webhooks/fakeApplicationPayment": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1fakeApplicationPayment"
+    },
+    "/webhooks/paymentCallback": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1paymentCallback"
+    },
+    "/webhooks/ringCentralNotificationCallback": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1ringCentralNotificationCallback"
+    },
+    "/webhooks/digitsPressed": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1digitsPressed"
+    },
+    "/webhooks/transferFromQueue": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1transferFromQueue"
+    },
+    "/webhooks/paymentNotification": {
+      "$ref": "private/webhooks.json#/paths/~1webhooks~1paymentNotification"
+    },
+
+
+    "/seedData": {
+      "$ref": "private/import.json#/paths/~1seedData"
+    },
+    "/seedData/getFile": {
+      "$ref": "private/import.json#/paths/~1seedData~1getFile"
+    },
+    "/seedData/isReady": {
+      "$ref": "private/import.json#/paths/~1seedData~1isReady"
+    },
+    "/migrateData": {
+      "$ref": "private/import.json#/paths/~1migrateData"
+    },
+    "/importUpdates": {
+      "$ref": "private/import.json#/paths/~1importUpdates"
+    },
+    "/importRms": {
+      "$ref": "private/import.json#/paths/~1importRms"
+    },
+    "/validateAssets": {
+      "$ref": "private/import.json#/paths/~1validateAssets"
+    },
+
+    "/health/db": {
+      "$ref": "private/health.json#/paths/~1health~1db"
+    },
+    "/health/mq": {
+      "$ref": "private/health.json#/paths/~1health~1mq"
+    },
+    "/health/ws": {
+      "$ref": "private/health.json#/paths/~1health~1ws"
+    },
+    "/ping": {
+      "$ref": "private/health.json#/paths/~1ping"
+    }
+  }
+}

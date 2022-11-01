@@ -1,0 +1,299 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/dashboard": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "users": {
+                  "description": "List of user IDs to be used in the filter",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                },
+                "teams": {
+                  "description": "List of team IDs to be used in the filter",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The dashboard data, filtered by users and teams",
+            "schema": {
+              "$ref": "applications.json#/definitions/ApplicationData"
+            }
+          },
+          "400": {
+            "description": "The users or teams are missing from the request body."
+          }
+        },
+        "summary": "Retrieves the dashboard data filtered by specific users and teams"
+      }
+    },
+    "/dashboard/party/{partyId}": {
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "users": {
+                  "description": "List of user IDs to be used in the filter",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                },
+                "teams": {
+                  "description": "List of team IDs to be used in the filter",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The dashboard data, filtered by users and teams",
+            "schema": {
+              "$ref": "applications.json#/definitions/ApplicationData"
+            }
+          },
+          "400": {
+            "description": "The users or teams are missing from the request body."
+          }
+        },
+        "summary": "Retrieves the dashboard data for a specific party, filtered by visibility by specific users and teams"
+      }
+    },
+    "/globalData": {
+      "get": {
+        "tags": [
+          "Global data"
+        ],
+        "responses": {
+          "200": {
+            "description": "All existing users, teams and properties with their associated lifestyles",
+            "schema": {
+              "$ref": "#/definitions/GlobalData"
+            }
+          }
+        }
+      }
+    },
+
+    "/properties": {
+      "get": {
+        "tags": [
+          "Properties"
+        ],
+        "responses": {
+          "200": {
+            "description": "All existing properties with their associated lifestyles",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/Property"
+              },
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "/navigationHistory": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The authenticated user used for getting the navigation history",
+            "in": "body",
+            "name": "authUser",
+            "required": true,
+            "schema": {
+              "properties": {
+                "id": {
+                  "description": "Id of the user",
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "required": [
+                "id"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of navigation history entries",
+            "schema": {
+              "$ref": "#/definitions/NavigationHistory"
+            }
+          }
+        },
+        "summary": "Loads navigation history based on query parameters",
+        "tags": [
+          "Navigation History"
+        ]
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "The navigation history entity id",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "entityId": {
+                  "description": "The navigation history entity id",
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "entityType": {
+                  "description": "The navigation history entity type",
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "required": [
+                "entityId",
+                "entityType"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The saved navigation history",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/NavigationHistory"
+              },
+              "type": "object"
+            }
+          },
+          "400": {
+            "description": "Invalid entity Id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412": {
+            "description": "Entity not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Saves navigation history record for the entity passed in the body",
+        "tags": [
+          "Navigation History"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "GlobalData": {
+      "properties": {
+        "users": {
+          "description": "A map with all the users in the system",
+          "type": "object"
+        },
+        "teams": {
+          "description": "All the teams in the system",
+          "type": "object"
+        },
+        "properties": {
+          "description": "The type of the navigation history entity",
+          "schema": {
+              "items": {
+                "$ref": "#/definitions/Property"
+              },
+              "type": "array"
+          }
+        }
+      },
+      "required": [
+        "users",
+        "teams",
+        "properties",
+      ],
+      "type": "object"
+    },
+    "NavigationHistory": {
+      "properties": {
+        "id": {
+          "description": "The id of the navigation history",
+          "type": "string"
+        },
+        "userId": {
+          "description": "The id of the user it belongs to",
+          "type": "string"
+        },
+        "entity_type": {
+          "description": "The type of the navigation history entity",
+          "type": "string"
+        },
+        "entity_id": {
+          "description": "The id of the navigation history entity",
+          "type": "string"
+        },
+        "visited_at": {
+          "description": "The date the entity was visited",
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "entity_type",
+        "entity_id"
+      ],
+      "type": "object"
+    }
+  }
+}

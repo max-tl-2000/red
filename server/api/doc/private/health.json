@@ -1,0 +1,81 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/health/db": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Database health check ok"
+          },
+          "500": {
+            "description": "The database server is down",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Database health check",
+        "tags": [
+          "Health"
+        ]
+      }
+    },
+    "/health/mq": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Message queue health check ok"
+          },
+          "500": {
+            "description": "The message queue is down",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Database health check",
+        "tags": [
+          "Health"
+        ]
+      }
+    },
+    "/health/ws": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Web socket health check ok"
+          },
+          "500": {
+            "description": "The web socket is down",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Database health check",
+        "tags": [
+          "Health"
+        ]
+      }
+    },
+    "/ping": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Web server health check ok"
+          }
+        },
+        "summary": "Web server health check",
+        "tags": [
+          "Health"
+        ]
+      }
+    }
+  }
+}

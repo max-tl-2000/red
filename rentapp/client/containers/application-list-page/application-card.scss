@@ -1,0 +1,45 @@
+@import '../../../../client/sass/_colors.scss';
+
+.application-card {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  max-width: (300em/16);
+  margin: (32em/16) 0 0 0;
+
+  .img-container {
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: .5s ease;
+      opacity: 0;
+      background-color: $blue500;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .5;
+      }
+    }
+  }
+
+  img {
+    margin: 0 0 (16em/16) 0;
+  }
+
+  button {
+    margin-left: -(9em/16);
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:Corticon" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <urn:CorticonRequest decisionServiceName="Screening">
+			{{#with this}}
+			<WorkDocuments><Application id="{{ decisionId }}">
+					{{#each applicants}}
+          <individual id="{{ personId }}">
+            <creditScore>{{ creditScore }}</creditScore>
+            <hasBankruptcy>{{ hasBankruptcy }}</hasBankruptcy>
+            <hasForeclosure>{{ hasForeclosure }}</hasForeclosure>
+            <hasGlobalSanctions>{{ hasGlobalSanctions }}</hasGlobalSanctions>
+            <id>{{ personId }}</id>
+            <liquidAssets>{{ liquidAssets }}</liquidAssets>
+            <monthlyIncome>{{ monthlyIncome }}</monthlyIncome>
+            <type>{{ memberType }}</type>
+          </individual>
+					{{/each}}
+          <prop id="Property_id_1"><allowLiquidAssets>true</allowLiquidAssets>
+            <applicantsBankruptcy>guarantorRequired</applicantsBankruptcy>
+            <applicantsCreditScoreApproved>approved</applicantsCreditScoreApproved>
+            <applicantsCreditScoreBetween>increasedDepositRequired</applicantsCreditScoreBetween>
+            <applicantsCreditScoreDeclined>declined</applicantsCreditScoreDeclined>
+            <applicantsExcessiveIssues>guarantorRequired</applicantsExcessiveIssues>
+            <applicantsForeclosure>increasedDepositRequired</applicantsForeclosure>
+            <applicantsInsufficientIncome>increasedDepositRequired</applicantsInsufficientIncome>
+            <approvedGuarantorCreditScore>600</approvedGuarantorCreditScore>
+            <approvedResidentCreditScore>600</approvedResidentCreditScore>
+            <declinedGuarCreditScore>400</declinedGuarCreditScore>
+            <declinedResidentCreditScore>400</declinedResidentCreditScore>
+            <excessiveIssuesCount>4</excessiveIssuesCount>
+            <fullLeaseLiquidAssetMultiple>2.000000</fullLeaseLiquidAssetMultiple>
+            <globalSanctions>declined</globalSanctions>
+            <guarantorsBankruptcy>increasedDepositRequired</guarantorsBankruptcy>
+            <guarantorsCreditScoreApproved>approved</guarantorsCreditScoreApproved>
+            <guarantorsCreditScoreBetween>increasedDepositRequired</guarantorsCreditScoreBetween>
+            <guarantorsCreditScoreDeclined>declined</guarantorsCreditScoreDeclined>
+            <guarantorsForeclosure>increasedDepositRequired</guarantorsForeclosure>
+            <guarantorsInsufficientIncome>increasedDepositRequired</guarantorsInsufficientIncome>
+            <hasGroupGuarantorCreditScore>false</hasGroupGuarantorCreditScore>
+            <hasGroupGuarantorIncome>false</hasGroupGuarantorIncome>
+            <hasGroupResidentCreditScore>false</hasGroupResidentCreditScore>
+            <hasGroupResidentIncome>false</hasGroupResidentIncome>
+            <incomeMultipleGuarantor>1.500000</incomeMultipleGuarantor>
+            <incomeMultipleResident>1.500000</incomeMultipleResident>
+          </prop>
+					{{#each quotes}}
+          <quote id="{{ quoteId }}"><agent>{{ agent }}</agent>
+            <monthlyRent>{{ monthlyRent }}</monthlyRent>
+            <monthlyTotalRent>{{ monthlyTotalRent }}</monthlyTotalRent>
+            <property>XYZ BUILDING</property>
+            <termLength>{{ termLength }}</termLength>
+          </quote>
+					{{/each}}
+				</Application></WorkDocuments>
+			{{/with}}
+		</urn:CorticonRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

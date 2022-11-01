@@ -1,0 +1,83 @@
+@import '../../sass/_colors.scss';
+
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .monthContainer {
+    padding: (6rem/16) (11rem/16);
+    border: 1;
+  }
+
+  .daysContainer {
+    display: flex;
+    flex: 1 1 auto;
+
+    .daysRow {
+      display: flex;
+
+      flex-grow: 2;
+
+      .dayContainer {
+        font-size: (12rem/16);
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        flex-direction: column;
+        padding: (5rem/16) 0;
+        letter-spacing: (2rem/160);
+        color: $black;
+
+        .past {
+          opacity: .5;
+        }
+
+        .today {
+          color: $blue700;
+        }
+
+        .future {
+          opacity: .9;
+        }
+
+        .dayName {
+          flex: 1 1 auto;
+          text-transform: uppercase;
+
+          align-content: center;
+        }
+
+        .dayDate {
+          flex: 1 1 auto;
+
+          align-content: center;
+        }
+
+        .daySelectedMarker {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: (4rem/16);
+          opacity: 1;
+          background-color: $blue500;
+        }
+      }
+    }
+
+    .chevron {
+      width: (44rem/16);
+      height: (44rem/16);
+
+      flex-grow: 1;
+
+      span {
+        border-radius: 0;
+      }
+    }
+  }
+}

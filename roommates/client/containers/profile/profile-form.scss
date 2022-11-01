@@ -1,0 +1,39 @@
+.profile-form {
+  position: relative;
+  width: (496rem/16);
+  padding-top: (12rem/16);
+}
+
+.card {
+  margin-bottom: (39rem/16);
+  padding: (8rem/16) (24rem/16);
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.field > [data-component='field-middle-wrapper'] {
+  min-height: 0;
+}
+
+.half-width {
+  width: calc((50% + 12px) - 24px);
+}
+
+.not-padding-top {
+  padding-top: 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  margin: (24rem/16) (18rem/16) (31rem/16);
+
+  > button {
+    width: (86rem/16);
+
+    align-self: flex-end;
+  }
+}

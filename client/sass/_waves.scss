@@ -1,0 +1,11 @@
+.waves-effect {
+  transform: translate3d(0,0,0);
+  // TODO: remove this once we remove materialize.css
+  // this fixes the Blurring of the buttons in the dialog
+
+  will-change: disabled;
+
+  &.waves-lighter .waves-ripple {
+    background-color: rgba(255, 255, 255, .15);
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<LeaseResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NameID>HO00460346</NameID>
+	<EstimatedMovein>07/13/2018</EstimatedMovein>
+	<PropertyID>11500   </PropertyID>
+	<BuildingID>01 </BuildingID>
+	<UnitID>106   </UnitID>
+	<leaseNumber>8</leaseNumber>
+	<Result>Success</Result>
+</LeaseResult>

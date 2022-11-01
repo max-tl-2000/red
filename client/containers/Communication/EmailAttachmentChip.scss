@@ -1,0 +1,32 @@
+@import '../../sass/_colors.scss';
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(100%/3 - 5rem/16);
+  height: (36rem/16);
+  margin-right: (5rem/16);
+  margin-bottom: (5rem/16);
+  padding: 0 .35rem 0;
+  cursor: pointer;
+  background: $grey200;
+
+  .file-type-icon {
+    width: (28rem/16);
+    height: (28rem/16);
+    opacity: .26;
+  }
+
+  .file-name {
+    width: calc(100% - (28rem/16) - (28rem/16));
+    padding-left: (5rem/16);
+  }
+
+  .download-file-icon {
+    right: 0;
+    width: (28rem/16);
+    height: (28rem/16);
+    opacity: .54;
+  }
+}

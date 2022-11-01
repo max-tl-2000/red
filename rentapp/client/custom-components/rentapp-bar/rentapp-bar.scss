@@ -1,0 +1,46 @@
+@import '../../../../client/sass/_colors.scss';
+
+.blue-header {
+  background: $blue500;
+}
+
+.icon-section {
+  width: auto;
+  padding: 0 (10rem/16) 0 (24rem/16);
+}
+
+.title {
+  &.isXSmall {
+    font-size: 18px;
+    line-height: 1.1em;
+  }
+}
+
+.icon {
+  width: (32rem/16);
+  height: (32rem/16);
+  background: $grey50;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: rgba($grey50, .92);
+  }
+
+  [data-component='icon'] {
+    fill: $grey700;
+  }
+}
+
+.apply {
+  display: inline-block;
+  padding-top: .5rem;
+  padding-right: .8rem;
+
+  &.smallLayout {
+    font-size: 12px;
+    line-height: 1.4em;
+    padding-top: 0;
+    white-space: normal;
+  }
+}

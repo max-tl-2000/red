@@ -1,0 +1,4 @@
+<LeaseResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <leaseNumber>0</leaseNumber>
+  <Result>Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.</Result>
+</LeaseResult>

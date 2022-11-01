@@ -1,0 +1,99 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/jobs": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "List of jobs",
+            "schema": {
+              "$ref": "#/definitions/Job"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads all jobs",
+        "tags": [
+          "Jobs"
+        ]
+      }
+    },
+    "/jobs/{jobId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the job to load",
+            "in": "path",
+            "name": "jobId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The job identified by the sent ID",
+            "schema": {
+              "$ref": "#/definitions/Job"
+            }
+          },
+          "400": {
+            "description": "Invalid job id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the specified job",
+        "tags": [
+          "Jobs"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "Job": {
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "description": "The id of the job",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the job",
+          "type": "string"
+        },
+        "filePath": {
+          "description": "The path of the file, if exists, that the job uses",
+          "type": "string"
+        },
+        "stepsStatus": {
+          "description": "The status of the steps performed in the job",
+          "type": "object"
+        },
+        "status": {
+          "description": "The status of the job",
+          "type": "string"
+        },
+        "createdBy": {
+          "description": "The user that triggered the job",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

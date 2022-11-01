@@ -1,0 +1,12 @@
+{{#with this}}
+<mri_s-pmrm_selectunit>
+  <entry>
+    <ProspectID>{{nameId}}</ProspectID>
+    <PropertyID>cove</PropertyID>
+    <BuildingID></BuildingID>
+    <UnitID>{{unitId}}</UnitID>
+    <LeaseTerm>12</LeaseTerm>
+    <OccupyDate>{{today}}</OccupyDate>
+  </entry>
+</mri_s-pmrm_selectunit>
+{{/with}}

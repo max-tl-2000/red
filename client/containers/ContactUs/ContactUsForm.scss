@@ -1,0 +1,62 @@
+@import '../../sass/_colors.scss';
+
+.container {
+  display: block;
+  padding-bottom: 5rem;
+}
+
+.form {
+  max-width: 36rem;
+  padding: .5rem 1rem;
+
+  .personInfo {
+    max-width: 66%;
+
+    > [data-component] {
+      display: block;
+    }
+  }
+
+  [data-component='form'] {
+    padding: 0rem 1rem;
+
+    [data-component='dropdown'] {
+      width: 100%;
+    }
+
+    label {
+      font-size: .875rem;
+      color: rgba($black, .54);
+    }
+
+    [data-component='selection-group'] {
+      font-size: .875rem;
+      color: rgba($black, .54);
+    }
+
+    [data-component='button'] {
+      > span {
+        > span {
+          padding: 0rem;
+        }
+      }
+    }
+  }
+}
+
+.highlighted {
+  background-color: #ffe9ec;
+}
+
+.inputsPadding {
+  margin: .2rem;
+  padding: 1rem;
+}
+
+.formButtons {
+  display: inline-block;
+}
+
+.submitReqBtn {
+  margin-left: (20rem/16);
+}

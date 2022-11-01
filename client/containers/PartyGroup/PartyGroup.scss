@@ -1,0 +1,14 @@
+@import '../../sass/_typography-mixins.scss';
+
+.row-background {
+  background-color: $grey50;
+}
+
+.text-cell span {
+  margin-right: .25em;
+}
+
+.text-cell-component span {
+  margin-right: .25em;
+  text-transform: capitalize;
+}

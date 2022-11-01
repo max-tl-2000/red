@@ -1,0 +1,20 @@
+@import '../../sass/_colors';
+
+.emojiButtonWrapper {
+  display: inline-block;
+
+  > div > button {
+    font-size: 1.5em;
+    width: 36px;
+    height: 34px;
+    vertical-align: bottom;
+    color: $white;
+    border: 0;
+    border-radius: 0;
+    background-color: $brown500;
+
+    &:hover {
+      background-color: $brown700;
+    }
+  }
+}

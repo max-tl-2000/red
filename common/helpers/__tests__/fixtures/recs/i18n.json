@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "hostname": "Roys-MacBook-Pro.local",
+  "pid": 43433,
+  "subType": "i18n",
+  "level": 10,
+  "args": [],
+  "msg": "currentLng set to: en-US",
+  "time": "2016-07-02T03:15:14.420Z",
+  "src": {
+    "file": "/Users/roy/royws/red/server/helpers/i18n.js",
+    "line": 34,
+    "func": "log"
+  },
+  "v": 0
+}

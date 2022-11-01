@@ -1,0 +1,273 @@
+Return-Path: <0100015f1416b69c-1784f382-1596-43cf-9840-b448db1fbdf3-000000@amazonses.com>
+Received: from a10-177.smtp-out.amazonses.com (a10-177.smtp-out.amazonses.com [54.240.10.177])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id codfag4sh6qg73dh2d9eqeg4buvdqhkr6bhn2jo1
+ for zumper.sharon@maximus.mail.reva.tech;
+ Fri, 13 Oct 2017 04:55:54 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of amazonses.com designates 54.240.10.177 as permitted sender) client-ip=54.240.10.177; envelope-from=0100015f1416b69c-1784f382-1596-43cf-9840-b448db1fbdf3-000000@amazonses.com; helo=a10-177.smtp-out.amazonses.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of amazonses.com designates 54.240.10.177 as permitted sender) client-ip=54.240.10.177; envelope-from=0100015f1416b69c-1784f382-1596-43cf-9840-b448db1fbdf3-000000@amazonses.com; helo=a10-177.smtp-out.amazonses.com;
+ dkim=pass header.i=@amazonses.com;
+ dkim=pass header.i=@zlead.co;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIV3JYNjgwTzlNL0Y0SW5JOWl2Q1hmcGR2NzNWNGUyWHNkeUFTVVJVWUM0bjEzRW1KNXBYY3FZTmZJbUozN1ZOM1J6cVQrV0x4RkRxRUFCekxvMUt5dGtoeHF5R1RNTGJBYVptRi85dVNrQkJlVFRqVTkzZFhHWUxzQVQySlZ3ZmtkMWFXakxIU3JWV0c5MlRVYUpDSjdCTXJ5ZGVxQjMxVmx1YlZ0dkpqMGtWWmdybGVyWmZTYTVybTJVVHRjY0RVR1JRYzkzSjNlOUd5RWNUUmxrbTR6cDNrNS9qdVBvMlVUSVpla29tVHJLL2ZVdVlZZUJieHVPUzNvN2VQWC9rRjVLR01TYTE0djcrS1RRR0ZyS2NHY3lQQnZBUk1xeTF2M2VmOVRYUG9jcWt1alU3YWJDT3Q4eGROQ3hiR2RyOVdqYm1RdmZjSHNPVVBXRklnM1JUc3M=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Na2m1kdqBBoPMjBVUgVkZ56zeeZKHv2FGu5NHrtlB5KXe9AktgYMSM8/AMcRQ4pJmIs0TFkUbRiLaHFpdG3owmryeAG6Q0/hJ8tjycySyevSIieIppAdBwHeCj36c0pVG2h7PIkMe86UXe4I0jscPVorZQ4Z1BwBsAm+hinPp3c=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1507870554; v=1; bh=nUWOFBqoBktp7i9SEZkGJ+jWl5mR9UyDAAzA+oSCg30=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=4573g2xngmmju5b6zivytia74lmdzhuv; d=zlead.co; t=1507870554;
+	h=Content-Type:MIME-Version:Content-Transfer-Encoding:Subject:From:Reply-To:To:Message-ID:Date;
+	bh=nUWOFBqoBktp7i9SEZkGJ+jWl5mR9UyDAAzA+oSCg30=;
+	b=ceMppbkcBOs6IIrJyQvQIjYbDQ8glZB23ZhI8s+sJxqqRabGYVYCNjFaXDkcOC65
+	H38HuhWE4TbOFPAJcMc590F9qKLp0tzlbxcYLbNjhU2GpLtvz8UirwTjuOrcgMc8c1D
+	7tap7Y04UiXEZZHYfe+Gqh0ihl5MlutEG9U25PQ4=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1507870554;
+	h=Content-Type:MIME-Version:Content-Transfer-Encoding:Subject:From:Reply-To:To:Message-ID:Date:Feedback-ID;
+	bh=nUWOFBqoBktp7i9SEZkGJ+jWl5mR9UyDAAzA+oSCg30=;
+	b=qaepSasoDwYdKWndccASZduTw8ChmUfz/OL2xaKzba1rdMIKjXVm3LalviPG04xJ
+	xF9B70moNu6Ba+QUeyh2LYL23XASetBE9duGGV+7BtxxKWVstMHGO1ozTHAcfwzq8HF
+	4VZefzBxPGx0EsOJFj4iFUvhpRAdx6AyoUSX2Ye8=
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: =?utf-8?q?Zumper_tenant_lead_for_Sharon_Green_Apartments=3A_3_Beds_2_Bath?=
+ =?utf-8?q?s?=
+From: "Rosa Noakes \[me.com\]" <fnjkx7d3vdwr8pqx6231zwch8b@zlead.co>
+Source: fnjkx7d3vdwr8pqx6231zwch8b@zlead.co
+Reply-To: "Rosa Noakes—Doe \[me.com\]" <fnjkx7d3vdwr8pqx6231zwch8b@zlead.co>
+To: Sharon Green Apartments <zumper.sharon@maximus.mail.reva.tech>
+Message-ID: <0100015f1416b69c-1784f382-1596-43cf-9840-b448db1fbdf3-000000@email.amazonses.com>
+Date: Fri, 13 Oct 2017 04:55:53 +0000
+X-SES-Outgoing: 2017.10.13-54.240.10.177
+Feedback-ID: 1.us-east-1.Ma2zRP0WKeC+ZM5nMhIoihs0FKObR5RmOpmEOT2p3SA=:AmazonSES
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+
+  <style type="text/css">
+    
+    body{
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    #outlook a {
+      padding: 0;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    #backgroundTable {
+      line-height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+
+    img {
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .image_fix {
+      display: block;
+    }
+
+    p {
+      line-height: 1.5em;
+      margin: 1em 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    .ReadMsgBody {
+      width: 100%;
+      background-color: #ebebeb;
+    }
+
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+
+    
+
+    
+    @media screen and (min-width: 601px) {
+      table[class=container] {
+        width: 650px !important;
+      }
+    }
+
+    @media screen and (max-device-width: 480px) {
+      img[class=search-box] {
+        margin-right: 5px !important;
+      }
+    }
+
+    
+  </style>
+</head>
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#f7f7f7"
+      style="background-color: #f7f7f7 !important; color: #656568 !important; font-size: 11pt !important; line-height: 1.4em !important; margin: 0 !important; min-width: 100% !important; padding: 0 !important">
+
+  <!-- 650px container (white background) -->
+  <!--[if (gte mso 9)|(IE)]>
+  <table width="650" align="center" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+          <td>
+  <![endif]-->
+  <table class="container" style="max-width: 650px" align="center" cellpadding="0"
+         cellspacing="0" width="100%">
+
+    
+    <tr>
+      <td style="padding: 20px 0 10px 10px !important">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%"
+               style="min-width: 100%; width: 100%">
+          <tr>
+            <td align="left">
+              
+                <a href="https://www.zumper.com">
+                  <img src="https://d214hhm15p4t1d.cloudfront.net/8_5_14/z/img/email/email-logo@2x.png"
+                       style="height: 40px; width: 158px"/>
+                </a>
+              
+            </td>
+            
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    
+    
+
+    
+    
+      <tr>
+        <td bgcolor="#dff0ff"
+            style="background-color: #dff0ff !important; color: #0a3b68 !important;font-family: helvetica, arial; padding: 15px !important; text-align: center !important; vertical-align: top">
+          
+  You have received a Zumper lead.
+
+        </td>
+      </tr>
+    
+
+    
+    <tr>
+      <td bgcolor="#ffffff"
+          style="background-color: #ffffff !important; font-family: helvetica, arial; padding: 0 15px; ">
+        
+  <p>
+    The following lead is interested in
+    <a href="https://www.zumper.com/apartment-buildings/p15261/sharon-green-apartments-sharon-height-menlo-park-ca" style="color: #656568">Sharon Green Apartments: 3 Beds 2 Baths</a>
+    
+  </p>
+
+  <p>
+    Rosa Noakes
+    <br/><a href="mailto:fnjkx7d3vdwr8pqx6231zwch8b@zlead.co">TEMPLATE CHANGED</a>
+    
+      <br/><a href="tel://6505555555">(650) 555-5555</a>
+    
+  </p>
+
+  
+
+  <p style="background-color: #f4f4fa; margin-bottom: 0; padding: 13px">
+    Hello Sharon Green,<br />This is just a test. Please do not close the party. We will close this party after completing the test.<br />Thank you for your patience.<br /><br />Warm regards,<br />Ganesh.
+    
+  </p>
+
+  <p style="margin-top: 1em">
+    <b>Reply to respond</b>
+    
+  </p>
+
+      </td>
+    </tr>
+
+    
+    
+
+    <tr>
+      <td style="color: #c6c6cc !important; font-family: helvetica, arial; font-size: 9pt !important; line-height: 1.2em !important; text-align: center !important">
+        
+  <div style="color: #c6c6cc; padding-top: 10px">
+    <a href="mailto:support+issues@zumper.com?subject=Zumper - Spam Lead Reported&body=Please include the contact information of the individual you are reporting"
+       style="color: #c6c6cc; text-decoration: underline">Report spam</a>
+    &middot;
+    <a href="https://www.zumper.com/pro/home"
+       style="color: #c6c6cc; text-decoration: underline">Manage your leads</a>
+    &middot;
+    
+    <a href="https://www.zumper.com/block-proxy?block=ank5cjN6czU5Y25fci1mbmpreDdkM3Zkd3I4LWZuamt4N2QzdmR3cjhwcXg2MjMxendjaDhiQHpsZWFkLmNv&bmac=CSMLfDgUNzSNEXuAb7UIgX13cnIK49-0D18qpfCUMHY"
+       style="color: #c6c6cc; text-decoration: underline">Block this user</a>
+    <br/>
+    
+  </div>
+
+        <p style="margin: 10px 10px 20px 10px !important">
+          Zumper Inc., 49 Geary Street, San Francisco CA 94108
+          
+            <a href="https://www.zumper.com/pro"
+               style="color: #c6c6cc !important; text-decoration: underline"
+                >www.zumper.com/pro</a>
+          
+          
+            <br/>This message was sent to
+            <a href="mailto:zumper.sharon@maximus.mail.reva.tech" style="color: #c6c6cc !important; text-decoration: none"
+                >zumper.sharon@maximus.mail.reva.tech</a>
+          
+        </p>
+      </td>
+    </tr>
+  </table>
+  <!--[if (gte mso 9)|(IE)]>
+          </td>
+      </tr>
+  </table>
+  <![endif]-->
+  <!--/650px container -->
+
+<!--/100% background wrapper-->
+
+</body>
+</html>

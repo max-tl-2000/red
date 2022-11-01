@@ -1,0 +1,18 @@
+diff --git a/node_modules/bunyan/lib/bunyan.js b/node_modules/bunyan/lib/bunyan.js
+index d5dc1cf..c59f58c 100644
+--- a/node_modules/bunyan/lib/bunyan.js
++++ b/node_modules/bunyan/lib/bunyan.js
+@@ -1215,7 +1215,12 @@ function fastAndSafeJsonStringify(rec) {
+             return JSON.stringify(rec, safeCycles());
+         } catch (e) {
+             if (safeJsonStringify) {
+-                return safeJsonStringify(rec);
++                try {
++                    return safeJsonStringify(rec);
++                } catch (err) {
++                    console.trace('Cannot serialize record', err, rec);
++                    return '(Exception in safeJsonStringify(rec): ' + err.message;
++                }
+             } else {
+                 var dedupKey = e.stack.split(/\n/g, 3).join('\n');
+                 _warn('bunyan: ERROR: Exception in '

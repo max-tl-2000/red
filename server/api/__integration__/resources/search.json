@@ -1,0 +1,298 @@
+{
+  "fixtures": {
+    "contacts": [
+      {
+        "fullName": "Eric Cartman",
+        "preferredName": "The Coon",
+        "contactInfo": {
+          "emails": [
+            {
+              "value": "eric@fatman.io"
+            },
+            {
+              "value": "the.coon@superheroes.org"
+            }
+          ],
+          "phones": [
+            {
+              "value": "12345678901"
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Randy Marsh",
+        "preferredName": "Randy",
+        "contactInfo": {
+          "emails": [
+            {
+              "value": "the.real.randy@marsh.com"
+            }
+          ],
+          "phones": [
+            {
+              "value": "12345678902"
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Kenny McCormick",
+        "preferredName": "Mysterion",
+        "contactInfo": {
+          "emails": [
+            {
+              "value": "kenny@thepoor.io"
+            }
+          ],
+          "phones": [
+          ]
+        }
+      },
+      {
+        "fullName": "Kyle Broflovski",
+        "preferredName": "Human Kite",
+        "contactInfo": {
+          "emails": [
+            {
+              "value": "kyle.red.hair@south.park"
+            }
+          ],
+          "phones": [
+            {
+              "value": "12345678903"
+            },
+            {
+              "value": "12345678904"
+            }
+          ]
+        }
+      }
+    ],
+    "units": [
+      {
+        "name" : "Kenny's House",
+        "description" : "",
+        "marketRent" : 0.10,
+        "floor" : 1,
+        "type" : "Unit",
+        "unitType" : "Unit",
+        "address" : "08055 Prentice Park US",
+        "layout" : {
+          "name" : "Cottage",
+          "numBathrooms" : 0.5,
+          "numBedrooms" : 0.5,
+          "surfaceArea" : 13
+        },
+        "building" : {
+          "name" : "aenean sit",
+          "floorCount" : 2,
+          "description" : ""
+        },
+        "property" : {
+          "name" : "SoDoSoPa",
+          "description" : null,
+          "legalName" : "SoDoSoPa"
+        },
+        "amenities" : []
+      },
+      {
+        "name" : "Whole Foods",
+        "description" : "",
+        "marketRent" : 0.10,
+        "floor" : 1,
+        "type" : "Unit",
+        "unitType" : "Unit",
+        "address" : "08055 Prentice Park US",
+        "layout" : {
+          "name" : "Cottage",
+          "numBathrooms" : 10,
+          "numBedrooms" : 5,
+          "surfaceArea" : 10000
+        },
+        "building" : {
+          "name" : "aenean sit",
+          "floorCount" : 2,
+          "description" : ""
+        },
+        "property" : {
+          "name" : "SoDoSoPa",
+          "description" : null,
+          "legalName" : "SoDoSoPa"
+        },
+        "amenities" : []
+      }
+    ],
+    "parties": [
+      {
+        "membersNames": "Bro",
+        "members": [
+          { "fullName": "PC Principal", "preferredName": "Bro" }
+        ],
+        "units": [
+          { "name": "PC Delta" }
+        ]
+      },
+      {
+        "membersNames": "Wendy, Stan, Kenny",
+        "members": [
+          { "fullName": "Wendy Testaburger", "preferredName": "Wendy" },
+          { "fullName": "Stan Marsh", "preferredName": "Stan" },
+          { "fullName": "Kenny McCormick", "preferredName": "Kenny" }
+        ],
+        "units": [
+          { "name": "CtPaTown" }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "responses": [
+      {
+        "took": 2,
+        "timed_out": false,
+        "_shards": {
+          "total": 5,
+          "successful": 5,
+          "failed": 0
+        },
+        "hits": {
+          "total": 26,
+          "max_score": 0,
+          "hits": []
+        },
+        "aggregations": {
+          "grouped_by_type": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "contacts",
+                "doc_count": 25,
+                "results": {
+                  "hits": {
+                    "total": 25,
+                    "max_score": 3.7985725,
+                    "hits": [
+                      {
+                        "_index": "integration_b075d0a6-d1ab-4477-9e5b-0a7961d1c5df",
+                        "_type": "contacts",
+                        "_id": "3379",
+                        "_score": 3.7985725,
+                        "_source": {
+                          "fullName": "Narcissus Boyle",
+                          "preferredName": "giovani.nitzsche"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "key": "units",
+                "doc_count": 1,
+                "results": {
+                  "hits": {
+                    "total": 1,
+                    "max_score": 0.8123735,
+                    "hits": [
+                      {
+                        "_index": "integration_b075d0a6-d1ab-4477-9e5b-0a7961d1c5df",
+                        "_type": "units",
+                        "_id": "323",
+                        "_score": 0.8123735,
+                        "_source": {
+                          "name": "Repellendus Non Odio Consequuntur",
+                          "bedrooms": 2,
+                          "bathrooms": 2,
+                          "building": {
+                            "address": "28596 Boyle Ridges\nSouth Amonburgh, AS 91757-1506",
+                            "floorCount": 40,
+                            "type": "TownHouse",
+                            "description": "Something"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "aggregations": {
+          "grouped_by_type": {
+            "buckets": [
+              {
+                "key": "contacts",
+                "results": { "hits": { "hits": [{ "_index": "", "_type": "", "_source": {} }] } }
+              },
+              {
+                "key": "units",
+                "results": { "hits": { "hits": [{ "_index": "", "_type": "", "_source": {} }] } }
+              },
+              {
+                "key": "parties",
+                "results": { "hits": { "hits": [{ "_index": "", "_type": "", "_source": {} }] } }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "query": {
+      "index": "integration_b075d0a6-d1ab-4477-9e5b-0a7961d1c5df",
+      "type": null,
+      "body": {
+        "query": {
+          "query_string": {
+            "query": "",
+            "fields": [
+              "name^16",
+              "address^16",
+              "preferredName^256",
+              "fullName^256",
+              "phone^256",
+              "email^256",
+              "membersNames^4096",
+              "members.fullName^4096",
+              "members.phone^4096",
+              "members.email^4096",
+              "userId^65536",
+              "partyId^65536",
+              "type^65536",
+              "component^65536",
+              "details.id^65536",
+              "details.partyId^65536",
+              "details.isComplete^65536",
+              "details.note^65536",
+              "details.partyMembers.partyMemberId^65536",
+              "details.partyMembers.preferredName^65536",
+              "details.properties.inventoryId^65536",
+              "details.properties.name^65536",
+              "details.memberState^65536",
+              "details.memberType^65536",
+              "details.personId^65536",
+              "details.isSpam^65536",
+              "details.fullName^65536",
+              "details.preferredName^65536",
+              "details.contactInfoId^65536"
+            ]
+          }
+        },
+        "size": 0,
+        "highlight": {
+          "pre_tags": ["<span>"],
+          "post_tags": ["</span>"],
+          "fields": {
+            "preferredName": {},
+            "membersNames": { "number_of_fragments": 0 },
+            "name": {}
+          }
+        }
+      }
+    }
+  }
+}

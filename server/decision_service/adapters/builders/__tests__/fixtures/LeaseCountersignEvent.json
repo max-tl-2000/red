@@ -1,0 +1,4842 @@
+{
+  "id": "3820c5e3-38ea-4128-9389-088b1a40b052",
+  "pets": null,
+  "comms": [
+    {
+      "id": "cf83b3d1-4b91-4a69-9486-99b3e80bee51",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "33314c3e-4783-11ea-b668-491f5fddd37b",
+      "created_at": "2020-02-04T19:19:02.992+00:00"
+    },
+    {
+      "id": "be90310e-cb89-4d4d-a384-fe065c076037",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T17:38:20.870Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Your lease was voided",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "VOID_LEASE_EMAIL_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Lease",
+      "threadId": "ca7dc482-92be-496a-bf2d-36a68946cd7a",
+      "direction": "out",
+      "messageId": "01000170166e69bd-8bee1bd6-c573-445d-9c3a-3bc88b66b98a-000000",
+      "created_at": "2020-02-05T17:38:19.207+00:00"
+    },
+    {
+      "id": "b5b577e0-1d88-4300-aaea-23eb0a696509",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "f282e1c4-4783-11ea-9604-f9c22247203a",
+      "created_at": "2020-02-04T19:24:22.961+00:00"
+    },
+    {
+      "id": "c9bc0c57-f6b4-405c-80a5-2b53da530470",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "b2d19542-4789-11ea-9ad7-250ea18f41cf",
+      "created_at": "2020-02-04T20:05:33.145+00:00"
+    },
+    {
+      "id": "9cbfc1b0-c794-482b-93a3-b282086badaa",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "460cb40a-4789-11ea-982f-ffba8f704e29",
+      "created_at": "2020-02-04T20:02:30.595+00:00"
+    },
+    {
+      "id": "2e147d9b-d382-4092-88a6-a11fd8f72b68",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "925ef4d0-4789-11ea-8dac-4d39792cd61a",
+      "created_at": "2020-02-04T20:04:38.624+00:00"
+    },
+    {
+      "id": "158ee044-1711-470d-8882-dd7593a4ca14",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "cfc159de-483e-11ea-94ec-c333365c1683",
+      "created_at": "2020-02-05T17:42:00.546+00:00"
+    },
+    {
+      "id": "54b53c84-907c-4986-b78d-3a96abeae416",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "e2f02c16-4789-11ea-8d30-f37322cdc9db",
+      "created_at": "2020-02-04T20:06:53.812+00:00"
+    },
+    {
+      "id": "5cd4685d-997e-4220-b961-f51b2a923741",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "44d00102-478c-11ea-b6f4-ffba8f704e29",
+      "created_at": "2020-02-04T20:23:57.025+00:00"
+    },
+    {
+      "id": "5a23dd60-da73-440a-a389-a456056a6c6a",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "fe83d824-4789-11ea-917e-f37322cdc9db",
+      "created_at": "2020-02-04T20:07:40.132+00:00"
+    },
+    {
+      "id": "b3cb57fd-17e1-47bb-9cff-5ef7d31a671c",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "f6804832-478a-11ea-96a1-4d39792cd61a",
+      "created_at": "2020-02-04T20:14:36.158+00:00"
+    },
+    {
+      "id": "1c695b9f-33a9-46f2-886a-78df4ceb2d47",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T17:42:32.439Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Your lease was voided",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "VOID_LEASE_EMAIL_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Lease",
+      "threadId": "4f8e6a0a-f8ee-424f-808c-1a2bcb3c8494",
+      "direction": "out",
+      "messageId": "010001701672408a-e7bc8048-25c2-425d-96fa-d23162dfbfde-000000",
+      "created_at": "2020-02-05T17:42:30.774+00:00"
+    },
+    {
+      "id": "28566944-ce2b-48f5-84fa-021ba2890088",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "882a6068-4797-11ea-b03b-4f9fd09bc2ff",
+      "created_at": "2020-02-04T21:44:34.483+00:00"
+    },
+    {
+      "id": "f7982481-7819-4d9e-803a-7e33838ffcb4",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "35b30634-483f-11ea-b65b-9b28658e0c73",
+      "created_at": "2020-02-05T17:44:51.6+00:00"
+    },
+    {
+      "id": "8fd51386-fe4d-404b-8a4a-62b490634a91",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "49b4ebfa-4797-11ea-ad35-cfdebf2e20e3",
+      "created_at": "2020-02-04T21:42:49.728+00:00"
+    },
+    {
+      "id": "9005b703-2a3a-4280-afca-3fc1eb29b36a",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "duration": "00:39",
+        "isMissed": true,
+        "isVoiceMail": true,
+        "recordingId": "00365782-482a-11ea-b1da-0a7f64511f69",
+        "recordingUrl": "https://media.plivo.com/v1/Account/SAZWY2ODVMNMYWZDMZYT/Recording/00365782-482a-11ea-b1da-0a7f64511f69.mp3",
+        "recordingDuration": "39"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "f3c8352e-4829-11ea-8d18-5f7de82d4339",
+      "created_at": "2020-02-05T15:12:41.639+00:00"
+    },
+    {
+      "id": "a6bc1ec5-98ca-4517-ae4f-28e95b2627d1",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "27d6fe80-4835-11ea-a3b0-f302ce94d4f8",
+      "created_at": "2020-02-05T16:32:53.332+00:00"
+    },
+    {
+      "id": "95ca7dd0-e7f3-4c7a-9761-2622c10417c1",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "4ac1f2c4-4835-11ea-a281-b56e489187d1",
+      "created_at": "2020-02-05T16:33:51.764+00:00"
+    },
+    {
+      "id": "6de26339-7df4-4a7d-9345-e1a83a70151b",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "73e6d994-4835-11ea-bab0-d1e462efc24f",
+      "created_at": "2020-02-05T16:35:01.177+00:00"
+    },
+    {
+      "id": "bb1d4fd2-3770-4768-8236-4e9e03ea8ef3",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "duration": "00:11",
+        "isMissed": true,
+        "isVoiceMail": true,
+        "recordingId": "b089a136-482d-11ea-ae2b-0692d803cfe3",
+        "recordingUrl": "https://media.plivo.com/v1/Account/SAZWY2ODVMNMYWZDMZYT/Recording/b089a136-482d-11ea-ae2b-0692d803cfe3.mp3",
+        "recordingDuration": "11"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "a421e502-482d-11ea-85a6-f3dc4e72dbc5",
+      "created_at": "2020-02-05T15:39:05.995+00:00"
+    },
+    {
+      "id": "2c077ba6-6235-44da-b765-aef9f081b026",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "494a811c-4836-11ea-8f93-3da09c1d93e0",
+      "created_at": "2020-02-05T16:40:59.004+00:00"
+    },
+    {
+      "id": "70c649c0-901b-458d-bca6-99167894c3f6",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "68d04af8-4836-11ea-a374-75df17646824",
+      "created_at": "2020-02-05T16:41:51.898+00:00"
+    },
+    {
+      "id": "10922ac4-91f5-4e52-8ed7-cd0bae1921ac",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "duration": "00:02",
+        "isMissed": true,
+        "isVoiceMail": true,
+        "recordingId": "cf27f0a2-482d-11ea-b279-028a02b1e7e3",
+        "recordingUrl": "https://media.plivo.com/v1/Account/SAZWY2ODVMNMYWZDMZYT/Recording/cf27f0a2-482d-11ea-b279-028a02b1e7e3.mp3",
+        "recordingDuration": "2"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "c31deca8-482d-11ea-8ab0-5510817caa2a",
+      "created_at": "2020-02-05T15:39:57.985+00:00"
+    },
+    {
+      "id": "c9358633-fd6a-4957-93e6-80be89ff7cab",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "1c578ffe-482e-11ea-a032-5510817caa2a",
+      "created_at": "2020-02-05T15:42:27.614+00:00"
+    },
+    {
+      "id": "be7805e1-78da-49ca-8f08-57af84645278",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "c702cc2e-482f-11ea-8693-bdf8311b05b1",
+      "created_at": "2020-02-05T15:54:23.434+00:00"
+    },
+    {
+      "id": "067aa9c3-19fe-4e6a-913a-77d8fbf945de",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "8df26618-4836-11ea-95a5-11ce77baea1f",
+      "created_at": "2020-02-05T16:42:54.146+00:00"
+    },
+    {
+      "id": "fb7c8333-e96c-4944-b958-93b0d3f4684f",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T16:43:40.014Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "text": "\n\nS.A.R.A.H. (SS)\nSelf Actuated Residential Automated Habitat\n\nParkmerced Apartments\n(209) 251-1433\nagents@parkmerced.com\n\nAny views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Employees of the company are expressly required not to make defamatory statements and not to infringe or authorize any infringement of copyright or any other legal right by email communications. Any such communication is contrary to company policy and outside the scope of the employment of the individual concerned. The company will not accept any liability in respect of such communication, and the employee responsible will be personally liable for any damages or other liability arising.",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Contacting you back",
+        "requestQuote": false,
+        "notificationMessage": ""
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "ac0fc28d-c436-4e4e-be4c-386f5631b787",
+      "direction": "out",
+      "messageId": "01000170163c59d6-7c713509-4a3e-4b28-9738-47caad5d94bf-000000",
+      "created_at": "2020-02-05T16:43:38.072+00:00"
+    },
+    {
+      "id": "8e5039de-dc65-4ccc-8b8c-e3c78f50c06f",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T16:44:30.686Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Quote from Parkmerced Apartments",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "QUOTE_EMAIL_SENT_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Quote",
+      "threadId": "cddb3b8f-1a05-46c7-9371-779d0fba6a2d",
+      "direction": "out",
+      "messageId": "01000170163d2050-885bf8d5-b6df-46e4-a20e-d59a4b7b54b4-000000",
+      "created_at": "2020-02-05T16:44:28.858+00:00"
+    },
+    {
+      "id": "cab79f1e-e226-495d-b3ca-d063ec090830",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "b2d08a5a-4836-11ea-a514-8993a8a1f349",
+      "created_at": "2020-02-05T16:43:56.015+00:00"
+    },
+    {
+      "id": "751e7a48-ac6a-42bc-b471-695b15c8ed85",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T16:48:20.404Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Your lease at Parkmerced Apartments for signature",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "SIGN_LEASE_EMAIL_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Lease",
+      "threadId": "38d29a04-a5f5-4179-b876-c18d8261e87c",
+      "direction": "out",
+      "messageId": "010001701640a0f3-cd77a037-707c-4fd2-958e-f7082de105e6-000000",
+      "created_at": "2020-02-05T16:48:18.645+00:00"
+    },
+    {
+      "id": "12bf80ea-c04d-45fa-a956-ae66f5035665",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T17:02:59.292Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Your lease at Parkmerced Apartments has been executed successfully",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "EXECUTED_LEASE_EMAIL_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Lease",
+      "threadId": "db35608c-40e2-48e4-af71-8e40736409ce",
+      "direction": "out",
+      "messageId": "01000170164e0789-1a0c1acf-e662-4066-8436-9548ce8a18c7-000000",
+      "created_at": "2020-02-05T17:02:56.875+00:00"
+    },
+    {
+      "id": "d7b24353-c88e-4378-9c05-fb8e50fba077",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T17:12:00.251Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Your lease was voided",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "VOID_LEASE_EMAIL_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Lease",
+      "threadId": "393fe8a9-6b6c-48ce-9e4b-83404399a7eb",
+      "direction": "out",
+      "messageId": "0100017016564a51-245b0705-4973-4ee1-8266-bef8290365f7-000000",
+      "created_at": "2020-02-05T17:11:58.277+00:00"
+    },
+    {
+      "id": "9a35f505-3605-4111-b964-422ebe00edfa",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T17:25:10.244Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Your lease at Parkmerced Apartments for signature",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "SIGN_LEASE_EMAIL_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Lease",
+      "threadId": "940d95ba-1ec7-4202-90d5-40d42487386c",
+      "direction": "out",
+      "messageId": "01000170166256c0-26e0ab24-33df-47ca-81b5-eca872ac068b-000000",
+      "created_at": "2020-02-05T17:25:07.902+00:00"
+    },
+    {
+      "id": "548c6045-075e-4028-9919-080164991d69",
+      "type": "Call",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": null,
+      "message": {
+        "to": [
+          "12092511433"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "targetName": "Bay Area Call Center",
+        "isCallbackRequested": true
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "User communication",
+      "threadId": "5619e48d0eff94b2b5e1544ed95caebc",
+      "direction": "in",
+      "messageId": "817d3546-483d-11ea-ba37-496dfadc9248",
+      "created_at": "2020-02-05T17:32:39.753+00:00"
+    },
+    {
+      "id": "4876d7cf-8887-481b-a2e6-e42ad95ddd7d",
+      "type": "Email",
+      "teams": [
+        "193b119e-e609-47d1-8be0-d52ed36d2450"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "john@doe.com",
+            "statusDate": "2020-02-05T17:33:48.534Z"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "message": {
+        "to": [
+          "john@doe.com"
+        ],
+        "from": "S.A.R.A.H. (SS) 3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "html": "",
+        "files": [],
+        "unread": false,
+        "replyTo": "3820c5e338ea41289389@rules-test.local.envmail.reva.tech",
+        "subject": "Your lease at Parkmerced Apartments has been executed successfully",
+        "requestQuote": false,
+        "isHtmlContent": true,
+        "notificationMessage": "EXECUTED_LEASE_EMAIL_SUCCESS"
+      },
+      "parties": [
+        "3820c5e3-38ea-4128-9389-088b1a40b052"
+      ],
+      "persons": [
+        "fe00770f-32af-47cb-b830-e24f9e1555bc"
+      ],
+      "category": "Lease",
+      "threadId": "c999ab2b-92e8-4dd3-9521-95a3b714ca29",
+      "direction": "out",
+      "messageId": "01000170166a4191-5617a663-9e5f-4098-9c41-9f3b6a395a1a-000000",
+      "created_at": "2020-02-05T17:33:46.75+00:00"
+    }
+  ],
+  "score": "bronze",
+  "state": "FutureResident",
+  "tasks": [
+    {
+      "id": "bbd843af-4fd2-4741-b632-3529c0faf192",
+      "name": "CALL_BACK",
+      "state": "Completed",
+      "dueDate": "2020-02-05T15:54:45.361+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      ],
+      "category": "User communication",
+      "metadata": {
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T15:54:46.595489+00:00",
+      "updated_at": "2020-02-05T16:33:39.796707+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T16:33:39.8+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "f22ab335-e982-47fd-a224-edec51da3ed7",
+      "name": "Call this guy back",
+      "state": "Completed",
+      "dueDate": "2020-02-07T07:59:59.999+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      ],
+      "category": "Manual",
+      "metadata": {
+        "note": "Call this guy back",
+        "teamId": "193b119e-e609-47d1-8be0-d52ed36d2450",
+        "createdBy": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "closingNote": "",
+        "completedBy": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T16:41:36.027579+00:00",
+      "updated_at": "2020-02-05T16:43:05.89682+00:00",
+      "modified_by": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "completionDate": "2020-02-05T16:43:05.899+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "5889ba76-11fd-4fc2-8474-2a3b05554d54",
+      "name": "REVIEW_APPLICATION",
+      "state": "Completed",
+      "dueDate": "2020-02-05T16:45:25.887+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Application approval",
+      "metadata": {
+        "completedBy": "SYSTEM",
+        "quotePromotions": [
+          "1e558c4c-f240-4e30-8997-9ab4213c463c"
+        ],
+        "originalAssignees": [
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T16:45:26.123813+00:00",
+      "updated_at": "2020-02-05T16:46:47.487119+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T16:46:47.493+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "5089ba05-38e8-4363-a962-9239b8a2e30b",
+      "name": "APPOINTMENT",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:30:00+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      ],
+      "category": "Appointment",
+      "metadata": {
+        "note": "",
+        "teamId": "193b119e-e609-47d1-8be0-d52ed36d2450",
+        "walkin": false,
+        "endDate": "2020-02-05T17:45:00.000Z",
+        "createdBy": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "startDate": "2020-02-05T17:30:00.000Z",
+        "inventories": [],
+        "partyMembers": [
+          "3307341b-89e0-4aa6-96fe-811920e6fb32"
+        ],
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "selectedPropertyId": "92cad3d6-7954-443c-bc66-d7ad4010c183"
+      },
+      "created_at": "2020-02-05T16:33:29.954516+00:00",
+      "updated_at": "2020-02-05T17:34:37.382295+00:00",
+      "modified_by": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "completionDate": "2020-02-05T17:34:37.393+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "edfa7302-00a2-478e-896e-e88b1c772ebc",
+      "name": "SEND_CONTRACT",
+      "state": "Completed",
+      "dueDate": "2020-02-05T16:46:47.361+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Contract signing",
+      "metadata": {
+        "leases": [
+          "0202c7e5-9e82-4d5c-9c30-a58e2c630788"
+        ],
+        "completedBy": "SYSTEM",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T16:46:47.487308+00:00",
+      "updated_at": "2020-02-05T16:48:15.865288+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T16:48:15.868+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "023a8382-6981-4e11-88ea-725dde8a0d9e",
+      "name": "COUNTERSIGN_LEASE",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:01:45.598+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Contract signing",
+      "metadata": {
+        "unique": true,
+        "leaseId": "0202c7e5-9e82-4d5c-9c30-a58e2c630788",
+        "envelopeId": "de44b18d-f60f-4383-a7a0-c8f6a086c7ce",
+        "externalId": "0976d628-36cf-4cd8-81d2-3a433c3c3453",
+        "completedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+        "originalAssignees": [
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:01:45.616039+00:00",
+      "updated_at": "2020-02-05T17:02:53.722244+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:02:53.737+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "f69657ad-3375-4163-bbcd-a9bbcbcbf341",
+      "name": "PROMOTE_APPLICATION",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:11:57.902+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      ],
+      "category": "Application approval",
+      "metadata": {
+        "completedBy": "SYSTEM",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:11:58.031098+00:00",
+      "updated_at": "2020-02-05T17:20:30.053368+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:20:30.06+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "50bbf993-c698-4471-98f9-b4ff30383484",
+      "name": "REVIEW_APPLICATION",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:20:29.962+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Application approval",
+      "metadata": {
+        "completedBy": "SYSTEM",
+        "quotePromotions": [
+          "fe84d2ef-c5a7-4c98-a7a8-b328b1e2224d"
+        ],
+        "originalAssignees": [
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:20:30.055053+00:00",
+      "updated_at": "2020-02-05T17:20:41.306926+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:20:41.319+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "2a1733b9-1d02-446c-b2d7-1996cfccea2d",
+      "name": "SEND_CONTRACT",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:20:41.267+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Contract signing",
+      "metadata": {
+        "leases": [
+          "a67ce1b1-9a43-47a9-b51b-bafae045ac17"
+        ],
+        "completedBy": "SYSTEM",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:20:41.317191+00:00",
+      "updated_at": "2020-02-05T17:25:06.452065+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:25:06.456+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "7d375d12-af19-4008-9d61-a6b195ba1741",
+      "name": "COUNTERSIGN_LEASE",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:31:47.909+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Contract signing",
+      "metadata": {
+        "unique": true,
+        "leaseId": "a67ce1b1-9a43-47a9-b51b-bafae045ac17",
+        "envelopeId": "1434ffd9-776b-4db8-bb0c-50a2a910b6b4",
+        "externalId": "f8bcb58c-10d6-4dfb-a9b8-4ece692d9d7e",
+        "completedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+        "originalAssignees": [
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:31:47.931835+00:00",
+      "updated_at": "2020-02-05T17:33:44.874156+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:33:44.88+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "ff6021a2-9405-43ef-bae7-fc5bbdfdc79a",
+      "name": "PROMOTE_APPLICATION",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:38:18.806+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      ],
+      "category": "Application approval",
+      "metadata": {
+        "completedBy": "SYSTEM",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:38:18.976491+00:00",
+      "updated_at": "2020-02-05T17:39:18.95571+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:39:18.962+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "5c44c4a2-b1a2-4de0-a3be-a76c422fc5b2",
+      "name": "REVIEW_APPLICATION",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:39:18.844+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Application approval",
+      "metadata": {
+        "completedBy": "SYSTEM",
+        "quotePromotions": [
+          "3a8f6353-d78e-411f-90c1-0cd92b1f9949"
+        ],
+        "originalAssignees": [
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:39:18.958855+00:00",
+      "updated_at": "2020-02-05T17:39:30.008499+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:39:30.022+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "21fe6840-b90c-421b-95c7-1794e53f42b7",
+      "name": "SEND_CONTRACT",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:39:29.888+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Contract signing",
+      "metadata": {
+        "leases": [
+          "c046dfe5-7265-42e1-9c8c-62c3215199b9"
+        ],
+        "completedBy": "SYSTEM",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:39:30.013087+00:00",
+      "updated_at": "2020-02-05T17:41:34.473142+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:41:34.477+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "4003459d-5728-4bc9-99aa-2b8b2134101c",
+      "name": "PROMOTE_APPLICATION",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:42:30.47+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      ],
+      "category": "Application approval",
+      "metadata": {
+        "completedBy": "SYSTEM",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:42:30.50575+00:00",
+      "updated_at": "2020-02-05T17:43:26.674712+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:43:26.68+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "24b62473-c1cb-4a96-b9e0-ae0647b3c02c",
+      "name": "REVIEW_APPLICATION",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:43:26.576+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Application approval",
+      "metadata": {
+        "completedBy": "SYSTEM",
+        "quotePromotions": [
+          "ef85b435-81e5-4872-8a15-5317d52457b4"
+        ],
+        "originalAssignees": [
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:43:26.673607+00:00",
+      "updated_at": "2020-02-05T17:43:39.058877+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:43:39.066+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "eda72f31-f07f-43ad-90e8-f813ed51a13b",
+      "name": "SEND_CONTRACT",
+      "state": "Completed",
+      "dueDate": "2020-02-05T17:43:39.039+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Contract signing",
+      "metadata": {
+        "leases": [
+          "41b24b0e-21af-4c44-8aae-49887878a3e8"
+        ],
+        "completedBy": "SYSTEM",
+        "originalAssignees": [
+          "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+          "7c3cfb7c-41d4-405c-8a64-1542221661f4",
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:43:39.072675+00:00",
+      "updated_at": "2020-02-05T17:44:38.588517+00:00",
+      "modified_by": null,
+      "completionDate": "2020-02-05T17:44:38.591+00:00",
+      "createdFromCommId": null
+    },
+    {
+      "id": "1468ed22-7126-41d5-9b69-b9421de6fb55",
+      "name": "COUNTERSIGN_LEASE",
+      "state": "Active",
+      "dueDate": "2020-02-05T17:44:38.591+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "userIds": [
+        "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+        "dac7c095-62bc-410c-b09d-091300e69fdb"
+      ],
+      "category": "Contract signing",
+      "metadata": {
+        "unique": true,
+        "leaseId": "41b24b0e-21af-4c44-8aae-49887878a3e8",
+        "envelopeId": "c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b",
+        "externalId": "a7bd5e62-6b53-421a-8cf5-1a2d2f263504",
+        "originalAssignees": [
+          "b1f441d3-a66f-428a-89b6-0de8347fef1c",
+          "dac7c095-62bc-410c-b09d-091300e69fdb"
+        ],
+        "originalPartyOwner": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+      },
+      "created_at": "2020-02-05T17:44:38.617299+00:00",
+      "updated_at": "2020-02-05T17:44:38.617299+00:00",
+      "modified_by": null,
+      "completionDate": null,
+      "createdFromCommId": null
+    }
+  ],
+  "teams": [
+    "193b119e-e609-47d1-8be0-d52ed36d2450"
+  ],
+  "events": [
+    {
+      "id": "ab1ebfc5-ee43-40fc-ba88-71f8266b5111",
+      "event": "lease_countersigned",
+      "userId": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "metadata": {
+        "leaseId": "41b24b0e-21af-4c44-8aae-49887878a3e8",
+        "inOffice": true,
+        "envelopeId": "c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b",
+        "clientUserId": "CounterSigner1"
+      },
+      "created_at": "2020-02-05T17:45:42.682954+00:00",
+      "requestIds": [
+        "f3873b1d-1ad9-49b1-a482-a4668a699492"
+      ],
+      "updated_at": "2020-02-05T17:45:42.682954+00:00",
+      "partyMemberId": null,
+      "transaction_id": 44319
+    },
+    {
+      "id": "8511a2e4-546d-4d35-a94f-08ef9f3d0f18",
+      "event": "party_state_changed",
+      "userId": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "metadata": {
+        "newState": "FutureResident",
+        "oldState": "Lease"
+      },
+      "created_at": "2020-02-05T17:45:42.682954+00:00",
+      "requestIds": [
+        "f3873b1d-1ad9-49b1-a482-a4668a699492"
+      ],
+      "updated_at": "2020-02-05T17:45:42.682954+00:00",
+      "partyMemberId": null,
+      "transaction_id": 44319
+    },
+    {
+      "id": "5fc971fa-2acd-4a60-a24f-ab57e56da294",
+      "event": "lease_executed",
+      "userId": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "metadata": {
+        "leaseId": "41b24b0e-21af-4c44-8aae-49887878a3e8"
+      },
+      "created_at": "2020-02-05T17:45:42.682954+00:00",
+      "requestIds": [
+        "f3873b1d-1ad9-49b1-a482-a4668a699492"
+      ],
+      "updated_at": "2020-02-05T17:45:42.682954+00:00",
+      "partyMemberId": null,
+      "transaction_id": 44319
+    }
+  ],
+  "leases": [
+    {
+      "id": "41b24b0e-21af-4c44-8aae-49887878a3e8",
+      "status": "executed",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "external": {},
+      "signDate": "2020-02-05T17:45:43.031+00:00",
+      "created_at": "2020-02-05T17:43:38.681+00:00",
+      "signatures": [
+        {
+          "id": "0b2e329f-91e0-4917-b7d9-a7ffce39f6af",
+          "status": "signed",
+          "userId": null,
+          "leaseId": "41b24b0e-21af-4c44-8aae-49887878a3e8",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b/sign/Resident1",
+          "metadata": {
+            "email": "inofficesigner@docusign.com",
+            "token": "https://rules-test.local.env.reva.tech/leases/c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b/sign/Resident1",
+            "status": "Sent",
+            "signDate": "2020-02-05T17:44:38.226Z",
+            "userName": "John Doe",
+            "recipientId": "bb7e2f7a-1c3a-4558-ab77-8585ddd7b1bd",
+            "clientUserId": "Resident1",
+            "counterSigner": false
+          },
+          "created_at": "2020-02-05T17:43:52.442+00:00",
+          "envelopeId": "c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b",
+          "updated_at": "2020-02-05T17:44:38.222516+00:00",
+          "clientUserId": "Resident1",
+          "partyMemberId": "3307341b-89e0-4aa6-96fe-811920e6fb32"
+        },
+        {
+          "id": "daa23b9b-b996-4cfd-848a-33390e64a987",
+          "status": "signed",
+          "userId": "dac7c095-62bc-410c-b09d-091300e69fdb",
+          "leaseId": "41b24b0e-21af-4c44-8aae-49887878a3e8",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b/sign/CounterSigner1",
+          "metadata": {
+            "email": "sarah@reva.tech",
+            "token": "https://rules-test.local.env.reva.tech/leases/c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b/sign/CounterSigner1",
+            "status": "Created",
+            "signDate": "2020-02-05T17:45:42.692Z",
+            "userName": "S.A.R.A.H. (SS)",
+            "recipientId": "55cf462b-a35f-4a6f-8a34-056cd6f5ca4c",
+            "clientUserId": "CounterSigner1",
+            "counterSigner": true
+          },
+          "created_at": "2020-02-05T17:43:52.442+00:00",
+          "envelopeId": "c7b1d17e-67d0-4ebf-9b5e-030c5e687c2b",
+          "updated_at": "2020-02-05T17:45:42.682954+00:00",
+          "clientUserId": "CounterSigner1",
+          "partyMemberId": null
+        }
+      ],
+      "updated_at": "2020-02-05T17:45:42.682954+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "baselineData": {
+        "pets": [],
+        "quote": {
+          "nsfFee": 75,
+          "petFee": 0,
+          "lateFee": 75,
+          "petRent": 0,
+          "adminFee": 0,
+          "unitName": "350 Arballo-1015",
+          "unitRent": 3838,
+          "leaseTerm": "24 months",
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "moveInRent": 3308.62,
+          "petDeposit": 0,
+          "rentDueDay": "first (1st)",
+          "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c",
+          "leaseLength": 24,
+          "monthlyRate": 3838,
+          "totalPetFee": 0,
+          "unitAddress": "3711-101 19th Ave, Unit 1015, San Francisco, CA 94132",
+          "unitDeposit": 3838,
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "propertyName": "Parkmerced Apartments",
+          "totalPetRent": 0,
+          "inventoryType": "unit",
+          "moveInPetRent": 0,
+          "parkingSpaces": [],
+          "propertyPhone": "(415) 405-4690",
+          "storageSpaces": [
+            {
+              "marketRent": 0,
+              "displayName": "Locker",
+              "complimentary": false
+            }
+          ],
+          "barbecuePolicy": "",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "otherLeaseTerm": 24,
+          "totalUpcharges": 0,
+          "buildingAddress": "3711-101 19th Ave, San Francisco, CA 94132",
+          "petRentQuantity": 0,
+          "propertyAddress": "3711 19th Ave, San Francisco, CA 94132",
+          "recurrenceCount": 2,
+          "totalPetDeposit": 0,
+          "numberOfBedrooms": "2BR",
+          "serviceAnimalFee": 0,
+          "totalHoldDeposit": 0,
+          "totalMonthlyRent": 3918,
+          "totalParkingRent": 0,
+          "totalStorageRent": 0,
+          "asbestosLocations": "in the tile floors on the second through top floors, halls and elevators of all the high-rise apartment buildings; insulation on the piping and heaters in the boiler rooms, laundry rooms and in the basement hallways; insulation for the heating system duct work in garden apartments in the heater closets; and in some apartment kitchen floor coverings",
+          "moveinRentEndDate": "2020-02-29T00:00:00-08:00",
+          "serviceAnimalRent": 0,
+          "otherLeaseTermFlag": "X",
+          "totalMoveInCharges": 3906.9700000000003,
+          "totalAdditionalRent": 80,
+          "totalUtilityCharges": 0,
+          "accountActivationFee": 0,
+          "applicationFeeAmount": 50,
+          "moveinAdditionalRent": 68.97,
+          "concessionInstallment": 319.8333333333333,
+          "hasOneTimeConcessions": "",
+          "serviceAnimalQuantity": 0,
+          "unitFullQualifiedName": "swparkme-350 Arballo-1015",
+          "concessionsDescription": [
+            "Recurring concession from Feb 2020 through Apr 2020"
+          ],
+          "concessionsAmountPeriod": [
+            "Resident shall receive a prorated concession of $3,838.00 per month off the rent from Feb 2020 through Apr 2020."
+          ],
+          "hasRecurringConcessions": "X",
+          "subTotalOfMoveinCharges": 3906.9700000000003,
+          "monthToMonthLeaseTermFlag": "",
+          "totalPetOneTimeServiceFee": 0,
+          "accept12MonthLeaseTermFlag": "",
+          "reject12MonthLeaseTermFlag": "X",
+          "totalPetDNARegistrationFee": 0,
+          "oneTimeTotalConcessionAmount": 0,
+          "recurringTotalConcessionAmount": 7676,
+          "totalConcessionOnMoveinCharges": 3308.62
+        },
+        "hasPets": false,
+        "children": [],
+        "timezone": "America/Los_Angeles",
+        "vehicles": [],
+        "documents": {
+          "08BA44B0-0631-4713-9DA3-36B381A0FAE2": {
+            "formId": "1299",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 2,
+            "isIncluded": true,
+            "displayName": "Because We Care Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "13B26F35-ACB0-457B-844C-D1FE33D9DDA2": {
+            "formId": "1358",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 9,
+            "isIncluded": true,
+            "displayName": "Move-in_Move-out Itemized Statement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "322E0F74-0F1E-4C12-B63C-45A936F2F89E": {
+            "formId": "1304",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 7,
+            "displayName": "Guarantee of Lease",
+            "guarantorOnly": true,
+            "marinCountyTenantRights": false
+          },
+          "34D416AA-6647-4401-8D43-E090C4051C6E": {
+            "formId": "1351",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 5,
+            "isIncluded": true,
+            "displayName": "Equipment Release Form Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "482E4BC4-8D01-455C-B389-D6117FE3E40A": {
+            "formId": "1319",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 18,
+            "isIncluded": true,
+            "displayName": "Utility Provider Information Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "49B512D5-27F2-42FB-A5E7-0CE337EF47FE": {
+            "formId": "1308",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 11,
+            "isIncluded": "Pet Agreement Addendum",
+            "displayName": "Pet Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "584F2570-E04E-4662-8F5D-21F8CE34C595": {
+            "formId": "1322",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 1,
+            "isIncluded": true,
+            "displayName": "Acknowledgement for Work on Premises Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "58CA9929-2EC7-49F7-A9DA-C86BCB71EAC8": {
+            "formId": "1350",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 4,
+            "isIncluded": true,
+            "displayName": "Community Standards Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "69904380-F154-4144-9DAF-1869B5A15A59": {
+            "formId": "1307",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 10,
+            "isIncluded": true,
+            "displayName": "Parking Policies and Vehicle Identification Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "6EF73620-6D66-4BB0-B7C5-33330AE6D103": {
+            "formId": "1354",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 6,
+            "isIncluded": true,
+            "displayName": "Facts About Renters Insurance Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "7FBC71FE-2549-4365-8112-3B99A32D5DB6": {
+            "formId": "1353",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 17,
+            "isIncluded": true,
+            "displayName": "Storage Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "858CE17D-288B-46D6-A30A-11A845B347C9": {
+            "formId": "1360",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 15,
+            "isIncluded": true,
+            "displayName": "Security Deposit Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A024F8C5-2B9F-418C-8EE3-F5B04EF03921": {
+            "formId": "1305",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 8,
+            "isIncluded": true,
+            "displayName": "Lessee Security Notice and Acknowledgment Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A0479E67-FED1-4723-A424-3CCD683020F0": {
+            "formId": "1313",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 14,
+            "isIncluded": true,
+            "displayName": "Rent Concession Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A298D40A-9B19-4E39-8F62-75E09EE876F0": {
+            "formId": "1352",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 13,
+            "isIncluded": true,
+            "displayName": "Recreational Facility Regulations",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A7CCAB8E-DBF8-4D05-AA71-7B19B105B684": {
+            "formId": "1309",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 12,
+            "isIncluded": true,
+            "displayName": "Proposition 65 Fact Sheet Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "CC47BF3C-49B9-4482-9697-A42BB5DF7DAC": {
+            "formId": "1320",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 19,
+            "isIncluded": true,
+            "displayName": "Ventilation Instructions and Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D24ABD28-2BF8-469C-BD71-C280E7405E11": {
+            "formId": "1316",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 16,
+            "isIncluded": true,
+            "displayName": "Smoke Free Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D8A2885B-4221-490D-9F3C-F562E78491B7": {
+            "formId": "1300",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 3,
+            "isIncluded": true,
+            "displayName": "Community Policies Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "FDB70DE1-771E-4704-8F2E-67F283C71B45": {
+            "formId": "1349",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": true,
+            "mandatory": false,
+            "sortOrder": 0,
+            "isIncluded": true,
+            "displayName": "Cove -- Core Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          }
+        },
+        "occupants": [],
+        "residents": [
+          {
+            "id": "3307341b-89e0-4aa6-96fe-811920e6fb32",
+            "name": "John Doe",
+            "email": "john@doe.com",
+            "phone1": "16502736663",
+            "location": ""
+          }
+        ],
+        "guarantors": [],
+        "companyName": "",
+        "propertyName": "swparkme",
+        "hasConcessions": true,
+        "isRenewalLease": false,
+        "publishedLease": {
+          "unitRent": 3838,
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "termLength": 24,
+          "concessions": {
+            "68fd64f4-4d93-4d7e-99a3-586932d0768c": {
+              "amount": 7676,
+              "relativeAmount": 3838
+            }
+          },
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "oneTimeCharges": {
+            "89767f12-64b1-4f4c-a375-ac248228ed10": {
+              "name": "Unit Deposit",
+              "amount": 3838,
+              "feeType": "deposit",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Security deposit",
+              "quoteSectionName": "deposit"
+            }
+          },
+          "additionalCharges": {
+            "53414a61-182a-468a-8386-afa9768bb22e": {
+              "name": "Trash",
+              "amount": 20,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Trash",
+              "quoteSectionName": "utility"
+            },
+            "8a8e479c-be5c-4357-a2e6-abbe24b34b41": {
+              "name": "Sewer",
+              "amount": 10,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Sewer",
+              "quoteSectionName": "utility"
+            },
+            "8de8017f-d82c-4be6-aea1-5546d3cc8f79": {
+              "name": "ComplimentaryLocker",
+              "amount": 0,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Locker",
+              "quoteSectionName": "storage"
+            },
+            "c9771ef7-8492-4c7f-96ad-1ba7153ed582": {
+              "name": "Water",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Water",
+              "quoteSectionName": "utility"
+            },
+            "fa555130-6063-4087-8e97-ac49b0092842": {
+              "name": "Gas",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Gas",
+              "quoteSectionName": "utility"
+            },
+            "073e9e71-03e4-4026-8d5c-55a1d761d641--accf0e3a-06f9-438b-bc10-bf04dc292a22": {
+              "amount": 0,
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Door Fob",
+              "quoteSectionName": "appliance",
+              "selectedInventories": [
+                {
+                  "id": "f0764009-ce39-47bb-bad5-30754f6e5cdf",
+                  "marketRent": "0.00",
+                  "buildingText": "Door Fob 1"
+                }
+              ]
+            }
+          },
+          "rentersInsuranceFacts": "buyInsuranceFlag"
+        },
+        "buyInsuranceFlag": "X",
+        "isCorporateParty": false,
+        "officeWorkingTime": {
+          "officeDays1": "Mon - Fri",
+          "officeDays2": "Sat",
+          "officeDays3": "",
+          "officeHours1": "9am - 6pm",
+          "officeHours2": "",
+          "officeHours3": ""
+        },
+        "waterProvidedFlag": "",
+        "cableTvProvidedFlag": "",
+        "utilityAddendumFlag": "",
+        "waterSubmeteredFlag": "X",
+        "additionalConditions": {
+          "additionalNotes": "",
+          "additionalDeposit": false,
+          "additionalDepositAmount": 5757
+        },
+        "internetProvidedFlag": "",
+        "leadDisclosureClause": "",
+        "submeterAddendumFlag": "",
+        "naturalGasProvidedFlag": "",
+        "takeOwnerInsuranceFlag": "",
+        "countersignerDescriptor": "Owner or Owner's Representative",
+        "electricityProvidedFlag": "",
+        "naturalGasSubmeteredFlag": "",
+        "electricitySubmeteredFlag": ""
+      },
+      "externalLeaseId": null,
+      "leaseTemplateId": "24ee96b7-4cb1-4e8b-9033-620326ee8489"
+    },
+    {
+      "id": "0202c7e5-9e82-4d5c-9c30-a58e2c630788",
+      "status": "voided",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "external": {},
+      "signDate": "2020-02-05T17:02:53.366+00:00",
+      "created_at": "2020-02-05T16:46:47.077+00:00",
+      "signatures": [
+        {
+          "id": "9a29f66d-563e-4db7-8060-15f241bb93fd",
+          "status": "voided",
+          "userId": null,
+          "leaseId": "0202c7e5-9e82-4d5c-9c30-a58e2c630788",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/de44b18d-f60f-4383-a7a0-c8f6a086c7ce/sign/Resident1",
+          "metadata": {
+            "email": "inofficesigner@docusign.com",
+            "token": "https://rules-test.local.env.reva.tech/leases/de44b18d-f60f-4383-a7a0-c8f6a086c7ce/sign/Resident1",
+            "status": "Sent",
+            "signDate": "2020-02-05T17:01:45.347Z",
+            "userName": "John Doe",
+            "recipientId": "e8de83ea-6823-4d5f-9ccf-ccd81f268895",
+            "clientUserId": "Resident1",
+            "counterSigner": false
+          },
+          "created_at": "2020-02-05T16:48:06.61+00:00",
+          "envelopeId": "de44b18d-f60f-4383-a7a0-c8f6a086c7ce",
+          "updated_at": "2020-02-05T17:11:57.539059+00:00",
+          "clientUserId": "Resident1",
+          "partyMemberId": "3307341b-89e0-4aa6-96fe-811920e6fb32"
+        },
+        {
+          "id": "066697df-5aa2-46da-853c-51ce70c4eb05",
+          "status": "voided",
+          "userId": "dac7c095-62bc-410c-b09d-091300e69fdb",
+          "leaseId": "0202c7e5-9e82-4d5c-9c30-a58e2c630788",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/de44b18d-f60f-4383-a7a0-c8f6a086c7ce/sign/CounterSigner1",
+          "metadata": {
+            "email": "sarah@reva.tech",
+            "token": "https://rules-test.local.env.reva.tech/leases/de44b18d-f60f-4383-a7a0-c8f6a086c7ce/sign/CounterSigner1",
+            "status": "Created",
+            "signDate": "2020-02-05T17:02:53.149Z",
+            "userName": "S.A.R.A.H. (SS)",
+            "recipientId": "0a180786-90be-43cf-abf9-bbd6a9218151",
+            "clientUserId": "CounterSigner1",
+            "counterSigner": true
+          },
+          "created_at": "2020-02-05T16:48:06.61+00:00",
+          "envelopeId": "de44b18d-f60f-4383-a7a0-c8f6a086c7ce",
+          "updated_at": "2020-02-05T17:11:57.539059+00:00",
+          "clientUserId": "CounterSigner1",
+          "partyMemberId": null
+        }
+      ],
+      "updated_at": "2020-02-05T17:11:57.539059+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "baselineData": {
+        "pets": [],
+        "quote": {
+          "nsfFee": 75,
+          "petFee": 0,
+          "lateFee": 75,
+          "petRent": 0,
+          "adminFee": 0,
+          "unitName": "350 Arballo-1015",
+          "unitRent": 3838,
+          "leaseTerm": "24 months",
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "moveInRent": 3308.62,
+          "petDeposit": 0,
+          "rentDueDay": "first (1st)",
+          "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c",
+          "leaseLength": 24,
+          "monthlyRate": 3838,
+          "totalPetFee": 0,
+          "unitAddress": "3711-101 19th Ave, Unit 1015, San Francisco, CA 94132",
+          "unitDeposit": 3838,
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "propertyName": "Parkmerced Apartments",
+          "totalPetRent": 0,
+          "inventoryType": "unit",
+          "moveInPetRent": 0,
+          "parkingSpaces": [],
+          "propertyPhone": "(415) 405-4690",
+          "storageSpaces": [
+            {
+              "marketRent": 0,
+              "displayName": "Locker",
+              "complimentary": false
+            }
+          ],
+          "barbecuePolicy": "",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "otherLeaseTerm": 24,
+          "totalUpcharges": 0,
+          "buildingAddress": "3711-101 19th Ave, San Francisco, CA 94132",
+          "petRentQuantity": 0,
+          "propertyAddress": "3711 19th Ave, San Francisco, CA 94132",
+          "recurrenceCount": 2,
+          "totalPetDeposit": 0,
+          "numberOfBedrooms": "2BR",
+          "serviceAnimalFee": 0,
+          "totalHoldDeposit": 0,
+          "totalMonthlyRent": 3918,
+          "totalParkingRent": 0,
+          "totalStorageRent": 0,
+          "asbestosLocations": "in the tile floors on the second through top floors, halls and elevators of all the high-rise apartment buildings; insulation on the piping and heaters in the boiler rooms, laundry rooms and in the basement hallways; insulation for the heating system duct work in garden apartments in the heater closets; and in some apartment kitchen floor coverings",
+          "moveinRentEndDate": "2020-02-29T00:00:00-08:00",
+          "serviceAnimalRent": 0,
+          "otherLeaseTermFlag": "X",
+          "totalMoveInCharges": 3906.9700000000003,
+          "totalAdditionalRent": 80,
+          "totalUtilityCharges": 0,
+          "accountActivationFee": 0,
+          "applicationFeeAmount": 50,
+          "moveinAdditionalRent": 68.97,
+          "concessionInstallment": 319.8333333333333,
+          "hasOneTimeConcessions": "",
+          "serviceAnimalQuantity": 0,
+          "unitFullQualifiedName": "swparkme-350 Arballo-1015",
+          "concessionsDescription": [
+            "Recurring concession from Feb 2020 through Apr 2020"
+          ],
+          "concessionsAmountPeriod": [
+            "Resident shall receive a prorated concession of $3,838.00 per month off the rent from Feb 2020 through Apr 2020."
+          ],
+          "hasRecurringConcessions": "X",
+          "subTotalOfMoveinCharges": 3906.9700000000003,
+          "monthToMonthLeaseTermFlag": "",
+          "totalPetOneTimeServiceFee": 0,
+          "accept12MonthLeaseTermFlag": "",
+          "reject12MonthLeaseTermFlag": "X",
+          "totalPetDNARegistrationFee": 0,
+          "oneTimeTotalConcessionAmount": 0,
+          "recurringTotalConcessionAmount": 7676,
+          "totalConcessionOnMoveinCharges": 3308.62
+        },
+        "hasPets": false,
+        "children": [],
+        "timezone": "America/Los_Angeles",
+        "vehicles": [],
+        "documents": {
+          "08BA44B0-0631-4713-9DA3-36B381A0FAE2": {
+            "formId": "1299",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 2,
+            "isIncluded": true,
+            "displayName": "Because We Care Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "13B26F35-ACB0-457B-844C-D1FE33D9DDA2": {
+            "formId": "1358",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 9,
+            "isIncluded": true,
+            "displayName": "Move-in_Move-out Itemized Statement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "322E0F74-0F1E-4C12-B63C-45A936F2F89E": {
+            "formId": "1304",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 7,
+            "displayName": "Guarantee of Lease",
+            "guarantorOnly": true,
+            "marinCountyTenantRights": false
+          },
+          "34D416AA-6647-4401-8D43-E090C4051C6E": {
+            "formId": "1351",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 5,
+            "isIncluded": true,
+            "displayName": "Equipment Release Form Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "482E4BC4-8D01-455C-B389-D6117FE3E40A": {
+            "formId": "1319",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 18,
+            "isIncluded": true,
+            "displayName": "Utility Provider Information Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "49B512D5-27F2-42FB-A5E7-0CE337EF47FE": {
+            "formId": "1308",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 11,
+            "isIncluded": "Pet Agreement Addendum",
+            "displayName": "Pet Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "584F2570-E04E-4662-8F5D-21F8CE34C595": {
+            "formId": "1322",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 1,
+            "isIncluded": true,
+            "displayName": "Acknowledgement for Work on Premises Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "58CA9929-2EC7-49F7-A9DA-C86BCB71EAC8": {
+            "formId": "1350",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 4,
+            "isIncluded": true,
+            "displayName": "Community Standards Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "69904380-F154-4144-9DAF-1869B5A15A59": {
+            "formId": "1307",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 10,
+            "isIncluded": true,
+            "displayName": "Parking Policies and Vehicle Identification Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "6EF73620-6D66-4BB0-B7C5-33330AE6D103": {
+            "formId": "1354",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 6,
+            "isIncluded": true,
+            "displayName": "Facts About Renters Insurance Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "7FBC71FE-2549-4365-8112-3B99A32D5DB6": {
+            "formId": "1353",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 17,
+            "isIncluded": true,
+            "displayName": "Storage Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "858CE17D-288B-46D6-A30A-11A845B347C9": {
+            "formId": "1360",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 15,
+            "isIncluded": true,
+            "displayName": "Security Deposit Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A024F8C5-2B9F-418C-8EE3-F5B04EF03921": {
+            "formId": "1305",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 8,
+            "isIncluded": true,
+            "displayName": "Lessee Security Notice and Acknowledgment Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A0479E67-FED1-4723-A424-3CCD683020F0": {
+            "formId": "1313",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 14,
+            "isIncluded": true,
+            "displayName": "Rent Concession Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A298D40A-9B19-4E39-8F62-75E09EE876F0": {
+            "formId": "1352",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 13,
+            "isIncluded": true,
+            "displayName": "Recreational Facility Regulations",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A7CCAB8E-DBF8-4D05-AA71-7B19B105B684": {
+            "formId": "1309",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 12,
+            "isIncluded": true,
+            "displayName": "Proposition 65 Fact Sheet Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "CC47BF3C-49B9-4482-9697-A42BB5DF7DAC": {
+            "formId": "1320",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 19,
+            "isIncluded": true,
+            "displayName": "Ventilation Instructions and Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D24ABD28-2BF8-469C-BD71-C280E7405E11": {
+            "formId": "1316",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 16,
+            "isIncluded": true,
+            "displayName": "Smoke Free Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D8A2885B-4221-490D-9F3C-F562E78491B7": {
+            "formId": "1300",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 3,
+            "isIncluded": true,
+            "displayName": "Community Policies Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "FDB70DE1-771E-4704-8F2E-67F283C71B45": {
+            "formId": "1349",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": true,
+            "mandatory": false,
+            "sortOrder": 0,
+            "isIncluded": true,
+            "displayName": "Cove -- Core Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          }
+        },
+        "occupants": [],
+        "residents": [
+          {
+            "id": "3307341b-89e0-4aa6-96fe-811920e6fb32",
+            "name": "John Doe",
+            "email": "john@doe.com",
+            "phone1": "16502736663",
+            "location": ""
+          }
+        ],
+        "guarantors": [],
+        "companyName": "",
+        "propertyName": "swparkme",
+        "hasConcessions": true,
+        "isRenewalLease": false,
+        "publishedLease": {
+          "unitRent": 3838,
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "termLength": 24,
+          "concessions": {
+            "68fd64f4-4d93-4d7e-99a3-586932d0768c": {
+              "amount": 7676,
+              "relativeAmount": 3838
+            }
+          },
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "oneTimeCharges": {
+            "89767f12-64b1-4f4c-a375-ac248228ed10": {
+              "name": "Unit Deposit",
+              "amount": 3838,
+              "feeType": "deposit",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Security deposit",
+              "quoteSectionName": "deposit"
+            }
+          },
+          "additionalCharges": {
+            "53414a61-182a-468a-8386-afa9768bb22e": {
+              "name": "Trash",
+              "amount": 20,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Trash",
+              "quoteSectionName": "utility"
+            },
+            "8a8e479c-be5c-4357-a2e6-abbe24b34b41": {
+              "name": "Sewer",
+              "amount": 10,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Sewer",
+              "quoteSectionName": "utility"
+            },
+            "8de8017f-d82c-4be6-aea1-5546d3cc8f79": {
+              "name": "ComplimentaryLocker",
+              "amount": 0,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Locker",
+              "quoteSectionName": "storage"
+            },
+            "c9771ef7-8492-4c7f-96ad-1ba7153ed582": {
+              "name": "Water",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Water",
+              "quoteSectionName": "utility"
+            },
+            "fa555130-6063-4087-8e97-ac49b0092842": {
+              "name": "Gas",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Gas",
+              "quoteSectionName": "utility"
+            },
+            "073e9e71-03e4-4026-8d5c-55a1d761d641--accf0e3a-06f9-438b-bc10-bf04dc292a22": {
+              "amount": 0,
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Door Fob",
+              "quoteSectionName": "appliance",
+              "selectedInventories": [
+                {
+                  "id": "f0764009-ce39-47bb-bad5-30754f6e5cdf",
+                  "marketRent": "0.00",
+                  "buildingText": "Door Fob 1"
+                }
+              ]
+            }
+          },
+          "rentersInsuranceFacts": "buyInsuranceFlag"
+        },
+        "buyInsuranceFlag": "X",
+        "isCorporateParty": false,
+        "officeWorkingTime": {
+          "officeDays1": "Mon - Fri",
+          "officeDays2": "Sat",
+          "officeDays3": "",
+          "officeHours1": "9am - 6pm",
+          "officeHours2": "",
+          "officeHours3": ""
+        },
+        "waterProvidedFlag": "",
+        "cableTvProvidedFlag": "",
+        "utilityAddendumFlag": "",
+        "waterSubmeteredFlag": "X",
+        "additionalConditions": {
+          "additionalNotes": "",
+          "additionalDeposit": false,
+          "additionalDepositAmount": 5757
+        },
+        "internetProvidedFlag": "",
+        "leadDisclosureClause": "",
+        "submeterAddendumFlag": "",
+        "naturalGasProvidedFlag": "",
+        "takeOwnerInsuranceFlag": "",
+        "countersignerDescriptor": "Owner or Owner's Representative",
+        "electricityProvidedFlag": "",
+        "naturalGasSubmeteredFlag": "",
+        "electricitySubmeteredFlag": ""
+      },
+      "externalLeaseId": null,
+      "leaseTemplateId": "24ee96b7-4cb1-4e8b-9033-620326ee8489"
+    },
+    {
+      "id": "a67ce1b1-9a43-47a9-b51b-bafae045ac17",
+      "status": "voided",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "external": {},
+      "signDate": "2020-02-05T17:33:44.526+00:00",
+      "created_at": "2020-02-05T17:20:40.887+00:00",
+      "signatures": [
+        {
+          "id": "1bdff4b9-73de-4c48-ab74-008f29b0777f",
+          "status": "voided",
+          "userId": null,
+          "leaseId": "a67ce1b1-9a43-47a9-b51b-bafae045ac17",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/1434ffd9-776b-4db8-bb0c-50a2a910b6b4/sign/Resident1",
+          "metadata": {
+            "email": "inofficesigner@docusign.com",
+            "token": "https://rules-test.local.env.reva.tech/leases/1434ffd9-776b-4db8-bb0c-50a2a910b6b4/sign/Resident1",
+            "status": "Sent",
+            "signDate": "2020-02-05T17:31:47.369Z",
+            "userName": "John Doe",
+            "recipientId": "553984b1-fb74-4883-b323-62463605ca42",
+            "clientUserId": "Resident1",
+            "counterSigner": false
+          },
+          "created_at": "2020-02-05T17:25:00.561+00:00",
+          "envelopeId": "1434ffd9-776b-4db8-bb0c-50a2a910b6b4",
+          "updated_at": "2020-02-05T17:38:18.318926+00:00",
+          "clientUserId": "Resident1",
+          "partyMemberId": "3307341b-89e0-4aa6-96fe-811920e6fb32"
+        },
+        {
+          "id": "4798950a-26f0-43cd-bf2e-402b232a818d",
+          "status": "voided",
+          "userId": "dac7c095-62bc-410c-b09d-091300e69fdb",
+          "leaseId": "a67ce1b1-9a43-47a9-b51b-bafae045ac17",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/1434ffd9-776b-4db8-bb0c-50a2a910b6b4/sign/CounterSigner1",
+          "metadata": {
+            "email": "sarah@reva.tech",
+            "token": "https://rules-test.local.env.reva.tech/leases/1434ffd9-776b-4db8-bb0c-50a2a910b6b4/sign/CounterSigner1",
+            "status": "Created",
+            "signDate": "2020-02-05T17:33:44.339Z",
+            "userName": "S.A.R.A.H. (SS)",
+            "recipientId": "7ac6df5e-1ca1-4b7c-a89a-64b30c43fbdc",
+            "clientUserId": "CounterSigner1",
+            "counterSigner": true
+          },
+          "created_at": "2020-02-05T17:25:00.561+00:00",
+          "envelopeId": "1434ffd9-776b-4db8-bb0c-50a2a910b6b4",
+          "updated_at": "2020-02-05T17:38:18.318926+00:00",
+          "clientUserId": "CounterSigner1",
+          "partyMemberId": null
+        }
+      ],
+      "updated_at": "2020-02-05T17:38:18.318926+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "baselineData": {
+        "pets": [],
+        "quote": {
+          "nsfFee": 75,
+          "petFee": 0,
+          "lateFee": 75,
+          "petRent": 0,
+          "adminFee": 0,
+          "unitName": "350 Arballo-1015",
+          "unitRent": 3838,
+          "leaseTerm": "24 months",
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "moveInRent": 3308.62,
+          "petDeposit": 0,
+          "rentDueDay": "first (1st)",
+          "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c",
+          "leaseLength": 24,
+          "monthlyRate": 3838,
+          "totalPetFee": 0,
+          "unitAddress": "3711-101 19th Ave, Unit 1015, San Francisco, CA 94132",
+          "unitDeposit": 3838,
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "propertyName": "Parkmerced Apartments",
+          "totalPetRent": 0,
+          "inventoryType": "unit",
+          "moveInPetRent": 0,
+          "parkingSpaces": [],
+          "propertyPhone": "(415) 405-4690",
+          "storageSpaces": [
+            {
+              "marketRent": 0,
+              "displayName": "Locker",
+              "complimentary": false
+            }
+          ],
+          "barbecuePolicy": "",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "otherLeaseTerm": 24,
+          "totalUpcharges": 0,
+          "buildingAddress": "3711-101 19th Ave, San Francisco, CA 94132",
+          "petRentQuantity": 0,
+          "propertyAddress": "3711 19th Ave, San Francisco, CA 94132",
+          "recurrenceCount": 2,
+          "totalPetDeposit": 0,
+          "numberOfBedrooms": "2BR",
+          "serviceAnimalFee": 0,
+          "totalHoldDeposit": 0,
+          "totalMonthlyRent": 3918,
+          "totalParkingRent": 0,
+          "totalStorageRent": 0,
+          "asbestosLocations": "in the tile floors on the second through top floors, halls and elevators of all the high-rise apartment buildings; insulation on the piping and heaters in the boiler rooms, laundry rooms and in the basement hallways; insulation for the heating system duct work in garden apartments in the heater closets; and in some apartment kitchen floor coverings",
+          "moveinRentEndDate": "2020-02-29T00:00:00-08:00",
+          "serviceAnimalRent": 0,
+          "otherLeaseTermFlag": "X",
+          "totalMoveInCharges": 3906.9700000000003,
+          "totalAdditionalRent": 80,
+          "totalUtilityCharges": 0,
+          "accountActivationFee": 0,
+          "applicationFeeAmount": 50,
+          "moveinAdditionalRent": 68.97,
+          "concessionInstallment": 319.8333333333333,
+          "hasOneTimeConcessions": "",
+          "serviceAnimalQuantity": 0,
+          "unitFullQualifiedName": "swparkme-350 Arballo-1015",
+          "concessionsDescription": [
+            "Recurring concession from Feb 2020 through Apr 2020"
+          ],
+          "concessionsAmountPeriod": [
+            "Resident shall receive a prorated concession of $3,838.00 per month off the rent from Feb 2020 through Apr 2020."
+          ],
+          "hasRecurringConcessions": "X",
+          "subTotalOfMoveinCharges": 3906.9700000000003,
+          "monthToMonthLeaseTermFlag": "",
+          "totalPetOneTimeServiceFee": 0,
+          "accept12MonthLeaseTermFlag": "",
+          "reject12MonthLeaseTermFlag": "X",
+          "totalPetDNARegistrationFee": 0,
+          "oneTimeTotalConcessionAmount": 0,
+          "recurringTotalConcessionAmount": 7676,
+          "totalConcessionOnMoveinCharges": 3308.62
+        },
+        "hasPets": false,
+        "children": [],
+        "timezone": "America/Los_Angeles",
+        "vehicles": [],
+        "documents": {
+          "08BA44B0-0631-4713-9DA3-36B381A0FAE2": {
+            "formId": "1299",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 2,
+            "isIncluded": true,
+            "displayName": "Because We Care Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "13B26F35-ACB0-457B-844C-D1FE33D9DDA2": {
+            "formId": "1358",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 9,
+            "isIncluded": true,
+            "displayName": "Move-in_Move-out Itemized Statement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "322E0F74-0F1E-4C12-B63C-45A936F2F89E": {
+            "formId": "1304",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 7,
+            "displayName": "Guarantee of Lease",
+            "guarantorOnly": true,
+            "marinCountyTenantRights": false
+          },
+          "34D416AA-6647-4401-8D43-E090C4051C6E": {
+            "formId": "1351",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 5,
+            "isIncluded": true,
+            "displayName": "Equipment Release Form Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "482E4BC4-8D01-455C-B389-D6117FE3E40A": {
+            "formId": "1319",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 18,
+            "isIncluded": true,
+            "displayName": "Utility Provider Information Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "49B512D5-27F2-42FB-A5E7-0CE337EF47FE": {
+            "formId": "1308",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 11,
+            "isIncluded": "Pet Agreement Addendum",
+            "displayName": "Pet Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "584F2570-E04E-4662-8F5D-21F8CE34C595": {
+            "formId": "1322",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 1,
+            "isIncluded": true,
+            "displayName": "Acknowledgement for Work on Premises Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "58CA9929-2EC7-49F7-A9DA-C86BCB71EAC8": {
+            "formId": "1350",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 4,
+            "isIncluded": true,
+            "displayName": "Community Standards Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "69904380-F154-4144-9DAF-1869B5A15A59": {
+            "formId": "1307",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 10,
+            "isIncluded": true,
+            "displayName": "Parking Policies and Vehicle Identification Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "6EF73620-6D66-4BB0-B7C5-33330AE6D103": {
+            "formId": "1354",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 6,
+            "isIncluded": true,
+            "displayName": "Facts About Renters Insurance Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "7FBC71FE-2549-4365-8112-3B99A32D5DB6": {
+            "formId": "1353",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 17,
+            "isIncluded": true,
+            "displayName": "Storage Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "858CE17D-288B-46D6-A30A-11A845B347C9": {
+            "formId": "1360",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 15,
+            "isIncluded": true,
+            "displayName": "Security Deposit Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A024F8C5-2B9F-418C-8EE3-F5B04EF03921": {
+            "formId": "1305",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 8,
+            "isIncluded": true,
+            "displayName": "Lessee Security Notice and Acknowledgment Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A0479E67-FED1-4723-A424-3CCD683020F0": {
+            "formId": "1313",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 14,
+            "isIncluded": true,
+            "displayName": "Rent Concession Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A298D40A-9B19-4E39-8F62-75E09EE876F0": {
+            "formId": "1352",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 13,
+            "isIncluded": true,
+            "displayName": "Recreational Facility Regulations",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A7CCAB8E-DBF8-4D05-AA71-7B19B105B684": {
+            "formId": "1309",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 12,
+            "isIncluded": true,
+            "displayName": "Proposition 65 Fact Sheet Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "CC47BF3C-49B9-4482-9697-A42BB5DF7DAC": {
+            "formId": "1320",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 19,
+            "isIncluded": true,
+            "displayName": "Ventilation Instructions and Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D24ABD28-2BF8-469C-BD71-C280E7405E11": {
+            "formId": "1316",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 16,
+            "isIncluded": true,
+            "displayName": "Smoke Free Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D8A2885B-4221-490D-9F3C-F562E78491B7": {
+            "formId": "1300",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 3,
+            "isIncluded": true,
+            "displayName": "Community Policies Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "FDB70DE1-771E-4704-8F2E-67F283C71B45": {
+            "formId": "1349",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": true,
+            "mandatory": false,
+            "sortOrder": 0,
+            "isIncluded": true,
+            "displayName": "Cove -- Core Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          }
+        },
+        "occupants": [],
+        "residents": [
+          {
+            "id": "3307341b-89e0-4aa6-96fe-811920e6fb32",
+            "name": "John Doe",
+            "email": "john@doe.com",
+            "phone1": "16502736663",
+            "location": ""
+          }
+        ],
+        "guarantors": [],
+        "companyName": "",
+        "propertyName": "swparkme",
+        "hasConcessions": true,
+        "isRenewalLease": false,
+        "publishedLease": {
+          "unitRent": 3838,
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "termLength": 24,
+          "concessions": {
+            "68fd64f4-4d93-4d7e-99a3-586932d0768c": {
+              "amount": 7676,
+              "relativeAmount": 3838
+            }
+          },
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "oneTimeCharges": {
+            "89767f12-64b1-4f4c-a375-ac248228ed10": {
+              "name": "Unit Deposit",
+              "amount": 3838,
+              "feeType": "deposit",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Security deposit",
+              "quoteSectionName": "deposit"
+            }
+          },
+          "additionalCharges": {
+            "53414a61-182a-468a-8386-afa9768bb22e": {
+              "name": "Trash",
+              "amount": 20,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Trash",
+              "quoteSectionName": "utility"
+            },
+            "8a8e479c-be5c-4357-a2e6-abbe24b34b41": {
+              "name": "Sewer",
+              "amount": 10,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Sewer",
+              "quoteSectionName": "utility"
+            },
+            "8de8017f-d82c-4be6-aea1-5546d3cc8f79": {
+              "name": "ComplimentaryLocker",
+              "amount": 0,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Locker",
+              "quoteSectionName": "storage"
+            },
+            "c9771ef7-8492-4c7f-96ad-1ba7153ed582": {
+              "name": "Water",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Water",
+              "quoteSectionName": "utility"
+            },
+            "fa555130-6063-4087-8e97-ac49b0092842": {
+              "name": "Gas",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Gas",
+              "quoteSectionName": "utility"
+            },
+            "073e9e71-03e4-4026-8d5c-55a1d761d641--accf0e3a-06f9-438b-bc10-bf04dc292a22": {
+              "amount": 0,
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Door Fob",
+              "quoteSectionName": "appliance",
+              "selectedInventories": [
+                {
+                  "id": "f0764009-ce39-47bb-bad5-30754f6e5cdf",
+                  "marketRent": "0.00",
+                  "buildingText": "Door Fob 1"
+                }
+              ]
+            }
+          },
+          "rentersInsuranceFacts": "buyInsuranceFlag"
+        },
+        "buyInsuranceFlag": "X",
+        "isCorporateParty": false,
+        "officeWorkingTime": {
+          "officeDays1": "Mon - Fri",
+          "officeDays2": "Sat",
+          "officeDays3": "",
+          "officeHours1": "9am - 6pm",
+          "officeHours2": "",
+          "officeHours3": ""
+        },
+        "waterProvidedFlag": "",
+        "cableTvProvidedFlag": "",
+        "utilityAddendumFlag": "",
+        "waterSubmeteredFlag": "X",
+        "additionalConditions": {
+          "additionalNotes": "",
+          "additionalDeposit": false,
+          "additionalDepositAmount": 5757
+        },
+        "internetProvidedFlag": "",
+        "leadDisclosureClause": "",
+        "submeterAddendumFlag": "",
+        "naturalGasProvidedFlag": "",
+        "takeOwnerInsuranceFlag": "",
+        "countersignerDescriptor": "Owner or Owner's Representative",
+        "electricityProvidedFlag": "",
+        "naturalGasSubmeteredFlag": "",
+        "electricitySubmeteredFlag": ""
+      },
+      "externalLeaseId": null,
+      "leaseTemplateId": "24ee96b7-4cb1-4e8b-9033-620326ee8489"
+    },
+    {
+      "id": "c046dfe5-7265-42e1-9c8c-62c3215199b9",
+      "status": "voided",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "external": {},
+      "signDate": null,
+      "created_at": "2020-02-05T17:39:29.555+00:00",
+      "signatures": [
+        {
+          "id": "3398ae90-3b5a-47f4-8da8-64ded0af75a9",
+          "status": "voided",
+          "userId": "466e10e6-4867-4d25-93d9-56764dea26e2",
+          "leaseId": "c046dfe5-7265-42e1-9c8c-62c3215199b9",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/d680855b-5e01-41d3-8af7-0276af298726/sign/CounterSigner1",
+          "metadata": {
+            "email": "countersigner@docusign.com",
+            "token": "https://rules-test.local.env.reva.tech/leases/d680855b-5e01-41d3-8af7-0276af298726/sign/CounterSigner1",
+            "status": "Created",
+            "userName": "Alice Altimes1",
+            "recipientId": "bbfea804-0205-480b-bb3a-c52883c77d75",
+            "clientUserId": "CounterSigner1",
+            "counterSigner": true
+          },
+          "created_at": "2020-02-05T17:40:55.739+00:00",
+          "envelopeId": "d680855b-5e01-41d3-8af7-0276af298726",
+          "updated_at": "2020-02-05T17:42:29.937335+00:00",
+          "clientUserId": "CounterSigner1",
+          "partyMemberId": null
+        },
+        {
+          "id": "e7be956b-b772-4e03-82b5-d7a0d96bcf36",
+          "status": "voided",
+          "userId": null,
+          "leaseId": "c046dfe5-7265-42e1-9c8c-62c3215199b9",
+          "signUrl": "https://rules-test.local.env.reva.tech/leases/d680855b-5e01-41d3-8af7-0276af298726/sign/Resident1",
+          "metadata": {
+            "email": "inofficesigner@docusign.com",
+            "token": "https://rules-test.local.env.reva.tech/leases/d680855b-5e01-41d3-8af7-0276af298726/sign/Resident1",
+            "status": "Sent",
+            "signDate": "2020-02-05T17:41:34.127Z",
+            "userName": "John Doe",
+            "recipientId": "007a019c-4388-4587-90cc-51a428ab9cfa",
+            "clientUserId": "Resident1",
+            "counterSigner": false
+          },
+          "created_at": "2020-02-05T17:40:55.739+00:00",
+          "envelopeId": "d680855b-5e01-41d3-8af7-0276af298726",
+          "updated_at": "2020-02-05T17:42:29.937335+00:00",
+          "clientUserId": "Resident1",
+          "partyMemberId": "3307341b-89e0-4aa6-96fe-811920e6fb32"
+        }
+      ],
+      "updated_at": "2020-02-05T17:42:29.937335+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "baselineData": {
+        "pets": [],
+        "quote": {
+          "nsfFee": 75,
+          "petFee": 0,
+          "lateFee": 75,
+          "petRent": 0,
+          "adminFee": 0,
+          "unitName": "350 Arballo-1015",
+          "unitRent": 3838,
+          "leaseTerm": "24 months",
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "moveInRent": 3308.62,
+          "petDeposit": 0,
+          "rentDueDay": "first (1st)",
+          "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c",
+          "leaseLength": 24,
+          "monthlyRate": 3838,
+          "totalPetFee": 0,
+          "unitAddress": "3711-101 19th Ave, Unit 1015, San Francisco, CA 94132",
+          "unitDeposit": 3838,
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "propertyName": "Parkmerced Apartments",
+          "totalPetRent": 0,
+          "inventoryType": "unit",
+          "moveInPetRent": 0,
+          "parkingSpaces": [],
+          "propertyPhone": "(415) 405-4690",
+          "storageSpaces": [
+            {
+              "marketRent": 0,
+              "displayName": "Locker",
+              "complimentary": false
+            }
+          ],
+          "barbecuePolicy": "",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "otherLeaseTerm": 24,
+          "totalUpcharges": 0,
+          "buildingAddress": "3711-101 19th Ave, San Francisco, CA 94132",
+          "petRentQuantity": 0,
+          "propertyAddress": "3711 19th Ave, San Francisco, CA 94132",
+          "recurrenceCount": 2,
+          "totalPetDeposit": 0,
+          "numberOfBedrooms": "2BR",
+          "serviceAnimalFee": 0,
+          "totalHoldDeposit": 0,
+          "totalMonthlyRent": 3918,
+          "totalParkingRent": 0,
+          "totalStorageRent": 0,
+          "asbestosLocations": "in the tile floors on the second through top floors, halls and elevators of all the high-rise apartment buildings; insulation on the piping and heaters in the boiler rooms, laundry rooms and in the basement hallways; insulation for the heating system duct work in garden apartments in the heater closets; and in some apartment kitchen floor coverings",
+          "moveinRentEndDate": "2020-02-29T00:00:00-08:00",
+          "serviceAnimalRent": 0,
+          "otherLeaseTermFlag": "X",
+          "totalMoveInCharges": 3906.9700000000003,
+          "totalAdditionalRent": 80,
+          "totalUtilityCharges": 0,
+          "accountActivationFee": 0,
+          "applicationFeeAmount": 50,
+          "moveinAdditionalRent": 68.97,
+          "concessionInstallment": 319.8333333333333,
+          "hasOneTimeConcessions": "",
+          "serviceAnimalQuantity": 0,
+          "unitFullQualifiedName": "swparkme-350 Arballo-1015",
+          "concessionsDescription": [
+            "Recurring concession from Feb 2020 through Apr 2020"
+          ],
+          "concessionsAmountPeriod": [
+            "Resident shall receive a prorated concession of $3,838.00 per month off the rent from Feb 2020 through Apr 2020."
+          ],
+          "hasRecurringConcessions": "X",
+          "subTotalOfMoveinCharges": 3906.9700000000003,
+          "monthToMonthLeaseTermFlag": "",
+          "totalPetOneTimeServiceFee": 0,
+          "accept12MonthLeaseTermFlag": "",
+          "reject12MonthLeaseTermFlag": "X",
+          "totalPetDNARegistrationFee": 0,
+          "oneTimeTotalConcessionAmount": 0,
+          "recurringTotalConcessionAmount": 7676,
+          "totalConcessionOnMoveinCharges": 3308.62
+        },
+        "hasPets": false,
+        "children": [],
+        "timezone": "America/Los_Angeles",
+        "vehicles": [],
+        "documents": {
+          "08BA44B0-0631-4713-9DA3-36B381A0FAE2": {
+            "formId": "1299",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 2,
+            "isIncluded": true,
+            "displayName": "Because We Care Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "13B26F35-ACB0-457B-844C-D1FE33D9DDA2": {
+            "formId": "1358",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 9,
+            "isIncluded": true,
+            "displayName": "Move-in_Move-out Itemized Statement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "322E0F74-0F1E-4C12-B63C-45A936F2F89E": {
+            "formId": "1304",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 7,
+            "displayName": "Guarantee of Lease",
+            "guarantorOnly": true,
+            "marinCountyTenantRights": false
+          },
+          "34D416AA-6647-4401-8D43-E090C4051C6E": {
+            "formId": "1351",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 5,
+            "isIncluded": true,
+            "displayName": "Equipment Release Form Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "482E4BC4-8D01-455C-B389-D6117FE3E40A": {
+            "formId": "1319",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 18,
+            "isIncluded": true,
+            "displayName": "Utility Provider Information Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "49B512D5-27F2-42FB-A5E7-0CE337EF47FE": {
+            "formId": "1308",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 11,
+            "isIncluded": "Pet Agreement Addendum",
+            "displayName": "Pet Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "584F2570-E04E-4662-8F5D-21F8CE34C595": {
+            "formId": "1322",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 1,
+            "isIncluded": true,
+            "displayName": "Acknowledgement for Work on Premises Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "58CA9929-2EC7-49F7-A9DA-C86BCB71EAC8": {
+            "formId": "1350",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 4,
+            "isIncluded": true,
+            "displayName": "Community Standards Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "69904380-F154-4144-9DAF-1869B5A15A59": {
+            "formId": "1307",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 10,
+            "isIncluded": true,
+            "displayName": "Parking Policies and Vehicle Identification Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "6EF73620-6D66-4BB0-B7C5-33330AE6D103": {
+            "formId": "1354",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 6,
+            "isIncluded": true,
+            "displayName": "Facts About Renters Insurance Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "7FBC71FE-2549-4365-8112-3B99A32D5DB6": {
+            "formId": "1353",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 17,
+            "isIncluded": true,
+            "displayName": "Storage Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "858CE17D-288B-46D6-A30A-11A845B347C9": {
+            "formId": "1360",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 15,
+            "isIncluded": true,
+            "displayName": "Security Deposit Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A024F8C5-2B9F-418C-8EE3-F5B04EF03921": {
+            "formId": "1305",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 8,
+            "isIncluded": true,
+            "displayName": "Lessee Security Notice and Acknowledgment Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A0479E67-FED1-4723-A424-3CCD683020F0": {
+            "formId": "1313",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 14,
+            "isIncluded": true,
+            "displayName": "Rent Concession Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A298D40A-9B19-4E39-8F62-75E09EE876F0": {
+            "formId": "1352",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 13,
+            "isIncluded": true,
+            "displayName": "Recreational Facility Regulations",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "A7CCAB8E-DBF8-4D05-AA71-7B19B105B684": {
+            "formId": "1309",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 12,
+            "isIncluded": true,
+            "displayName": "Proposition 65 Fact Sheet Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "CC47BF3C-49B9-4482-9697-A42BB5DF7DAC": {
+            "formId": "1320",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 19,
+            "isIncluded": true,
+            "displayName": "Ventilation Instructions and Agreement Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D24ABD28-2BF8-469C-BD71-C280E7405E11": {
+            "formId": "1316",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 16,
+            "isIncluded": true,
+            "displayName": "Smoke Free Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "D8A2885B-4221-490D-9F3C-F562E78491B7": {
+            "formId": "1300",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": false,
+            "mandatory": false,
+            "sortOrder": 3,
+            "isIncluded": true,
+            "displayName": "Community Policies Addendum",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          },
+          "FDB70DE1-771E-4704-8F2E-67F283C71B45": {
+            "formId": "1349",
+            "booklet": false,
+            "handbook": false,
+            "mainForm": true,
+            "mandatory": false,
+            "sortOrder": 0,
+            "isIncluded": true,
+            "displayName": "Cove -- Core Agreement",
+            "guarantorOnly": false,
+            "marinCountyTenantRights": false
+          }
+        },
+        "occupants": [],
+        "residents": [
+          {
+            "id": "3307341b-89e0-4aa6-96fe-811920e6fb32",
+            "name": "John Doe",
+            "email": "john@doe.com",
+            "phone1": "16502736663",
+            "location": ""
+          }
+        ],
+        "guarantors": [],
+        "companyName": "",
+        "propertyName": "swparkme",
+        "hasConcessions": true,
+        "isRenewalLease": false,
+        "publishedLease": {
+          "unitRent": 3838,
+          "moveInDate": "2020-02-05T16:44:24.422Z",
+          "termLength": 24,
+          "concessions": {
+            "68fd64f4-4d93-4d7e-99a3-586932d0768c": {
+              "amount": 7676,
+              "relativeAmount": 3838
+            }
+          },
+          "leaseEndDate": "2022-02-04T16:44:24.422Z",
+          "leaseStartDate": "2020-02-05T16:44:24.422Z",
+          "oneTimeCharges": {
+            "89767f12-64b1-4f4c-a375-ac248228ed10": {
+              "name": "Unit Deposit",
+              "amount": 3838,
+              "feeType": "deposit",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Security deposit",
+              "quoteSectionName": "deposit"
+            }
+          },
+          "additionalCharges": {
+            "53414a61-182a-468a-8386-afa9768bb22e": {
+              "name": "Trash",
+              "amount": 20,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Trash",
+              "quoteSectionName": "utility"
+            },
+            "8a8e479c-be5c-4357-a2e6-abbe24b34b41": {
+              "name": "Sewer",
+              "amount": 10,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Sewer",
+              "quoteSectionName": "utility"
+            },
+            "8de8017f-d82c-4be6-aea1-5546d3cc8f79": {
+              "name": "ComplimentaryLocker",
+              "amount": 0,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Locker",
+              "quoteSectionName": "storage"
+            },
+            "c9771ef7-8492-4c7f-96ad-1ba7153ed582": {
+              "name": "Water",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Water",
+              "quoteSectionName": "utility"
+            },
+            "fa555130-6063-4087-8e97-ac49b0092842": {
+              "name": "Gas",
+              "amount": 25,
+              "feeType": "service",
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Gas",
+              "quoteSectionName": "utility"
+            },
+            "073e9e71-03e4-4026-8d5c-55a1d761d641--accf0e3a-06f9-438b-bc10-bf04dc292a22": {
+              "amount": 0,
+              "firstFee": true,
+              "quantity": 1,
+              "displayName": "Door Fob",
+              "quoteSectionName": "appliance",
+              "selectedInventories": [
+                {
+                  "id": "f0764009-ce39-47bb-bad5-30754f6e5cdf",
+                  "marketRent": "0.00",
+                  "buildingText": "Door Fob 1"
+                }
+              ]
+            }
+          },
+          "rentersInsuranceFacts": "buyInsuranceFlag"
+        },
+        "buyInsuranceFlag": "X",
+        "isCorporateParty": false,
+        "officeWorkingTime": {
+          "officeDays1": "Mon - Fri",
+          "officeDays2": "Sat",
+          "officeDays3": "",
+          "officeHours1": "9am - 6pm",
+          "officeHours2": "",
+          "officeHours3": ""
+        },
+        "waterProvidedFlag": "",
+        "cableTvProvidedFlag": "",
+        "utilityAddendumFlag": "",
+        "waterSubmeteredFlag": "X",
+        "additionalConditions": {
+          "additionalNotes": "",
+          "additionalDeposit": false,
+          "additionalDepositAmount": 5757
+        },
+        "internetProvidedFlag": "",
+        "leadDisclosureClause": "",
+        "submeterAddendumFlag": "",
+        "naturalGasProvidedFlag": "",
+        "takeOwnerInsuranceFlag": "",
+        "countersignerDescriptor": "Owner or Owner's Representative",
+        "electricityProvidedFlag": "",
+        "naturalGasSubmeteredFlag": "",
+        "electricitySubmeteredFlag": ""
+      },
+      "externalLeaseId": null,
+      "leaseTemplateId": "24ee96b7-4cb1-4e8b-9033-620326ee8489"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "created_at": "2020-02-05T16:44:23.945+00:00",
+      "leaseState": "new",
+      "selections": {
+        "selectedLeaseTerms": [
+          {
+            "id": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+            "concessions": [
+              {
+                "id": "68fd64f4-4d93-4d7e-99a3-586932d0768c",
+                "relativeAmount": 3838
+              },
+              {
+                "id": "85bef7fa-3e1e-496e-8af7-94a498e3f918"
+              }
+            ],
+            "paymentSchedule": [
+              {
+                "amount": "69.34",
+                "timeframe": "Feb 2020"
+              },
+              {
+                "amount": "80.00",
+                "timeframe": "Mar 2020"
+              },
+              {
+                "amount": "3406.27",
+                "timeframe": "Apr 2020"
+              },
+              {
+                "amount": "3918.00",
+                "timeframe": "May 2020 - Jan 2022"
+              },
+              {
+                "amount": "522.39",
+                "timeframe": "Feb 2022"
+              }
+            ],
+            "originalBaseRent": 3838,
+            "overwrittenBaseRent": 3838
+          }
+        ],
+        "selectedAdditionalAndOneTimeCharges": {
+          "fees": [
+            {
+              "id": "073e9e71-03e4-4026-8d5c-55a1d761d641--accf0e3a-06f9-438b-bc10-bf04dc292a22",
+              "amount": "0.00",
+              "isIGFee": true,
+              "quantity": 1,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "fa555130-6063-4087-8e97-ac49b0092842",
+              "name": "Gas",
+              "amount": 25,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": true,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "8de8017f-d82c-4be6-aea1-5546d3cc8f79",
+              "name": "ComplimentaryLocker",
+              "amount": 0,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": false,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "89767f12-64b1-4f4c-a375-ac248228ed10",
+              "name": "Unit Deposit",
+              "amount": null,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": false,
+              "isUnitDepositFee": true,
+              "isMinAndMaxRentEqual": true,
+              "relativeAmountsByLeaseTerm": [
+                {
+                  "amount": 3838,
+                  "selected": true,
+                  "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7"
+                }
+              ]
+            },
+            {
+              "id": "8a8e479c-be5c-4357-a2e6-abbe24b34b41",
+              "name": "Sewer",
+              "amount": 10,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": true,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "53414a61-182a-468a-8386-afa9768bb22e",
+              "name": "Trash",
+              "amount": 20,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": false,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            },
+            {
+              "id": "c9771ef7-8492-4c7f-96ad-1ba7153ed582",
+              "name": "Water",
+              "amount": 25,
+              "isIGFee": false,
+              "quantity": 1,
+              "estimated": true,
+              "isUnitDepositFee": false,
+              "selectedConcessions": [],
+              "isMinAndMaxRentEqual": true
+            }
+          ],
+          "name": "month"
+        }
+      },
+      "updated_at": "2020-02-05T16:44:25.83532+00:00",
+      "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c",
+      "modified_by": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "publishDate": "2020-02-05T16:44:25.935+00:00",
+      "expirationDate": "2020-02-08T07:59:59.999+00:00",
+      "leaseStartDate": "2020-02-05T16:44:24.422+00:00",
+      "propertyTimezone": "America/Los_Angeles",
+      "createdFromCommId": null,
+      "confirmationNumber": "5e3501d1-eb5e-4074-a804-6447b6d9e760",
+      "publishedQuoteData": {
+        "id": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+        "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+        "leaseType": "traditional",
+        "created_at": "2020-02-05T16:44:23.945Z",
+        "leaseState": "new",
+        "leaseTerms": [
+          {
+            "id": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+            "state": "new",
+            "period": "month",
+            "specials": true,
+            "termLength": 24,
+            "concessions": [
+              {
+                "id": "68fd64f4-4d93-4d7e-99a3-586932d0768c",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": true,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "2 months free",
+                "computedValue": 7676,
+                "recurringCount": 2,
+                "relativeAmount": 3838,
+                "matchingCriteria": "{\"minLeaseLength\":24,\"maxLeaseLength\":24}",
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": -100,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": false,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              },
+              {
+                "id": "85bef7fa-3e1e-496e-8af7-94a498e3f918",
+                "endDate": null,
+                "optional": false,
+                "selected": true,
+                "recurring": false,
+                "startDate": "2017-01-01T08:00:00+00:00",
+                "displayName": "Upshift in market rent",
+                "computedValue": 95.95,
+                "recurringCount": 0,
+                "matchingCriteria": null,
+                "hideInSelfService": false,
+                "absoluteAdjustment": 0,
+                "floorCeilingAmount": 0,
+                "relativeAdjustment": 2.5,
+                "variableAdjustment": false,
+                "excludeFromRentFlag": false,
+                "nonRecurringAppliedAt": "",
+                "adjustmentFloorCeiling": null,
+                "bakedIntoAppliedFeeFlag": true,
+                "absoluteDefaultAdjustment": 0,
+                "relativeDefaultAdjustment": 0
+              }
+            ],
+            "leaseNameId": "bb7a23d3-f6f6-4e31-a871-aa222b9e8951",
+            "paymentSchedule": [
+              {
+                "amount": "69.34",
+                "timeframe": "Feb 2020"
+              },
+              {
+                "amount": "80.00",
+                "timeframe": "Mar 2020"
+              },
+              {
+                "amount": "3406.27",
+                "timeframe": "Apr 2020"
+              },
+              {
+                "amount": "3918.00",
+                "timeframe": "May 2020 - Jan 2022"
+              },
+              {
+                "amount": "522.39",
+                "timeframe": "Feb 2022"
+              }
+            ],
+            "originalBaseRent": 3838,
+            "chargeConcessions": [],
+            "adjustedMarketRent": 3838,
+            "overwrittenBaseRent": 3838,
+            "maxBakedFeesAdjustment": "",
+            "minBakedFeesAdjustment": "",
+            "allowBaseRentAdjustment": false
+          }
+        ],
+        "rentMatrix": {
+          "1": {
+            "2020-02-04": {
+              "rent": 4450.4,
+              "endDate": "2120-02-04",
+              "originalBaseRent": 4450,
+              "adjustedMarketRent": 4450,
+              "overwrittenBaseRent": 0,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "3": {
+            "2020-02-04": {
+              "rent": 4042,
+              "endDate": "2120-02-04",
+              "originalBaseRent": 4042,
+              "adjustedMarketRent": 4042,
+              "overwrittenBaseRent": 0,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "6": {
+            "2020-02-04": {
+              "rent": 4246.2,
+              "endDate": "2120-02-04",
+              "originalBaseRent": 4246,
+              "adjustedMarketRent": 4246,
+              "overwrittenBaseRent": 0,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "9": {
+            "2020-02-04": {
+              "rent": 4144.1,
+              "endDate": "2120-02-04",
+              "originalBaseRent": 4144,
+              "adjustedMarketRent": 4144,
+              "overwrittenBaseRent": 0,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "12": {
+            "2020-02-04": {
+              "rent": 4042,
+              "endDate": "2120-02-04",
+              "originalBaseRent": 4042,
+              "adjustedMarketRent": 4042,
+              "overwrittenBaseRent": 0,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "15": {
+            "2020-02-04": {
+              "rent": 4042,
+              "endDate": "2120-02-04",
+              "originalBaseRent": 4042,
+              "adjustedMarketRent": 4042,
+              "overwrittenBaseRent": 0,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          },
+          "24": {
+            "2020-02-04": {
+              "rent": 3837.8,
+              "endDate": "2120-02-04",
+              "originalBaseRent": 3838,
+              "adjustedMarketRent": 3838,
+              "overwrittenBaseRent": 3838,
+              "maxBakedFeesAdjustment": "",
+              "minBakedFeesAdjustment": "",
+              "allowBaseRentAdjustment": false
+            }
+          }
+        },
+        "updated_at": "2020-02-05T16:44:23.945Z",
+        "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c",
+        "publishDate": "2020-02-05T16:44:25.935Z",
+        "leasingAgent": {
+          "id": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+          "email": "sarah@reva.tech",
+          "teams": [
+            {
+              "id": "193b119e-e609-47d1-8be0-d52ed36d2450",
+              "name": "BayAreaCenter L",
+              "module": "callCenter",
+              "metadata": {
+                "call": {
+                  "wrapUpDelayAfterCallEnds": 20
+                },
+                "comms": {
+                  "nativeCommsEnabled": true,
+                  "allowBlockContactFlag": false,
+                  "sendCalendarCommsFlag": true
+                },
+                "teamId": "193b119e-e609-47d1-8be0-d52ed36d2450",
+                "features": {
+                  "disableNewLeasePartyCreation": false
+                },
+                "callQueue": {
+                  "enabled": true,
+                  "timeToVoiceMail": 300
+                },
+                "lastAssignedUser": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+                "callRecordingSetup": "NO_RECORDING",
+                "associatedTeamNames": "",
+                "callRoutingStrategy": "Round Robin",
+                "partyRoutingStrategy": "Round Robin"
+              },
+              "timeZone": "America/Los_Angeles",
+              "mainRoles": [
+                "LA"
+              ],
+              "created_at": "2020-02-04T19:18:41.066Z",
+              "updated_at": "2020-02-04T19:19:06.425Z",
+              "description": "Central call center for sales and resident services in the Bay Area",
+              "displayName": "Bay Area Call Center",
+              "officeHours": {
+                "Friday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Monday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Sunday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Tuesday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Saturday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Thursday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                },
+                "Wednesday": {
+                  "endTimeOffsetInMin": 1438.8,
+                  "startTimeOffsetInMin": 1.2
+                }
+              },
+              "voiceMessageId": "36079498-44da-4223-836c-c18f3deb6f79",
+              "functionalRoles": [
+                "LD",
+                "LWA"
+              ],
+              "externalCalendars": {
+                "calendars": [],
+                "teamCalendarId": ""
+              },
+              "associatedProperties": [
+                {
+                  "id": "92cad3d6-7954-443c-bc66-d7ad4010c183",
+                  "displayName": "Parkmerced Apartments",
+                  "propertyLegalName": "Parkmerced LLC"
+                },
+                {
+                  "id": "1ad8188d-9ba9-42e0-9543-4a0f50d51d30",
+                  "displayName": "The Cove at Tiburon",
+                  "propertyLegalName": "The Cove LLC"
+                }
+              ],
+              "callCenterPhoneNumber": ""
+            }
+          ],
+          "teamIds": [
+            "193b119e-e609-47d1-8be0-d52ed36d2450"
+          ],
+          "fullName": "S.A.R.A.H. (SS)",
+          "metadata": {
+            "status": "Available",
+            "businessTitle": "Self Actuated Residential Automated Habitat",
+            "wrapUpCallTimeoutId": ""
+          },
+          "avatarUrl": "",
+          "ringPhones": [],
+          "sipEndpoints": [
+            {
+              "password": "a80ceace-06d5-470f-9523-e67f97537dd8",
+              "username": "SARAHSS1238603755902637874937",
+              "endpointId": "145047270157487",
+              "isUsedInApp": true
+            }
+          ],
+          "preferredName": "S.A.R.A.H. (SS)",
+          "externalCalendars": {
+            "calendars": []
+          },
+          "associatedProperties": [
+            {
+              "id": "92cad3d6-7954-443c-bc66-d7ad4010c183",
+              "displayName": "Parkmerced Apartments",
+              "propertyLegalName": "Parkmerced LLC"
+            },
+            {
+              "id": "1ad8188d-9ba9-42e0-9543-4a0f50d51d30",
+              "displayName": "The Cove at Tiburon",
+              "propertyLegalName": "The Cove LLC"
+            }
+          ]
+        },
+        "expirationDate": "2020-02-08T07:59:59.999Z",
+        "leaseStartDate": "2020-02-05T16:44:24.422Z",
+        "propertyTimezone": "America/Los_Angeles",
+        "screeningRequired": true,
+        "confirmationNumber": "5e3501d1-eb5e-4074-a804-6447b6d9e760",
+        "defaultLeaseStartDate": "2020-02-04T08:00:00.000Z",
+        "additionalAndOneTimeCharges": {
+          "oneTimeCharges": [
+            {
+              "id": "89767f12-64b1-4f4c-a375-ac248228ed10",
+              "name": "Unit Deposit",
+              "price": null,
+              "amount": 0,
+              "quantity": 1,
+              "estimated": false,
+              "displayName": "Security deposit",
+              "quoteSectionName": "deposit",
+              "isMinAndMaxRentDiff": false,
+              "relativeAmountsByLeaseTerm": [
+                {
+                  "amount": 3838,
+                  "selected": true,
+                  "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7"
+                }
+              ]
+            }
+          ],
+          "additionalCharges": [
+            {
+              "id": "073e9e71-03e4-4026-8d5c-55a1d761d641--accf0e3a-06f9-438b-bc10-bf04dc292a22",
+              "price": 0,
+              "amount": 0,
+              "quantity": 1,
+              "concessions": [],
+              "displayName": "Door Fob",
+              "parentFeeAmount": "0.00",
+              "quoteSectionName": "appliance",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "fa555130-6063-4087-8e97-ac49b0092842",
+              "name": "Gas",
+              "price": "25.00",
+              "amount": 25,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Gas",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "8de8017f-d82c-4be6-aea1-5546d3cc8f79",
+              "name": "ComplimentaryLocker",
+              "price": "0.00",
+              "amount": 0,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Locker",
+              "quoteSectionName": "storage",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "8a8e479c-be5c-4357-a2e6-abbe24b34b41",
+              "name": "Sewer",
+              "price": "10.00",
+              "amount": 10,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Sewer",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "53414a61-182a-468a-8386-afa9768bb22e",
+              "name": "Trash",
+              "price": "20.00",
+              "amount": 20,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Trash",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            },
+            {
+              "id": "c9771ef7-8492-4c7f-96ad-1ba7153ed582",
+              "name": "Water",
+              "price": "25.00",
+              "amount": 25,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Water",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "userId": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+        "dob": null,
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "John Doe",
+        "idCountry": null,
+        "created_at": "2020-02-04T19:19:01.996844+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2020-02-04T19:19:01.996844+00:00",
+        "modified_by": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+        "preferredName": "",
+        "isSuspiciousContent": false
+      },
+      "contactInfo": [
+        {
+          "id": "16ad9a76-e15a-40d1-bb5b-af51834fabf4",
+          "type": "phone",
+          "value": "16502736663",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {
+            "sms": true,
+            "thirdPartyCallResult": {
+              "url": "https://lookups.twilio.com/v1/PhoneNumbers/+16502736663?Type=carrier&Type=caller-name",
+              "add_ons": null,
+              "carrier": {
+                "name": "Google (Grand Central) BWI - Bandwidth.com - SVR",
+                "type": "voip",
+                "error_code": null,
+                "mobile_country_code": null,
+                "mobile_network_code": null
+              },
+              "caller_name": {
+                "error_code": null,
+                "caller_name": null,
+                "caller_type": null
+              },
+              "country_code": "US",
+              "phone_number": "+16502736663",
+              "national_format": "(650) 273-6663"
+            }
+          },
+          "personId": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+          "isPrimary": true,
+          "created_at": "2020-02-04T19:19:01.996844+00:00",
+          "updated_at": "2020-02-04T19:19:01.996844+00:00",
+          "markedAsSpamBy": null
+        },
+        {
+          "id": "dc16fc89-dda6-4eec-a956-21900fc18ee0",
+          "type": "email",
+          "value": "john@doe.com",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {},
+          "personId": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+          "isPrimary": true,
+          "created_at": "2020-02-05T16:43:26.789538+00:00",
+          "updated_at": "2020-02-05T16:43:26.789538+00:00",
+          "markedAsSpamBy": null
+        }
+      ],
+      "partyMember": {
+        "id": "3307341b-89e0-4aa6-96fe-811920e6fb32",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+        "external": {},
+        "personId": "fe00770f-32af-47cb-b830-e24f9e1555bc",
+        "startDate": "2020-02-04T19:19:01.996844+00:00",
+        "created_at": "2020-02-04T19:19:02.021+00:00",
+        "memberType": "Resident",
+        "updated_at": "2020-02-04T19:19:02.021+00:00",
+        "vacateDate": null,
+        "memberState": "Contact",
+        "modified_by": null,
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "children": null,
+  "invoices": null,
+  "metadata": {
+    "propertyId": "92cad3d6-7954-443c-bc66-d7ad4010c183",
+    "creationType": "system",
+    "originalTeam": "193b119e-e609-47d1-8be0-d52ed36d2450",
+    "residentInfo": {},
+    "favoriteUnits": [
+      "7f0fefe8-b616-4fe8-ab60-b53716b3d5a2",
+      "b8c7d987-d52e-461d-ba58-da704d043b6c"
+    ],
+    "teamMemberSource": "",
+    "firstCollaborator": "dac7c095-62bc-410c-b09d-091300e69fdb",
+    "firstContactedDate": "2020-02-04T19:19:02.017Z",
+    "firstContactChannel": "Call",
+    "qualQuestionsCompleted": "2020-02-05T16:44:16.595Z",
+    "leadFromExistingResident": false
+  },
+  "vehicles": null,
+  "leaseType": "traditional",
+  "ownerTeam": "193b119e-e609-47d1-8be0-d52ed36d2450",
+  "startDate": "2020-02-04T19:19:01.996844+00:00",
+  "created_at": "2020-02-04T19:19:02.018+00:00",
+  "invOnHolds": [
+    {
+      "id": "45dfccd0-14b3-4907-9029-965ffb31620e",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": "2020-02-05T17:11:57.6+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T16:48:06.445+00:00",
+      "created_at": "2020-02-05T16:48:06.445+00:00",
+      "releasedBy": "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f",
+      "updated_at": "2020-02-05T17:11:57.539059+00:00",
+      "inventoryId": "f0764009-ce39-47bb-bad5-30754f6e5cdf"
+    },
+    {
+      "id": "5617ab60-508b-45a9-860a-68a57260418d",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": "2020-02-05T17:02:53.492+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T16:48:06.444+00:00",
+      "created_at": "2020-02-05T16:48:06.445+00:00",
+      "releasedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "updated_at": "2020-02-05T17:02:53.136596+00:00",
+      "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c"
+    },
+    {
+      "id": "99c4347d-5464-4610-88dd-09b1fba9c5ad",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": "2020-02-05T17:38:18.382+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T17:25:00.385+00:00",
+      "created_at": "2020-02-05T17:25:00.385+00:00",
+      "releasedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "updated_at": "2020-02-05T17:38:18.318926+00:00",
+      "inventoryId": "f0764009-ce39-47bb-bad5-30754f6e5cdf"
+    },
+    {
+      "id": "301f3ce5-c1ca-454c-960a-32da26f799ff",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": "2020-02-05T17:33:44.653+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T17:25:00.384+00:00",
+      "created_at": "2020-02-05T17:25:00.385+00:00",
+      "releasedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "updated_at": "2020-02-05T17:33:44.324561+00:00",
+      "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c"
+    },
+    {
+      "id": "de044c39-2e41-4dc7-a24b-1e7a0c2248e2",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": "2020-02-05T17:42:29.996+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T17:40:55.533+00:00",
+      "created_at": "2020-02-05T17:40:55.533+00:00",
+      "releasedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "updated_at": "2020-02-05T17:42:29.937335+00:00",
+      "inventoryId": "f0764009-ce39-47bb-bad5-30754f6e5cdf"
+    },
+    {
+      "id": "89860298-3a15-4b56-a0be-862edeeb60f0",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": "2020-02-05T17:42:29.996+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T17:40:55.532+00:00",
+      "created_at": "2020-02-05T17:40:55.533+00:00",
+      "releasedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "updated_at": "2020-02-05T17:42:29.937335+00:00",
+      "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c"
+    },
+    {
+      "id": "b6cfffd4-64fa-4e5f-a19d-a83321efa278",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": null,
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T17:43:52.275+00:00",
+      "created_at": "2020-02-05T17:43:52.275+00:00",
+      "releasedBy": null,
+      "updated_at": "2020-02-05T17:43:52.275+00:00",
+      "inventoryId": "f0764009-ce39-47bb-bad5-30754f6e5cdf"
+    },
+    {
+      "id": "2e9c5c98-404e-46d4-a46e-bd59c36a82bb",
+      "heldBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "reason": "lease",
+      "endDate": "2020-02-05T17:45:43.159+00:00",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quotable": false,
+      "startDate": "2020-02-05T17:43:52.275+00:00",
+      "created_at": "2020-02-05T17:43:52.275+00:00",
+      "releasedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "updated_at": "2020-02-05T17:45:42.682954+00:00",
+      "inventoryId": "b8c7d987-d52e-461d-ba58-da704d043b6c"
+    }
+  ],
+  "mergedWith": null,
+  "promotions": [
+    {
+      "id": "1e558c4c-f240-4e30-8997-9ab4213c463c",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "approvedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "created_at": "2020-02-05T16:45:25.743+00:00",
+      "updated_at": "2020-02-05T17:11:57.539059+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "modified_by": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "approvalDate": "2020-02-05T16:46:46.953+00:00",
+      "promotionStatus": "canceled"
+    },
+    {
+      "id": "fe84d2ef-c5a7-4c98-a7a8-b328b1e2224d",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "approvedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "created_at": "2020-02-05T17:20:29.682+00:00",
+      "updated_at": "2020-02-05T17:38:18.318926+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "modified_by": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "approvalDate": "2020-02-05T17:20:40.729+00:00",
+      "promotionStatus": "canceled"
+    },
+    {
+      "id": "3a8f6353-d78e-411f-90c1-0cd92b1f9949",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "approvedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "created_at": "2020-02-05T17:39:18.634+00:00",
+      "updated_at": "2020-02-05T17:42:29.937335+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "modified_by": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "approvalDate": "2020-02-05T17:39:29.286+00:00",
+      "promotionStatus": "canceled"
+    },
+    {
+      "id": "ef85b435-81e5-4872-8a15-5317d52457b4",
+      "partyId": "3820c5e3-38ea-4128-9389-088b1a40b052",
+      "quoteId": "95cc1ba6-e62a-4257-a04b-96b6731da894",
+      "approvedBy": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "created_at": "2020-02-05T17:43:26.35+00:00",
+      "updated_at": "2020-02-05T17:43:38.538653+00:00",
+      "leaseTermId": "bd09fb20-4b7b-4722-9908-a6ad316b68e7",
+      "modified_by": "dac7c095-62bc-410c-b09d-091300e69fdb",
+      "approvalDate": "2020-02-05T17:43:38.539+00:00",
+      "promotionStatus": "approved"
+    }
+  ],
+  "updated_at": "2020-02-04T19:19:02.033+00:00",
+  "archiveDate": null,
+  "modified_by": "dac7c095-62bc-410c-b09d-091300e69fdb",
+  "seedPartyId": null,
+  "partyGroupId": "c0fdb348-545e-4fd8-b8f1-d589ddcaa7d2",
+  "transactions": null,
+  "workflowName": "newLease",
+  "collaborators": [
+    "dac7c095-62bc-410c-b09d-091300e69fdb",
+    "2fa1b035-9a3e-41e3-99d1-a9b9c2a5ad1f"
+  ],
+  "workflowState": "active",
+  "activeLeaseData": null,
+  "emailIdentifier": "3820c5e338ea41289389",
+  "isTransferLease": false,
+  "screeningResults": {
+    "submissionRequests": null,
+    "submissionResponses": null
+  },
+  "createdFromCommId": "cf83b3d1-4b91-4a69-9486-99b3e80bee51",
+  "partyApplications": null,
+  "assignedPropertyId": "92cad3d6-7954-443c-bc66-d7ad4010c183",
+  "personApplications": null,
+  "storedUnitsFilters": {
+    "moveInDate": {
+      "max": "2020-03-05T08:00:00.000Z",
+      "min": "2020-02-05T08:00:00.000Z"
+    },
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS"
+    ],
+    "propertyIds": [
+      "92cad3d6-7954-443c-bc66-d7ad4010c183"
+    ]
+  },
+  "teamPropertyProgramId": "b9b2fd1a-ba47-40ff-b098-5f30348e7b60",
+  "qualificationQuestions": {
+    "moveInTime": "NEXT_4_WEEKS",
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS"
+    ],
+    "groupProfile": "FAIR_MARKET",
+    "cashAvailable": "YES"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "handleDeepLink": {
+    "module": "./deep-link"
+  },
+  "getLoginFlowSettings": {
+    "module": "./settings"
+  },
+  "getUserSettings": {
+    "module": "./resident-properties"
+  },
+  "getUserNotifications": {
+    "module": "./communications"
+  },
+  "getDirectMessages": {
+    "module": "./communications"
+  },
+  "handleIncomingDirectMessage": {
+    "module": "./communications"
+  },
+  "getUserPosts": {
+    "module": "./communications"
+  },
+  "getUserPost": {
+    "module": "./communications"
+  },
+  "markPostsAsRead": {
+    "module": "./communications"
+  },
+  "markPostAsClicked": {
+    "module": "./communications"
+  },
+  "markLinkAsVisited": {
+    "module": "./communications"
+  },
+  "markDirectMessagesAsRead": {
+    "module": "./communications"
+  },
+  "getPaymentInfo": {
+    "module": "./payment"
+  },
+  "deletePaymentMethodById": {
+    "module": "./payment"
+  },
+  "initiatePaymentMethod": {
+    "module": "./payment"
+  },
+  "handlePaymentMethodNotification": {
+    "module": "./payment"
+  },
+  "createPayment": {
+    "module": "./payment"
+  },
+  "initiateScheduledPayment": {
+    "module": "./payment"
+  },
+  "changeDefaultPaymentMethod": {
+    "module": "./payment"
+  },
+  "deleteScheduledPayment": {
+    "module": "./payment"
+  },
+  "handlePaymentMethodCallbackSuccess": {
+    "module": "./payment"
+  },
+  "handlePaymentMethodCallbackCancel": {
+    "module": "./payment"
+  },
+  "handleSchedulePaymentCallbackCancel": {
+    "module": "./payment"
+  },
+  "handleSchedulePaymentCallbackSuccess": {
+    "module": "./payment"
+  },
+  "getScheduledTransactions": {
+    "module": "./payment"
+  },
+  "markScheduledTransactionAsSeen": {
+    "module": "./payment"
+  },
+  "getMaintenanceTickets": {
+    "module": "./maintenance"
+  },
+  "getMaintenanceTypes": {
+    "module": "./maintenance"
+  },
+  "createMaintenanceTicket": {
+    "module": "./maintenance"
+  },
+  "createDevice": {
+    "module": "./device"
+  },
+  "updateDevice": {
+    "module": "./device"
+  },
+  "getDataFromUnsubscribeToken": {
+    "module": "./unsubscription"
+  },
+  "unsubscribePersonFromComms": {
+    "module": "./unsubscription"
+  },
+  "log": {
+    "module": "./log"
+  }
+}

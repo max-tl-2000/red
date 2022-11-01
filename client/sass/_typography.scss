@@ -1,0 +1,96 @@
+@import './_typography-mixins.scss';
+
+.display4 {
+  @include display4();
+}
+
+.display3 {
+  @include display3();
+}
+
+.display2 {
+  @include display2();
+}
+
+.display1 {
+  @include display1();
+}
+
+.headline {
+  @include headline();
+}
+
+.textTitle {
+  @include textTitle();
+}
+
+.subHeader {
+  @include subHeader();
+}
+
+.bodyHeavy {
+  @include bodyHeavy();
+}
+
+// please notice it is class p, not p selector
+// since we cannot modify the global styles without
+// breaking the layout
+
+.p,
+.body {
+  @include body();
+}
+
+.caption {
+  @include caption();
+}
+
+.textButton {
+  @include textButton();
+}
+
+.textButtonDense {
+  @include textButtonDense();
+}
+
+.textPrimary {
+  @include textPrimary();
+}
+
+.textSecondary {
+  @include textSecondary();
+}
+
+.textDisabled {
+  @include textDisabled();
+}
+
+.lightError {
+  @include lightError();
+}
+
+.lightHighlight {
+  @include lightHighlight();
+}
+
+.mobile {
+  .subHeader {
+    font-size: 1rem;
+  }
+
+  .bodyHeavy {
+    font-size: (14/16)rem;
+  }
+
+  .body {
+    font-size: (14/16)rem;
+  }
+}
+
+ul.ul-list {
+  margin: .5rem 0 .5rem 1.2rem;
+
+  li {
+    list-style-type: disc;
+  }
+}

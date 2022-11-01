@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mri_s-pmrm_modifyrentableitemsandfees>
+	<entry>
+		<ProspectID>{{nameId}}</ProspectID>
+		<Quantity>1</Quantity>
+		<ItemType></ItemType>
+		<FeeType>chargeCode-additional-A</FeeType>
+	</entry>
+</mri_s-pmrm_modifyrentableitemsandfees>

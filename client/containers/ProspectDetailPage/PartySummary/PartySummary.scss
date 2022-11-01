@@ -1,0 +1,109 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+.party-summary {
+  padding: 0 (23rem/16);
+  background-color: #fff7d9;
+
+  .headline {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+
+    .left-column {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      height: (50rem/16);
+    }
+
+    .right-column {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 40%;
+      height: (50rem/16);
+    }
+  }
+
+  .vacate-members-warning {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: (10rem/16);
+    border-top: 1px solid rgba(0, 0, 0, .12);
+  }
+
+  .alert-icon {
+    width: (24rem/16);
+    height: (24rem/16);
+    margin: (3rem/16) (17rem/16) 0 0;
+
+    svg {
+      fill: $amber500;
+    }
+  }
+
+  .link {
+    color: inherit;
+  }
+
+  .body {
+    display: grid;
+    width: 100%;
+    padding: (12rem/16) 0 (8rem/16) 0;
+
+    grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+    grid-gap: 0 .5rem;
+
+    &.narrow {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.header-card {
+  margin: 0 (28rem/16) 0 0;
+}
+
+.body-card {
+  padding: 0 0 (13rem/16) 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+
+  > p {
+    margin: 0 0 0 (6rem/16);
+  }
+
+  .icon {
+    width: (32rem/16);
+    height: (32rem/16);
+  }
+}
+
+.next-step {
+  padding: (8rem/16) 0 0 0;
+
+  .label {
+    margin: 0 (4rem/16) 0 0;
+    color: #bd10e0;
+  }
+}
+
+.payment-plan-card {
+  display: flex;
+  align-items: left;
+  background-color: $amber200;
+
+  > p {
+    font-size: (13rem/16);
+    font-weight: 500;
+    margin: (14rem/16) (24rem/16);
+    color: rgba(0, 0, 0, .87);
+  }
+}

@@ -1,0 +1,820 @@
+{
+  "ApplicantScreening": {
+    "$": {
+      "xsi:noNamespaceSchemaLocation": "ResidentScreening3_0.xsd",
+      "xmlns": "",
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+    },
+    "Request": [
+      {
+        "PropertyID": [
+          {
+            "Identification": [
+              {
+                "$": {
+                  "IDType": "Property ID"
+                },
+                "IDValue": [
+                  "123456"
+                ]
+              }
+            ],
+            "MarketingName": [
+              "My Properties"
+            ]
+          }
+        ],
+        "RequestType": [
+          "View"
+        ],
+        "ReportOptions": [
+          {
+            "ReportName": [
+              "CR"
+            ]
+          }
+        ],
+        "ReportID": [
+          "6490560"
+        ],
+        "OriginatorID": [
+          "26694"
+        ],
+        "MarketingSource": [
+          "Rent.com"
+        ],
+        "UserName": [
+          "rsuser"
+        ],
+        "UserPassword": [
+          "REDACTED"
+        ]
+      }
+    ],
+    "LeaseTerms": [
+      {
+        "MonthlyRent": [
+          "5000.00"
+        ],
+        "LeaseMonths": [
+          "12"
+        ],
+        "AffordableLease": [
+          {
+            "_": "true",
+            "$": {
+              "SubsidyAmount": "200.00"
+            }
+          }
+        ],
+        "SecurityDeposit": [
+          "500.00"
+        ]
+      }
+    ],
+    "Applicant": [
+      {
+        "Other": [
+          {
+            "CurrentRent": [
+              "1200.00"
+            ],
+            "ConsentObtained": [
+              "YES"
+            ]
+          }
+        ],
+        "Income": [
+          {
+            "EmploymentStatus": [
+              "Employed"
+            ],
+            "EmploymentType": [
+              "Current"
+            ],
+            "EmployerName": [
+              "Nordstrom"
+            ],
+            "EmploymentGrossIncome": [
+              "900.00"
+            ],
+            "EmploymentStartDate": [
+              "2000-10-15"
+            ],
+            "OtherIncomeAmount": [
+              "1500"
+            ],
+            "OtherIncomeType": [
+              "Child Support"
+            ],
+            "OtherIncomePeriod": [
+              "120 months"
+            ]
+          }
+        ],
+        "AS_Information": [
+          {
+            "ApplicantIdentifier": [
+              "b950fc38-f29f-49e9-b45d-ffab0e53b904:78a3019b-a119-4ccb-8bdf-579aa60d5872"
+            ],
+            "ApplicantType": [
+              "Applicant"
+            ],
+            "Spouse": [
+              "t0003505"
+            ],
+            "Birthdate": [
+              "1965-10-19"
+            ],
+            "SocSecNumber": [
+              "55555XXXX"
+            ],
+            "DriversLicenseID": [
+              "027239657"
+            ],
+            "DriversLicenseState": [
+              "GA"
+            ],
+            "AddressTerms": [
+              {
+                "$": {
+                  "MoveInDate": "2000-10-10"
+                },
+                "Address": [
+                  {
+                    "$": {
+                      "AddressType": "current"
+                    },
+                    "Address": [
+                      "404 NW Napp Street"
+                    ],
+                    "City": [
+                      "De Kalb"
+                    ],
+                    "State": [
+                      "TX"
+                    ],
+                    "PostalCode": [
+                      "75559"
+                    ],
+                    "UnparsedAddress": [
+                      "404 NW Napp St Dekalb TX 75559"
+                    ],
+                    "Email": [
+                      "testemail@gmail.com"
+                    ]
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "MoveInDate": "1989-01-08",
+                  "MoveOutDate": "2000-10-10"
+                },
+                "Address": [
+                  {
+                    "$": {
+                      "AddressType": "previous"
+                    },
+                    "Address": [
+                      "5555 Hollister Avenue"
+                    ],
+                    "City": [
+                      "Goleta"
+                    ],
+                    "State": [
+                      "CA"
+                    ],
+                    "PostalCode": [
+                      "93117"
+                    ],
+                    "UnparsedAddress": [
+                      "5555 Hollister Avenue Goleta CA 93117"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Customers": [
+          {
+            "Customer": [
+              {
+                "Identification": [
+                  {
+                    "$": {
+                      "IDType": "applicant"
+                    },
+                    "IDValue": [
+                      "1234560"
+                    ]
+                  }
+                ],
+                "Name": [
+                  {
+                    "FirstName": [
+                      "Ivonne"
+                    ],
+                    "LastName": [
+                      "C"
+                    ]
+                  }
+                ],
+                "Phone": [
+                  {
+                    "$": {
+                      "PhoneType": "home"
+                    },
+                    "PhoneNumber": [
+                      "714-982-1000"
+                    ]
+                  }
+                ],
+                "Lease": [
+                  {
+                    "Identification": [
+                      {
+                        "IDValue": [
+                          "t0003504"
+                        ]
+                      }
+                    ],
+                    "ExpectedMoveInDate": [
+                      "2010-12-01"
+                    ],
+                    "ExpectedMoveOutDate": [
+                      "2011-11-30"
+                    ],
+                    "LeaseFromDate": [
+                      "2010-12-01"
+                    ],
+                    "LeaseToDate": [
+                      "2011-11-30"
+                    ],
+                    "ActualMoveIn": [
+                      "2010-12-01"
+                    ],
+                    "ResponsibleForLease": [
+                      "true"
+                    ],
+                    "LeaseSignDate": [
+                      "2010-11-15"
+                    ],
+                    "AccountNumber": [
+                      "123456"
+                    ],
+                    "CurrentNumberOccupants": [
+                      {
+                        "_": "3",
+                        "$": {
+                          "Total": "3",
+                          "Child": "1"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Response": [
+      {
+        "BlockedStatus": [
+          "Criminal encountered a problem processing applicant (29776583) for Unit Application (24365363)"
+        ],
+        "TransactionNumber": [
+          "1001"
+        ],
+        "ReportDate": [
+          "2011-04-08"
+        ],
+        "ApplicantDecision": [
+          "\nC, Ivonne - \n\n    "
+        ],
+        "ApplicationDecision": [
+          "error"
+        ],
+        "BackgroundReport": [
+          "<HTML>\n  <HEAD>\n        <META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; CHARSET=UTF-8\">\n    <STYLE>\n\t\t\t\t\tbody {\n\t\t\t\t\tbackground-color: white;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tfont-family:Tahoma, Arial, sans-serif;\n\t\t\t\t\tmargin: 1px;\n\t\t\t\t\t}\n\t\t\t\t\t.ReportHeading {\n\t\t\t\t\tbackground-color: #909090;\n\t\t\t\t\tcolor: white;\n\t\t\t\t\tfont-size: 14Pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t}\n\t\t\t\t\t.PlacardHeading {\n\t\t\t\t\tpadding-top: 5px;\n\t\t\t\t\tpadding-bottom: 5px;\n\t\t\t\t\tpadding-left: 10px;\n\t\t\t\t\tborder-left:2px solid #909090;\n\t\t\t\t\tborder-right:2px solid #909090;\n\t\t\t\t\tborder-bottom:2px solid #909090;\n\t\t\t\t\tborder-top:2px solid #909090;\n\t\t\t\t\tbackground-color: #909090;\n\t\t\t\t\tcolor: white;\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t}\n\t\t\t\t\t.DeclinedBlock {\n\t\t\t\t\tborder-left: 1px dashed #505050;\n\t\t\t\t\tborder-right: 1px dashed #505050;\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\twidth:150px;\n\t\t\t\t\theight:150px;\n\t\t\t\t\tbackground-color: #F00000;\n\t\t\t\t\tcolor:white;\n\t\t\t\t\tfont-size: 12pt;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.ApprovedBlock {\n\t\t\t\t\tborder-left: 1px dashed #505050;\n\t\t\t\t\tborder-right: 1px dashed #505050;\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\twidth:150px;\n\t\t\t\t\theight:150px;\n\t\t\t\t\tbackground-color: green;\n\t\t\t\t\tcolor:white;\n\t\t\t\t\tfont-size: 12pt;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.ApprovedWCon {\n\t\t\t\t\tborder-left: 1px dashed #505050;\n\t\t\t\t\tborder-right: 1px dashed #505050;\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\twidth:150px;\n\t\t\t\t\theight:150px;\n\t\t\t\t\tbackground-color: #FFCC00;\n\t\t\t\t\tcolor:white;\n\t\t\t\t\tfont-size: 12pt;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.FurtherReview {\n\t\t\t\t\tborder-left: 1px dashed #505050;\n\t\t\t\t\tborder-right: 1px dashed #505050;\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\twidth:150px;\n\t\t\t\t\theight:150px;\n\t\t\t\t\tbackground-color: blue;\n\t\t\t\t\tcolor:white;\n\t\t\t\t\tfont-size: 12pt;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.StillPending {\n\t\t\t\t\tborder-left: 1px dashed #505050;\n\t\t\t\t\tborder-right: 1px dashed #505050;\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\twidth:150px;\n\t\t\t\t\theight:150px;\n\t\t\t\t\tbackground-color: #CCCCCC;\n\t\t\t\t\tcolor:#909090;\n\t\t\t\t\tfont-size: 12pt;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.Incomplete {\n\t\t\t\t\tborder-left: 1px dashed #505050;\n\t\t\t\t\tborder-right: 1px dashed #505050;\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\twidth:150px;\n\t\t\t\t\theight:150px;\n\t\t\t\t\tbackground-color: #000000;\n\t\t\t\t\tcolor:#FFFFFF;\n\t\t\t\t\tfont-size: 12pt;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.Complete {\n\t\t\t\t\tborder-left: 1px dashed #505050;\n\t\t\t\t\tborder-right: 1px dashed #505050;\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\twidth:150px;\n\t\t\t\t\theight:150px;\n\t\t\t\t\tbackground-color: #FFCC00;\n\t\t\t\t\tcolor:#FFFFFF;\n\t\t\t\t\tfont-size: 12pt;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.TenPointBlack {\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.EightPointBlack {\n\t\t\t\t\tfont-size: 8pt;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.EightPointBlackYellow {\n\t\t\t\t\tfont-size: 8pt;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tbackground-color:#FFFFCC;\n\t\t\t\t\t}\n\t\t\t\t\t.TenPointBoldBlack {\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t}\n\t\t\t\t\t.EightPointBoldBlack {\n\t\t\t\t\tfont-size: 8pt;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t}\n\t\t\t\t\t.EightPointBoldGray {\n\t\t\t\t\tbackground-color: white;\n\t\t\t\t\tcolor: #505050;\n\t\t\t\t\tfont-size: 8pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\n\t\t\t\t\t}\n\t\t\t\t\t.PlacardBorderBottom {\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tbackground-color:white;\n\t\t\t\t\tborder-left:2px solid #909090;\n\t\t\t\t\tborder-right:2px solid #909090;\n\t\t\t\t\tborder-bottom:2px solid #909090;\n\t\t\t\t\t}\n\t\t\t\t\t.TenDashed {\n\t\t\t\t\tborder-bottom: 1px dashed #505050;\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\t}\n\t\t\t\t\t.EightDashed {\n\t\t\t\t\tborder-bottom: 1px dotted #CCCCCC;\n\t\t\t\t\tfont-size:8pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tbackground-color:white;\n\t\t\t\t\t}\n\t\t\t\t\t.EightDashedYellow {\n\t\t\t\t\tborder-bottom: 1px dotted #CCCCCC;\n\t\t\t\t\tfont-size:8pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tbackground-color:#FFFFCC;\n\t\t\t\t\t}\n\t\t\t\t\t.Padded4Ten {\n\t\t\t\t\tpadding-left:4px;\n\t\t\t\t\tfont-family:Tahoma,Arial,sans-serif;\n\t\t\t\t\tfont-size:10pt;\n\t\t\t\t\t}\n\t\t\t\t\t.PaddedGrayTitle {\n\t\t\t\t\tpadding-left: 6px;\n\t\t\t\t\tbackground-color: #E8E8E8;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tborder-left:2px solid #909090;\n\t\t\t\t\tborder-right:2px solid #909090;\n\t\t\t\t\t}\n\t\t\t\t\t.PaddedGrayTitleEviction {\n\t\t\t\t\tpadding-left: 6px;\n\t\t\t\t\tbackground-color: #CCCCCC;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tborder-left:1px solid #909090;\n\t\t\t\t\tborder-right:1px solid #CCCCCC;\n\t\t\t\t\t}\n\t\t\t\t\t.PaddedTitle {\n\t\t\t\t\tpadding-left: 6px;\n\t\t\t\t\tbackground-color: white;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-size: 10pt;\n\t\t\t\t\tfont-family: Tahoma, Arial, sans-serif;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tborder-left:2px solid #909090;\n\t\t\t\t\tborder-right:2px solid #909090;\n\t\t\t\t\t}\n\t\t\t\t\t.PaddedWhiteBordered {\n\t\t\t\t\tpadding-left:6px;\n\t\t\t\t\tbackground-color: white;\n\t\t\t\t\tcolor: black;\n\t\t\t\t\tfont-size: 8pt;\n\t\t\t\t\tborder-left:2px solid #909090;\n\t\t\t\t\tborder-right:2px solid #909090;\n\t\t\t\t\t}\n\n\t\t\t\t</STYLE>\n  </HEAD>\n  <BODY>\n    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n      <table border=\"0\" cellpadding=\"6\" cellspacing=\"0\" width=\"100%\">\n        <tr>\n          <td valign=\"middle\" align=\"right\" width=\"50%\" class=\"ReportHeading\" colspan=\"2\" height=\"30\">\n            <center>\n\t\t\t\t\t\t\t\t\tUnit Application ID: 6490560</center>\n            <img src=\"https://resident.lexisnexis.com/images/LexisNexis_horz.jpg\">\n          </td>\n        </tr>\n        <tr>\n          <td valign=\"middle\" align=\"left\" width=\"33%\" class=\"EightPointBoldGray\">\n\t\t\t\t\t\t\t\tProperty:  Tracey's Property      Property ID: 130076<br>\n\t\t\t\t\t\t\t\t\t\tPhone: 678-893-9158<br>\n\t\t\t\t\t\t\t\tSubmitted by:  mits30user2 <br>\n\t\t\t\t\t\t\t\tReceived:  4/8/2011 3:18:42 PM<br>\n\t\t\t\t\t\t\t\tCompleted:  4/8/2011 4:08:26 PM<br>\n\t\t\t\t\t\t\t\tLast Modified:  4/8/2011 4:08:26 PM<br></td>\n          <td valign=\"middle\" align=\"right\" width=\"50%\" class=\"EightPointBoldGray\">\n\t\t\t\t\t\t\t\t\t\tToll Free:  800-487-3246<br>\n\t\t\t\t\t\t\t\t\t\tPhone:  972-952-1480<br>\n\t\t\t\t\t\t\t\tFax Toll Free:  800-687-1099<br>\n\t\t\t\t\t\t\t\tFax:  972-952-1483<br></td>\n        </tr>\n      </table>\n      <div align=\"center\">\n        <table border=\"0\" cellpadding=\"6\" cellspacing=\"0\" width=\"98%\" style=\"border-bottom:1px solid #505050;\">\n          <tr>\n            <td valign=\"bottom\" align=\"left\" width=\"50%\">\n              <span style=\"font-size: 14pt; color: black; font-weight: bold; font-family: Tahoma, Arial, sans-serif;\">TRACEY'S MANAGEMENT COMPANY</span>\n              <br>\n              <span style=\"padding-left:2px;font-size: 12pt; color: black; font-weight: bold; font-family: Tahoma, Arial, sans-serif;\">Residential Screening Analysis Report</span>\n              <br>\n            </td>\n            <td valign=\"bottom\" align=\"right\" width=\"40%\">\n              <span class=\"TenPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\tApt #: 951   Monthly Rent: $1,200</span>\n            </td>\n          </tr>\n        </table>\n        <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n          <tr>\n            <td valign=\"top\" align=\"center\" width=\"150\">\n              <div class=\"ApprovedBlock\">\n                <br>\n\t\t\t\t\t\t\t\t\t\t\t\tAPPROVED\n\t\t\t\t\t\t\t\t\t\t\t</div>\n            </td>\n            <td valign=\"top\" align=\"left\" width=\"98%\">\n              <table border=\"0\" cellpadding=\"0\" cellspacing=\"2\">\n                <tr>\n                  <th valign=\"bottom\" align=\"left\" width=\"30\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" width=\"300\" class=\"TenDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\tApplicant(s)\n\t\t\t\t\t\t\t\t\t\t\t</th>\n                  <th valign=\"bottom\" align=\"left\" width=\"100\" class=\"TenDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\tApplicant ID\n\t\t\t\t\t\t\t\t\t\t\t</th>\n                  <th valign=\"bottom\" align=\"left\" width=\"100\" class=\"TenDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\tType\n\t\t\t\t\t\t\t\t\t\t\t</th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\" width=\"230\">\n\t\t\t\t\t\t\t\t\t\t\t\tDecision\n\t\t\t\t\t\t\t\t\t\t\t</th>\n                </tr>\n                <tr>\n                  <td valign=\"middle\" align=\"left\" class=\"Padded4Ten\" style=\"font-weight:bold;\">1</td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBoldBlack\">Dennis  Smith </td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBlack\">8794976</td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBlack\">HUSBAND</td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBlack\">APPROVED</td>\n                </tr>\n                <tr>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                </tr>\n                <tr>\n                  <td valign=\"middle\" align=\"left\" class=\"Padded4Ten\" style=\"font-weight:bold;\">2</td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBoldBlack\">Lisa  Smith  (Jones)</td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBlack\">8794977</td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBlack\">WIFE</td>\n                  <td valign=\"middle\" align=\"left\" class=\"TenPointBlack\">APPROVED</td>\n                </tr>\n                <tr>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                  <th valign=\"bottom\" align=\"left\" class=\"TenDashed\">\n                    <br>\n                  </th>\n                </tr>\n              </table>\n            </td>\n          </tr>\n        </table>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tProperty qualifying criteria\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedGrayTitle\">1  Dennis  Smith\n\t\t\t\t\t\t\t\t\t\t\t2  Lisa  Smith  (Jones)\n\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" width=\"100%\" cellpadding=\"3\" cellspacing=\"0\">\n                  <tr>\n                    <th width=\"12\" class=\"TenDashed\">1</th>\n                    <th width=\"12\" class=\"TenDashed\">2</th>\n                    <th class=\"TenDashed\"> </th>\n                    <th class=\"TenDashed\" align=\"left\">Criteria Description</th>\n                    <th class=\"TenDashed\" align=\"left\">Code</th>\n                    <th class=\"TenDashed\" align=\"left\">Override</th>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has established credit history in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR100</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no bankruptcy in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR101</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no foreclosures in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR102</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no collections in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR103</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no legal items in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR104</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no tax liens in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR105</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no outstanding debt to previous landlords in the last 24 months as reported by the Credit Bureau.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR106</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has less than $ 500 of legal item debt in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR107</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has less than 1 credit accounts rated 3 or higher in the last 12 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR108</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has 10 % or fewer credit accounts rated 3 or higher in the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR110</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no possible landlord or utility collections in the last 84 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR113</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant with zero credit score has less than $400 of outstanding Medical Collections.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR119</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has less than $ 500 of total delinquent debt within the last 24 months.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR122</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicants Credit Score is greater than or equal to 500</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR131</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicants Credit Score is greater than or equal to 525</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR132</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no criminal records (excluding DWI and DWLS).</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CM300</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no felony records matched in the last 7 years.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CM301</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no VCAP records matched in the last 7 years.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CM302</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no serious misdemeanor records matched in the last 7 years.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CM303</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no Criminal Records matched in the last 7 years.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CM304</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Monthly debt is equal to or less than 20 % of Applicant's income</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR404</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Monthly debt and rent is equal to or less than 30 % of Applicant's income.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR406</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Monthly rent is equal to or less than 25 % of Applicant's credit adjusted income.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">CR411</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no matches in the registered sex offender database.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">SX500</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t--\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has no Name with DOB matches in the registered sex offender database.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">SX501</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">P</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">P</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">There are no other names associated with the Applicants Social Security Number.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">SN900</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">P</td>\n                    <td valign=\"top\" align=\"center\" class=\"EightDashed\">P</td>\n                    <td class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">Applicant has passed a Social Security Number fraud analysis.</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">SN901</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightDashed\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" colspan=\"8\" style=\"font-size: 10pt; font-family: Tahoma, Arial, sans-serif;background-color:white;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\t\t\t\t\t\t\t\t\t\t\t P = Pass   F = Fail   N = Not applicable   -- = Unavailable\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" colspan=\"8\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tApplication information submitted by Mits30user2</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px; background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">Dennis  Smith </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px; background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDate of Birth: 10/19/XXXX<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSocial Security Number: 555-55-XXXX<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOther Id: <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOther Id Type: <br></td>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDrivers License: 027239XXX<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDL State: GA<br></td>\n                    <td width=\"25%\" valign=\"top\" align=\"right\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCurrent Address:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">404    NAPP  ST    <br>De Kalb, TX  75559<br><br></td>\n                  </tr>\n                  <tr>\n                    <td width=\"25%\">\n                    </td>\n                    <td width=\"25%\">\n                    </td>\n                    <td width=\"25%\" valign=\"top\" align=\"right\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPrevious Address - Street Number:<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tZip Code:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">5555Hollis<br>93117<br></td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px; background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">Lisa  Smith  (Jones)</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px; background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDate of Birth: 8/14/XXXX<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSocial Security Number: 444-44-XXXX<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOther Id: <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOther Id Type: <br></td>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDrivers License: <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDL State: <br></td>\n                    <td width=\"25%\" valign=\"top\" align=\"right\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCurrent Address:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">404    NAPP  ST    <br>De Kalb, TX  75559<br><br></td>\n                  </tr>\n                  <tr>\n                    <td width=\"25%\">\n                    </td>\n                    <td width=\"25%\">\n                    </td>\n                    <td width=\"25%\" valign=\"top\" align=\"right\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPrevious Address - Street Number:<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tZip Code:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td width=\"25%\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">5555Hollis<br>93117<br></td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tCredit adjusted rent to income summary\n\t\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedWhiteBordered\">\n                <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\">\n                  <tr>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplicant\n\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tType\n\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCredit Score\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tMonthly Income\n\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCredit adjusted Min Income Required\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNeutral Credit Score\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCredit Adjusted Income\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\" width=\"10%\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCredit Adjusted Rent to Income\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                  </tr>\n                  <tr>\n                    <td nowrap valign=\"top\" align=\"left\" style=\"border-bottom:2px solid white;background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;\">1  Dennis  Smith\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">HUSBAND</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">0</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">$ 4,000</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">N/A</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\"></td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\"></td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt; 1.00%\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                  <tr>\n                    <td nowrap valign=\"top\" align=\"left\" style=\"border-bottom:2px solid white;background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;\">2  Lisa  Smith  (Jones)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">WIFE</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">0</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">$ 5,000</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">N/A</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\"></td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\"></td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&lt; 1.00%\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" colspan=\"8\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tCredit report summary (source: )\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedGrayTitle\">1  Dennis  Smith\n\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\n\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"5\" cellspacing=\"0\" width=\"92%\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccount ratings:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 1 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 2 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 3 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 4 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 5 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 6 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 7 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 8 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 9 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1=Pays accounts as agreed<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2=Not more than 2 past due pymnts<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3=Not more than 3 past due pymnts<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4=Not more than 4 past due pymnts<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t5=120 days past due<br></td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6=Not used<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t7=W.E.P.<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t8=Repossession<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t9=Collection<br></td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t% of Negative Credit:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td colspan=\"2\" valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">0.00%</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCredit score:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td colspan=\"2\" valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\"></td>\n                  </tr>\n                </table>\n                <br>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedGrayTitle\">2  Lisa  Smith  (Jones)\n\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\n\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"5\" cellspacing=\"0\" width=\"92%\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccount ratings:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 1 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 2 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 3 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 4 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 5 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 6 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 7 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 8 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 9 <br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1=Pays accounts as agreed<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2=Not more than 2 past due pymnts<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3=Not more than 3 past due pymnts<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4=Not more than 4 past due pymnts<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t5=120 days past due<br></td>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6=Not used<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t7=W.E.P.<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t8=Repossession<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t9=Collection<br></td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t% of Negative Credit:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td colspan=\"2\" valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">0.00%</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCredit score:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n                    <td colspan=\"2\" valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\"></td>\n                  </tr>\n                </table>\n                <br>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" colspan=\"8\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tDebt to income summary\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedGrayTitle\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"4\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"font-weight:bold;font-size:8pt;\" width=\"200\">Dennis  Smith </td>\n                    <td valign=\"top\" align=\"left\" style=\"font-weight:bold;font-size:8pt;\" width=\"300\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMonthly Income: $4000</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedWhiteBordered\">\n                <table border=\"0\" cellpadding=\"4\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCustomer Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRating\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccount Type\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast Activity Date\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMonthly Payment\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                  </tr>\n                </table>\n                <table border=\"0\" cellpadding=\"4\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <th valign=\"top\" align=\"left\" colspan=\"4\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Monthly Payments: </th>\n                  </tr>\n                  <tr>\n                    <th valign=\"top\" align=\"left\" colspan=\"4\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDebt to Income: %</th>\n                  </tr>\n                  <tr>\n                    <th valign=\"top\" align=\"left\" colspan=\"4\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDebt Plus Rent to Income: %</th>\n                  </tr>\n                  <br>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedGrayTitle\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"4\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"font-weight:bold;font-size:8pt;\" width=\"200\">Lisa  Smith  (Jones)</td>\n                    <td valign=\"top\" align=\"left\" style=\"font-weight:bold;font-size:8pt;\" width=\"300\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMonthly Income: $5000</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedWhiteBordered\">\n                <table border=\"0\" cellpadding=\"4\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCustomer Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRating\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccount Type\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast Activity Date\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                    <th valign=\"top\" align=\"left\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMonthly Payment\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\n                  </tr>\n                </table>\n                <table border=\"0\" cellpadding=\"4\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <th valign=\"top\" align=\"left\" colspan=\"4\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Monthly Payments: </th>\n                  </tr>\n                  <tr>\n                    <th valign=\"top\" align=\"left\" colspan=\"4\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDebt to Income: %</th>\n                  </tr>\n                  <tr>\n                    <th valign=\"top\" align=\"left\" colspan=\"4\" class=\"EightPointBoldBlack\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDebt Plus Rent to Income: %</th>\n                  </tr>\n                  <br>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" colspan=\"8\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tApplication comments\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" width=\"98%\" class=\"PaddedGrayTitle\">Unit Comments</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" width=\"98%\" class=\"PaddedWhiteBordered\">Rent To Income percent based on combined incomes.<br><br></td>\n            </tr>\n            <tr>\n              <td valign=\"top\" colspan=\"8\" class=\"PlacardBorderBottom\" style=\"font-size:1pt;\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tSSN verification\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedGrayTitle\">1  Dennis  Smith </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" width=\"80%\">\n                  <tr>\n                    <th valign=\"top\" align=\"left\"> </th>\n                    <th width=\"250\" align=\"left\" class=\"EightPointBoldBlack\">Associated names</th>\n                    <th width=\"100\" class=\"EightPointBoldBlack\">Times seen</th>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\"> </td>\n                    <td width=\"250\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">DENNIS  SMITH</td>\n                    <td width=\"100\" valign=\"top\" align=\"center\" class=\"EightPointBlack\">19</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedGrayTitle\">2  Lisa  Smith  (Jones)</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" width=\"80%\">\n                  <tr>\n                    <th valign=\"top\" align=\"left\"> </th>\n                    <th width=\"250\" align=\"left\" class=\"EightPointBoldBlack\">Associated names</th>\n                    <th width=\"100\" class=\"EightPointBoldBlack\">Times seen</th>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\"> </td>\n                    <td width=\"250\" valign=\"top\" align=\"left\" class=\"EightPointBlack\">LISA  SMITH</td>\n                    <td width=\"100\" valign=\"top\" align=\"center\" class=\"EightPointBlack\">26</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" colspan=\"8\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tCriminal report summary\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px;border-top:1px dotted #CCCCCC;font-weight:bold;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\t\t\t\t\t\t\t\t\t\t\tCriminal Report:\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"2\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Dennis  Smith </td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No matching criminal records found</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"2\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Lisa  Smith  (Jones)</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No matching criminal records found</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"padding-left:6px;border-top:1px dotted #CCCCCC;font-weight:bold;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\t\t\t\t\t\t\t\t\t\t\tSex Offender Report:\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <p style=\"width:100%;padding-left:6px;\">\n                  <span style=\"font-weight:bold;\">Instructions: </span>If the Applicant Name or Physical Description does not match the name or physical description in the sex offender records listed, call your Customer Service Representative. If both the name and description match the information listed in the criminal records, this Applicant is rejected. </p>\n                <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <td colspan=\"2\" valign=\"top\" align=\"left\" style=\"padding-left:6px;background-color:#CCCCCC;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Dennis  Smith </td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No matching sex offender records found<br><br></td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <p style=\"width:100%;padding-left:6px;\">\n                  <span style=\"font-weight:bold;\">Instructions: </span>If the Applicant Name or Physical Description does not match the name or physical description in the sex offender records listed, call your Customer Service Representative. If both the name and description match the information listed in the criminal records, this Applicant is rejected. </p>\n                <table border=\"0\" cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <td colspan=\"2\" valign=\"top\" align=\"left\" style=\"padding-left:6px;background-color:#CCCCCC;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Lisa  Smith  (Jones)</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No matching sex offender records found<br><br></td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <p style=\"width:100%;padding-left:12px;\">\n                  <span style=\"font-weight:bold;font-family: Tahoma,Arial,sans-serif; font-size:8pt;\">Note: </span>The SexOffender records displayed above are obtained from public records based on combinations of name and date of birth or name only matches. The accuracy of the match is based on the accuracy of the public records and the accuracy of the Applicant information submitted.  It is important to submit Applicant information based on the data found on the drivers license, or other legal identification documents.</p>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedTitle\">\n                <br>\n                <tr>\n                  <td valign=\"top\" align=\"left\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;\">Dennis  Smith </td>\n                </tr>\n                <tr>\n                  <td valign=\"top\" align=\"left\" style=\"background-color:white;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                    <p style=\"width:700px; font-size: 8pt;\">\n                      <span style=\"font-weight:bold;font-size: 8pt;\">Applicant name and DOB were checked against:</span>\n                      <br>\n                      <ul style=\"font-weight:normal;font-size:8pt;\">\n                        <li style=\"font-weight:normal;font-size:8pt;\">Office of foreign assets control.</li>\n                        <li style=\"font-weight:normal;font-size:8pt;\">Federal Terrorist list.</li>\n                        <li style=\"font-weight:normal;font-size:8pt;\">Federal most wanted lists.</li>\n                      </ul>\n                    </p>\n                  </td>\n                </tr>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PaddedTitle\">\n                <br>\n                <tr>\n                  <td valign=\"top\" align=\"left\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;\">Lisa  Smith  (Jones)</td>\n                </tr>\n                <tr>\n                  <td valign=\"top\" align=\"left\" style=\"background-color:white;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                    <p style=\"width:700px; font-size: 8pt;\">\n                      <span style=\"font-weight:bold;font-size: 8pt;\">Applicant name and DOB were checked against:</span>\n                      <br>\n                      <ul style=\"font-weight:normal;font-size:8pt;\">\n                        <li style=\"font-weight:normal;font-size:8pt;\">Office of foreign assets control.</li>\n                        <li style=\"font-weight:normal;font-size:8pt;\">Federal Terrorist list.</li>\n                        <li style=\"font-weight:normal;font-size:8pt;\">Federal most wanted lists.</li>\n                      </ul>\n                    </p>\n                  </td>\n                </tr>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tPrior Screening Summary\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"6\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Dennis  Smith </td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"6\" valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No prior screening records found.</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"6\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Lisa  Smith  (Jones)</td>\n                  </tr>\n                  <tr>\n                    <td colspan=\"6\" valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No prior screening records found.</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <div align=\"center\" style=\"padding: 10px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"98%\">\n            <tr>\n              <td valign=\"top\" width=\"98%\" align=\"left\" class=\"PlacardHeading\">\n\t\t\t\t\t\t\t\t\t\t\tDelinquent Debt (accounts active in the past 24 months)\n\t\t\t\t\t\t\t\t\t\t</td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" style=\"background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;\">\n                <table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" width=\"100%\">\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"7\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Dennis  Smith </td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No delinquent debt found for applicant</td>\n                  </tr>\n                  <tr>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"7\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Delinquent Debt for Dennis  Smith  : $</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"7\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">Lisa  Smith  (Jones)</td>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" style=\"padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDescription: No delinquent debt found for applicant</td>\n                  </tr>\n                  <tr>\n                  </tr>\n                  <tr>\n                    <td valign=\"top\" align=\"left\" colspan=\"7\" style=\"background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Delinquent Debt for Lisa  Smith  (Jones) : $</td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n            <tr>\n              <td valign=\"top\" align=\"left\" class=\"PlacardBorderBottom\">\n                <br>\n              </td>\n            </tr>\n          </table>\n        </div>\n      </div>\n    </table>\n  </BODY>\n</HTML>"
+        ],
+        "Status": [
+          "Error"
+        ],
+        "ErrorCode": [
+          "30017"
+        ],
+        "ErrorDescription": [
+          "Unable to parse address node."
+        ],
+        "RequestID_Returned": [
+          "414926"
+        ]
+      }
+    ],
+    "CustomRecords": [
+      {
+        "Record": [
+          {
+            "Name": [
+              "screeningRequestId"
+            ],
+            "Value": [
+              "00cbc545-1f0d-4f3a-8b73-71dcab48325b"
+            ]
+          }
+        ]
+      }
+    ],
+    "CustomRecordsExtended": [
+      {
+        "Record": [
+          {
+            "Name": [
+              "XMLReport"
+            ],
+            "Value": [
+              {
+                "AEROReport": [
+                  {
+                    "Header1": [
+                      {
+                        "ManagementName": [
+                          "RESIDENT DATA, INC"
+                        ],
+                        "Recommendation": [
+                          "DECLINED"
+                        ],
+                        "UnitAppID": [
+                          "20388988"
+                        ]
+                      }
+                    ],
+                    "Header2": [
+                      {
+                        "PropertyName": [
+                          "CD test account"
+                        ],
+                        "Phone": [
+                          "1  -   -    "
+                        ],
+                        "AccountingID": [
+                          "109667"
+                        ],
+                        "SubmittedBy": [
+                          "DerricCM"
+                        ],
+                        "UnitNumber": [
+                          ""
+                        ],
+                        "MonthlyRent": [
+                          "0"
+                        ],
+                        "PropertyId": [
+                          "116418"
+                        ],
+                        "StartTime": [
+                          "11/8/2016 4:47:49 PM"
+                        ],
+                        "EndTime": [
+                          "11/8/2016 4:51:48 PM"
+                        ],
+                        "ModifiedDate": [
+                          "11/8/2016 5:03:01 PM"
+                        ]
+                      }
+                    ],
+                    "Instructions": [
+                      {
+                        "InstructionalOverrideExists": [
+                          "False"
+                        ],
+                        "SafeScanExists": [
+                          "False"
+                        ],
+                        "UnitStandardOverrideExists": [
+                          "False"
+                        ]
+                      }
+                    ],
+                    "RentToIncomes": [
+                      {
+                        "CARI": [
+                          "False"
+                        ],
+                        "DisplayCreditScore": [
+                          "N"
+                        ],
+                        "Applicant": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantID": [
+                              "1234560"
+                            ],
+                            "ApplicantName": [
+                              "Testthird  XMLRESPONSE "
+                            ],
+                            "ApplicantType": [
+                              "APPLICANT"
+                            ],
+                            "CreditScore": [
+                              "0"
+                            ],
+                            "MonthlyIncome": [
+                              ""
+                            ],
+                            "RentToIncome": [
+                              "&#60; 1.00 %"
+                            ],
+                            "MinimumIncomeRequired": [
+                              "N/A"
+                            ],
+                            "NeutralCreditScore": [
+                              ""
+                            ],
+                            "CreditAdjustedIncome": [
+                              ""
+                            ],
+                            "CreditAdjustedRentToIncome": [
+                              "&#60; 1.00 %"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "Applicants": [
+                      {
+                        "Applicant": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "Index": [
+                              "1"
+                            ],
+                            "ApplicantID": [
+                              "1234560"
+                            ],
+                            "ApplicantName": [
+                              "Ivonne C"
+                            ],
+                            "ApplicantType": [
+                              "APPLICANT"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "PropertyCriteria": [
+                      {
+                        "Criteria": [
+                          {
+                            "PassFail": [
+                              "P"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "P",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Applicant has no VCAP records matched in the last 10 years."
+                            ],
+                            "CriteriaID": [
+                              "302"
+                            ],
+                            "CriteriaType": [
+                              "CM"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "P"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "P",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Applicant has no serious misdemeanor records matched in the last 7 years."
+                            ],
+                            "CriteriaID": [
+                              "303"
+                            ],
+                            "CriteriaType": [
+                              "CM"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "P"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "P",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "321"
+                            ],
+                            "CriteriaType": [
+                              "CM"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "Evictions": [
+                      {
+                        "DisplayVerified": [
+                          "True"
+                        ],
+                        "DisplayUnVerified": [
+                          "False"
+                        ],
+                        "Eviction": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantName": [
+                              "Testthird XMLRESPONSE"
+                            ],
+                            "Description": [
+                              "No matching eviction records found"
+                            ]
+                          }
+                        ],
+                        "Note": [
+                          ""
+                        ],
+                        "InitNote": [
+                          ""
+                        ]
+                      }
+                    ],
+                    "Criminals": [
+                      {
+                        "DisplayCriminalOffense": [
+                          "Y"
+                        ],
+                        "DisplayNotesExist": [
+                          "False"
+                        ],
+                        "Criminal": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantID": [
+                              "1234560"
+                            ],
+                            "CriminalKeys": [
+                              ""
+                            ],
+                            "CriminalMatchKeys": [
+                              "Key|1234560|17189976"
+                            ],
+                            "CriminalRevisionsExist": [
+                              "False"
+                            ],
+                            "CriminalInfo": [
+                              {
+                                "RecordIndex": [
+                                  "1"
+                                ],
+                                "CaseNumber": [
+                                  "123cm456789"
+                                ],
+                                "County": [
+                                  "dallas"
+                                ],
+                                "State": [
+                                  ""
+                                ],
+                                "Source": [
+                                  "Test Source"
+                                ],
+                                "Name": [
+                                  "Testthird XMLRESPONSE"
+                                ],
+                                "DOB": [
+                                  "10/10/XXXX"
+                                ],
+                                "SSN": [
+                                  "_____XXXX"
+                                ],
+                                "Sex": [
+                                  ""
+                                ],
+                                "Race": [
+                                  ""
+                                ],
+                                "Height": [
+                                  "6"
+                                ],
+                                "Weight": [
+                                  "0"
+                                ],
+                                "HairColor": [
+                                  ""
+                                ],
+                                "EyeColor": [
+                                  ""
+                                ],
+                                "Offense": [
+                                  "possession of other peoples money"
+                                ],
+                                "Category": [
+                                  "Theft"
+                                ],
+                                "Degree": [
+                                  "F"
+                                ],
+                                "DispositionDate": [
+                                  "2/1/2014"
+                                ],
+                                "SentenceDate": [
+                                  "2/1/2014"
+                                ],
+                                "OffenseDate": [
+                                  "1/1/2014"
+                                ],
+                                "Disposition": [
+                                  "convicted"
+                                ],
+                                "SentenceTerm": [
+                                  "20Y00M00D"
+                                ],
+                                "ProbationTerm": [
+                                  "00Y00M00D"
+                                ],
+                                "OffenseCode": [
+                                  ""
+                                ],
+                                "DisplayNotes": [
+                                  ""
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "CriminalSearches": [
+                      {
+                        "Applicant": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantName": [
+                              "Testthird  XMLRESPONSE "
+                            ],
+                            "SearchesPerformed": [
+                              {
+                                "SearchPerformed": [
+                                  "Search of Texas State Criminal and Sex Offender Records."
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "ApplicationComments": [
+                      {
+                        "ApplicantCommentsExist": [
+                          "True"
+                        ],
+                        "ApplicantComment": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantName": [
+                              "Testthird  XMLRESPONSE "
+                            ],
+                            "Comment": [
+                              {
+                                "CommentText": [
+                                  "Rejected: Applicant failed criteria 331 which has no override."
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "ApplicationInformation": [
+                      {
+                        "SubmittedBy": [
+                          "Derriccm"
+                        ],
+                        "ApplicantInformation": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "Applicant": [
+                              {
+                                "ApplicantName": [
+                                  "Testthird  XMLRESPONSE "
+                                ],
+                                "DOB": [
+                                  "10/10/XXXX"
+                                ],
+                                "SSN": [
+                                  ""
+                                ],
+                                "DriversLicense": [
+                                  ""
+                                ],
+                                "DriversLicenseState": [
+                                  ""
+                                ],
+                                "ForeignId": [
+                                  ""
+                                ],
+                                "ForeignIdDesc": [
+                                  ""
+                                ],
+                                "CurrentAddress": [
+                                  "123    ANYSTREET      , Dallas, TX  75251"
+                                ],
+                                "CurrentAddressStreet": [
+                                  "123    ANYSTREET      "
+                                ],
+                                "CurrentAddressCSZ": [
+                                  "Dallas, TX  75251"
+                                ],
+                                "CreditSSN": [
+                                  ""
+                                ],
+                                "ExternalId": [
+                                  "b950fc38-f29f-49e9-b45d-ffab0e53b904:78a3019b-a119-4ccb-8bdf-579aa60d5872"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

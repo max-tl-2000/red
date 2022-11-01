@@ -1,0 +1,32 @@
+diff --git a/node_modules/rotating-file-stream/index.js b/node_modules/rotating-file-stream/index.js
+index a760a7f..39405ef 100644
+--- a/node_modules/rotating-file-stream/index.js
++++ b/node_modules/rotating-file-stream/index.js
+@@ -677,14 +677,20 @@ function createClassical(filename) {
+ }
+ function createGenerator(filename) {
+     const pad = (num) => (num > 9 ? "" : "0") + num;
++    
++    const path = require('path');
++    
++    const dirName = path.dirname(filename);
++    const base = path.basename(filename);
++
+     return (time, index) => {
+         if (!time)
+-            return filename;
++            return path.relative(path.resolve('./'), path.resolve(filename));
+         const month = time.getFullYear() + "" + pad(time.getMonth() + 1);
+         const day = pad(time.getDate());
+         const hour = pad(time.getHours());
+         const minute = pad(time.getMinutes());
+-        return month + day + "-" + hour + minute + "-" + pad(index) + "-" + filename;
++        return path.relative(path.resolve('./'), path.resolve(path.join(dirName, month + day + "-" + hour + minute + "-" + pad(index) + "-" + base)));
+     };
+ }
+ function createStream(filename, options) {
+@@ -703,3 +709,4 @@ function createStream(filename, options) {
+     return new RotatingFileStream(generator, opts);
+ }
+ exports.createStream = createStream;
++exports.createGenerator = createGenerator;

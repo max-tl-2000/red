@@ -1,0 +1,3 @@
+FinCharges,,,,,,,,,,
+PROPERTY,PERSON,OFFSET,AMOUNT,DATE,POSTMONTH,ACCOUNT,ACCRUAL,NOTES,REF,UNIT
+"cove","0000001t","secdep","-1000.00","6/27/2017","6/1/2017","24000","12000","Security Deposit",":MoveIn","RevaApp"

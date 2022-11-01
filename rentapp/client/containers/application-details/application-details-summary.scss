@@ -1,0 +1,29 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+.applicantDetailsBlock {
+  .simple-line {
+    border-top: 1px solid $grey200;
+  }
+
+  .simple-row {
+    display: flex;
+    min-height: (32rem/16);
+
+    .secondColumnBlock {
+      @include span(1, 2, 0);
+    }
+
+    &.firstColumnBlock {
+      width: 100%;
+    }
+
+    &:hover {
+      background: none;
+    }
+
+    &:after {
+      border-bottom: none;
+    }
+  }
+}

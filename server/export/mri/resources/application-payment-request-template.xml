@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Payments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+{{#with this}}
+  <nameID>{{nameID}}</nameID>
+  <description>{{description}}</description>
+  <amount>{{amount}}</amount>
+  <transactionReference>{{transactionReference}}</transactionReference>
+  <convenienceFee>{{convenienceFee}}</convenienceFee>
+  <securityCode>{{securityCode}}</securityCode>
+  <transactionOutcome>{{transactionOutcome}}</transactionOutcome>
+  <paymentSucceded>{{paymentSucceded}}</paymentSucceded>
+{{/with}}
+</Payments>

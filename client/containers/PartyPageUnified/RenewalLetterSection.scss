@@ -1,0 +1,22 @@
+@import '../../../client/sass/_colors.scss';
+
+.renewal-description {
+  padding-top: 1rem;
+}
+
+.renewal-buttons {
+  padding-top: 2rem;
+
+  .secondary-button {
+    margin-left: 1rem;
+  }
+
+  .btn-shadow {
+    box-shadow: 0 (2rem/16) (2rem/16) rgba(0, 0, 0, .24), 0 0 (2rem/16) rgba(0, 0, 0, .12);
+  }
+}
+
+.tag {
+  position: absolute;
+  background-color: $red100;
+}

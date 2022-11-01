@@ -1,0 +1,730 @@
+{
+  // Use IntelliSense to learn about possible Node.js debug attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "backend",
+      "configurations": ["socket", "api", "worker", "decision_api", "export_api"],
+    },
+    {
+      "name": "frontend",
+      "configurations": ["leasing", "auth", "consumer"]
+    },
+    {
+      "name": "frontend-server-only",
+      "configurations": ["leasing-server-only", "auth-server-only", "consumer-server-only"]
+    },
+  ],
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32407,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32407",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "name": "cucumber-local",
+      "program": "${workspaceRoot}/node_modules/cucumber/bin/cucumber.js",
+      "args": [
+        "./cucumber/apps/leasing/features/DemoFlow.feature",
+        "./cucumber/apps/leasing/features/",
+        "./cucumber/apps/rentapp/features/",
+        "./cucumber/apps/roommates/features/",
+        "--require",
+        "./cucumber/lib/step_definitions/",
+        "--require",
+        "./cucumber/apps/leasing/step_definitions/",
+        "--require",
+        "./cucumber/apps/rentapp/step_definitions/",
+        "--require",
+        "./cucumber/apps/roommates/step_definitions/",
+        "--require",
+        "./cucumber/support/hooks.js",
+        "-S",
+        "--fail-fast",
+        "--tags",
+        "~@Ignore",
+        "--tags",
+        "@Demo"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "RED_PROCESS_NAME": "cucumber-local",
+        "TZ": "UTC",
+        "SELENIUM_BROWSER": "CHROME",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "SELENIUM_DOMAIN": "localhost",
+        "DOMAIN": "local.env.reva.tech",
+        "NODE_PATH": "./cucumber:./common"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "showAsyncStacks": true,
+      "name": "integration",
+      "protocol": "inspector",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32408,
+      "runtimeArgs": [
+        "--inspect=32408",
+        "--debug-brk"
+      ],
+      "program": "${workspaceRoot}/node_modules/.bin/_mocha",
+      "args": [
+        "--compilers",
+        "js:${workspaceRoot}/babel-register.js",
+        "--timeout",
+        "720000",
+        "--bail",
+        "${relativeFile}"
+      ],
+      "env": {
+        "NODE_ENV": "integration",
+        "RED_PROCESS_NAME": "integration-test",
+        "TZ": "UTC",
+        "NODE_PATH": "server/:common/",
+        "KEEP_DB": "true"
+      }
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "chrome-rentapp",
+      // you can change this url to match your local tenant
+      // if not using demo
+      "url": "https://application.local.env.reva.tech/welcome/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJib2R5IjoiRk9yRHZvRmRrNGt0TitDMWtHNW0zUEJ4QVlNV3pXRjBaNVFTakt6aEdUR2d1U29aZEJxMkllWXFPVHVGM2MwdHpBSDFzMEhCQk1SZVZYSlVveUYvNFVQMWJrdWdQVjdYUW9LcVdyUjhZM3VPUi9WZlJONDJnOEpvZFNrMDFyTHA5eHBJZ3I1K3UrWkpxVWx0dDdRNW4rdXlKSWdmVWFZaWJuTWRBVHFMWlpjVDF0am1Bbk9aR3QrRlltRkZxaGd6MlB6ZHZMZHcxQ2ZKeVJKbUNnUnBiQTBjRGhNTktTa05Ed002RjJEbzhpKzc1cGFDOFRGS0N3MWNVRXp3eVVJRjkvYktvRWtneEJ1NUdvY1RVVDkxSHRRMTdnaXBkTlBPTUhISmlnWU9wWEg4bXZJemtSTk9wc0hOWUhJeTMwdEJCQzBPSHlNd1BsQlBiVk81dCtvcHFFaz0iLCJpYXQiOjE1MDUxNzc1NjIsImV4cCI6MTUwNzc2OTU2Mn0.OOSBlRW2rpT2fYn2sMj_Y4zCx6H-IZ4_S9aCFmtbi4I",
+      "webRoot": "${workspaceRoot}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "chrome-leasing",
+      // you can change this url to match your local tenant
+      // if not using demo
+      "url": "https://demo.local.env.reva.tech/",
+      "webRoot": "${workspaceRoot}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32410,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32410",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "name": "consumer",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/consumer/bin/server.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "CONSUMER_PORT": "4000",
+        "TZ": "UTC",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "RED_LOG_LEVEL": "error",
+        "RED_PROCESS_NAME": "consumer-server",
+        "SKIP_WEBPACK_PROGRESS": "true"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32411,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32411",
+        "--debug-brk"
+      ],
+      "name": "consumer-server-only",
+      "program": "${workspaceRoot}/consumer/bin/server.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "CONSUMER_PORT": "4000",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "RED_LOG_LEVEL": "error",
+        "TZ": "UTC",
+        "RED_PROCESS_NAME": "consumer-server",
+        "SKIP_WEBPACK_DEV_SERVER": "true",
+        "USE_ASSETS_PROD_DIST_FOLDER": "true",
+        "INCLUDE_COMPONENTS_DEMO": "false",
+        "SKIP_WEBPACK_PROGRESS": "true"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "auth",
+      "protocol": "inspector",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32412,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32412",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "program": "${workspaceRoot}/auth/bin/server.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "AUTH_PORT": "3500",
+        "RED_PROCESS_NAME": "auth-server",
+        "TZ": "UTC",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "RED_LOG_LEVEL": "error",
+        "SKIP_WEBPACK_PROGRESS": "true"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "auth-server-only",
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32413,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32413",
+        "--debug-brk"
+      ],
+      "program": "${workspaceRoot}/auth/bin/server.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "AUTH_PORT": "3500",
+        "RED_PROCESS_NAME": "auth-server",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "TZ": "UTC",
+        "RED_LOG_LEVEL": "error",
+        "SKIP_WEBPACK_DEV_SERVER": "true",
+        "USE_ASSETS_PROD_DIST_FOLDER": "true",
+        "INCLUDE_COMPONENTS_DEMO": "false",
+        "SKIP_WEBPACK_PROGRESS": "true"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32414,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--max-old-space-size=4096",
+        "--inspect=32414",
+        // "--debug-brk"
+      ],
+      "name": "leasing",
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/bin/server.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "NODE_PATH": "./server",
+        "RED_PROCESS_NAME": "leasing-server",
+        "PORT": "3000",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "TZ": "UTC",
+        "RED_LOG_LEVEL": "error",
+        "API_PORT": "3030",
+        "DEVTOOLS": "false",
+        "SKIP_WEBPACK_PROGRESS": "true"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "leasing-server-only",
+      "protocol": "inspector",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32415,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32415",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "program": "${workspaceRoot}/bin/server.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "NODE_PATH": "./server",
+        "RED_PROCESS_NAME": "leasing-server",
+        "PORT": "3000",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "RED_LOG_LEVEL": "error",
+        "API_PORT": "3030",
+        "DEVTOOLS": "false",
+        "TZ": "UTC",
+        "SKIP_WEBPACK_DEV_SERVER": "true",
+        "USE_ASSETS_PROD_DIST_FOLDER": "true",
+        "INCLUDE_COMPONENTS_DEMO": "false",
+        "SKIP_WEBPACK_PROGRESS": "true"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "api",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32416,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32416",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/bin/api.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "NODE_PATH": "./server/api",
+        "RED_PROCESS_NAME": "api",
+        "TZ": "UTC",
+        "API_PORT": "3030",
+        "RED_LOGGER_USE_STDOUT": "false",
+        "RED_LOG_LEVEL": "trace"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32617,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32617",
+        "--debug-brk"
+      ],
+      "name": "decision_api",
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/bin/decision_api.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "NODE_PATH": "./server/api",
+        "RED_PROCESS_NAME": "decision_api",
+        "TZ": "UTC",
+        "API_PORT": "3070",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "RED_LOG_LEVEL": "warn"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 33617,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=33617",
+        "--debug-brk"
+      ],
+      "name": "export_api",
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/bin/export_api.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "NODE_PATH": "./server/export",
+        "RED_PROCESS_NAME": "export_api",
+        "TZ": "UTC",
+        "API_PORT": "3080",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "RED_LOG_LEVEL": "warn"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "worker",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32418,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32418",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      "program": "${workspaceRoot}/bin/worker.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "NODE_PATH": "./server/workers",
+        "RED_PROCESS_NAME": "workers",
+        "TZ": "UTC",
+        "RED_LOG_LEVEL": "trace",
+        "API_PORT": "3030",
+        "RED_LOGGER_USE_STDOUT": "false"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32419,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32419",
+        "--debug-brk"
+      ],
+      "name": "initial-setup",
+      "showAsyncStacks": true,
+      "program": "${workspaceRoot}/server/database/seeds/BaseSchemaBuilder.js",
+      "env": {
+        "RED_PROCESS_NAME": "initial-setup",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "TZ": "UTC"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "socket",
+      "showAsyncStacks": true,
+      "protocol": "inspector",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32797,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32797",
+        "--debug-brk"
+      ],
+      "program": "${workspaceRoot}/bin/socket.js",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "NODE_PATH": "./server/socket",
+        "RED_PROCESS_NAME": "socket",
+        "API_PORT": "3030",
+        "TZ": "UTC",
+        "RED_LOGGER_USE_STDOUT": "true",
+        "RED_LOG_LEVEL": "error"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32398,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32398",
+        "--debug-brk"
+      ],
+      "name": "bnr",
+      "showAsyncStacks": true,
+      "program": "${workspaceRoot}/node_modules/.bin/bnr",
+      "args": [
+        "compile-server"
+      ],
+      "env": {
+        "NODE_PATH": "./server/socket",
+        "RED_LOG_LEVEL": "error",
+        "TZ": "UTC",
+        "RED_LOGGER_USE_STDOUT": "false",
+        "RED_PROCESS_NAME": "socket",
+        "API_PORT": "3030"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "debug-current-file",
+      "showAsyncStacks": true,
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32399,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32399",
+        "--debug-brk"
+      ],
+      "program": "${workspaceRoot}/${relativeFile}",
+      "env": {
+        "NO_SHR": "true",
+        "CLOUD_ENV": "local",
+        "RED_LOG_LEVEL": "error",
+        "TZ": "UTC",
+        "RED_LOGGER_USE_STDOUT": "false",
+        "RED_PROCESS_NAME": "debug-current-file"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      "name": "webpack",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32400,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32400",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "program": "${workspaceRoot}/node_modules/webpack/bin/webpack",
+      "args": [
+        "--stats-error-details",
+        "--config",
+        "${relativeFile}",
+        "--bail"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "name": "jest-server",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32401,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32401",
+        "--debug-brk"
+      ],
+      "showAsyncStacks": true,
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand",
+        "--forceExit",
+        "--logHeapUsage",
+        "--notify",
+        // "-u",
+        // "--watch",
+        "--config",
+        "jest-server.js",
+        "${relativeFile}"
+      ],
+      "env": {
+        "FORCE_COLOR": "1",
+        "TZ": "UTC"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "name": "jest-server:watch",
+      "showAsyncStacks": true,
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32402,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32402",
+        "--debug-brk"
+      ],
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand",
+        "--forceExit",
+        "--logHeapUsage",
+        "--notify",
+        // "-u",
+        "--watch",
+        "--config",
+        "jest-server.js",
+        "${relativeFile}"
+      ],
+      "env": {
+        "FORCE_COLOR": "1"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "name": "jest-client",
+      "showAsyncStacks": true,
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32403,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32403",
+        "--debug-brk"
+      ],
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "args": [
+        "--coverage",
+        "false",
+        "--runInBand",
+        "--forceExit",
+        "--logHeapUsage",
+        "--notify",
+        // "--watch",
+        // "-u",
+        "--config",
+        "jest-client.js",
+        "${relativeFile}"
+      ],
+      "env": {
+        "FORCE_COLOR": "1"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "name": "jest-client:watch",
+      "showAsyncStacks": true,
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32404,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32404",
+        "--debug-brk"
+      ],
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand",
+        "--logHeapUsage",
+        "--notify",
+        "--watch",
+        // "-u",
+        "--config",
+        "jest-client.js",
+        "${relativeFile}"
+      ],
+      "env": {
+        "FORCE_COLOR": "1"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "sourceMaps": true,
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+      // Runtime version parameter should be changed to match the node version in use
+      // if we are already only using a single version then we can just remove it
+      "runtimeVersion": "8.11.1",
+      "port": 32406,
+      "runtimeArgs": [
+        "--extensions",
+        ".js,.ts,.json",
+        "--inspect=32406",
+        "--debug-brk"
+      ],
+      "name": "mocha",
+      "showAsyncStacks": true,
+      "program": "${workspaceRoot}/node_modules/.bin/_mocha",
+      "args": [
+        "--timeout",
+        "160600",
+        "--bail",
+        "${relativeFile}"
+      ]
+    }
+  ]
+}

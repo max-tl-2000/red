@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetCounterSignerTokenResponse xmlns="http://tempuri.org/">
+      <GetCounterSignerTokenResult>
+        <ResidentFormApi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="" xsi:noNamespaceSchemaLocation="ResidentFormApi1_0.xsd">
+          <Request>
+            <PropertyID>
+              <Identification IDType="Property ID">
+                <IDValue>132660</IDValue>
+              </Identification>
+              <MarketingName>My Properties</MarketingName>
+            </PropertyID>
+            <RequestType>GetCounterSignerToken</RequestType>
+            <OriginatorID>100025</OriginatorID>
+            <UserName>RedisruptOne</UserName>
+            <UserPassword>Winter2016</UserPassword>
+            <EnvelopeID>137f9578-344f-450c-b26c-a45d1b4cde17</EnvelopeID>
+          </Request>
+          <Response>
+            <CounterToken>/test/fakeDocuSignPage?confirmationURL={signatureCompletedCallbackURL}&#38;signerName={signerName}&#38;verb={verb}</CounterToken>
+          </Response>
+        </ResidentFormApi>
+      </GetCounterSignerTokenResult>
+    </GetCounterSignerTokenResponse>
+  </soap:Body>
+</soap:Envelope>

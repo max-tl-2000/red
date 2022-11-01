@@ -1,0 +1,124 @@
+@import '../../sass/_colors.scss';
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  width: (320rem/16);
+  height: (304rem/16);
+  background-color: $grey50;
+
+  &.minimized {
+    height: auto;
+  }
+}
+
+.header-section {
+  width: 100%;
+  height: 3rem;
+  background-color: $blue800;
+
+  .header-text > div {
+    padding: 0 0 0 1rem !important;
+  }
+}
+
+.view-party-section {
+  width: 100%;
+  height: 3rem;
+  border-bottom: solid (1rem/16) $grey300;
+  background-color: $grey100;
+
+  flex-shrink: 0;
+}
+
+.recording-section {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 0 .7rem;
+  border-bottom: solid (1rem/16) $grey300;
+
+  flex-shrink: 0;
+
+  .active-recording-icon {
+    svg {
+      fill: $red700;
+    }
+  }
+
+  .recording-text {
+    margin-left: .6rem;
+    opacity: .73;
+
+    flex-grow: 1;
+  }
+
+  .recording-undo-time {
+    margin-left: .2rem;
+  }
+}
+
+.notes-section {
+  overflow-y: scroll;
+  width: 100%;
+  padding: 1rem;
+  padding-top: 1rem !important;
+
+  flex-grow: 1;
+
+  .notes-input {
+    padding: 0;
+  }
+}
+
+.actions-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: (56rem/16);
+  margin-bottom: (16rem/16);
+
+  flex-shrink: 0;
+
+  .icon-button {
+    &.selected {
+      background-color: rgba(0, 0, 0, .26);
+    }
+  }
+
+  .end-call {
+    width: (56rem/16);
+    height: (56rem/16);
+    border-radius: 50%;
+    background-color: $redA700;
+    box-shadow: 0 (6rem/16) (6rem/16) 0 rgba(0, 0, 0, .24), 0 0 (6rem/16) 0 rgba(0, 0, 0, .12);
+  }
+}
+
+.end-call-minimized {
+  border-radius: 50%;
+  background-color: $redA700;
+  box-shadow: 0 (6rem/16) (6rem/16) 0 rgba(0, 0, 0, .24), 0 0 (6rem/16) 0 rgba(0, 0, 0, .12);
+
+  &:hover {
+    background-color: $redA700;
+  }
+}
+
+.phone-number-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: (240rem/16);
+  height: (60rem/16);
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+.dial-pad {
+  margin: (16rem/16);
+}
+
+.forward-selector {
+  padding: 0rem;
+}

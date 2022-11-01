@@ -1,0 +1,32 @@
+@import '../../../../client/sass/_colors.scss';
+
+.page-content {
+  width: (600rem/16);
+  margin: 0 auto;
+  padding-top: (110rem/16);
+}
+
+.stepper-inner {
+  position: relative;
+  padding-bottom: (50rem/16);
+
+  .connecting-line {
+    position: absolute;
+    z-index: 1;
+    top: (40em/16);
+    left: 15%;
+    width: 70%;
+    margin: 0 auto;
+    opacity: .12;
+    border-top: (2em/16) dotted $black;
+  }
+}
+
+.info-messages {
+  width: (530rem/16);
+  margin: 0 auto;
+
+  [data-component='text'] {
+    margin-top: (50rem/16);
+  }
+}

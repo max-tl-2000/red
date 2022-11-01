@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lease xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NameID>HO00596896</NameID>
+  <LeaseExpirationDate>2021-07-17</LeaseExpirationDate>
+  <ChargeAmounts>
+    <ChargeAmount name='brstorag' type='NONREFUNDABLE'>0</ChargeAmount>
+    <ChargeAmount name='brstorag' type='RECURRING'>0</ChargeAmount>
+    <ChargeAmount name='brstorag' type='DEPOSIT'>0</ChargeAmount>
+    <ChargeAmount name='APP' type='NONREFUNDABLE'>0</ChargeAmount>
+    <ChargeAmount name='APP' type='RECURRING'>0</ChargeAmount>
+    <ChargeAmount name='APP' type='DEPOSIT'>0</ChargeAmount>
+    <ChargeAmount name='RNT' type='NONREFUNDABLE'>0</ChargeAmount>
+    <ChargeAmount name='RNT' type='RECURRING'>1056</ChargeAmount>
+    <ChargeAmount name='RNT' type='DEPOSIT'>0</ChargeAmount>
+  </ChargeAmounts>
+</Lease>

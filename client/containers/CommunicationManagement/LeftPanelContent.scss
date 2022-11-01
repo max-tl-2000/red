@@ -1,0 +1,70 @@
+@import '../../sass/_colors.scss';
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+  margin: .3rem 2rem .3rem 0;
+
+  fill: none;
+  stroke: rgba(0, 0, 0, .54);
+  stroke-width: .3px;
+}
+
+.post-type {
+  font-weight: 500;
+  margin-bottom: .5rem;
+
+  &.alert {
+    color: $red700;
+  }
+}
+
+.post-type-description {
+  margin-bottom: (12rem/16);
+}
+
+.leftPanelContainer {
+  margin: (24rem/16) 0 (48rem/16) (64rem/16);
+  padding: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  > :not(:last-child) {
+    margin-right: (64rem/16);
+  }
+}
+
+.post-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: (352rem/16);
+}
+
+.draftSection {
+  margin-bottom: 1.5rem;
+}
+
+.cell {
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    width: '100%';
+
+    flex-flow: column;
+
+    > :not(:last-child) {
+      margin-right: 0;
+      margin-bottom: (24rem/16);
+    }
+  }
+
+  .leftPanelContainer {
+    margin-bottom: (40rem/16);
+  }
+}

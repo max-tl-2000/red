@@ -1,0 +1,88 @@
+@import '../../sass/_colors.scss';
+
+.card {
+  margin-bottom: 1rem;
+
+  &.noMargin {
+    margin-bottom: 0;
+  }
+
+  .cardBody {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 4.65rem;
+    padding-top: 1em;
+
+    .cardDetails {
+      z-index: 1;
+      display: block;
+      padding-left: 1em;
+
+      .highlighted {
+        color: $purpleA400;
+      }
+
+      .guarantorsList {
+        padding-top: .5em;
+      }
+
+      .unitsList {
+        padding-left: 1em;
+      }
+
+      .moveIn {
+        padding-top: 1em;
+      }
+    }
+  }
+
+  .removeIcon {
+    display: flex;
+    padding-left: 1em;
+
+    align-self: center;
+
+    [data-component='icon-button'] {
+      [data-red-icon] {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.disabledCardBody {
+  [data-component='card'] {
+    border: solid 1px;
+    border-color: #dadada;
+    border-radius: 3px;
+    background: none;
+    box-shadow: none !important;
+  }
+}
+
+.enabledCardBody {
+  [data-component='card'] {
+    cursor: pointer;
+  }
+}
+
+.renewalPartyIcon {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  width: (60rem/16);
+  height: (60rem/16);
+
+  svg {
+    fill: $grey200;
+  }
+}
+
+.itemMainText {
+  display: flex;
+  flex-direction: row;
+  white-space: pre-wrap;
+}

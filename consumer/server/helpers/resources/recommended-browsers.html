@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      padding-top: 8.4375rem;
+    }
+
+    .pictogram {
+      display: inline-block;
+      width: 4.5625rem;
+      height: 9.25rem;
+    }
+
+    .mainMessage {
+      margin-top: 1.5rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .message {
+      margin-top: 0.75rem;
+      line-height: 1.5rem;
+      font-size: 0.9375rem;
+      text-align: center;
+    }
+
+    .browsersListContainer {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2.125rem;
+      list-style-type: none;
+      padding: 0 !important;
+    }
+
+    .browserContainer {
+      align-items: center;
+      margin-left: 0.9375rem;
+      margin-right: 0.9375rem;
+    }
+
+    .icon {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .browserName {
+      font-size: 0.9375rem;
+      line-height: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='container'>
+    <image src="/images/char-exhausted-light.png" class="pictogram"></image>
+
+    <div class="mainMessage">
+      ${mainMessage}
+    </div>
+    <div class="message">
+      ${message}
+    </div>
+
+    <ul class="browsersListContainer">
+      <li class="browserContainer">
+        <img src="/images/browser-rasters/chrome.png" class="icon" />
+        <div class="browserName">Chrome</div>
+      </li>
+      <li class="browserContainer">
+        <img src="/images/browser-rasters/firefox.png" class="icon" />
+        <div class="browserName">Firefox</div>
+      </li>
+      <li class="browserContainer">
+        <img src="/images/browser-rasters/safari.png" class="icon" />
+        <div class="browserName">Safari</div>
+      </li>
+      <li class="browserContainer">
+        <img src="/images/browser-rasters/edge.png" class="icon" />
+        <div class="browserName">Edge</div>
+      </li>
+      <li class="browserContainer">
+        <img src="/images/browser-rasters/vivaldi.png" class="icon" />
+        <div class="browserName">Vivaldi</div>
+      </li>
+      <li class="browserContainer">
+        <img src="/images/browser-rasters/opera.png" class="icon" />
+        <div class="browserName">Opera</div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

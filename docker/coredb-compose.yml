@@ -1,0 +1,8 @@
+# local deployment compose file for deployment with coredb
+# main compose file is local-compose.yml
+version: '2.1'
+services:
+  web:
+    environment:
+      DATABASE_HOST: coredb
+    dns_search: dev.env.reva.tech

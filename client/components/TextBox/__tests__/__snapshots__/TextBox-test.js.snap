@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`textbox should render a password field with an eye affordance 1`] = `
+<div
+  className="textbox password-box no-label"
+  data-component="textbox"
+>
+  <div
+    className="input-field"
+  >
+    <Input
+      autoFill={false}
+      className="noHidePlaceholder"
+      disabled={false}
+      id="TextBox_2"
+      multiline={false}
+      onAutoFillDetection={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onCut={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={Object {}}
+      type="password"
+    />
+    <div
+      className="eye-affordance"
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+    >
+      <Icon
+        name="eye-off"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`textbox should render a simple textbox 1`] = `
+<div
+  className="textbox no-label"
+  data-component="textbox"
+>
+  <div
+    className="input-field"
+  >
+    <Input
+      autoFill={false}
+      className="noHidePlaceholder"
+      disabled={false}
+      id="TextBox_0"
+      multiline={false}
+      onAutoFillDetection={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onCut={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={Object {}}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`textbox should render a textbox with a clear affordance 1`] = `
+<div
+  className="textbox no-label clearable"
+  data-component="textbox"
+>
+  <div
+    className="input-field"
+  >
+    <Input
+      autoFill={false}
+      className="noHidePlaceholder"
+      disabled={false}
+      id="TextBox_1"
+      multiline={false}
+      onAutoFillDetection={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onCut={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={Object {}}
+      type="text"
+    />
+    <div
+      className="clear-box"
+      data-component="textbox-clear"
+      onClick={[Function]}
+      onKeyUp={[Function]}
+      tabIndex={0}
+    >
+      <Icon
+        name="close"
+      />
+    </div>
+  </div>
+</div>
+`;

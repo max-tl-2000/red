@@ -1,0 +1,19 @@
+.dialog-overlay[data-compact='true'] {
+  [data-component='dialog-body'] {
+    padding-top: 0rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &.noTitle {
+    [data-component='dialog-body'] {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  [data-button-count='3'] {
+    [data-component='button']:first-of-type {
+      margin-right: auto;
+    }
+  }
+}

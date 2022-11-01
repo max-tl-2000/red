@@ -1,0 +1,79 @@
+<ApplicantScreening xsi:noNamespaceSchemaLocation="ResidentScreening3_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Request>
+		<PropertyID>
+			<Identification IDType="Property ID">
+				<IDValue>148546</IDValue>
+			</Identification>
+		</PropertyID>
+		<RequestType>View</RequestType>
+		<ReportOptions>
+			<ReportName></ReportName>
+		</ReportOptions>
+		<ReportID>21913737</ReportID>
+		<OriginatorID>100016</OriginatorID>
+		<UserName>RedisruptSeven</UserName>
+		<UserPassword>undefined</UserPassword>
+	</Request>
+	<LeaseTerms>
+		<MonthlyRent>3704.0000</MonthlyRent>
+	</LeaseTerms>
+	<Applicant>
+		<Other>
+			<CurrentRent>0.00</CurrentRent>
+			<ConsentObtained>YES</ConsentObtained>
+		</Other>
+		<Income>""</Income>
+		<AS_Information>
+			<ApplicantIdentifier>{{applicantIdentifier}}</ApplicantIdentifier>
+			<ApplicantType>Applicant</ApplicantType>
+			<Birthdate>1972-01-28</Birthdate>
+			<SocSecNumber/>
+			<AddressTerms>
+				<Address AddressType="current">
+					<Address>bogusaddress</Address>
+					<City>nocity</City>
+					<State>CA</State>
+					<PostalCode>95124</PostalCode>
+					<UnparsedAddress>1791 Branham Ln San Jose CA 95124</UnparsedAddress>
+					<Email>qatest+Harold-1487716364@reva.tech</Email>
+				</Address>
+			</AddressTerms>
+		</AS_Information>
+		<Customers>
+			<Customer>
+				<Identification IDType="Applicant">
+					<IDValue>1324bbc2-0c49-4f41-8995-bcb8e1114255-1487716364</IDValue>
+				</Identification>
+				<Name>
+					<FirstName>charles</FirstName>
+					<MiddleName/>
+					<LastName>harrison</LastName>
+				</Name>
+			</Customer>
+		</Customers>
+	</Applicant>
+	<Response>
+		<TransactionNumber>21913737</TransactionNumber>
+		<ReportDate>2017-10-28</ReportDate>
+		<ApplicantDecision></ApplicantDecision>
+		<ApplicationDecision></ApplicationDecision>
+		<BackgroundReport>21913737</BackgroundReport>
+		<Status>Incomplete</Status>
+		<RequestID_Returned>60437837</RequestID_Returned>
+	</Response>
+	<CustomRecords>
+		<Record>
+			<Name>screeningRequestId</Name>
+			<Value>{{screeningRequestId}}</Value>
+		</Record>
+		<Name>Notification Status</Name>
+		<Value></Value>
+	</CustomRecords>
+	<CustomRecordsExtended>
+		<Record>
+			<Name>XMLReport</Name>
+			<Value>ERROR LOADING XML RESPONSE: Sequence contains no elements</Value>
+		</Record>
+	</CustomRecordsExtended>
+</ApplicantScreening>

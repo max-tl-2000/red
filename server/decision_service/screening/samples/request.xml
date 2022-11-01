@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:Corticon" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <urn:CorticonRequest decisionServiceName="Screening">
+      <WorkDocuments>
+        <Application id="Application_id_1">
+          <individual id="Individual_id_1">
+            <creditScore>650.000000</creditScore>
+            <hasBankruptcy>false</hasBankruptcy>
+            <hasForeclosure>false</hasForeclosure>
+            <hasGlobalSanctions>false</hasGlobalSanctions>
+            <id>ABC-123</id>
+            <liquidAssets>50000.000000</liquidAssets>
+            <monthlyIncome>5000.000000</monthlyIncome>
+            <type>resident</type>
+            <guarantor id="Guarantor_id_1">
+              <creditScore>700</creditScore>
+              <hasBankruptcy>false</hasBankruptcy>
+              <hasForeclosure>false</hasForeclosure>
+              <id>DEF-456</id>
+              <liquidAssets>100000.000000</liquidAssets>
+              <monthlyIncome>10000.000000</monthlyIncome>
+            </guarantor>
+          </individual>
+          <individual id="Individual_id_2">
+            <creditScore>600.000000</creditScore>
+            <hasBankruptcy>false</hasBankruptcy>
+            <hasForeclosure>false</hasForeclosure>
+            <hasGlobalSanctions>false</hasGlobalSanctions>
+            <id>GHI-789</id>
+            <liquidAssets>80000.000000</liquidAssets>
+            <monthlyIncome>4500.000000</monthlyIncome>
+            <type>resident</type>
+            <guarantor id="Guarantor_id_2">
+              <creditScore>700</creditScore>
+              <hasBankruptcy>false</hasBankruptcy>
+              <hasForeclosure>false</hasForeclosure>
+              <id>JKL-123</id>
+              <liquidAssets>50000.000000</liquidAssets>
+              <monthlyIncome>60000.000000</monthlyIncome>
+            </guarantor>
+          </individual>
+          <individual id="Individual_id_3">
+            <creditScore xsi:nil="true"/>
+            <hasBankruptcy xsi:nil="true"/>
+            <hasForeclosure xsi:nil="true"/>
+            <hasGlobalSanctions>false</hasGlobalSanctions>
+            <id>MNO-456</id>
+            <liquidAssets xsi:nil="true"/>
+            <monthlyIncome xsi:nil="true"/>
+            <type>occupant</type>
+          </individual>
+          <prop id="Property_id_1">
+            <allowLiquidAssets>true</allowLiquidAssets>
+            <applicantsBankruptcy>guarantorRequired</applicantsBankruptcy>
+            <applicantsCreditScoreApproved>approved</applicantsCreditScoreApproved>
+            <applicantsCreditScoreBetween>increasedDepositRequired</applicantsCreditScoreBetween>
+            <applicantsCreditScoreDeclined>declined</applicantsCreditScoreDeclined>
+            <applicantsExcessiveIssues>guarantorRequired</applicantsExcessiveIssues>
+            <applicantsForeclosure>increasedDepositRequired</applicantsForeclosure>
+            <applicantsInsufficientIncome>increasedDepositRequired</applicantsInsufficientIncome>
+            <approvedGuarantorCreditScore>600</approvedGuarantorCreditScore>
+            <approvedResidentCreditScore>600</approvedResidentCreditScore>
+            <declinedGuarCreditScore>400</declinedGuarCreditScore>
+            <declinedResidentCreditScore>400</declinedResidentCreditScore>
+            <excessiveIssuesCount>4</excessiveIssuesCount>
+            <fullLeaseLiquidAssetMultiple>2.000000</fullLeaseLiquidAssetMultiple>
+            <globalSanctions>declined</globalSanctions>
+            <guarantorsBankruptcy>increasedDepositRequired</guarantorsBankruptcy>
+            <guarantorsCreditScoreApproved>approved</guarantorsCreditScoreApproved>
+            <guarantorsCreditScoreBetween>increasedDepositRequired</guarantorsCreditScoreBetween>
+            <guarantorsCreditScoreDeclined>declined</guarantorsCreditScoreDeclined>
+            <guarantorsForeclosure>increasedDepositRequired</guarantorsForeclosure>
+            <guarantorsInsufficientIncome>increasedDepositRequired</guarantorsInsufficientIncome>
+            <hasGroupGuarantorCreditScore>false</hasGroupGuarantorCreditScore>
+            <hasGroupGuarantorIncome>false</hasGroupGuarantorIncome>
+            <hasGroupResidentCreditScore>false</hasGroupResidentCreditScore>
+            <hasGroupResidentIncome>false</hasGroupResidentIncome>
+            <incomeMultipleGuarantor>1.500000</incomeMultipleGuarantor>
+            <incomeMultipleResident>1.500000</incomeMultipleResident>
+          </prop>
+          <quote id="Quote_id_1">
+            <agent>ABC</agent>
+            <monthlyRent>2000.000000</monthlyRent>
+            <monthlyTotalRent>2500.000000</monthlyTotalRent>
+            <property>XYZ BUILDING</property>
+            <termLength>12</termLength>
+          </quote>
+          <quote id="Quote_id_2">
+            <agent>ABC</agent>
+            <monthlyRent>1500.000000</monthlyRent>
+            <monthlyTotalRent>2000.000000</monthlyTotalRent>
+            <property>SERENE ACRES APTS</property>
+            <termLength>6</termLength>
+          </quote>
+        </Application>
+      </WorkDocuments>
+    </urn:CorticonRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,100 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_typography-mixins.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+.card {
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.resume {
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  flex-direction: row;
+  min-height: (60rem/16);
+  padding: 0;
+
+  flex-wrap: nowrap;
+
+  .warning-icon {
+    flex: 0 1 (56rem/16);
+    margin: 0;
+    padding: (18rem/16) (16rem/16);
+    vertical-align: center;
+  }
+
+  .warning-section {
+    flex: 1 1 100%;
+
+    .title {
+      margin-top: (8rem/16);
+      margin-bottom: (8rem/16);
+      opacity: rgba($black, .87);
+    }
+
+    .warnings {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin: (8rem/16) 0;
+
+      flex-wrap: wrap;
+
+      .item {
+        display: inline-block;
+        flex: 0 1 50%;
+        min-height: (16rem/16);
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .collapse-trigger {
+    flex: 0 1 (56rem/16);
+    cursor: pointer;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: (24rem/16);
+    }
+  }
+}
+
+.checks {
+  padding-bottom: (24rem/16);
+
+  .check-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .check-icon {
+    width: (16rem/16);
+  }
+}
+
+.full-report {
+  position: relative;
+}
+
+.red-icon {
+  fill: $red400;
+}
+
+.red-text {
+  color: rgba($red400, .87);
+}
+
+.subtitle-padding {
+  padding: (10rem/16) (16rem/16);
+}
+
+.title-border {
+  padding: (10rem/16) (16rem/16);
+  border-top: (1rem/16) solid rgba(0, 0, 0, .12);
+}

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`execute createMoveInFilter function given a BEYOND_4_MONTHS moveInTime should return a valid filter 1`] = `
+Object {
+  "max": "",
+  "min": "2018-06-21T07:00:00.000Z",
+}
+`;
+
+exports[`execute createMoveInFilter function given a NEXT_2_MONTHS moveInTime should return a valid filter 1`] = `
+Object {
+  "max": "2018-04-21T07:00:00.000Z",
+  "min": "2018-03-21T07:00:00.000Z",
+}
+`;
+
+exports[`execute createMoveInFilter function given a NEXT_4_MONTHS moveInTime should return a valid filter 1`] = `
+Object {
+  "max": "2018-06-21T07:00:00.000Z",
+  "min": "2018-04-21T07:00:00.000Z",
+}
+`;
+
+exports[`execute createMoveInFilter function given a NEXT_4_WEEKS moveInTime should return a valid filter 1`] = `
+Object {
+  "max": "2018-03-21T07:00:00.000Z",
+  "min": "2018-02-21T08:00:00.000Z",
+}
+`;

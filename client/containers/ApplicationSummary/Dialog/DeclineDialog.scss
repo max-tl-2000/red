@@ -1,0 +1,15 @@
+@import '../../../sass/_colors.scss';
+
+.dialog-header {
+  width: (560rem/16);
+  height: (64rem/16);
+  padding-left: (24rem/16);
+  color: $white;
+  border-radius: 3px;
+}
+
+.decline-header {
+  @extend .dialog-header;
+
+  background-color: $red500;
+}

@@ -1,0 +1,370 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description":
+      "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/partyApplications/{partyApplicationId}/documents": {
+      "get": {
+        "parameters": [
+          {
+            "description":
+              "The id of the party application to filter documents",
+            "in": "path",
+            "type": "string",
+            "name": "partyApplicationId",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description":
+              "The documents metadata of the selected party application",
+            "schema": {
+              "$ref": "applications.json#/definitions/PartyApplication"
+            }
+          }
+        },
+        "summary": "Returns documents metadata of",
+        "tags": ["Documents"]
+      }
+    },
+    "/personApplications/current/documents/{documentId}/retrieve": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The document id that will be downloaded",
+            "in": "path",
+            "name": "documentId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "Token with authUser information",
+            "in": "query",
+            "name": "token",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description":
+              "Returns the document that corresponds the given document id"
+          },
+          "401": {
+            "description": "Not a LAA for the party",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Document id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Executes the document download that corresponds the given documentId",
+        "tags": ["Documents"]
+      }
+    },
+    "/personApplications/{personApplicationId}/documents": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The person application id",
+            "in": "path",
+            "name": "personApplicationId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The documents related to the person application",
+            "schema": {
+              "$ref": "#/definitions/Documents"
+            }
+          }
+        },
+        "summary": "Return the documents related to a person application",
+        "tags": ["Documents"]
+      }
+    },
+    "/personApplications/documents/{documentId}/category": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The document id",
+            "in": "path",
+            "name": "documentId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The category related to the document"
+          },
+          "404": {
+            "description": "Document not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Return category related to the document",
+        "tags": ["Documents"]
+      }
+    },
+    "/documents": {
+      "post": {
+        "consumes": ["application/x-www-form-urlencoded"],
+        "parameters": [
+          {
+            "name": "files",
+            "in": "formData",
+            "description": "The documents to be uploaded.",
+            "type": "file",
+            "required": true
+          },
+          {
+            "name": "keepUploadedFiles",
+            "in": "formData",
+            "type": "boolean",
+            "description":
+              "Flag set to true if the uploaded files should be kept also locally on the server after uploading to Amazon S3"
+          },
+          {
+            "name": "*",
+            "in": "formData",
+            "type": "string",
+            "description":
+              "Custom key/value pairs describing metadata for the uploaded document. The metadata will be saved as metadata on the Amazon S3 objects and should be a valid header name. See: http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-metadata"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The document was uploaded successfully"
+          },
+          "400": {
+            "description": "Invalid/missing data",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Upload one or more documents and store them in Amazon S3",
+        "tags": ["Documents"]
+      },
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "tenantId",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Documents data was retrieved successfully."
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Retrieves all the uploaded documents.",
+        "tags": ["Documents"]
+      },
+      "delete": {
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "The id of the documents to be delete.",
+            "required": true,
+            "schema": {
+              "properties": {
+                "documentIds": {
+                  "description": "List of documents IDs to be deleted",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The documents were deleted successfully"
+          },
+          "400": {
+            "description": "Invalid/missing data",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "One or more of the specified documents is missing",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Deletes one or more documents",
+        "tags": ["Documents"]
+      }
+    },
+    "/documents/{documentId}/download": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Document id",
+            "in": "path",
+            "name": "documentId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Document file was succesfully downloaded"
+          },
+          "400": {
+            "description": "The document id is invalid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Document not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "tags": ["Documents"],
+        "summary": "Downloads a document file from Amazon S3"
+      }
+    },
+    "/documents/{documentId}/metadata": {
+      "patch": {
+        "tags": ["Documents"],
+        "parameters": [
+          {
+            "description": "Document id",
+            "in": "path",
+            "name": "documentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The document patch data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "updateData": {
+                  "description": "The fields to update",
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Document data succesfully updated"
+          },
+          "404": {
+            "description": "Document not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "UploadedDocument": {
+      "description":
+        "An uploaded document which contains information related to the path and document metadata.",
+      "type": "object",
+      "properties": {
+        "metadata": {
+          "$ref": "applications.json#/definitions/PartyApplicationData"
+        }
+      }
+    },
+    "Documents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Document"
+      }
+    },
+    "Document": {
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "accessType": {
+          "type": "string"
+        },
+        "uploadingUser": {
+          "$ref": "#/definitions/UploadingUser"
+        },
+        "documentName": {
+          "type": "string"
+        }
+      }
+    },
+    "UploadingUser": {
+      "properties": {
+        "exp": {
+          "type": "number"
+        },
+        "iat": {
+          "type": "number"
+        },
+        "tenantId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "commonUserId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "partyApplicationId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "personApplicationId": {
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    }
+  }
+}

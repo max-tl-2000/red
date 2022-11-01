@@ -1,0 +1,99 @@
+{
+    "id": "ecea4ec2-3bd8-48d2-91fb-2e19e1ffda7a",
+    "created_at": "10/28/2019 20:15:33 GMT",
+    "assignedProperty": "adb20f8e-3933-419f-8746-5644afdfed56",
+    "noResponseCounter": 3,
+    "partyOwnerUUID": "67515f38-90c5-4e27-9ea1-71eed7c824ed",
+    "eventCommRecord": [{
+        "id": "23a2d958-f9d2-11e9-bd96-e3a71c571b02",
+        "created_at": "10/28/2019 21:53:14 GMT",
+        "callDurationSeconds": 0,
+        "commAgentUUID": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+        "direction": "out",
+        "eventType": "Call",
+        "isLeadCreated": false,
+        "callConnectedWithAgent": false,
+        "isCallbackRequested": false,
+        "isVideoLinkRequested": false,
+        "category": "User communication",
+        "isCommForAllPartyMembers": false
+    }],
+    "comms": [{
+            "id": "4ebac90e-f4ed-43b6-beaf-12f0da8ebadd",
+            "created_at": "10/28/2019 21:50:56 GMT",
+            "callDurationSeconds": 0,
+            "commAgentUUID": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+            "direction": "out",
+            "eventType": "Call",
+            "isLeadCreated": false,
+            "isCallbackRequested": false,
+            "isVideoLinkRequested": false,
+            "callConnectedWithAgent": false,
+            "category": "User communication",
+            "isCommForAllPartyMembers": false
+        },
+        {
+            "id": "3175a1b4-f9d2-11e9-99dc-b750aea13375",
+            "created_at": "10/28/2019 21:52:32 GMT",
+            "callDurationSeconds": 0,
+            "commAgentUUID": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+            "direction": "out",
+            "eventType": "Call",
+            "isLeadCreated": false,
+            "isCallbackRequested": false,
+            "isVideoLinkRequested": false,
+            "callConnectedWithAgent": false,
+            "category": "User communication",
+            "isCommForAllPartyMembers": false
+        },
+        {
+            "id": "23a2d958-f9d2-11e9-bd96-e3a71c571b02",
+            "created_at": "10/28/2019 21:53:14 GMT",
+            "callDurationSeconds": 0,
+            "commAgentUUID": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+            "direction": "out",
+            "eventType": "Call",
+            "isLeadCreated": false,
+            "isCallbackRequested": false,
+            "isVideoLinkRequested": false,
+            "callConnectedWithAgent": false,
+            "category": "User communication",
+            "isCommForAllPartyMembers": false
+        }
+    ],
+    "partyMembers": [{
+            "id": "81fb689d-3620-47fc-aa6b-97391b8e0200",
+            "created_at": "10/28/2019 20:15:34 GMT",
+            "personApplication": {},
+            "hasContactInfo": true,
+            "personId": "cf799123-04d4-4b64-bcaa-1233f7425051",
+            "modifiedBy": "67515f38-90c5-4e27-9ea1-71eed7c824ed",
+            "isActive": true,
+            "partyMemberTasks": [],
+            "hasAnonymousEmail": false
+        },
+        {
+            "id": "c3b277f8-cf46-4b1a-83a6-12187c11f140",
+            "created_at": "10/28/2019 21:49:20 GMT",
+            "personApplication": {},
+            "hasContactInfo": true,
+            "personId": "5b6edae7-db40-4d0b-83e5-f38f9d37fd73",
+            "modifiedBy": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+            "isActive": true,
+            "partyMemberTasks": [],
+            "hasAnonymousEmail": true
+        }
+    ],
+    "tasks": [],
+    "partyApplication": {
+        "id": "d7579cce-9b3f-486f-ad46-f19628e6d537",
+        "created_at": "10/28/2019 20:15:35 GMT"
+    },
+    "createdFromCommId": null,
+    "workflowState": "active",
+    "workflowName": "leasing",
+    "leaseType": "traditional",
+    "quotes": [],
+    "propertyTimeZone": "GMT",
+    "moveoutNoticePeriodDays": 60
+}

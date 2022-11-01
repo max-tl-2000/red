@@ -1,0 +1,11 @@
+{{#with this}}
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mri_s-pmrm_acceptrenewaloffer>
+  <entry>
+    <NameID>{{nameId}}</NameID>
+    <Term>12</Term>
+    <ExpirationDate>{{leaseEndDate}}</ExpirationDate>
+    <LeasingAgentId>{{userExternalUniqueId}}</LeasingAgentId>
+  </entry>
+</mri_s-pmrm_acceptrenewaloffer>
+{{/with}}

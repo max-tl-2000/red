@@ -1,0 +1,100 @@
+@import '../../../client/sass/colors';
+@import '../../../client/sass/typography-mixins';
+
+.text-heavy {
+  @include bodyHeavy();
+}
+
+.headline {
+  @include headline();
+}
+
+.subheader {
+  @include subHeader();
+}
+
+.title {
+  @include textTitle();
+}
+
+.text {
+  @include body();
+}
+
+.button-label {
+  @include textButton();
+}
+
+.caption {
+  @include caption();
+}
+
+.link {
+  @include link();
+}
+
+.text-heavy,
+.headline,
+.subheader,
+.title,
+.text,
+.caption {
+  &.bold {
+    font-weight: 500;
+  }
+
+  &.secondary {
+    @include textSecondary();
+  }
+
+  &.highlight {
+    @include lightHighlight();
+  }
+
+  &.error {
+    @include lightError();
+  }
+
+  &.disabled {
+    @include textDisabled();
+  }
+
+  &.lighter {
+    @include textPrimary(light);
+
+    &.secondary {
+      @include textSecondary(light);
+    }
+
+    &.highlight {
+      @include lightHighlight(light);
+    }
+
+    &.error {
+      @include lightError(light);
+    }
+
+    &.disabled {
+      @include textDisabled(light);
+    }
+  }
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &.errorUnderline {
+    border-bottom: dotted 2px #ff1744;
+  }
+
+  &.noDefaultColor,
+  &.lighter.noDefaultColor {
+    color: inherit;
+  }
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,39 @@
+@import '../../sass/_typography-mixins.scss';
+
+.row-background {
+  background-color: $grey50;
+}
+
+.text-cell span {
+  margin-right: .25em;
+}
+
+.text-cell-new span {
+  margin-right: .25em;
+  color: $greenA400;
+}
+
+.text-cell-update span {
+  margin-right: .25em;
+  color: $orangeA400;
+}
+
+.text-cell-remove span {
+  margin-right: .25em;
+  color: $redA400;
+}
+
+.text-cell-quote span {
+  margin-right: .25em;
+  color: $blue400;
+}
+
+.text-cell-merge-parties span {
+  margin-right: .25em;
+  color: $purpleA400;
+}
+
+.text-cell-component span {
+  margin-right: .25em;
+  text-transform: capitalize;
+}

@@ -1,0 +1,533 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+$sectionWidth: (360rem/16);
+$borderColor: rgba(0, 0, 0, .1);
+$headerHeight: (68rem/16);
+$hashAngle: -45deg;
+$firstColorEnd: (1rem/16);
+$secondColorStart: (1rem/16);
+$secondColorEnd: (8rem/16);
+$eventBorderSize: (3rem/16);
+
+.noDayBorder {
+  tr td,
+  tr th {
+    border-right: 0 ;
+  }
+}
+
+.personalEvent {
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey100 $secondColorStart, $grey100 $secondColorEnd);
+}
+
+.personalEventPast {
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey100 $secondColorStart, $grey100 $secondColorEnd);
+}
+
+.teamEvent {
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey100 $secondColorStart, $grey100 $secondColorEnd);
+}
+
+.teamEventPast {
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey50 $secondColorStart, $grey50 $secondColorEnd);
+}
+
+.appointmentEvent {
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey200 $secondColorStart, $grey200 $secondColorEnd);
+}
+
+.appointmentEventPast {
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey100 $secondColorStart, $grey100 $secondColorEnd);
+}
+
+.allBusyEvent {
+  border-left: 0;
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey200 $secondColorStart, $grey200 $secondColorEnd);
+}
+
+.allBusyEventPast {
+  border-left: 0;
+  background: repeating-linear-gradient($hashAngle, $white, $white $firstColorEnd, $grey100 $secondColorStart, $grey100 $secondColorEnd);
+}
+
+.calendarTimeLine {
+  position: absolute;
+  z-index: 2;
+  left: 70px;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  width: calc(100% - 70px);
+  height: 0;
+
+  .today & {
+    visibility: visible;
+  }
+
+  .bullet {
+    flex: 0 0 auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: $blue500;
+  }
+
+  .line {
+    flex: 1 1 auto;
+    height: 1px;
+    background-color: $blue500;
+  }
+}
+
+.formContainer {
+  overflow: hidden;
+  padding-bottom: (50rem/16);
+
+  .formColumnsWrapper {
+    display: flex;
+    width: $sectionWidth * 2;
+    height: 500px;
+    transition: transform .3s;
+
+    .formColumn {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      width: 50%;
+    }
+  }
+
+  &.narrow {
+    width: $sectionWidth;
+
+    &.step0 {
+      .formColumnsWrapper {
+        transform: translateX(0px);
+      }
+    }
+
+    &.step1 {
+      .formColumnsWrapper {
+        transform: translateX(-$sectionWidth);
+      }
+    }
+
+    .formColumnGray {
+      background-color: white;
+    }
+
+    .hideOnWide {
+      display: inherit;
+    }
+  }
+}
+
+.overlayContainer {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.formRow {
+  position: relative;
+  align-items: center;
+
+  &.scrollable {
+    overflow-y: auto;
+  }
+
+  :global .select-wrapper {
+    input.select-dropdown {
+      margin: 0;
+      border: 0;
+    }
+
+    span.caret {
+      font-size: 12px;
+      top: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.weekRow {
+  border-bottom: 2px solid $borderColor;
+  background-color: $grey50;
+}
+
+.formRowPadded {
+  padding: .3rem 1rem;
+}
+
+.hoverable {
+  &:hover {
+    background: $hoverBGColor;
+  }
+}
+
+.formRowHeading {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  height: $headerHeight;
+  border-bottom: 1px solid $borderColor;
+
+  &.firstPane {
+    padding-left: 1rem;
+  }
+}
+
+.overflowYScroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexAll {
+  flex: 1 1 auto;
+}
+
+.scheduleRow {
+  display: block;
+  overflow-y: scroll;
+  padding-right: (44rem/16);
+  border-left: (1rem/16) solid $borderColor;
+
+  :global(.fc-toolbar) {
+    display: none;
+  }
+
+  :global(.fc-head) {
+    display: none;
+  }
+
+  :global(.fc-view-container) {
+    position: relative;
+  }
+
+  :global(.fc-agendaDay-view) {
+    border-right: (1rem/16) solid $borderColor;
+  }
+
+  :global(.fc-day-grid) {
+    display: none;
+  }
+
+  :global(.fc-divider) {
+    display: none;
+  }
+
+  :global(.fc-now-indicator) {
+    position: absolute;
+    left: 1rem;
+    border: 0 solid $blue500;
+  }
+
+  :global(.fc-now-indicator-arrow) {
+    z-index: 10;
+    left: (43rem/16) !important;
+  }
+
+  :global(.fc-now-indicator-line) {
+    right: 0;
+    left: 0;
+    border-top-width: 1px;
+  }
+
+  :global(.fc-agendaDay-view) {
+    tr td {
+      height: 2rem !important;
+    }
+  }
+
+  :global(.fc-teamAgenda-view) {
+    tr td {
+      height: 4rem !important;
+    }
+  }
+
+  :global {
+    .fc-time-grid-container {
+      overflow: hidden !important;
+      background-color: #fafafa;
+    }
+
+    table {
+      td.fc-time {
+        width: (42rem/16) !important;
+        padding: 0;
+      }
+
+      tr:nth-child(4n+1) td.fc-axis.fc-time.fc-widget-content {
+        position: relative;
+
+        span {
+          font-size: (11rem/16);
+          position: absolute;
+          top: (-1rem/2);
+          right: (1rem/8);
+          display: block;
+          text-align: center;
+          letter-spacing: -.2px;
+          opacity: .5;
+          color: $black;
+        }
+
+        .am::after {
+          font-size: (7rem/16);
+          content: 'am';
+          vertical-align: (3rem/16);
+          text-transform: uppercase;
+        }
+
+        .pm::after {
+          font-size: (7rem/16);
+          content: 'pm';
+          vertical-align: (3rem/16);
+          text-transform: uppercase;
+        }
+      }
+
+      table tbody tr:first-child span {
+        // first time text (12 am) must not be moved up more because it gets cut
+        top: 0 !important;
+      }
+
+      tr:nth-child(4n+1) td:first-child {
+        border-top: 0;
+      }
+
+      tr.fc-minor td {
+        border-top: 0;
+      }
+
+      tr td,
+      tr th {
+        border-left: 0;
+      }
+
+      td.fc-axis.fc-time.fc-widget-content {
+        border-right: (1rem/16) solid $borderColor;
+        background-color: $grey50;
+      }
+
+      div.fc-bg {
+        td:first-child {
+          width: (35rem/16) !important;
+          border: 0;
+        }
+      }
+
+      div.fc-content-skeleton {
+        td:first-child {
+          width: (35rem/16) !important;
+        }
+
+        td {
+          border: 0;
+        }
+      }
+    }
+
+    .fc-event-container {
+      margin: 0 !important;
+      cursor: pointer;
+
+      a {
+        right: 0 !important;
+        /* for event horizontal strech and border collapsing*/
+        margin-top: 0 !important;
+        margin-right: -1px !important;
+        margin-bottom: -1px !important;
+        margin-left: 0 !important;
+      }
+
+      .fc-time-grid-event {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 4px;
+        letter-spacing: .1px;
+        color: $black;
+        border: solid 1px $white;
+
+        &.overlapping {
+          border-left: solid 3px $grey400;
+        }
+
+        .fc-title {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          opacity: .9;
+        }
+
+        &.past {
+          .fc-title {
+            font-size: (12rem/16);
+            line-height: 1rem;
+            opacity: .5;
+          }
+        }
+
+        &.fc-helper {
+          color: $white;
+          background-color: $blue500;
+
+          .fc-time {
+            display: block;
+          }
+        }
+
+        &.overlapping-selection {
+          left: (20rem/16) !important;
+        }
+
+        .fc-time {
+          font-size: (12rem/16);
+          display: none;
+        }
+      }
+    }
+
+    .fc-bg {
+      background-color: transparent;
+
+      .fc-day {
+        background-color: $white;
+      }
+    }
+
+    .fc-slats {
+      .fc-widget-content:nth-child(2) {
+        cursor: pointer;
+      }
+
+      .fc-widget-content:nth-child(2):hover {
+        opacity: .5;
+        border-radius: 0;
+      }
+
+      .fc-widget-content:nth-child(2).oneZone:hover {
+        background-color: $grey200;
+      }
+
+      .fc-widget-content:nth-child(2).firstZone:hover {
+        background: linear-gradient(to right, $grey200, $grey200 33.3%, $white 33.3%);
+      }
+
+      .fc-widget-content:nth-child(2).secondZone:hover {
+        background: linear-gradient(to right, $white, $white 33.3%, $grey200 33.3%, $grey200 66.6%, $white 66.6%);
+      }
+
+      .fc-widget-content:nth-child(2).thirdZone:hover {
+        background: linear-gradient(to right, $white, $white 66.6%, $grey200 66.6%);
+      }
+    }
+  }
+}
+
+.modalFooterWarning {
+  text-align: center;
+  background-color: orange;
+}
+
+.modalFooterError {
+  text-align: center;
+  background-color: red;
+}
+
+.note {
+  margin-top: 8px;
+  padding: 0;
+}
+
+.notesField {
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  transition: border .5s ease-out, box-shadow .5s ease-out;
+  transition: background .3s ease-out;
+  text-align: left;
+  border: 0;
+  background: none;
+
+  -webkit-appearance: none;
+
+  &:focus {
+    background: rgba($focusBGColor, .15);
+  }
+
+  &:hover {
+    background: $hoverBGColor;
+  }
+
+  .dd-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: (44rem/16);
+    height: (64rem/16);
+  }
+
+  [data-component='list-item'] {
+    height: 100%;
+  }
+}
+
+.agent-selector {
+  width: 100%;
+  height: 100%;
+}
+
+.email-msg-caption {
+  position: absolute;
+  left: 0;
+  padding-top: (10rem / 16);
+  padding-left: (15rem / 16);
+}
+
+.select-agent-icon {
+  position: absolute;
+  right: (5rem/16);
+  bottom: (5rem/16);
+}
+
+.select-agent-button {
+  position: absolute;
+  z-index: 2;
+  right: 0rem;
+  bottom: 0rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dd-agent-selector {
+  height: 100%;
+  padding-right: (13rem/16);
+}
+
+.actions {
+  z-index: 1;
+  background-color: white;
+}

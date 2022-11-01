@@ -1,0 +1,90 @@
+{
+  "pets": [
+    {
+      "id": "1",
+      "name": "Kara",
+      "size": "Large",
+      "type": "D",
+      "breed": null,
+      "weight": "0",
+      "serviceAnimalForSpecialNeeds": "N"
+    }
+  ],
+  "status": "Resident",
+  "unitId": "223",
+  "leaseNo": 7,
+  "members": [
+    {
+      "id": "H000000001",
+      "type": "Resident",
+      "email": "user1+test@test.com",
+      "phone": "+12025550130",
+      "birthDay": "1977-12-27T00:00:00",
+      "lastName": "Levine",
+      "firstName": "Adam",
+      "vacateDate": null,
+      "middleInitial": "Noah"
+    },
+    {
+      "id": "H000000002",
+      "type": "Resident",
+      "email": "user2+test@test.com",
+      "phone": "+12025550101",
+      "birthDay": "1980-12-27T00:00:00",
+      "lastName": "Levine",
+      "firstName": "Behati",
+      "vacateDate": null,
+      "middleInitial": null
+    }
+  ],
+  "vehicles": [ 
+    {
+      "make": "Renault",
+      "color": "black",
+      "model": "Megane",
+      "state": "RO",
+      "licensePlate": "89 SCH"
+    }
+  ],
+  "leaseTerm": "12",
+  "buildingId": "02",
+  "leaseMoveIn": "2019-05-30T05:00:00Z",
+  "leaseEndDate": "2030-07-29T05:00:00Z",
+  "leasingAgent": null,
+  "leaseStartDate": "2020-07-30T05:00:00Z",
+  "leaseVacateDate": "",
+  "recurringCharges": [
+    {
+      "code": "PET",
+      "amount": "70.00",
+      "endDate": null,
+      "inEffect": "Y",
+      "quantity": 2,
+      "startDate": "2020-07-14T00:00:00",
+      "description": "Pet Fees"
+    },
+    {
+      "code": "COD",
+      "amount": "-70.00",
+      "endDate": null,
+      "inEffect": "Y",
+      "quantity": 2,
+      "startDate": "2020-07-14T00:00:00",
+      "description": "Fake"
+    },
+    {
+      "code": "RNT",
+      "amount": "1125.00",
+      "endDate": null,
+      "inEffect": "Y",
+      "quantity": 1,
+      "startDate": "2020-07-14T00:00:00",
+      "description": "Rent"
+    }
+  ],
+  "leaseVacateReason": null,
+  "primaryExternalId": "H000000001",
+  "leaseVacateNotificationDate": "",
+  "wasExternalRenewalLetterSent": null,
+  "externalRenewalLetterSentDate": null
+}

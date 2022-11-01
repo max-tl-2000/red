@@ -1,0 +1,25 @@
+@import '../../sass/_colors.scss';
+
+.dropzone {
+  display: flex;
+  padding: .7rem;
+  border-width: (2rem/16);
+  border-style: dashed;
+  border-color: rgba($black, .12);
+
+  &.active {
+    border-color: $brown500;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+
+  &.disabled:active {
+    pointer-events: none;
+  }
+
+  > p {
+    margin-right: 1em;
+  }
+}

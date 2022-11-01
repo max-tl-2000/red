@@ -1,0 +1,42 @@
+{
+    "html": "<div dir=\"ltr\">test</div>\n",
+    "text": "test\n",
+    "headers": {
+        "return-path": [
+            "<darius+caf_=darius+dev2=blue.dev.mail.reva.tech@craftingsoftware.com>",
+            "<baba.darius@gmail.com>"
+        ],
+        "x-ses-spam-verdict": "PASS",
+        "x-ses-virus-verdict": "PASS",
+        "x-google-dkim-signature": "",
+        "x-gm-message-state": "AE9vXwPQYqUd3VI+HZ9dMu1BE+/utj1t9D4aqwcpGgInzBauDE/ej/ySgWXer7hUgVW+F+1GcL9ye0KTZhBDUwnisK93T8Y=",
+        "x-forwarded-to": "darius+dev2@blue.dev.mail.reva.tech",
+        "x-forwarded-for": "darius@craftingsoftware.com darius+dev2@blue.dev.mail.reva.tech",
+        "delivered-to": "darius@craftingsoftware.com",
+        "dkim-signature": "",
+        "mime-version": "1.0",
+        "from": "baba darius <baba.darius@gmail.com>",
+        02_3vEyKs7i8aNfeCWzgK+_+py1A@mail.gmail.com>",
+    "subject": "test",
+    "to": "Darius Baba <darius@craftingsoftware.com>",
+"content-type": "multipart/alternative; boundary=001a11411310a3b041053b860385"
+  },
+02_3vEyKs7i8aNfeCWzgK+_+py1A@mail.gmail.com",
+        "priority": "normal",
+        "from": [
+            {
+                "address": "baba.darius@gmail.com",
+                "name": "baba darius"
+            }
+        ],
+        "to": [
+            {
+                "address": "darius@craftingsoftware.com",
+                "name": "Darius Baba"
+            }
+        ],
+        "date": "2016-09-02T13:07:15.000Z",
+        "receivedDate": "2016-09-02T13:07:39.000Z"
+    }"
+  "messageId": "CAJ=D59uRgF_18dnSon
+        "message-id": "<CAJ=D59uRgF_18dnSon"}\""}

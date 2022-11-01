@@ -1,0 +1,147 @@
+{  
+    "id":"f5bff97f-4095-45a0-97e6-ce643e17f80c",
+    "pets":null,
+    "comms":[  ],
+    "score":"prospect",
+    "state":"Applicant",
+    "workflowName": "newLease",
+    "workflowState": "active", 
+    "tasks":[  
+        {  
+           "id":"f1c8e08c-b487-417d-addb-da2ed524db42",
+           "name":"PROMOTE_APPLICATION",
+           "state":"Active",
+           "dueDate":"2019-01-24T13:46:40.975+00:00",
+           "partyId":"f5bff97f-4095-45a0-97e6-ce643e17f80c",
+           "userIds":[  
+              "38c65764-4f1e-4951-bf5a-8b1b7ee45396"
+           ],
+           "category":"Application approval",
+           "metadata":{  },
+           "created_at":"2019-01-24T13:46:40.991131+00:00",
+           "updated_at":"2019-01-24T13:46:40.991131+00:00",
+           "modified_by":null,
+           "completionDate":null
+        }
+    ],
+    "teams":[  
+       "8c67daf0-c796-49cd-bccf-7b221ae17006",
+       "9820600d-9f79-4c47-ae48-34b63a6bdc8f"
+    ],
+    "leases": null,
+    "quotes":[  
+       {  
+          "id":"273fb883-5bcc-459c-9011-a58aab4aa737",
+          "partyId":"f5bff97f-4095-45a0-97e6-ce643e17f80c",
+          "created_at":"2019-01-24T13:45:28.256+00:00",
+          "selections":{  },
+          "updated_at":"2019-01-24T13:45:29.896114+00:00",
+          "inventoryId":"b7c5089d-a245-4b93-b1b9-e52e8ddfe715",
+          "modified_by":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+          "publishDate":"2019-01-24T13:45:29.863+00:00",
+          "isSelfService":false,
+          "expirationDate":"2019-01-27T07:59:59.999+00:00",
+          "leaseStartDate":"2019-01-24T08:00:00+00:00",
+          "propertyTimezone":"America/Los_Angeles",
+          "confirmationNumber":"d55870ab-4ed1-4c74-b0dc-0b46b0f7b119",
+          "publishedQuoteData":{  }
+       }
+    ],
+    "userId":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+    "endDate":null,
+    "members":[  
+       {  
+          "person":{  },
+          "contactInfo":[  ],
+          "partyMember":{  
+             "id":"a7155717-5a03-4ff7-b216-304714993994",
+             "isSpam":false,
+             "endDate":null,
+             "partyId":"f5bff97f-4095-45a0-97e6-ce643e17f80c",
+             "external":{  
+ 
+             },
+             "personId":"18a7d2f4-f2d5-49a4-9e3a-2b6c8c9254f5",
+             "startDate":"2019-01-24T13:45:21.902777+00:00",
+             "created_at":"2019-01-24T13:45:21.994+00:00",
+             "externalId":null,
+             "memberType":"Resident",
+             "updated_at":"2019-01-24T13:46:02.370278+00:00",
+             "memberState":"Applicant",
+             "modified_by":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+             "guaranteedBy":null
+          }
+       }
+    ],
+    "children":null,
+    "invoices":[ ],
+    "metadata":{ },
+    "vehicles":null,
+    "leaseType":"traditional",
+    "ownerTeam":"8c67daf0-c796-49cd-bccf-7b221ae17006",
+    "startDate":"2019-01-24T13:45:21.902777+00:00",
+    "created_at":"2019-01-24T13:45:21.915+00:00",
+    "invOnHolds":[  
+       {  
+          "id":"978bdd70-4b78-431c-a651-d437c0188c45",
+          "heldBy":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+          "reason":"lease",
+          "endDate":"2019-01-24T14:03:47.461+00:00",
+          "partyId":"f5bff97f-4095-45a0-97e6-ce643e17f80c",
+          "quotable":false,
+          "startDate":"2019-01-24T14:03:29.309+00:00",
+          "created_at":"2019-01-24T14:03:29.311+00:00",
+          "releasedBy":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+          "updated_at":"2019-01-24T14:03:47.340183+00:00",
+          "inventoryId":"b7c5089d-a245-4b93-b1b9-e52e8ddfe715"
+       }
+    ],
+    "mergedWith":null,
+    "promotions":[  
+       {  
+          "id":"2d68926f-d09f-4201-a82a-65e06b831664",
+          "partyId":"f5bff97f-4095-45a0-97e6-ce643e17f80c",
+          "quoteId":"273fb883-5bcc-459c-9011-a58aab4aa737",
+          "approvedBy":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+          "created_at":"2019-01-24T13:48:31.052+00:00",
+          "updated_at":"2019-01-24T14:03:47.340183+00:00",
+          "leaseTermId":"6b64fd97-c052-4a6c-9ad5-0739491d549a",
+          "modified_by":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+          "approvalDate":"2019-01-24T13:48:31.052+00:00",
+          "promotionStatus":"approved"
+       }
+    ],
+    "updated_at":"2019-01-24T14:03:47.340183+00:00",
+    "modified_by":"38c65764-4f1e-4951-bf5a-8b1b7ee45396",
+    "transactions":null,
+    "collaborators":[ "38c65764-4f1e-4951-bf5a-8b1b7ee45396" ],
+    "emailIdentifier":"f5bff97f409545a097e6",
+    "partyApplications":[ ],
+    "assignedPropertyId":"86eb84f2-a15e-4a85-b5f8-59a36b71de86",
+    "personApplications":[  
+       {  
+          "id":"93fb4b87-0800-473a-bf25-d9ca593701ad",
+          "ssn":null,
+          "itin":null,
+          "partyId":"f5bff97f-4095-45a0-97e6-ce643e17f80c",
+          "personId":"18a7d2f4-f2d5-49a4-9e3a-2b6c8c9254f5",
+          "tosEvents":[  ],
+          "created_at":"2019-01-24T13:45:37.538+00:00",
+          "updated_at":"2019-01-24T13:46:40.832973+00:00",
+          "applicantId":"dce0a43c-20d8-42d7-9ca5-01165e373db1",
+          "isFeeWaived":false,
+          "additionalData":{  },
+          "sendSsnEnabled":false,
+          "applicationData":{  },
+          "endedAsMergedAt":null,
+          "feeWaiverReason":null,
+          "paymentCompleted":true,
+          "applicationStatus":"completed",
+          "partyApplicationId":"abfc38da-4d15-4644-8e2b-17179f6d0b12"
+       }
+    ],
+    "storedUnitsFilters":{  },
+    "teamPropertyProgramId":null,
+    "qualificationQuestions":{ },
+    "version":"7b2d3429-6a17-4a3c-8efa-c1793da7cc88"
+ }

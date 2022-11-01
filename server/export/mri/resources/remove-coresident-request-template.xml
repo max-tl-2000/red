@@ -1,0 +1,7 @@
+<mri_s-pmrm_removecoresident>
+  {{#with this}}
+    <entry>
+      <ResidentID>{{ResidentID}}</ResidentID>
+    </entry>
+  {{/with}}
+</mri_s-pmrm_removecoresident>

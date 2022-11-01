@@ -1,0 +1,36 @@
+@import '../../sass/_colors.scss';
+
+.publish-lease-dialog {
+  width: (490rem/16);
+  min-height: (320rem/16);
+}
+
+.error-section {
+  display: flex;
+  flex-direction: column;
+  min-height: (200rem/16);
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  [data-red-icon] {
+    fill: $redA200;
+  }
+}
+
+.publishing-state {
+  align-content: center;
+
+  p {
+    margin: .5em 1em;
+    text-align: center;
+
+    align-self: center;
+  }
+}

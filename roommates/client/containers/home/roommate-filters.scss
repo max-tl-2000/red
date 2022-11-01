@@ -1,0 +1,33 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+.card {
+  margin-bottom: (12rem/16);
+}
+
+.date-range {
+  div[data-component='date-picker'] {
+    &:first-of-type {
+      @include span(6, 12, 8px, split);
+
+      margin-right: (8rem/16);
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      @include span(6, 12, 16px, after, last);
+
+      margin-left: (8rem/16);
+    }
+  }
+}
+
+.dropdown {
+  > button {
+    > span {
+      > *[data-component='icon'] {
+        fill: $black;
+      }
+    }
+  }
+}

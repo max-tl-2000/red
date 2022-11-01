@@ -1,0 +1,13 @@
+@import '../../sass/_colors.scss';
+
+.confirm-lease-term-dialog {
+  width: (490rem/16);
+}
+
+.date-message {
+  margin-top: .75em;
+
+  > span {
+    color: $purpleA100;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <a id="appUrl"></a>
+    <script type="text/javascript">
+      function isAndroidDevice() {
+        const toMatch = [/Android/i];
+
+        return toMatch.some((toMatchItem) => {
+          return navigator.userAgent.match(toMatchItem);
+        });
+      }
+
+      function isIosDevice() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      }
+
+      window.onload = function () {
+        var appUrl = null;
+        var redirectionUrl = "${webUrl}";
+
+        if (isAndroidDevice()) {
+          redirectionUrl = redirectionUrl + "${playStoreUrl}";
+          appUrl = "${mobileAppURL}";
+        } else if (isIosDevice()) {
+          redirectionUrl = redirectionUrl + "${appStoreUrl}";
+          appUrl = "${mobileAppURL}";
+        }
+
+        if (appUrl) {
+          const anchor = document.getElementById("appUrl");
+          anchor.href = appUrl;
+          anchor.click();
+        }
+
+        setTimeout(function () {
+          window.location = redirectionUrl;
+        }, 1000);
+      };
+    </script>
+  </body>
+</html>

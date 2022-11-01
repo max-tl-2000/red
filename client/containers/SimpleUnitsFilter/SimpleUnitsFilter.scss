@@ -1,0 +1,79 @@
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.mainContent {
+  padding: 1rem (24rem/16);
+}
+
+.showAllOptions {
+  margin-top: 2rem;
+  padding: .5rem 0;
+}
+
+.unit-preferences {
+  display: block;
+
+  > [data-component] {
+    margin-bottom: (24rem/16);
+  }
+
+  &.small {
+    > [data-component] {
+      @include span(3, 4, 1rem, after);
+
+      display: block;
+    }
+
+    > [data-component='date-range-picker'] {
+      width: 100%;
+
+      [data-component='date-picker'] {
+        @include span(3, 4, 1rem, after);
+      }
+    }
+  }
+
+  &.large,
+  &.medium {
+    > [data-component] {
+      &:nth-child(5),
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+
+    > [data-component='range-slider'] {
+      width: 100%;
+    }
+
+    > [data-component='date-range-picker'] {
+      width: 100%;
+
+      [data-component='date-picker'] {
+        @include span(4, 8, (24rem/16), after);
+
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.bar-item {
+  width: 20%;
+}
+
+.button {
+  margin-left: -.5rem;
+  padding-top: (24rem/16);
+  padding-bottom: (24rem/16);
+}
+
+.number-of-units {
+  margin-bottom: (24rem/16);
+
+  > [data-component] {
+    width: calc(50% + (.75rem) - 1.5rem);
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../sass/_colors.scss';
+
+.st-helper-text {
+  margin-left: .5rem;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.hidden-application {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.applications-warning {
+  display: flex;
+
+  [data-component='icon'] {
+    width: (44rem/16);
+    height: (38rem/16);
+
+    svg {
+      fill: $amber500;
+    }
+  }
+
+  p {
+    padding-left: (26rem/16);
+  }
+}
+
+.other-applications-banner {
+  padding: (16rem/16) (26rem/16);
+  background-color: $amber50;
+
+  [data-component='table'] {
+    padding-left: (46rem/16);
+  }
+
+  [data-component='button'] {
+    margin: (22rem/16) 0 0 (64rem/16);
+  }
+}
+
+.link {
+  margin: 0 0 0 0 !important;
+}
+
+.secondary {
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.application-action-cell {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 0;
+}
+
+.application-row {
+  min-height: (40rem/16) !important;
+}
+
+.shrink-button {
+  margin-left: 6rem !important;
+}

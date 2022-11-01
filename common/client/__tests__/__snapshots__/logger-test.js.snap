@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`client/logger initClientLogger failures to post messages should be logged as errors 1`] = `
+Array [
+  Array [
+    "some method called 1, {
+  \\"severity\\": \\"error\\",
+  \\"userAgent\\": \\"Mock User Agent\\",
+  \\"currentUrl\\": \\"https://mock/location/to/resource\\",
+  \\"custom\\": \\"value\\",
+  \\"to\\": \\"pass\\",
+  \\"for\\": \\"logger\\"
+}",
+  ],
+  Array [
+    "UNABLE TO POST LOG!",
+    Object {
+      "status": 500,
+    },
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should allow to add the user info 1`] = `
+Array [
+  Array [
+    "/log",
+    Object {
+      "data": Array [
+        Object {
+          "contextData": Object {
+            "userId": 1,
+            "userName": "Some name",
+          },
+          "currentUrl": "https://mock/location/to/resource",
+          "custom": "value",
+          "for": "logger",
+          "loggingMessage": "some method called 1",
+          "severity": "error",
+          "to": "pass",
+          "userAgent": "Mock User Agent",
+        },
+      ],
+    },
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should also accept a extra object to be sent to the api endpoint in case of severity = error 1`] = `
+Array [
+  Array [
+    "/log",
+    Object {
+      "data": Array [
+        Object {
+          "currentUrl": "https://mock/location/to/resource",
+          "custom": "value",
+          "for": "logger",
+          "loggingMessage": "some method called 1",
+          "severity": "error",
+          "to": "pass",
+          "userAgent": "Mock User Agent",
+        },
+      ],
+    },
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should do a post to the provided client api only for error severity 1`] = `
+Array [
+  Array [
+    "/log",
+    Object {
+      "data": Array [
+        Object {
+          "currentUrl": "https://mock/location/to/resource",
+          "loggingMessage": "some methd called 5",
+          "severity": "error",
+          "userAgent": "Mock User Agent",
+        },
+      ],
+    },
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should use the console object in development mode as well as the api endpoint only for error messages 1`] = `
+Array [
+  Array [
+    "a trace message",
+    Object {},
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should use the console object in development mode as well as the api endpoint only for error messages 2`] = `
+Array [
+  Array [
+    "a debug message",
+    Object {},
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should use the console object in development mode as well as the api endpoint only for error messages 3`] = `
+Array [
+  Array [
+    "an info message",
+    Object {},
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should use the console object in development mode as well as the api endpoint only for error messages 4`] = `
+Array [
+  Array [
+    "an error message",
+    Object {},
+  ],
+]
+`;
+
+exports[`client/logger initClientLogger should use the console object in development mode as well as the api endpoint only for error messages 5`] = `
+Array [
+  Array [
+    "a warn message",
+    Object {},
+  ],
+]
+`;

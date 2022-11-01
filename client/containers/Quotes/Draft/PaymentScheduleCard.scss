@@ -1,0 +1,39 @@
+@import '../../../sass/_typography-mixins.scss';
+
+.card-body-row {
+  padding-right: (16rem/16);
+  padding-left: (16rem/16);
+}
+
+.row-header-custom {
+  height: (48em/16);
+  padding: 0rem;
+  border-bottom: none !important;
+
+  &:after {
+    border-bottom: none;
+  }
+}
+
+.row-header-custom:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.no-padding-cell > div {
+  padding: 0rem;
+}
+
+.sub-header {
+  height: (48em/16);
+}
+
+.payment-amount {
+  [data-part='integer'],
+  [data-part='decimal'] {
+    @include body();
+  }
+
+  [data-part='decimal'] {
+    @include textSecondary();
+  }
+}

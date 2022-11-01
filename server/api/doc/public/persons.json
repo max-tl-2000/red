@@ -1,0 +1,230 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/personDetails/{personId}": {
+      "get": {
+        "tags": [
+          "Persons"
+        ],
+        "parameters": [
+          {
+            "description": "Id of the person",
+            "in": "path",
+            "name": "personId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Person Detail Page data was load succesfully",
+            "schema": {
+              "$ref": "applications.json#/definitions/ApplicationData"
+            }
+          }
+        }
+      }
+    },
+    "/persons": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "The persons",
+            "schema": {
+              "$ref": "#/definitions/Person"
+            }
+          }
+        },
+        "summary": "Retrieves all persons",
+        "tags": [
+          "Persons"
+        ]
+      }
+    },
+    "/persons/{personId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the person to load",
+            "in": "path",
+            "name": "personId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person identified by the sent ID",
+            "schema": {
+              "$ref": "#/definitions/Person"
+            }
+          },
+          "404": {
+            "description": "Person not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the specified person",
+        "tags": [
+          "Persons"
+        ]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The person to patch",
+            "in": "path",
+            "name": "personId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The fields to update",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Person"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation was successful",
+            "schema": {
+              "$ref": "#/definitions/Person"
+            }
+          },
+          "400": {
+            "description": "Invalid person id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a person",
+        "tags": [
+          "Persons"
+        ]
+      }
+    },
+    "/persons/merge": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The persons which need to be merged along with the contact infos that require updating",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/MergeBody",
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The person resulting from the merge is returned",
+            "schema": {
+              "$ref": "#/definitions/Person"
+            }
+          },
+          "404": {
+            "description": "Person no found in case firstPersonId is not found in the DB",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412":
+          {
+            "description": "Both persons have paid applications, in which case a merge is forbidden",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "tags": [
+          "Persons"
+        ],
+        "summary": "Creates the task received in the patch body in the DB (uses partyId for logging only)"
+      }
+    }
+  },
+  "definitions": {
+    "Person": {
+      "properties": {
+        "fullName": {
+          "description": "the full name of the person",
+          "type": "string"
+        },
+        "preferredName": {
+          "description": "the preferred name of the person",
+          "type": "string"
+        },
+        "dob": {
+          "description": "the date of birth of the person",
+          "type": "string"
+        },
+        "ssn": {
+          "description": "the social security number of the person",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Contact": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The search item id",
+          "type": "string"
+        },
+        "fullName": {
+          "description": "The full name of the contact",
+          "type": "string"
+        },
+        "preferredName": {
+          "description": "The prefered name of the contact",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email address of the contact",
+          "type": "string"
+        },
+        "phone": {
+          "description": "The phone no of the contact",
+          "type": "string"
+        }
+      }
+    },
+    "MergeBody": {
+      "type": "object",
+      "properties": {
+        "firstPersonId": {
+          "description": "The id of the first person to be merged",
+          "type": "string"
+        },
+        "secondPersonId": {
+          "description": "The id of the second person to be merged",
+          "type": "string"
+        },
+        "contactInfoToUpdate": {
+          "description": "The contact infos which need to be moved to the merge result person",
+          "type": "object"
+        }
+      }
+    }
+  }
+}

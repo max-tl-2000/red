@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  rxp:
+    image: registry.corp.reva.tech/rxp:${RXP_BUILD_NUMBER:-latest}
+    environment:
+      - CLOUD_ENV=local
+    ports:
+      - "3535:3535"

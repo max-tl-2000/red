@@ -1,0 +1,22 @@
+.agent-info {
+  $iconSize: 3em;
+
+  display: flex;
+  flex-direction: row;
+
+  align-self: center;
+
+  :global(.avatarSize) {
+    width: $iconSize;
+    height: $iconSize;
+  }
+
+  .contact-info {
+    width: calc(100% - #{$iconSize});
+    padding-left: (12em/16);
+
+    > div:first-child {
+      padding-bottom: (6em/16);
+    }
+  }
+}

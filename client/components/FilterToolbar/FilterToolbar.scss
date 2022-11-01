@@ -1,0 +1,107 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+[data-component='filter-toolbar'].toolbar {
+  > div {
+    display: block;
+    overflow: hidden;
+  }
+
+  [data-component='sg-elements'] {
+    flex-wrap: initial;
+
+    [data-component='sg-item'] {
+      flex: 1;
+    }
+  }
+
+  .textbox {
+    padding-right: .5rem;
+  }
+}
+
+.text-block,
+.filters-block {
+  display: none;
+  flex-direction: row;
+
+  &.on {
+    display: flex;
+  }
+}
+
+.text-block {
+  &.on {
+    animation: fadeInRight .3s ease-out;
+  }
+}
+
+.filters-block {
+  &.on {
+    animation: fadeInLeft .3s ease-out;
+  }
+}
+
+.tab {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: (48rem/16);
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: (4rem/16);
+    content: ' ';
+    transition: all .4s ease-out;
+    transform: translateY(100%);
+    opacity: 0;
+    background: $blue500;
+  }
+
+  &.selected {
+    &:after {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .button-label {
+      @include textPrimary();
+    }
+  }
+}
+
+.button-label {
+  transition: color .4s ease-out;
+  color: $blue500;
+}

@@ -1,0 +1,1565 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/marketing/properties": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "The relevant marketing information",
+            "schema": {
+              "$ref": "#/definitions/MarketingProperties"
+            }
+          }
+        },
+        "summary": "Loads relevant marketing information for all the properties",
+        "tags": ["marketing"]
+      }
+    },
+    "/marketing/properties/search": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The city to search properties in",
+            "in": "query",
+            "name": "city",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The state to search properties in",
+            "in": "query",
+            "name": "state",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The neighborhood to search properties in",
+            "in": "query",
+            "name": "neighborhood",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The desired number of bedrooms",
+            "in": "query",
+            "name": "bedroomCount",
+            "required": false,
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "description": "The region to search properties in",
+            "in": "query",
+            "name": "region",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The desired layouts",
+            "in": "query",
+            "name": "marketingLayoutGroups",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The maximum desired rent",
+            "in": "query",
+            "name": "marketRent",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The marketing session",
+            "in": "query",
+            "name": "marketingSessionId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The program email",
+            "in": "query",
+            "name": "programEmail",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The expected life styles for the properties",
+            "in": "query",
+            "name": "lifestyles",
+            "required": false,
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "description": "Start index for pagination",
+            "in": "query",
+            "name": "offset",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "Max number of results for pagination",
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The relevant marketing information",
+            "schema": {
+              "type": "array",
+              "$ref": "#/definitions/PropertyWithExtendedMarketingInformation"
+            }
+          },
+          "404": {
+            "description": "The email or marketingSessionId is not associated with a program",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads relevant marketing information for all the properties matching the filters",
+        "tags": ["/marketing"]
+      }
+    },
+    "/marketing/properties/{propertyId}/search": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the property",
+            "in": "path",
+            "name": "propertyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The city to search properties in",
+            "in": "query",
+            "name": "city",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The state to search properties in",
+            "in": "query",
+            "name": "state",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The neighborhood to search properties in",
+            "in": "query",
+            "name": "neighborhood",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The desired number of bedrooms",
+            "in": "query",
+            "name": "bedroomCount",
+            "required": false,
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "description": "The region to search properties in",
+            "in": "query",
+            "name": "region",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The desired layouts",
+            "in": "query",
+            "name": "marketingLayoutGroups",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The maximum desired rent",
+            "in": "query",
+            "name": "marketRent",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The marketing session",
+            "in": "query",
+            "name": "marketingSessionId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The program email",
+            "in": "query",
+            "name": "programEmail",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The expected life styles for the properties",
+            "in": "query",
+            "name": "lifestyles",
+            "required": false,
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          {
+            "description": "Start index for pagination",
+            "in": "query",
+            "name": "offset",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "Max number of results for pagination",
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The relevant marketing information",
+            "schema": {
+              "type": "array",
+              "$ref": "#/definitions/PropertyWithExtendedMarketingInformation"
+            }
+          },
+          "404": {
+            "description": "The email or marketingSessionId is not associated with a program",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads relevant marketing information for all the properties matching the filters",
+        "tags": ["/marketing"]
+      }
+    },
+    "/marketing/property/{propertyId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the property",
+            "in": "path",
+            "name": "propertyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The program email",
+            "in": "query",
+            "name": "programEmail",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The marketingsessionid",
+            "in": "query",
+            "name": "marketingSessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The marketing and amenity information for the selected property",
+            "schema": {
+              "$ref": "#/definitions/PropertyWithExtendedMarketingInformation"
+            }
+          },
+          "404": {
+            "description": "The email or marketingSessionId is not associated with a program",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the available extended marketing information for the selected property",
+        "tags": ["marketing"]
+      }
+    },
+    "/marketing/inventory/{inventoryId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the inventory to load",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The relevant inventory information",
+            "schema": {
+              "$ref": "#/definitions/MarketingInventory"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Inventory not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads relevant marketing information for the inventory",
+        "tags": ["marketing", "Inventories"]
+      }
+    },
+    "/marketing/inventory/{inventoryId}/pricing": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the inventory for the pricing",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "the move in date",
+            "in": "query",
+            "name": "moveInDate",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The relevant pricing information",
+            "schema": {
+              "$ref": "#/definitions/MarketingInventoryPricing"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Inventory not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads relevant pricing information for the inventory",
+        "tags": ["marketing", "Inventories"]
+      }
+    },
+    "/marketing/properties/{propertyId}/layoutGroup/{marketingLayoutGroupId}/layouts": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the property",
+            "in": "path",
+            "name": "propertyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The marketing layout group id",
+            "in": "path",
+            "name": "marketingLayoutGroupId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The limit number of inventories per marketing layout",
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The relevant inventory information",
+            "schema": {
+              "$ref": "#/definitions/MarketingLayoutGroup"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Property or marketing layout not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads relevant marketing information for the layout group",
+        "tags": ["marketing"]
+      }
+    },
+    "/marketing/inventory/{inventoryId}/quoteQuestions": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the inventory to get quote questions for",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The program email",
+            "in": "query",
+            "name": "programEmail",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The marketingsessionid",
+            "in": "query",
+            "name": "marketingSessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of MarketingQuestions",
+            "schema": {
+              "$ref": "#/definitions/MarketingQuestions"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads marketing questions for the specified inventory",
+        "tags": ["marketing"]
+      }
+    },
+    "/marketing/forms": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The message form payload",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/MarketingForm"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Message processed"
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send marketing from message",
+        "tags": ["marketing"]
+      }
+    },
+    "/marketing/inventory": {
+      "post": {
+        "parameters": [
+          {
+            "description": "the payload to pass to this request",
+            "in": "body",
+            "name": "args",
+            "schema": {
+              "$ref": "#/definitions/marketingInventoryRequestPayload"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Missing either inventoryIds, marketingLayoutIds, source or an invalid source was provided",
+            "schema": {
+              "$ref": "#/definitions/MarketingInventoryMissingInventoryOrLayoutIdsResponse"
+            }
+          },
+          "200": {
+            "description": "The relevant marketing information for inventories and marketingLayouts",
+            "schema": {
+              "$ref": "#/definitions/MarketingInventoryResponse"
+            }
+          }
+        },
+        "summary": "Loads relevant marketing information for all requested inventories and marketingLayouts",
+        "tags": ["marketing"]
+      }
+    }
+  },
+  "definitions": {
+    "marketingInventoryRequestPayload": {
+      "description": "The marketing/inventory/ request payload",
+      "properties": {
+        "inventoryIds": {
+          "description": "The requested inventory ids. Required if no marketingLayoutIds are provided",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "marketingLayoutIds": {
+          "description": "The layout ids to request info from. Required if no inventoryIds are provided",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "source": {
+          "description": "The source to get the marketing info for the property",
+          "type": "string"
+        },
+        "asArray": {
+          "description": "whether to reply with an array for each entity or if we should use an object map",
+          "type": "boolean"
+        }
+      }
+    },
+    "MarketingInventoryMissingInventoryOrLayoutIdsResponse": {
+      "description": "Error object in case of missing marketingLayoutIds, inventoryIds, source or an invalid source was provided",
+      "properties": {
+        "message": {
+          "description": "The error message describing the issue",
+          "type": "string"
+        },
+        "token": {
+          "description": "The tokens for this error: MISSING_INVENTORY_IDS_OR_LAYOUT_IDS, MISSING_SOURCE, INVALID_SOURCE",
+          "type": "string"
+        }
+      }
+    },
+    "MarketingInventoryResponse": {
+      "description": "Hashmaps of matching inventories, layouts and properties",
+      "properties": {
+        "inventories": {
+          "description": "the hashmap of inventories. Each key is an inventoryId",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "unitRentPrice": {
+                "description": "Inventory price: lowest 12-month price",
+                "type": "string"
+              },
+              "minRentPrice": {
+                "description": "Inventory price: lowest price across all move-in dates and terms",
+                "type": "string"
+              },
+              "numBedrooms": {
+                "description": "Number of bedrooms",
+                "type": "string"
+              },
+              "numBathrooms": {
+                "description": "Number of bathrooms",
+                "type": "string"
+              },
+              "surfaceArea": {
+                "description": "Inventory area",
+                "type": "string"
+              },
+              "description": {
+                "description": "Inventory description",
+                "type": "string"
+              },
+              "name": {
+                "description": "The inventory name",
+                "type": "string"
+              },
+              "images": {
+                "description": "Inventory images",
+                "items": {
+                  "properties": {
+                    "url": {
+                      "description": "Image url",
+                      "type": "string"
+                    },
+                    "caption": {
+                      "description": "Image caption",
+                      "type": "string"
+                    },
+                    "floorPlan": {
+                      "description": "Whether the inventory image is a floor plan type",
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "amenities": {
+                "description": "Inventory amenities",
+                "type": "string"
+              },
+              "inventoryId": {
+                "description": "Inventory id",
+                "type": "string"
+              },
+              "isAvailable": {
+                "description": "whether the inventory is available or not",
+                "type": "boolean"
+              },
+              "availableDate": {
+                "description": "Inventory available date. It is present only if isAvailable is true and date is in the future",
+                "type": "string"
+              },
+              "formattedAvailableDate": {
+                "description": "Inventory available date formatted as YYYY-MM-DD. It is present only if isAvailable is true and date is in the future",
+                "type": "string"
+              },
+              "externalId": {
+                "description": "The external Id of the inventory",
+                "type": "string"
+              },
+              "address": {
+                "description": "the address of the unit",
+                "type": "string"
+              },
+              "propertyId": {
+                "description": "the propertyId of which inventory belongs to",
+                "type": "string"
+              },
+              "allowed": {
+                "description": "Array of what is allowed in the inventory or in the property",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "included": {
+                "description": "Array of what is allowed inside the inventory",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "available": {
+                "description": "Array of what is available in the inventory or in the property",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "properties": {
+          "description": "Hashmap of all the properties referenced. Each key is a propertyId",
+          "additionalProperties": {
+            "properties": {
+              "name": {
+                "description": "The property name",
+                "type": "string"
+              },
+              "propertyId": {
+                "description": "The property id",
+                "type": "string"
+              },
+              "address": {
+                "description": "The property address object",
+                "properties": {
+                  "addressLine1": {
+                    "description": "the address line1",
+                    "type": "string"
+                  },
+                  "addressLine2": {
+                    "description": "the address line2",
+                    "type": "string"
+                  },
+                  "city": {
+                    "description": "the city",
+                    "type": "string"
+                  },
+                  "state": {
+                    "description": "the state",
+                    "type": "string"
+                  },
+                  "postalCode": {
+                    "description": "the postal code for the address",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "formattedAddress": {
+                "description": "The address as a single string",
+                "type": "string"
+              },
+              "officeHours": {
+                "description": "The property office hours each key is a day",
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {
+                    "endTime": {
+                      "description": "Then end time for the day",
+                      "type": "string"
+                    },
+                    "startTime": {
+                      "description": "Then start time for the day",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "timezone": {
+                "description": "The property timezone",
+                "type": "string"
+              },
+              "phone": {
+                "description": "The property phone number",
+                "type": "string"
+              },
+              "displayPhone": {
+                "description": "The property phone formatted",
+                "type": "string"
+              },
+              "email": {
+                "description": "The property email address",
+                "type": "string"
+              },
+              "url": {
+                "description": "The program specific URL if available for the property. Fallback to the property URL if not available",
+                "type": "string"
+              },
+              "images": {
+                "description": "Property images",
+                "items": {
+                  "properties": {
+                    "url": {
+                      "description": "Image url",
+                      "type": "string"
+                    },
+                    "caption": {
+                      "description": "Image caption",
+                      "type": "string"
+                    },
+                    "floorPlan": {
+                      "description": "Whether the property image is a floor plan type",
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            }
+          },
+          "type": "array"
+        },
+        "marketingLayouts": {
+          "description": "Hashmaps of marketing layouts",
+          "type": "object",
+          "additionalProperties": {
+            "properties": {
+              "marketingLayoutId": {
+                "description": "Marketing layout id",
+                "type": "string"
+              },
+              "numBathrooms": {
+                "description": "Number of bathrooms",
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "numBedrooms": {
+                "description": "Number of bedrooms",
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "minSurfaceArea": {
+                "description": "Min surface area of inventories with this layout",
+                "type": "string"
+              },
+              "maxSurfaceArea": {
+                "description": "Max surface area of inventories with this layout",
+                "type": "string"
+              },
+              "name": {
+                "description": "Layout display name",
+                "type": "string"
+              },
+              "description": {
+                "description": "Layout description",
+                "type": "string"
+              },
+              "layoutImage": {
+                "description": "Layout image",
+                "type": "string"
+              },
+              "amenities": {
+                "description": "Layout amenities",
+                "type": "string"
+              },
+              "propertyId": {
+                "description": "The property id",
+                "type": "string"
+              },
+              "allowed": {
+                "description": "Array of what is allowed in the inventory or in the property",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "included": {
+                "description": "Array of what is allowed inside the inventory",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "available": {
+                "description": "Array of what is available in the inventory or in the property",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "minRent": {
+                "description": "Layout min rent",
+                "type": "string"
+              },
+              "minAvailableDate": {
+                "description": "Layout min available date. It will be present only if hasAvailability is true and date is in the future",
+                "type": "string"
+              },
+              "hasAvailability": {
+                "description": "Whether the layout has availability within the property",
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      },
+      "type": "object"
+    },
+    "MarketingProperties": {
+      "properties": {
+        "marketingLayoutGroups": {
+          "description": "list of all used distinct marketing layout groups",
+          "type": "array",
+          "items": {
+            "properties": {
+              "id": {
+                "description": "id of the marketing layout group",
+                "type": "string"
+              },
+              "name": {
+                "description": "name of the marketing layout group",
+                "type": "string"
+              },
+              "displayName": {
+                "description": "display name of the marketing layout group",
+                "type": "string"
+              },
+              "shortDisplayName": {
+                "description": "short display name of the marketing layout group",
+                "type": "string"
+              },
+              "description": {
+                "description": "description of the marketing layout group",
+                "type": "string"
+              },
+              "order": {
+                "description": "order of the marketing layout group",
+                "type": "number"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "marketRent": {
+          "description": "min and max rent values from rms pricing",
+          "properties": {
+            "min": {
+              "description": "minimum value from minRent in RMS Pricing",
+              "type": "string"
+            },
+            "max": {
+              "description": "minimum value from standardRent in RMS Pricing",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "lifestyles": {
+          "description": "list of all lifestyles",
+          "type": "array",
+          "items": {
+            "properties": {
+              "displayName": {
+                "description": "display name for the lifestyle amenity",
+                "type": "string"
+              },
+              "infographicName": {
+                "description": "infographic name for the lifestyle amenity",
+                "type": "string"
+              },
+              "order": {
+                "description": "order for the lifestyle amenity",
+                "type": "number"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "properties": {
+          "description": "list of all properties with marketing information",
+          "type": "array",
+          "items": {
+            "properties": {
+              "propertyId": {
+                "description": "id of the property",
+                "type": "string"
+              },
+              "name": {
+                "description": "name of the property",
+                "type": "string"
+              },
+              "displayName": {
+                "description": "diplay name of the property",
+                "type": "string"
+              },
+              "geoLocation": {
+                "description": "geo location of the property",
+                "properties": {
+                  "lat": {
+                    "description": "latitude coordinates",
+                    "type": "string"
+                  },
+                  "lng": {
+                    "description": "longitude coorfinates",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "city": {
+                "description": "city of the property",
+                "type": "string"
+              },
+              "tags": {
+                "description": "tags of the property",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "state": {
+                "description": "state of the property",
+                "type": "string"
+              },
+              "region": {
+                "description": "region of the property",
+                "type": "string"
+              },
+              "address": {
+                "description": "The property address object",
+                "properties": {
+                  "addressLine1": {
+                    "description": "the address line1",
+                    "type": "string"
+                  },
+                  "addressLine2": {
+                    "description": "the address line2",
+                    "type": "string"
+                  },
+                  "city": {
+                    "description": "the city",
+                    "type": "string"
+                  },
+                  "state": {
+                    "description": "the state",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "formattedShortAddress": {
+                "description": "The address as a single string field formatted as: addresLine1, city",
+                "type": "string"
+              },
+              "formattedLongAddress": {
+                "description": "The address as a single string field formatted as: addresLine1, city, state  zip/postalCode",
+                "type": "string"
+              },
+              "formattedFullAddress": {
+                "description": "The address as a multi line string field formatted as: addresLine1 \n addressLine2 \n city, state  zip/postalCode",
+                "type": "string"
+              },
+              "cityAliases": {
+                "description": "city aliases of the property",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "neighborhood": {
+                "description": "neighborhood of the property",
+                "type": "string"
+              },
+              "stateAliases": {
+                "description": "state aliases of the property",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "testimonials": {
+                "description": "testimonials of the property",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "regionAliases": {
+                "description": "region aliases of the property",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "neighborhoodAliases": {
+                "description": "testimonials of the property",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "PropertyWithExtendedMarketingInformation": {
+      "properties": {
+        "propertyId": {
+          "description": "id of the property",
+          "type": "string"
+        },
+        "name": {
+          "description": "name of the property",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "diplay name of the property",
+          "type": "string"
+        },
+        "geoLocation": {
+          "description": "geo location of the property",
+          "properties": {
+            "lat": {
+              "description": "latitude coordinates",
+              "type": "string"
+            },
+            "lng": {
+              "description": "longitude coorfinates",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "city": {
+          "description": "city of the property",
+          "type": "string"
+        },
+        "tags": {
+          "description": "tags of the property",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "state": {
+          "description": "state of the property",
+          "type": "string"
+        },
+        "region": {
+          "description": "region of the property",
+          "type": "string"
+        },
+        "neighborhood": {
+          "description": "neighborhood of the property",
+          "type": "string"
+        },
+        "address": {
+          "description": "The property address object",
+          "properties": {
+            "addressLine1": {
+              "description": "the address line1",
+              "type": "string"
+            },
+            "addressLine2": {
+              "description": "the address line2",
+              "type": "string"
+            },
+            "city": {
+              "description": "the city",
+              "type": "string"
+            },
+            "state": {
+              "description": "the state",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "formattedShortAddress": {
+          "description": "The address as a single string field formatted as: addresLine1, city",
+          "type": "string"
+        },
+        "formattedLongAddress": {
+          "description": "The address as a single string field formatted as: addresLine1, city, state  zip/postalCode",
+          "type": "string"
+        },
+        "formattedFullAddress": {
+          "description": "The address as a multi line string field formatted as: addresLine1 \n addressLine2 \n city, state  zip/postalCode",
+          "type": "string"
+        },
+        "enableSelfServiceEdit": {
+          "description": "Determine if self service enabled",
+          "type": "boolean"
+        },
+        "phone": {
+          "description": "phone associated to the program",
+          "type": "string"
+        },
+        "smsEnabled": {
+          "description": "determine if forwarding sms is enabled",
+          "type": "boolean"
+        },
+        "email": {
+          "description": "email associated to the program",
+          "type": "string"
+        },
+        "testimonials": {
+          "description": "testimonials of the property",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "marketingLayoutGroups": {
+          "description": "list of all used distinct marketing layout groups for the property",
+          "type": "array",
+          "items": {
+            "properties": {
+              "id": {
+                "description": "id of the marketing layout group",
+                "type": "string"
+              },
+              "name": {
+                "description": "name of the marketing layout group",
+                "type": "string"
+              },
+              "displayName": {
+                "description": "display name of the marketing layout group",
+                "type": "string"
+              },
+              "shortDisplayName": {
+                "description": "short display name of the marketing layout group",
+                "type": "string"
+              },
+              "description": {
+                "description": "description of the marketing layout group",
+                "type": "string"
+              },
+              "order": {
+                "description": "order of the marketing layout group",
+                "type": "number"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "marketRent": {
+          "description": "min and max rent values from rms pricing for the property",
+          "properties": {
+            "min": {
+              "description": "minimum value from minRent in RMS Pricing",
+              "type": "string"
+            },
+            "max": {
+              "description": "minimum value from standardRent in RMS Pricing",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "lifestyles": {
+          "description": "list of all lifestyles",
+          "type": "array",
+          "items": {
+            "properties": {
+              "displayName": {
+                "description": "display name for the lifestyle amenity",
+                "type": "string"
+              },
+              "infographicName": {
+                "description": "infographic name for the lifestyle amenity",
+                "type": "string"
+              },
+              "order": {
+                "description": "order for the lifestyle amenity",
+                "type": "number"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "layoutAmenities": {
+          "description": "list of all layout amenities",
+          "type": "array",
+          "items": {
+            "properties": {
+              "displayName": {
+                "description": "display name for the layout amenity",
+                "type": "string"
+              },
+              "description": {
+                "description": "description for the layout amenity",
+                "type": "string"
+              },
+              "name": {
+                "description": "name for the layout amenity",
+                "type": "number"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "propertyAmenities": {
+          "description": "list of all property amenities",
+          "type": "array",
+          "items": {
+            "properties": {
+              "displayName": {
+                "description": "display name for the property amenity",
+                "type": "string"
+              },
+              "description": {
+                "description": "description for the property amenity",
+                "type": "string"
+              },
+              "name": {
+                "description": "name for the property amenity",
+                "type": "number"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "team": {
+          "description": "team timezone and working hours",
+          "properties": {
+            "timeZone": {
+              "description": "timezone for the team",
+              "type": "string"
+            },
+            "officeHours": {
+              "description": "office hours for the team",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "onSiteLeasingTeam": {
+          "description": "on site leasing team timezone and working hours",
+          "properties": {
+            "timeZone": {
+              "description": "timezone for the team",
+              "type": "string"
+            },
+            "officeHours": {
+              "description": "office hours for the team",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "MarketingInventory": {
+      "properties": {
+        "inventoryId": {
+          "description": "The inventory id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "description": "The inventory name",
+          "type": "string"
+        },
+        "description": {
+          "description": "The inventory description",
+          "type": "string"
+        },
+        "imageUrl": {
+          "description": "The inventory main image",
+          "type": "string"
+        },
+        "imageUrls": {
+          "description": "List containing all the images for the inventory",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "fullQualifiedName": {
+          "description": "The inventory full qualified name",
+          "type": "string"
+        },
+        "buildingQualifiedName": {
+          "description": "The full qualified name for the building containing the inventory",
+          "type": "string"
+        },
+        "marketRent": {
+          "description": "Market rent to the inventory",
+          "type": "integer"
+        },
+        "lowestMonthlyRent": {
+          "description": "Lowest monthly rent for the inventory",
+          "type": "integer"
+        },
+        "amenities": {
+          "description": "List of amenities for the inventory",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "availabilityDate": {
+          "description": "Unit available date. It will be present only if hasAvailability is true and date is in the future",
+          "type": "string",
+          "format": "date-time"
+        },
+        "hasAvailability": {
+          "description": "Whether the unit has availability",
+          "type": "boolean"
+        },
+        "isAvailableNow": {
+          "description": "Whether the inventory has the vacantReady state",
+          "type": "boolean"
+        },
+        "complimentaryItems": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "MarketingInventoryPricing": {
+      "description": "pricing for lease terms",
+      "properties": {
+        "date": {
+          "description": "date edge from closest date range",
+          "type": "string",
+          "format": "date"
+        },
+        "terms": {
+          "description": "terms based on property settings marketing terms",
+          "type": "array",
+          "items": {
+            "properties": {
+              "marketRent": {
+                "description": "price",
+                "type": "string"
+              },
+              "termLength": {
+                "description": "term length of the lease term",
+                "type": "string"
+              },
+              "period": {
+                "description": "period for the lease term",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "aditionalTerms": {
+          "description": "aditional terms",
+          "type": "array",
+          "items": {
+            "properties": {
+              "marketRent": {
+                "description": "price",
+                "type": "string"
+              },
+              "termLength": {
+                "description": "term length of the lease term",
+                "type": "string"
+              },
+              "period": {
+                "description": "period for the lease term",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "MarketingLayoutGroup": {
+      "description": "List of layouts with units within a marketing layout group",
+      "properties": {
+        "marketingLayoutId": {
+          "description": "The marketing layout id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "description": "The marketing layout name",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The marketing layout displayName",
+          "type": "string"
+        },
+        "description": {
+          "description": "The marketing layout description",
+          "type": "string"
+        },
+        "numBedrooms": {
+          "description": "The number of bedrooms available",
+          "type": "number"
+        },
+        "numBathrooms": {
+          "description": "The number of bathrooms available",
+          "type": "number"
+        },
+        "imageUrl": {
+          "description": "The marketing layout main image",
+          "type": "string"
+        },
+        "surfaceArea": {
+          "description": "An object containing a max and min",
+          "type": "object"
+        },
+        "inventory": {
+          "description": "List of inventories within a layout",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MarketingInventory"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "MarketingQuestions": {
+      "description": "List of marketing questions for the specified inventory",
+      "properties": {
+        "id": {
+          "description": "The marketing question id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "description": "The marketing question name",
+          "type": "string"
+        },
+        "displaySectionQuestion": {
+          "description": "The marketing questions section",
+          "type": "string"
+        },
+        "displayPrimaryQuestions": {
+          "description": "The second level of marketing questions",
+          "type": "string"
+        },
+        "displayPrimaryQuestionsDescription": {
+          "description": "The description that appears as subtext below the primary question",
+          "type": "string"
+        },
+        "displayFollowupQuestion": {
+          "description": "The third level of marketing questions",
+          "type": "string"
+        },
+        "inputTypesForFollowupQuestion": {
+          "description": "The input type for the marketing question reponse",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "MarketingForm": {
+      "properties": {
+        "formId": {
+          "description": "the id of the marketing form",
+          "type": "string"
+        },
+        "message": {
+          "description": "Marketing email information",
+          "type": "object",
+          "properties": {
+            "to": {
+              "description": "Email's target",
+              "type": "string"
+            },
+            "body": {
+              "description": "Email's body",
+              "type": "string"
+            },
+            "subject": {
+              "description": "Email's subject",
+              "type": "string"
+            }
+          }
+        },
+        "data": {
+          "description": "The fields in the marketing form",
+          "type": "object"
+        }
+      },
+      "required": ["formId", "message", "data"],
+      "type": "object"
+    }
+  }
+}

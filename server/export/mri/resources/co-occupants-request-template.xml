@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+{{#each this}}
+{{#with this}}
+<mri_s-pmrm_cooccupants>
+    <entry>
+		<ResidentID>{{ResidentID}}</ResidentID>
+        <LastName>{{LastName}}</LastName>
+        <FirstName>{{FirstName}}</FirstName>
+        <Status>{{Status}}</Status>
+        <ResidentType>R</ResidentType>
+        <PrimaryResidentID>{{PrimaryNameID}}</PrimaryResidentID>
+        <PropertyID>{{PropertyID}}</PropertyID>
+        <BuildingID>{{BuildingID}}</BuildingID>
+        <UnitID>{{UnitID}}</UnitID>
+        <LeaseID>{{LeaseID}}</LeaseID>
+        <PhoneNumber>{{PhoneNumber}}</PhoneNumber>
+		<EMailAddress>{{EMailAddress}}</EMailAddress>
+        <SocialSecurityNumber>{{SocialSecurityNumber}}</SocialSecurityNumber>
+        <NoSSN>{{NoSSN}}</NoSSN>
+        <Guarantor>{{Guarantor}}</Guarantor>
+    </entry>
+</mri_s-pmrm_cooccupants>
+{{/with}}
+{{/each}}

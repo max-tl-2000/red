@@ -1,0 +1,26 @@
+{
+    "leaseTerms": { "monthlyRent": 4582, "leaseMonths": 12 },
+    "applicants" : [
+        {
+            "income": { "employmentGrossIncome": 5000 },
+            "as_information" : { "applicantType" : "Applicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Edgar", "lastName": "Smith" }
+                }
+            }
+        },
+        {
+            "income": { "employmentGrossIncome": 5000 },
+            "as_information" : { "applicantType" : "CoApplicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Florence", "lastName": "Smith" }
+                }
+            }
+        }
+    ],
+    "transactionNumber": 2001,
+    "applicantDecision": "Smith, Edgar - APPROVED\nSmith, Florence - APPROVED",
+    "applicationDecision": "APPROVED"
+}

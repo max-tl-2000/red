@@ -1,0 +1,17 @@
+@import '../../../../client/sass/_colors.scss';
+
+.applicant-dialog {
+  [data-component='dialog-body'] {
+    padding: 0;
+  }
+
+  .info-text {
+    padding: (12em/16) (20em/16);
+    background: rgba($blueGrey100, .54);
+  }
+
+  .main-section {
+    width: 100%;
+    height: (460rem/16);
+  }
+}

@@ -1,0 +1,38 @@
+.row-header-custom {
+  &:after {
+    left: 0;
+  }
+}
+
+.text-cell {
+  span {
+    font-size: (13rem/16);
+  }
+}
+
+.st-helper-text {
+  margin-left: .5rem;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.active-lease-action-items {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  padding: 1rem 0;
+}
+
+.lease-row {
+  > div {
+    > div {
+      > div {
+        padding: (2rem/16) 0;
+      }
+    }
+  }
+}

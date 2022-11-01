@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "hostname": "Roys-MacBook-Pro.local",
+  "pid": 92992,
+  "type": "middleware",
+  "subType": "access-log",
+  "reqId": "a0b20b83-9364-4864-8e55-7d867afb5e13",
+  "level": 50,
+  "url": "/dist//b4c7f821e4a0914baaa1.hot-update.json",
+  "res": {
+    "statusCode": 404,
+    "header": "HTTP/1.1 404 Not Found\r\nx-powered-by: Express\r\nX-Request-Id: a0b20b83-9364-4864-8e55-7d867afb5e13\r\nx-content-type-options: nosniff\r\ncontent-type: text/html; charset=utf-8\r\ncontent-length: 54\r\ndate: Thu, 30 Jun 2016 15:17:25 GMT\r\nconnection: close\r\n\r\n"
+  },
+  "duration": 68,
+  "msg": "request finish",
+  "time": "2016-06-30T15:17:25.622Z",
+  "src": {
+    "file": "logger-middleware.js",
+    "line": 100
+  },
+  "v": 0
+}

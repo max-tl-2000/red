@@ -1,0 +1,28 @@
+@import '../../sass/_colors.scss';
+
+.flyout-link {
+  margin-left: (8em/16);
+  cursor: pointer;
+}
+
+.flyout {
+  width: (512rem/16);
+}
+
+.marketRent {
+  color: $blue500;
+}
+
+.container {
+  position: relative;
+  padding: .1rem .5rem 1rem;
+  background: red;
+}
+
+.parent {
+  display: inline-flex;
+}
+
+.unavailable {
+  text-decoration: dashed underline $red600 (1rem/16);
+}

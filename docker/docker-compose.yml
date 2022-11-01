@@ -1,0 +1,43 @@
+---
+version: '2'
+services:
+  web:
+    build: ../
+    environment:
+      CLOUD_ENV: ${CLOUD_ENV}
+      PORT: 3000
+      API_PORT: 3030
+      WS_PORT: 3040
+      DATABASE_HOST: coredb
+      DATABASE_PASSWORD: revauser
+      DATABASE_MARTPASSWORD: revamartuser
+      AMQP_HOST: amqp://rabbitmq
+    ports:
+      - "3000:3000"
+      - "3030:3030"
+      - "3040:3040"
+      - "4000:4000"
+      - "5000:5000"
+      - "3500:3500"
+    volumes:
+      - ../:/src
+    depends_on:
+      - coredb
+      - rabbitmq
+
+  coredb:
+    image: registry.corp.reva.tech/postgres:14.3
+    environment:
+      POSTGRES_USER: revaadmin
+      POSTGRES_PASSWORD: revaadmin
+    ports:
+      - "5432:5432"
+
+  rabbitmq:
+    image: registry.corp.reva.tech/rabbitmq
+    ports:
+      - "4369:4369"
+      - "5671:5671"
+      - "5672:5672"
+      - "25672:25672"
+      - "15672:15672"

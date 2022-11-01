@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Report Data Builder When building a Credit Report data object should return an object containing the correct keys and values 1`] = `
+Object {
+  "creditScore": 736,
+  "hasBankruptcy": false,
+  "hasEvictionNotice": false,
+  "hasForeclosure": false,
+  "hasLeaseViolation": false,
+  "hasLegalItems": false,
+  "hasMortgageDebt": false,
+  "hasNoEstablishedCredit": true,
+  "hasNsfOrLatePayMax": null,
+  "hasNsfOrLatePayMin": false,
+  "hasPropertyRentalDebt": false,
+  "hasRentalCollections": false,
+  "hasRequiredSsnResponse": null,
+  "hasSuspiciousSsn": false,
+  "hasTaxLiens": false,
+  "hasUtilityDebt": false,
+}
+`;
+
+exports[`Report Data Builder When building a Criminal Report data object should return an object containing the correct keys and values 1`] = `
+Object {
+  "hasDrugsFelony": false,
+  "hasDrugsMisdemeanor": false,
+  "hasDuiFelony": false,
+  "hasDuiMisdemeanor": null,
+  "hasEvictionFilingsMax": false,
+  "hasEvictionFilingsMin": true,
+  "hasEvictionRecordsMax": false,
+  "hasEvictionRecordsMin": null,
+  "hasGlobalSanctions": null,
+  "hasGlobalSanctionsFuzzy": null,
+  "hasPropertyFelony": false,
+  "hasPropertyMisdemeanor": false,
+  "hasRegisteredSexOffender": false,
+  "hasRegisteredSexOffenderDobOnly": false,
+  "hasSexFelony": false,
+  "hasSexMisdemeanor": false,
+  "hasTheftByCheckFelony": false,
+  "hasTheftByCheckMisdemeanor": false,
+  "hasTheftFelony": false,
+  "hasTheftMisdemeanor": false,
+  "hasTrafficFelony": null,
+  "hasTrafficMisdemeanor": null,
+  "hasUnclassifiedFelony": false,
+  "hasUnclassifiedMisdemeanor": false,
+  "hasViolentCrimeFelony": false,
+  "hasViolentCrimeMisdemeanor": false,
+  "hasWeaponsFelony": false,
+  "hasWeaponsMisdemeanor": false,
+}
+`;

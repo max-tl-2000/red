@@ -1,0 +1,14 @@
+diff --git a/node_modules/draft-js-alignment-plugin/lib/AlignmentTool/index.js b/node_modules/draft-js-alignment-plugin/lib/AlignmentTool/index.js
+index 3161d9a..4ff4149 100644
+--- a/node_modules/draft-js-alignment-plugin/lib/AlignmentTool/index.js
++++ b/node_modules/draft-js-alignment-plugin/lib/AlignmentTool/index.js
+@@ -98,7 +98,8 @@ var AlignmentTool = function (_React$Component) {
+     value: function render() {
+       var _this2 = this;
+ 
+-      var defaultButtons = [_draftJsButtons.AlignBlockDefaultButton, _draftJsButtons.AlignBlockLeftButton, _draftJsButtons.AlignBlockCenterButton, _draftJsButtons.AlignBlockRightButton];
++      // var defaultButtons = [_draftJsButtons.AlignBlockDefaultButton, _draftJsButtons.AlignBlockLeftButton, _draftJsButtons.AlignBlockCenterButton, _draftJsButtons.AlignBlockRightButton];
++      var defaultButtons = [_draftJsButtons.AlignBlockDefaultButton, _draftJsButtons.AlignBlockCenterButton];
+ 
+       var theme = this.props.theme;
+ 

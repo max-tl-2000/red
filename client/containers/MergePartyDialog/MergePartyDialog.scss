@@ -1,0 +1,133 @@
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_colors.scss';
+
+.mergeDialog {
+  [data-component='dialog-body'] {
+    display: flex;
+    max-height: 85vh;
+    margin-bottom: (24em/16);
+    padding-bottom: 0 !important;
+
+    flex-flow: column;
+  }
+}
+
+.noDuplicateDialog {
+  max-width: (800rem/16) !important;
+
+  [data-component='dialog-body'] {
+    width: (800rem/16);
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-container {
+  display: flex;
+  flex: 1 1 auto;
+  width: (760rem/16);
+  border-bottom: 1px solid $grey300;
+}
+
+.selectorTitle {
+  @include textTitle();
+
+  padding-top: 1em;
+  padding-bottom: .5em;
+}
+
+.propertySelector {
+  padding-top: 1em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+}
+
+.no-duplicate-info {
+  padding-bottom: 1rem;
+}
+
+.leftSection {
+  width: 50%;
+  padding-right: 1rem;
+  border-right: 1px solid $grey300;
+
+  [data-component='list'] {
+    overflow: auto;
+    max-height: 30vh;
+  }
+}
+
+.rightSection {
+  flex: 1 1 auto;
+  width: 50%;
+  padding-left: 1rem;
+
+  [data-component='list'] {
+    overflow: auto;
+    max-height: 62vh;
+  }
+}
+
+.merge-details {
+  padding-top: 1rem;
+}
+
+.conflict-info {
+  padding-bottom: 1rem;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+  transition: border .5s ease-out, box-shadow .5s ease-out;
+  transition: background .3s ease-out;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid $grey300;
+  background: none;
+
+  -webkit-appearance: none;
+
+  &:focus {
+    background: rgba($focusBGColor, .15);
+  }
+
+  &:hover {
+    background: $hoverBGColor;
+  }
+
+  .dd-icon {
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: (56rem/16);
+  }
+}
+
+.party-owner {
+  padding-top: 1rem;
+}
+
+.party-type-bar {
+  margin-bottom: .5em;
+  padding-left: .4em;
+  background-color: $purpleA700;
+
+  &.isNewLease {
+    background-color: $blue500;
+  }
+}
+
+.party-type-text {
+  color: white;
+}

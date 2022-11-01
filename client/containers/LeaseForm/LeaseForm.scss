@@ -1,0 +1,99 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.form {
+  flex-grow: 1;
+}
+
+.section {
+  padding: (10rem/16) (24rem/16);
+}
+
+.occupants-section {
+  width: (480rem/16);
+  padding: (10rem/16) (24rem/16);
+}
+
+.summary-dates {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: 30%;
+  }
+
+  &.exclude-move-in-date {
+    > div {
+      width: 48%;
+    }
+  }
+}
+
+.category-summary {
+  padding: (12rem/16) (24rem/16);
+
+  p {
+    padding: (4rem/16) 0;
+  }
+}
+
+.documents-summary {
+  padding: (12rem/16) (24rem/16);
+
+  .summary-document-row {
+    display: flex;
+    align-items: center;
+    height: (32rem/16);
+    margin: (4rem/16) 0;
+  }
+
+  .checked-icon {
+    display: flex;
+    align-items: center;
+    width: (32rem/16);
+    height: (32rem/16);
+  }
+}
+
+.editable-amount {
+  display: inline-block;
+
+  [data-part='integer'] {
+    color: $blue500;
+  }
+
+  [data-part='decimal'] {
+    color: rgba($blue500, .54);
+  }
+}
+
+.table-quantity {
+  font-size: (15rem/16);
+  padding-right: (34em/16);
+}
+
+.label {
+  margin: 0 0 0 (4rem/16);
+  color: #bd10e0;
+}
+
+.section-title {
+  margin-bottom: 0;
+}
+
+.party-representative-section {
+  width: (480rem/16);
+  padding: (10rem/16) (24rem/16);
+}
+
+.party-representative-dropdown {
+  width: (480rem/16);
+
+  &.readOnly {
+    pointer-events: none;
+
+    [data-id='selectedLabelTxt_partyRepresentativeSelector'] {
+      @include textSecondary();
+    }
+  }
+}

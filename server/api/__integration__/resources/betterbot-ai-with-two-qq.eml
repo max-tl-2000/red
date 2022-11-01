@@ -1,0 +1,45 @@
+Return-Path: <01000173966369a0-ffd81c19-de73-4e34-abc9-78f4ae747509-000000@amazonses.com>
+Received: from a8-176.smtp-out.amazonses.com (a8-176.smtp-out.amazonses.com [54.240.8.176])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id mmvsadansnu338f6shkrkoqv9mme7uii5ooq7781
+ for g5-chat-w.colonialvilla@customerold.mail.reva.tech;
+ Tue, 28 Jul 2020 17:06:05 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of amazonses.com designates 54.240.8.176 as permitted sender) client-ip=54.240.8.176; envelope-from=01000173966369a0-ffd81c19-de73-4e34-abc9-78f4ae747509-000000@amazonses.com; helo=a8-176.smtp-out.amazonses.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of amazonses.com designates 54.240.8.176 as permitted sender) client-ip=54.240.8.176; envelope-from=01000173966369a0-ffd81c19-de73-4e34-abc9-78f4ae747509-000000@amazonses.com; helo=a8-176.smtp-out.amazonses.com;
+ dkim=pass header.i=@amazonses.com;
+ dmarc=none header.from=betterbot.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIM3pqM0pQbWhqcjUvQzFiMDVqV1Z1ZW5zcWlLaXoxY2dMdG5qS3lOQm40SGY2SnlMVU82U1lRK0VUQTZIYlptVzlrNVV5MmtvSmRXU3FZT28rcTUycktIUFltaHZWSitQRytDQkR5bE16MW9jVnpoYmkvMzJ2TWFCR0VRcittZG0veVlFMEhWc0hqSGNnazRwZjQxdVlybG02R213UjRJMXRNeEtmTlkwYzBTKzA0R1c1VkpVUmNwd1o2SnlVYjlTU04xVWNUMWpHTzJQM1BrL25oYURlQmNudW1DZ1liQ0k1R2NHNmczV3QwWkZtYnJFWHh6aVB2RnI5WmFyMGRld2R2MVVJdGRCbHN2TTJmN09aeEQ5QmMzdlZNVTVpc2l1WEkzRWQ4QStwQkpBZ1dMTkRtbFVwMlUzeGtsNkdUNjhTNUhHVFRGR0w1MXVTL3JvQkhoLzRJN2wybDdrdEU1UmhBNHlyeVVMcER3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=fvPYj54Y7vtWFMxnzr9A6UrzjrZ6sSB44artka5MigZDDaRlOA3W/ozyKI0DwGOWSX2rpqc9fDSMV0WrpKmJoRWMM0bEGgJLZQZ//KpKb7wrDsyIg+gM7dcwwUqK7pqbyliNAkWnVijSZRIxyOInuppu3TMt43JLT4tVbfTbXvo=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1595955965; v=1; bh=AbjLhqe1WA32uFhlRQORz6KIXUT9bzLhl7ArAr3bsDo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1595955964;
+	h=Message-ID:Date:Subject:From:To:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=AbjLhqe1WA32uFhlRQORz6KIXUT9bzLhl7ArAr3bsDo=;
+	b=U/u6Bds1vK2RwxAc1tdYdAd9FwBA8Jb9h2CqQ47MoDavQyZBUCf3jYLkaZV7/lON
+	C32VRBvOY4LusIgZO0D3XpIi4IeIjjBFtoo7ZJj6e4RNaoUc8ZA8WOiNmG7XkdBE9Wz
+	iTm79ab7VxkJvP22pmCK4CGEjx0kFS5myqdxX27A=
+Message-ID: <01000173966369a0-ffd81c19-de73-4e34-abc9-78f4ae747509-000000@us-east-1.amazonses.com>
+Date: Tue, 28 Jul 2020 17:06:04 +0000
+Subject: New lead, My Bot
+From: BetterBot Queue Service <noreply@betterbot.ai>
+To: g5-chat-w.colonialvilla@customerold.mail.reva.tech, gjele@betterbot.ai
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-SES-Outgoing: 2020.07.28-54.240.8.176
+Feedback-ID: 1.us-east-1.SE6lM8XZlu+VdaP8x8lQBFGsMFm2mbEx677o5sAWrW4=:AmazonSES
+
+fullName:gero<br/>
+phone:(333) 333-3333<br/>
+emai=
+l:test@reva.tech<br/>
+qualification_numBedrooms:ONE_BED
+<br/>
+qualification_moveInDate:I_D=
+ONT_KNOW
+<br/>
+groupProfile:<br/>
+message:gero wants to be contacted =
+on the phone!   No specific floorplan was selected nor a specific price ran=
+ge defined.

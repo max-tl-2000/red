@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+
+        <!-- meta tags for ios -->
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <!--
+            standard viewport tag to set the viewport to the device's width, Android 2.3 devices need this so
+            100% width works properly and doesn't allow children to blow up the viewport width
+        -->
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"/>
+        <!--
+            width=device-width causes the iPhone 5 to letterbox the app, so we want to exclude it for iPhone 5
+            to allow full screen apps
+        -->
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)"/>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta charSet="utf-8" />
+        <title>Core Property Management</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <style type="text/css">
+body {
+    padding: 20px;
+}
+      h4.title {
+          margin-bottom: 15px;
+      }
+
+      @media (max-width: 480px ) {
+          h4.title {
+              font-size: 1.8em;
+          }
+      }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <form method="post" id="contactUsForm" action="/contactUs">
+                <div class="row">
+                    <div class="row">
+                        <div class="col s12">
+                            <h4 class="title">Contact Us:</h4>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m8 l6">
+                                <input id="name" name="name" type="text" class="validate">
+                                <label for="name">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m8 l6">
+                                <input id="phone" name="phone" type="text" class="validate">
+                                <label for="phone">Phone no</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m8 l6">
+                                <input id="email" name="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m8 l6">
+                                <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m8 l6 right-align">
+                                <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">SUBMIT</button>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </form>
+            <!--Import jQuery before materialize.js-->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+            <script>
+
+var toast = function toast(message, timeout) {
+    if (typeof timeout === 'undefined') {
+        timeout = 6000;
+    }
+    Materialize.toast(message, timeout);
+}
+
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+        return null;
+    }
+    else{
+        return results[1] || 0;
+    }
+}
+
+$(document).ready(function() { $('select').material_select(); });
+
+$( "#contactUsForm" ).submit(function( event ) {
+    // Stop form from submitting normally
+    event.preventDefault();
+
+    var phone = $.trim($('#phone').val());
+    var email= $.trim($('#email').val());
+
+    if( phone  ==='' &&  email ==='' ) {
+        toast('Either phone number or email address is required');
+    }
+    else {
+        var $form = $( this );
+
+        // Check if the domain is a demo one. In the case of the demo one, go through the reverseProxy
+        // otherwise use the current domain
+        var search = window.location.search;
+        var token = 'api-token=NY0ILC3K72EZZK4V9MBC';
+        var tDemoRed = 't=demored';
+        var envDemo = 'env=demo&tenant=red';
+
+        if (search === ''){
+            search = '?' + envDemo + '&' + token;
+        } else {
+            if (search.includes(tDemoRed)) {
+                search = search.replace(tDemoRed, token);
+            }
+        }
+
+        var host = window.location.protocol + '//' + window.location.host + '/api';
+
+        var name =  $.trim($('#name').val());
+        var message = $.trim($('#message').val());
+
+        var term = {};
+        if( name != '') term["name"] = name;
+        if( phone != '') term["phone"] = phone ;
+        if( email != '') term["email"] = email ;
+        if( message != '') term["message"] = message;
+        term["teamEmail"] = $.urlParam('teamEmail');
+
+	if( $.urlParam('createOnError') == 'false')
+		term["createOnError"] = 'false';
+
+        var url = host + $form.attr( "action" ) + search;
+        $.post(url, term,
+                function(dataRaw, statusRaw) {
+                    var resultMsg = name !='' ? name :
+                        phone !='' ? phone:
+                        email !='' ? email: '';
+                    toast(resultMsg + ', your request was received');
+                    $("#contactUsForm")[0].reset();
+                }, 'text')
+        .fail(function (args) {
+            var responseJSON = JSON.parse((args || {}).responseText) || {};
+            var token = responseJSON.token;
+            toast('An error happened ' + token);
+        });
+    }
+});
+            </script>
+    </body>
+</html>

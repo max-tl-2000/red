@@ -1,0 +1,18 @@
+.footer {
+  position: absolute;
+  bottom: (39rem/16);
+  cursor: pointer;
+  text-align: center;
+
+  div.inline > * {
+    display: inline-block;
+
+    span {
+      padding: 0 (14rem/16);
+    }
+  }
+
+  p.copyright {
+    margin-top: 1rem;
+  }
+}

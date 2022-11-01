@@ -1,0 +1,63 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_fonts.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+.mobile-view {
+  [data-component~='form'] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  [data-component~='form-actions'] {
+    border: none;
+  }
+}
+
+.form {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.margin-top {
+  margin-top: 3rem;
+}
+
+.align-button-center {
+  margin-top: 0;
+
+  > div {
+    > div {
+      [data-button-type='raised'] {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.inputs-container {
+  width: (280rem/16);
+  max-width: (320rem/16);
+}
+
+.footer-links {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: (8rem/16);
+  text-align: center;
+  background: $blue500;
+
+  a,
+  span {
+    color: #fff;
+  }
+}

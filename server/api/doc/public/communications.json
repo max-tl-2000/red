@@ -1,0 +1,1287 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description":
+      "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/parties/communications": {
+      "post": {
+        "tags": ["Communications"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "partyIds": {
+                  "description":
+                    "List of party IDs that communication entry belong to",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                },
+                "ids": {
+                  "description":
+                    "List of communication entry IDs to be used in the filter",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The communication entries that match the filters",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description":
+              "The parties are missing from the request body or have incorrect format."
+          },
+          "403": {
+            "description":
+              "The user does not have access rights to view comm for selected parties."
+          }
+        },
+        "summary":
+          "Retrieves communication entries based on party IDs and, optionally, communication entries IDs."
+      }
+    },
+    "/persons/{personId}/communication": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the Person to load the communication for",
+            "in": "path",
+            "name": "personId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The communications for the Person",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid Person id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the communications for a Person",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The communication object",
+            "in": "body",
+            "name": "Communication",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CommunicationPostData"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The created party communication",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          }
+        },
+        "summary": "Creates a communication",
+        "tags": ["Communications"]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The communications patch data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "The threadId that needs to be updated",
+                  "type": "string"
+                },
+                "commsData": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/ThreadedCommunication"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated communications",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ThreadedCommunication"
+              }
+            }
+          },
+          "500": {
+            "description": "Error saving communications",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary":
+          "Updates multiple communications in a single database transaction",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/{commId}": {
+      "get": {
+        "tags": ["Communications"],
+        "parameters": [
+          {
+            "description": "The id of the communication entry to be loaded",
+            "in": "path",
+            "name": "commId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The communication object",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid communication id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Communication not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads a communication entry."
+      }
+    },
+    "/communications/phone": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The phone communication object",
+            "in": "body",
+            "name": "Communication",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CommunicationPhonePostData"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The created phone communication",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "The person has no phone number",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The person was not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Creates a phone communication",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/makeCallFromPhone": {
+      "post": {
+        "parameters": [
+          {
+            "in": "body",
+            "name": "callParams",
+            "required": true,
+            "schema": {
+              "properties": {
+                "to": {
+                  "description": "The call recipient",
+                  "type": "object",
+                  "properties": {
+                    "personId": {
+                      "description": "The person id to call",
+                      "type": "string"
+                    },
+                    "phone": {
+                      "description": "The destination phone number",
+                      "type": "string"
+                    }
+                  }
+                },
+                "from": {
+                  "description": "The call source",
+                  "type": "object",
+                  "properties": {
+                    "phone": {
+                      "description": "The number to call from",
+                      "type": "string"
+                    },
+                    "userAppNumber": {
+                      "description":
+                        "The app number to use as caller id on users phone",
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The the call was initiated"
+          },
+          "400": {
+            "description": "The some request parameters are missing"
+          }
+        },
+        "summary": "Makes a call from user's phone to client's phone",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/thread/{threadId}/markAsRead": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The communication thread id",
+            "in": "path",
+            "name": "threadId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated communications",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid thread id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Mark communication as read",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/party/{partyId}/markAsRead": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated communications",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "403": {
+            "description":
+              "The user is not authorized to perform this operation."
+          }
+        },
+        "summary": "Mark all communication as read",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/{commId}/transfer": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The communication entry id for the call",
+            "in": "path",
+            "name": "commId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "to",
+            "required": true,
+            "schema": {
+              "properties": {
+                "id": {
+                  "description":
+                    "The user id or the team id to transfer the call to.",
+                  "type": "string"
+                },
+                "isTeam": {
+                  "description": "Flag indicating whether the target is a team",
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The confirmation that the call was transferred"
+          },
+          "400": {
+            "description": "The target id is missing from the request body."
+          },
+          "403": {
+            "description":
+              "The caller is not authorized to perform this operation."
+          },
+          "404": {
+            "description": "The target was not found."
+          }
+        },
+        "summary": "Transfers a call to the selected target (user or team)",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/{commId}/activeCallData": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The communication id for the call",
+            "in": "path",
+            "name": "commId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The active call data",
+            "schema": {
+              "properties": {
+                "contact": {
+                  "description": "The contact details for the active call",
+                  "type": "object",
+                  "properties": {
+                    "fullName": {
+                      "description": "The full name of the member",
+                      "type": "string"
+                    },
+                    "preferredName": {
+                      "description": "The preferred name of the member",
+                      "type": "string"
+                    },
+                    "contactInfo": {
+                      "type": "object",
+                      "properties": {
+                        "defaultEmail": {
+                          "description": "The default email of the member",
+                          "type": "string"
+                        },
+                        "defaultPhone": {
+                          "description": "The default phone of the member",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "score": {
+                      "description": "The score of the party",
+                      "type": "string"
+                    }
+                  }
+                },
+                "parties": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "parties.json#/definitions/Party"
+                  },
+                  "description": "Array of parties"
+                },
+                "communication": {
+                  "$ref": "#/definitions/Communication"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "400": {
+            "description": "Invalid communication id for the active call",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Communication not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads data for an active call",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/{threadId}/inactiveCallData": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The thread id for the call",
+            "in": "path",
+            "name": "threadId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description":
+              "Query parameter used to get only the communications associated with a specific party",
+            "in": "query",
+            "name": "partyId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description":
+              "Query parameter used to get only the communications associated with a specific person",
+            "in": "query",
+            "name": "personId",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data for Inactive Call flyout",
+            "schema": {
+              "properties": {
+                "communications": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Communication"
+                  },
+                  "description": "Array of communications"
+                },
+                "parties": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "parties.json#/definitions/Party"
+                  },
+                  "description": "Array of parties"
+                },
+                "person": {
+                  "$ref": "persons.json#/definitions/Person"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "400": {
+            "description":
+              "Thread is was not specified or partyId/personId is invalid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads data for Inactive Call flyout",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/{commId}/stopRecording": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The communication id for the call",
+            "in": "path",
+            "name": "commId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated communication",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid communication id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Communication not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Stop recording communication",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/{commId}/holdCall": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The communication id for the call",
+            "in": "path",
+            "name": "commId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated communication",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid communication id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Communication not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Hold call communication",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/{commId}/unholdCall": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The communication id for the call",
+            "in": "path",
+            "name": "commId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated communication",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid communication id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Communication not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Unhold call communication",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/externalPhones": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "The external phones data and property name",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "The external phone id"
+                  },
+                  "number": {
+                    "type": "string",
+                    "description": "The external phone number"
+                  },
+                  "displayName": {
+                    "type": "string",
+                    "description": "The external phone display name"
+                  },
+                  "propertyId": {
+                    "type": "string",
+                    "description": "The external phone property id"
+                  },
+                  "teamIds": {
+                    "description": "The external phone team ids",
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "updated_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "property": {
+                    "type": "string",
+                    "description": "The name of the property"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error getting external phones",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "description": "Loads data for external phones",
+        "summary": "Data for external phones",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/phone/{commId}/incomingCallInfo": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The communication id for the call",
+            "in": "path",
+            "name": "commId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The incoming call info",
+            "schema": {
+              "properties": {
+                "fullName": {
+                  "description": "The full name of the caller",
+                  "type": "string"
+                },
+                "preferredName": {
+                  "description": "The preferred name of the caller",
+                  "type": "string"
+                },
+                "contactInfo": {
+                  "type": "object",
+                  "properties": {
+                    "defaultEmail": {
+                      "description": "The default email of the caller",
+                      "type": "string"
+                    },
+                    "defaultPhone": {
+                      "description": "The default phone of the caller",
+                      "type": "string"
+                    }
+                  }
+                },
+                "score": {
+                  "description": "The score of the party",
+                  "type": "string"
+                },
+                "state": {
+                  "description": "The state of the party",
+                  "type": "string"
+                },
+                "propertyName": {
+                  "description":
+                    "The name of the assigned property for the party",
+                  "type": "string"
+                },
+                "targetName": {
+                  "description": "The name of the team",
+                  "type": "string"
+                },
+                "units": {
+                  "description": "The names of the units for the party",
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "owner": {
+                  "description": "The name of the party owner",
+                  "type": "string"
+                },
+                "partyId": {
+                  "description": "The id of the party",
+                  "type": "string"
+                },
+                "transferredFromName": {
+                  "description":
+                    "The name of the agent the call was transferred from",
+                  "type": "string"
+                },
+                "transferredFromAvatar": {
+                  "description":
+                    "The avatar URL of the agent the call was transferred from",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "400": {
+            "description": "Invalid communication id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Communication not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Get information for an incoming call",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/sms/computeThreadId": {
+      "post": {
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "personIds": {
+                  "description":
+                    "IDs of the persons involved in the sms communication",
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": ["personIds"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The thread ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Invalid person IDs",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Person not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Computes the SMS thread ID given the involved person IDs",
+        "tags": ["Communications"]
+      }
+    },
+    "/parties/{partyId}/communication": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the communication for",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The communications for the party",
+            "schema": {
+              "$ref": "#/definitions/Communication"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the party communication",
+        "tags": ["Communications"]
+      }
+    },
+    "/communications/draft": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The draft communication object",
+            "in": "body",
+            "name": "draft",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/DraftCommunication"
+            }
+          }
+        ],
+        "responses": {
+          "200": {},
+          "summary": "Save or update a draft communication",
+          "tags": ["Communications"]
+        }
+      }
+    },
+    "/communications/drafts/{draftId}": {
+      "delete": {
+        "parameters": [
+          {
+            "description": "The ID of the draft communication to delete",
+            "in": "path",
+            "name": "draftId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {},
+          "summary": "Delete a draft communication by ID",
+          "tags": ["Communications"]
+        }
+      }
+    },
+    "/communications/drafts/{userId}/{partyId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "User ID associated with the draft communication",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Party ID associated with the draft communication",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {},
+          "summary": "Loads the draft communications for an User and a Party",
+          "tags": ["Communications"]
+        }
+      }
+    },
+    "/marketing/session": {
+      "post": {
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "marketingSessionId": {
+                  "description":
+                    "ID for current marketing contact session, used for tracing and keeping program reference",
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "currentUrl": {
+                  "description":
+                    "The current url of the page requesting the marketing contact info",
+                  "type": "string"
+                },
+                "referrerUrl": {
+                  "description":
+                    "The referrer url of the page requesting the marketing contact info",
+                  "type": "string"
+                }
+              },
+              "required": ["currentUrl", "referrerUrl"],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The marketing contact information",
+            "schema": {
+              "$ref": "#/definitions/MarketingContactInfo"
+            }
+          },
+          "400": {
+            "description": "Missing current or referrer url",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Program not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Retrieves the contact info for marketing programs",
+        "tags": ["Communications"]
+      }
+    }
+  },
+  "definitions": {
+    "CallInfo": {
+      "type": "object",
+      "properties": {
+        "To": {
+          "description": "The call destination number",
+          "type": "string"
+        },
+        "From": {
+          "description": "The caller number",
+          "type": "string"
+        }
+      }
+    },
+    "CallRecording": {
+      "type": "object",
+      "properties": {
+        "CallUUID": {
+          "description": "the call id",
+          "type": "string"
+        },
+        "RecordUrl": {
+          "description": "the recording url",
+          "type": "string"
+        },
+        "RecordingID": {
+          "description": "the recording id",
+          "type": "string"
+        },
+        "RecordingDuration": {
+          "description": "the recording duration",
+          "type": "string"
+        }
+      }
+    },
+    "Communication": {
+      "type": "object",
+      "properties": {
+        "to": {
+          "description": "Array of recipients ids",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "content": {
+          "description": "Communication content",
+          "type": "string"
+        },
+        "subject": {
+          "description": "Communication subject",
+          "type": "string"
+        },
+        "from": {
+          "description": "Sender for the communication",
+          "type": "string"
+        },
+        "replyTo": {
+          "description": "Email address for the reply message",
+          "type": "string"
+        }
+      }
+    },
+    "ThreadedCommunication": {
+      "type": "object",
+      "properties": {
+        "property": {
+          "description":
+            "Communications grouped by threads -  obj[threadid] = { threadId , comms[], type}",
+          "type": "string"
+        }
+      }
+    },
+    "CommunicationPostData": {
+      "type": "object",
+      "properties": {
+        "parties": {
+          "description": "The party ids where this comm will appear in",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inReplyTo": {
+          "type": "string",
+          "description": "MessageId for the message we are trying to reply to"
+        },
+        "message": {
+          "type": "object",
+          "properties": {
+            "subject": {
+              "type": "string",
+              "description": "Communication's subject"
+            },
+            "content": {
+              "type": "string",
+              "description": "Communication's content"
+            }
+          }
+        },
+        "recipients": {
+          "type": "object",
+          "properties": {
+            "contactInfos": {
+              "type": "array",
+              "description":
+                "Array on contact info ids for the recipients of the communication",
+              "items": {
+                "type": "string"
+              }
+            },
+            "freeFormAddresses": {
+              "type": "array",
+              "description":
+                "Array of emails/phones for the communication which are not registered in the system as contact infos",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "type": {
+          "type": "string",
+          "description": "Communication type"
+        }
+      }
+    },
+    "CommunicationPhonePostData": {
+      "type": "object",
+      "properties": {
+        "personId": {
+          "description": "The person id that is receiving the call",
+          "type": "string"
+        }
+      }
+    },
+    "ConferenceCallback": {
+      "type": "object",
+      "properties": {
+        "ConferenceAction": {
+          "description": "A conference action ('record', 'exit')",
+          "type": "string"
+        },
+        "Event": {
+          "description":
+            "An event that has happened in the conference (`ConferenceRecordStop`)",
+          "type": "string"
+        },
+        "commId": {
+          "description": "The communication entry id for the call",
+          "type": "string"
+        }
+      }
+    },
+    "DraftCommunication": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description":
+            "The id of existing draft message in case of update, or empty sting in case of save new draft message",
+          "type": "string"
+        },
+        "message": {
+          "description": "Communication content",
+          "type": "object",
+          "properties": {
+            "content": {
+              "description": "Communication message",
+              "type": "string"
+            },
+            "files": {
+              "description": "Files attached to the draft message",
+              "type": "array"
+            },
+            "subject": {
+              "description": "Communication subject",
+              "type": "string"
+            },
+            "unread": {
+              "description":
+                "Set if the communication will be maked as unread after the draft message si sent",
+              "type": "boolean"
+            },
+            "personId": {
+              "description":
+                "The party id that the draft communication is associated with",
+              "type": "string"
+            }
+          },
+          "recipients": {
+            "description": "Recipients as contat info IDs or email addresses",
+            "type": "object",
+            "properties": {
+              "contactInfo": {
+                "description": "List of contact info IDs",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "freeFormAddresses": {
+                "description": "List of email addresses",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "threadId": {
+            "description":
+              "Empty sting or the thread ID if the draft message is part of a thread",
+            "type": "string",
+            "format": "uuid"
+          },
+          "commType": {
+            "description": "Type of the draft communication: Email, Call, Sms",
+            "type": "string"
+          },
+          "userId": {
+            "description": "User ID associated with the draft communication",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "MarketingContactInfo": {
+      "type": "object",
+      "properties": {
+        "marketingSessionId": {
+          "description": "A session ID used for upcoming requests",
+          "type": "string",
+          "format": "uuid"
+        },
+        "emailIdentifier": {
+          "description":
+            "Unique email identifier for the current session, used for marketing metrics",
+          "type": "string"
+        },
+        "email": {
+          "description": "Email address for contacting property",
+          "type": "string"
+        },
+        "phone": {
+          "description": "Phone number for contacting property",
+          "type": "string"
+        }
+      }
+    },
+    "DigitsPressed": {
+      "type": "object",
+      "properties": {
+        "Digits": {
+          "description": "The digits pressed by the caller",
+          "type": "string"
+        },
+        "commId": {
+          "description": "The current communication id",
+          "type": "string"
+        },
+        "teamId": {
+          "description": "The team id for the agent taking the current call",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

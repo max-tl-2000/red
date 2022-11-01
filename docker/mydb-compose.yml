@@ -1,0 +1,21 @@
+# local deployment compose file for local postgres container
+# main compose file is local-compose.yml
+version: '2.1'
+services:
+  web:
+    environment:
+      DATABASE_HOST: coredb-tests
+      MART_DATABASE_HOST: coredb-tests
+    depends_on:
+      - coredb-tests
+
+  coredb-tests:
+    image: registry.corp.reva.tech/postgres:14.3
+    container_name: coredb
+    environment:
+      POSTGRES_USER: revaadmin
+      POSTGRES_PASSWORD: revaadmin
+    ports:
+      - "5432:5432"
+    volumes:
+      - ${HOME}/.red/db/data:/var/lib/postgresql/data

@@ -1,0 +1,72 @@
+@import '../../../sass/_colors.scss';
+@import '../../../sass/_typography.scss';
+
+.title {
+  padding-top: (24rem/16);
+}
+
+.dialog-body {
+  padding: 0 1.5rem;
+}
+
+.share-text-icons {
+  text-align: center;
+}
+
+.share-message-icon {
+  margin-bottom: .5em;
+}
+
+.renewal-message {
+  padding: .75em 0 .75em 1.15em;
+  color: $purpleA400;
+}
+
+.actions-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5em;
+  padding: .3em .4em .8em .4em;
+  border-bottom: 1px solid #eee;
+}
+
+.share-message-width {
+  width: 194px;
+}
+
+.editable-amount {
+  display: inline-block;
+
+  [data-part='integer'] {
+    color: $blue500;
+  }
+
+  [data-part='decimal'] {
+    color: rgba($blue500, .54);
+  }
+}
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.table-quantity {
+  font-size: (15rem/16);
+  padding-right: (34em/16);
+}
+
+.charges-title {
+  padding: .75em 0 .75em 1.15em;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+}
+
+.charges-section {
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+.charges-row {
+  min-height: 0rem;
+}

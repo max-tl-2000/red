@@ -1,0 +1,105 @@
+{
+  "soap:Envelope": {
+    "$": {
+      "xmlns:soap": "http://schemas.xmlsoap.org/soap/envelope/"
+    },
+    "soap:Body": [
+      {
+        "urn:CorticonResponse": [
+          {
+            "$": {
+              "xmlns:urn": "urn:Corticon",
+              "decisionServiceName": "90da3a3e-9eef-11eb-8e1e-135448604b79_RoutingRules"
+            },
+            "WorkDocuments": [
+              {
+                "$": {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                },
+                "CorticonRule": [
+                  {
+                    "$": {
+                      "id": "CorticonRule_id_1",
+                      "xsi:type": "CorticonRule"
+                    },
+                    "eventName": [
+                      "communication_completed"
+                    ],
+                    "ruleName": [
+                      "R_InboundComm"
+                    ]
+                  },
+                  {
+                    "$": {
+                      "id": "CorticonRule_id_1",
+                      "xsi:type": "CorticonRule"
+                    },
+                    "eventName": [
+                      "communication_completed"
+                    ],
+                    "ruleName": [
+                      "test_PartyMembers"
+                    ]
+                  },
+                  {
+                    "$": {
+                      "id": "CorticonRule_id_1",
+                      "xsi:type": "CorticonRule"
+                    },
+                    "eventName": [
+                      "communication_completed"
+                    ],
+                    "ruleName": [
+                      "AnotherTenant_OutboundComms"
+                    ]
+                  },
+                  {
+                    "$": {
+                      "id": "CorticonRule_id_1",
+                      "xsi:type": "CorticonRule"
+                    },
+                    "eventName": [
+                      "communication_completed"
+                    ],
+                    "ruleName": [
+                      "X_DecisionService"
+                    ]
+                  }
+                ],
+                "RevaEvent": [
+                  {
+                    "$": {
+                      "id": "RevaEvent_id_1"
+                    },
+                    "eventName": [
+                      "communication_completed"
+                    ],
+                    "corticonRule": [
+                      {
+                        "$": {
+                          "href": "#CorticonRule_id_1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "href": "#CorticonRule_id_2"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "Messages": [
+              {
+                "$": {
+                  "version": "1.0"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

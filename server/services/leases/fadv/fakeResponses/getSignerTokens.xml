@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetSignerTokenResponse xmlns="http://tempuri.org/">
+      <GetSignerTokenResult>
+        <ResidentFormApi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="" xsi:noNamespaceSchemaLocation="ResidentFormApi1_0.xsd">
+          <Request>
+            <PropertyID>
+              <Identification IDType="Property ID">
+                <IDValue>132660</IDValue>
+              </Identification>
+              <MarketingName>132660</MarketingName>
+            </PropertyID>
+            <RequestType>GetSignerToken</RequestType>
+            <OriginatorID>100025</OriginatorID>
+            <UserName>RedisruptOne</UserName>
+            <UserPassword>Winter2016</UserPassword>
+            <EnvelopeID>bfff324d-5492-4f35-8d6e-5b0f48dd1b72</EnvelopeID>
+            <Recipients>
+              <Recipient>
+                <SignerName>John Doe</SignerName>
+                <Email>qatest+johndoe@reva.tech</Email>
+              </Recipient>
+            </Recipients>
+          </Request>
+          <Response>
+            <Token>/test/fakeDocuSignPage?confirmationURL={signatureCompletedCallbackURL}&#38;signerName={signerName}&#38;verb={verb}&#38;email={email}</Token>
+          </Response>
+        </ResidentFormApi>
+      </GetSignerTokenResult>
+    </GetSignerTokenResponse>
+  </soap:Body>
+</soap:Envelope>
+

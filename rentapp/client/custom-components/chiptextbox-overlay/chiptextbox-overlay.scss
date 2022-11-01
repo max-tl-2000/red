@@ -1,0 +1,19 @@
+div[data-component='chiptextbox-overlay'] {
+  > div[data-component='textbox'] {
+    width: 100%;
+  }
+}
+
+.trigger-button {
+  padding: 0 !important;
+  text-transform: none;
+}
+
+.overlay {
+  width: (350rem/8);
+}
+
+.overlay-wrapper {
+  overflow: auto;
+  max-height: (250rem/8);
+}

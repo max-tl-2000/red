@@ -1,0 +1,108 @@
+@import '../../sass/_colors.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: (125rem/16);
+  margin-bottom: 1rem;
+
+  .cardBody {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .avatarSize {
+      width: 60px;
+      height: 60px;
+    }
+
+    .cardDetails {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      padding-left: 1em;
+
+      .personDetails {
+        width: 100%;
+      }
+
+      .topRow {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+
+      .lastContacted {
+        padding-top: (5em/16);
+      }
+    }
+  }
+
+  .contactData {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: .825rem;
+
+    .phoneNumberSection {
+      width: 40%;
+    }
+
+    .emailAddressSection {
+      display: block;
+    }
+  }
+
+  .historySection {
+    padding-bottom: .2em;
+
+    .historyEntry {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+
+      [data-component='caption'] {
+        padding-right: .3em;
+        padding-bottom: .5em;
+      }
+    }
+  }
+
+  .buttonArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1em;
+    padding-top: .5em;
+    padding-top: .5em;
+    padding-left: .5em;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: $keylineColorForLightBg;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding: .5rem 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: $keylineColorForLightBg;
+}
+
+.listItem {
+  margin-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.2rem;
+  border-bottom: 1px solid $keylineColorForLightBg;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,109 @@
+@import '~breakpoint-sass';
+@import '~breakpoint-slicer';
+// @import '~susy/sass/susy';
+
+$xsmall1: 0;
+$xsmall1Max: 480px;
+$xsmall2: 481px;
+$xsmall2Max: 600px;
+$small1: 601px;
+$small1Max: 840px;
+$small2: 841px;
+$small2Max: 960px;
+$medium: 961px;
+$mediumMax: 1264px;
+$large: 1265px;
+$largeMax: 1904px;
+$xlarge: 1905px;
+
+
+/////////////////////////////////////////
+// Breakpoint Slices
+/////////////////////////////////////////
+
+$slicer-breakpoints:        0      $xsmall1Max    $xsmall2Max  $small1Max    $small2Max    $mediumMax      $largeMax;
+
+//                          └────┬────┘ └─────┬────┘ └─────┬────┘ └────┬────┘ └────┬─────┘ └────┬─────┘ └────┬─────┘
+// Slice numbers:                 1             2              3            4             5             6              7
+$slicer-breakpoint-names:     'xsmall1'     'xsmall2'      'small1'     'small2'       'medium'      'large'         'xlarge';
+
+
+// $susy: (
+//   flow: ltr,
+//   math: fluid,
+//   output: float,
+//   gutter-position: split,
+//   container: auto,
+//   container-position: center,
+//   columns: 12,
+//   gutters: .3,
+//   column-width: false,
+//   global-box-sizing: border-box,
+//   last-flow: to,
+//   // debug: (
+//   //   image: show,
+//   //   color: rgba(#66f, .25),
+//   //   output: background,
+//   //   toggle: top right,
+//   // ),
+//   use-custom: (
+//     background-image: false,
+//     background-options: false,
+//     box-sizing: false,
+//     clearfix: false,
+//     rem: false,
+//   )
+// );
+//
+
+@mixin container($margin) {
+  padding: 0 ($margin/2);
+}
+
+@function gridWidth($columns, $totalColumns, $gutter, $gutterType: split) {
+  $value: "";
+  @if $gutterType == split {
+    $value: calc(#{$columns/$totalColumns * 100}% + #{$gutter/2});
+  }
+  @if $gutterType == after {
+    @if $gutter == 0 {
+      $value: ($columns/$totalColumns) * 100%;
+    }
+    @else {
+      $value: calc(#{$columns/$totalColumns * 100}% + #{$columns * $gutter/$totalColumns});
+    }
+  }
+
+  @return $value;
+}
+
+@mixin span($columns, $totalColumns, $gutter, $gutterType: split, $position: normal) {
+
+  display: inline-block;
+  vertical-align: top;
+  @if $gutterType == split {
+    @if $gutter == 0 {
+      width: ($columns/$totalColumns) * 100%;
+    }
+    @else {
+      width: calc(#{$columns/$totalColumns * 100}% - #{$gutter});
+    }
+
+    margin: 0 ($gutter/2);
+  }
+  @if $gutterType == after {
+    @if $gutter == 0 {
+      width: ($columns/$totalColumns) * 100%;
+    }
+    @else {
+      width: calc(#{$columns/$totalColumns * 100}% + (#{$columns * $gutter/$totalColumns}) - #{$gutter});
+    }
+
+    @if $position == last {
+      margin-right: 0;
+    }
+    @else {
+      margin-right: $gutter;
+    }
+  }
+}

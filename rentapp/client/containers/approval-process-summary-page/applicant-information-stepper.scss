@@ -1,0 +1,9 @@
+.application-stepper {
+  [data-component='step-summary'] {
+    [data-component='empty-message'] {
+      margin-top: -.5rem; // temporary hack, this should be done in the emptyMessage component directly
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}

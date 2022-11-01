@@ -1,0 +1,76 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.actions {
+  display: block;
+  padding: (12rem/16);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.icon-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: (64rem/16);
+
+  > [data-red-icon] {
+    svg {
+      fill: #fff;
+    }
+  }
+}
+
+.title {
+  color: #fff;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  padding: (10rem/16) 0;
+}
+
+.appbar {
+  position: relative;
+  z-index: 2; // this z-index is required to ensure the shadow is shown on top of the next siblings
+  display: flex;
+  height: 64px;
+  background: $blue500;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, .15);
+
+  &.secondary {
+    background: $blueGrey500;
+  }
+
+  &.flat {
+    box-shadow: none;
+  }
+
+  &.renewalOrActiveLease {
+    background: $deepPurple500;
+  }
+
+  &.communicationManagement {
+    background: $brown500;
+  }
+}
+
+.divider {
+  position: relative;
+  display: inline-block;
+  width: 1.5rem;
+  height: (40rem/16); // the base height of the iconButtons
+
+  &:after {
+    position: absolute;
+    top: (4rem/16);
+    left: 50%;
+    width: (1rem/16);
+    height: 2rem;
+    content: ' ';
+    background: rgba(255, 255, 255, .3);
+  }
+}

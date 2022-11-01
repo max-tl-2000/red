@@ -1,0 +1,46 @@
+{
+  "applicantData": {
+    "partyApplicationId": "697ad191-7cfd-4aee-b814-8743f4ebd994",
+    "tenantId": "65111d1f-6657-4495-810e-50ba97b064de",
+    "applicants": [
+      {
+        "id": "",
+        "type": "Applicant",
+        "email": "boba+fett@reva.tech",
+        "suffix": "",
+        "lastName": "Fett",
+        "personId": "cf96550f-f562-438d-9f1a-a9102fd06716",
+        "address": {
+          "enteredByUser": {
+            "city": "Ashburn",
+            "line1": "Ashburn Road",
+            "line2": "",
+            "state": "VA",
+            "address": "Ashburn Road",
+            "postalCode": "20147",
+            "unparsedAddress": "Ashburn Road Ashburn VA 20147"
+          }
+        },
+        "firstName": "Boba",
+        "guarantors": [],
+        "addressLine": "",
+        "applicantId": "c0337c91-2f40-4c97-90c0-54da6b7ab8e9",
+        "dateOfBirth": "1900-01-01",
+        "grossIncome": 120000,
+        "invitedToApply": "",
+        "otherApplicants": [],
+        "grossIncomeMonthly": 10000,
+        "reportCopyRequested": true,
+        "grossIncomeFrequency": "YEARLY",
+        "haveInternationalAddress": false,
+        "socSecNumber": "123-12-1234"
+      }
+    ]
+  },
+  "rentData": {
+    "rent": 2000,
+    "deposit": 0,
+    "leaseNameId": "075be5ff-f615-4be5-8b5c-3cbd5df0a6fb",
+    "leaseTermMonths": 12
+  }
+}

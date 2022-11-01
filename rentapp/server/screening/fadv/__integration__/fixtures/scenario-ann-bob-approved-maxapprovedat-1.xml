@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicantScreening xsi:noNamespaceSchemaLocation="ResidentScreening3_0.xsd" xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Request>
+    <PropertyID>
+      <Identification IDType="Property ID">
+        <IDValue>123456</IDValue>
+      </Identification>
+      <MarketingName>My Properties</MarketingName>
+    </PropertyID>
+    <RequestType>View</RequestType>
+    <ReportOptions>
+      <ReportName>01</ReportName>
+    </ReportOptions>
+    <ReportID>6490560</ReportID>
+    <OriginatorID>26694</OriginatorID>
+    <MarketingSource>Rent.com</MarketingSource>
+    <UserName>rsuser</UserName>
+    <UserPassword>rspassword</UserPassword>
+  </Request>
+  <LeaseTerms>
+    <MonthlyRent>1500.00</MonthlyRent>
+    <LeaseMonths>12</LeaseMonths>
+    <AffordableLease SubsidyAmount="200.00">true</AffordableLease>
+    <SecurityDeposit>500.00</SecurityDeposit>
+  </LeaseTerms>
+  <Applicant>
+    <Other>
+      <CurrentRent>1200.00</CurrentRent>
+      <ConsentObtained>YES</ConsentObtained>
+    </Other>
+    <Income>
+      <EmploymentStatus>Employed</EmploymentStatus>
+      <EmploymentType>Current</EmploymentType>
+      <EmployerName>Nordstrom</EmployerName>
+      <EmploymentGrossIncome>900.00</EmploymentGrossIncome>
+      <EmploymentStartDate>2000-10-15</EmploymentStartDate>
+      <OtherIncomeAmount>1500</OtherIncomeAmount>
+      <OtherIncomeType>Child Support</OtherIncomeType>
+      <OtherIncomePeriod>120 months</OtherIncomePeriod>
+    </Income>
+    <AS_Information>
+      <ApplicantIdentifier>{{applicantsIdentifiers.[0]}}</ApplicantIdentifier>
+      <ApplicantType>Applicant</ApplicantType>
+      <Spouse>t0003505</Spouse>
+      <Birthdate>1965-10-19</Birthdate>
+      <SocSecNumber>555559999</SocSecNumber>
+      <DriversLicenseID>027239657</DriversLicenseID>
+      <DriversLicenseState>GA</DriversLicenseState>
+      <AddressTerms MoveInDate="2000-10-10">
+        <Address AddressType="current">
+          <Address>404 NW Napp Street</Address>
+          <City>De Kalb</City>
+          <State>TX</State>
+          <PostalCode>75559</PostalCode>
+          <UnparsedAddress>404 NW Napp St Dekalb TX 75559</UnparsedAddress>
+          <Email>testemail@gmail.com</Email>
+        </Address>
+      </AddressTerms>
+      <AddressTerms MoveInDate="1989-01-08" MoveOutDate="2000-10-10">
+        <Address AddressType="previous">
+          <Address>5555 Hollister Avenue</Address>
+          <City>Goleta</City>
+          <State>CA</State>
+          <PostalCode>93117</PostalCode>
+          <UnparsedAddress>5555 Hollister Avenue Goleta CA 93117</UnparsedAddress>
+        </Address>
+      </AddressTerms>
+    </AS_Information>
+    <Customers>
+      <Customer>
+        <Identification IDType="applicant">
+          <IDValue>t0003504</IDValue>
+        </Identification>
+        <Name>
+          <FirstName>Ann</FirstName>
+          <LastName>Smith</LastName>
+        </Name>
+        <Phone PhoneType="home">
+          <PhoneNumber>714-982-1000</PhoneNumber>
+        </Phone>
+        <Lease>
+          <Identification>
+            <IDValue>t0003504</IDValue>
+          </Identification>
+          <ExpectedMoveInDate>2010-12-01</ExpectedMoveInDate>
+          <ExpectedMoveOutDate>2011-11-30</ExpectedMoveOutDate>
+          <LeaseFromDate>2010-12-01</LeaseFromDate>
+          <LeaseToDate>2011-11-30</LeaseToDate>
+          <ActualMoveIn>2010-12-01</ActualMoveIn>
+          <ResponsibleForLease>true</ResponsibleForLease>
+          <LeaseSignDate>2010-11-15</LeaseSignDate>
+          <AccountNumber>123456</AccountNumber>
+          <CurrentNumberOccupants Total="3" Child="1">3</CurrentNumberOccupants>
+        </Lease>
+      </Customer>
+    </Customers>
+  </Applicant>
+  <Applicant>
+    <Other>
+      <CurrentRent>1200.00</CurrentRent>
+      <ConsentObtained>YES</ConsentObtained>
+    </Other>
+    <Income>
+      <EmploymentType>Current</EmploymentType>
+      <EmployerName>Marsh Law Office</EmployerName>
+      <EmploymentGrossIncome>900.00</EmploymentGrossIncome>
+    </Income>
+    <AS_Information>
+      <ApplicantIdentifier>{{applicantsIdentifiers.[1]}}</ApplicantIdentifier>
+      <ApplicantType>CoApplicant</ApplicantType>
+      <Spouse>t0003504</Spouse>
+      <Birthdate>1968-08-14</Birthdate>
+      <SocSecNumber>444449999</SocSecNumber>
+      <AddressTerms MoveInDate="2000-10-10">
+        <Address AddressType="current">
+          <Address>404 NW Napp Street</Address>
+          <City>De Kalb</City>
+          <State>TX</State>
+          <PostalCode>75559</PostalCode>
+          <UnparsedAddress>404 NW Napp St Dekalb TX 75559</UnparsedAddress>
+          <Email>test2email@gmail.com</Email>
+        </Address>
+      </AddressTerms>
+      <AddressTerms MoveInDate="1989-01-08" MoveOutDate="2000-10-10">
+        <Address AddressType="previous">
+          <Address>5555 Hollister Avenue</Address>
+          <City>Goleta</City>
+          <State>CA</State>
+          <PostalCode>93117</PostalCode>
+          <UnparsedAddress>5555 Hollister Avenue Goleta CA 93117</UnparsedAddress>
+        </Address>
+      </AddressTerms>
+    </AS_Information>
+    <Customers>
+      <Customer>
+        <Identification IDType="coapplicant">
+          <IDValue>t0003505</IDValue>
+        </Identification>
+        <Name>
+          <FirstName>Bob</FirstName>
+          <LastName>Smith</LastName>
+        </Name>
+        <Lease>
+          <Identification>
+            <IDValue>t0003504</IDValue>
+          </Identification>
+          <ExpectedMoveInDate>2010-12-01</ExpectedMoveInDate>
+          <ExpectedMoveOutDate>2011-11-30</ExpectedMoveOutDate>
+          <LeaseFromDate>2010-12-01</LeaseFromDate>
+          <LeaseToDate>2011-11-30</LeaseToDate>
+          <ActualMoveIn>2010-12-01</ActualMoveIn>
+          <ResponsibleForLease>true</ResponsibleForLease>
+          <LeaseSignDate>2010-11-15</LeaseSignDate>
+          <AccountNumber>123456</AccountNumber>
+          <CurrentNumberOccupants Total="3" Child="1">3</CurrentNumberOccupants>
+        </Lease>
+      </Customer>
+    </Customers>
+  </Applicant>
+  <Response>
+    <TransactionNumber>1001</TransactionNumber>
+    <ReportDate>2011-04-08</ReportDate>
+    <ApplicantDecision>Smith, Ann - APPROVED
+    Smith, Bob - APPROVED
+    </ApplicantDecision>
+    <ApplicationDecision>APPROVED</ApplicationDecision>
+    <BackgroundReport>&lt;HTML&gt;
+  &lt;HEAD&gt;
+        &lt;META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=UTF-8"&gt;
+    &lt;STYLE&gt;
+					body {
+					background-color: white;
+					color: black;
+					font-size: 10pt;
+					font-family:Tahoma, Arial, sans-serif;
+					margin: 1px;
+					}
+					.ReportHeading {
+					background-color: #909090;
+					color: white;
+					font-size: 14Pt;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					}
+					.PlacardHeading {
+					padding-top: 5px;
+					padding-bottom: 5px;
+					padding-left: 10px;
+					border-left:2px solid #909090;
+					border-right:2px solid #909090;
+					border-bottom:2px solid #909090;
+					border-top:2px solid #909090;
+					background-color: #909090;
+					color: white;
+					font-size: 10pt;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					}
+					.DeclinedBlock {
+					border-left: 1px dashed #505050;
+					border-right: 1px dashed #505050;
+					border-bottom: 1px dashed #505050;
+					width:150px;
+					height:150px;
+					background-color: #F00000;
+					color:white;
+					font-size: 12pt;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.ApprovedBlock {
+					border-left: 1px dashed #505050;
+					border-right: 1px dashed #505050;
+					border-bottom: 1px dashed #505050;
+					width:150px;
+					height:150px;
+					background-color: green;
+					color:white;
+					font-size: 12pt;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.ApprovedWCon {
+					border-left: 1px dashed #505050;
+					border-right: 1px dashed #505050;
+					border-bottom: 1px dashed #505050;
+					width:150px;
+					height:150px;
+					background-color: #FFCC00;
+					color:white;
+					font-size: 12pt;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.FurtherReview {
+					border-left: 1px dashed #505050;
+					border-right: 1px dashed #505050;
+					border-bottom: 1px dashed #505050;
+					width:150px;
+					height:150px;
+					background-color: blue;
+					color:white;
+					font-size: 12pt;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.StillPending {
+					border-left: 1px dashed #505050;
+					border-right: 1px dashed #505050;
+					border-bottom: 1px dashed #505050;
+					width:150px;
+					height:150px;
+					background-color: #CCCCCC;
+					color:#909090;
+					font-size: 12pt;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.Incomplete {
+					border-left: 1px dashed #505050;
+					border-right: 1px dashed #505050;
+					border-bottom: 1px dashed #505050;
+					width:150px;
+					height:150px;
+					background-color: #000000;
+					color:#FFFFFF;
+					font-size: 12pt;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.Complete {
+					border-left: 1px dashed #505050;
+					border-right: 1px dashed #505050;
+					border-bottom: 1px dashed #505050;
+					width:150px;
+					height:150px;
+					background-color: #FFCC00;
+					color:#FFFFFF;
+					font-size: 12pt;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.TenPointBlack {
+					font-size: 10pt;
+					color: black;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.EightPointBlack {
+					font-size: 8pt;
+					color: black;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.EightPointBlackYellow {
+					font-size: 8pt;
+					color: black;
+					font-family: Tahoma, Arial, sans-serif;
+					background-color:#FFFFCC;
+					}
+					.TenPointBoldBlack {
+					font-size: 10pt;
+					color: black;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					}
+					.EightPointBoldBlack {
+					font-size: 8pt;
+					color: black;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					}
+					.EightPointBoldGray {
+					background-color: white;
+					color: #505050;
+					font-size: 8pt;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+
+					}
+					.PlacardBorderBottom {
+					font-size: 10pt;
+					font-family: Tahoma, Arial, sans-serif;
+					background-color:white;
+					border-left:2px solid #909090;
+					border-right:2px solid #909090;
+					border-bottom:2px solid #909090;
+					}
+					.TenDashed {
+					border-bottom: 1px dashed #505050;
+					font-size: 10pt;
+					color: black;
+					font-weight: bold;
+					font-family: Tahoma, Arial, sans-serif;
+					}
+					.EightDashed {
+					border-bottom: 1px dotted #CCCCCC;
+					font-size:8pt;
+					font-family: Tahoma, Arial, sans-serif;
+					background-color:white;
+					}
+					.EightDashedYellow {
+					border-bottom: 1px dotted #CCCCCC;
+					font-size:8pt;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					background-color:#FFFFCC;
+					}
+					.Padded4Ten {
+					padding-left:4px;
+					font-family:Tahoma,Arial,sans-serif;
+					font-size:10pt;
+					}
+					.PaddedGrayTitle {
+					padding-left: 6px;
+					background-color: #E8E8E8;
+					color: black;
+					font-size: 10pt;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					border-left:2px solid #909090;
+					border-right:2px solid #909090;
+					}
+					.PaddedGrayTitleEviction {
+					padding-left: 6px;
+					background-color: #CCCCCC;
+					color: black;
+					font-size: 10pt;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					border-left:1px solid #909090;
+					border-right:1px solid #CCCCCC;
+					}
+					.PaddedTitle {
+					padding-left: 6px;
+					background-color: white;
+					color: black;
+					font-size: 10pt;
+					font-family: Tahoma, Arial, sans-serif;
+					font-weight: bold;
+					border-left:2px solid #909090;
+					border-right:2px solid #909090;
+					}
+					.PaddedWhiteBordered {
+					padding-left:6px;
+					background-color: white;
+					color: black;
+					font-size: 8pt;
+					border-left:2px solid #909090;
+					border-right:2px solid #909090;
+					}
+
+				&lt;/STYLE&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+    &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+      &lt;table border="0" cellpadding="6" cellspacing="0" width="100%"&gt;
+        &lt;tr&gt;
+          &lt;td valign="middle" align="right" width="50%" class="ReportHeading" colspan="2" height="30"&gt;
+            &lt;center&gt;
+									Unit Application ID: 6490560&lt;/center&gt;
+            &lt;img src="https://resident.lexisnexis.com/images/LexisNexis_horz.jpg"&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td valign="middle" align="left" width="33%" class="EightPointBoldGray"&gt;
+								Property:  Tracey's Property      Property ID: 130076&lt;br&gt;
+										Phone: 678-893-9158&lt;br&gt;
+								Submitted by:  mits30user2 &lt;br&gt;
+								Received:  4/8/2011 3:18:42 PM&lt;br&gt;
+								Completed:  4/8/2011 4:08:26 PM&lt;br&gt;
+								Last Modified:  4/8/2011 4:08:26 PM&lt;br&gt;&lt;/td&gt;
+          &lt;td valign="middle" align="right" width="50%" class="EightPointBoldGray"&gt;
+										Toll Free:  800-487-3246&lt;br&gt;
+										Phone:  972-952-1480&lt;br&gt;
+								Fax Toll Free:  800-687-1099&lt;br&gt;
+								Fax:  972-952-1483&lt;br&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;div align="center"&gt;
+        &lt;table border="0" cellpadding="6" cellspacing="0" width="98%" style="border-bottom:1px solid #505050;"&gt;
+          &lt;tr&gt;
+            &lt;td valign="bottom" align="left" width="50%"&gt;
+              &lt;span style="font-size: 14pt; color: black; font-weight: bold; font-family: Tahoma, Arial, sans-serif;"&gt;TRACEY'S MANAGEMENT COMPANY&lt;/span&gt;
+              &lt;br&gt;
+              &lt;span style="padding-left:2px;font-size: 12pt; color: black; font-weight: bold; font-family: Tahoma, Arial, sans-serif;"&gt;Residential Screening Analysis Report&lt;/span&gt;
+              &lt;br&gt;
+            &lt;/td&gt;
+            &lt;td valign="bottom" align="right" width="40%"&gt;
+              &lt;span class="TenPointBlack"&gt;
+												Apt #: 951   Monthly Rent: $1,200&lt;/span&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+          &lt;tr&gt;
+            &lt;td valign="top" align="center" width="150"&gt;
+              &lt;div class="ApprovedBlock"&gt;
+                &lt;br&gt;
+												APPROVED
+											&lt;/div&gt;
+            &lt;/td&gt;
+            &lt;td valign="top" align="left" width="98%"&gt;
+              &lt;table border="0" cellpadding="0" cellspacing="2"&gt;
+                &lt;tr&gt;
+                  &lt;th valign="bottom" align="left" width="30" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" width="300" class="TenDashed"&gt;
+												Applicant(s)
+											&lt;/th&gt;
+                  &lt;th valign="bottom" align="left" width="100" class="TenDashed"&gt;
+												Applicant ID
+											&lt;/th&gt;
+                  &lt;th valign="bottom" align="left" width="100" class="TenDashed"&gt;
+												Type
+											&lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed" width="230"&gt;
+												Decision
+											&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td valign="middle" align="left" class="Padded4Ten" style="font-weight:bold;"&gt;1&lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBoldBlack"&gt;Dennis  Smith &lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBlack"&gt;8794976&lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBlack"&gt;HUSBAND&lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBlack"&gt;APPROVED&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td valign="middle" align="left" class="Padded4Ten" style="font-weight:bold;"&gt;2&lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBoldBlack"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBlack"&gt;8794977&lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBlack"&gt;WIFE&lt;/td&gt;
+                  &lt;td valign="middle" align="left" class="TenPointBlack"&gt;APPROVED&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                  &lt;th valign="bottom" align="left" class="TenDashed"&gt;
+                    &lt;br&gt;
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Property qualifying criteria
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedGrayTitle"&gt;1  Dennis  Smith
+											2  Lisa  Smith  (Jones)
+											&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" width="100%" cellpadding="3" cellspacing="0"&gt;
+                  &lt;tr&gt;
+                    &lt;th width="12" class="TenDashed"&gt;1&lt;/th&gt;
+                    &lt;th width="12" class="TenDashed"&gt;2&lt;/th&gt;
+                    &lt;th class="TenDashed"&gt; &lt;/th&gt;
+                    &lt;th class="TenDashed" align="left"&gt;Criteria Description&lt;/th&gt;
+                    &lt;th class="TenDashed" align="left"&gt;Code&lt;/th&gt;
+                    &lt;th class="TenDashed" align="left"&gt;Override&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has established credit history in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR100&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no bankruptcy in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR101&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no foreclosures in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR102&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no collections in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR103&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no legal items in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR104&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no tax liens in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR105&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no outstanding debt to previous landlords in the last 24 months as reported by the Credit Bureau.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR106&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has less than $ 500 of legal item debt in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR107&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has less than 1 credit accounts rated 3 or higher in the last 12 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR108&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has 10 % or fewer credit accounts rated 3 or higher in the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR110&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no possible landlord or utility collections in the last 84 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR113&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant with zero credit score has less than $400 of outstanding Medical Collections.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR119&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has less than $ 500 of total delinquent debt within the last 24 months.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR122&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicants Credit Score is greater than or equal to 500&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR131&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicants Credit Score is greater than or equal to 525&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR132&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no criminal records (excluding DWI and DWLS).&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CM300&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no felony records matched in the last 7 years.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CM301&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no VCAP records matched in the last 7 years.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CM302&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no serious misdemeanor records matched in the last 7 years.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CM303&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no Criminal Records matched in the last 7 years.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CM304&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Monthly debt is equal to or less than 20 % of Applicant's income&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR404&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Monthly debt and rent is equal to or less than 30 % of Applicant's income.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR406&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Monthly rent is equal to or less than 25 % of Applicant's credit adjusted income.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;CR411&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no matches in the registered sex offender database.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;SX500&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;
+																				--
+																			&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has no Name with DOB matches in the registered sex offender database.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;SX501&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;P&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;P&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;There are no other names associated with the Applicants Social Security Number.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;SN900&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;P&lt;/td&gt;
+                    &lt;td valign="top" align="center" class="EightDashed"&gt;P&lt;/td&gt;
+                    &lt;td class="EightDashed"&gt;
+
+																&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;Applicant has passed a Social Security Number fraud analysis.&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;SN901&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightDashed"&gt;
+
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" colspan="8" style="font-size: 10pt; font-family: Tahoma, Arial, sans-serif;background-color:white;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+											 P = Pass   F = Fail   N = Not applicable   -- = Unavailable
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" colspan="8" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Application information submitted by Mits30user2&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px; background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;Dennis  Smith &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px; background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="2" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;
+															Date of Birth: 10/19/XXXX&lt;br&gt;
+															Social Security Number: 555-55-XXXX&lt;br&gt;
+															Other Id: &lt;br&gt;
+															Other Id Type: &lt;br&gt;&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;
+															Drivers License: 027239XXX&lt;br&gt;
+															DL State: GA&lt;br&gt;&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="right" class="EightPointBlack"&gt;
+															Current Address:
+														&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;404    NAPP  ST    &lt;br&gt;De Kalb, TX  75559&lt;br&gt;&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td width="25%"&gt;
+                    &lt;/td&gt;
+                    &lt;td width="25%"&gt;
+                    &lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="right" class="EightPointBlack"&gt;
+																Previous Address - Street Number:&lt;br&gt;
+																Zip Code:
+															&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;5555Hollis&lt;br&gt;93117&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px; background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px; background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="2" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;
+															Date of Birth: 8/14/XXXX&lt;br&gt;
+															Social Security Number: 444-44-XXXX&lt;br&gt;
+															Other Id: &lt;br&gt;
+															Other Id Type: &lt;br&gt;&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;
+															Drivers License: &lt;br&gt;
+															DL State: &lt;br&gt;&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="right" class="EightPointBlack"&gt;
+															Current Address:
+														&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;404    NAPP  ST    &lt;br&gt;De Kalb, TX  75559&lt;br&gt;&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td width="25%"&gt;
+                    &lt;/td&gt;
+                    &lt;td width="25%"&gt;
+                    &lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="right" class="EightPointBlack"&gt;
+																Previous Address - Street Number:&lt;br&gt;
+																Zip Code:
+															&lt;/td&gt;
+                    &lt;td width="25%" valign="top" align="left" class="EightPointBlack"&gt;5555Hollis&lt;br&gt;93117&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+													Credit adjusted rent to income summary
+												&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedWhiteBordered"&gt;
+                &lt;table border="0" cellpadding="2" cellspacing="0"&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+														Applicant
+													&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+														Type
+													&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+																Credit Score
+															&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+														Monthly Income
+													&lt;/th&gt;
+                    &lt;td valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+																Credit adjusted Min Income Required
+															&lt;/td&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+																Neutral Credit Score
+															&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+																Credit Adjusted Income
+															&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack" width="10%"&gt;
+																Credit Adjusted Rent to Income
+															&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td nowrap valign="top" align="left" style="border-bottom:2px solid white;background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;"&gt;1  Dennis  Smith
+														&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;HUSBAND&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;0&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;$ 4,000&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;N/A&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;
+																			&amp;lt; 1.00%
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td nowrap valign="top" align="left" style="border-bottom:2px solid white;background-color: #CCCCCC; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;"&gt;2  Lisa  Smith  (Jones)
+														&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;WIFE&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;0&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;$ 5,000&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;N/A&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;
+																			&amp;lt; 1.00%
+																		&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" colspan="8" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Credit report summary (source: )
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedGrayTitle"&gt;1  Dennis  Smith
+											&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+
+											&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="5" cellspacing="0" width="92%"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Account ratings:
+														&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 1 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 2 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 3 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 4 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 5 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 6 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 7 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 8 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 9 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;
+															1=Pays accounts as agreed&lt;br&gt;
+															2=Not more than 2 past due pymnts&lt;br&gt;
+															3=Not more than 3 past due pymnts&lt;br&gt;
+															4=Not more than 4 past due pymnts&lt;br&gt;
+															5=120 days past due&lt;br&gt;&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;
+															6=Not used&lt;br&gt;
+															7=W.E.P.&lt;br&gt;
+															8=Repossession&lt;br&gt;
+															9=Collection&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" class="EightPointBoldBlack"&gt;
+																	% of Negative Credit:
+																&lt;/td&gt;
+                    &lt;td colspan="2" valign="top" align="left" class="EightPointBoldBlack"&gt;0.00%&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" class="EightPointBoldBlack"&gt;
+																	Credit score:
+																&lt;/td&gt;
+                    &lt;td colspan="2" valign="top" align="left" class="EightPointBoldBlack"&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedGrayTitle"&gt;2  Lisa  Smith  (Jones)
+											&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 10pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+
+											&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="5" cellspacing="0" width="92%"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Account ratings:
+														&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 1 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 2 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 3 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 4 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 5 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 6 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 7 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 8 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" class="EightPointBoldBlack"&gt;
+																		 9 &lt;br&gt;
+																	&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;
+															1=Pays accounts as agreed&lt;br&gt;
+															2=Not more than 2 past due pymnts&lt;br&gt;
+															3=Not more than 3 past due pymnts&lt;br&gt;
+															4=Not more than 4 past due pymnts&lt;br&gt;
+															5=120 days past due&lt;br&gt;&lt;/td&gt;
+                    &lt;td valign="top" align="left" class="EightPointBlack"&gt;
+															6=Not used&lt;br&gt;
+															7=W.E.P.&lt;br&gt;
+															8=Repossession&lt;br&gt;
+															9=Collection&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" class="EightPointBoldBlack"&gt;
+																	% of Negative Credit:
+																&lt;/td&gt;
+                    &lt;td colspan="2" valign="top" align="left" class="EightPointBoldBlack"&gt;0.00%&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" class="EightPointBoldBlack"&gt;
+																	Credit score:
+																&lt;/td&gt;
+                    &lt;td colspan="2" valign="top" align="left" class="EightPointBoldBlack"&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" colspan="8" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Debt to income summary
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedGrayTitle"&gt;
+                &lt;table border="0" cellpadding="0" cellspacing="4"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="font-weight:bold;font-size:8pt;" width="200"&gt;Dennis  Smith &lt;/td&gt;
+                    &lt;td valign="top" align="left" style="font-weight:bold;font-size:8pt;" width="300"&gt;
+															Monthly Income: $4000&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedWhiteBordered"&gt;
+                &lt;table border="0" cellpadding="4" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Customer Name
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Rating
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Account Type
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Last Activity Date
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Monthly Payment
+														&lt;/th&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table border="0" cellpadding="4" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" colspan="4" class="EightPointBoldBlack"&gt;
+															Total Monthly Payments: &lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" colspan="4" class="EightPointBoldBlack"&gt;
+															Debt to Income: %&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" colspan="4" class="EightPointBoldBlack"&gt;
+															Debt Plus Rent to Income: %&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;br&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedGrayTitle"&gt;
+                &lt;table border="0" cellpadding="0" cellspacing="4"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="font-weight:bold;font-size:8pt;" width="200"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+                    &lt;td valign="top" align="left" style="font-weight:bold;font-size:8pt;" width="300"&gt;
+															Monthly Income: $5000&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedWhiteBordered"&gt;
+                &lt;table border="0" cellpadding="4" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Customer Name
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Rating
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Account Type
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Last Activity Date
+														&lt;/th&gt;
+                    &lt;th valign="top" align="left" class="EightPointBoldBlack"&gt;
+															Monthly Payment
+														&lt;/th&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table border="0" cellpadding="4" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" colspan="4" class="EightPointBoldBlack"&gt;
+															Total Monthly Payments: &lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" colspan="4" class="EightPointBoldBlack"&gt;
+															Debt to Income: %&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left" colspan="4" class="EightPointBoldBlack"&gt;
+															Debt Plus Rent to Income: %&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;br&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" colspan="8" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="2" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Application comments
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" width="98%" class="PaddedGrayTitle"&gt;Unit Comments&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" width="98%" class="PaddedWhiteBordered"&gt;Rent To Income percent based on combined incomes.&lt;br&gt;&lt;br&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" colspan="8" class="PlacardBorderBottom" style="font-size:1pt;"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											SSN verification
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedGrayTitle"&gt;1  Dennis  Smith &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="1" cellspacing="1" width="80%"&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left"&gt; &lt;/th&gt;
+                    &lt;th width="250" align="left" class="EightPointBoldBlack"&gt;Associated names&lt;/th&gt;
+                    &lt;th width="100" class="EightPointBoldBlack"&gt;Times seen&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left"&gt; &lt;/td&gt;
+                    &lt;td width="250" valign="top" align="left" class="EightPointBlack"&gt;DENNIS  SMITH&lt;/td&gt;
+                    &lt;td width="100" valign="top" align="center" class="EightPointBlack"&gt;19&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedGrayTitle"&gt;2  Lisa  Smith  (Jones)&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="1" cellspacing="1" width="80%"&gt;
+                  &lt;tr&gt;
+                    &lt;th valign="top" align="left"&gt; &lt;/th&gt;
+                    &lt;th width="250" align="left" class="EightPointBoldBlack"&gt;Associated names&lt;/th&gt;
+                    &lt;th width="100" class="EightPointBoldBlack"&gt;Times seen&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left"&gt; &lt;/td&gt;
+                    &lt;td width="250" valign="top" align="left" class="EightPointBlack"&gt;LISA  SMITH&lt;/td&gt;
+                    &lt;td width="100" valign="top" align="center" class="EightPointBlack"&gt;26&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" colspan="8" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Criminal report summary
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px;border-top:1px dotted #CCCCCC;font-weight:bold;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+											Criminal Report:
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="2" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="2" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Dennis  Smith &lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																	Description: No matching criminal records found&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+
+												&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="2" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="2" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																	Description: No matching criminal records found&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+
+												&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="padding-left:6px;border-top:1px dotted #CCCCCC;font-weight:bold;background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+											Sex Offender Report:
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;p style="width:100%;padding-left:6px;"&gt;
+                  &lt;span style="font-weight:bold;"&gt;Instructions: &lt;/span&gt;If the Applicant Name or Physical Description does not match the name or physical description in the sex offender records listed, call your Customer Service Representative. If both the name and description match the information listed in the criminal records, this Applicant is rejected. &lt;/p&gt;
+                &lt;table border="0" cellpadding="2" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan="2" valign="top" align="left" style="padding-left:6px;background-color:#CCCCCC;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Dennis  Smith &lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																	Description: No matching sex offender records found&lt;br&gt;&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="font-family:Tahoma,Arial,sans-serif; font-size:8pt;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;p style="width:100%;padding-left:6px;"&gt;
+                  &lt;span style="font-weight:bold;"&gt;Instructions: &lt;/span&gt;If the Applicant Name or Physical Description does not match the name or physical description in the sex offender records listed, call your Customer Service Representative. If both the name and description match the information listed in the criminal records, this Applicant is rejected. &lt;/p&gt;
+                &lt;table border="0" cellpadding="2" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan="2" valign="top" align="left" style="padding-left:6px;background-color:#CCCCCC;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																	Description: No matching sex offender records found&lt;br&gt;&lt;br&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;p style="width:100%;padding-left:12px;"&gt;
+                  &lt;span style="font-weight:bold;font-family: Tahoma,Arial,sans-serif; font-size:8pt;"&gt;Note: &lt;/span&gt;The SexOffender records displayed above are obtained from public records based on combinations of name and date of birth or name only matches. The accuracy of the match is based on the accuracy of the public records and the accuracy of the Applicant information submitted.  It is important to submit Applicant information based on the data found on the drivers license, or other legal identification documents.&lt;/p&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedTitle"&gt;
+                &lt;br&gt;
+                &lt;tr&gt;
+                  &lt;td valign="top" align="left" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;Dennis  Smith &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td valign="top" align="left" style="background-color:white;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                    &lt;p style="width:700px; font-size: 8pt;"&gt;
+                      &lt;span style="font-weight:bold;font-size: 8pt;"&gt;Applicant name and DOB were checked against:&lt;/span&gt;
+                      &lt;br&gt;
+                      &lt;ul style="font-weight:normal;font-size:8pt;"&gt;
+                        &lt;li style="font-weight:normal;font-size:8pt;"&gt;Office of foreign assets control.&lt;/li&gt;
+                        &lt;li style="font-weight:normal;font-size:8pt;"&gt;Federal Terrorist list.&lt;/li&gt;
+                        &lt;li style="font-weight:normal;font-size:8pt;"&gt;Federal most wanted lists.&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PaddedTitle"&gt;
+                &lt;br&gt;
+                &lt;tr&gt;
+                  &lt;td valign="top" align="left" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td valign="top" align="left" style="background-color:white;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                    &lt;p style="width:700px; font-size: 8pt;"&gt;
+                      &lt;span style="font-weight:bold;font-size: 8pt;"&gt;Applicant name and DOB were checked against:&lt;/span&gt;
+                      &lt;br&gt;
+                      &lt;ul style="font-weight:normal;font-size:8pt;"&gt;
+                        &lt;li style="font-weight:normal;font-size:8pt;"&gt;Office of foreign assets control.&lt;/li&gt;
+                        &lt;li style="font-weight:normal;font-size:8pt;"&gt;Federal Terrorist list.&lt;/li&gt;
+                        &lt;li style="font-weight:normal;font-size:8pt;"&gt;Federal most wanted lists.&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/p&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Prior Screening Summary
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="6" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Dennis  Smith &lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan="6" valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																Description: No prior screening records found.&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="6" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan="6" valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																Description: No prior screening records found.&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div align="center" style="padding: 10px;"&gt;
+          &lt;table border="0" cellpadding="0" cellspacing="0" width="98%"&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" width="98%" align="left" class="PlacardHeading"&gt;
+											Delinquent Debt (accounts active in the past 24 months)
+										&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" style="background-color: white; color: black; font-size: 8pt; font-family: Tahoma, Arial, sans-serif; font-weight: bold;border-left:2px solid #909090;border-right:2px solid #909090;"&gt;
+                &lt;table border="0" cellpadding="1" cellspacing="1" width="100%"&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="7" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Dennis  Smith &lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																Description: No delinquent debt found for applicant&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="7" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;
+															Total Delinquent Debt for Dennis  Smith  : $&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="7" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;Lisa  Smith  (Jones)&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" style="padding-left:8px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;"&gt;
+																Description: No delinquent debt found for applicant&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td valign="top" align="left" colspan="7" style="background-color:#CCCCCC;padding-left:6px;font-family:Tahoma,Arial,sans-serif;font-size:8pt;font-weight:bold;"&gt;
+															Total Delinquent Debt for Lisa  Smith  (Jones) : $&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td valign="top" align="left" class="PlacardBorderBottom"&gt;
+                &lt;br&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/table&gt;
+  &lt;/BODY&gt;
+&lt;/HTML&gt;</BackgroundReport>
+    <Status>Complete</Status>
+    <RequestID_Returned>414926</RequestID_Returned>
+  </Response>
+  <CustomRecords>
+      <Record>
+        <Name>screeningRequestId</Name>
+        <Value>527d4ca4-074d-ce67-223e-64c8e056f8b5</Value>
+      </Record>
+      <Record>
+        <Name>User Defined 1</Name>
+        <Value>ABC123</Value>
+      </Record>
+      <Record>
+        <Name>User Defined 2</Name>
+        <Value>999999</Value>
+      </Record>
+      <Record>
+        <Name>Unit Number</Name>
+        <Value>951</Value>
+      </Record>
+    </CustomRecords>
+</ApplicantScreening>

@@ -1,0 +1,14 @@
+<mri_s-pmrm_selectunit>
+  {{#each this}}
+  {{#with this}}
+  <entry>
+    <ProspectID>{{ProspectID}}</ProspectID>
+    <PropertyID>{{PropertyID}}</PropertyID>
+    <BuildingID>{{BuildingID}}</BuildingID>
+    <UnitID>{{UnitID}}</UnitID>
+    <LeaseTerm>{{LeaseTerm}}</LeaseTerm>
+    <OccupyDate>{{OccupyDate}}</OccupyDate>
+  </entry>
+  {{/with}}
+  {{/each}}
+</mri_s-pmrm_selectunit>

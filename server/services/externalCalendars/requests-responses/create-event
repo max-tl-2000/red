@@ -1,0 +1,18 @@
+POST https://api.cronofy.com/v1/calendars/{reva_calendar_id}/events
+Authorization: Bearer {access_token}
+
+body:
+{
+  "event_id": "{appointment_id}",
+  "summary": "Board meeting",
+  "description": "Discuss plans for the next quarter.",
+  "start": "2017-08-05T15:30:00Z",
+  "end": "2017-08-05T17:00:00Z",
+  "location": {
+    "description": "Board room"
+  }
+}
+
+response:
+no body
+Status: 202 Accepted

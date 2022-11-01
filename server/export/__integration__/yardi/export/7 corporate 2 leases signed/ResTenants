@@ -1,0 +1,5 @@
+ResTenants,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Property_Code,Tenant_Code,Ext_Ref_Tenant_Id,Prospect_Code,Ref_Prospect_Id,Unit_Code,First_Name,Last_Name,Move_In_Date,Lease_From_Date,Lease_To_Date,Lease_Sign_Date,Email,Phone_Number_4,Status,Address1,City,State,Zipcode,Rent,Due_Day,Security_Deposit_0,LeaseGrossSQFT,MovedOut,LeaseType,Gets1099,MTM,LeaseTerm
+"cove","0000001t",,"0001000p",,"RevaApp","export-test-company","export-test-company","8/9/2022",,,,"luke@reva.tech","2025550163","2",,,,,"0","1",,"0","0","0","0","0","0"
+"cove","0000002t",,"0001001p",,"01-BARB-","export-test-company","export-test-company","8/9/2022","8/9/2022","8/9/2023","8/9/2022","luke@reva.tech","2025550163","2","P. Sherman 42 Wallaby Way","Sidney",,"IDK","500","1",,"0","0","0","0","0","12"
+"cove","0000003t",,"0001002p",,"01-BARB-","export-test-company","export-test-company","8/9/2022","8/9/2022","8/9/2023","8/9/2022","luke@reva.tech","2025550163","2","P. Sherman 42 Wallaby Way","Sidney",,"IDK","500","1",,"0","0","0","0","0","12"

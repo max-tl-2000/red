@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicantScreening xsi:noNamespaceSchemaLocation="ResidentScreening3_0.xsd" xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Request>
+    <PropertyID>
+      <Identification IDType="Property ID">
+        <IDValue>123456</IDValue>
+      </Identification>
+      <MarketingName>My Properties</MarketingName>
+    </PropertyID>
+    <RequestType>View</RequestType>
+    <ReportOptions>
+      <ReportName>01</ReportName>
+    </ReportOptions>
+    <ReportID>6490560</ReportID>
+    <OriginatorID>26694</OriginatorID>
+    <MarketingSource>Rent.com</MarketingSource>
+    <UserName>rsuser</UserName>
+    <UserPassword>rspassword</UserPassword>
+  </Request>
+  <LeaseTerms>
+    <MonthlyRent>1500.00</MonthlyRent>
+    <LeaseMonths>12</LeaseMonths>
+    <AffordableLease SubsidyAmount="200.00">true</AffordableLease>
+    <SecurityDeposit>500.00</SecurityDeposit>
+  </LeaseTerms>
+  <Applicant>
+    <Other>
+      <CurrentRent>1200.00</CurrentRent>
+      <ConsentObtained>YES</ConsentObtained>
+    </Other>
+    <Income>
+      <EmploymentStatus>Employed</EmploymentStatus>
+      <EmploymentType>Current</EmploymentType>
+      <EmployerName>Nordstrom</EmployerName>
+      <EmploymentGrossIncome>900.00</EmploymentGrossIncome>
+      <EmploymentStartDate>2000-10-15</EmploymentStartDate>
+      <OtherIncomeAmount>1500</OtherIncomeAmount>
+      <OtherIncomeType>Child Support</OtherIncomeType>
+      <OtherIncomePeriod>120 months</OtherIncomePeriod>
+    </Income>
+    <AS_Information>
+      <ApplicantIdentifier>{{tenantId}}:{{applicants.[0].applicantId}}</ApplicantIdentifier>
+      <ApplicantType>Applicant</ApplicantType>
+      <Spouse>t0003505</Spouse>
+      <Birthdate>1965-10-19</Birthdate>
+      <SocSecNumber>555559999</SocSecNumber>
+      <DriversLicenseID>027239657</DriversLicenseID>
+      <DriversLicenseState>GA</DriversLicenseState>
+      <AddressTerms MoveInDate="2000-10-10">
+        <Address AddressType="current">
+          <Address>404 NW Napp Street</Address>
+          <City>De Kalb</City>
+          <State>TX</State>
+          <PostalCode>75559</PostalCode>
+          <UnparsedAddress>404 NW Napp St Dekalb TX 75559</UnparsedAddress>
+          <Email>testemail@gmail.com</Email>
+        </Address>
+      </AddressTerms>
+      <AddressTerms MoveInDate="1989-01-08" MoveOutDate="2000-10-10">
+        <Address AddressType="previous">
+          <Address>5555 Hollister Avenue</Address>
+          <City>Goleta</City>
+          <State>CA</State>
+          <PostalCode>93117</PostalCode>
+          <UnparsedAddress>5555 Hollister Avenue Goleta CA 93117</UnparsedAddress>
+        </Address>
+      </AddressTerms>
+    </AS_Information>
+    <Customers>
+      <Customer>
+        <Identification IDType="applicant">
+          <IDValue>{{tenantId}}:{{applicants.[0].applicantId}}</IDValue>
+        </Identification>
+        <Name>
+          <FirstName>Amya</FirstName>
+          <LastName>Abbott</LastName>
+        </Name>
+        <Phone PhoneType="home">
+          <PhoneNumber>714-982-1000</PhoneNumber>
+        </Phone>
+      </Customer>
+    </Customers>
+  </Applicant>
+  <Response>
+    <TransactionNumber>1001</TransactionNumber>
+    <ReportDate>2011-04-08</ReportDate>
+    <ApplicantDecision>Abbott, Amya - APPROVED WITH CONDITIONS
+    </ApplicantDecision>
+    <ApplicationDecision>Guarantor Required</ApplicationDecision>
+    <BackgroundReport>Mock Background Report for 705 scenario</BackgroundReport>
+    <Status>Complete</Status>
+    <RequestID_Returned>414926</RequestID_Returned>
+  </Response>
+  <CustomRecords>
+      <Record>
+        <Name>screeningRequestId</Name>
+        <Value>{{screeningRequestId}}</Value>
+      </Record>
+      <Record>
+        <Name>User Defined 1</Name>
+        <Value>ABC123</Value>
+      </Record>
+      <Record>
+        <Name>User Defined 2</Name>
+        <Value>999999</Value>
+      </Record>
+      <Record>
+        <Name>Unit Number</Name>
+        <Value>951</Value>
+      </Record>
+    </CustomRecords>
+      <CustomRecordsExtended>
+    <Record>
+      <Name>XMLReport</Name>
+      <Value>
+        <AEROReport>
+          <Header1>
+            <ManagementName>RESIDENT DATA, INC</ManagementName>
+            <Recommendation>APPROVED_WITH_CONDITIONS</Recommendation>
+            <UnitAppID>20388988</UnitAppID>
+          </Header1>
+          <Header2>
+            <PropertyName>CD test account</PropertyName>
+            <Phone>1  -   -    </Phone>
+            <AccountingID>109667</AccountingID>
+            <SubmittedBy>DerricCM</SubmittedBy>
+            <UnitNumber />
+            <MonthlyRent>0</MonthlyRent>
+            <PropertyId>116418</PropertyId>
+            <StartTime>11/8/2016 4:47:49 PM</StartTime>
+          <EndTime>11/8/2016 4:51:48 PM</EndTime>
+            <ModifiedDate>11/8/2016 5:03:01 PM</ModifiedDate>
+          </Header2>
+          <Instructions>
+          <StandardOverridesExists>True</StandardOverridesExists>
+          <InstructionalOverrideExists>False</InstructionalOverrideExists>
+            <SafeScanExists>False</SafeScanExists>
+            <UnitStandardOverrideExists>True</UnitStandardOverrideExists>
+            <ApplicantOverride applicantid="{{fadvApplicantId}}">
+              <Applicant>
+                <ApplicantID>{{fadvApplicantId}}</ApplicantID>
+                <StandardOverride>
+                  <OverrideID>705</OverrideID>
+                  <OverrideText>Applicant must pay an additional deposit OR provide an approved guarantor</OverrideText>
+                </StandardOverride>
+              </Applicant>
+            </ApplicantOverride>
+          </Instructions>
+          <RentToIncomes>
+            <CARI>False</CARI>
+            <DisplayCreditScore>N</DisplayCreditScore>
+            <Applicant applicantid="{{fadvApplicantId}}">
+              <ApplicantID>{{fadvApplicantId}}</ApplicantID>
+              <ApplicantName>Testthird  XMLRESPONSE </ApplicantName>
+              <ApplicantType>APPLICANT</ApplicantType>
+              <CreditScore>680</CreditScore>
+              <MonthlyIncome />
+              <RentToIncome>&amp;#60; 1.00 %</RentToIncome>
+              <MinimumIncomeRequired>N/A</MinimumIncomeRequired>
+              <NeutralCreditScore />
+              <CreditAdjustedIncome />
+              <CreditAdjustedRentToIncome>&amp;#60; 1.00 %</CreditAdjustedRentToIncome>
+            </Applicant>
+          </RentToIncomes>
+          <Applicants>
+            <Applicant applicantid="{{fadvApplicantId}}">
+              <Index>1</Index>
+              <ApplicantID>{{fadvApplicantId}}</ApplicantID>
+              <ApplicantName>Amya Abbott</ApplicantName>
+              <Recommendation>APPROVED WITH CONDITIONS</Recommendation>
+              <ApplicantType>APPLICANT</ApplicantType>
+            </Applicant>
+          </Applicants>
+          <PropertyCriteria>
+            <Criteria>
+              <PassFail>P</PassFail>
+              <ApplicantResults>
+                <Result applicantid="{{fadvApplicantId}}">P</Result>
+              </ApplicantResults>
+              <CriteriaDescription>Applicant has no VCAP records matched in the last 10 years.</CriteriaDescription>
+              <CriteriaID>302</CriteriaID>
+              <CriteriaType>CM</CriteriaType>
+              <ApplyOverride>False</ApplyOverride>
+              <Override>None</Override>
+            </Criteria>
+            <Criteria>
+              <PassFail>P</PassFail>
+              <ApplicantResults>
+                <Result applicantid="{{fadvApplicantId}}">P</Result>
+              </ApplicantResults>
+              <CriteriaDescription>Applicant has no serious misdemeanor records matched in the last 7 years.</CriteriaDescription>
+              <CriteriaID>303</CriteriaID>
+              <CriteriaType>CM</CriteriaType>
+              <ApplyOverride>False</ApplyOverride>
+              <Override>None</Override>
+            </Criteria>
+            <Criteria>
+              <PassFail>P</PassFail>
+              <ApplicantResults>
+                <Result applicantid="{{fadvApplicantId}}">P</Result>
+              </ApplicantResults>
+              <CriteriaDescription>Applicant has no felony drug records in the last 20 years.</CriteriaDescription>
+              <CriteriaID>321</CriteriaID>
+              <CriteriaType>CM</CriteriaType>
+              <ApplyOverride>False</ApplyOverride>
+              <Override>None</Override>
+            </Criteria>
+            <Criteria>
+              <PassFail>F</PassFail>
+              <ApplicantResults>
+                <Result applicantid="{{fadvApplicantId}}">F</Result>
+              </ApplicantResults>
+              <CriteriaDescription>Applicant has a credit score greater than zero.</CriteriaDescription>
+              <CriteriaID>133</CriteriaID>
+              <CriteriaType>CR</CriteriaType>
+              <ApplyOverride>True</ApplyOverride>
+              <Override>705</Override>
+            </Criteria>
+          </PropertyCriteria>
+          <Evictions>
+            <DisplayVerified>True</DisplayVerified>
+            <DisplayUnVerified>False</DisplayUnVerified>
+            <Eviction applicantid="{{fadvApplicantId}}">
+              <ApplicantName>Testthird XMLRESPONSE</ApplicantName>
+              <Description>No matching eviction records found</Description>
+              <Description>No matching eviction records found</Description>
+            </Eviction>
+            <Note />
+            <InitNote />
+          </Evictions>
+          <Criminals>
+            <DisplayCriminalOffense>Y</DisplayCriminalOffense>
+            <DisplayNotesExist>False</DisplayNotesExist>
+            <Criminal applicantid="{{fadvApplicantId}}">
+              <ApplicantID>{{fadvApplicantId}}</ApplicantID>
+              <CriminalKeys />
+              <CriminalMatchKeys>Key|25334515|17189976</CriminalMatchKeys>
+              <CriminalRevisionsExist>False</CriminalRevisionsExist>
+              <CriminalInfo>
+                <RecordIndex>1</RecordIndex>
+                <CaseNumber>123cm456789</CaseNumber>
+                <County>dallas</County>
+                <State />
+                <Source>Test Source</Source>
+                <Name>Testthird XMLRESPONSE</Name>
+                <DOB>10/10/XXXX</DOB>
+                <SSN>_____XXXX</SSN>
+                <Sex />
+                <Race />
+                <Height>6</Height>
+                <Weight>0</Weight>
+                <HairColor />
+                <EyeColor />
+                <Offense>possession of other peoples money</Offense>
+                <Category>Theft</Category>
+                <Degree>F</Degree>
+                <DispositionDate>2/1/2014</DispositionDate>
+                <SentenceDate>2/1/2014</SentenceDate>
+                <OffenseDate>1/1/2014</OffenseDate>
+                <Disposition>convicted</Disposition>
+                <SentenceTerm>20Y00M00D</SentenceTerm>
+                <ProbationTerm>00Y00M00D</ProbationTerm>
+                <OffenseCode />
+                <DisplayNotes />
+              </CriminalInfo>
+            </Criminal>
+          </Criminals>
+          <CriminalSearches>
+            <Applicant applicantid="{{fadvApplicantId}}">
+              <ApplicantName>Testthird  XMLRESPONSE </ApplicantName>
+              <SearchesPerformed>
+                <SearchPerformed>Search of Texas State Criminal and Sex Offender Records.</SearchPerformed>
+              </SearchesPerformed>
+            </Applicant>
+          </CriminalSearches>
+          <ApplicationComments>
+            <ApplicantCommentsExist>True</ApplicantCommentsExist>
+            <ApplicantComment applicantid="{{fadvApplicantId}}">
+              <ApplicantName>Testthird  XMLRESPONSE </ApplicantName>
+              <Comment>
+                <CommentText>Rejected: Applicant failed criteria 331 which has no override.</CommentText>
+              </Comment>
+            </ApplicantComment>
+          </ApplicationComments>
+          <ApplicationInformation>
+            <SubmittedBy>Derriccm</SubmittedBy>
+            <ApplicantInformation applicantid="{{fadvApplicantId}}">
+              <Applicant>
+                <ApplicantName>Testthird  XMLRESPONSE </ApplicantName>
+                <DOB>10/10/XXXX</DOB>
+                <SSN />
+                <DriversLicense />
+                <DriversLicenseState />
+                <ForeignId />
+                <ForeignIdDesc />
+                <CurrentAddress>123    ANYSTREET      , Dallas, TX  75251</CurrentAddress>
+                <CurrentAddressStreet>123    ANYSTREET      </CurrentAddressStreet>
+                <CurrentAddressCSZ>Dallas, TX  75251</CurrentAddressCSZ>
+                <CreditSSN />
+					      <ExternalId>{{tenantId}}:{{applicants.[0].applicantId}}</ExternalId>
+              </Applicant>
+            </ApplicantInformation>
+          </ApplicationInformation>
+        </AEROReport>
+      </Value>
+    </Record>
+  </CustomRecordsExtended>
+</ApplicantScreening>

@@ -1,0 +1,12 @@
+{{#with this}}
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mri_s-pmrm_residentialinteractionsbynameid>
+  <entry>
+    <NameID>{{NameID}}</NameID>
+    <ActionDate>{{ActionDate}}</ActionDate>
+    <ActionCodeID>{{ActionCodeID}}</ActionCodeID>
+    <ActionDescription>{{ActionDescription}}</ActionDescription>
+    <LeasingAgentId>{{LeasingAgentId}}</LeasingAgentId>
+  </entry>
+</mri_s-pmrm_residentialinteractionsbynameid>
+{{/with}}

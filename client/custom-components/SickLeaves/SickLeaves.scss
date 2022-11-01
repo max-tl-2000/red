@@ -1,0 +1,110 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.agents-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: (544rem/16);
+  height: 4rem;
+  margin: 3rem 0rem;
+  cursor: pointer;
+  transition: background .3s ease-out, border .5s ease-out, box-shadow .5s ease-out;
+  text-align: left;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: none;
+
+  -webkit-appearance: none;
+
+  &:focus {
+    background: rgba($focusBGColor, .15);
+  }
+
+  &:hover {
+    background: rgba(0,0,0, .08);
+  }
+}
+
+.agent-card {
+  display: flex;
+}
+
+.agent-text {
+  margin-left: 1rem;
+}
+
+.icon-wrapper {
+  position: absolute;
+  right: (8rem/16);
+  opacity: .8;
+}
+
+.show-more-button {
+  margin: 3rem;
+}
+
+.table {
+  width: 34em;
+}
+
+.conflicts-link {
+  color: $redA700;
+}
+
+.conflicts-button {
+  height: (20.8em/16);
+  text-transform: none;
+}
+
+.sickLeaveHeader {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: .01em;
+  color: #000;
+}
+
+.sick-leave {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 4.5em;
+  margin-left: .4em;
+  border-bottom: none;
+
+  flex-grow: 1;
+}
+
+.sick-leave-top {
+  color: black;
+}
+
+.sick-leave-bottom {
+  display: flex;
+  align-items: baseline;
+
+  .conflicts-button {
+    margin-right: .5em;
+    padding: 0;
+  }
+
+  .conflicts-button:hover {
+    background: none;
+  }
+}
+
+.row:after {
+  border-bottom: none;
+}

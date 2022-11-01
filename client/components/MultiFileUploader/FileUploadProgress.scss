@@ -1,0 +1,12 @@
+@import '../../sass/_colors.scss';
+
+.file-progress {
+  width: 100%;
+  height: 3rem;
+  background: rgba($black, .13);
+
+  .progress {
+    height: 100%;
+    background: $blue500;
+  }
+}

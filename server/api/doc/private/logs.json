@@ -1,0 +1,106 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/fullStory/content": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Returns basic information from token JWT",
+            "schema": {
+              "$ref": "#/definitions/FullStoryContent"
+            }
+          }
+        },
+        "tags": [
+          "Logs"
+        ]
+      }
+    },
+    "/log": {
+      "post": {
+        "parameters": [
+          {
+            "description": "List of log entries.",
+            "in": "body",
+            "name": "messages",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LogEntry"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The log messages were logged succesfully."
+          },
+          "400": {
+            "description": "Invalid/missing log messages"
+          }
+        },
+        "summary": "Logs one or more log messages",
+        "tags": [
+          "Logs"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "FullStoryContent": {
+      "type": "object",
+      "properties": {
+        "personId": {
+          "type": "integer",
+          "format": "uuid"
+        },
+        "personName": {
+          "type": "string"
+        },
+        "quoteId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "partyId": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "tenantId": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Id of the tenant that will associate the data"
+        },
+        "tenantDomain": {
+          "type": "string",
+          "description": "Domain Url of the tenant that will associate the data"
+        },
+        "propertyId": {
+          "description": "Property id of the applicant",
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    },
+    "LogEntry": {
+      "type": "object",
+      "required": [
+        "message"
+      ],
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "severity": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

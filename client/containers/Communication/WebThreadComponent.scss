@@ -1,0 +1,58 @@
+@import '../../sass/_flyout-sizes';
+
+.main {
+  width: $largeFlyoutWidth;
+  height: $largeFlyoutHeight;
+}
+
+.message {
+  height: calc(100% - 2.375rem);
+  padding: 1rem;
+  border-bottom: (1rem/16) solid rgba(0, 0, 0, .26);
+}
+
+.message-header {
+  padding-bottom: 1rem;
+}
+
+.message-label {
+  padding-bottom: (5rem/16);
+
+  span {
+    color: black;
+  }
+}
+
+.message-body {
+  height: (400rem/16);
+}
+
+.message-text {
+  padding-bottom: (5rem/16);
+}
+
+.communication-box {
+  height: (38rem/16);
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  svg {
+    fill: rgba(#000, .54);
+  }
+}
+
+.commBox {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.htmlContent {
+  img {
+    max-width: (500rem/16);
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+}

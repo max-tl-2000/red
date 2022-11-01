@@ -1,0 +1,45 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.cards {
+  margin-top: (20rem/16);
+
+  > * {
+    margin-bottom: 1em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card {
+  padding: (20rem/16) (25rem/16);
+
+  &[data-state='opened'] {
+    padding-bottom: (6rem/16);
+  }
+}
+
+.success,
+.description {
+  @include body();
+
+  margin-bottom: (30rem/16);
+}
+
+.success {
+  color: $green700;
+}
+
+.need-help-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: (20rem/16);
+}
+
+.card-content {
+  [data-component='textbox'] {
+    display: block;
+  }
+}

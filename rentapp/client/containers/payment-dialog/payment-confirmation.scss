@@ -1,0 +1,32 @@
+@import '../../../../client/sass/_colors.scss';
+
+.payment-confirmation {
+  display: flex;
+  flex-direction: column;
+  max-width: 25em;
+  padding: 2em 1em;
+
+  align-content: center;
+
+  p {
+    margin: .5em 1em;
+    text-align: center;
+
+    align-self: center;
+  }
+
+  .alert {
+    width: 3em;
+    height: 3em;
+
+    align-self: center;
+
+    svg {
+      fill: $redA700;
+    }
+  }
+}
+
+.agent p {
+  margin: .3em;
+}

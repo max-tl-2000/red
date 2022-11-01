@@ -1,0 +1,15 @@
+@import '../../../../client/sass/_colors.scss';
+
+// TODO: Remove global class. Why does this need to be global???
+
+:global(.full-profile-view) {
+  margin: (24rem/16) (72rem/16) 0;
+
+  .profile-header {
+    margin-bottom: (24rem/16);
+  }
+
+  .profile-preference {
+    margin-bottom: (16rem/16);
+  }
+}

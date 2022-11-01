@@ -1,0 +1,64 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+.field {
+  margin-bottom: (20rem/16);
+
+  &.noMargin {
+    margin-bottom: 0;
+  }
+
+  &.v-align-bottom {
+    > .middle-wrapper {
+      align-items: flex-end;
+    }
+  }
+
+  &.v-align-top {
+    > .middle-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+  &.v-align-center {
+    > .middle-wrapper {
+      align-items: center;
+    }
+  }
+
+  > .middle-wrapper {
+    display: flex;
+    min-height: (55rem/16);
+  }
+
+  &.flex {
+    .field-wrapper {
+      display: flex;
+    }
+  }
+
+  &.inline {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &.halfWidth {
+    width: 50%;
+  }
+
+  &.hoverable {
+    &:hover {
+      cursor: pointer;
+      background: $hoverBGColor;
+    }
+  }
+}
+
+.field-wrapper {
+  display: block;
+  width: 100%;
+}

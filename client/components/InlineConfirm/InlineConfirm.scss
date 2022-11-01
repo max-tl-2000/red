@@ -1,0 +1,9 @@
+.overlayWrapper {
+  width: (300rem/16);
+}
+
+.overlayWrapper {
+  > div[data-component='flyout-content'] {
+    padding-top: .8rem;
+  }
+}

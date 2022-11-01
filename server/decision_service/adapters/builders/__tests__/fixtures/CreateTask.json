@@ -1,0 +1,30 @@
+{
+  "action": "create_Task",
+  "$": {
+    "xsi:type": "Output.Create_Task"
+  },
+  "category": [
+    "Manual"
+  ],
+  "dueDate": [
+    "2019-10-25 00:59:59"
+  ],
+  "name": [
+    "First Task"
+  ],
+  "state": [
+    "Active"
+  ],
+  "taskOwnerUUID": [
+    "e6231d6c-e3b7-46a3-b548-f95106a1087f"
+  ],
+  "unique": [
+    "true"
+  ],
+  "createdByType": [
+    "SYSTEM"
+  ],
+  "externalId": [
+    "e5d4dd2a-7f59-11ea-ab83-afcc47664756"
+  ]
+}

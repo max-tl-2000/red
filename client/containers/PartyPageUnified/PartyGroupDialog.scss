@@ -1,0 +1,17 @@
+.wrapper {
+  flex-grow: 1;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-action {
+  padding: .5em;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(117, 117, 117, .08);
+  }
+}

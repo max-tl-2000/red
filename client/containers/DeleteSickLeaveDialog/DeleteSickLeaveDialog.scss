@@ -1,0 +1,21 @@
+@import '../../sass/_colors.scss';
+
+.loading-dialog {
+  width: (432rem/16);
+
+  [data-component='dialog-body'] {
+    padding: 0 (20em/16) 0;
+  }
+}
+
+.info-text {
+  padding-bottom: (16em/16);
+}
+
+.actions {
+  padding: 0 (12em/16);
+}
+
+.right-icon {
+  fill: $yellow700;
+}

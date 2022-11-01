@@ -1,0 +1,1249 @@
+Return-Path: <bounces+907926-1f33-apt-list.shore=maximus.mail.reva.tech@em.apartmentlist.com>
+Received: from o3.em.apartmentlist.com (o3.em.apartmentlist.com [167.89.20.184])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id iurm1bepo17slq2h4qsgo606qcp6nub4f8191bg1
+ for apt-list.shore@maximus.mail.reva.tech;
+ Thu, 09 Aug 2018 06:18:23 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of em.apartmentlist.com designates 167.89.20.184 as permitted sender) client-ip=167.89.20.184; envelope-from=bounces+907926-1f33-apt-list.shore=maximus.mail.reva.tech@em.apartmentlist.com; helo=o3.em.apartmentlist.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of em.apartmentlist.com designates 167.89.20.184 as permitted sender) client-ip=167.89.20.184; envelope-from=bounces+907926-1f33-apt-list.shore=maximus.mail.reva.tech@em.apartmentlist.com; helo=o3.em.apartmentlist.com;
+ dkim=pass header.i=@apartmentlist.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFINE9LWU1lYW9Jc0hPQ1RjMWFFOE1wdm0wNjNiZG1sN1hmMFZSNUYvMy95R1JneFBPMkg1N0g4YUtGVUNZMCszK3U1QVZHVzlpdDBicEp6TlpXVkY2L3dvSENYMGhHQmdCeEdtNGIzcVJZVDdlejFHMEswNE1IdU1yekxSZ1RwMGxxREN2UHpCR2ZQMFljUUdvOWpWQUVJUXFRYzVidGh1SUtFT0ZObFN2Y2RtazN0ZGppa3p5MTQydUdEaDFxZm9HbkxWRGhBNlpVa25vZ2h0Qk5oM0dqTUVMa2pvbW9NQytSaHRPVVVIVTdMZXM5dU10QmQ0ajhncEw1MzFFWitUdGZ3RlNMMTQ4TXRzOCtkbTNSdGp0WnhtajBHYUZVeG40M2dLMlN6MTZiQXJCNldScFRlRFFPbnNMQ21vQmZJMjVqbVJJb2Y1MDdJUlNMZmhkT0FJSGdTVUQyWCtrVTZYMEdVWHlBdTNQMm5jcGltYXlxU0UzTUp1QW11eVA1VDBVPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=fZfrLwf2wIcxGI/1cyuumiwk5ZR+X9gyyboJBu0aoqzbyGR2ZaWgH85H0tNIj/lzQwupnzbxzMLzewinDPeZNK76SCxUlkOEqfjyfxg+2aADrQZ7VQVL+2WBTuDBlcTvOubdJVgM0sjdEKjJS7UfhfrMf1zghs/zxTgUmzCfQvw=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1533795504; v=1; bh=uFfJxCdC/NA1Kzc1joht9mxQmgMuD4W2NtTQiZmy7nE=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=apartmentlist.com; 
+	h=content-type:from:mime-version:reply-to:subject:to; s=s1; 
+	bh=ZOUIKb507q5uj3hko2tLDSDU57I=; b=Cb1H27qa1926+009NojrnrCbMss9I
+	47TnKQ96tXRChIybCrrTeYo1DoyyeWOTKsW9dob22wRBNZrF2WqztDpWLuHbt3EF
+	HzKAznnE17JCFee8Hj43V3wvplwIonfu9VOa5iAZiNwmasPS2IXxdyIJ0QNXsFke
+	blcLnpTRRjU0VQ=
+Received: by filter1673p1mdw1.sendgrid.net with SMTP id filter1673p1mdw1-22696-5B6BDCAE-E
+        2018-08-09 06:18:22.979931142 +0000 UTC m=+119083.240698506
+Received: from OTA3OTI2 (ec2-34-225-111-125.compute-1.amazonaws.com [34.225.111.125])
+	by ismtpd0023p1iad2.sendgrid.net (SG) with HTTP id -k6KK1jpT3eRnLXfya7vhw
+	Thu, 09 Aug 2018 06:18:22.996 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=34cbb01cc0dd832fcc7473b0f415c820e85eb7d2bba40a1fe6f65bcb55d6
+Date: Thu, 09 Aug 2018 06:18:23 +0000 (UTC)
+From: "Apartment List Interests" <interests@apartmentlist.com>
+Mime-Version: 1.0
+Reply-To: no-reply-leads@apartmentlist.com
+Subject: Get in touch with Kylie! - Kylie Xie is "Interested" in Southshore - Apartment List
+To: apt-list.shore@maximus.mail.reva.tech
+Message-ID: <-k6KK1jpT3eRnLXfya7vhw@ismtpd0023p1iad2.sendgrid.net>
+X-SG-EID: zyONSjpi7q5EPMmbPeu8r9KXD6XkQv3LINp7czWs//9QIOU/D6KgD/pypF7IVp7JeX9bt5L2op99tn
+ vH4uLrmh+erEwlIUFduh0gs7QdSa/glxepOljw9t5R9I8O7cRGLX5jy1WNmECuzfvvDpDj1bXz7Vzj
+ 7ax4NT4Go7+xm7krDvb1EqcsixNaoDDfyKGNGB0zCuaDv//+Et+6viyeOKwUimfg0BW6zHY3OqbS1m
+ YLH4pIXunw5SO4+4bVZbeUA3Q3OOZNkr9jqmjB1vFGtg==
+X-SG-ID: abJri/z89ozyEJuJkS5UoLOYkk3nzXCdzaqMB9I3E6oLGhBGVfa6F9u4wN1bbbZC+Zb8gROfNn9ITb
+ 7N2iTjiA==
+
+--34cbb01cc0dd832fcc7473b0f415c820e85eb7d2bba40a1fe6f65bcb55d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+* Kylie Xie is Interested in Southshore! *
+RENTER'S STATUS: Looking > [Interested] > Ready to Move
+MOVE-IN: 09/01/2018 (23 days away!)
+LEAD SOURCE: Apartment List
+PROPERTY NAME: Southshore!
+--------------------------------------------------------------
+
+* Get in touch with Kylie *
+EMAIL: cocoxie9161@gmail.com
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+* Kylie's Preferences *
+BEDS: 0 (0 matched units)
+BUDGET: $2,600 (0 matched units)
+AMENITIES: On site laundry
+LOCATION: Emeryville, CA
+
+* Kylie's Qualifications *
+INCOME: Meets your income requirement
+EVICTION HISTORY: Never been evicted
+LEASE TERM: 12 month lease
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+* Renter Insight *
+MOVE URGENCY: Specified &quot;needs to move, but flexible&quot;
+COMMUTE: 2 miles
+LISTINGS VIEWED: 5 other properties
+HAS CONTACTED: 1 other properties
+
+* Apartment List Insight *
+Our data shows Renters like Kylie are about to narrow down their search. Co=
+ntact them to ensure that your property is at the top of their list!
+
+--------------------------------------------------------------
+ABOUT APARTMENT LIST: leases.apartmentlist.com/about-us
+LEAD FEEDBACK: am@apartmentlist.com
+
+|         `.-:::--.`
+|      .:+++++++++++/-`
+|    `/++++++++++++++++/syyyso/-
+|   .++++++-.   `./+++++sdmmmmmmdo.
+|   +++++/`        .+++++ymmmmmmmmd+
+|  `+++++.          /++++smmmmmmmmmms
+|  `+++++:         `+++++smmmmmmmmmmm:
+|   :+++++/.     `-+++++odmmmmmmmmmmm+
+|    /+++++++///++++++++hmmmmmmmmmmmm:
+|     /+++++++++++++++oymmmmmmmmmmmmy
+|      :+++++++++++++ohmmmmmmmmmmmmo`
+|       -+++++++++++odmmmmmmmmmmds.
+|        `/+++++++oydmmmmmmmmds:`
+|          :+++++ohmmmmmmho/.
+|           `/+oydmdyo/-`
+|             -+/-`
+
+--34cbb01cc0dd832fcc7473b0f415c820e85eb7d2bba40a1fe6f65bcb55d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style=3D"min-height:100%;background:#f4f4f4;height:100%;width:100%;ba=
+ckground:#f4f4f4 !important">
+<head>
+  <title>Apartment List</title>
+  <meta content=3D"text/html; charset=3DUS-ASCII" http-equiv=3D"Content-Typ=
+e">
+  <meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewpor=
+t">
+  <meta name=3D"lead_information_version" content=3D"1.0">
+  <meta name=3D"lead_source" content=3D"apartmentlist.com">
+  <meta name=3D"lead_type" content=3D"Renter">
+  <meta name=3D"lead_name" content=3D"Kylie Xie">
+  <meta name=3D"lead_email" content=3D"cocoxie9161@gmail.com">
+</head>
+<body style=3D"min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-a=
+djust:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-siz=
+ing:border-box;color:#35464B;font-family:Helvetica Neue, Helvetica, Arial, =
+sans-serif;font-weight:300;padding:0;margin:0;text-align:left;font-size:16p=
+x;line-height:1.3;height:100%;width:100%;width:100% !important;background:#=
+f4f4f4 !important">
+<p style=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-w=
+eight:300;padding:0;margin:0;text-align:left;font-size:16px;line-height:1.3=
+;margin-bottom:10px;font-size:10px;color:#35464B;letter-spacing:1px">
+  <meta name=3D"lead_property_address" content=3D"901 Shorepoint Ct, Alamed=
+a, CA">
+  <meta name=3D"lead_property_name" content=3D"Southshore">
+
+  <!--[if mso]>
+  <style type=3D"text/css">
+    a {text-decoration: none;}
+    th, td {font-size: 0; line-height 0;}
+    table, tr, td {border-collapse: collapse;}
+    tr { font-size:0px; line-height:0px; border-collapse: collapse; }
+  </style>
+  <![endif]-->
+
+</p>
+<table class=3D"body" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;background:#f4f4f4;height:100%;width:100%;color:#35464B;fo=
+nt-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;padd=
+ing:0;margin:0;text-align:left;font-size:16px;line-height:1.3;background:#f=
+4f4f4 !important">
+  <tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <td class=3D"center" align=3D"center" valign=3D"top" style=3D"word-wrap=
+:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-al=
+ign:top;text-align:left;padding:0;margin:0;border-collapse:collapse !import=
+ant">
+      <center style=3D"width:100%;min-width:570px">
+        <table class=3D" wrapper float-center" align=3D"center" style=3D"bo=
+rder-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-a=
+lign:left;width:100%;margin:0 auto;float:none;text-align:center"><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inne=
+r" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyp=
+hens:auto;vertical-align:top;text-align:left;padding:0;margin:0;border-coll=
+apse:collapse !important">
+          <table class=3D" container" align=3D"center" style=3D"border-spac=
+ing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left=
+;background:#fefefe;width:570px;margin:0 auto;text-align:inherit;background=
+:#f4f4f4"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left"=
+><td style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;h=
+yphens:auto;vertical-align:top;text-align:left;padding:0;margin:0;border-co=
+llapse:collapse !important">
+            <img src=3D"http://res.cloudinary.com/apartmentlist/image/uploa=
+d/s--6qoTwZiY--/c_scale,w_203/v1509664650/zeppelin_emails/al_logo.png" alt=
+=3D"apartment list" style=3D"outline:none;text-decoration:none;-ms-interpol=
+ation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block">
+            <table style=3D"border-spacing:0;border-collapse:collapse;verti=
+cal-align:top;text-align:left;padding-bottom:0;padding:0;width:100%;positio=
+n:relative;background-color: #00B1A6;" class=3D"interest-level row"><tbody>=
+<tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-24 large-24 columns first last" style=3D"padding:0;ma=
+rgin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;paddi=
+ng-right:5px;padding-left:10px;padding-right:10px;padding-bottom:0;"><table=
+ style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-alig=
+n:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top=
+;text-align:left"><th style=3D"padding:0;margin:0">
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height=
+-rule:exactly;border-collapse:collapse !important;font-size:10px;line-heigh=
+t:10px;">&#160;</td></tr></tbody></table>
+    <h1 class=3D"text-center" style=3D"padding:0;margin:0;text-align:left;l=
+ine-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, H=
+elvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:28p=
+x;color:#fefefe;font-size:26px;letter-spacing:1px;text-align:center">
+      Kylie Xie is interested in Southshore!
+    </h1>
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height=
+-rule:exactly;border-collapse:collapse !important;font-size:10px;line-heigh=
+t:10px;">&#160;</td></tr></tbody></table>
+    <table class=3D"text-center collapse row" style=3D"border-spacing:0;bor=
+der-collapse:collapse;vertical-align:top;text-align:left;padding:0;width:10=
+0%;position:relative;text-align:center"><tbody><tr style=3D"padding:0;verti=
+cal-align:top;text-align:left">
+  <th class=3D" small-4 large-4 columns first" style=3D"padding:0;margin:0;=
+margin:0 auto;padding-bottom:10px;width:85px;padding-left:5px;padding-right=
+:5px;padding-left:10px;padding-right:0;padding-left:0;width:95px"><table st=
+yle=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:t=
+op;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;te=
+xt-align:left"><th style=3D"padding:0;margin:0">
+  </th></tr></table></th>
+  <th class=3D"dot small-1 large-1 columns" style=3D"padding:0;margin:0;mar=
+gin:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left=
+:5px;padding-right:5px;padding-right:0;padding-left:0;width:23.75px"><table=
+ style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-alig=
+n:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top=
+;text-align:left"><th style=3D"padding:0;margin:0">
+    <div align=3D"right">
+        <!--[if mso]>
+  <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" style=3D"height:25px;v-text-anchor:middle;w=
+idth:25px;" arcsize=3D"100%" stroke=3D"f" fillcolor=3D"#ffffff">
+  <w:anchorlock/>
+  <center>
+  <![endif]-->
+    <span class=3D"progress-dot" style=3D"background-color:#fefefe;border-r=
+adius:50%;display:inline-block;height:26px;width:26px"></span>
+  <!--[if mso]>
+  </center>
+  </v:roundrect>
+  <![endif]-->
+
+    </div>
+  </th></tr></table></th>
+  <th class=3D"progress-line text-center small-6 large-6 columns" style=3D"=
+padding:0;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;widt=
+h:132.5px;padding-left:5px;padding-right:5px;text-align:center;padding-righ=
+t:0;padding-left:0;width:142.5px"><table style=3D"border-spacing:0;border-c=
+ollapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0;line-=
+height:0%;mso-line-height:exactly"><th style=3D"padding:0;margin:0">
+      &#160;
+      </th></tr>
+<tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0;line-=
+height:0%;mso-line-height:exactly"><td height=3D"10" class=3D"empty-line" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;line-height:10p=
+x;border-collapse:collapse !important">&#160;</td></tr>
+      <tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0=
+;line-height:0%;mso-line-height:exactly"><td height=3D"4" class=3D"white-li=
+ne" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hy=
+phens:auto;vertical-align:top;text-align:left;padding:0;margin:0;background=
+-color:#fefefe;line-height:4px;border-collapse:collapse !important">&#160;<=
+/td></tr>
+      <tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0=
+;line-height:0%;mso-line-height:exactly"><td height=3D"10" class=3D"empty-l=
+ine" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;h=
+yphens:auto;vertical-align:top;text-align:left;padding:0;margin:0;line-heig=
+ht:10px;border-collapse:collapse !important">&#160;</td></tr>
+  </table></th>
+  <th class=3D"dot small-1 large-1 columns" style=3D"padding:0;margin:0;mar=
+gin:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left=
+:5px;padding-right:5px;padding-right:0;padding-left:0;width:23.75px"><table=
+ style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-alig=
+n:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top=
+;text-align:left"><th style=3D"padding:0;margin:0">
+    <div align=3D"center">
+        <!--[if mso]>
+  <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" style=3D"height:22px;v-text-anchor:middle;w=
+idth:22px;" arcsize=3D"100%" stroke=3D"true"strokeweight=3D"4px" strokecolo=
+r=3D"#ffffff" fillcolor=3D"#00B1A6">
+  <w:anchorlock/>
+  <center>
+  <![endif]-->
+    <span class=3D"active-dot" style=3D"border:4px solid #fefefe;border-rad=
+ius:50%;display:inline-block;height:22px;width:22px;background-color: #00B1=
+A6;"></span>
+  <!--[if mso]>
+  </center>
+  </v:roundrect>
+  <![endif]-->
+
+    </div>
+  </th></tr></table></th>
+  <th class=3D"progress-line text-center small-7 large-7 columns" style=3D"=
+padding:0;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;widt=
+h:156.25px;padding-left:5px;padding-right:5px;text-align:center;padding-rig=
+ht:0;padding-left:0;width:166.25px"><table style=3D"border-spacing:0;border=
+-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0;line-=
+height:0%;mso-line-height:exactly"><th style=3D"padding:0;margin:0">
+    &#160;
+    </th></tr>
+<tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0;line-=
+height:0%;mso-line-height:exactly"><td height=3D"10" class=3D"empty-line" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;line-height:10p=
+x;border-collapse:collapse !important">&#160;</td></tr>
+    <tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0;l=
+ine-height:0%;mso-line-height:exactly"><td height=3D"4" class=3D"white-line=
+" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyph=
+ens:auto;vertical-align:top;text-align:left;padding:0;margin:0;background-c=
+olor:#fefefe;line-height:4px;border-collapse:collapse !important">&#160;</t=
+d></tr>
+    <tr style=3D"padding:0;vertical-align:top;text-align:left;font-size:0;l=
+ine-height:0%;mso-line-height:exactly"><td height=3D"10" class=3D"empty-lin=
+e" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyp=
+hens:auto;vertical-align:top;text-align:left;padding:0;margin:0;line-height=
+:10px;border-collapse:collapse !important">&#160;</td></tr>
+  </table></th>
+  <th class=3D"dot small-1 large-1 columns" style=3D"padding:0;margin:0;mar=
+gin:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left=
+:5px;padding-right:5px;padding-right:0;padding-left:0;width:23.75px"><table=
+ style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-alig=
+n:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top=
+;text-align:left"><th style=3D"padding:0;margin:0">
+    <div>
+        <!--[if mso]>
+  <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" style=3D"height:25px;v-text-anchor:middle;w=
+idth:25px;" arcsize=3D"100%" stroke=3D"f" fillcolor=3D"#ffffff">
+  <w:anchorlock/>
+  <center>
+  <![endif]-->
+    <span class=3D"progress-dot" style=3D"background-color:#fefefe;border-r=
+adius:50%;display:inline-block;height:26px;width:26px"></span>
+  <!--[if mso]>
+  </center>
+  </v:roundrect>
+  <![endif]-->
+
+    </div>
+  </th></tr></table></th>
+  <th class=3D" small-4 large-4 columns last" style=3D"padding:0;margin:0;m=
+argin:0 auto;padding-left:10px;padding-bottom:10px;width:85px;padding-left:=
+5px;padding-right:5px;padding-right:10px;padding-right:0;padding-left:0;wid=
+th:95px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:=
+0;vertical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;ver=
+tical-align:top;text-align:left"><th style=3D"padding:0;margin:0">
+  </th></tr></table></th>
+</tr></tbody></table>
+
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"5px" st=
+yle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:=
+auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-=
+rule:exactly;border-collapse:collapse !important;font-size:5px;line-height:=
+5px;">&#160;</td></tr></tbody></table>
+    <table class=3D"text-center collapse row" style=3D"border-spacing:0;bor=
+der-collapse:collapse;vertical-align:top;text-align:left;padding:0;position=
+:relative;text-align:center;width:100%"><tbody><tr style=3D"padding:0;verti=
+cal-align:top;text-align:left">
+      <th class=3D" small-3 large-3 columns first" style=3D"padding:0;margi=
+n:0;margin:0 auto;padding-bottom:10px;width:61.25px;padding-left:5px;paddin=
+g-right:5px;padding-left:10px;padding-right:0;padding-left:0;width:71.25px"=
+><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertic=
+al-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-al=
+ign:top;text-align:left"><th style=3D"padding:0;margin:0">
+      </th></tr></table></th>
+      <th class=3D" small-4 large-4 columns" style=3D"padding:0;margin:0;ma=
+rgin:0 auto;padding-left:10px;padding-bottom:10px;width:85px;padding-left:5=
+px;padding-right:5px;padding-right:0;padding-left:0;width:95px"><table styl=
+e=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top=
+;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text=
+-align:left"><th style=3D"padding:0;margin:0">
+        <p class=3D"text-center status-top" style=3D"font-family:Helvetica =
+Neue, Helvetica, Arial, sans-serif;font-weight:300;padding:0;margin:0;text-=
+align:left;font-size:16px;line-height:1.3;margin-bottom:10px;font-size:10px=
+;color:#35464B;color:#fefefe;font-size:14px;font-weight:600;letter-spacing:=
+1px;margin-bottom:0;text-align:center"> LOOKING </p>
+        <p class=3D"text-center status-bottom" style=3D"font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;padding:0;margin:0;text-align:left;fo=
+nt-size:16px;line-height:1.3;margin-bottom:10px;font-size:10px;color:#35464=
+B;color:#fefefe;font-size:12px;font-weight:300;letter-spacing:1px;text-alig=
+n:center"> Stage 1 </p>
+      </th></tr></table></th>
+      <th class=3D" small-2 large-2 columns" style=3D"padding:0;margin:0;ma=
+rgin:0 auto;padding-left:10px;padding-bottom:10px;width:37.5px;padding-left=
+:5px;padding-right:5px;padding-right:0;padding-left:0;width:47.5px"><table =
+style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align=
+:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;=
+text-align:left"><th style=3D"padding:0;margin:0">
+      </th></tr></table></th>
+      <th class=3D" small-5 large-5 columns" style=3D"padding:0;margin:0;ma=
+rgin:0 auto;padding-left:10px;padding-bottom:10px;width:108.75px;padding-le=
+ft:5px;padding-right:5px;padding-right:0;padding-left:0;width:118.75px"><ta=
+ble style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-a=
+lign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:=
+top;text-align:left"><th style=3D"padding:0;margin:0">
+        <p class=3D"text-center status-top" style=3D"font-family:Helvetica =
+Neue, Helvetica, Arial, sans-serif;font-weight:300;padding:0;margin:0;text-=
+align:left;font-size:16px;line-height:1.3;margin-bottom:10px;font-size:10px=
+;color:#35464B;color:#fefefe;font-size:14px;font-weight:600;letter-spacing:=
+1px;margin-bottom:0;text-align:center"> INTERESTED </p>
+        <p class=3D"text-center status-bottom" style=3D"font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;padding:0;margin:0;text-align:left;fo=
+nt-size:16px;line-height:1.3;margin-bottom:10px;font-size:10px;color:#35464=
+B;color:#fefefe;font-size:12px;font-weight:300;letter-spacing:1px;text-alig=
+n:center"> Stage 2 </p>
+      </th></tr></table></th>
+      <th class=3D" small-3 large-3 columns" style=3D"padding:0;margin:0;ma=
+rgin:0 auto;padding-left:10px;padding-bottom:10px;width:61.25px;padding-lef=
+t:5px;padding-right:5px;padding-right:0;padding-left:0;width:71.25px"><tabl=
+e style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-ali=
+gn:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:to=
+p;text-align:left"><th style=3D"padding:0;margin:0">
+      </th></tr></table></th>
+      <th class=3D" small-5 large-5 columns" style=3D"padding:0;margin:0;ma=
+rgin:0 auto;padding-left:10px;padding-bottom:10px;width:108.75px;padding-le=
+ft:5px;padding-right:5px;padding-right:0;padding-left:0;width:118.75px"><ta=
+ble style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-a=
+lign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:=
+top;text-align:left"><th style=3D"padding:0;margin:0">
+        <p class=3D"text-center status-top" style=3D"font-family:Helvetica =
+Neue, Helvetica, Arial, sans-serif;font-weight:300;padding:0;margin:0;text-=
+align:left;font-size:16px;line-height:1.3;margin-bottom:10px;font-size:10px=
+;color:#35464B;color:#fefefe;font-size:14px;font-weight:600;letter-spacing:=
+1px;margin-bottom:0;text-align:center"> READY </p>
+        <p class=3D"text-center status-bottom" style=3D"font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;padding:0;margin:0;text-align:left;fo=
+nt-size:16px;line-height:1.3;margin-bottom:10px;font-size:10px;color:#35464=
+B;color:#fefefe;font-size:12px;font-weight:300;letter-spacing:1px;text-alig=
+n:center"> Stage 3 </p>
+      </th></tr></table></th>
+      <th class=3D" small-2 large-2 columns last" style=3D"padding:0;margin=
+:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:37.5px;padding=
+-left:5px;padding-right:5px;padding-right:10px;padding-right:0;padding-left=
+:0;width:47.5px"><table style=3D"border-spacing:0;border-collapse:collapse;=
+padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"paddi=
+ng:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0">
+      </th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" style=
+=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:aut=
+o;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-rul=
+e:exactly;border-collapse:collapse !important;font-size:15px;line-height:15=
+px;">&#160;</td></tr></tbody></table>
+
+              <table style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;background-color:#fefefe;padding:0;width:10=
+0%;position:relative;border-bottom: 10px solid #00B1A6; border-top: 10px so=
+lid #00B1A6;" class=3D"contact-action box row"><tbody><tr style=3D"padding:=
+0;vertical-align:top;text-align:left">
+  <th class=3D" small-24 large-24 columns first last" style=3D"padding:0;ma=
+rgin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;paddi=
+ng-right:5px;padding-left:10px;padding-right:10px"><table style=3D"border-s=
+pacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:l=
+eft;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left">=
+<th style=3D"padding:0;margin:0">
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height=
+-rule:exactly;border-collapse:collapse !important;font-size:10px;line-heigh=
+t:10px;">&#160;</td></tr></tbody></table>
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D" small-24 large-24 columns first last" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;p=
+adding-right:5px;padding-left:10px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0">
+        <h3 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;col=
+or:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, s=
+ans-serif;font-weight:300;margin-bottom:2px;font-size:22px">Get in touch wi=
+th Kylie</h3>
+      </th></tr></table></th>
+    </tr></tbody></table>
+      <table class=3D" row" style=3D"border-spacing:0;border-collapse:colla=
+pse;vertical-align:top;text-align:left;padding:0;position:relative;width:10=
+0%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D" small-4 large-4 columns first" style=3D"padding:0;mar=
+gin:0;margin:0 auto;padding-bottom:10px;width:85px;padding-left:5px;padding=
+-right:5px;padding-left:10px"><table style=3D"border-spacing:0;border-colla=
+pse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"padding:=
+0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-height:1.3=
+;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Aria=
+l, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">e-mail:</h6=
+></th></tr></table></th>
+        <th class=3D" small-20 large-20 columns last" style=3D"padding:0;ma=
+rgin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:465px;padd=
+ing-left:5px;padding-right:5px;padding-right:10px"><table style=3D"border-s=
+pacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:l=
+eft;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left">=
+<th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align=
+:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica =
+Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-s=
+ize:16px"><a href=3D"mailto:cocoxie9161@gmail.com" style=3D"color:#35464B;f=
+ont-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;pad=
+ding:0;margin:0;text-align:left;line-height:1.3;text-decoration:none;color:=
+#2199e8">cocoxie9161@gmail.com</a></h6></th></tr></table></th>
+      </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" style=
+=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:aut=
+o;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-rul=
+e:exactly;border-collapse:collapse !important;font-size:15px;line-height:15=
+px;">&#160;</td></tr></tbody></table>
+
+
+              <table valign=3D"top" class=3D"need-to-know collapse row" sty=
+le=3D"border-spacing:0;border-collapse:collapse;vertical-align:top;text-ali=
+gn:left;padding:0;width:100%;position:relative"><tbody><tr style=3D"padding=
+:0;vertical-align:top;text-align:left">
+    <th class=3D"move-in pref box small-7 large-7 columns first" style=3D"p=
+adding:0;margin:0;background-color:#fefefe;margin:0 auto;padding-bottom:10p=
+x;width:156.25px;padding-left:5px;padding-right:5px;padding-left:10px;paddi=
+ng-right:0;padding-left:0;width:166.25px"><table style=3D"border-spacing:0;=
+border-collapse:collapse;padding:0;vertical-align:top;text-align:left;width=
+:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=
+=3D"padding:0;margin:0;text-align:center">
+      <table class=3D" row" style=3D"border-spacing:0;border-collapse:colla=
+pse;vertical-align:top;text-align:left;padding:0;position:relative;width:10=
+0%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D" small-12 large-12 columns first last" style=3D"paddin=
+g:0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px=
+;padding-right:5px;text-align:center;padding-left:10px;padding-right:10px;p=
+adding: 10px 20px;background-color: #00B1A6;"><table style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;w=
+idth:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+          <h5 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;c=
+olor:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial,=
+ sans-serif;font-weight:300;margin-bottom:2px;font-size:18px;color:#fefefe;=
+font-weight:500;font-size:14px;letter-spacing:1px;text-align:center">MOVE I=
+N DATE </h5>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+      <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:c=
+ollapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr=
+ style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px"=
+ style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphe=
+ns:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-heig=
+ht-rule:exactly;border-collapse:collapse !important;font-size:15px;line-hei=
+ght:15px;">&#160;</td></tr></tbody></table>
+      <table class=3D" row" style=3D"border-spacing:0;border-collapse:colla=
+pse;vertical-align:top;text-align:left;padding:0;position:relative;width:10=
+0%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D" small-12 large-12 columns first last" style=3D"paddin=
+g:0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px=
+;padding-right:5px;text-align:center;padding-left:10px;padding-right:10px">=
+<table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertica=
+l-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-ali=
+gn:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+            <h3 class=3D"text-center" style=3D"padding:0;margin:0;text-alig=
+n:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica=
+ Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-=
+size:22px;text-align:center">09/01/2018</h3>
+            <p class=3D"text-center days-away" style=3D"font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;font-weight:300;padding:0;margin:0;te=
+xt-align:left;font-size:16px;line-height:1.3;margin-bottom:10px;font-size:1=
+0px;color:#35464B;letter-spacing:1px;font-size:13px;text-align:center;margi=
+n-bottom:0px !important">
+              23 days away
+            </p>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+    </th></tr></table></th>
+
+    <th class=3D" small-1 large-1 columns" style=3D"padding:0;margin:0;marg=
+in:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left:=
+5px;padding-right:5px;padding-right:0;padding-left:0;width:23.75px"><table =
+style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align=
+:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;=
+text-align:left"><th style=3D"padding:0;margin:0">
+    </th></tr></table></th>
+
+    <th class=3D"budget pref box small-7 large-7 columns" valign=3D"top" st=
+yle=3D"padding:0;margin:0;background-color:#fefefe;margin:0 auto;padding-le=
+ft:10px;padding-bottom:10px;width:156.25px;padding-left:5px;padding-right:5=
+px;padding-right:0;padding-left:0;width:166.25px"><table style=3D"border-sp=
+acing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:le=
+ft;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><=
+th style=3D"padding:0;margin:0;text-align:center">
+      <table class=3D" row" style=3D"border-spacing:0;border-collapse:colla=
+pse;vertical-align:top;text-align:left;padding:0;position:relative;width:10=
+0%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D" small-12 large-12 columns first last" style=3D"paddin=
+g:0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px=
+;padding-right:5px;text-align:center;padding-left:10px;padding-right:10px;p=
+adding: 10px 20px;background-color: #00B1A6;"><table style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;w=
+idth:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+          <h5 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;c=
+olor:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial,=
+ sans-serif;font-weight:300;margin-bottom:2px;font-size:18px;color:#fefefe;=
+font-weight:500;font-size:14px;letter-spacing:1px;text-align:center"> BUDGE=
+T </h5>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+      <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:c=
+ollapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr=
+ style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px"=
+ style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphe=
+ns:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-heig=
+ht-rule:exactly;border-collapse:collapse !important;font-size:15px;line-hei=
+ght:15px;">&#160;</td></tr></tbody></table>
+      <table class=3D" row" style=3D"border-spacing:0;border-collapse:colla=
+pse;vertical-align:top;text-align:left;padding:0;position:relative;width:10=
+0%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D" small-12 large-12 columns first last" style=3D"paddin=
+g:0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px=
+;padding-right:5px;text-align:center;padding-left:10px;padding-right:10px">=
+<table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertica=
+l-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-ali=
+gn:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+            <h3 class=3D"text-center" style=3D"padding:0;margin:0;text-alig=
+n:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica=
+ Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-=
+size:22px;text-align:center">
+              $2,600
+            </h3>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+    </th></tr></table></th>
+
+    <th class=3D" small-1 large-1 columns" style=3D"padding:0;margin:0;marg=
+in:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left:=
+5px;padding-right:5px;padding-right:0;padding-left:0;width:23.75px"><table =
+style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align=
+:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;=
+text-align:left"><th style=3D"padding:0;margin:0">
+    </th></tr></table></th>
+
+    <th class=3D"beds pref box small-7 large-7 columns last" valign=3D"top"=
+ style=3D"padding:0;margin:0;background-color:#fefefe;margin:0 auto;padding=
+-left:10px;padding-bottom:10px;width:156.25px;padding-left:5px;padding-righ=
+t:5px;padding-right:10px;padding-right:0;padding-left:0;width:166.25px"><ta=
+ble style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-a=
+lign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:=
+top;text-align:left"><th style=3D"padding:0;margin:0;text-align:center">
+      <table class=3D" row" style=3D"border-spacing:0;border-collapse:colla=
+pse;vertical-align:top;text-align:left;padding:0;position:relative;width:10=
+0%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D" small-12 large-12 columns first last" style=3D"paddin=
+g:0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px=
+;padding-right:5px;text-align:center;padding-left:10px;padding-right:10px;p=
+adding: 10px 20px;background-color: #00B1A6;"><table style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;w=
+idth:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+          <h5 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;c=
+olor:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial,=
+ sans-serif;font-weight:300;margin-bottom:2px;font-size:18px;color:#fefefe;=
+font-weight:500;font-size:14px;letter-spacing:1px;text-align:center">BEDS</=
+h5>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+      <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:c=
+ollapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr=
+ style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px"=
+ style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphe=
+ns:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-heig=
+ht-rule:exactly;border-collapse:collapse !important;font-size:15px;line-hei=
+ght:15px;">&#160;</td></tr></tbody></table>
+      <table class=3D" row" style=3D"border-spacing:0;border-collapse:colla=
+pse;vertical-align:top;text-align:left;padding:0;position:relative;width:10=
+0%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D" small-12 large-12 columns first last" style=3D"paddin=
+g:0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px=
+;padding-right:5px;text-align:center;padding-left:10px;padding-right:10px">=
+<table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertica=
+l-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-ali=
+gn:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+            <h3 class=3D"text-center" style=3D"padding:0;margin:0;text-alig=
+n:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica=
+ Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-=
+size:22px;text-align:center">0 bdrm</h3>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+    </th></tr></table></th>
+  </tr></tbody></table>
+  <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" sty=
+le=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:a=
+uto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-r=
+ule:exactly;border-collapse:collapse !important;font-size:15px;line-height:=
+15px;">&#160;</td></tr></tbody></table>
+
+              <table class=3D"preferences box collapse row" style=3D"border=
+-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;back=
+ground-color:#fefefe;padding:0;width:100%;position:relative"><tbody><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-24 large-24 columns first last" style=3D"padding:0;ma=
+rgin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;paddi=
+ng-right:5px;padding-left:10px;padding-right:10px;padding-right:0;padding-l=
+eft:0;width:570px"><table style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0">
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar small-24 large-24 columns first last" style=3D"p=
+adding:0;margin:0;background-color:#35464B;padding:10px 20px;margin:0 auto;=
+padding-bottom:10px;width:560px;padding-left:5px;padding-right:5px;padding-=
+left:10px;padding-right:10px"><table style=3D"border-spacing:0;border-colla=
+pse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"padding:=
+0;margin:0">
+        <h4 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;col=
+or:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, s=
+ans-serif;font-weight:300;margin-bottom:2px;font-size:20px;color:#fefefe;fo=
+nt-weight:500;font-size:22px;letter-spacing:1px">Preferences</h4>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height=
+-rule:exactly;border-collapse:collapse !important;font-size:15px;line-heigh=
+t:15px;">&#160;</td></tr></tbody></table>
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D" small-12 large-12 columns first last" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px;p=
+adding-right:5px;padding-left:10px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0">
+=20=20=20=20=20=20=20=20=20=20
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Ame=
+nities:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">On site laundry</h6></th></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #DCE8EC;width:96%">
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Loc=
+ation:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">Emeryville, CA</h6></th></tr></table></th>
+          </tr></tbody></table>
+      </th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+  <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" sty=
+le=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:a=
+uto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-r=
+ule:exactly;border-collapse:collapse !important;font-size:15px;line-height:=
+15px;">&#160;</td></tr></tbody></table>
+  <table class=3D"qualifications box collapse row" style=3D"border-spacing:=
+0;border-collapse:collapse;vertical-align:top;text-align:left;background-co=
+lor:#fefefe;padding:0;width:100%;position:relative"><tbody><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-24 large-24 columns first last" style=3D"padding:0;ma=
+rgin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;paddi=
+ng-right:5px;padding-left:10px;padding-right:10px;padding-right:0;padding-l=
+eft:0;width:570px"><table style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0">
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar small-24 large-24 columns first last" style=3D"p=
+adding:0;margin:0;background-color:#35464B;padding:10px 20px;margin:0 auto;=
+padding-bottom:10px;width:560px;padding-left:5px;padding-right:5px;padding-=
+left:10px;padding-right:10px"><table style=3D"border-spacing:0;border-colla=
+pse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"padding:=
+0;margin:0">
+        <h4 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;col=
+or:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, s=
+ans-serif;font-weight:300;margin-bottom:2px;font-size:20px;color:#fefefe;fo=
+nt-weight:500;font-size:22px;letter-spacing:1px">Qualifications</h4>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height=
+-rule:exactly;border-collapse:collapse !important;font-size:15px;line-heigh=
+t:15px;">&#160;</td></tr></tbody></table>
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D" small-12 large-12 columns first last" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px;p=
+adding-right:5px;padding-left:10px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0">
+=20=20=20=20=20=20=20=20=20=20
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Inc=
+ome:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">Meets your income requirement</h6></th></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #DCE8EC;width:96%">
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Evi=
+ction history:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">Never been evicted</h6></th></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #DCE8EC;width:96%">
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Lea=
+se term:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">12 month lease</h6></th></tr></table></th>
+          </tr></tbody></table>
+      </th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+  <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" sty=
+le=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:a=
+uto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-r=
+ule:exactly;border-collapse:collapse !important;font-size:15px;line-height:=
+15px;">&#160;</td></tr></tbody></table>
+
+              <table class=3D"renter insight box collapse row" style=3D"bor=
+der-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;b=
+ackground-color:#fefefe;padding:0;width:100%;position:relative"><tbody><tr =
+style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-24 large-24 columns first last" style=3D"padding:0;ma=
+rgin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;paddi=
+ng-right:5px;padding-left:10px;padding-right:10px;padding-right:0;padding-l=
+eft:0;width:570px"><table style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0">
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar small-24 large-24 columns first last" style=3D"p=
+adding:0;margin:0;background-color:#35464B;padding:10px 20px;margin:0 auto;=
+padding-bottom:10px;width:560px;padding-left:5px;padding-right:5px;padding-=
+left:10px;padding-right:10px"><table style=3D"border-spacing:0;border-colla=
+pse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"padding:=
+0;margin:0">
+        <h4 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;col=
+or:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, s=
+ans-serif;font-weight:300;margin-bottom:2px;font-size:20px;color:#fefefe;fo=
+nt-weight:500;font-size:22px;letter-spacing:1px">Renter insight</h4>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height=
+-rule:exactly;border-collapse:collapse !important;font-size:15px;line-heigh=
+t:15px;">&#160;</td></tr></tbody></table>
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D" small-12 large-12 columns first last" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:275px;padding-left:5px;p=
+adding-right:5px;padding-left:10px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0">
+=20=20=20=20=20=20=20=20=20=20
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Mov=
+e urgency:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">Specified &quot;needs to move, but flexible&quot;</h6></th><=
+/tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #DCE8EC;width:96%">
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Com=
+mute:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">2 miles</h6></th></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #DCE8EC;width:96%">
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Lis=
+tings viewed:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">5 other properties</h6></th></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #DCE8EC;width:96%">
+          <table class=3D" row" style=3D"border-spacing:0;border-collapse:c=
+ollapse;vertical-align:top;text-align:left;padding:0;position:relative;widt=
+h:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D" small-12 large-6 columns first" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:132.5px;padding-left:5px=
+;padding-right:5px;padding-left:10px"><table style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"=
+padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-align:left;line-he=
+ight:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-weight:300;margin-bottom:2px;font-size:16px">Has=
+ contacted:</h6></th></tr></table></th>
+            <th class=3D" small-12 large-6 columns last" style=3D"padding:0=
+;margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px=
+;padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:l=
+eft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-=
+align:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helve=
+tica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;f=
+ont-size:16px">1 other properties</h6></th></tr></table></th>
+          </tr></tbody></table>
+      </th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+  <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr sty=
+le=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" sty=
+le=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:a=
+uto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-r=
+ule:exactly;border-collapse:collapse !important;font-size:15px;line-height:=
+15px;">&#160;</td></tr></tbody></table>
+
+            <table class=3D"collapse al-insight box row" style=3D"border-sp=
+acing:0;border-collapse:collapse;vertical-align:top;text-align:left;backgro=
+und-color:#fefefe;border-top:10px solid #35464B;padding:0;width:100%;positi=
+on:relative"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft">
+  <th class=3D" small-24 large-24 columns first last" style=3D"padding:0;ma=
+rgin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;paddi=
+ng-right:5px;padding-left:10px;padding-right:10px;padding-right:0;padding-l=
+eft:0;width:570px"><table style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0">
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" s=
+tyle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens=
+:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height=
+-rule:exactly;border-collapse:collapse !important;font-size:10px;line-heigh=
+t:10px;">&#160;</td></tr></tbody></table>
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D" small-24 large-24 columns first last" style=3D"padding:=
+0;margin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;p=
+adding-right:5px;padding-left:10px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0">
+        <h4 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;wor=
+d-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font=
+-weight:300;margin-bottom:2px;font-size:20px;color:#fefefe;font-weight:500;=
+font-size:22px;letter-spacing:1px;color:#35464B"> Apartment List Insight </=
+h4>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr s=
+tyle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"5px" st=
+yle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:=
+auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-=
+rule:exactly;border-collapse:collapse !important;font-size:5px;line-height:=
+5px;">&#160;</td></tr></tbody></table>
+    <table class=3D" row" style=3D"border-spacing:0;border-collapse:collaps=
+e;vertical-align:top;text-align:left;padding:0;position:relative;width:100%=
+"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D" small-24 large-24 columns first" style=3D"padding:0;mar=
+gin:0;margin:0 auto;padding-bottom:10px;width:560px;padding-left:5px;paddin=
+g-right:5px;padding-left:10px"><table style=3D"border-spacing:0;border-coll=
+apse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr =
+style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"padding=
+:0;margin:0">
+        <h6 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;col=
+or:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, s=
+ans-serif;font-weight:300;margin-bottom:2px;font-size:16px">
+          Our data shows Renters like Kylie are about to narrow down their =
+search. Contact them to ensure that your property is at the top of their li=
+st!
+        </h6>
+      </th></tr></table></th>
+      <th class=3D" small-1 large-1 columns last" style=3D"padding:0;margin=
+:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;paddin=
+g-left:5px;padding-right:5px;padding-right:10px"><table style=3D"border-spa=
+cing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:lef=
+t;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><t=
+h style=3D"padding:0;margin:0"></th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" style=
+=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:aut=
+o;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-rul=
+e:exactly;border-collapse:collapse !important;font-size:15px;line-height:15=
+px;">&#160;</td></tr></tbody></table>
+
+            <table class=3D" row" style=3D"border-spacing:0;border-collapse=
+:collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:=
+relative"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"footer box small-10 large-10 columns first" style=3D"padding=
+:0;margin:0;background-color:#fefefe;padding-top:20px;margin:0 auto;padding=
+-bottom:10px;width:227.5px;padding-left:5px;padding-right:5px;padding-left:=
+10px;padding-bottom:20px !important"><table style=3D"border-spacing:0;borde=
+r-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%=
+"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"p=
+adding:0;margin:0;text-align:center">
+    <a class=3D"footer-link" href=3D"http://leases.apartmentlist.com/about-=
+us" style=3D"color:#35464B;font-family:Helvetica Neue, Helvetica, Arial, sa=
+ns-serif;font-weight:300;padding:0;margin:0;text-align:left;line-height:1.3=
+;color:#2199e8;text-decoration:none;color:#00ADF2;font-size:16px;font-weigh=
+t:500;letter-spacing:1px;text-transform:uppercase">
+      About Apartment List
+    </a>
+  </th></tr></table></th>
+  <th class=3D" small-1 large-1 columns" style=3D"padding:0;margin:0;margin=
+:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left:5p=
+x;padding-right:5px"><table style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"p=
+adding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:=
+0">
+  </th></tr></table></th>
+  <th class=3D"footer box small-10 large-10 columns last" style=3D"padding:=
+0;margin:0;background-color:#fefefe;padding-top:20px;margin:0 auto;padding-=
+left:10px;padding-bottom:10px;width:227.5px;padding-left:5px;padding-right:=
+5px;padding-right:10px;padding-bottom:20px !important"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0;text-align:center">
+    <a class=3D"footer-link" href=3D"mailto:am@apartmentlist.com" style=3D"=
+color:#35464B;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font=
+-weight:300;padding:0;margin:0;text-align:left;line-height:1.3;color:#2199e=
+8;text-decoration:none;color:#00ADF2;font-size:16px;font-weight:500;letter-=
+spacing:1px;text-transform:uppercase">
+      Give us feedback
+    </a>
+  </th></tr></table></th>
+</tr></tbody></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" style=
+=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:aut=
+o;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-rul=
+e:exactly;border-collapse:collapse !important;font-size:15px;line-height:15=
+px;">&#160;</td></tr></tbody></table>
+
+          </td></tr></tbody></table>
+        </td></tr></table>
+      </center>
+    </td>
+  </tr>
+</table>
+<!-- prevent Gmail on iOS font size manipulation -->
+<div style=3D"display:none; white-space:nowrap; font:15px courier; line-hei=
+ght:0;"> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#1=
+60; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &=
+#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; </div>
+
+
+<img src=3D"http://clicks.apartmentlist.com/wf/open?upn=3Di5YPVX7ohE7hqbI4Q=
+C10lfwM-2FOQR2GdFVm3VrQqizO2s8Y12D4XMhZtCJy37itkoVjLaCkWgfsW-2Fz2vU2oWl3072=
+xcyoU8cfiGIamrNr5te1vaQZ-2BtNHGsDfEp7AhXic-2FlI-2BEoQ-2FyWcKpEa2ydB1Ey90sdj=
+7GK6SxDi3KNSXjoSJwnbfj4VZYsHgZcn6QvhAB7r9ZXo2AERObhyRtkUsh9NImdtwHjxP-2BjvY=
+XJ-2FePAthrw7bGFjNZt1egoy4GXATyNMkZPgtIXs09ePnvvVJzbwgsOlekqORAx-2FVNk7EUm4=
+4kTXApRbHGzbT1vaU9HdCOYFSQNMWFNJPIXfYGwpRIA-3D-3D" alt=3D"" width=3D"1" hei=
+ght=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important;=
+border-width:0 !important;margin-top:0 !important;margin-bottom:0 !importan=
+t;margin-right:0 !important;margin-left:0 !important;padding-top:0 !importa=
+nt;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !i=
+mportant;"/>
+</body>
+</html>
+
+
+--34cbb01cc0dd832fcc7473b0f415c820e85eb7d2bba40a1fe6f65bcb55d6--

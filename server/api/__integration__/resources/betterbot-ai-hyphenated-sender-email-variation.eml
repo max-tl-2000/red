@@ -1,0 +1,45 @@
+Return-Path: <010101761eb5d823-91e49bc0-ffe4-4da8-b1e2-6cb7a3bc91e2-000000@us-west-2.amazonses.com>
+Received: from a27-56.smtp-out.us-west-2.amazonses.com (a27-56.smtp-out.us-west-2.amazonses.com [54.240.27.56])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 2k5bkvduera1rqgeejpbajv6a2ovmqgkrf150rg1
+ for g5-chat-w.greenfield@customerold.mail.reva.tech;
+ Tue, 01 Dec 2020 14:30:04 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of us-west-2.amazonses.com designates 54.240.27.56 as permitted sender) client-ip=54.240.27.56; envelope-from=010101761eb5d823-91e49bc0-ffe4-4da8-b1e2-6cb7a3bc91e2-000000@us-west-2.amazonses.com; helo=a27-56.smtp-out.us-west-2.amazonses.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of us-west-2.amazonses.com designates 54.240.27.56 as permitted sender) client-ip=54.240.27.56; envelope-from=010101761eb5d823-91e49bc0-ffe4-4da8-b1e2-6cb7a3bc91e2-000000@us-west-2.amazonses.com; helo=a27-56.smtp-out.us-west-2.amazonses.com;
+ dkim=pass header.i=@amazonses.com;
+ dmarc=none header.from=betterbot.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHZUFrSCtyZVVOMjN3NWp4UXFsQUhKS1cvQi9TN0JTMjJUQWM5Zkt4VjBmNUtVVFBjWDJ3ZDhRL1FuWlc1Tmg3RnNNaGs3WjNwNXRVL0hlalJ0MWVhNndDLzQwTnVITHdZVm5uWUVpdExFeWxaMGZKSkpGb2VXZnIrUXRGQzN0Zm43NHY0SWdxS0hHMFBqUWxZaVI3SGx4VVltWG5sMXZSNlFyZzUwZysrTTlhQ0dDYXhxYzJZM3RDRHRSVTh4dC9MaFJnaWZWQ2tUTGdJYkR1eUNZTEJQQ1JNUVR1NVVtNFdsVjNmSXJiam9KdllYR2pEd3NBZEJ1anRnQkFCcDN6YkZpcW5laVdYVFpCcVAwMHVweEJ6WnRmSHNtL2ZGU2t6cTBzWlh5Q244dlVVRms0QVc1T3BvclVtRkF5RWhjL2xqZGdBWXYzdmxrTHdNNDZYVmhBRHhrRHAvSTVrOUVJdlBBc3VwaktmRWw0VlFKS1V4YUM1Y0NWR3ZWSE9mdnh3PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=XXWjjmfNKEluV+a0uJCW0vSiMCO2QgENYYRtRXY5k8iSqFjAn4KgKJlkBJ5AW0vkMl2FW7VuRFntow1xdCU3GKNGXiPLhE8ZZfA+oyDXV8djqzWwwUNvx4mtIBy9SLHTzbsdRpFiieUZrD9Ilg9Qr3vlDgOYdn57tS+1fpYmLWI=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1606833004; v=1; bh=3z5bZe8Fp9YZqhA4fCg0/9/KFFWBYaJUfogjjnuTlYg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1606833002;
+	h=Message-ID:Date:Subject:From:To:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=3z5bZe8Fp9YZqhA4fCg0/9/KFFWBYaJUfogjjnuTlYg=;
+	b=LX6WsF2o5lwRGT94ZCqcYjKodpVTY7Veoc/MbA7UtQfHvbjEnFEw04KF+662gtGI
+	fpSdbOzB951XUGkRZqqhgF8HV6df25yfHxy40V5rtRy4WxsolwL2d+iZTkRU5eXb6BT
+	Q3zHG060oJyndVSlnMUhoJPQiBdRYW9VWS+1eqCM=
+Message-ID: <010101761eb5d823-91e49bc0-ffe4-4da8-b1e2-6cb7a3bc91e2-000000@us-west-2.amazonses.com>
+Date: Tue, 1 Dec 2020 14:30:02 +0000
+Subject: New lead, Greenfield Apartments
+From: BetterBot Queue Service <no-reply@betterbot.ai>
+To: g5-chat-w.greenfield@customerold.mail.reva.tech
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-SES-Outgoing: 2020.12.01-54.240.27.56
+Feedback-ID: 1.us-west-2.BGH4aTlnCkspQ1NYCYo3Qk3Ky10OCTK/67hox3B1z+I=:AmazonSES
+
+fullName:gero No last name provided<br/>
+phone:(408) 733-3377<br/>
+emai=
+l:<br/>
+qualification_numBedrooms:
+<br/>
+qualification_moveInDate:I_D=
+ONT_KNOW
+<br/>
+groupProfile:<br/>
+message:gero wants to be contacted =
+on the phone!   No specific floorplan was selected nor a specific price ran=
+ge defined.

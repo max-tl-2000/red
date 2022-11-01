@@ -1,0 +1,9 @@
+{
+  "headers": {
+    "host": "127.0.0.1:65439",
+    "accept-encoding": "gzip, deflate",
+    "user-agent": "node-superagent/1.8.3",
+    "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoidGVzdCIsInRlbmFudElkIjoiZTUwOGI4MDItMTBiZC00OWI1LTk0OTAtMWRkYzVhZjc1NWI0IiwidGVuYW50TmFtZSI6InRlc3RfZTUwOGI4MDItMTBiZC00OWI1LTk0OTAtMWRkYzVhZjc1NWI0IiwidGVuYW50UmVmcmVzaGVkQXQiOiJUaHUsIDMwIEp1biAyMDE2IDA4OjU1OjMzIEdNVCIsImlhdCI6MTQ2NzI3Njk0MiwiZXhwIjoxNDY3NTM2MTQyfQ.JqVXJTHyRTfBPqapBwQxFrzoEBwEHo_iVXmZpx37-nE",
+    "connection": "close"
+  }
+}

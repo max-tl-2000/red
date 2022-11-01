@@ -1,0 +1,26 @@
+{
+    "leaseTerms": { "monthlyRent": 5000, "leaseMonths": 12 },
+    "applicants" : [
+        {
+            "income": { "employmentGrossIncome": 5000 },
+            "as_information" : { "applicantType" : "Applicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "John", "lastName": "Jones" }
+                }
+            }
+        },
+        {
+            "income": { "employmentGrossIncome": 5000 },
+            "as_information" : { "applicantType" : "CoApplicant" },
+            "customers": {
+                "customer": {
+                "name": { "firstName": "John", "lastName": "Jones Jr" }
+                }
+            }
+        }
+    ],
+    "transactionNumber": 5001,
+    "applicantDecision": "Jones, John - APPROVED\nJones Jr, John - APPROVED",
+    "applicationDecision": "APPROVED"
+}

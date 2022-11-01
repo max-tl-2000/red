@@ -1,0 +1,54 @@
+@import '../../sass/_responsive.mixins.scss';
+@import '../../sass/_colors.scss';
+@import './_local.mixins.scss';
+
+.quote-info {
+  @include bottomBorder($grey200);
+
+  position: relative;
+  padding-bottom: (16rem/16);
+}
+
+.simple-table {
+  position: relative;
+  padding-bottom: (16rem/16);
+
+  &:not(:last-child) {
+    @include bottomBorder($grey200);
+  }
+
+  caption {
+    height: (32rem/16);
+  }
+
+  .charge-title-row {
+    padding-top: (8rem/16);
+    padding-bottom: (8rem/16);
+  }
+
+  .simple-table-header {
+    min-height: (36rem/16);
+    padding: 0 0 (8rem/16) 0;
+  }
+}
+
+.simple-row {
+  min-height: (32rem/16);
+
+  &:hover {
+    background: none;
+  }
+
+  &:after {
+    border-bottom: none;
+  }
+}
+
+@include to('xsmall2') {
+  .quote-info {
+    margin-top: (24rem/16);
+    padding-top: (24rem/16);
+    text-align: center;
+    border-top: 1px solid $grey200;
+  }
+}

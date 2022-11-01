@@ -1,0 +1,5 @@
+FinCharges,,,,,,,,,,
+PROPERTY,PERSON,OFFSET,AMOUNT,DATE,POSTMONTH,ACCOUNT,ACCRUAL,NOTES,REF,UNIT
+"cove","0000001t","appfee","43.00","9/4/2018","9/1/2018","48916","12000","Application Fee (Lease Signed) :Reva",":Applic","01-BARB-23"
+"cove","0000001t","secdep","42.00","9/4/2018","9/1/2018","24000","12000","Security Deposit",":MoveIn","01-BARB-23"
+"cove","0000001t","secdep","1000.00","9/4/2018","9/1/2018","24000","12000","Security Deposit",":MoveIn","01-BARB-23"

@@ -1,0 +1,34 @@
+.mainSection {
+  padding-left: 20px;
+}
+
+.email {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.lastRow {
+  margin-bottom: 0;
+}
+
+.successText {
+  margin-bottom: 20px;
+}
+
+.bg-file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.uploadStatus {
+  margin-top: (20rem/16);
+}
+
+.item-count-notification {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+.dateRange {
+  display: inline-block;
+  vertical-align: top;
+
+  &.wide {
+    display: block;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: .6em;
+  }
+}

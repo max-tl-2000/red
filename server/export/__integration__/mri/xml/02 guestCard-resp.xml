@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mri_s-pmrm_guestcardsbysiteid>
+  <entry>
+    <NameID>{{NameID}}</NameID>
+    <PropertyID>13780</PropertyID>
+    <FirstName>a45r2</FirstName>
+    <LastName>a45</LastName>
+    <Notes />
+    <PrimaryMarketingSource>@</PrimaryMarketingSource>
+    <LeasingConsultant>CDONOVAN</LeasingConsultant>
+    <Email>lucian+a45r2@reva.tech</Email>
+    <Phone />
+    <Type>P</Type>
+    <SiteID />
+    <PrimaryNameID>HO00456224</PrimaryNameID>
+    <ApplicantStatus>Co-Resident</ApplicantStatus>
+    <Guarantor>N</Guarantor>
+    <ProspectiveTenant>
+      <entry>
+        <NameID>HO00456238</NameID>
+        <DidNotLeaseReason />
+        <Beds>0.00</Beds>
+        <Baths>0.00</Baths>
+        <DesiredMoveInDate>2018-05-29T00:00:00.0000000</DesiredMoveInDate>
+        <CreatedDate />
+        <TotalOccupants>0</TotalOccupants>
+        <DesiredLeaseTerm>0</DesiredLeaseTerm>
+        <WaitList />
+        <WaitDate />
+        <PropertyPreference />
+        <UnitTypePreference />
+        <ApplicationStatus />
+        <VisitDate />
+        <Address />
+        <Pets />
+        <Interactions />
+      </entry>
+    </ProspectiveTenant>
+  </entry>
+</mri_s-pmrm_guestcardsbysiteid>

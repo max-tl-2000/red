@@ -1,0 +1,82 @@
+/*
+ * Copyright (c) 2022 Reva Technology Inc., all rights reserved.
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Licensed under the Elastic License 2.0; you may not use this file except
+ * in compliance with the Elastic License 2.0.
+ */
+
+export const ACTIVITY_TYPES = {
+  NEW: 'new',
+  REMOVE: 'remove',
+  REVOKE: 'revoke',
+  REJECTED: 'rejected',
+  CLOSE: 'close',
+  UPDATE: 'update',
+  PUBLISH: 'publish',
+  TEXT: 'text',
+  DUPLICATE: 'duplicate',
+  PRINT: 'print',
+  EMAIL: 'email',
+  ANSWERED: 'answered',
+  LISTENED: 'listened',
+  FORWARDED: 'forwarded',
+  READ: 'read',
+  COMPLETED: 'completed',
+  SUBMIT: 'submit',
+  APPROVE: 'approve',
+  DECLINE: 'decline',
+  CONFIRM: 'confirm',
+  IN_OFFICE_SIGNATURE: 'in office signature',
+  SIGN: 'sign',
+  COUNTERSIGN: 'countersign',
+  EXECUTE: 'execute',
+  VIEW: 'view',
+  EXPORT: 'export data',
+  GUEST_MERGED: 'guest merged',
+  MERGE_PARTIES: 'merge parties',
+  DONT_MERGE_PARTIES: "don't merge parties",
+  ADD_MANUAL_HOLD: 'add hold',
+  REMOVE_MANUAL_HOLD: 'remove hold',
+  ADD_LEASE_HOLD: 'add lease hold',
+  REMOVE_LEASE_HOLD: 'remove lease hold',
+  INVENTORY_RESERVED: 'inventory reserved',
+  INVENTORY_RELEASED: 'inventory released',
+  MOVEOUT: 'moveout',
+  MANUAL: 'manual',
+  DEACTIVATE: 'deactivate',
+  ARCHIVE: 'archive',
+  TERMINATED: 'terminated',
+  SPAWN: 'spawn',
+  DATA_SYNC: 'data sync',
+  SET_FLAG: 'set flag',
+  OTHER: 'other',
+};
+
+export const COMPONENT_TYPES = {
+  GUEST: 'guest',
+  APPOINTMENT: 'appointment',
+  PARTY: 'party',
+  PERSON: 'person',
+  QUOTE: 'quote',
+  EMAIL: 'email',
+  SMS: 'sms',
+  CALL: 'call',
+  LEASINGTEAM: 'leasing team',
+  TASK: 'task',
+  APPLICATION: 'application',
+  CONTACT_EVENT: 'contact event',
+  LEASE: 'lease',
+  INVENTORY_STATUS: 'inventory status',
+  MARKETING_FORM: 'marketing form',
+  DIRECT_MESSAGE: 'DM',
+};
+
+export const SUB_COMPONENT_TYPES = {
+  WAIVER: 'waiver',
+  RESCREENING: 'rescreening',
+  QUOTE: 'quote',
+  RENEWAL_LETTER: 'renewal letter',
+  RENEWAL: 'renewal',
+  MOVED: 'moved',
+  ALL_COMMS_MARKED_AS_READ: 'all comms marked as read',
+};

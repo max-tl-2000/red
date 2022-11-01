@@ -1,0 +1,70 @@
+Return-Path: <bounce-md_30097093.597cab6d.v1-7c9a154709154f188b17561668310303@mandrillapp.com>
+Received: from mail179-4.suw41.mandrillapp.com (mail179-4.suw41.mandrillapp.com [198.2.179.4])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id hodrev3jnuqj37jrpk6umfa5mla3ad02na900fg1
+ for leasing.cove@maximus.mail.reva.tech;
+ Sat, 29 Jul 2017 15:36:14 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mandrillapp.com designates 198.2.179.4 as permitted sender) client-ip=198.2.179.4; envelope-from=bounce-md_30097093.597cab6d.v1-7c9a154709154f188b17561668310303@mandrillapp.com; helo=mail179-4.suw41.mandrillapp.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mandrillapp.com designates 198.2.179.4 as permitted sender) client-ip=198.2.179.4; envelope-from=bounce-md_30097093.597cab6d.v1-7c9a154709154f188b17561668310303@mandrillapp.com; helo=mail179-4.suw41.mandrillapp.com;
+ dkim=pass header.i=@mail179-4.suw41.mandrillapp.com;
+ dkim=pass header.i=@mandrillapp.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIeUJLbkxzbThWcmVQaG5LdWtEajFyRmc5d2xKSDJFbVVZelhKK3l5MHl3KzlISzMybmdjODVGQ2xueEdaazg4eXp3Z2RDS0NCTVV5SGxOeDh3cEh2dnFVYU94TVM1dU5jSzJpd015blY0cWVFZHA1enlWdWNKSW4vN21hdVFhODQ3TUZHaGhQcDAxc29heVA3N1lONDYyeHRRTStlK2EvdEh2K0hiN1UwaDFRbGZEa280cmhmdm91S2d1cjJtYVh5U2hHWnNVaWdBWWRWS3oyQ2VFRWNBeVJoell0cWtURzV5VFpZNW5LTnhINHlzcXZhdzRvUnREQlY5Tkh5Znk3RjNPQkZKOWNZZDlGSW1oeFpPVE12dWNmWTlYNThOa0hnN0liVkkrSEJZditXQW1YVlpMZUw4YTZKV2Z5YkdjTFN2T3V5Q0lteU9kYVFGS3gwN3dodTNRWXAvUzFtb21USEplK2FWSExBcEd3PT0=
+X-SES-DKIM-SIGNATURE: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1501342575;
+	h=X-SES-RECEIPT:From:Subject:To:Message-Id:Date:MIME-Version:Content-Type;
+	bh=0gstmgwpsupxz+psF3DI3PaY8+gSfDqQYgQOrcS/UZM=;
+	b=Gm8cmXT6KUO0w1Zs8ETUZ4XoG0C+XO20DEyVpkN2tQXrlNyLCOPkYGu4BqDXCIET
+	DimSNxPpmJFDn8kHPYYwLPxVR0frbXj65oNaozAl5uhwwMm12atMhKC+xaTzP4+XF8L
+	7UUpiEX5v5no9rZJ3LSie6kw1YFNag65i7j/j47U=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mandrill; d=mail179-4.suw41.mandrillapp.com;
+ h=From:Sender:Subject:Reply-To:To:Message-Id:Date:MIME-Version:Content-Type; i=webinquiry@mail179-4.suw41.mandrillapp.com;
+ bh=PTi+NPKYPNgamcr9gbn0CXWnnU6yhGaAwQ7zlN+EVcs=;
+ b=Vl0DJ5QrEw0Qps9IYNd+s3Yen/TihqoibOiklMK6y1AateXGpz2M+yEQz2n3NRKSOEJJvMN1yHEK
+   uSoJSGhquOk/X457TthFRVAq2AT6+EplU2X4xf+32/3yIXehJoi9x01SC/RDh042d36shch+XvNi
+   0z/B/Danj44yh7LLDOM=
+Received: from pmta04.mandrill.prod.suw01.rsglab.com (127.0.0.1) by mail179-4.suw41.mandrillapp.com id hfilms22s285 for <leasing.cove@maximus.mail.reva.tech>; Sat, 29 Jul 2017 15:36:13 +0000 (envelope-from <bounce-md_30097093.597cab6d.v1-7c9a154709154f188b17561668310303@mandrillapp.com>)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com;
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1501342573; h=From :
+ Sender : Subject : Reply-To : To : Message-Id : Date : MIME-Version :
+ Content-Type : From : Subject : Date : X-Mandrill-User :
+ List-Unsubscribe; bh=PTi+NPKYPNgamcr9gbn0CXWnnU6yhGaAwQ7zlN+EVcs=;
+ b=i6uOLxyNE6E3BJ20pyofOwPwbZx6dtMz0/Jld83ZGR0tIyuQmsvKfAu3gPMjKh/ebnx7xx
+ l5UfFvy3zCN+rRf0zj/L7A9fC1mcdfafzLvPlmr2KQfr1TGnCrFR2OwHgpq5nxfuumFMHuBe
+ u4JgODxni1eMTqqQRXRtmknZMbwkw=
+From: Live at The Cove at Tiburon <webinquiry@reva.tech>
+Sender: Live at The Cove at Tiburon <webinquiry@mail179-4.suw41.mandrillapp.com>
+Subject: New submission from The Cove at Tiburon
+Return-Path: <bounce-md_30097093.597cab6d.v1-7c9a154709154f188b17561668310303@mandrillapp.com>
+Received: from [104.197.126.82] by mandrillapp.com id 7c9a154709154f188b17561668310303; Sat, 29 Jul 2017 15:36:13 +0000
+Reply-To: <webinquiry@reva.tech>
+To: <leasing.cove@maximus.mail.reva.tech>
+X-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com
+X-Report-Abuse: You can also report abuse here: http://mandrillapp.com/contact/abuse?id=30097093.7c9a154709154f188b17561668310303
+X-Mandrill-User: md_30097093
+Message-Id: <30097093.20170729153613.597cab6d86b1e7.91309269@mail179-4.suw41.mandrillapp.com>
+Date: Sat, 29 Jul 2017 15:36:13 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_av-YlsSmXMsFLkalyVu7j6Sig"
+
+--_av-YlsSmXMsFLkalyVu7j6Sig
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+  New submission from The Cove at Tiburon   fullName:Lois Lane
+ phone:(510) 944-4422
+ email:lois.reports@gmail.com
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+	<head>
+		<title>New submission from The Cove at Tiburon</title>
+	</head>
+	<body>
+		fullName:Lois Lane<br />
+phone:(510) 944-4422<br />
+email:lois.reports@gmail.com<br />
+
+

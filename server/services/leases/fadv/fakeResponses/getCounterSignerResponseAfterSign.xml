@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<GetCounterSignerTokenResponse xmlns="http://tempuri.org/">
+			<GetCounterSignerTokenResult>
+				<ResidentFormApi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ResidentFormApi1_0.xsd" xmlns="">
+					<Request>
+						<PropertyID>
+							<Identification IDType="Property ID">
+								<IDValue>132664</IDValue>
+							</Identification>
+							<MarketingName>132664</MarketingName>
+						</PropertyID>
+						<RequestType>GetCounterSignerToken</RequestType>
+						<OriginatorID>100025</OriginatorID>
+						<UserName>RedisruptOne</UserName>
+						<UserPassword>Winter2016</UserPassword>
+						<EnvelopeID>c80bdfb8-14bd-46c4-b768-d9ae456e3787</EnvelopeID>
+						<Url>https://do5mmj0fauqna.cloudfront.net/4rz708b</Url>
+						<DeclinedUrl>https://do5mmj0fauqna.cloudfront.net/gij2mk6</DeclinedUrl>
+						<CounterSignerUserName>Margaret Krivoruchko</CounterSignerUserName>
+					</Request>
+					<Response>
+						<ErrorCode>30036</ErrorCode>
+						<ErrorDescription>error occurred while submittal of FormApi service.</ErrorDescription>
+						<Status>Error</Status>
+					</Response>
+				</ResidentFormApi>
+			</GetCounterSignerTokenResult>
+		</GetCounterSignerTokenResponse>
+	</soap:Body>
+</soap:Envelope>

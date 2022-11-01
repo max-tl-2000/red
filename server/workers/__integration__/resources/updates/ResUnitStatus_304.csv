@@ -1,0 +1,6 @@
+ResUnitStatus
+Property_Code,Ref_Property_ID,StartDate,EndDate,Unit_Code,Date,Status,Tenant_Code,Ext_Ref_Tenant_Id,ApplyDate,ApproveDate,SignDate,MoveInDate,MoveOutDate,LeaseFromDate,LeaseToDate,NoticeDate,AvailableDate,RentReady,VacantDate,ReadyDate,Ref_Unit_Id
+"lark",,02/01/2011,08/28/2013,"100-0101",09/19/2013,"Occupied No Notice","t0812749",,01/26/2011,,01/26/2011,02/01/2011,,02/01/2013,01/31/2014,,,0,,,
+"lark",,08/29/2013,09/27/2013,"100-0101",09/19/2013,"Notice Unrented","t0812749",,01/26/2011,,01/26/2011,02/01/2011,09/28/2013,02/01/2013,01/31/2014,08/29/2013,09/30/2013,0,09/28/2013,09/28/2013,
+"lark",,11/16/2010,08/31/2013,"100-0102",09/19/2013,"Occupied No Notice","tl790695",,11/01/2010,,11/01/2010,11/16/2010,,12/01/2012,11/30/2013,,,0,,,
+"lark",,09/01/2013,09/23/2013,"100-0102",09/19/2013,"Notice Unrented","tl790695",,11/01/2010,,11/01/2010,11/16/2010,09/24/2013,12/01/2012,11/30/2013,09/01/2013,09/30/2013,0,09/24/2013,09/24/2013,

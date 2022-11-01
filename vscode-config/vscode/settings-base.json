@@ -1,0 +1,61 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "search.exclude": {
+    "**/node_modules": false,
+    "./coverage/**": true,
+    "./.sonar/**": true,
+    "./resources/generated-routes/**": true,
+    "logs/**": true,
+    "report_integration/**": true,
+    ".nyc_output/**": true,
+    ".cache/**": true,
+    ".git/**": true,
+    ".idea/**": true,
+    ".snyk": true,
+    "red-dist/**": true,
+    "dist/**": true,
+    "dev-dist/**": true,
+    "stats*": true,
+    "coverage/**": true
+  },
+  // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
+  "files.autoSave": "onFocusChange",
+  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 2,
+  // Insert spaces when pressing Tab. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  "editor.insertSpaces": true,
+  "typescript.format.enable": false,
+  // Enable/disable default JavaScript formatter.
+  "javascript.format.enable": false,
+  // Enable/disable TypeScript validation.
+  "typescript.validate.enable": true,
+  // Enable/disable JavaScript validation.
+  "javascript.validate.enable": false,
+  // Configure glob patterns for excluding files and folders.
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/dist": true,
+      "**/dev-dist": true,
+      "**/static": true,
+      "**/.cache": true,
+      "**/.box": true,
+      "**/.temp": true,
+      "**/.nyc_output": true,
+      "**/.vagrant": true,
+      "**/logs": true,
+      "**/coverage": true,
+      ".idea": true,
+      ".sonar": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/uploads/**": true,
+    "**/coverage/**": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

@@ -1,0 +1,7 @@
+{
+  "error": {
+    "message": "Pool was destroyed",
+    "name": "Error",
+    "stack": "Error: Pool was destroyed\n    at Pool._destroyPool (/Users/roy/royws/red/node_modules/pool2/lib/pool.js:548:20)\n    at Pool.<anonymous> (/Users/roy/royws/red/node_modules/pool2/lib/pool.js:465:18)\n    at Pool.<anonymous> (/Users/roy/royws/red/node_modules/pool2/lib/pool.js:505:17)\n    at tryCatcher (/Users/roy/royws/red/node_modules/knex/node_modules/bluebird/js/main/util.js:26:23)\n    at Promise.errorAdapter (/Users/roy/royws/red/node_modules/knex/node_modules/bluebird/js/main/nodeify.js:36:34)\n    at Promise._settlePromiseAt (/Users/roy/royws/red/node_modules/knex/node_modules/bluebird/js/main/promise.js:579:21)\n    at Promise._settlePromises (/Users/roy/royws/red/node_modules/knex/node_modules/bluebird/js/main/promise.js:697:14)\n    at Async._drainQueue (/Users/roy/royws/red/node_modules/knex/node_modules/bluebird/js/main/async.js:123:16)\n    at Async._drainQueues (/Users/roy/royws/red/node_modules/knex/node_modules/bluebird/js/main/async.js:133:10)\n    at Immediate.Async.drainQueues [as _onImmediate] (/Users/roy/royws/red/node_modules/knex/node_modules/bluebird/js/main/async.js:15:14)\n    at processImmediate [as _immediateCallback] (timers.js:383:17)"
+  }
+}

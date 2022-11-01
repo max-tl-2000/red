@@ -1,0 +1,83 @@
+@import '../../sass/_responsive.mixins.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.grid {
+  // @include container();
+  background: #ea80fc;
+  // padding: 0 .5em;
+}
+
+.cell {
+  @include body();
+
+  min-height: 100px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.left-panel {
+  @include body();
+
+  min-height: 100px;
+  background: #fff;
+}
+
+.small {
+  &.grid {
+    //@include container();
+  }
+
+  .cell {
+    @include span(1, 4, 16px, after);
+
+    &:nth-child(12),
+    &:nth-child(8),
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  .left-panel {
+    @include span(3, 4, 16px, after);
+
+    margin-right: 0;
+    margin-left: gridWidth(1, 4, 16px, after);
+  }
+}
+
+.medium {
+  &.grid {
+    //@include container(0);
+  }
+
+  .cell {
+    @include span(1, 8, 16px, after);
+
+    &:nth-child(8) {
+      margin-right: 0;
+    }
+  }
+
+  .left-panel {
+    @include span(3, 8, 16px, after);
+
+    margin-left: gridWidth(2, 8, 16px, after);
+  }
+}
+
+.large {
+  &.grid {
+    // @include container(24px);
+  }
+
+  .cell {
+    @include span(1, 12, 24px);
+    // @include span(1 of 4);
+  }
+
+  .left-panel {
+    @include span(3, 12, 24px);
+
+    margin-left: gridWidth(3, 12, 24px);
+  }
+}

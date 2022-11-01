@@ -1,0 +1,58 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mock-payment-form.css">
+  <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <form id="form" action="javascript:Aptexx.submitPayment()" method="post">
+   	<div class="wrapper">
+      <label for="name" align="left">Full Name</label>
+   	  <div>
+   	  	<input id="fullName" type="text" name="name" required/>
+   	  </div>
+   	  <label for="cardnumber">Card Number</label>
+   	  <div>
+   	  	<input id="cardNumber" type="text" name="cardnumber" required/>
+   	  </div>
+      <label for="cvv">CVV</label>
+      <div>
+        <input id="cvv" type="text" name="cvv" required/>
+      </div>
+   	  <label for="month">Card Expiration Date</label>
+   	  <div class="inline">
+  	   	<select id="cardExpirationDate" name="month" required>
+     	   	<option></option>
+     	   	<option>01</option>
+     	   	<option>02</option>
+     	   	<option>03</option>
+     	   	<option>04</option>
+     	   	<option>05</option>
+     	   	<option>06</option>
+     	   	<option>07</option>
+     	   	<option>08</option>
+     	   	<option>09</option>
+     	   	<option>10</option>
+     	   	<option>11</option>
+     	   	<option>12</option>
+     	  </select><select id="cardExpirationYear" class="last" name="year" required>
+  	   	  <option></option>
+  		    <option>2022</option>
+  		    <option>2023</option>
+  		    <option>2024</option>
+  		    <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+  	   	</select>
+   	  </div>
+      <div>
+        <label id="error-message" class="error-message hide">The transaction failed. Try another card number.</label>
+      </div>
+	  <div class="inline" align="right">
+		<input id="btnCancel" onClick="Aptexx.cancelPayment()" type="button" class="btn" value="Cancel" name="Cancel"/>
+	<input id="btnReviewPayment" type="submit" class="btn" value="Pay" name="Pay"/>
+      </div>
+    </div>
+  </form>
+  <script type="text/javascript" src="mock-payment-form.js"></script>
+</body>
+</html>

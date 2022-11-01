@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`merge-branches defaultValues Values from config Default values in config should match the snapshot 1`] = `
+Object {
+  "branchesToMerge": Array [
+    "22.05.09",
+    "22.08.30",
+    "master",
+  ],
+  "commitsToVerify": Array [],
+  "featureBranches": Array [
+    Object {
+      "base": "master",
+      "branch": "feature_dashboard_improvements",
+    },
+  ],
+  "ignoreMergeCheckOnBranches": Array [
+    "master",
+  ],
+  "remote": "origin",
+}
+`;
+
+exports[`merge-branches feature branches when using feature branches option should generate the comamnds to merge the base branches into the feature branches 1`] = `
+Array [
+  Array [
+    "git checkout 19.05.27",
+  ],
+  Array [
+    "git pull origin 19.05.27",
+  ],
+  Array [
+    "git checkout 19.06.10",
+  ],
+  Array [
+    "git pull origin 19.06.10",
+  ],
+  Array [
+    "git merge 19.05.27 --no-edit --no-ff",
+  ],
+  Array [
+    "git push origin 19.06.10",
+  ],
+  Array [
+    "git checkout master",
+  ],
+  Array [
+    "git pull origin master",
+  ],
+  Array [
+    "git merge 19.06.10 --no-edit --no-ff",
+  ],
+  Array [
+    "git push origin master",
+  ],
+  Array [
+    "git checkout master",
+  ],
+  Array [
+    "git pull origin master",
+  ],
+  Array [
+    "git checkout renewals",
+  ],
+  Array [
+    "git pull origin renewals",
+  ],
+  Array [
+    "git merge master --no-edit --no-ff",
+  ],
+  Array [
+    "git push origin renewals",
+  ],
+  Array [
+    "git checkout 19.06.10",
+  ],
+  Array [
+    "git pull origin 19.06.10",
+  ],
+  Array [
+    "git checkout some_feature",
+  ],
+  Array [
+    "git pull origin some_feature",
+  ],
+  Array [
+    "git merge 19.06.10 --no-edit --no-ff",
+  ],
+  Array [
+    "git push origin some_feature",
+  ],
+]
+`;
+
+exports[`merge-branches options when dryRun = true should print the list of commands to execute 1`] = `
+Array [
+  Array [
+    "
+",
+  ],
+  Array [
+    "
+# Checkout branch 19.05.27
+git checkout 19.05.27
+
+# Pulling from origin/19.05.27
+git pull origin 19.05.27
+
+# Checking if '19.06.10' release branch is not included in '19.05.27' release branch
+git log | grep \\"Merge branch '19.06.10\\" || true
+
+# Checking if 'master' release branch is not included in '19.05.27' release branch
+git log | grep \\"Merge branch 'master\\" || true
+
+# Checkout branch 19.06.10
+git checkout 19.06.10
+
+# Pulling from origin/19.06.10
+git pull origin 19.06.10
+
+# Checking if 'master' release branch is not included in '19.06.10' release branch
+git log | grep \\"Merge branch 'master\\" || true
+
+# Merging 19.05.27 into 19.06.10
+git merge 19.05.27 --no-edit --no-ff
+
+# Checking if 'master' release branch is not included in '19.06.10' release branch
+git log | grep \\"Merge branch 'master\\" || true
+
+# Push 19.06.10 to origin
+git push origin 19.06.10
+
+# Checkout branch master
+git checkout master
+
+# Pulling from origin/master
+git pull origin master
+
+# Merging 19.06.10 into master
+git merge 19.06.10 --no-edit --no-ff
+
+# Push master to origin
+git push origin master",
+    "
+",
+  ],
+]
+`;
+
+exports[`merge-branches options when dryRun = true when using feature branches option should generate the commands to merge the base branches into the feature branches 1`] = `
+Array [
+  Array [
+    "
+",
+  ],
+  Array [
+    "
+# Checkout branch 19.05.27
+git checkout 19.05.27
+
+# Pulling from origin/19.05.27
+git pull origin 19.05.27
+
+# Checking if '19.06.10' release branch is not included in '19.05.27' release branch
+git log | grep \\"Merge branch '19.06.10\\" || true
+
+# Checking if 'master' release branch is not included in '19.05.27' release branch
+git log | grep \\"Merge branch 'master\\" || true
+
+# Checkout branch 19.06.10
+git checkout 19.06.10
+
+# Pulling from origin/19.06.10
+git pull origin 19.06.10
+
+# Checking if 'master' release branch is not included in '19.06.10' release branch
+git log | grep \\"Merge branch 'master\\" || true
+
+# Merging 19.05.27 into 19.06.10
+git merge 19.05.27 --no-edit --no-ff
+
+# Checking if 'master' release branch is not included in '19.06.10' release branch
+git log | grep \\"Merge branch 'master\\" || true
+
+# Push 19.06.10 to origin
+git push origin 19.06.10
+
+# Checkout branch master
+git checkout master
+
+# Pulling from origin/master
+git pull origin master
+
+# Merging 19.06.10 into master
+git merge 19.06.10 --no-edit --no-ff
+
+# Push master to origin
+git push origin master
+
+# Checkout branch master
+git checkout master
+
+# Pulling from origin/master
+git pull origin master
+
+# Checking if 'renewals' release branch is not included in 'master' release branch
+git log | grep \\"Merge branch 'renewals\\" || true
+
+# Checkout branch renewals
+git checkout renewals
+
+# Pulling from origin/renewals
+git pull origin renewals
+
+# Merging master into renewals
+git merge master --no-edit --no-ff
+
+# Push renewals to origin
+git push origin renewals
+
+# Checkout branch 19.06.10
+git checkout 19.06.10
+
+# Pulling from origin/19.06.10
+git pull origin 19.06.10
+
+# Checking if 'some_feature' release branch is not included in '19.06.10' release branch
+git log | grep \\"Merge branch 'some_feature\\" || true
+
+# Checkout branch some_feature
+git checkout some_feature
+
+# Pulling from origin/some_feature
+git pull origin some_feature
+
+# Merging 19.06.10 into some_feature
+git merge 19.06.10 --no-edit --no-ff
+
+# Push some_feature to origin
+git push origin some_feature",
+    "
+",
+  ],
+]
+`;

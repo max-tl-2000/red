@@ -1,0 +1,72 @@
+@import '../../sass/_colors';
+
+.panel {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  .pagePanel {
+    position: relative;
+
+    &.padContent {
+      padding: (24em/16);
+    }
+  }
+
+  &.rightPanel {
+    background: #eee;
+
+    &.floating {
+      position: absolute;
+      right: 0;
+      box-shadow: -1px 1px 5px 2px rgba(0,0,0,.1);
+    }
+  }
+
+  &.leftPanel {
+    position: relative;
+    background: #fff;
+  }
+
+  &.blocked {
+    .scrollArea:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: ' ';
+      background-color: rgba($black, .26);
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.panelContainer {
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, .1);
+}
+
+.scrollArea {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

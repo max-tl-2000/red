@@ -1,0 +1,7 @@
+version: '2.1'
+services:
+  coredb:
+    tmpfs: /var/lib/postgresql/data
+
+  rabbitmq:
+    tmpfs: /var/lib/rabbitmq

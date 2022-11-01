@@ -1,0 +1,17 @@
+@import '../../sass/_colors.scss';
+
+.close-or-archive-parties-dialog {
+  width: (480rem/16);
+
+  .close-or-archive-parties-body {
+    margin-left: 2.5em;
+  }
+
+  .close-or-archive-parties-field {
+    margin-bottom: .5em;
+  }
+
+  .property-dropdown {
+    margin-top: 2em;
+  }
+}

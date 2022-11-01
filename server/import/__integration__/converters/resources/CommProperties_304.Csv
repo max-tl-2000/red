@@ -1,0 +1,4 @@
+CommProperties
+Property_Code,Country,Ext_Ref_Property_Id,Ref_Owner_Id,Owner,Addr1,Addr2,Addr3,Addr4,City,State,ZipCode,Notes,Vat_Recovery_Type,Vat_Opted,International,Contract_Reserve,Commission_Percent,Commission_Min,Contract_Exp_Date,Affordable,Student,Association,CanadianSocialHousing,Commercial,Military,PublicHousing,Senior,Residential,Is_Estate,Tax_Status_Changed,Status,Tax_Recovery_Percentage,NCREIF_Manager_ID,Purchase_Price,True_Acquisition_Asset_Date,Net_Sales_Price,Asset_Date_Not_NCREIF,Project_Type,Ideal_Lease,Months_To_Lease,Acquisition_Date,Disposition_Asset_Date,MLA,VAT_Tran_Type,Pur_Tran_Type,Effective_Date
+"cove","us",,,,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",,,0,0,0.00,0.000000,0.00,,0,0,0,0,0,0,0,0,1,0,,,,,0.000000,,0.000000,,,0,0,11/26/2013,,,,,
+"lark","us",,,,"Serenity at Larkspur","700 Lincoln Village Circle",,,"Larkspur","CA","94939",,,0,0,0.00,0.000000,0.00,,0,0,0,0,0,0,0,0,1,0,,,,,0.000000,,0.000000,,,0,0,,,,,,

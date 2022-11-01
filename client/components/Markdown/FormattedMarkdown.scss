@@ -1,0 +1,67 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.markdown {
+  padding: (1rem/16) 0;
+
+  p {
+    @include body();
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.15rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 1.3em 0 .75em 0;
+  }
+
+  ul {
+    @include body();
+
+    margin: .6em 0 .6em 0;
+
+    li {
+      margin: .4rem 0 .4rem 1rem;
+      list-style-type: disc;
+    }
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+[data-component='markdown'].markdown {
+  p {
+    line-height: 1.3rem;
+    margin-bottom: .8rem;
+    text-align: justify;
+  }
+
+  &.leftAlign {
+    p {
+      text-align: left;
+    }
+  }
+}

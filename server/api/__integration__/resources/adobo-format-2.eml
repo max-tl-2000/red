@@ -1,0 +1,266 @@
+Return-Path: <postmaster@customerold.com>
+Received: from mail-oo1-f97.google.com (mail-oo1-f97.google.com [209.85.161.97])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id l9v2u9t80i9imoed7go76f1fm99hr62bg0jb92g1
+ for cimarron.abodo.vanity@customerold.mail.reva.tech;
+ Tue, 12 May 2020 18:15:00 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of customerold.com designates 209.85.161.97 as permitted sender) client-ip=209.85.161.97; envelope-from=postmaster@customerold.com; helo=mail-oo1-f97.google.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of customerold.com designates 209.85.161.97 as permitted sender) client-ip=209.85.161.97; envelope-from=postmaster@customerold.com; helo=mail-oo1-f97.google.com;
+ dkim=pass header.i=@mandrillapp.com;
+ dkim=pass header.i=@abodo.com;
+ dmarc=none header.from=abodo.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGUmFuN3NLSnhaWU00RW56RFhJYyt0ZXl3YWpJOHJOQnMvNlRPSElibGpJeC9BbXk1ak9CUHVLd25yNmhjakhReVpyVUY0N1luWUhCakZBdi9qOVhqTWVVRHdrOWl4aUZ5RXh2Sm1KK1gxeWcwMGJraGJBSXp1SytKb0x5d0srNlh0TjBrVVFEdGtWZjdGclBJU0xkVlpXUjJKODRRNmxmY09QVnVoYjJaeGR4aFUyZmgvREJYSXRScTVDSmdJaXU3TStIUEZkUGdVdE1FaWd2WFZNQmFLZ1V1WGxtdnMrT1BUZE5zYnNRejQvMWlzWEtIcUtHY1l0Vms5b3RjR1cwcHJoVlg3THlEVHlRK01Fay9jMXpvcDk2NWxpOTVBa1lPZWZEb3FoKzlyZHc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=dye5OBJ9A3swFr/r7j9JUBTHUYmPANEM9j661Re1P6+ZRqV762FtCzzeTfUm39CQHfYJlL0fmqULYOvMMCIh/+v9+2KncQAzBzRltpaiFuzyv+hC7KS1WEo5O6+FDjjxqeLIlMabaWcvOHGoIoRPIztue01eMDeyvZ3N6EVAPzc=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1589307301; v=1; bh=hAdDBWfsY4Mr6yHpmGcncn/6XlEEmKgjY35MVA32gLE=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: by mail-oo1-f97.google.com with SMTP id t3so2904685oou.8
+        for <cimarron.abodo.vanity@customerold.mail.reva.tech>; Tue, 12 May 2020 11:15:00 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:dkim-signature:dkim-signature:from:subject:to
+         :message-id:date:mime-version;
+        bh=vUzTnylve1kz4gLvi6q9TVWYLOy7Yx2KTJCORRvNX9I=;
+        b=Zfbbb3S/jOHhJip/tSbrqiq8XfOJBbtAsRiZnQXGITf1b0dtTvl5O3PphvGL7xMxlN
+         lVmspIXo+Lk6aMzoljoZh6Oy1ORGAbj6YVzNS2uvu+c5MPHgOV5n7Tbh2sYlDlYz/BUl
+         ph/t4v0tHrvyIdJZd8HmrM3iVKNHVlDcEvlqt4DVQmmMrX1aWsRMKZcLa0uYNdb8W2hY
+         olXABs75vhTgqvBTcy66WKsMmmlaNq3y+5Y8kCcSUKuFS6qZFQKC2kIN7+3YAmiTHMFy
+         Wd9GpprSXRvcitarB3WHq8+UXCJB/LQhC9BVS9DnyQ72BYYvHXfeACYGgwPYRb1zvGp6
+         ICiA==
+X-Gm-Message-State: AGi0PubnwwRvm8gPc5bivMHBT/93eSIapyRGxGKMNF040JeX9FNDkdlr
+	d0M0FO6N+x3OJyfcm4yzYMz6Pj51jkS1papjFlHZN96edSz+4g==
+X-Google-Smtp-Source: APiQypKNEE6a9hNRneHHZSgNg870Encjx3DfdWnWgeq2rjrIunxN0NhjYbOuFYYBjdjGxyHWquMkOclg/q7Z
+X-Received: by 2002:a4a:6743:: with SMTP id j3mr19089317oof.82.1589307300126;
+        Tue, 12 May 2020 11:15:00 -0700 (PDT)
+Return-Path: <postmaster@customerold.com>
+Received: from customerold.com (autodiscover.customerold.com. [66.97.231.50])
+        by smtp-relay.gmail.com with ESMTPS id v7sm2196908ooo.20.2020.05.12.11.15.00
+        for <cimarron.abodo.vanity@customerold.mail.reva.tech>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 May 2020 11:15:00 -0700 (PDT)
+X-Relaying-Domain: customerold.com
+Received: from Exchange2016.customerold.com (192.168.200.50) by Exchange2016.customerold.com
+ (192.168.200.50) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.1713.5; Tue, 12 May
+ 2020 13:14:59 -0500
+Received: from mail-yb1-f200.google.com (209.85.219.200) by
+ Exchange2016.customerold.com (192.168.200.50) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.1713.5
+ via Frontend Transport; Tue, 12 May 2020 13:14:59 -0500
+Received: by mail-yb1-f200.google.com with SMTP id n77so8587156ybf.2
+        for <abodo.cimarron@customeroldproperties.com>; Tue, 12 May 2020 11:14:59 -0700 (PDT)
+X-Received: by 2002:a25:9384:: with SMTP id a4mr35305975ybm.79.1589307299036;
+        Tue, 12 May 2020 11:14:59 -0700 (PDT)
+X-Received: by 2002:a25:9384:: with SMTP id a4mr35305943ybm.79.1589307298737;
+        Tue, 12 May 2020 11:14:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1589307298; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KP5zKbZSiRoFp7exu16KpXvef5gx9KaXvpinPpUF9TW95ciYbko1FYMeP9k8PX4hEi
+         zBvvMmQgSx7IZEvSz1nJ9h4QMy8NOtL65kyVL+y7aBgWXWIMGpDtIPzl/bfxTG9y/7Mo
+         dZGjx1l83GoZzbFKqxf+x3BD2KAl3DIR4T+IgTeNf5QxELPcDzGsjIWCt8MsAP75iMfY
+         CBl4qdryY63RkCzfGV4U4cjTdLVsJI6l+Uf5/+1JS9qGV88HD0XVBY+37QQ9NezyfgjD
+         xPSWY6nc8K+ItxjN4E660vroOcrl2C+FN60kdX9Gw5U+XYlkVLl5978+1exUIt0u0T6w
+         GoCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:date:message-id:to:subject:from:dkim-signature
+         :dkim-signature;
+        bh=vUzTnylve1kz4gLvi6q9TVWYLOy7Yx2KTJCORRvNX9I=;
+        b=Y4gSl1so6e+Fche1qQKbp6u66IQQsZUelpov8VAMmSqlnHFNVdnAXpuruypYUXsJVz
+         lsxY4ZwnE/9g2YQ8wki6Sho6goxrDA+ggEDludmnuWYO8b72NURpKgqx606pxDI2+km7
+         OWVj7v8PcpKId1EeiUHsr+rgrZwHXFExz/4VOblZDoe93O4nVPOpntJB5HvjS9/vN4j0
+         sr1z9fo+/q4YY89X1I+GU0VB7ptuvRMMmbbOBctjZZIvZKYdXsJhIZcC2yAwCVcrSyIh
+         SBY8i+xALzUsm4/m+u2F5gMtCnEDtXcEeZPPnqgS7nsC0rTIZpoSI9vJdYIJQhTl0neF
+         XB2A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@abodo.com header.s=mandrill header.b="PsUDT/eb";
+       dkim=pass header.i=@mandrillapp.com header.s=mandrill header.b=MeWXofGJ;
+       spf=pass (google.com: domain of bounce-md_4608894.5ebae7a2.v1-13860fa9a016409c81f9f6f1c30bb533@mandrillapp.com designates 198.2.180.29 as permitted sender) smtp.mailfrom=bounce-md_4608894.5ebae7a2.v1-13860fa9a016409c81f9f6f1c30bb533@mandrillapp.com
+Received: from mail180-29.suw31.mandrillapp.com (mail180-29.suw31.mandrillapp.com. [198.2.180.29])
+        by mx.google.com with ESMTPS id 22si12352518ybf.297.2020.05.12.11.14.58
+        for <abodo.cimarron@customeroldproperties.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 May 2020 11:14:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-md_4608894.5ebae7a2.v1-13860fa9a016409c81f9f6f1c30bb533@mandrillapp.com designates 198.2.180.29 as permitted sender) client-ip=198.2.180.29;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mandrill; d=abodo.com;
+ h=From:Subject:To:Message-Id:Date:MIME-Version:Content-Type; i=info@abodo.com;
+ bh=vUzTnylve1kz4gLvi6q9TVWYLOy7Yx2KTJCORRvNX9I=;
+ b=PsUDT/ebwTcgQ1R0v/0X56QffX+R61oWnM5umLKlje7dF/r8dRyg+TmPtWrq1LU4Te9BPB6G7xtu
+   HvTqghsvBZ/1VZTaevrZdmoeFNVoFC/Zxas4unTxRqcLr4yI3FM8rU4bNo9XNCGZySVa4ZyOaz/b
+   y/bcBus3NqX4xEUjr14=
+Received: from pmta03.mandrill.prod.suw01.rsglab.com (127.0.0.1) by mail180-29.suw31.mandrillapp.com id hnbjq422sc0g for <abodo.cimarron@customeroldproperties.com>; Tue, 12 May 2020 18:14:58 +0000 (envelope-from <bounce-md_4608894.5ebae7a2.v1-13860fa9a016409c81f9f6f1c30bb533@mandrillapp.com>)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com; 
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1589307298; h=From : 
+ Subject : To : Message-Id : Date : MIME-Version : Content-Type : From : 
+ Subject : Date : X-Mandrill-User : List-Unsubscribe; 
+ bh=vUzTnylve1kz4gLvi6q9TVWYLOy7Yx2KTJCORRvNX9I=; 
+ b=MeWXofGJG/rQ+ns2GyN0hExvh+l+UJC25zr/b3nWDl3qtOC+ZtxVz/wFY/ekm1YU9z+wYR
+ GesCYiSmuFDWRjb/EPO9WP7vNYvZc90A/6t6Q6r6g8gao4jOKohxiTzGO2ILRFJaY/AxnOig
+ DT3s1oKrZ9aDmgDjxyNJQbJGCikPY=
+From: ABODO Lead <info@abodo.com>
+Subject: You may have missed a lead.
+Return-Path: <bounce-md_4608894.5ebae7a2.v1-13860fa9a016409c81f9f6f1c30bb533@mandrillapp.com>
+Received: from [54.160.207.39] by mandrillapp.com id 13860fa9a016409c81f9f6f1c30bb533; Tue, 12 May 2020 18:14:58 +0000
+To: abodo.cimarron@customeroldproperties.com
+Message-Id: <5ebae7a23e92d_1d7a2387a78340df@buckeye.mail>
+X-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com
+X-Report-Abuse: You can also report abuse here: http://mandrillapp.com/contact/abuse?id=4608894.13860fa9a016409c81f9f6f1c30bb533
+X-Mandrill-User: md_4608894
+Date: Tue, 12 May 2020 18:14:58 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_av-4pXqoIrhZJabDDCK2NkSUA"
+X-Gm-Spam: 0
+X-Gm-Phishy: 0
+
+--_av-4pXqoIrhZJabDDCK2NkSUA
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+CUSTOMEROLD Properties,
+
+Shoot, it looks like you may have missed a phone call from an interested renter.
+
+You received a call from 704-904-5492 on Tuesday at 01:14 PM but the call looks like it may have been missed.
+
+The caller was interested in the property: <a href='https://www.abodo.com/omaha-ne/properties/4049545'>Cimarron Hills Apartments</a>.
+
+If you got it, just ignore this email. If not, we just wanted to make sure you had their number to call them back.
+
+Thanks,
+
+The ABODO Team
+
+Why am I getting this email?
+
+An interested renter just tried calling the property listed above. However, based on the length of the call it's likely no one picked up and no voicemail was left. This email was sent so you have the interested renters contact information to contact them.
+
+
+--_av-4pXqoIrhZJabDDCK2NkSUA
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style type="text/css">
+  /*<![CDATA[*/
+  .ExternalClass {width:100%;}
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%;}
+  body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+  body {margin:0; padding:0;}
+  table td {border-collapse:collapse;}
+  @media (max-width: 480px) {
+    div, p, a, li, td { -webkit-text-size-adjust:none; }
+    table[class=body] {width:300px !important;}
+    table[class~=module], div[class~=module] {width:300px !important;}
+    table[class~=inner-module], td[class~=inner-module] {width:300px !important;padding-left:20px !important;padding-right:20px !important;}
+    *[class~=mobile-full-width] {width:300px !important;}
+    *[class~=mobile-hide] {display:none !important;}
+    *[class~=mobile-show] {display:block !important;max-height: none !important;}
+    *[class~=mobile-rel-pos] {position:relative !important;}
+    *[class~=mobile-abs-pos] {position:absolute !important;}
+    *[class~=mobile-h0] {height:0 !important;font-size:0 !important;line-height:0 !important;}
+    *[class~=mobile-h5] {height:5px !important;font-size:5px !important;line-height:5px !important;}
+    *[class~=mobile-h10] {height:10px !important;font-size:10px !important;line-height:10px !important;}
+    *[class~=mobile-h15] {height:15px !important;font-size:15px !important;line-height:15px !important;}
+    *[class~=mobile-h20] {height:20px !important;font-size:20px !important;line-height:20px !important;}
+    *[class~=mobile-h30] {height:30px !important;font-size:30px !important;line-height:30px !important;}
+    table[class=social-footer] {width:200px !important;}
+    table[class=social-footer] td[class=social-type] {padding:0 10px 0px 10px !important;}
+    table[class=social-footer] td[class=social-label] {display:none !important;}
+    table[class=legal-footer] td {padding:0 10px 0 10px !important;} td[class~="salutation"] {padding:20px 0 20px 0 !important;}
+    td[class="valediction"] {font-size:24px !important;}
+    td[class="partner-valediction"] {font-size:22px !important;}
+    table[class~="module-header"] td[class=header] {font-size:24px !important;line-height:22px !important;}
+    table[class~="module-title"] td[class=header] {padding:0 20px !important;}
+
+    table[class~=mobile-upsell] td[class~=download-buttons] {padding-bottom:30px !important;}
+    img[class=apple-store] {width:150px !important;}
+    img[class=google-play] {width:150px !important;}
+    td[class~="notification"] {padding:20px !important;}
+    table[class~=full-width-button] {width:260px !important;}
+    table[class~=full-width-primary-cta] td[class=h-padding] {width:20px !important;}
+    table[class~=image-wrapper] img {width:300px !important;}
+    table[class~=image-wrapper] img[class~=border] {width:298px !important;}
+    table[class~=text-wrapper] table[class~=full-width-module-wrapper] {width:298px !important;padding-left:20px !important;padding-right:20px !important;}
+    table[class~=email-width-module-wrapper] {width:380px !important;padding-left:20px !important;padding-right:20px !important;}
+  }
+  /*]]>*/
+</style>
+
+    <title></title>
+  </head>
+  <body>
+    <div style="margin: auto; width: 40%;">
+
+      <table class="module" width="620" border="0" cellpadding="0" cellspacing="0" style="margin-top: 10px;border-collapse:collapse;">
+        <tr>
+          <td align="left" valign="bottom" height="30">
+            <div style="height:10px;font-size:10px;line-height:10px;">
+              &nbsp;
+            </div>
+            <a href="https://mandrillapp.com/track/click/4608894/www.abodo.com?p=eyJzIjoiWnk0QmVNeDZabEROSDI4RGp4Q3NwRGVFQUxrIiwidiI6MSwicCI6IntcInVcIjo0NjA4ODk0LFwidlwiOjEsXCJ1cmxcIjpcImh0dHA6XFxcL1xcXC93d3cuYWJvZG8uY29tXCIsXCJpZFwiOlwiMTM4NjBmYTlhMDE2NDA5YzgxZjlmNmYxYzMwYmI1MzNcIixcInVybF9pZHNcIjpbXCIyNWU0ZjNhNzMyOTFkNDQwNGNlNTJiMjg1ZDJjMmNlMzMxMjJiZjY2XCJdfSJ9" title="Visit ABODO.com">
+              <img style="-ms-interpolation-mode:bicubic;text-decoration:none;display:block;outline:none;color:#cb2027;font-size:20px" width="115" height="auto" border="0" alt="ABODO" src="https://d2h948ku731u69.cloudfront.net/emails/logo.png" />
+            </a>
+          </td>
+        </tr>
+      </table>
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <table class="body" width="620" align="center" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                  <div style="height:10px;font-size:30px;">
+                    &nbsp;
+                  </div>
+                  CUSTOMEROLD Properties,
+<br /><br />
+Shoot, it looks like you may have missed a phone call from an interested renter.
+<br /><br />
+You received a call from 704-904-5492 on Tuesday at 01:14 PM but the call looks like it may have been missed.
+<br /><br />
+The caller was interested in the property: <a href="https://mandrillapp.com/track/click/4608894/www.abodo.com?p=eyJzIjoiaHdlb052aVJHek1lZDZ6UWxCNGpSQmRMYklnIiwidiI6MSwicCI6IntcInVcIjo0NjA4ODk0LFwidlwiOjEsXCJ1cmxcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmFib2RvLmNvbVxcXC9vbWFoYS1uZVxcXC9wcm9wZXJ0aWVzXFxcLzQwNDk1NDVcIixcImlkXCI6XCIxMzg2MGZhOWEwMTY0MDljODFmOWY2ZjFjMzBiYjUzM1wiLFwidXJsX2lkc1wiOltcImIyMDQ5NjU3ZWEwNjFhMWY2ODI0NTMyZTM5YjE4NDI1MmEzZTRjMTRcIl19In0">Cimarron Hills Apartments</a>.
+<br /><br />
+If you got it, just ignore this email. If not, we just wanted to make sure you had their number to call them back.
+<br /><br />
+Thanks,
+<br /><br />
+The ABODO Team
+<br /><br />
+Why am I getting this email?
+<br /><br />
+An interested renter just tried calling the property listed above. However, based on the length of the call it's likely no one picked up and no voicemail was left. This email was sent so you have the interested renters contact information to contact them.
+
+                  <div class="" style="height:30px;font-size:30px;">
+                    &nbsp;
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="background-color: #F2F2F2;width: 100%;" align="center">
+      <table width="620">
+          <tr>
+            <td style="padding-top: 20px;padding-right: 18px;padding-bottom: 20px;color: #606060;font-family: Helvetica;font-size: 11px;line-height: 125%;">
+              <em>Copyright &#169; 2020 ABODO.com, All rights reserved.</em><br><br>
+              <strong>Our mailing address is:</strong><br>
+              ABODO<br>
+              316 W Washington Ave<br>
+              Suite 700<br>
+              Madison, WI 53703<br>
+            </td>
+          </tr>
+      </table>
+    </div>
+  <img src="https://mandrillapp.com/track/open.php?u=4608894&id=13860fa9a016409c81f9f6f1c30bb533" height="1" width="1"></body>
+</html>
+
+
+--_av-4pXqoIrhZJabDDCK2NkSUA--

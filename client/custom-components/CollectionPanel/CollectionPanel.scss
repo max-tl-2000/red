@@ -1,0 +1,61 @@
+@import '../../sass/_colors.scss';
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.no-members {
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 1rem;
+}
+
+.card {
+  display: none;
+
+  &.open {
+    display: block;
+    animation: fadeInUp .5s ease-out;
+  }
+}
+
+.form-component-container {
+  padding-bottom: 1.5rem;
+  background-color: rgba($grey200, .3);
+}
+
+.form-actions-margin {
+  margin-left: 1.5rem;
+}
+
+.field-divider {
+  min-width: (240rem/16);
+  border-right: 1px solid rgba(0,0,0,.12);
+
+  &:last-of-type {
+    border-right: 1px solid transparent;
+  }
+}
+
+.cards-section {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  [data-component='field'] {
+    margin-bottom: 0;
+  }
+}
+
+.editFormDialog [data-component='dialog-body'] {
+  overflow-y: auto;
+  width: 100%;
+  max-height: 80vh;
+}

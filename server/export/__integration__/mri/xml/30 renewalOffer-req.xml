@@ -1,0 +1,13 @@
+{{#with this}}
+<?xml version="1.0" encoding="UTF-8"?>
+<RenewalOffer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NameID>{{nameId}}</NameID>
+  <EffectiveDate>{{leaseStartDate}}</EffectiveDate>
+  <Term>12</Term>
+  <ExpireDate>{{leaseEndDate}}</ExpireDate>
+  <ChargeCodes>
+    <ChargeCode name='PET' amount='30.00' deposit='75.00' />
+    <ChargeCode name='RNT' amount='500' deposit='1000.00' />
+  </ChargeCodes>
+</RenewalOffer>
+{{/with}}

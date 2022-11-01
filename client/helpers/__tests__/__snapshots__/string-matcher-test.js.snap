@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderStringWithMatch when a non null value is provided and a searchQueryValue is provided should highlight the matches 1`] = `
+<div>
+  <caption
+    bold={true}
+    className="myClass"
+    ellipsis={false}
+    inline={false}
+  >
+    <p
+      className="caption bold myClass"
+      data-component="caption"
+      data-typography-element={true}
+    >
+      <caption
+        bold={true}
+        highlight={true}
+        inline={true}
+      >
+        <span
+          className="caption bold highlight"
+          data-component="caption"
+          data-typography-element={true}
+        >
+          Pet
+        </span>
+      </caption>
+      er Parker
+    </p>
+  </caption>
+</div>
+`;
+
+exports[`renderStringWithMatch when a null value is provided should render the list and not throw 1`] = `
+<div>
+  <caption
+    bold={true}
+    className="myClass"
+    ellipsis={false}
+    inline={false}
+  >
+    <p
+      className="caption bold myClass"
+      data-component="caption"
+      data-typography-element={true}
+    />
+  </caption>
+</div>
+`;
+
+exports[`renderStringWithMatch when searchQuery is not found in value should render the string without highlight matches 1`] = `
+<div>
+  <caption
+    bold={true}
+    className="myClass"
+    ellipsis={false}
+    inline={false}
+  >
+    <p
+      className="caption bold myClass"
+      data-component="caption"
+      data-typography-element={true}
+    >
+      Bruce wayne
+    </p>
+  </caption>
+</div>
+`;

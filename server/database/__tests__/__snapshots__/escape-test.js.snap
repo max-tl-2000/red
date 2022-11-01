@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`escape tests when escaping single quotes in an object cicular object serializeAndEscapeSingleQuotes should detect cycles if any 1`] = `"[42,\\"it''s time\\",{\\"a\\":\\"that''s it\\",\\"b\\":\\"who''s there\\",\\"c\\":42,\\"arr\\":[42,\\"it's time\\",{\\"a\\":\\"that's it\\",\\"b\\":\\"who's there\\",\\"c\\":42,\\"arr\\":\\"Circular\\"}]}]"`;
+
+exports[`escape tests when escaping single quotes in an object cicular object serializeAndEscapeSingleQuotes should not detect cycles if none 1`] = `"[42,\\"it''s time\\",{\\"a\\":\\"that''s it\\",\\"b\\":\\"who''s there\\",\\"c\\":42}]"`;
+
+exports[`escape tests when escaping single quotes in an object cicular object should not throw 1`] = `
+"[
+  42,
+  \\"it''s time\\",
+  {
+    \\"a\\": \\"that''s it\\",
+    \\"b\\": \\"who''s there\\",
+    \\"c\\": 42,
+    \\"arr\\": [
+      42,
+      \\"it's time\\",
+      {
+        \\"a\\": \\"that's it\\",
+        \\"b\\": \\"who's there\\",
+        \\"c\\": 42,
+        \\"arr\\": \\"[Circular ~.2.arr]\\"
+      }
+    ]
+  }
+]"
+`;

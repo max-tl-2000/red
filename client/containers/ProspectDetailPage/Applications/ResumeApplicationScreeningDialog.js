@@ -1,0 +1,23 @@
+/*
+ * Copyright (c) 2022 Reva Technology Inc., all rights reserved.
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Licensed under the Elastic License 2.0; you may not use this file except
+ * in compliance with the Elastic License 2.0.
+ */
+
+import { t } from 'i18next';
+import React from 'react';
+import { MsgBox } from 'components';
+
+const ResumeApplicationScreeningDialog = ({ open, closeDialog }) => (
+  <MsgBox
+    open={open}
+    title={t('MANUAL_HOLD_RESUME')}
+    lblOK={t('OK_GOT_IT')}
+    hideCancelButton
+    onCloseRequest={closeDialog}
+    content={t('RESUME_APPLICATION_SCREENING_MESSAGE')}
+  />
+);
+
+export default ResumeApplicationScreeningDialog;

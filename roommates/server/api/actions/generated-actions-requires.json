@@ -1,0 +1,20 @@
+{
+  "updateProfile": {
+    "module": "./profile"
+  },
+  "getProfile": {
+    "module": "./profile"
+  },
+  "generateRegisterToken": {
+    "module": "./register"
+  },
+  "getRoommates": {
+    "module": "./roommate"
+  },
+  "sendMessage": {
+    "module": "./roommate"
+  },
+  "generateResetPasswordToken": {
+    "module": "./reset-password"
+  }
+}

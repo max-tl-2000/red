@@ -1,0 +1,31 @@
+.summary {
+  display: table;
+
+  .card-divider {
+    padding-right: (5rem/16);
+    border-right: 1px solid rgba(0,0,0,.12);
+
+    &:last-of-type {
+      border-right: 1px solid transparent;
+    }
+  }
+}
+
+.items {
+  display: block;
+}
+
+.card {
+  display: inline-block;
+  min-width: (120rem/16);
+  padding: 1rem;
+  vertical-align: top;
+
+  .cardTextWrapper {
+    max-width: (150rem/16);
+
+    > p {
+      word-break: break-all;
+    }
+  }
+}

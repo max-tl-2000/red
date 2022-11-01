@@ -1,0 +1,20 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+:global {
+  .flag-container {
+    @include body();
+
+    display: none;
+  }
+
+  .intl-tel-focused {
+    .flag-container {
+      display: block;
+    }
+  }
+
+  .intl-tel-input {
+    display: block;
+  }
+}

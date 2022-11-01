@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+  xmlns:urn="urn:Corticon" 
+  xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance">
+  <soapenv:Header/>
+  <soapenv:Body>
+    {{#with this}}
+    <urn:CorticonRequest decisionServiceName="{{dispatcherRuleName}}">
+      <WorkDocuments>
+        {{#each events}}
+        <RevaEvent id="RevaEvent_id_{{increment @index}}">
+          <eventName>{{event}}</eventName>
+          <tenantName>{{tenantName}}</tenantName>
+        </RevaEvent>
+        {{/each}}
+        {{#each corticonRules}}
+        <CorticonRule id="CorticonRule_id_{{increment @index}}">
+          <eventName>{{event}}</eventName>
+          <ruleName>{{name}}</ruleName>
+        </CorticonRule>
+        {{/each}}
+      </WorkDocuments>
+    </urn:CorticonRequest>
+    {{/with}}
+  </soapenv:Body>
+</soapenv:Envelope>

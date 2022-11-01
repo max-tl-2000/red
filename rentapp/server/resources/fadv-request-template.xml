@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicantScreening xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ResidentScreening3_0.xsd">
+    <Request>
+        <PropertyID>
+            <Identification IDType="Property ID">
+                <IDValue>{{additionalData.propertyId.identification.propertyName}}</IDValue>
+            </Identification>
+            <MarketingName>{{additionalData.propertyId.marketingName}}</MarketingName>
+        </PropertyID>
+        <RequestType>{{additionalData.requestType}}</RequestType>
+        <ReportOptions>
+            <ReportName>{{additionalData.reportOptions.reportName}}</ReportName>
+        </ReportOptions>
+        <ReportID>{{additionalData.reportId}}</ReportID>
+        <OriginatorID>{{credentials.originatorId}}</OriginatorID>
+        <MarketingSource>{{credentials.marketingSource}}</MarketingSource>
+        <UserName>{{credentials.userName}}</UserName>
+		    <UserPassword>{{credentials.password}}</UserPassword>
+    </Request>
+    <LeaseTerms>
+        <MonthlyRent>{{rentData.rent}}</MonthlyRent>
+        <LeaseMonths>{{rentData.leaseTermMonths}}</LeaseMonths>
+        <SecurityDeposit>{{rentData.deposit}}</SecurityDeposit>
+    </LeaseTerms>
+    {{#each applicantData.applicants}}
+    <Applicant>
+        <Other>
+            <CurrentRent>{{../rentData.rent}}</CurrentRent>
+            <ConsentObtained>YES</ConsentObtained>
+        </Other>
+        <Income>
+            <EmploymentGrossIncome>{{grossIncomeMonthly}}</EmploymentGrossIncome>
+        </Income>
+        <CriminalRecord />
+        <AS_Information>
+            <ApplicantIdentifier>{{../applicantData.tenantId}}:{{applicantId}}</ApplicantIdentifier>
+            <ApplicantType>{{type}}</ApplicantType>
+            {{#if guarantorFor}}
+            <GuarantorFor>{{guarantorFor}}</GuarantorFor>
+            {{/if}}
+            <Birthdate>{{dateOfBirth}}</Birthdate>
+            {{#if socSecNumber}}
+            <SocSecNumber>{{formatSSN socSecNumber}}</SocSecNumber>
+            {{/if}}
+            {{#if screeningAddress}}
+            <AddressTerms>
+                <Address AddressType="current">
+                    <Address>{{screeningAddress.address}}</Address>
+                    <City>{{screeningAddress.city}}</City>
+                    <State>{{screeningAddress.state}}</State>
+                    <PostalCode>{{formatZipCode screeningAddress.postalCode}}</PostalCode>
+                    <UnparsedAddress>{{screeningAddress.unparsedAddress}}</UnparsedAddress>
+                    <Email>{{email}}</Email>
+                </Address>
+            </AddressTerms>
+            {{/if}}
+        </AS_Information>
+        <Customers>
+            <Customer>
+                <Identification IDType="{{type}}">
+                    <IDValue>{{personId}}</IDValue>
+                </Identification>
+                <Name>
+                    <FirstName>{{firstName}}</FirstName>
+                    {{#if middleName}}
+                    <MiddleName>{{middleName}}</MiddleName>
+                    {{/if}}
+                    <LastName>{{lastName}}</LastName>
+                    {{#if suffix}}
+                    <NameSuffix>{{suffix}}</NameSuffix>
+                    {{/if}}
+				</Name>
+                <Lease>
+                    <Identification>
+                        <IDValue>{{personId}}</IDValue>
+					</Identification>
+                </Lease>
+            </Customer>
+        </Customers>
+    </Applicant>
+    {{/each}}
+    {{#if applicantData.customRecords}}
+    <CustomRecords>
+    {{#each applicantData.customRecords}}
+      <Record>
+        <Name>{{@key}}</Name>
+        <Value>{{this}}</Value>
+      </Record>
+    {{/each}}
+    </CustomRecords>
+    {{/if}}
+</ApplicantScreening>

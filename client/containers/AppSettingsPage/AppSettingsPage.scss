@@ -1,0 +1,56 @@
+.settingsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2em;
+  padding-left: 1em;
+}
+
+.settingRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 40%;
+}
+
+.settingColumn {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+.AppSettingsPage {
+  [data-component='section'] {
+    width: 100%;
+  }
+
+  [data-component='textbox'] {
+    width: 90%;
+    margin: 1em;
+  }
+
+  [data-component='switch'] {
+    margin: 1em .7em;
+  }
+
+  .buttonBar {
+    justify-content: flex-end;
+
+    [data-component='button'] {
+      margin-right: 1em;
+    }
+  }
+}

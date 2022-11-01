@@ -1,0 +1,348 @@
+{
+  "id": "d0428757-c5cd-4331-bfa1-f21044c07905",
+  "pets": null,
+  "comms": [
+    {
+      "id": "62e6b983-046e-4590-8c87-27012d3e881d",
+      "type": "Call",
+      "teams": [
+        "ce1445c0-48c3-4568-8a39-b6ea57ed7cdd"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": true,
+      "userId": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+      "message": {
+        "to": [
+          "16812173684"
+        ],
+        "from": "16502736663",
+        "isMissed": true,
+        "dialStatus": "cancel",
+        "isDeclined": false,
+        "targetName": "Parkmerced Leasing",
+        "postDialHandled": true,
+        "originatorCancelled": true,
+        "receiversEndpointsByUserId": {
+          "57ba372f-6d0b-44e9-92f4-6e8203cb4055": [
+            {
+              "password": "4ffddb91-f21e-4b7d-9500-f3c011aabf55",
+              "username": "FeliciaSutton017287796700305509978913",
+              "hasHangup": true,
+              "endpointId": "231770404456939",
+              "isUsedInApp": true
+            }
+          ]
+        }
+      },
+      "parties": [
+        "d0428757-c5cd-4331-bfa1-f21044c07905"
+      ],
+      "persons": [
+        "5b6edae7-db40-4d0b-83e5-f38f9d37fd73"
+      ],
+      "category": "User communication",
+      "threadId": "bff67890e40a76e8a6ce3bcd1751ab4f",
+      "direction": "in",
+      "messageId": "513fbf7a-f9cd-11e9-b5bf-77c4c76db048",
+      "created_at": "2019-10-28T21:49:01.254+00:00"
+    },
+    {
+      "id": "e6e5609e-d9d9-45e4-a426-a53fb05b0e1d",
+      "type": "Call",
+      "teams": [
+        "f6feb3cf-e83d-42c7-aff4-fed4466a1e81",
+        "ea675e68-bb29-47d7-83ad-678db554bcaa"
+      ],
+      "status": null,
+      "unread": false,
+      "userId": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+      "message": {
+        "duration": "00:11",
+        "toNumber": "16502736663",
+        "fromNumber": "16812173684",
+        "postDialHandled": true
+      },
+      "parties": [
+        "d0428757-c5cd-4331-bfa1-f21044c07905"
+      ],
+      "persons": [
+        "5b6edae7-db40-4d0b-83e5-f38f9d37fd73"
+      ],
+      "category": "User communication",
+      "threadId": "bff67890e40a76e8a6ce3bcd1751ab4f",
+      "direction": "out",
+      "messageId": "f4a0cf66-f9cc-11e9-be16-cdfef58d9606",
+      "created_at": "2019-10-28T21:50:25.867+00:00"
+    },
+    {
+      "id": "4ebac90e-f4ed-43b6-beaf-12f0da8ebadd",
+      "type": "Call",
+      "teams": [
+        "f6feb3cf-e83d-42c7-aff4-fed4466a1e81",
+        "ea675e68-bb29-47d7-83ad-678db554bcaa"
+      ],
+      "status": null,
+      "unread": false,
+      "userId": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+      "message": {
+        "duration": "00:00",
+        "toNumber": "16502736663",
+        "fromNumber": "16812173684",
+        "postDialHandled": true
+      },
+      "parties": [
+        "d0428757-c5cd-4331-bfa1-f21044c07905"
+      ],
+      "persons": [
+        "5b6edae7-db40-4d0b-83e5-f38f9d37fd73"
+      ],
+      "category": "User communication",
+      "threadId": "bff67890e40a76e8a6ce3bcd1751ab4f",
+      "direction": "out",
+      "messageId": "075631aa-f9cd-11e9-8dcd-cdfef58d9606",
+      "created_at": "2019-10-28T21:50:56.997+00:00"
+    },
+    {
+      "id": "c7b5a7eb-26a3-42e1-b99c-2e66b79816c6",
+      "type": "Call",
+      "teams": [
+        "ce1445c0-48c3-4568-8a39-b6ea57ed7cdd"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "received",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": false,
+      "userId": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+      "message": {
+        "to": [
+          "16812173684"
+        ],
+        "from": "16502736663",
+        "answered": true,
+        "duration": "00:16",
+        "isMissed": false,
+        "dialStatus": "completed",
+        "isDeclined": false,
+        "targetName": "Parkmerced Leasing",
+        "postDialHandled": true,
+        "originatorCancelled": false,
+        "receiversEndpointsByUserId": {
+          "57ba372f-6d0b-44e9-92f4-6e8203cb4055": [
+            {
+              "password": "4ffddb91-f21e-4b7d-9500-f3c011aabf55",
+              "username": "FeliciaSutton017287796700305509978913",
+              "endpointId": "231770404456939",
+              "isUsedInApp": true
+            }
+          ]
+        }
+      },
+      "parties": [
+        "d0428757-c5cd-4331-bfa1-f21044c07905"
+      ],
+      "persons": [
+        "5b6edae7-db40-4d0b-83e5-f38f9d37fd73"
+      ],
+      "category": "User communication",
+      "threadId": "bff67890e40a76e8a6ce3bcd1751ab4f",
+      "direction": "in",
+      "messageId": "2bb407ca-f9cd-11e9-b369-4f99608a5eaa",
+      "created_at": "2019-10-28T21:51:58.098+00:00"
+    }
+  ],
+  "score": "bronze",
+  "stage": "prospect",
+  "state": "Lead",
+  "tasks": null,
+  "teams": [
+    "f6feb3cf-e83d-42c7-aff4-fed4466a1e81"
+  ],
+  "events": [
+    {
+      "id": "4db849a2-bc9b-4551-a52e-b5531640ad8f",
+      "event": "communication_completed",
+      "userId": null,
+      "partyId": "d0428757-c5cd-4331-bfa1-f21044c07905",
+      "metadata": {
+        "communicationId": "c7b5a7eb-26a3-42e1-b99c-2e66b79816c6"
+      },
+      "created_at": "2019-10-28T21:52:25.319185+00:00",
+      "requestIds": [
+        "46dc1319-69b2-4363-9379-94db6ba2de7f"
+      ],
+      "updated_at": "2019-10-28T21:52:25.319185+00:00",
+      "partyMemberId": null,
+      "transaction_id": 35136
+    }
+  ],
+  "leases": null,
+  "quotes": null,
+  "userId": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "5b6edae7-db40-4d0b-83e5-f38f9d37fd73",
+        "dob": null,
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "John Doe",
+        "idCountry": null,
+        "created_at": "2019-10-28T21:49:20.0495+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2019-10-28T21:49:20.0495+00:00",
+        "modified_by": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+        "preferredName": null,
+        "isSuspiciousContent": false
+      },
+      "contactInfo": [
+        {
+          "id": "3bf1ca71-2c11-46a7-be8e-67e73226f4ac",
+          "type": "phone",
+          "value": "16502736663",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {
+            "sms": true,
+            "thirdPartyCallResult": {
+              "url": "https://lookups.twilio.com/v1/PhoneNumbers/+16502736663?Type=carrier",
+              "add_ons": null,
+              "carrier": {
+                "name": "Google (Grand Central) BWI - Bandwidth.com - SVR",
+                "type": "voip",
+                "error_code": null,
+                "mobile_country_code": null,
+                "mobile_network_code": null
+              },
+              "caller_name": null,
+              "country_code": "US",
+              "phone_number": "+16502736663",
+              "national_format": "(650) 273-6663"
+            }
+          },
+          "personId": "5b6edae7-db40-4d0b-83e5-f38f9d37fd73",
+          "isPrimary": true,
+          "created_at": "2019-10-28T21:49:20.0495+00:00",
+          "updated_at": "2019-10-28T21:49:20.0495+00:00",
+          "markedAsSpamBy": null
+        },
+        {
+          "id": "c2e752b1-53bd-4af0-9bf8-a0de08a59aad",
+          "type": "email",
+          "value": "12345484646484604586178618641563@reply.craigslist.org",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {},
+          "personId": "49149c07-2207-461f-8117-33e27472683b",
+          "isPrimary": true,
+          "created_at": "2020-02-17T16:08:11.50803+00:00",
+          "updated_at": "2020-02-17T16:08:11.50803+00:00",
+          "markedAsSpamBy": null
+        }
+      ],
+      "partyMember": {
+        "id": "c3b277f8-cf46-4b1a-83a6-12187c11f140",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "d0428757-c5cd-4331-bfa1-f21044c07905",
+        "external": {},
+        "personId": "5b6edae7-db40-4d0b-83e5-f38f9d37fd73",
+        "startDate": "2019-10-28T21:49:20.0495+00:00",
+        "created_at": "2019-10-28T21:49:20.83+00:00",
+        "externalId": null,
+        "memberType": "Resident",
+        "updated_at": "2019-10-28T21:49:20.83+00:00",
+        "memberState": "Contact",
+        "modified_by": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "children": null,
+  "invoices": null,
+  "metadata": {
+    "creationType": "user",
+    "originalTeam": "f6feb3cf-e83d-42c7-aff4-fed4466a1e81",
+    "screeningVersion": "v1",
+    "firstCollaborator": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+    "firstContactedDate": "2019-10-28T21:49:20.035Z",
+    "firstContactChannel": "Other",
+    "qualQuestionsCompleted": "2019-10-28T21:49:33.232Z"
+  },
+  "vehicles": null,
+  "leaseType": "traditional",
+  "ownerTeam": "f6feb3cf-e83d-42c7-aff4-fed4466a1e81",
+  "startDate": "2019-10-28T21:49:20.0495+00:00",
+  "created_at": "2019-10-28T21:49:20.087+00:00",
+  "invOnHolds": null,
+  "mergedWith": null,
+  "promotions": null,
+  "updated_at": "2019-10-28T21:51:58.484639+00:00",
+  "modified_by": "57ba372f-6d0b-44e9-92f4-6e8203cb4055",
+  "partyGroupId": "b7bcd0bd-bab5-428a-ac1d-433a88665319",
+  "transactions": null,
+  "workflowName": "leasing",
+  "collaborators": [
+    "57ba372f-6d0b-44e9-92f4-6e8203cb4055"
+  ],
+  "workflowState": "active",
+  "emailIdentifier": "d0428757c5cd4331bfa1",
+  "isTransferLease": false,
+  "screeningResults": {
+    "submissionRequests": null,
+    "submissionResponses": null
+  },
+  "createdFromCommId": "62e6b983-046e-4590-8c87-27012d3e881d",
+  "partyApplications": [
+    {
+      "id": "33d7efe7-eff8-43aa-a64e-1695945d3a89",
+      "isHeld": false,
+      "partyId": "d0428757-c5cd-4331-bfa1-f21044c07905",
+      "created_at": "2019-10-28T21:49:21.819+00:00",
+      "holdReason": "",
+      "updated_at": "2019-10-28T21:49:21.819+00:00",
+      "minDeniedAt": null,
+      "maxApprovedAt": null,
+      "applicationData": {},
+      "screeningVersion": 1,
+      "overrideNewCountChecks": null
+    }
+  ],
+  "assignedPropertyId": "2916b3ac-f510-48a7-96b7-f43ab4a9b805",
+  "personApplications": null,
+  "storedUnitsFilters": {
+    "moveInDate": {
+      "max": "2019-11-28T08:00:00.000Z",
+      "min": "2019-10-28T07:00:00.000Z"
+    },
+    "numBedrooms": [
+      "ONE_BED"
+    ],
+    "propertyIds": [
+      "2916b3ac-f510-48a7-96b7-f43ab4a9b805"
+    ]
+  },
+  "teamPropertyProgramId": null,
+  "qualificationQuestions": {
+    "moveInTime": "NEXT_4_WEEKS",
+    "numBedrooms": [
+      "ONE_BED"
+    ],
+    "groupProfile": "EMPLOYEE",
+    "cashAvailable": "YES"
+  }
+}

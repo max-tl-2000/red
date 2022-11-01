@@ -1,0 +1,121 @@
+@import '../../sass/_colors';
+@import '../../sass/_responsive.mixins.scss';
+
+.pagePanel {
+  &.padContent {
+    padding: (24em/16);
+  }
+}
+
+.pageStyle {
+  @include to('small2') {
+    &[data-responsive-state='row'] {
+      background: $grey50;
+    }
+  }
+
+  height: calc(100vh - (64rem/16));
+  background: $grey200;
+
+  .wrapper-panel {
+    height: calc(100vh - (64rem/16));
+  }
+}
+
+.right-panel {
+  display: none;
+  height: 100%;
+}
+
+.left-panel {
+  position: relative;
+  height: 100%;
+  background: $grey50;
+}
+
+.left-panel-overlay {
+  position: fixed;
+  z-index: 1;
+  top: (64rem/16);
+  right: 0;
+  left: 0;
+  display: none;
+  height: calc(100vh - (64rem/16));
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+@include to('small1') {
+  [data-side-panel-state='open'][data-responsive-state='column'] {
+    // if parent div has an attribute called [data-side-panel-state] set to open
+    // we show the panel. This attribute can be added/modified by javascript
+    // the component should expose openPanel/closePanel methods that will just
+    // toggle the state and render the attribute as open/close
+    // this css will display the element
+
+    .left-panel-overlay {
+      display: block;
+    }
+
+    .right-panel {
+      position: absolute;
+      z-index: 2; // needed to hide the actionMenu. TODO: check if this is correct
+      top: (64rem/16);
+      right: 0;
+      display: block;
+      width: 100%;
+      max-width: (400rem/16);
+      height: calc(100vh - (64rem/16));
+      background: #fafafa;
+      box-shadow: -1px 1px 5px 2px rgba(0,0,0,.1);
+    }
+  }
+}
+
+@include from('small2') {
+  // when the min width is equal to the breakpoint
+  // we don't care if the state of the panel is open or close
+  // we always show it
+
+  [data-side-panel-state='open'],
+  [data-side-panel-state='close'] {
+    .right-panel {
+      @include span(4, 12, 0, after);
+    }
+  }
+
+  .left-panel {
+    @include span(8, 12, 0, after);
+  }
+}
+
+[data-responsive-state='row'] {
+  @include to('small2') {
+    .left-panel {
+      height: auto;
+      box-shadow: none !important;
+    }
+
+    .right-panel {
+      height: auto;
+    }
+  }
+  @include between('small1', 'small2') {
+    .left-panel {
+      @include span(8, 8, 0);
+    }
+
+    .right-panel {
+      @include span(8, 8, 0);
+    }
+  }
+  @include to('xsmall2') {
+    .left-panel {
+      @include span(4, 4, 0);
+    }
+
+    .right-panel {
+      @include span(4, 4, 0);
+    }
+  }
+}

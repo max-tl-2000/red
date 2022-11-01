@@ -1,0 +1,65 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.card {
+  position: relative;
+  border-radius: (2rem/16);
+  background: $white;
+
+  &.container {
+    padding: 1rem;
+  }
+
+  &.with-actions {
+    padding-bottom: (56rem/16);
+  }
+}
+
+.title {
+  @include textTitle();
+}
+
+.subtitle {
+  @include subHeader();
+}
+
+.actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  padding: (6rem/16) (8rem/16);
+
+  > *,
+  > button {
+    margin: 0 .25rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.header {
+  margin-bottom: (5rem/16);
+  padding-right: 30%;
+  padding-bottom: (5rem/16);
+}
+
+.header-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 30%;
+  padding: (2rem/16);
+}

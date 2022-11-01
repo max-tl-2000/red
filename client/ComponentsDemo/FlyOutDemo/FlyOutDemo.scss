@@ -1,0 +1,48 @@
+.btn-holder {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
+  > button {
+    width: 200px;
+  }
+}
+
+.btn-holder-vertical {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 250px;
+  margin-bottom: 40px;
+  padding: 0 40px;
+
+  > button {
+    width: 200px;
+  }
+}
+
+.my-btn {
+  display: block;
+}
+
+.overlay-content {
+  width: 290px;
+  padding: 10px;
+
+  > :global(.textTitle),
+  > p {
+    margin-bottom: .625em;
+  }
+}
+
+.overlay {
+  width: (350rem/16);
+}
+
+.overlay-wrapper {
+  overflow: auto;
+  max-height: (250rem/16);
+}

@@ -1,0 +1,15 @@
+diff --git a/node_modules/draft-js-image-plugin/lib/Image/index.js b/node_modules/draft-js-image-plugin/lib/Image/index.js
+index 2fc9a0d..54aa3be 100644
+--- a/node_modules/draft-js-image-plugin/lib/Image/index.js
++++ b/node_modules/draft-js-image-plugin/lib/Image/index.js
+@@ -57,7 +57,9 @@ var Image = function (_Component) {
+           tree = otherProps.tree,
+           contentState = otherProps.contentState,
+           blockStyleFn = otherProps.blockStyleFn,
+-          elementProps = _objectWithoutProperties(otherProps, ['blockProps', 'customStyleMap', 'customStyleFn', 'decorator', 'forceSelection', 'offsetKey', 'selection', 'tree', 'contentState', 'blockStyleFn']);
++          // exclude preventScroll from props passed to img component to avoid error
++          preventScroll = otherProps.preventScroll,
++          elementProps = _objectWithoutProperties(otherProps, ['blockProps', 'customStyleMap', 'customStyleFn', 'decorator', 'forceSelection', 'offsetKey', 'selection', 'tree', 'contentState', 'blockStyleFn', 'preventScroll']);
+ 
+       var combinedClassName = (0, _clsx2.default)(theme.image, className);
+ 

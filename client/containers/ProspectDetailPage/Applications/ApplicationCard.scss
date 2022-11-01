@@ -1,0 +1,117 @@
+@import '../../../sass/_colors.scss';
+@import '../../../sass/_typography-mixins.scss';
+
+.icon {
+  margin-top: (6rem/16);
+  margin-right: (15rem/16);
+  margin-bottom: (26rem/16);
+}
+
+.iconOk {
+  @extend .icon;
+
+  opacity: .54;
+
+  svg {
+    fill: #7ed321;
+  }
+}
+
+.iconq {
+  @extend .icon;
+
+  opacity: .25;
+}
+
+.containerStyle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: (56rem/16);
+
+  .infoSectionStyle {
+    display: flex;
+    width: 30%;
+
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .appStatus {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: (56rem/16);
+
+      p:first-child {
+        margin-top: (8rem/16);
+      }
+
+      p:last-child {
+        margin-bottom: (8rem/16);
+      }
+    }
+  }
+
+  .nameSectionStyle {
+    width: 30%;
+    margin-top: 1rem;
+    margin-bottom: (20rem/16);
+  }
+
+  .menuSectionStyle {
+    flex: 0 0 auto;
+
+    .iconButton {
+      margin-left: (6rem/16);
+      color: rgba($black, .5);
+    }
+  }
+}
+
+.applicant-documents {
+  width: (23rem/16);
+  padding: 0;
+  border: 0;
+  background: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background: none;
+  }
+
+  .documents {
+    position: relative;
+    display: block;
+
+    svg {
+      fill: transparent;
+      stroke: rgba($black, .9);
+    }
+
+    .uploaded {
+      position: absolute;
+      top: (9em/16);
+      left: (1rem/16);
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.not-clickable-document {
+  cursor: default;
+}
+
+.tag {
+  display: inline-flex;
+}
+
+.highlight {
+  color: $purpleA200;
+}

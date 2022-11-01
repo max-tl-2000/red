@@ -1,0 +1,21 @@
+@import '../../sass/_colors.scss';
+
+.dropdown-wrapper-item {
+  display: inline-block;
+}
+
+.dropdown-wrapper-item p {
+  display: inline;
+}
+
+.dropdown-item {
+  margin-right: .5rem;
+}
+
+.person-overlay {
+  min-width: (330rem/16);
+
+  [data-component='list'] {
+    max-height: (300rem/16);
+  }
+}

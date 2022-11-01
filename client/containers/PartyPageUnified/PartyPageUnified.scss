@@ -1,0 +1,24 @@
+@import '../../sass/_colors';
+
+.companySection {
+  padding-left: .5rem;
+}
+
+.disabledPartyPage {
+  display: none;
+
+  &.disabled {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba($black, .26);
+  }
+}
+
+.progressBar {
+  z-index: 3;
+}

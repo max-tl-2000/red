@@ -1,0 +1,4 @@
+static/**/*.js
+rentapp/static/**/*.js
+resexp/static/**/*.js
+auth/static/**/*.js

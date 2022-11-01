@@ -1,0 +1,870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Title</title>
+    <link rel="stylesheet" href="static/libs/zurb/foundation.css">
+    <link rel="stylesheet" href="static/css/foundation-overrides.css">
+    <link rel="stylesheet" href="static/css/quote-email-view.css">
+  </head>
+  <body>
+    <!-- <style> -->
+    <table class="body" data-made-with-foundation>
+      <tr>
+        <td class="float-center" align="center" valign="top">
+          <center>
+            <table align="center" class="float-center">
+              <tr>
+                <td class="wrapper-inner">
+                  <table class="spacer">
+                    <tbody>
+                      <tr>
+                        <td class="space16"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table align="center" class="email-link-container">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a class="email-link" href="{{emailLink.url}}">{{emailLink.message}}</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="spacer">
+                    <tbody>
+                      <tr>
+                        <td class="space16"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Header -->
+            <table align="center" class="wrapper header float-center">
+              <tr>
+                <td class="wrapper-inner">
+                  <table align="center" class="container">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table class="spacer">
+                            <tbody>
+                              <tr>
+                                <td class="space34"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="row">
+                            <tbody>
+                              <tr>
+                                <th class="small-6 large-6 columns first" valign="top">
+                                  <p class="text-left text-title">{{flattenedInventory.propertyName}}</p>
+                                </th>
+                                <th class="small-1 large-1 columns last" valign="top">
+                                  <div class="agent-block">
+                                    <p class="text-left contact contact-name">{{contact.fullName}}</p>
+                                    <p class="text-left contact contact-title">{{contact.title}}</p>
+                                    <a class="text-left contact contact-links">{{contact.phone}}</a>
+                                    <table class="spacer">
+                                      <tbody>
+                                        <tr>
+                                          <td class="space10"></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <a class="text-left contact contact-links">{{contact.email}}</a>
+                                  </div>
+                                </th>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table align="center" class="container float-center body-style">
+              <tbody>
+                <tr>
+                  <td>
+                    <table class="spacer">
+                      <tbody>
+                        <tr>
+                          <td class="space24"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Unit and Summary section -->
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <!-- Left Panel -->
+                          <th class="small-6 large-6 columns first">
+                            <table class="row" style="width: 100%;height: 234.5px;background: url({{flattenedInventory.inventoryImage}}) no-repeat  center center / cover;">
+                              <tr>
+                                <th>
+                                  {{#unless flattenedInventory.hideStatus}}
+                                  <span class="status">{{flattenedInventory.status}}</span>
+                                  {{/unless}}
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="sub-header">{{flattenedInventory.propertyLocation}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="body-text">{{flattenedInventory.layoutInf}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            {{#if flattenedInventory.complimentaryItems.items}}
+                            <table class="row complementary-block">
+                              <tr>
+                                <th class="complementary-col">
+                                  <p class="sub-title secondary">{{flattenedInventory.complimentaryItems.title}}</p>
+                                  {{#each flattenedInventory.complimentaryItems.items}}
+                                  <p class="body-text">{{name}}
+                                    {{#if secondaryName}}
+                                    <span class="secondary"> ({{secondaryName}})</span>
+                                    {{#unlessLastItem @index ../flattenedInventory.complimentaryItems.items}}
+                                    <span>,<span>
+                                    {{/unlessLastItem}}
+                                    {{/if}}
+                                  </p>
+                                  {{/each}}
+                                </th>
+                              </tr>
+                            </table>
+                            {{/if}}
+                          </th>
+                          <!-- Right Panel -->
+                          <th class="small-6 large-6 columns last summary-section">
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="sub-title secondary">Lease start date</p>
+                                  <h5>{{leaseStartDate}}</h5>
+                                  <p class="sub-title secondary">Quote expires: {{quoteExpirationDate}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <div class="divider"></div>
+                            {{#each flattenedLeaseTerms}}
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="sub-section-title">{{period}}<span class="body-text secondary"> {{endDate}}</span></p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">Base Rent</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text">{{baseRent}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{#each concessions}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="concession body-text">{{concessionName}}</p>
+                                  {{#if adjustmentText}}
+                                  <p class="caption details-title sub-text">{{adjustmentText}}</p>
+                                  {{/if}}
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text highlight">Save: {{concessionValue}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{/each}}
+                            {{#unless @last}}
+                            <div class="divider"></div>
+                            {{/unless}}
+                            {{/each}}
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Divider -->
+                    <table class="spacer">
+                      <tbody>
+                        <tr>
+                          <td class="space24"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <center>
+                      <table class="button radius float-center">
+                        <tr>
+                          <td>
+                            <table>
+                              <tr>
+                                <td><a href="{{applyNowUrl}}">APPLY NOW</a></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
+                    <table class="spacer">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="divider"></div>
+                    <!-- Detail Charges Section -->
+                    {{#each paymentSchedule}}
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <!-- termPayments.isLast -->
+                          {{#if termPayments.isLast}}
+                          <!-- end -->
+                          <th class="small-6 large-6 columns details-section first">
+                            <!-- Payment Schedule -->
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space24"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <h5 class="details-title">{{termPayments.termPaymentSummary.title}}</h5>
+                                  <p class="secondary sub-title title-caption">{{termPayments.termPaymentSummary.caption}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            {{#each termPayments.termPaymentSummary.periodPaymentDetails}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{timeFrame}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text">{{amount}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{/each}}
+                              <p class="body-text secondary">{{termPayments.termPaymentSummary.noInventorySelectedTag}}</p>
+                            <div class="divider"></div>
+                            <!-- Details on <period> charges -->
+                            <table class="spacer">
+                              <tbody>
+                              <tr>
+                                <td class="space10"></td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="secondary sub-title details-sub-title">{{termPayments.termPaymentSummary.additionalChargesTitle}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                              <tr>
+                                <td class="space10"></td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{termPayments.termPaymentSummary.baseRent.title}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text">{{termPayments.termPaymentSummary.baseRent.formattedAmount}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{#each termPayments.termPaymentSummary.formattedAdditionalCharges}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{displayName}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  {{#if amount}}
+                                    <p class="text-right body-text">
+                                      {{#if isMinAndMaxRentDiff}}
+                                      <span class="secondary">{{../fromTag}}</span>
+                                      {{/if}}
+                                      {{amount}}
+                                    </p>
+                                  {{else}}
+                                  <p class="text-right body-text">$0.00</p>
+                                  {{/if}}
+                                </th>
+                              </tr>
+                            </table>
+                            {{/each}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text total-label">{{termPayments.termPaymentSummary.totalCharges.title}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text bold">{{termPayments.termPaymentSummary.totalCharges.formattedAmount}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{#if termPayments.termPaymentSummary.concessions.info}}
+                                <div class="divider"></div>
+                                <!-- Additional one-time charges -->
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td class="space10"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table class="row">
+                                  <tr>
+                                    <th>
+                                      <p class="secondary sub-title details-sub-title">{{termPayments.termPaymentSummary.concessions.title}}</p>
+                                    </th>
+                                  </tr>
+                                </table>
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td class="space10"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                {{#each termPayments.termPaymentSummary.concessions.info}}
+                                <table class="row">
+                                  <tr>
+                                    <th class="small-6 large-6 columns first">
+                                      <p class="concession body-text">{{concessionName}}</p>
+                                      {{#if adjustmentText}}
+                                      <p class="caption details-title sub-text">{{adjustmentText}}</p>
+                                      {{/if}}
+                                    </th>
+                                    <th class="small-6 large-6 columns last">
+                                      <p class="text-right body-text highlight">Save: {{concessionValue}}</p>
+                                    </th>
+                                  </tr>
+                                </table>
+                                {{/each}}
+                                <table class="row">
+                                  <tr>
+                                    <th class="small-6 large-6 columns first">
+                                      <p class="body-text total-label">{{termPayments.termPaymentSummary.totalConcessions.title}}</p>
+                                    </th>
+                                    <th class="small-6 large-6 columns last">
+                                      <p class="text-right body-text bold highlight">Save: {{termPayments.termPaymentSummary.totalConcessions.formattedAmount}}</p>
+                                    </th>
+                                  </tr>
+                                </table>
+                              {{/if}}
+                            <div class="divider"></div>
+                            <!-- Additional one-time charges -->
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="secondary sub-title details-sub-title">Additional one-time charges</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            {{#each termPayments.termPaymentSummary.oneTimeCharges}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{displayName}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  {{#if amount}}
+                                    <p class="text-right body-text">{{amount}}</p>
+                                  {{else}}
+                                    <p class="text-right body-text">$0.00</p>
+                                  {{/if}}
+                                </th>
+                              </tr>
+                            </table>
+                            {{/each}}
+                          </th>
+                          <!-- Amenities -->
+                          <th class="small-6 large-6 columns last">
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space20"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <h5>Amenities</h5>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space5"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="sub-header">Top floor, Hard woods floors</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space20"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="body-text">{{termPayments.highValueAmenities}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space24"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="body-text secondary">{{termPayments.otherAmenities}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                          </th>
+                          <!-- else -->
+                          {{else}}
+                          <!-- end -->
+                          <!-- each termPayments -->
+                          {{#each termPayments}}
+                          <!-- end -->
+                          <!-- if last -->
+                          {{#if @last}}
+                          <!-- end -->
+                          <th class="small-6 large-6 columns details-section last">
+                          <!-- else -->
+                          {{else}}
+                          <!-- end-->
+                          <th class="small-6 large-6 columns details-section first">
+                          <!-- /if -->
+                          {{/if}}
+                          <!-- end -->
+                            <!-- Payment Schedule -->
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space24"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <h5 class="details-title">{{title}}</h5>
+                                  <p class="secondary sub-title title-caption">{{caption}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            {{#each periodPaymentDetails}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{timeFrame}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text">{{amount}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{/each}}
+                            <p class="body-text secondary">{{noInventorySelectedTag}}</p>
+                            {{#if formattedAdditionalCharges}}
+                            <div class="divider"></div>
+                            <!-- Details on <period> charges -->
+                            <table class="spacer">
+                              <tbody>
+                              <tr>
+                                <td class="space10"></td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="secondary sub-title details-sub-title">{{additionalChargesTitle}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                              <tr>
+                                <td class="space10"></td>
+                              </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{baseRent.title}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text">{{baseRent.formattedAmount}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{#each formattedAdditionalCharges}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{displayName}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  {{#if amount}}
+                                    <p class="text-right body-text">
+                                     {{#if isMinAndMaxRentDiff}}
+                                     <span class="secondary">{{../fromTag}}</span>
+                                     {{/if}}
+                                     {{amount}}
+                                    </p>
+                                  {{else}}
+                                  <p class="text-right body-text">$0.00</p>
+                                  {{/if}}
+                                </th>
+                              </tr>
+                            </table>
+                            {{/each}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text total-label">{{totalCharges.title}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  <p class="text-right body-text bold">{{totalCharges.formattedAmount}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            {{/if}}
+                            {{#if concessions.info}}
+                                <div class="divider"></div>
+                                <!-- Additional one-time charges -->
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td class="space10"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table class="row">
+                                  <tr>
+                                    <th>
+                                      <p class="secondary sub-title details-sub-title">{{concessions.title}}</p>
+                                    </th>
+                                  </tr>
+                                </table>
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td class="space10"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                {{#each concessions.info}}
+                                <table class="row">
+                                  <tr>
+                                    <th class="small-6 large-6 columns first">
+                                      <p class="concession body-text">{{concessionName}}</p>
+                                      {{#if adjustmentText}}
+                                      <p class="caption details-title sub-text">{{adjustmentText}}</p>
+                                      {{/if}}
+                                    </th>
+                                    <th class="small-6 large-6 columns last">
+                                      <p class="text-right body-text highlight">Save: {{concessionValue}}</p>
+                                    </th>
+                                  </tr>
+                                </table>
+                                {{/each}}
+                                <table class="row">
+                                  <tr>
+                                    <th class="small-6 large-6 columns first">
+                                      <p class="body-text total-label">{{totalConcessions.title}}</p>
+                                    </th>
+                                    <th class="small-6 large-6 columns last">
+                                      <p class="text-right body-text bold highlight">Save: {{totalConcessions.formattedAmount}}</p>
+                                    </th>
+                                  </tr>
+                                </table>
+                              {{/if}}
+                            {{#if oneTimeCharges}}
+                            <div class="divider"></div>
+                            <!-- Additional one-time charges -->
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="secondary sub-title details-sub-title">Additional one-time charges</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space10"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            {{#each oneTimeCharges}}
+                            <table class="row">
+                              <tr>
+                                <th class="small-6 large-6 columns first">
+                                  <p class="body-text">{{displayName}}</p>
+                                </th>
+                                <th class="small-6 large-6 columns last">
+                                  {{#if amount}}
+                                    <p class="text-right body-text">{{amount}}</p>
+                                  {{else}}
+                                    <p class="text-right body-text">$0.00</p>
+                                  {{/if}}
+                                </th>
+                              </tr>
+                            </table>
+                            {{/each}}
+                            {{/if}}
+                          </th>
+                          <!-- /each -->
+                          {{/each}}
+                          <!-- end -->
+                          <!-- /if -->
+                          {{/if}}
+                          <!-- end -->
+                        </tr>
+                      </tbody>
+                    </table>
+                    {{/each}}
+                    <!-- Divider -->
+                    <table class="spacer">
+                      <tbody>
+                        <tr>
+                          <td class="space24"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <center>
+                      <table class="button radius float-center">
+                        <tr>
+                          <td>
+                            <table>
+                              <tr>
+                                <td><a href="{{applyNowUrl}}">APPLY NOW</a></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
+                    <table class="spacer">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    {{#unless leaseTermsLengthIsOdd}}
+                    <div class="divider"></div>
+                    <!-- Amenities Section -->
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-12 large-12 columns first">
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space20"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <h5>Amenities</h5>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space5"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="sub-header">Top floor, Hard woods floors</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space20"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="body-text">{{flattenedInventory.highValueAmenities}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space20"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="body-text secondary">{{flattenedInventory.otherAmenities}}</p>
+                                </th>
+                              </tr>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                    {{/unless}}
+                    <div class="divider"></div>
+                    <!-- Footer -->
+                    <table class="row">
+                      <tbody>
+                        <tr>
+                          <th class="small-12 large-12 columns first footer">
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td class="space20"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <p class="secondary caption caption-bold">Quote confirmation number is <span>{{confirmationNumber}}</span></p>
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="row">
+                              <tr>
+                                <th>
+                                  <div class="secondary caption">{{{policy}}}</div>
+                                </th>
+                              </tr>
+                            </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

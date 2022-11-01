@@ -1,0 +1,533 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/inventories/{inventoryId}/holds": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the inventory to put in hold",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "The inventory on hold data that includes the user",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "partyId": {
+                  "description": "Id of party",
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "quotable": {
+                  "description": "Flag to decide if inventory will be quotable",
+                  "type": "boolean"
+                },
+                "reason": {
+                  "description": "Type of holding to apply",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "partyId",
+                "reason",
+                "heldBy"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data about the inventory on hold",
+            "schema": {
+              "$ref": "#/definitions/InventoryOnHold"
+            }
+          }
+        },
+        "summary": "Set inventory on hold",
+        "tags": [
+          "Inventories"
+        ]
+      },
+      "delete": {
+        "parameters": [
+          {
+            "description": "The id of the inventory to release from hold",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data about the inventory on hold"
+          }
+        },
+        "summary": "Release inventory from hold",
+        "tags": [
+          "Inventories"
+        ]
+      }
+    },
+    "/inventories": {
+      "get": {
+        "parameters": [
+          {
+            "description": "An inventory group id",
+            "in": "query",
+            "name": "inventoryGroupId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "An inventory type",
+            "in": "query",
+            "name": "type",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "A filter query",
+            "name": "query",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of inventories",
+            "schema": {
+              "$ref": "#/definitions/Inventory"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "et inventory items for a given Fee and filtered by a given query",
+        "tags": [
+          "Inventories"
+        ]
+      }
+    },
+    "/inventories/{inventoryId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "An inventory id",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Loads and inventory",
+            "schema": {
+              "$ref": "#/definitions/Inventory"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads all the inventories",
+        "tags": [
+          "Inventories"
+        ]
+      }
+    },
+    "/inventories/{inventoryId}/details": {
+      "get": {
+        "parameters": [
+          {
+            "description": "An inventory id",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Details associated to the unit",
+            "schema": {
+              "$ref": "#/definitions/InventoryDetails"
+            }
+          },
+          "400": {
+            "description": "Invalid request",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the data related to a given inventory",
+        "tags": [
+          "Inventories"
+        ]
+      }
+    },
+    "/inventories/{inventoryId}/amenities": {
+      "get": {
+        "parameters": [
+          {
+            "description": "An inventory id",
+            "in": "path",
+            "name": "inventoryId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Amenities for the given inventory",
+            "schema": {
+              "$ref": "amenities.json#/definitions/Amenity"
+            }
+          },
+          "500": {
+            "description": "Error getting amenities",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Get amenities for a given Inventory",
+        "tags": [
+          "Inventories"
+        ]
+      }
+    },
+    "/inventories?inventoryGroupId={inventoryGroupId}&type={type}&query={query}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "An inventory group id",
+            "in": "query",
+            "name": "inventoryGroupId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "An inventory type",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "A filter query",
+            "name": "query",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inventory items for the given Fee",
+            "schema": {
+              "$ref": "#/definitions/InventoryByFee"
+            }
+          },
+          "400": {
+            "description": "Invalid fee id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Fee not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Get inventory items for a given Fee and filtered by a given query",
+        "tags": [
+          "Inventories"
+        ]
+      }
+    }
+  },
+  "definitions": {
+        "InventoryOnHold": {
+      "properties": {
+        "inventoryId": {
+          "description": "Id of inventory",
+          "type": "string",
+          "format": "uuid"
+        },
+        "partyId": {
+          "description": "Id of party",
+          "type": "string",
+          "format": "uuid"
+        },
+        "startDate": {
+          "description": "Date when inventory was put in hold",
+          "type": "string"
+        },
+        "quotable": {
+          "description": "Flag to decide if inventory will be quotable",
+          "type": "boolean"
+        },
+        "reason": {
+          "description": "Type of holding to apply",
+          "type": "string"
+        },
+        "heldBy": {
+          "description": "Id of user",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "type": "object"
+    },
+    "InventoryType": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "InventoryBase": {
+      "type": "object",
+      "properties": {
+        "baseLease": {
+          "type": "number",
+          "format": "float"
+        },
+        "description": {
+          "type": "string"
+        },
+        "economicStatus": {
+          "type": "string"
+        },
+        "floor": {
+          "type": "integer"
+        },
+        "id": {
+          "description": "Identifier of the Inventory",
+          "type": "string"
+        },
+        "marketRent": {
+          "description": "Amount assigned to the inventory",
+          "type": "integer"
+        },
+        "multipleItemTotal": {
+          "type": "integer"
+        },
+        "name": {
+          "description": "Inventory name e.g. 1010",
+          "type": "string"
+        },
+        "rentControlled": {
+          "type": "boolean"
+        },
+        "subtype": {
+          "description": "Inventory type e.g. Unit, Garage, Storage...",
+          "type": "string"
+        },
+        "type": {
+          "description": "Inventory type e.g. Unit, Garage, Storage...",
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "nextStateExpectedDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "specials": {
+          "type": "boolean"
+        }
+      }
+    },
+    "InventoryForeignKeys": {
+      "type": "object",
+      "properties": {
+        "floorplanId": {
+          "description": "Id of the layout associated to the inventory",
+          "type": "string"
+        },
+        "buildingId": {
+          "description": "Id of the building associated to the inventory",
+          "type": "string"
+        },
+        "propertyId": {
+          "description": "the id of the property associated to the inventory",
+          "type": "string"
+        }
+      }
+    },
+    "InventoryForeignKeysExpanded": {
+      "type": "object",
+      "properties": {
+        "layout": {
+          "description": "Layout associated to the inventory",
+          "type": "object"
+        },
+        "building": {
+          "description": "Building associated to the inventory",
+          "type": "object"
+        },
+        "property": {
+          "description": "Property associated to the inventory",
+          "type": "object"
+        }
+      }
+    },
+    "Inventory": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/InventoryBase"
+        },
+        {
+          "$ref": "#/definitions/InventoryForeignKeys"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "leaseTerm": {
+              "type": "object",
+              "properties": {
+                "termLength": {
+                  "type": "number",
+                  "format": "int32",
+                  "description": "The number of periods"
+                },
+                "period": {
+                  "type": "string",
+                  "description": "The period's name"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "InventoryDetails": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/InventoryBase"
+        },
+        {
+          "$ref": "#/definitions/InventoryForeignKeysExpanded"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "amenities": {
+              "type": "array",
+              "items": {
+                "$ref": "amenities.json#/definitions/Amenity"
+              }
+            },
+            "buildings": {
+              "items": {
+                "$ref": "buildings.json#/definitions/Building"
+              },
+              "type": "array"
+            },
+            "layouts": {
+              "items": {
+                "$ref": "layouts.json#/definitions/Layout"
+              },
+              "type": "array"
+            },
+            "inventoryTypes": {
+              "items": {
+                "$ref": "#/definitions/InventoryType"
+              },
+              "type": "array"
+            },
+            "lifeStyles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ComplimentaryItems": {
+              "items": {
+                "$ref": "#/definitions/ComplimentaryItems"
+              },
+              "type": "object"
+            }
+          }
+        }
+      ]
+    },
+    "ComplimentaryItems": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "secondaryName": {
+          "type": "string"
+        },
+        "buildingName": {
+          "type": "string"
+        }
+      }
+    },
+    "InventoryByFee": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/InventoryBase"
+        },
+        {
+          "$ref": "#/definitions/InventoryForeignKeysExpanded"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "buildingShorthand": {
+              "description": "the name of the building",
+              "type": "string"
+            },
+            "buildingName": {
+              "description": "the building display name",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

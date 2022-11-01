@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get-assets-test when NODE_ENV = development and dMode = true  should omit the useLocalAssets and return the local assets  1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//static.local.env.reva.tech/libs/font/roboto/roboto.css",
+    "//static.local.env.reva.tech/libs/fullcalendar/fullcalendar_1494301536.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.env.reva.tech/dist/main.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    "//static.local.env.reva.tech/libs/jquery/jquery_1494301536.js",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    "//static.local.env.reva.tech/libs/moment/moment_1494301536.min.js",
+    "//static.local.env.reva.tech/libs/fullcalendar/fullcalendar_1494301536.min.js",
+    "//static.local.env.reva.tech/dist/vendors.js",
+    "//static.local.env.reva.tech/dist/main.js",
+  ],
+  "useSelfHostedAssets": true,
+}
+`;
+
+exports[`get-assets-test when NODE_ENV = production and query.dMode = true and host is a local host  should return omit the useLocalAssets and return the local assets  1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.env.reva.tech/dist/main.min.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.env.reva.tech/dist/vendors.min.js",
+    "//static.local.env.reva.tech/dist/main.min.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when NODE_ENV = production and query.dMode = true and host is production host and query.min = false  should return the assets from local and should return no min extensions for main.js and vendors.js and main.css and vendor.css  1`] = `
+Object {
+  "assetsHostname": "static.local.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.reva.tech/dist/main.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.reva.tech/dist/vendors.js",
+    "//static.local.reva.tech/dist/main.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when NODE_ENV = production and query.dMode = true and host is production host should return the assets from local 1`] = `
+Object {
+  "assetsHostname": "static.local.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.reva.tech/dist/main.min.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.reva.tech/dist/vendors.min.js",
+    "//static.local.reva.tech/dist/main.min.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when NODE_ENV = production and query.local = true should return the list of files from cdn ignoring local=true, min extensions for main.js and vendors.js and main.css 1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.env.reva.tech/dist/main.min.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.env.reva.tech/dist/vendors.min.js",
+    "//static.local.env.reva.tech/dist/main.min.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when NODE_ENV = production and query.local = undefined should return the list of files from cdn, min extensions for main.js and vendors.js and main.css and vendor.css 1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.env.reva.tech/dist/main.min.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.env.reva.tech/dist/vendors.min.js",
+    "//static.local.env.reva.tech/dist/main.min.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when NODE_ENV = production and query.min = false should return the list of files from cdn, no min extensions for main.js and vendors.js and main.css and vendor.css 1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.env.reva.tech/dist/main.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.env.reva.tech/dist/vendors.js",
+    "//static.local.env.reva.tech/dist/main.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when useDevMode = false and one of them contain the local flag should return the list of files from local and no min extensions for main.js and vendors.js 1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "/dist/main.min.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.env.reva.tech/dist/vendors.min.js",
+    "/dist/main.min.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when useDevMode = true and one of them contain the local flag should return the list of files from local and min extensions for main.js and vendors.js 1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//fonts.googleapis.com/css?family=Roboto:300,400,500",
+    "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "/dist/main.min.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js",
+    },
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js",
+    },
+    Object {
+      "crossDomain": undefined,
+      "src": "//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js",
+    },
+    "//static.local.env.reva.tech/dist/vendors.min.js",
+    "/dist/main.min.js",
+  ],
+  "useSelfHostedAssets": false,
+}
+`;
+
+exports[`get-assets-test when useDevMode = true and query.local = false should return the list of files from cdn, no min extensions for main.js and vendors.js and no main.css 1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//static.local.env.reva.tech/libs/font/roboto/roboto.css",
+    "//static.local.env.reva.tech/libs/fullcalendar/fullcalendar_1494301536.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.env.reva.tech/dist/main.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    "//static.local.env.reva.tech/libs/jquery/jquery_1494301536.js",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    "//static.local.env.reva.tech/libs/moment/moment_1494301536.min.js",
+    "//static.local.env.reva.tech/libs/fullcalendar/fullcalendar_1494301536.min.js",
+    "//static.local.env.reva.tech/dist/vendors.js",
+    "//static.local.env.reva.tech/dist/main.js",
+  ],
+  "useSelfHostedAssets": true,
+}
+`;
+
+exports[`get-assets-test when useDevMode = true and query.local = undefined should return the list of files from local and no min extensions for main.js and vendors.js 1`] = `
+Object {
+  "assetsHostname": "static.local.env.reva.tech",
+  "cssAssets": Array [
+    "//static.local.env.reva.tech/libs/font/roboto/roboto.css",
+    "//static.local.env.reva.tech/libs/fullcalendar/fullcalendar_1494301536.min.css",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.css",
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.css",
+    "//static.local.env.reva.tech/dist/main.css",
+  ],
+  "getResource": [Function],
+  "getStaticResource": [Function],
+  "jsAssets": Array [
+    "//static.local.env.reva.tech/libs/materialize-nouislider/nouislider_1494301536.min.js",
+    "//static.local.env.reva.tech/libs/jquery/jquery_1494301536.js",
+    "//static.local.env.reva.tech/libs/materialize/materialize_1494301537.min.js",
+    "//static.local.env.reva.tech/libs/moment/moment_1494301536.min.js",
+    "//static.local.env.reva.tech/libs/fullcalendar/fullcalendar_1494301536.min.js",
+    "//static.local.env.reva.tech/dist/vendors.js",
+    "//static.local.env.reva.tech/dist/main.js",
+  ],
+  "useSelfHostedAssets": true,
+}
+`;

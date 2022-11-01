@@ -1,0 +1,6 @@
+ResRoommates,,,,,,,,,,,,
+Tenant_Code,Ext_Ref_Tenant_Id,Roommate_Code,Roommate_PhoneNumber4,Property_Code,Unit_Code,Ext_Ref_Roommate_Id,Roommate_LastName,Roommate_FirstName,Roommate_Email,OccupantType,Roommate_Occupant,Roommate_Relationship
+"0000002t",,"0000001r","2025550163","cove","01-BARB-","37cd3822-c3c9-4e32-9","Skywalker","Anakin","lukeg@reva.tech","1","0","Guarantor"
+"0000002t",,"0000002p",,"cove","01-BARB-","73e25573-3db5-4cc4-8","Child","Bill",,"2","-1","Other"
+"0000003t",,"0000001r","2025550163","cove","01-BARB-","37cd3822-c3c9-4e32-9","Skywalker","Anakin","lukeg@reva.tech","1","0","Guarantor"
+"0000003t",,"0000002p",,"cove","01-BARB-","73e25573-3db5-4cc4-8","Child","Bill",,"2","-1","Other"

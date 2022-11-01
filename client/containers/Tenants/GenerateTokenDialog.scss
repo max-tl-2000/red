@@ -1,0 +1,8 @@
+.mainContent {
+  width: (600rem/16);
+  max-width: 100vw;
+
+  [data-component='subheader'] {
+    margin-top: (20rem/16);
+  }
+}

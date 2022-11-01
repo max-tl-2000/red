@@ -1,0 +1,18 @@
+{
+  "creditScore": 738,
+  "hasNoEstablishedCredit": false,
+  "hasBankruptcy": false,
+  "hasForeclosure": false,
+  "hasLegalItems": false,
+  "hasTaxLiens": false,
+  "hasMortgageDebt": false,
+  "hasPropertyRentalDebt": false,
+  "hasUtilityDebt": false,
+  "hasRentalCollections": false,
+  "hasNsfOrLatePayMin": false,
+  "hasNsfOrLatePayMax": false,
+  "hasEvictionNotice": false,
+  "hasLeaseViolation": false,
+  "hasSuspiciousSsn": false,
+  "hasRequiredSsnResponse": false
+}

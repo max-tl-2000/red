@@ -1,0 +1,551 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/parties/{partyId}/tasks": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the tasks for",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "List of person ids",
+            "in": "query",
+            "name": "personIds",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The tasks for the party",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the tasks for a party",
+        "tags": [
+          "Tasks"
+        ]
+      }
+    },
+    "/tasks": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The ids of the tasks to retrieve; if missing then all tasks are retrieved",
+            "in": "query",
+            "name": "ids",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tasks"
+        ],
+        "summary": "Retrieves an array of tasks",
+        "responses": {
+          "200": {
+            "description": "The tasks were retrieved successfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Task"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid task id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "A task",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data about the added task",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing task properties",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party or users not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Adds a task",
+        "tags": [
+          "Tasks"
+        ]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The tasks patch data",
+            "in": "body",
+            "name": "data",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Task"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation was successful",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          },
+          "400": {
+            "description": "Invalid task id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Task not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a task",
+        "tags": [
+          "Tasks"
+        ]
+      }
+    },
+    "/tasks/{taskId}": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The task to patch",
+            "in": "path",
+            "name": "taskId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The fields to update",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation was successful",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          },
+          "400": {
+            "description": "Invalid task id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Task not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a task",
+        "tags": [
+          "Tasks"
+        ]
+      }
+    },
+    "/tasks/{userId}/{teamId}/{year}/{month}/{day}/events": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The user/sales person id",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The user team id",
+            "in": "path",
+            "name": "teamId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "year",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "path",
+            "name": "month",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "path",
+            "name": "day",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The appointments for the user and day",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "appointments": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Task"
+                  }
+                },
+                "userEvents": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/ExternalEvent"
+                  }
+                },
+                "teamEvents": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/ExternalEvent"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Incorrect user id/ incorrect date",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads appointments for sales person, for a certain date",
+        "tags": [
+          "Tasks"
+        ]
+      }
+    },
+    "/tasks/{teamId}/{year}/{month}/{day}/{numberOfDays}/teamCalendarSlots": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The team id",
+            "in": "path",
+            "name": "teamId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "year",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "path",
+            "name": "month",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "path",
+            "name": "day",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "path",
+            "name": "numberOfDays",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "timezone",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Calendar slots with available agents",
+            "schema": {
+              "type": "array",
+              "items": {
+               "type": "object",
+               "properties": {
+                 "startDate":{
+                   "description": "Slot start date",
+                   "type": "string"
+                 },
+                 "endDate":{
+                   "description": "Slot end date",
+                   "type": "string"
+                 },
+                 "isTeam":{
+                   "description": "Indicates if the slot is set busy from a team event",
+                   "type": "string"
+                 },
+                 "availableAgents":{
+                   "description": "Array with available users ids",
+                   "type": "array",
+                   "items": {
+                     "type": "string",
+                     "format": "uuid"
+                   }
+                 }
+               }
+              }
+            }
+          },
+          "400": {
+            "description": "Incorrect team id/ incorrect date or timezone",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads time slots with availabele user ids",
+        "tags": [
+          "Tasks"
+        ]
+      }
+    },
+    "/public/party/{partyId}/tasks": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the party the task belongs to",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The task entity to be created",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "No data is returned"
+          },
+          "400": {
+            "description": "The partyId is missing",
+          },
+        },
+        "tags": [
+          "Parties"
+        ],
+        "summary": "Creates the task received in the patch body in the DB (uses partyId for logging only)"
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the party the task belongs to",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The task entity to be updated",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "No data is returned"
+          },
+          "400": {
+            "description": "The partyId is missing",
+          },
+        },
+        "tags": [
+          "Parties"
+        ],
+        "summary": "Updates the task received in the patch body (uses partyId for logging only)"
+      }
+    },
+  },
+  "definitions": {
+    "Task": {
+      "properties": {
+        "id": {
+          "description": "The id of the task",
+          "type": "string"
+        },
+        "partyId": {
+          "description": "Party id of the party this task belongs to",
+          "type": "string"
+        },
+        "userIds": {
+          "description": "An array of user ids who are responsible for the task",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "name": {
+          "description": "Task name",
+          "type": "string"
+        },
+        "category": {
+          "description": "Category for this task",
+          "type": "string",
+          "enum": [
+            "Party",
+            "Inactive",
+            "Draft",
+            "Highlight",
+            "Quote",
+            "Appointment"
+          ]
+        },
+        "state": {
+          "description": "State of the task",
+          "type": "string",
+          "enum": [
+            "Active",
+            "Completed",
+            "Snoozed",
+            "Canceled"
+          ]
+        },
+        "dueDate": {
+          "description": "Date when the the task became overdue / expired",
+          "type": "string",
+          "format": "date-time"
+        },
+        "metadata": {
+          "description": "Additional information specific to each task category",
+          "properties": {
+            "startDate": {
+              "description": "the start time and date for the task of category appointment",
+              "type": "string"
+            },
+            "endDate": {
+              "description": "the start time and date the task of category appointment",
+              "type": "string"
+            },
+            "partyMembers": {
+              "description": "the ids of the party members included in the task of category appointment",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "inventories": {
+              "description": "the ids of the units included in the task of category appointment",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "note": {
+              "description": "any notes taken for task",
+              "type": "string"
+            },
+            "closingNote": {
+              "description": "notes taken when close/complete the task",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "ExternalEvent": {
+      "properties": {
+        "id": {
+          "description": "The id of the external event",
+          "type": "string"
+        },
+        "startDate": {
+          "description": "The start time and date for external event",
+          "type": "string"
+        },
+        "endDate": {
+          "description": "The end time and date for external event",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

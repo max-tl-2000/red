@@ -1,0 +1,17 @@
+.field-divider {
+  border-right: 1px solid rgba(0,0,0,.12);
+
+  &:last-of-type {
+    border-right: 1px solid transparent;
+  }
+}
+
+.cards-section {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  [data-component='field'] {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,647 @@
+Return-Path: <bounce-473_HTML-166824132-986395-7001514-174930@bounce.message.my.apartmentguide.com>
+Received: from mta.message.my.apartmentguide.com (mta.message.my.apartmentguide.com [68.232.200.241])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id jrkq5c16rodr7hvjdke4vienbmue61uqake8tc01
+ for aptguide.parkmerced@maximus.mail.reva.tech;
+ Wed, 16 May 2018 22:33:54 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of bounce.message.my.apartmentguide.com designates 68.232.200.241 as permitted sender) client-ip=68.232.200.241; envelope-from=bounce-473_HTML-166824132-986395-7001514-174930@bounce.message.my.apartmentguide.com; helo=mta.message.my.apartmentguide.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of bounce.message.my.apartmentguide.com designates 68.232.200.241 as permitted sender) client-ip=68.232.200.241; envelope-from=bounce-473_HTML-166824132-986395-7001514-174930@bounce.message.my.apartmentguide.com; helo=mta.message.my.apartmentguide.com;
+ dkim=pass header.i=@message.my.apartmentguide.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGSjNlZ1JleVVOMnoza1dWaDdrWktoeURrbXc2T3p3YUc3a2tseDlXUEVvUzMvSnBPbi93cHNUaWRVN25LeS9tSzBtVUh5R1hJMnFkZnp2azJaN0IvczdUc3VBMXI5MVBUdisrdXNvQUVYeHBnUktCY283c0gzM0VUZjQ3anFsUENYUTRIWTg3ODdMRTJ6NEsybnRpODBaczVCemR2Rk9UOEJrRXpBL2tUQmlvaCtyZ3p5ZE9zTmxBYXZrTkhRL0dUa2l1MGVSZ295cmMrem94blp0eVpTZ0h3VUgrYytGQXBxQzV5a3N3L1c2VkxnSUNjZDkrY0JhUHQrS0tQY0U4RDVzd3ZQc2E0VzFMSGdoUTkwMnZYY0o0SUdOK0xHbDJlNjNGZS9sWUkzTWl6V1d6Ky9TSzV6MjBaaVRlUFd6ZzRPbVdEUGl3WmJGTjNpNm9XQit1QmtVT3dqd0lnYm11aEZGdmxzdHVYc2llYk1DVHYyVlJpck1lV2d2SlN1K0djPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Iti0ihkDB4cAYahcnTHAS+cam2LBZ5wsIEJIDn3KEO89c2ORgM4HmejgLhmosOGrio1Jh6QB5sqMzyW+E2b6kqAPIPYEmysUc/VLuDUF3BWPyOf6w1g6bMVCbuZHGSsA/5ky8yHt2rc8TDtumprk0b6OOlGds5ujWONeNBrK7SQ=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1526510035; v=1; bh=bom+t23M4pyktbMF/SvjWNqXSNhDuSPkovIa5rzdWWo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=apartmentguide.com;
+ h=From:To:Subject:Date:MIME-Version:List-ID:Reply-To:Message-ID:Content-Type:Content-Transfer-Encoding; i=comments@message.my.apartmentguide.com;
+ bh=UL8KgfjSZhvztdB/H9OUObUZuL0=;
+ b=UDd3WFb7iqiwMgbNX65Vm/7YM/JOXmjDBlG2b41JumW/ugBhQJYOYP211XNoYFxvH7puoqj26jqc
+   zKyO+TLbZgD2pdXZt8TRdMHSjktsEnEHLq5Xz5MBJnmsn47o1lw1eigYbQtVtFFaA/25GhaSujnV
+   GPLghK0FnhHPyrI7hpU=
+Received: by mta.message.my.apartmentguide.com id hviot4163hsk for <aptguide.parkmerced@maximus.mail.reva.tech>; Wed, 16 May 2018 16:33:38 -0600 (envelope-from <bounce-473_HTML-166824132-986395-7001514-174930@bounce.message.my.apartmentguide.com>)
+From: "Apartment Guide" <comments@message.my.apartmentguide.com>
+To: <aptguide.parkmerced@maximus.mail.reva.tech>
+Subject: AG Lead from Peter Malonesio (Parkmerced Apartments)
+Date: Wed, 16 May 2018 16:33:38 -0600
+MIME-Version: 1.0
+List-ID: <7001514_986395.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 7001514_986395
+Reply-To: "Peter Malonesio" <reply-feb71d7873670d78-473_HTML-166824132-7001514-174930@message.my.apartmentguide.com>
+Message-ID: <429531bb-a63f-413c-82f1-97c00f9cf74a@xtinp2mta444.xt.local>
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+
+  
+  <table  width="100%" bgcolor="" border="0" bordercolor="" cellpadding="0" cellspacing="0"><tr><td style="font-family:Arial; font-size:13px"></td></tr></table>
+  
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>AG HTML Lead</title>
+    <style type="text/css">
+    * {
+    padding: 0px;
+    margin: 0px;
+    }
+    html {
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    }
+    a {
+    outline: 0;
+    }
+    img {
+    display: block;
+    }
+    td {
+    mso-line-height-rule: exactly;
+    }
+    .outlookFix {
+    text-decoration: underline;
+    }
+    /*Gmail number links*/
+    .gblue a {
+    color: inherit !important;
+    text-decoration: none !important;
+    }
+    /*
+    .dotted-border {
+    border-left: 1px #666666;
+    border-style: dotted;
+    }
+    */
+    /*
+    .dotted-border-1 {
+    border-top: 1px #666666;
+    border-style: dotted;
+    }
+    */
+    /* Base Media Queries */
+    @media (max-width: 480px) {
+    * {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    }
+    /*Stop iproducts from auto-resizing text*/
+    .container {
+    width: 95% !important;
+    }
+    .container-1 {
+    width: 90% !important;
+    }
+    .container-2 {
+    width: 330px !important;
+    }
+    .full {
+    display: block !important;
+    width: 100% !important;
+    }
+    .img-center {
+    margin: auto !important;
+    }
+    .mob-center {
+    margin: 0 auto !important;
+    }
+    .text-center {
+    text-align: center !important;
+    }
+    .dotted-border {
+    border: none !important;
+    border: 0 !important;
+    border-top: 1px #666666 !important;
+    border-style: dotted !important;
+    }
+    .mob-text {
+    font-size: 11.2px !important;
+    font-weight: 500 !important;
+    }
+    /*container width*/
+    .height {
+    height: auto !important;
+    }
+    /*See Movie cell height size adjust*/
+    .hide {
+    display: none !important;
+    }
+    .w100P {
+    width: 100% !important;
+    height: auto !important;
+    }
+    .padding-left {
+    padding-left: 10px !important;
+    }
+    .padding-left-20 {
+    padding-left: 20px !important;
+    }
+    .six {
+    width: 385px !important;
+    display: inline-block !important;
+    }
+    .six-1 {
+    width: 300px !important;
+    }
+    /*cell width adjust*/
+    .W300 {
+    width: 300px !important;
+    }
+    /*Footer side padding*/
+    .show {
+    display: block !important;
+    max-height: none !important;
+    overflow: visible !important;
+    line-height: normal !important;
+    }
+    .showTable {
+    display: block !important;
+    }
+    /*.CWU {top:0px !important;left:98px !important;}/*positioning example*/
+    }
+    /*  Iphone Six Plus styles  */
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) and (-webkit-device-pixel-ratio: 3) {
+    .six-plus {
+    width: 414px !important;
+    display: inline-block !important;
+    }
+    /*
+    .six-plus-1 {
+    width: 400px !important;
+    }
+    */
+    }
+    </style>
+  </head>
+  <img src="http://click.message.my.apartmentguide.com/open.aspx?ffcb10-feb71d7873670d78-fdff1570706c067d7514787d-fe9d13707565017c71-ff61107776-fe2e1576736c0679741772-fec71577716d077d" width="1" height="1">
+  <body bgcolor="#ffffff" style="-webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-font-smoothing: antialiased;padding:0px;">
+    <!--[if t]><![endif]-->
+    <!--[if t]><![endif]-->
+    <!--[if t]><![endif]-->
+    <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td>
+          <!-- HEADER -->
+          <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#ffffff" class="w100P" style="margin:0 auto;">
+            <tr>
+              <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 10px;">
+                <!--[if gte mso 15]>&nbsp;<![endif]-->
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table cellpadding="0" cellspacing="0" border="0" width="300" align="left" class="w100P">
+                  <tr>
+                    <td align="center" valign="top">
+                      <img src="http://image.message.my.apartmentguide.com/lib/fe9d13707565017c71/m/15/B2B-RPTH-255-NEWEMAILLEAD-2.jpg" alt="" width="300" style="display:block;" title="" border="0" class="img-center container height">
+                    </td>
+                  </tr>
+                </table>
+                <!--[if gte mso 9]></td><td valign="top"><![endif]-->
+                <table cellpadding="0" cellspacing="0" border="0" width="145" align="right" class="w100P">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" class="hide">
+                        <tr>
+                          <td valign="top" align="center">
+                            <img src="http://image.message.my.apartmentguide.com/lib/fe9d13707565017c71/m/15/B2B-RPTH-255-NEWEMAILLEAD-1.jpg" alt="" width="90" style="display:block;" title="" border="0">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 10px;">
+                            <!--[if gte mso 15]>&nbsp;<![endif]-->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;" bgcolor="#5E5E5E">
+                            <a href="http://click.message.my.apartmentguide.com/?qs=99cfb06de38fac3cfe267ef3378b298e25350998621375c2daf6427c5725e5f91c7c98c48c9a6c11caea24dc4053cdcc47d475074c8e1165" target="_blank" style="font-size: 12px; font-weight:500; font-family: Verdana, serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 5px 15px; border: 1px solid #5E5E5E; display: inline-block;">Manager Login</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--FOR MOBILE - Manager login/Reply to prospect CTA-->
+                      <div style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                        <!--CTA TABLE-->
+                        <table border="0" cellspacing="0" cellpadding="0" style="display: none; margin:0 auto !important;" class="showTable">
+                          <tr>
+                            <td bgcolor="#ffffff" height="15" style="line-height:15px; font-size:15px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top">
+                              <table border="0" cellspacing="0" cellpadding="0" style="display: none;" class="showTable six six-plus">
+                                <tr>
+                                  <td class="six-1" align="center" valign="top" style="-webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px;" bgcolor="#5E5E5E">
+                                    <a href="http://click.message.my.apartmentguide.com/?qs=99cfb06de38fac3cfe267ef3378b298e25350998621375c2daf6427c5725e5f91c7c98c48c9a6c11caea24dc4053cdcc47d475074c8e1165" target="_blank" style="font-size: 14px; font-weight:500; font-family: Verdana, serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; padding: 10px 15px; border: 1px solid #5E5E5E; display: inline-block;">Manager Login</a>
+                                  </td>
+                                  <td class="six-1" align="center" style="-webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px;" bgcolor="#00ADF2">
+                                    <a href="http://pages.message.my.apartmentguide.com/page.aspx?qs=c76003443ff9837d2436de5c9ae79441f09b04d2727c054e1126f2920fd88a711d3e9a8a7e8ea560c9a59a026837dfd2f3bcfd670f40bd0a113b7d208836409058e3d28c43c53c55276e4e446ba9984061df09d2236d74667232499df7c097778ea7e3131be8e1386f5f2b11113bdaa17093988a7659388dd8998099557c4cad452d3969cb7e18fb61475e627a9e810fb2c3795c8f385587c12fa0595e9c834ca3cb47ebd44d6dbe" target="_blank" style="font-size: 14px; font-weight:500; font-family: Verdana, serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; padding: 10px 15px; border: 1px solid #00ADF2; display: inline-block;">Reply To Prospect</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--/FOR MOBILE - Manager login/Reply to prospect CTA-->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- /HEADER -->
+          <!--Spacer-->
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+            </tr>
+          </table>
+          <!--SPACER END -->
+          <!-- MAIN-CONTENT -->
+          <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#E7E7E7" class="w100P" style="margin:0 auto;">
+            <tr>
+              <td align="center" valign="top">
+                <table cellpadding="0" cellspacing="0" border="0" class="container" width="600">
+                  <tr>
+                    <td align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                      <!--[if gte mso 15]>&nbsp;<![endif]-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="padding-left" align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:bold;">
+                      Peter Malonesio checked you guys out on ApartmentGuide.com and is interested in moving to your community!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" width="100%" height="20" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 20px;">
+                      <!--[if gte mso 15]>&nbsp;<![endif]-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" class="hide">
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td align="center" valign="top" style="-webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px;" bgcolor="#00ADF2">
+                            <a href="http://pages.message.my.apartmentguide.com/page.aspx?qs=c76003443ff9837d2436de5c9ae79441f09b04d2727c054e1126f2920fd88a711d3e9a8a7e8ea560c9a59a026837dfd2f3bcfd670f40bd0a113b7d208836409058e3d28c43c53c55276e4e446ba9984061df09d2236d74667232499df7c097778ea7e3131be8e1386f5f2b11113bdaa17093988a7659388dd8998099557c4cad452d3969cb7e18fb61475e627a9e810fb2c3795c8f385587c12fa0595e9c834ca3cb47ebd44d6dbe" target="_blank" style="font-size: 12px; font-weight:500; font-family: Verdana, serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; padding: 5px 15px; border: 1px solid #00ADF2; display: inline-block;">Reply to Prospect</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="hide" align="left" valign="top" width="100%" height="30" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 30px;">
+                      <!--[if gte mso 15]>&nbsp;<![endif]-->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#ffffff" class="container" style="margin:0 auto;">
+            <tr>
+              <td align="center" valign="top">
+                <table cellpadding="0" cellspacing="0" border="0" class="w100P" width="636">
+                  <tr>
+                    <td colspan="9" bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:bold;" class="padding-left">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            Information for <strong>Peter Malonesio</strong>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" width="100%" height="10" style="border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 10px;">
+                            <!--[if gte mso 15]>&nbsp;<![endif]-->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0" width="320" align="left" class="container">
+                              <tr>
+                                <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;" class="gBlue">
+                                  <span style="color:#006699;">Email:&nbsp;</span><a href="mailto:uspnoy@yahoo.com" style="color: #333333; text-decoration:none;">uspnoy@yahoo.com</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                              </tr>
+                              
+                              
+                              
+                              
+                              
+                              <tr>
+                                <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                                  <span style="color:#006699;">Initiated From:&nbsp;</span>Mobile
+                                </td>
+                              </tr>
+                              
+                              <!--FOR MOBILE - SPACER-->
+                              <tr>
+                                <td valign="top" align="left" style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                                  <div style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                                    <!--CTA TABLE-->
+                                    <table border="0" cellspacing="0" cellpadding="0" style="display: none; margin:0 auto !important;" class="showTable">
+                                      <tr>
+                                        <td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                              <!--FOR MOBILE - SPACER-->
+                            </table>
+                            <!--[if gte mso 9]></td><td valign="top"><![endif]-->
+                            <table cellpadding="0" cellspacing="0" border="0" width="245" align="left" class="container dotted-border" style="border-left: 1px #666666 dotted;">
+                              <!--FOR MOBILE - SPACER-->
+                              <tr>
+                                <td align="left" valign="top" colspan="2" style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                                  <div style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                                    <!--CTA TABLE-->
+                                    <table border="0" cellspacing="0" cellpadding="0" style="display: none; margin:0 auto !important;" class="showTable">
+                                      <tr>
+                                        <td bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                              <!--FOR MOBILE - SPACER-->
+                              <tr>
+                                <td width="15" class="hide"></td>
+                                <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                                  <span style="color:#006699;">Date Submitted:&nbsp;</span>May 16, 2018
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                              </tr>
+                              
+                              
+                              
+                              
+                              <tr>
+                                <tr>
+                                  <td class="hide" colspan="2" bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                                </tr>
+                                
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="9" bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="9" align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;" class="padding-left">
+                        <span style="color:#006699;">Comments:&nbsp;</span>Hello,
+
+Im interested in Parkmerced Apartments. Please send me current availability and additional details.
+
+Thanks.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="9" bgcolor="#ffffff" height="15" style="line-height:15px; font-size:15px;">&nbsp;</td>
+                    </tr>
+                    
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#ffffff" class="w100P" style="margin:0 auto; border-top: 1px #666666 dotted;">
+              <tr>
+                <td align="center" valign="top">
+                  <table cellpadding="0" cellspacing="0" border="0" width="636" class="container">
+                    
+                      
+                    
+                    
+                    
+                          <!-- /FLOOR PLAN PROPERTIES -->
+                          
+                          
+                          
+                          <!-- /FLOOR PLAN PROPERTIES -->
+                          
+                          
+                            
+                          
+                          
+                          <!--FOR MOBILE - SPACER-->
+                          <tr>
+                            <td colspan="2" valign="top" align="left" style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                              <div style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                                <table border="0" cellspacing="0" cellpadding="0" style="display: none; margin:0 auto !important;" class="showTable">
+                                  <tr>
+                                    <td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--FOR MOBILE - SPACER-->
+                          
+                          
+                          <!--FOR MOBILE - MOBILE DOTTED lINE-->
+                          <tr>
+                            <td width="100%">
+                              <div style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                                <table border="0" cellspacing="0" cellpadding="0" style="display: none; margin:0 auto !important;" width="100%" class="showTable">
+                                  <tr>
+                                    <td width="100%" colspan="2" bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px; border-top: 1px #666666 dotted;">&nbsp;</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--/FOR MOBILE - MOBILE DOTTED lINE-->
+                          <tr>
+                            <td colspan="2" bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;" class="hide">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td valign="top">
+                              <table cellpadding="0" cellspacing="0" border="0" class="w100P">
+                                <tr>
+                                  <td valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;text-align:left;" class="text-center">
+                                    Number of Leads Submitted in the last 24 hours:&nbsp;<span style="color:#006699;">4</span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!--Spacer-->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr>
+                <td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+              </tr>
+            </table>
+            <!--SPACER END -->
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#ffffff" class="w100P" style="margin:0 auto;border-top: 1px #666666 dotted;">
+              <tr>
+                <td align="left" valign="top">
+                  <tr>
+                    <td bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                  </tr>
+                  
+                  <tr>
+                    <td valign="top" align="center">
+                      <table cellpadding="0" cellspacing="0" border="0" width="636" class="container-1">
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            Property Information
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            <span style="color:#006699;">Property Name:&nbsp;</span>Parkmerced Apartments
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            <span style="color:#006699;">Property ID:&nbsp;</span>22563
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            <span style="color:#006699;">Property Address:&nbsp;</span>3711 19th Avenue 
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" bgcolor="#ffffff" height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 14px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            <span style="color:#006699;">Property City, State:&nbsp;</span>San Francisco, CA
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" bgcolor="#ffffff" height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                        </tr>
+                        
+                        
+                      </table>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+            
+            <!-- /MAIN-CONTENT -->
+            <!-- FOOTER -->
+            <table cellpadding="0" cellspacing="0" border="0" align="center" width="636" bgcolor="#E7E7E7" class="w100P" style="margin:0 auto;">
+              <tr>
+                <td valign="top" align="left">
+                  <tr>
+                    <td height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" width="600" class="container-1">
+                        <!--FOR MOBILE - SPACER-->
+                        <tr>
+                          <td valign="top" align="left" colspan="9" style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                            <div style="display: none; max-height: 0px; overflow: hidden; line-height: 0px;" class="show">
+                              <table border="0" cellspacing="0" cellpadding="0" style="display: none; margin:0 auto !important;" class="showTable">
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <img src="http://image.message.my.apartmentguide.com/lib/fe9d13707565017c71/m/15/B2B-RPTH-255-NEWEMAILLEAD-2-0.png" alt="" width="300" style="display:block;" title="" border="0" class="img-center container height">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="20" style="line-height:20px; font-size:20px;">&nbsp;</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <!--FOR MOBILE - SPACER-->
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 10px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            *You may not send SMS/text messages unless you have prior express written consent. Compliance with this requirement is solely your responsibility.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 10px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            To ensure that you receive our emails, please add <a href="mailto:comments@message.my.apartmentguide.com" target="_blank" alias="" title="" style="color:#006699; text-decoration:none;">comments@message.my.apartmentguide.com</a> to your address book.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 10px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            If you are no longer involved in the receipt of these notifications or have received this email in error, please click here to send an email to <a href="mailto:contact@rentpath.com" target="_blank" alias="" title="" style="color:#006699; text-decoration:none;">contact@rentpath.com</a> and we will remove you from these emails.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 10px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            If you are unable to see the message, <a style="color: #006699; text-decoration:none;" href="http://view.message.my.apartmentguide.com/?qs=6cbf7d37b572bfd24eae1d65cc3a14e9a727cd31261d476fe44d69eab923eac79dcf16aef076723475a13a0e6c08ce4d37a6e4bfcca362a29d4ab43201d36439c071dade7759b4d0b4a62a8135ec3bdf">click here</a> to view.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 10px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            &copy; 2018 RentPath, LLC. All rights reserved.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="10" style="line-height:10px; font-size:10px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" style="font-size: 10px; line-height: normal; font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight:normal;">
+                            <a href="tel:+877-394-9599" target="_blank" alias="FTR_Telephohne" title="Telephone" style="color:#006699; text-decoration:none;">877-394-9599</a> | <a href="http://click.message.my.apartmentguide.com/?qs=06af56b6f9102d63c0f47d75cc4f44ed11f5a77014338a705c44c2a9eb74987ad96e81276bc9d40380ed432cd015584d406ece2525351c9e" target="_blank"  title="Manage Email Preferences" style="color:#006699; text-decoration:none;">Manage Email Preferences</a> | <a href="http://click.message.my.apartmentguide.com/?qs=2f96d0f89954e9bfe44c0445d29fcd7b217e729d2c3f41c94a75697eaf87e2a74449c902263a1f3e5a5a254f2a5b509fddf5370cf22ec4cc" target="_blank"  title="Privacy Policy" style="color:#006699; text-decoration:none;">Privacy Policy</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="30" style="line-height:30px; font-size:30px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+            <!-- /FOOTER -->
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>

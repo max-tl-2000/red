@@ -1,0 +1,16 @@
+.address-summary {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: (27em/16);
+
+  flex-wrap: wrap;
+
+  > div {
+    width: 45%;
+
+    .address-type {
+      margin-bottom: (3em/16);
+    }
+  }
+}

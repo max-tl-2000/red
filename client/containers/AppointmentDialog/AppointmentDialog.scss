@@ -1,0 +1,13 @@
+.apptDialog {
+  > div {
+    min-width: (360rem/16);
+  }
+
+  div[data-component='dialog-body'] {
+    padding: 0;
+  }
+
+  &.shouldHide {
+    display: none;
+  }
+}

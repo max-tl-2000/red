@@ -1,0 +1,997 @@
+{
+    "id": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+    "comms": [],
+    "score": "prospect",
+    "state": "Lease",
+    "tasks": [],
+    "workflowName": "newLease",
+    "workflowState": "active",
+    "teams": [ "9d0e1d8d-5e0b-4394-98e9-f5c25b793284"],
+    "leases": [
+        {
+            "id": "5921d11f-0915-4964-9847-eed2038b073b",
+            "status": "LEASE_STATUS",
+            "partyId": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+            "quoteId": "5a065c92-3350-43ef-9d92-9bb1b14263c5",
+            "signDate": null,
+            "created_at": "2017-12-22T08:59:24.282+00:00",
+            "signatures": [
+                {
+                  "id": "8da89512-6a59-4058-9caa-60f3622fc878",
+                  "status": "RESIDENT_SIGNATURE_STATUS",
+                  "userId": null,
+                  "leaseId": "5921d11f-0915-4964-9847-eed2038b073b",
+                  "signUrl": "https://claudiu.local.env.reva.tech/leases/57cf8d5c-9ce5-427f-83c0-59161372f9f0/sign/Resident2",
+                  "metadata": {
+                    "email": "inofficesigner@docusign.com",
+                    "token": "https://claudiu.local.env.reva.tech/leases/57cf8d5c-9ce5-427f-83c0-59161372f9f0/sign/Resident2",
+                    "status": "Sent",
+                    "signDate": "2022-01-10T12:30:31.925Z",
+                    "userName": "Claudiu Schuller",
+                    "recipientId": "16e1b045-5caf-4b8e-a214-33e8749b9cb0",
+                    "clientUserId": "Resident2",
+                    "counterSigner": false
+                  },
+                  "created_at": "2022-01-10T12:29:25.23+00:00",
+                  "envelopeId": "57cf8d5c-9ce5-427f-83c0-59161372f9f0",
+                  "updated_at": "2022-01-10T12:30:31.902873+00:00",
+                  "clientUserId": "Resident2",
+                  "partyMemberId": "e3fc511f-a914-4baf-aa4b-2815f4e5d9a5"
+                },
+                {
+                  "id": "71cf51bf-1276-4fd9-9a6e-95f04bca9b93",
+                  "status": "RESIDENT_SIGNATURE_STATUS_1",
+                  "userId": null,
+                  "leaseId": "5921d11f-0915-4964-9847-eed2038b073b",
+                  "signUrl": "https://claudiu.local.env.reva.tech/leases/57cf8d5c-9ce5-427f-83c0-59161372f9f0/sign/Resident1",
+                  "metadata": {
+                    "email": "inofficesigner@docusign.com",
+                    "token": "https://claudiu.local.env.reva.tech/leases/57cf8d5c-9ce5-427f-83c0-59161372f9f0/sign/Resident1",
+                    "status": "Sent",
+                    "signDate": "2022-01-10T12:30:59.795Z",
+                    "userName": "Claudiu Schuller2",
+                    "recipientId": "c412b0d3-85e9-488d-952a-33b9415c1493",
+                    "clientUserId": "Resident1",
+                    "counterSigner": false
+                  },
+                  "created_at": "2022-01-10T12:29:25.23+00:00",
+                  "envelopeId": "57cf8d5c-9ce5-427f-83c0-59161372f9f0",
+                  "updated_at": "2022-01-10T12:31:12.660516+00:00",
+                  "clientUserId": "Resident1",
+                  "partyMemberId": "19c283c3-753f-43f1-8e50-25d68e48ad6c"
+                },
+                {
+                  "id": "efa50fd7-5ad5-462f-ad0c-5fd44f7120ed",
+                  "status": "GUARANTOR_SIGNATURE_STATUS",
+                  "userId": null,
+                  "leaseId": "5921d11f-0915-4964-9847-eed2038b073b",
+                  "signUrl": "https://claudiu.local.env.reva.tech/leases/05182d43-0c49-4ec4-a6dc-138238ebaced/sign/Guarantor1",
+                  "metadata": {
+                    "email": "inofficesigner@docusign.com",
+                    "token": "https://claudiu.local.env.reva.tech/leases/05182d43-0c49-4ec4-a6dc-138238ebaced/sign/Guarantor1",
+                    "status": "Sent",
+                    "signDate": "2022-01-10T12:30:02.019Z",
+                    "userName": "Claudiu Guar2",
+                    "recipientId": "39550464-2382-4c5d-bfe3-d4ddf04a5587",
+                    "clientUserId": "Guarantor1",
+                    "counterSigner": false
+                  },
+                  "created_at": "2022-01-10T12:29:25.23+00:00",
+                  "envelopeId": "05182d43-0c49-4ec4-a6dc-138238ebaced",
+                  "updated_at": "2022-01-10T12:30:01.998913+00:00",
+                  "clientUserId": "Guarantor1",
+                  "partyMemberId": "5d13dd00-4250-439f-9972-a375cf2cce20"
+                },
+                {
+                  "id": "1bb796f7-99f7-447f-a513-243537fe70cb",
+                  "status": "COUNTERSIGNER_SIGNATURE_STATUS",
+                  "userId": "COUNTERSIGNER_USER_ID",
+                  "leaseId": "5921d11f-0915-4964-9847-eed2038b073b",
+                  "signUrl": "https://claudiu.local.env.reva.tech/leases/57cf8d5c-9ce5-427f-83c0-59161372f9f0/sign/CounterSigner1",
+                  "metadata": {
+                    "email": "admin@reva.tech",
+                    "token": "https://claudiu.local.env.reva.tech/leases/57cf8d5c-9ce5-427f-83c0-59161372f9f0/sign/CounterSigner1",
+                    "status": "Created",
+                    "signDate": "2022-01-10T12:31:45.819Z",
+                    "userName": "Reva Admin",
+                    "recipientId": "2282d020-2882-4501-ae37-68866b23a83a",
+                    "clientUserId": "CounterSigner1",
+                    "counterSigner": true
+                  },
+                  "created_at": "2022-01-10T12:29:25.23+00:00",
+                  "envelopeId": "57cf8d5c-9ce5-427f-83c0-59161372f9f0",
+                  "updated_at": "2022-01-10T12:31:45.770515+00:00",
+                  "clientUserId": "CounterSigner1",
+                  "partyMemberId": null
+                },
+                {
+                    "id": "358bdf5f-9f8e-4510-b741-e17afa14ae88",
+                    "status": "COUNTERSIGNER_SIGNATURE_STATUS_1",
+                    "userId": "COUNTERSIGNER_USER_ID",
+                    "leaseId": "5921d11f-0915-4964-9847-eed2038b073b",
+                    "signUrl": "https://claudiu.local.env.reva.tech/leases/05182d43-0c49-4ec4-a6dc-138238ebaced/sign/CounterSigner1",
+                    "metadata": {
+                      "email": "admin@reva.tech",
+                      "token": "https://claudiu.local.env.reva.tech/leases/05182d43-0c49-4ec4-a6dc-138238ebaced/sign/CounterSigner1",
+                      "status": "Created",
+                      "signDate": "2022-01-10T12:31:23.023Z",
+                      "userName": "Alice Altimes1",
+                      "recipientId": "bba2fc17-5e2a-4543-ba02-52ef3bba6cf1",
+                      "clientUserId": "CounterSigner1",
+                      "counterSigner": true
+                    },
+                    "created_at": "2022-01-10T12:29:25.23+00:00",
+                    "envelopeId": "05182d43-0c49-4ec4-a6dc-138238ebaced",
+                    "updated_at": "2022-01-10T12:31:36.980713+00:00",
+                    "clientUserId": "CounterSigner1",
+                    "partyMemberId": null
+                  }
+              ],
+            "updated_at": "2017-12-22T09:02:57.298638+00:00",
+            "leaseTermId": "276734d3-4e29-4412-8e1a-b49d992dc8e2",
+            "baselineData": {
+                "pets": [
+                ],
+                "quote": {
+                    "nsfFee": 75,
+                    "lateFee": 75,
+                    "unitName": "350 Arballo-1014",
+                    "unitRent": 2093,
+                    "leaseTerm": "12 months",
+                    "moveInDate": "12/22/2017",
+                    "moveInRent": 675.16,
+                    "rentDueDay": "first (1st)",
+                    "inventoryId": "8f4a918f-7e83-448b-85ed-08b0d030e149",
+                    "monthlyRate": 2093,
+                    "totalPetFee": 0,
+                    "unitAddress": "San Francisco, CA 94132",
+                    "unitDeposit": 2093,
+                    "leaseEndDate": "12/21/2018",
+                    "propertyName": "Parkmerced Apartments",
+                    "totalPetRent": 0,
+                    "inventoryType": "unit",
+                    "moveInPetRent": 0,
+                    "propertyPhone": "(415) 405-4690",
+                    "barbecuePolicy": "",
+                    "leaseStartDate": "12/22/2017",
+                    "otherLeaseTerm": "",
+                    "propertyAddress": "3711 19th Ave, San Francisco, CA 94132",
+                    "totalPetDeposit": 0,
+                    "numberOfBedrooms": "2BR",
+                    "totalHoldDeposit": 1000,
+                    "totalMonthlyRent": 2173,
+                    "totalParkingRent": 0,
+                    "totalStorageRent": 0,
+                    "asbestosLocations": "in the tile floors on the second through top floors, halls and elevators of all the high-rise apartment buildings; insulation on the piping and heaters in the boiler rooms, laundry rooms and in the basement hallways; insulation for the heating system duct work in garden apartments in the heater closets; and in some apartment kitchen floor coverings",
+                    "moveinRentEndDate": "2017-12-31T23:59:59+00:00",
+                    "otherLeaseTermFlag": "",
+                    "totalMoveInCharges": 1768.1599999999999,
+                    "totalAdditionalRent": 80,
+                    "applicationFeeAmount": 50,
+                    "moveinAdditionalRent": 25.81,
+                    "unitFullQualifiedName": "swparkme-350 Arballo-1014",
+                    "concessionsDescription": [
+                    ],
+                    "concessionsAmountPeriod": [
+                    ],
+                    "subTotalOfMoveinCharges": 2768.16,
+                    "monthToMonthLeaseTermFlag": "",
+                    "accept12MonthLeaseTermFlag": "X",
+                    "reject12MonthLeaseTermFlag": "",
+                    "totalPetDNARegistrationFee": 0,
+                    "totalConcessionOnMoveinCharges": 0
+                },
+                "hasPets": false,
+                "vehicles": [
+                ],
+                "documents": {
+                    "0ab90c53-c3c4-469d-889f-39be0ed91f4d": {
+                        "formId": "1367",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 5,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Facts about renters insurance addendum",
+                        "guarantorOnly": false
+                    },
+                    "10d8fd64-b682-480d-8599-4b0757195cec": {
+                        "formId": "1405",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 6,
+                        "displayName": "Parkmerced-Guarantee of Lease",
+                        "guarantorOnly": true
+                    },
+                    "17e28ab6-8c96-4398-ad00-044a3c4880ec": {
+                        "formId": "1427",
+                        "booklet": true,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 15,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-EPA Booklet addendum",
+                        "guarantorOnly": false
+                    },
+                    "1e8f5d80-161c-4ff1-b8f5-52192340ac2d": {
+                        "formId": "1378",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 2,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Bedbug addendum",
+                        "guarantorOnly": false
+                    },
+                    "2e95ef5b-c673-43f7-8ed4-5b60bfee36e6": {
+                        "formId": "1361",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 3,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Community rules addendum",
+                        "guarantorOnly": false
+                    },
+                    "5906529c-96d4-4fd2-bf76-c17c9d003215": {
+                        "formId": "1366",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 1,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Asbestos disclosure addendum",
+                        "guarantorOnly": false
+                    },
+                    "5cf510d5-e731-4d88-9deb-4821372780f5": {
+                        "formId": "1426",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 8,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Move-in/out statement and summary of move-out charges addendum",
+                        "guarantorOnly": false
+                    },
+                    "85d84f62-e683-4598-a500-b0d4f2a4695f": {
+                        "formId": "1365",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 4,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Development agreement disclosure addendum",
+                        "guarantorOnly": false
+                    },
+                    "8a645035-c3b1-497b-8f3a-e7055d7673de": {
+                        "formId": "1376",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 13,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Utility addendum",
+                        "guarantorOnly": false
+                    },
+                    "9978604b-0f49-441e-bf61-05525d0c690f": {
+                        "formId": "1362",
+                        "booklet": false,
+                        "mainForm": true,
+                        "mandatory": false,
+                        "sortOrder": 0,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Core Agreement",
+                        "guarantorOnly": false
+                    },
+                    "a3129092-2441-4614-b99c-5309e72d8e21": {
+                        "formId": "1370",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 9,
+                        "isIncluded": "Pet Agreement Addendum",
+                        "displayName": "Parkmerced-Pet agreement addendum",
+                        "guarantorOnly": false
+                    },
+                    "af462427-4546-437f-a131-08be6c61f232": {
+                        "formId": "1428",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 11,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-SF public works and environmental ordinances",
+                        "guarantorOnly": false
+                    },
+                    "b0b3aadd-63e0-45b2-adae-076f5e914c97": {
+                        "formId": "1371",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 10,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Recreational facility regulations addendum",
+                        "guarantorOnly": false
+                    },
+                    "d302bba9-03b3-48f4-93fd-cf1c23fc8333": {
+                        "formId": "1364",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 7,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Mold notification and lead disclosure addendum",
+                        "guarantorOnly": false
+                    },
+                    "e11b6b76-40f4-443e-a93d-69ed03c7405b": {
+                        "formId": "1377",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 14,
+                        "isIncluded": true,
+                        "displayName": "Parkmerced-Utility provider information",
+                        "guarantorOnly": false
+                    },
+                    "f3a48ddb-0897-4c63-bbe8-9faac03bc67f": {
+                        "formId": "1373",
+                        "booklet": false,
+                        "mainForm": false,
+                        "mandatory": false,
+                        "sortOrder": 12,
+                        "isIncluded": "SFSU lease addendum",
+                        "displayName": "Parkmerced-SFSU lease addendum",
+                        "guarantorOnly": false
+                    }
+                },
+                "occupants": [
+                ],
+                "residents": [
+                    {
+                        "id": "54ed1275-b0d4-4798-88e6-66ae3ba17b8f",
+                        "name": "Adrian Magdas",
+                        "email": "adrian@reva.tech",
+                        "location": "Newark Boulevard",
+                        "dateOfBirth": "1988-11-11"
+                    }
+                ],
+                "guarantors": [
+                ],
+                "companyName": "",
+                "propertyName": "swparkme",
+                "hasConcessions": false,
+                "publishedLease": {
+                    "unitRent": 2093,
+                    "moveInDate": "12/22/2017",
+                    "companyName": "",
+                    "concessions": {
+                    },
+                    "leaseEndDate": "12/21/2018",
+                    "leaseStartDate": "12/22/2017",
+                    "oneTimeCharges": {
+                        "1ffdec35-f6f2-4bc2-bf32-1dee02d468db": {
+                            "name": "Unit Deposit",
+                            "amount": 2093,
+                            "feeType": "deposit",
+                            "firstFee": true,
+                            "displayName": "Security deposit",
+                            "quoteSectionName": "deposit"
+                        }
+                    },
+                    "additionalCharges": {
+                        "336deaff-f5ae-47a6-98d0-9176a40e4abe": {
+                            "name": "Water",
+                            "amount": 25,
+                            "feeType": "service",
+                            "firstFee": true,
+                            "quantity": 1,
+                            "displayName": "Water",
+                            "quoteSectionName": "utility"
+                        },
+                        "58abebcb-c682-417a-a9cd-6e92a8b0c409": {
+                            "name": "Sewer",
+                            "amount": 10,
+                            "feeType": "service",
+                            "firstFee": true,
+                            "quantity": 1,
+                            "displayName": "Sewer",
+                            "quoteSectionName": "utility"
+                        },
+                        "63d03b9d-5a59-420c-a652-d12b8471318b": {
+                            "name": "Gas",
+                            "amount": 25,
+                            "feeType": "service",
+                            "firstFee": true,
+                            "quantity": 1,
+                            "displayName": "Gas",
+                            "quoteSectionName": "utility"
+                        },
+                        "c9c9fd17-f42a-436b-ba7d-b0b639fe6c84": {
+                            "name": "ComplimentaryLocker",
+                            "amount": 0,
+                            "feeType": "service",
+                            "firstFee": true,
+                            "quantity": 1,
+                            "displayName": "Locker",
+                            "quoteSectionName": "storage"
+                        },
+                        "f0afc16d-6233-4a04-a64a-151f2fff4283": {
+                            "name": "Trash",
+                            "amount": 20,
+                            "feeType": "service",
+                            "firstFee": true,
+                            "quantity": 1,
+                            "displayName": "Trash",
+                            "quoteSectionName": "utility"
+                        },
+                        "2ed82880-be22-4c89-a272-6c4cc551fc68--4c2175c1-2c9f-4a54-8bc6-1caf66c7b901": {
+                            "amount": 0,
+                            "firstFee": true,
+                            "quantity": 1,
+                            "displayName": "Door Fob",
+                            "quoteSectionName": "appliance"
+                        }
+                    },
+                    "rentersInsuranceFacts": "takeOwnerInsuranceFlag"
+                },
+                "buyInsuranceFlag": "",
+                "isCorporateParty": false,
+                "officeWorkingTime": {
+                    "officeDays1": "Mon - Fri",
+                    "officeDays2": "Sat",
+                    "officeDays3": "",
+                    "officeHours1": "9am - 6pm",
+                    "officeHours2": "",
+                    "officeHours3": ""
+                },
+                "takeOwnerInsuranceFlag": "X",
+                "countersignerDescriptor": "Owner or Owner's Representative",
+                "defaultInsuranceSelected": true
+            },
+            "leaseTemplateId": "6a821aa5-11b9-4452-ae91-e965197ccd5b"
+        }
+    ],
+    "quotes": [
+        {
+            "id": "5a065c92-3350-43ef-9d92-9bb1b14263c5",
+            "partyId": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+            "created_at": "2017-12-22T08:54:43.862+00:00",
+            "selections": {
+                "selectedLeaseTerms": [
+                    {
+                        "id": "dfbba28f-ff8b-477c-b9e3-da8ccef3dfa2",
+                        "concessions": [
+                            {
+                                "id": "57e50053-fdbf-4e60-9b0a-5fd63edff438"
+                            }
+                        ],
+                        "paymentSchedule": [
+                            {
+                                "amount": "768.38",
+                                "timeframe": "Dec 2017"
+                            },
+                            {
+                                "amount": "2382.00",
+                                "timeframe": "Jan - May 2018"
+                            },
+                            {
+                                "amount": "1667.40",
+                                "timeframe": "Jun 2018"
+                            }
+                        ],
+                        "originalBaseRent": 2302,
+                        "overwrittenBaseRent": 0
+                    },
+                    {
+                        "id": "276734d3-4e29-4412-8e1a-b49d992dc8e2",
+                        "concessions": [
+                            {
+                                "id": "57e50053-fdbf-4e60-9b0a-5fd63edff438"
+                            }
+                        ],
+                        "paymentSchedule": [
+                            {
+                                "amount": "700.96",
+                                "timeframe": "Dec 2017"
+                            },
+                            {
+                                "amount": "2173.00",
+                                "timeframe": "Jan - Nov 2018"
+                            },
+                            {
+                                "amount": "1472.04",
+                                "timeframe": "Dec 2018"
+                            }
+                        ],
+                        "originalBaseRent": 2093,
+                        "overwrittenBaseRent": 0
+                    }
+                ],
+                "selectedAdditionalAndOneTimeCharges": {
+                    "fees": [
+                        {
+                            "id": "2ed82880-be22-4c89-a272-6c4cc551fc68--4c2175c1-2c9f-4a54-8bc6-1caf66c7b901",
+                            "amount": 0,
+                            "isIGFee": false,
+                            "quantity": 1,
+                            "isUnitDepositFee": false,
+                            "selectedConcessions": [
+                            ],
+                            "isMinAndMaxRentEqual": true
+                        },
+                        {
+                            "id": "63d03b9d-5a59-420c-a652-d12b8471318b",
+                            "amount": 25,
+                            "isIGFee": false,
+                            "quantity": 1,
+                            "isUnitDepositFee": false,
+                            "selectedConcessions": [
+                            ],
+                            "isMinAndMaxRentEqual": true
+                        },
+                        {
+                            "id": "c9c9fd17-f42a-436b-ba7d-b0b639fe6c84",
+                            "amount": 0,
+                            "isIGFee": false,
+                            "quantity": 1,
+                            "isUnitDepositFee": false,
+                            "selectedConcessions": [
+                            ],
+                            "isMinAndMaxRentEqual": true
+                        },
+                        {
+                            "id": "1ffdec35-f6f2-4bc2-bf32-1dee02d468db",
+                            "amount": null,
+                            "isIGFee": false,
+                            "quantity": 1,
+                            "isUnitDepositFee": true,
+                            "isMinAndMaxRentEqual": true,
+                            "relativeAmountsByLeaseTerm": [
+                                {
+                                    "amount": 2302,
+                                    "selected": true,
+                                    "leaseTermId": "dfbba28f-ff8b-477c-b9e3-da8ccef3dfa2"
+                                },
+                                {
+                                    "amount": 2093,
+                                    "selected": true,
+                                    "leaseTermId": "276734d3-4e29-4412-8e1a-b49d992dc8e2"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "58abebcb-c682-417a-a9cd-6e92a8b0c409",
+                            "amount": 10,
+                            "isIGFee": false,
+                            "quantity": 1,
+                            "isUnitDepositFee": false,
+                            "selectedConcessions": [
+                            ],
+                            "isMinAndMaxRentEqual": true
+                        },
+                        {
+                            "id": "f0afc16d-6233-4a04-a64a-151f2fff4283",
+                            "amount": 20,
+                            "isIGFee": false,
+                            "quantity": 1,
+                            "isUnitDepositFee": false,
+                            "selectedConcessions": [
+                            ],
+                            "isMinAndMaxRentEqual": true
+                        },
+                        {
+                            "id": "336deaff-f5ae-47a6-98d0-9176a40e4abe",
+                            "amount": 25,
+                            "isIGFee": false,
+                            "quantity": 1,
+                            "isUnitDepositFee": false,
+                            "selectedConcessions": [
+                            ],
+                            "isMinAndMaxRentEqual": true
+                        }
+                    ],
+                    "name": "month"
+                }
+            },
+            "updated_at": "2017-12-22T08:54:54.706936+00:00",
+            "inventoryId": "8f4a918f-7e83-448b-85ed-08b0d030e149",
+            "modified_by": "e226d170-82d6-4f58-95aa-8c70b6c88c62",
+            "publishDate": "2017-12-22T08:54:54.648+00:00",
+            "expirationDate": "2017-12-25T07:59:59.999+00:00",
+            "leaseStartDate": "2017-12-22T00:00:00+00:00",
+            "confirmationNumber": "59967a32-2a42-4356-a709-619090fcd7af",
+            "publishedQuoteData": {
+                "created_at": "2017-12-22T08:54:43.862Z",
+                "leaseTerms": [
+                    {
+                        "id": "dfbba28f-ff8b-477c-b9e3-da8ccef3dfa2",
+                        "period": "month",
+                        "specials": true,
+                        "termLength": 6,
+                        "concessions": [
+                            {
+                                "id": "57e50053-fdbf-4e60-9b0a-5fd63edff438",
+                                "optional": false,
+                                "recurring": false,
+                                "displayName": "Upshift in market rent",
+                                "computedValue": 57.55,
+                                "recurringCount": 0,
+                                "absoluteAdjustment": "0.00",
+                                "variableAdjustment": false,
+                                "bakedIntoAppliedFeeFlag": true
+                            }
+                        ],
+                        "leaseNameId": "c169c4dd-c159-43c0-a51a-d7f05fe3cc98",
+                        "paymentSchedule": [
+                            {
+                                "amount": "768.38",
+                                "timeframe": "Dec 2017"
+                            },
+                            {
+                                "amount": "2382.00",
+                                "timeframe": "Jan - May 2018"
+                            },
+                            {
+                                "amount": "1667.40",
+                                "timeframe": "Jun 2018"
+                            }
+                        ],
+                        "originalBaseRent": 2302,
+                        "chargeConcessions": [
+                        ],
+                        "adjustedMarketRent": 2302,
+                        "overwrittenBaseRent": 0,
+                        "maxBakedFeesAdjustment": "",
+                        "minBakedFeesAdjustment": "",
+                        "allowBaseRentAdjustment": false
+                    },
+                    {
+                        "id": "276734d3-4e29-4412-8e1a-b49d992dc8e2",
+                        "period": "month",
+                        "specials": true,
+                        "termLength": 12,
+                        "concessions": [
+                            {
+                                "id": "57e50053-fdbf-4e60-9b0a-5fd63edff438",
+                                "optional": false,
+                                "recurring": false,
+                                "displayName": "Upshift in market rent",
+                                "computedValue": 52.33,
+                                "recurringCount": 0,
+                                "absoluteAdjustment": "0.00",
+                                "variableAdjustment": false,
+                                "bakedIntoAppliedFeeFlag": true
+                            }
+                        ],
+                        "leaseNameId": "c169c4dd-c159-43c0-a51a-d7f05fe3cc98",
+                        "paymentSchedule": [
+                            {
+                                "amount": "700.96",
+                                "timeframe": "Dec 2017"
+                            },
+                            {
+                                "amount": "2173.00",
+                                "timeframe": "Jan - Nov 2018"
+                            },
+                            {
+                                "amount": "1472.04",
+                                "timeframe": "Dec 2018"
+                            }
+                        ],
+                        "originalBaseRent": 2093,
+                        "chargeConcessions": [
+                        ],
+                        "adjustedMarketRent": 2093,
+                        "overwrittenBaseRent": 0,
+                        "maxBakedFeesAdjustment": "",
+                        "minBakedFeesAdjustment": "",
+                        "allowBaseRentAdjustment": false
+                    }
+                ],
+                "updated_at": "2017-12-22T08:54:43.862Z",
+                "inventoryId": "8f4a918f-7e83-448b-85ed-08b0d030e149",
+                "publishDate": "2017-12-22T08:54:54.648Z",
+                "expirationDate": "2017-12-25T07:59:59.999Z",
+                "leaseStartDate": "2017-12-22T00:00:00.000Z",
+                "confirmationNumber": "59967a32-2a42-4356-a709-619090fcd7af",
+                "additionalAndOneTimeCharges": {
+                    "oneTimeCharges": [
+                        {
+                            "id": "1ffdec35-f6f2-4bc2-bf32-1dee02d468db",
+                            "amount": 0,
+                            "quantity": 1,
+                            "displayName": "Security deposit",
+                            "quoteSectionName": "deposit",
+                            "isMinAndMaxRentDiff": false,
+                            "relativeAmountsByLeaseTerm": [
+                                {
+                                    "amount": 2302,
+                                    "selected": true,
+                                    "leaseTermId": "dfbba28f-ff8b-477c-b9e3-da8ccef3dfa2"
+                                },
+                                {
+                                    "amount": 2093,
+                                    "selected": true,
+                                    "leaseTermId": "276734d3-4e29-4412-8e1a-b49d992dc8e2"
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalCharges": [
+                        {
+                            "id": "2ed82880-be22-4c89-a272-6c4cc551fc68--4c2175c1-2c9f-4a54-8bc6-1caf66c7b901",
+                            "amount": 0,
+                            "quantity": 1,
+                            "concessions": [
+                            ],
+                            "displayName": "Door Fob",
+                            "quoteSectionName": "appliance",
+                            "isMinAndMaxRentDiff": false
+                        },
+                        {
+                            "id": "63d03b9d-5a59-420c-a652-d12b8471318b",
+                            "amount": 25,
+                            "quantity": 1,
+                            "concessions": [
+                            ],
+                            "displayName": "Gas",
+                            "quoteSectionName": "utility",
+                            "isMinAndMaxRentDiff": false
+                        },
+                        {
+                            "id": "c9c9fd17-f42a-436b-ba7d-b0b639fe6c84",
+                            "amount": 0,
+                            "quantity": 1,
+                            "concessions": [
+                            ],
+                            "displayName": "Locker",
+                            "quoteSectionName": "storage",
+                            "isMinAndMaxRentDiff": false
+                        },
+                        {
+                            "id": "58abebcb-c682-417a-a9cd-6e92a8b0c409",
+                            "amount": 10,
+                            "quantity": 1,
+                            "concessions": [
+                            ],
+                            "displayName": "Sewer",
+                            "quoteSectionName": "utility",
+                            "isMinAndMaxRentDiff": false
+                        },
+                        {
+                            "id": "f0afc16d-6233-4a04-a64a-151f2fff4283",
+                            "amount": 20,
+                            "quantity": 1,
+                            "concessions": [
+                            ],
+                            "displayName": "Trash",
+                            "quoteSectionName": "utility",
+                            "isMinAndMaxRentDiff": false
+                        },
+                        {
+                            "id": "336deaff-f5ae-47a6-98d0-9176a40e4abe",
+                            "amount": 25,
+                            "quantity": 1,
+                            "concessions": [
+                            ],
+                            "displayName": "Water",
+                            "quoteSectionName": "utility",
+                            "isMinAndMaxRentDiff": false
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "userId": "38d45a5f-1370-4931-8a83-c7d2023e0679",
+    "endDate": null,
+    "members": [
+        {
+            "person": {
+                "id": "1da0f37a-a9db-4321-ae7a-c8453b6e4cd5",
+                "dob": "1988-11-11T00:00:00+00:00",
+                "idType": "State",
+                "idState": null,
+                "idValue": null,
+                "fullName": "Adrian Magdas",
+                "idCountry": null,
+                "created_at": "2017-12-22T08:54:18.244458+00:00",
+                "idProvince": null,
+                "mergedWith": null,
+                "updated_at": "2017-12-22T08:58:51.873119+00:00",
+                "modified_by": "e226d170-82d6-4f58-95aa-8c70b6c88c62",
+                "preferredName": null,
+                "isSuspiciousContent": false
+            },
+            "contactInfo": [
+                {
+                    "id": "31218458-d1a5-4df9-933c-3e3fbb2cb1de",
+                    "type": "email",
+                    "value": "adrian@reva.tech",
+                    "isSpam": false,
+                    "imported": false,
+                    "metadata": {
+                    },
+                    "personId": "1da0f37a-a9db-4321-ae7a-c8453b6e4cd5",
+                    "isPrimary": true,
+                    "created_at": "2017-12-22T08:54:18.244458+00:00",
+                    "updated_at": "2017-12-22T08:54:18.244458+00:00",
+                    "markedAsSpamBy": null
+                }
+            ],
+            "partyMember": {
+                "id": "54ed1275-b0d4-4798-88e6-66ae3ba17b8f",
+                "isSpam": false,
+                "endDate": null,
+                "partyId": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+                "external": {
+                    "prospectId": "0001002p"
+                },
+                "personId": "1da0f37a-a9db-4321-ae7a-c8453b6e4cd5",
+                "startDate": "2017-12-22T08:54:18.244458+00:00",
+                "created_at": "2017-12-22T08:54:18.25+00:00",
+                "externalId": "0000003t",
+                "memberType": "Resident",
+                "updated_at": "2017-12-22T09:02:57.298638+00:00",
+                "memberState": "Applicant",
+                "modified_by": "e226d170-82d6-4f58-95aa-8c70b6c88c62",
+                "guaranteedBy": null
+            }
+        }
+    ],
+    "invoices": [
+        {
+            "id": "f02d349f-074c-4fa0-b62d-e654550e3cf9",
+            "quoteId": null,
+            "created_at": "2017-12-22T08:58:27.433+00:00",
+            "updated_at": "2017-12-22T08:58:51.873119+00:00",
+            "receiptPayload": {
+            },
+            "applicationFeeId": "0e0ec193-3956-4e8d-a9d8-5b7f07031d21",
+            "holdDepositFeeId": null,
+            "paymentCompleted": true,
+            "partyApplicationId": "aaca15cb-c299-474c-b53a-168849e6f8b7",
+            "personApplicationId": "18520b70-6090-493c-b201-3801e4f8638e",
+            "applicationFeeAmount": 50.00,
+            "holdDepositFeeIdAmount": null
+        }
+    ],
+    "metadata": {
+        "creationType": "user",
+        "favoriteUnits": [
+            "8f4a918f-7e83-448b-85ed-08b0d030e149"
+        ],
+        "firstContactedDate": "2017-12-22T08:54:18.038Z",
+        "firstContactChannel": "Sms",
+        "qualQuestionsCompleted": "2017-12-22T08:54:33+00:00"
+    },
+    "leaseType": "traditional",
+    "ownerTeam": "9d0e1d8d-5e0b-4394-98e9-f5c25b793284",
+    "startDate": "2017-12-22T08:54:18.060486+00:00",
+    "created_at": "2017-12-22T08:54:18.061+00:00",
+    "invOnHolds": [
+        {
+            "id": "b051941f-8504-4b93-b89d-9b215ce1b160",
+            "heldBy": "e226d170-82d6-4f58-95aa-8c70b6c88c62",
+            "reason": "lease",
+            "endDate": null,
+            "partyId": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+            "quotable": false,
+            "startDate": "2017-12-22T09:02:21.966+00:00",
+            "created_at": "2017-12-22T09:02:21.969+00:00",
+            "releasedBy": null,
+            "updated_at": "2017-12-22T09:02:21.969+00:00",
+            "inventoryId": "8f4a918f-7e83-448b-85ed-08b0d030e149"
+        }
+    ],
+    "mergedWith": null,
+    "promotions": [
+        {
+            "id": "5946ef7f-e780-4947-aca3-cfe568a0c486",
+            "partyId": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+            "quoteId": "5a065c92-3350-43ef-9d92-9bb1b14263c5",
+            "created_at": "2017-12-22T08:59:24.115+00:00",
+            "updated_at": "2017-12-22T08:59:24.115+00:00",
+            "leaseTermId": "276734d3-4e29-4412-8e1a-b49d992dc8e2",
+            "promotionStatus": "approved"
+        }
+    ],
+    "updated_at": "2017-12-22T12:50:48.245068+00:00",
+    "modified_by": "e226d170-82d6-4f58-95aa-8c70b6c88c62",
+    "transactions": null,
+    "collaborators": [
+        "38d45a5f-1370-4931-8a83-c7d2023e0679",
+        "fbc31627-a155-462e-8e4c-233faeb8a64f",
+        "3bc6f7be-0cb6-4b35-98b2-efd2103235f0",
+        "830a6479-8aaa-479c-b603-a34b8f6fa671",
+        "e226d170-82d6-4f58-95aa-8c70b6c88c62",
+        "07c2770b-a2d1-42ef-85ed-a9fffc2300ab"
+    ],
+    "emailIdentifier": "a746cb2f7b344164afdb",
+    "partyApplications": [
+        {
+            "id": "aaca15cb-c299-474c-b53a-168849e6f8b7",
+            "isHeld": false,
+            "partyId": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+            "created_at": "2017-12-22T08:55:11.667+00:00",
+            "holdReason": "",
+            "updated_at": "2017-12-22T08:58:52.842751+00:00",
+            "minDeniedAt": null,
+            "maxApprovedAt": 5000.00,
+            "applicationData": {
+            }
+        }
+    ],
+    "assignedPropertyId": "423cc995-13e6-41b4-aed7-048797766390",
+    "personApplications": [
+        {
+            "id": "18520b70-6090-493c-b201-3801e4f8638e",
+            "ssn": null,
+            "itin": null,
+            "partyId": "a746cb2f-7b34-4164-afdb-fc287ad26b3d",
+            "personId": "1da0f37a-a9db-4321-ae7a-c8453b6e4cd5",
+            "created_at": "2017-12-22T08:55:11.668+00:00",
+            "updated_at": "2017-12-22T08:59:05.365227+00:00",
+            "applicantId": "0290651c-e87b-47f9-9e0f-c43b4e65b639",
+            "additionalData": {
+            },
+            "applicationData": {
+                "id": "",
+                "email": "adrian@reva.tech",
+                "suffix": "",
+                "lastName": "Magdas",
+                "address": {
+                  "enteredByUser": {
+                    "city": "Newark",
+                    "line1": "Newark Boulevard",
+                    "line2": "",
+                    "state": "CA",
+                    "address": "Newark Boulevard",
+                    "postalCode": "94560",
+                    "unparsedAddress": "Newark Boulevard Newark CA 94560"
+                  }
+                },
+                "firstName": "Adrian",
+                "guarantors": [
+                ],
+                "middleName": "",
+                "addressLine": "",
+                "dateOfBirth": "1988-11-11",
+                "grossIncome": 12132333,
+                "invitedToApply": "",
+                "otherApplicants": [
+                ],
+                "grossIncomeMonthly": 1011028,
+                "reportCopyRequested": true,
+                "grossIncomeFrequency": "YEARLY",
+                "haveInternationalAddress": false
+            },
+            "paymentCompleted": true,
+            "applicationStatus": "completed",
+            "partyApplicationId": "aaca15cb-c299-474c-b53a-168849e6f8b7"
+        }
+    ],
+    "storedUnitsFilters": {
+        "moveInDate": {
+            "max": "2018-01-22",
+            "min": "2017-12-22"
+        },
+        "numBedrooms": [
+            "ONE_BED",
+            "TWO_BEDS"
+        ],
+        "propertyIds": [
+            "423cc995-13e6-41b4-aed7-048797766390"
+        ]
+    },
+    "qualificationQuestions": {
+        "moveInTime": "NEXT_4_WEEKS",
+        "numBedrooms": [
+            "ONE_BED",
+            "TWO_BEDS"
+        ],
+        "groupProfile": "EMPLOYEE",
+        "cashAvailable": "YES"
+    }
+}

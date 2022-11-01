@@ -1,0 +1,595 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+@keyframes fadeInAndScale {
+  0% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.textbox {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  padding-top: 1.1em;
+  padding-bottom: 0;
+
+  input::-webkit-input-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  input::-moz-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  input::-ms-input-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  input::-moz-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  input.noHidePlaceholder::-webkit-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  input.noHidePlaceholder::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  input.noHidePlaceholder::-ms-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  input.noHidePlaceholder::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  input.active::-webkit-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  input.active::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  input.active::-ms-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  input.active::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea::-webkit-input-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  textarea::-moz-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  textarea::-ms-input-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  textarea::-moz-placeholder {
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  textarea.noHidePlaceholder::-webkit-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea.noHidePlaceholder::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea.noHidePlaceholder::-ms-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea.noHidePlaceholder::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea.active::-webkit-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea.active::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea.active::-ms-input-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  textarea.active::-moz-placeholder {
+    @include textDisabled();
+
+    opacity: 1;
+  }
+
+  :global(.input-field) {
+    height: (37rem/16);
+  }
+
+  &.disabled {
+    @include textDisabled();
+  }
+
+  &.wide {
+    width: 100%;
+  }
+
+  &.textarea {
+    :global(.input-field) {
+      height: auto;
+    }
+  }
+
+  &.no-label {
+    padding-top: 0;
+  }
+
+  &.no-valid {
+    :global(.input-field) {
+      &:before {
+        border-bottom: 1px solid $red500;
+      }
+
+      &.focused:after,
+      &:after {
+        content: '';
+        border-bottom: 1px solid $red500;
+        box-shadow: 0 1px 0 0 $red500;
+      }
+    }
+  }
+
+  input:not([type]),
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=url],
+  input[type=time],
+  input[type=date],
+  input[type=datetime-local],
+  input[type=tel],
+  input[type=number],
+  input[type=search],
+  textarea:global(.materialize-textarea) {
+    @include baseProps();
+    @include textPrimary();
+
+    font-size: (15rem/16);
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    height: 2.5em;
+    margin-bottom: 0;
+
+    &.textRoleSecondary {
+      @include textSecondary();
+    }
+
+    &.boldText {
+      font-weight: 500;
+    }
+  }
+
+  :global(.input-field) {
+    position: relative;
+    margin-top: 0;
+
+    &.focused {
+      input:not([type]),
+      input[type=text],
+      input[type=password],
+      input[type=email],
+      input[type=url],
+      input[type=time],
+      input[type=date],
+      input[type=datetime-local],
+      input[type=tel],
+      input[type=number],
+      input[type=search],
+      textarea:global(.materialize-textarea) {
+        // on focus use primary
+
+        &.textRoleSecondary {
+          @include textPrimary();
+        }
+      }
+
+      label:global(.active) {
+        color: $blue500;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: (1em/16);
+      content: '';
+      border-bottom: 1px solid rgba(0, 0, 0, .26);
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: (1em/16);
+      content: '';
+      transition: all .3s ease-out;
+      transform: scaleX(0);
+      opacity: 0;
+      border-bottom: 1px solid $blue500;
+      box-shadow: 0 1px 0 0 $blue500;
+    }
+
+    &.focused:after {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+
+    label {
+      @include textDisabled();
+
+      font-size: (15rem/16);
+      top: .65rem;
+      left: 0;
+      white-space: nowrap;
+      pointer-events: none;
+
+      &:global(.active) {
+        @include textSecondary();
+
+        font-size: (12rem/16);
+        transform: translateY(-1.55rem);
+      }
+    }
+
+    input:focus + label,
+    input:focus + label:global(.active) {
+      color: $blue500;
+    }
+
+    input:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    input:global(.invalid):focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    input {
+      box-sizing: border-box;
+      padding-top: .15rem;
+      color: rgba($black, .87);
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &.no-underline {
+    :global(.input-field) {
+      &:before,
+      &.focused:before,
+      &.focused:after,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &.disabled {
+    :global(.input-field) {
+      &:before {
+        border-bottom: 1px dotted rgba(0, 0, 0, .42);
+      }
+
+      &:after {
+        border-bottom: 1px dotted rgba(0, 0, 0, .42);
+        box-shadow: none;
+      }
+
+      input,
+      textarea {
+        @include textDisabled();
+
+        cursor: not-allowed;
+      }
+
+      label {
+        &:global(.active) {
+          @include textDisabled();
+        }
+      }
+
+      textarea:focus + label,
+      textarea:focus + label:global(.active),
+      input:focus + label,
+      input:focus + label:global(.active) {
+        @include textDisabled();
+      }
+    }
+  }
+
+  &.underlineOnEditOnly {
+    :global(.input-field) {
+      &.focused:before,
+      &.focused:after {
+        opacity: 1;
+      }
+
+      &:before,
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.eye-affordance,
+.clear-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: fadeInAndScale .3s ease-out;
+
+  > [data-red-icon] {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.affordance-holder {
+  position: absolute;
+  top: (3rem/16);
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: (35rem/16);
+
+  > [data-red-icon] {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+.wideIcon {
+  .affordance-holder {
+    width: (35rem/16);
+  }
+}
+
+.eye-affordance {
+  width: (35rem/16);
+  height: (35rem/16);
+}
+
+.clear-box {
+  top: 5px;
+  width: (20rem/16);
+  height: (30rem/16);
+}
+
+.clear-box {
+  &.on {
+    display: flex;
+  }
+}
+
+.clearable {
+  &.textbox {
+    :global(.input-field) {
+      textarea,
+      input {
+        padding-right: (25rem/16);
+      }
+    }
+  }
+}
+
+.showIconAffordance {
+  &.textbox {
+    :global(.input-field) {
+      label {
+        transform: translate3D(1.8rem, 0, 0);
+      }
+
+      input + label:global(.active),
+      input:focus + label,
+      input:focus + label:global(.active) {
+        transform: translate3D(0, -200%, 0);
+      }
+
+      input {
+        padding-left: 1.8rem;
+      }
+    }
+  }
+
+  &.wideIcon {
+    &.textbox {
+      :global(.input-field) {
+        label {
+          transform: translate3D(2.4rem, 0, 0);
+        }
+
+        input + label:global(.active),
+        input:focus + label,
+        input:focus + label:global(.active) {
+          transform: translate3D(0, -200%, 0);
+        }
+
+        input {
+          padding-left: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+.password-box {
+  &.textbox {
+    :global(.input-field) {
+      input {
+        padding-right: (40em/16);
+      }
+    }
+  }
+
+  .eye-affordance {
+    opacity: .5;
+
+    &.on {
+      display: flex;
+    }
+  }
+}
+
+.textarea {
+  &.auto-fill {
+    flex: 1;
+
+    > :global(.input-field) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      &:before,
+      &:after,
+      &.focused:after {
+        display: none;
+      }
+
+      > textarea {
+        height: 100%;
+      }
+    }
+  }
+
+  textarea {
+    @include baseProps();
+    @include textPrimary();
+
+    font-size: (15rem/16);
+    line-height: 1.3rem;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: (8rem/16);
+    letter-spacing: (.1em/16);
+    border-bottom: none;
+
+    &.no-autosize {
+      resize: none;
+      border: none;
+    }
+  }
+
+  :global(.input-field) {
+    label {
+      top: .6em;
+
+      &:global(.active) {
+        transform: translateY(-175%);
+      }
+    }
+
+    textarea:focus + label,
+    textarea:focus + label:global(.active) {
+      color: $blue500;
+    }
+
+    textarea:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    textarea:global(.invalid).no-autosize:focus,
+    textarea.no-autosize {
+      &:focus {
+        border-bottom: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.force-repaint {
+  position: relative;
+  opacity: 1; // force gpu to fix the issue with the line shown in the incorrect place
+}

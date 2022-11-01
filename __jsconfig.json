@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "es6",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "rootDirs": [
+      "client",
+      "common",
+      "server"
+    ]
+  },
+  "include": [
+    "client/**/*",
+    "common/**/*",
+    "server/**/*",
+    "auth/**/*",
+    "rentapp/**/*",
+    "consumer/**/*",
+    "resources/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "uploads/**/*",
+    "coverage/**/*",
+    "static/**/*"
+  ]
+}

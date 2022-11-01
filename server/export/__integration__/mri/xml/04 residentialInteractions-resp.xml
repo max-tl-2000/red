@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mri_s-pmrm_residentialinteractionsbynameid>
+  <entry>
+    <NameID>{{nameId}}</NameID>
+    <ActionDate>{today}}</ActionDate>
+    <ActionCodeID>SH</ActionCodeID>
+    <LeasingAgentID>{{userExternalUniqueId}}</LeasingAgentID>
+    <ActionTime />
+    <ActionDescription />
+    <Id>1287695</Id>
+    <ExternalID />
+  </entry>
+</mri_s-pmrm_residentialinteractionsbynameid>

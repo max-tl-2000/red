@@ -1,0 +1,1112 @@
+Return-Path: <bounces+907926-3bc0-apt-list.parkplace.vanity=customerold.mail.reva.tech@em.apartmentlist.com>
+Received: from o3.em.apartmentlist.com (o3.em.apartmentlist.com [167.89.20.184])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id p50k70s44u87j8nbllrjpnuosk24jh38g27hq8o1
+ for apt-list.parkplace.vanity@customerold.mail.reva.tech;
+ Sun, 22 Mar 2020 13:21:40 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of em.apartmentlist.com designates 167.89.20.184 as permitted sender) client-ip=167.89.20.184; envelope-from=bounces+907926-3bc0-apt-list.parkplace.vanity=customerold.mail.reva.tech@em.apartmentlist.com; helo=o3.em.apartmentlist.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of em.apartmentlist.com designates 167.89.20.184 as permitted sender) client-ip=167.89.20.184; envelope-from=bounces+907926-3bc0-apt-list.parkplace.vanity=customerold.mail.reva.tech@em.apartmentlist.com; helo=o3.em.apartmentlist.com;
+ dkim=permerror header.i=@apartmentlist.com;
+ dmarc=pass header.from=apartmentlist.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFVWtJeXo5ZTRtMGFOVytoQ2g0T2JzdXlSMWlwWGxKY0EvTmEyM1BWU2w1WWpyL3NCQUNRWk9mR2NoS041TWtRTEpsaXdpcGtkNGoxc0JTK0taSE9MNjJIYUxZRWFjckh6YmtpZXhRL2lZdzljRGRpZEI0UG9vUk1DY3BhQ3RPOHVJYXpMWWNMODkyU0JBbGY5Q0ZUMXl3ZjlTcFVPS0NyNXNJY1JnV2dvWDNGRWhoc2d3SXkyWjMzYjFwc0x3ZytrVFFyc2QxT1BKWkZPajhwTE93eC9Dc0pwNWlYcmhIVHdJZWg1MWtGZGw4SnQxdTlvMzBmaXgxb2l6eWVKQy9PdHk1Z0hydWNvdFFSSHR5U3hxbUJCQjhWc1I3aG81VGV5eE1BZk1RWEU2bGNkMGN0d2lnODRMZllBR2kraWF3WkNRcjBrVXFwL1RQV2JsL3IzUnMwZk91Y3RFaWJneDNDUlcwUVRGVUg3TlBMcmc3SXNLUmgya2xmS0gwd1BML1l3dHpTSVpaUjkyUU1aeHVHMHU2S2Y5
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=ByFK2v1va2+2dL+5RemDNGdJzkJDKm8B4Dfotq9yUvqhnRjrCgOr5CGsBbGMacSMT9O9DCaqY80TrJOnvmtFsDvKmf9NOqLbadbovSF2WBTZ6z0/LHcilsupZfTsZJE9bchM1aIM0/csIgN0TUy37qOs7aC74J9rhdcfAz50FtY=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1584883300; v=1; bh=9mR0pzzVMd613t7cClN3gU3Ru+gn6NFdA+8ZNV7fziU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=apartmentlist.com; 
+	h=content-type:from:mime-version:reply-to:to:subject; s=s1; 
+	bh=h04BbBVi13jD3VtHZJWijJdSyY5r4GaFMI+eCFEpKa8=; b=rqzUzjo73ctqK
+	Q95786KTBBRiMKojk5IfpYr/NaKUpOyaDq8pVfYKv+sdLDO8b3ZCPPx2SUwoGd7M
+	Dexb74v2ggSaNIlhb+MvaV//iOZeEmtCTTcKqPziEWl0rt9kwN0Eif13lOld1yUH
+	CeLEYpvlj1DdOQq9Y13hBOJa5Ed2LQ=
+Received: by filter1697p1mdw1.sendgrid.net with SMTP id filter1697p1mdw1-32723-5E776664-1
+        2020-03-22 13:21:40.038775797 +0000 UTC m=+309617.881004044
+Received: from OTA3OTI2 (unknown)
+	by ismtpd0016p1iad2.sendgrid.net (SG) with HTTP id VF9fwcVzQ4qF1QVbD1heEQ
+	Sun, 22 Mar 2020 13:21:39.957 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=28d0f890e805b6719273e52ad9c9257aa9da341e4d6ef6d0be3e427cfa97
+Date: Sun, 22 Mar 2020 13:21:40 +0000 (UTC)
+From: "Apartment List Interests" <interests@apartmentlist.com>
+Mime-Version: 1.0
+Reply-to: no-reply-leads@apartmentlist.com
+To: apt-list.parkplace.vanity@customerold.mail.reva.tech
+Message-ID: <VF9fwcVzQ4qF1QVbD1heEQ@ismtpd0016p1iad2.sendgrid.net>
+Subject: New Lead for Park Place from Stacie Sesker - Apartment List
+X-SG-EID: zyONSjpi7q5EPMmbPeu8rxVo38tqbmNF7xx1l6ul3/cVK6zcc1ZJRCI+miTvztyu+32gAkJjSGLEdp
+ RYTcdrIiOfJYKQXpOhldIjJ96fey7Onp8pTp2CbYUcbiXehc+tPP8uFma1hpeadZ5zvMLC4c24HTvt
+ gsE0iQ00jchHXrVVVwSsLuGKXbn8lGIBu9w5DEejc+O/TILCAoMiFITlbxVguikgDaCNyq1DSQd8VU
+ 98Wt9UnzCRrNjLA6UgaUxCa3vx+mZLs01vc2wAzCtZZg==
+X-SG-ID: Omt26qN7xZsCf815g2j4Mi6WbR+cRA3iFugwKRR76ygPH10Apz1xGRVR8bK2Dm/6XXhPeVL9AGuyu/
+ g7avxzpS1TZ5kunWUxpah1EKfchFchkQRxyWwbZADXm7WGnvwVKvMfmiuGdj6lj1RmX+masHdjiapM
+ IlmSGhtrnAIv+KYahkx9RBtUaF6QprKGL09FM9VWDVq9t5rBtHJynnrEwywNJna1hgcD+ZVchjXWFP
+ tqIWD5GXy3cb88+EJTH/gsu4XFvptXkbBQtnw5eEhbGgbtf3zKVhcmayexaaZADT4=
+
+--28d0f890e805b6719273e52ad9c9257aa9da341e4d6ef6d0be3e427cfa97
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+* New Lead from Stacie Sesker *
+MOVE-IN: 07/01/2020 (101 days away!)
+LEAD SOURCE: Apartment List
+PROPERTY NAME: Park Place!
+--------------------------------------------------------------
+
+* Get in touch with Stacie *
+PHONE: 763-221-3123
+EMAIL: progressive1827@gmail.com
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+* Stacie's Preferences *
+BEDS: 2 (0 matched units)
+BUDGET: $2,200 (0 matched units)
+AMENITIES: In unit laundry, Air conditioning, Balcony, Bathtub, Garage, Gar=
+bage disposal, Hardwood floors, Pool, Parking, Elevator, Dishwasher, Carpet=
+, Accessible
+LOCATION: Edina, MN
+
+* Stacie's Qualifications *
+INCOME: Meets your income requirement
+EVICTION HISTORY: Never been evicted
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+* Renter Insight *
+LISTINGS VIEWED: 1 other property
+HAS CONTACTED: 1 other properties
+
+
+--28d0f890e805b6719273e52ad9c9257aa9da341e4d6ef6d0be3e427cfa97
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style=3D"min-height:100%;background:#f4f4f4;height:100%;width:100%;ba=
+ckground:#fefefe !important">
+<head>
+  <title>Apartment List</title>
+  <meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+  <meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewpor=
+t">
+  <meta name=3D"lead_information_version" content=3D"1.0">
+  <meta name=3D"lead_source" content=3D"apartmentlist.com">
+  <meta name=3D"lead_type" content=3D"Renter">
+  <meta name=3D"lead_name" content=3D"Stacie Sesker">
+  <meta name=3D"lead_email" content=3D"progressive1827@gmail.com">
+</head>
+<body style=3D"min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-a=
+djust:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-siz=
+ing:border-box;color:#35464B;font-family:Helvetica Neue, Helvetica, Arial, =
+sans-serif;font-weight:300;padding:0;margin:0;text-align:left;font-size:16p=
+x;line-height:1.3;height:100%;width:100%;width:100% !important;background:#=
+fefefe !important">
+<p style=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-w=
+eight:300;padding:0;margin:0;text-align:left;font-size:16px;line-height:1.3=
+;margin-bottom:10px;font-size:10px;color:#35464B;letter-spacing:1px">
+    <meta name=3D"lead_phone" content=3D"7632213123">
+  <meta name=3D"lead_property_address" content=3D"14550 34th Ave N, Plymout=
+h, MN">
+  <meta name=3D"lead_property_name" content=3D"Park Place">
+
+  <!--[if mso]>
+  <style type=3D"text/css">
+    a {text-decoration: none;}
+    th, td {font-size: 0; line-height 0;}
+    table, tr, td {border-collapse: collapse;}
+    tr { font-size:0px; line-height:0px; border-collapse: collapse; }
+  </style>
+  <![endif]-->
+
+</p>
+<table class=3D"body" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;background:#f4f4f4;height:100%;width:100%;color:#35464B;fo=
+nt-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;padd=
+ing:0;margin:0;text-align:left;font-size:16px;line-height:1.3;background:#f=
+efefe !important">
+  <tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <td class=3D"center" align=3D"center" valign=3D"top" style=3D"word-wrap=
+:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-al=
+ign:top;text-align:left;padding:0;margin:0;border-collapse:collapse !import=
+ant">
+      <center style=3D"width:100%;min-width:570px">
+        <table class=3D"wrapper float-center" align=3D"center" style=3D"bor=
+der-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-al=
+ign:left;width:100%;margin:0 auto;float:none;text-align:center"><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inne=
+r" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyp=
+hens:auto;vertical-align:top;text-align:left;padding:0;margin:0;border-coll=
+apse:collapse !important">
+          <table class=3D"container" align=3D"center" style=3D"border-spaci=
+ng:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;=
+width:570px;margin:0 auto;text-align:inherit;background:#fefefe"><tbody><tr=
+ style=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"word-w=
+rap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical=
+-align:top;text-align:left;padding:0;margin:0;border-collapse:collapse !imp=
+ortant">
+            <table class=3D"spacer " style=3D"border-spacing:0;border-colla=
+pse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbod=
+y><tr style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"=
+15px" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;=
+hyphens:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line=
+-height-rule:exactly;border-collapse:collapse !important;font-size:15px;lin=
+e-height:15px;">=C2=A0</td></tr></tbody></table>
+            <img src=3D"http://res.cloudinary.com/apartmentlist/image/uploa=
+d/s--jqEPjfg1--/c_scale,w_169/v1561149355/zeppelin_emails/al_rebrand_logo.p=
+ng" alt=3D"Apartment List" style=3D"outline:none;text-decoration:none;-ms-i=
+nterpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:bloc=
+k">
+            <table class=3D"spacer " style=3D"border-spacing:0;border-colla=
+pse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbod=
+y><tr style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"=
+20px" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;=
+hyphens:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line=
+-height-rule:exactly;border-collapse:collapse !important;font-size:20px;lin=
+e-height:20px;">=C2=A0</td></tr></tbody></table>
+            <table style=3D"border-spacing:0;border-collapse:collapse;verti=
+cal-align:top;text-align:left;background-color:#fefefe;height:48px;width:20=
+3.4px;padding-bottom:0;padding:0;width:100%;position:relative;padding: 40px=
+ 24px; min-height: 184px; overflow: auto; background-color: #f7f7f7;" class=
+=3D"interest-level box row"><tbody><tr style=3D"padding:0;vertical-align:to=
+p;text-align:left">
+  <th class=3D"small-25 large-25 columns first last" style=3D"padding:0;mar=
+gin:0;padding-bottom:0;margin:0 auto;padding-left:10px;padding-bottom:10px;=
+padding-right:10px"><table style=3D"border-spacing:0;border-collapse:collap=
+se;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pa=
+dding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0=
+">
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-1 large-1 columns first" style=3D"padding:0;margin=
+:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:13.75px;padding=
+-left:5px;padding-right:5px;padding-left:10px"><table style=3D"border-spaci=
+ng:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;=
+width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th =
+style=3D"padding:0;margin:0"></th></tr></table></th>
+      <th class=3D"small-24 large-24 columns last" style=3D"padding:0;margi=
+n:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:560px;padding=
+-left:5px;padding-right:5px;padding-right:10px"><table style=3D"border-spac=
+ing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left=
+;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th=
+ style=3D"padding:0;margin:0">
+        <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><t=
+r style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"36px=
+" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyph=
+ens:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-hei=
+ght-rule:exactly;border-collapse:collapse !important;font-size:36px;line-he=
+ight:36px;">=C2=A0</td></tr></tbody></table>
+        <h1 class=3D"text-left" style=3D"padding:0;margin:0;line-height:1.3=
+;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Aria=
+l, sans-serif;font-weight:300;margin-bottom:2px;font-size:28px;color:#33333=
+3;font-size:30px;font-weight:500;letter-spacing:normal;text-align:left">
+          New Lead from Stacie Sesker
+        </h1>
+        <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><t=
+r style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"28px=
+" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyph=
+ens:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-hei=
+ght-rule:exactly;border-collapse:collapse !important;font-size:28px;line-he=
+ight:28px;">=C2=A0</td></tr></tbody></table>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-1 large-1 columns first" style=3D"padding:0;margin=
+:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:13.75px;padding=
+-left:5px;padding-right:5px;padding-left:10px"><table style=3D"border-spaci=
+ng:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;=
+width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th =
+style=3D"padding:0;margin:0"></th></tr></table></th>
+      <th class=3D"small-8 large-8 columns" style=3D"padding:0;margin:0;mar=
+gin:0 auto;padding-left:10px;padding-bottom:10px;width:180px;padding-left:5=
+px;padding-right:5px"><table style=3D"border-spacing:0;border-collapse:coll=
+apse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"=
+padding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin=
+:0">
+        <div class=3D"button">
+          <!-- button started -->
+            <!--[if mso]>
+            <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=
+=3D"urn:schemas-microsoft-com:office:word" href=3D"mailto:progressive1827@g=
+mail.com" style=3D"height:44px;v-text-anchor:middle;width:150px;" arcsize=
+=3D"6%" stroke=3D"f" fillcolor=3D"#8333d6">
+            <w:anchorlock/>
+            <center>
+            <![endif]-->
+            <a href=3D"mailto:progressive1827@gmail.com" class=3D"reply-lin=
+k" style=3D"color:#35464B;font-family:Helvetica Neue, Helvetica, Arial, san=
+s-serif;font-weight:300;padding:0;margin:0;text-align:left;line-height:1.3;=
+color:#2199e8;text-decoration:none;color:#fefefe;background-color:#8434d6;b=
+order-radius:4px;font-size:14px;font-weight:500;line-height:normal;height:4=
+4px;width:150px;padding:14px 32px;text-align:center">Contact Now</a>
+            <!--[if mso]>
+            </center>
+            </v:roundrect>
+            <![endif]-->
+          <!-- button ended -->
+        </div>
+        <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><t=
+r style=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"36px=
+" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyph=
+ens:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-hei=
+ght-rule:exactly;border-collapse:collapse !important;font-size:36px;line-he=
+ight:36px;">=C2=A0</td></tr></tbody></table>
+      </th></tr></table></th>
+      <th class=3D"small-16 large-16 columns last" style=3D"padding:0;margi=
+n:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:370px;padding=
+-left:5px;padding-right:5px;padding-right:10px"><table style=3D"border-spac=
+ing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left=
+;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th=
+ style=3D"padding:0;margin:0"></th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+<table class=3D"spacer " style=3D"border-spacing:0;border-collapse:collapse=
+;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=
+=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:aut=
+o;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-rul=
+e:exactly;border-collapse:collapse !important;font-size:36px;line-height:36=
+px;">=C2=A0</td></tr></tbody></table>
+
+              <table class=3D"contact-action box row" style=3D"border-spaci=
+ng:0;border-collapse:collapse;vertical-align:top;text-align:left;background=
+-color:#fefefe;height:48px;width:203.4px;padding:0;width:100%;position:rela=
+tive"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"small-24 large-24 columns first last" style=3D"padding:0;mar=
+gin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;paddin=
+g-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><table s=
+tyle=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:=
+top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;t=
+ext-align:left"><th style=3D"padding:0;margin:0">
+    <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:coll=
+apse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" st=
+yle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:=
+auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-=
+rule:exactly;border-collapse:collapse !important;font-size:10px;line-height=
+:10px;">=C2=A0</td></tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-24 large-24 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tab=
+le style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-al=
+ign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><th style=3D"padding:0;margin:0">
+        <h3 style=3D"padding:0;margin:0;text-align:left;line-height:1.3;col=
+or:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, s=
+ans-serif;font-weight:300;margin-bottom:2px;font-size:22px">Get in touch wi=
+th Stacie</h3>
+      </th></tr></table></th>
+    </tr></tbody></table>
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-4 large-4 columns first" style=3D"padding:0;marg=
+in:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:85px;padding-=
+left:5px;padding-right:5px;padding-left:10px"><table style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;w=
+idth:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th s=
+tyle=3D"padding:0;margin:0"><h6 class=3D"contact-title" style=3D"padding:0;=
+margin:0;text-align:left;line-height:1.3;color:#35464B;word-wrap:normal;fon=
+t-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;margi=
+n-bottom:2px;color:#333333;font-size:16px;font-weight:normal;line-height:no=
+rmal;color:#8434d6;font-size:14px;font-weight:bold;letter-spacing:1px">PHON=
+E</h6></th></tr></table></th>
+        <th class=3D"small-20 large-20 columns last" style=3D"padding:0;mar=
+gin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:465px;paddi=
+ng-left:5px;padding-right:5px;padding-right:10px"><table style=3D"border-sp=
+acing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:le=
+ft;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><=
+th style=3D"padding:0;margin:0"><h6 class=3D"contact-info" style=3D"padding=
+:0;margin:0;text-align:left;line-height:1.3;color:#35464B;word-wrap:normal;=
+font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;ma=
+rgin-bottom:2px;font-size:16px;font-weight:normal;line-height:normal;color:=
+#333333;font-size:14px;letter-spacing:.78px"><a href=3D"tel:7632213123" sty=
+le=3D"color:#35464B;font-family:Helvetica Neue, Helvetica, Arial, sans-seri=
+f;font-weight:300;padding:0;margin:0;text-align:left;line-height:1.3;text-d=
+ecoration:none;color:#2199e8">7632213123</a></h6></th></tr></table></th>
+      </tr></tbody></table>
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-4 large-4 columns first" style=3D"padding:0;marg=
+in:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:85px;padding-=
+left:5px;padding-right:5px;padding-left:10px"><table style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;w=
+idth:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><th s=
+tyle=3D"padding:0;margin:0"><h6 class=3D"contact-title" style=3D"padding:0;=
+margin:0;text-align:left;line-height:1.3;color:#35464B;word-wrap:normal;fon=
+t-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;margi=
+n-bottom:2px;color:#333333;font-size:16px;font-weight:normal;line-height:no=
+rmal;color:#8434d6;font-size:14px;font-weight:bold;letter-spacing:1px">EMAI=
+L</h6></th></tr></table></th>
+        <th class=3D"small-20 large-20 columns last" style=3D"padding:0;mar=
+gin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:465px;paddi=
+ng-left:5px;padding-right:5px;padding-right:10px"><table style=3D"border-sp=
+acing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:le=
+ft;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"><=
+th style=3D"padding:0;margin:0"><h6 class=3D"contact-info" style=3D"padding=
+:0;margin:0;text-align:left;line-height:1.3;color:#35464B;word-wrap:normal;=
+font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;ma=
+rgin-bottom:2px;font-size:16px;font-weight:normal;line-height:normal;color:=
+#333333;font-size:14px;letter-spacing:.78px"><a href=3D"mailto:progressive1=
+827@gmail.com" style=3D"color:#35464B;font-family:Helvetica Neue, Helvetica=
+, Arial, sans-serif;font-weight:300;padding:0;margin:0;text-align:left;line=
+-height:1.3;text-decoration:none;color:#2199e8">progressive1827@gmail.com</=
+a></h6></th></tr></table></th>
+      </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+<table class=3D"spacer " style=3D"border-spacing:0;border-collapse:collapse=
+;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr style=
+=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" style=
+=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:aut=
+o;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-rul=
+e:exactly;border-collapse:collapse !important;font-size:15px;line-height:15=
+px;">=C2=A0</td></tr></tbody></table>
+
+
+            <table class=3D"row" style=3D"border-spacing:0;border-collapse:=
+collapse;vertical-align:top;text-align:left;padding:0;width:100%;position:r=
+elative"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"top-bar-gray small-24 large-24 columns first last" style=3D"=
+padding:0;margin:0;padding-bottom:0;background-color:#f7f7f7;border-radius:=
+2px;height:16px;width:100%;margin:0 auto;padding-bottom:10px;width:560px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px;paddi=
+ng-bottom:0px;"><table style=3D"border-spacing:0;border-collapse:collapse;p=
+adding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"paddin=
+g:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0">
+  =C2=A0
+  </th></tr></table></th>
+</tr></tbody></table>
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;padding:0;width:100%;position:relative"><tb=
+ody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"top-bar-white small-24 large-24 columns first last" style=3D=
+"padding:0;margin:0;padding-bottom:0;background-color:#fefefe;border-radius=
+:2px;height:14px;width:100%;margin:0 auto;padding-bottom:10px;width:560px;p=
+adding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><ta=
+ble style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-a=
+lign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:=
+top;text-align:left"><th style=3D"padding:0;margin:0">
+  =C2=A0
+  </th></tr></table></th>
+</tr></tbody></table>
+  <table valign=3D"top" class=3D"need-to-know collapse row" style=3D"border=
+-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;padd=
+ing:0;width:100%;position:relative"><tbody><tr style=3D"padding:0;vertical-=
+align:top;text-align:left">
+    <th class=3D"move-in pref box small-7 large-7 columns first" style=3D"p=
+adding:0;margin:0;background-color:#fefefe;height:48px;width:203.4px;paddin=
+g-bottom:0;margin:0 auto;padding-bottom:10px;width:156.25px;padding-left:5p=
+x;padding-right:5px;padding-left:10px;padding-right:0;padding-left:0;width:=
+166.25px"><table style=3D"border-spacing:0;border-collapse:collapse;padding=
+:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;ve=
+rtical-align:top;text-align:left"><th style=3D"padding:0;margin:0;text-alig=
+n:center">
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-12 large-12 columns first last" style=3D"padding=
+:0;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;=
+padding-left:5px;padding-right:5px;text-align:center;padding-left:10px;padd=
+ing-right:10px;padding-bottom:0px;"><table style=3D"border-spacing:0;border=
+-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"=
+><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+          <h5 style=3D"padding:0;margin:0;line-height:1.3;color:#35464B;wor=
+d-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font=
+-weight:300;margin-bottom:2px;font-size:18px;text-align:center;color:#66666=
+6;border-left:6px solid #f2eafa;font-size:12px;font-weight:bold;letter-spac=
+ing:1px;line-height:normal;text-align:left;padding-left:7.5px;margin:0 !imp=
+ortant;padding-bottom:0 !important;margin:10px;">MOVE IN DATE </h5>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-12 large-12 columns first last" style=3D"padding=
+:0;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;=
+padding-left:5px;padding-right:5px;text-align:center;padding-left:10px;padd=
+ing-right:10px;padding-bottom:0px;"><table style=3D"border-spacing:0;border=
+-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"=
+><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+            <h6 class=3D"text-center" style=3D"padding:0;margin:0;line-heig=
+ht:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica=
+, Arial, sans-serif;font-weight:300;margin-bottom:2px;line-height:normal;te=
+xt-align:center;color:#333333;border-left:6px solid #f2eafa;font-size:16px;=
+font-weight:normal;line-height:1.19;text-align:left;padding-left:7.5px;marg=
+in:0 !important;padding-bottom:0 !important;margin:10px;">07/01/2020</h6>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+<table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse;ver=
+tical-align:top;text-align:left;padding:0;position:relative;width:100%"><tb=
+ody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"top-bar-white small-24 large-24 columns first last" style=3D=
+"padding:0;margin:0;padding-bottom:0;background-color:#fefefe;border-radius=
+:2px;height:14px;width:100%;margin:0 auto;padding-bottom:10px;width:560px;p=
+adding-left:5px;padding-right:5px;text-align:center;padding-left:10px;paddi=
+ng-right:10px"><table style=3D"border-spacing:0;border-collapse:collapse;pa=
+dding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"padding=
+:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0;text=
+-align:center">
+  =C2=A0
+  </th></tr></table></th>
+</tr></tbody></table>
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-1 large-1 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:13.75px;=
+padding-left:5px;padding-right:5px;text-align:center;padding-left:10px;padd=
+ing-right:10px"><table style=3D"border-spacing:0;border-collapse:collapse;p=
+adding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"paddin=
+g:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margin:0;tex=
+t-align:center">
+        </th><th class=3D"small-12 large-12 columns first last" style=3D"pa=
+dding:0;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:2=
+75px;padding-left:5px;padding-right:5px;text-align:center;padding-left:10px=
+;padding-right:10px;padding-bottom:0px;"><table style=3D"border-spacing:0;b=
+order-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:=
+100%"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+          <!--[if mso]>
+            <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=
+=3D"urn:schemas-microsoft-com:office:word" style=3D"v-text-anchor:middle;wi=
+dth:160px;height:35px;font-size:16px;" arcsize=3D"6%" stroke=3D"f" fillcolo=
+r=3D"#f7f7f7">
+            <w:anchorlock/>
+            <center>
+          <![endif]-->
+                <p class=3D"days-away" style=3D"font-family:Helvetica Neue,=
+ Helvetica, Arial, sans-serif;font-weight:300;padding:0;margin:0;text-align=
+:left;line-height:1.3;margin-bottom:10px;font-size:10px;color:#35464B;lette=
+r-spacing:1px;background-color:#f7f7f7;color:#333333;font-size:16px;font-we=
+ight:normal;line-height:1.19;margin-top:3px;padding-bottom:8px;padding-top:=
+8px;text-align:center;margin-bottom:0px !important">
+                  101 days away
+                </p>
+          <!--[if mso]>
+            </center>
+            </v:roundrect>
+          <![endif]-->
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></table></th>
+</tr></tbody></table>
+</th></tr></table></th>
+    <th class=3D"small-1 large-1 columns" style=3D"padding:0;margin:0;margi=
+n:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left:5=
+px;padding-right:5px;padding-right:0;padding-left:0;width:23.75px"><table s=
+tyle=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:=
+top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;t=
+ext-align:left"><th style=3D"padding:0;margin:0">
+    </th></tr></table></th>
+=C2=A0
+    <th class=3D"budget pref box small-7 large-7 columns" valign=3D"top" st=
+yle=3D"padding:0;margin:0;background-color:#fefefe;height:48px;width:203.4p=
+x;margin:0 auto;padding-left:10px;padding-bottom:10px;width:156.25px;paddin=
+g-left:5px;padding-right:5px;padding-right:0;padding-left:0;width:166.25px"=
+><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertic=
+al-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-al=
+ign:top;text-align:left"><th style=3D"padding:0;margin:0;text-align:center">
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-12 large-12 columns first last" style=3D"padding=
+:0;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;=
+padding-left:5px;padding-right:5px;text-align:center;padding-left:10px;padd=
+ing-right:10px;padding-bottom:0px;"><table style=3D"border-spacing:0;border=
+-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"=
+><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+          <h5 style=3D"padding:0;margin:0;line-height:1.3;color:#35464B;wor=
+d-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font=
+-weight:300;margin-bottom:2px;font-size:18px;text-align:center;color:#66666=
+6;border-left:6px solid #f2eafa;font-size:12px;font-weight:bold;letter-spac=
+ing:1px;line-height:normal;text-align:left;padding-left:7.5px;margin:0 !imp=
+ortant;padding-bottom:0 !important;margin:10px;">BUDGET</h5>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-12 large-12 columns first last" style=3D"padding=
+:0;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;=
+padding-left:5px;padding-right:5px;text-align:center;padding-left:10px;padd=
+ing-right:10px;padding-bottom:0px;"><table style=3D"border-spacing:0;border=
+-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"=
+><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+            <h6 class=3D"text-center" style=3D"padding:0;margin:0;line-heig=
+ht:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica=
+, Arial, sans-serif;font-weight:300;margin-bottom:2px;line-height:normal;te=
+xt-align:center;color:#333333;border-left:6px solid #f2eafa;font-size:16px;=
+font-weight:normal;line-height:1.19;text-align:left;padding-left:7.5px;marg=
+in:0 !important;padding-bottom:0 !important;margin:10px;">
+              $2,200
+            </h6>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+    </th></tr></table></th>
+
+    <th class=3D"small-1 large-1 columns" style=3D"padding:0;margin:0;margi=
+n:0 auto;padding-left:10px;padding-bottom:10px;width:13.75px;padding-left:5=
+px;padding-right:5px;padding-right:0;padding-left:0;width:23.75px"><table s=
+tyle=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-align:=
+top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:top;t=
+ext-align:left"><th style=3D"padding:0;margin:0">
+    </th></tr></table></th>
+    =C2=A0
+    <th class=3D"beds pref box small-7 large-7 columns last" valign=3D"top"=
+ style=3D"padding:0;margin:0;background-color:#fefefe;height:48px;width:203=
+.4px;margin:0 auto;padding-left:10px;padding-bottom:10px;width:156.25px;pad=
+ding-left:5px;padding-right:5px;padding-right:10px;padding-right:0;padding-=
+left:0;width:166.25px"><table style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><th style=3D"padding:0;margi=
+n:0;text-align:center">
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-12 large-12 columns first last" style=3D"padding=
+:0;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;=
+padding-left:5px;padding-right:5px;text-align:center;padding-left:10px;padd=
+ing-right:10px;padding-bottom:0px;"><table style=3D"border-spacing:0;border=
+-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"=
+><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+          <h5 style=3D"padding:0;margin:0;line-height:1.3;color:#35464B;wor=
+d-wrap:normal;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font=
+-weight:300;margin-bottom:2px;font-size:18px;text-align:center;color:#66666=
+6;border-left:6px solid #f2eafa;font-size:12px;font-weight:bold;letter-spac=
+ing:1px;line-height:normal;text-align:left;padding-left:7.5px;margin:0 !imp=
+ortant;padding-bottom:0 !important;margin:10px;">PREFERENCE</h5>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+      <table class=3D"row" style=3D"border-spacing:0;border-collapse:collap=
+se;vertical-align:top;text-align:left;padding:0;position:relative;width:100=
+%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+        <th class=3D"small-12 large-12 columns first last" style=3D"padding=
+:0;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;=
+padding-left:5px;padding-right:5px;text-align:center;padding-left:10px;padd=
+ing-right:10px;padding-bottom:0px;"><table style=3D"border-spacing:0;border=
+-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"=
+><tr style=3D"padding:0;vertical-align:top;text-align:left">
+<th style=3D"padding:0;margin:0;text-align:center">
+            <h6 class=3D"text-center" style=3D"padding:0;margin:0;line-heig=
+ht:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue, Helvetica=
+, Arial, sans-serif;font-weight:300;margin-bottom:2px;line-height:normal;te=
+xt-align:center;color:#333333;border-left:6px solid #f2eafa;font-size:16px;=
+font-weight:normal;line-height:1.19;text-align:left;padding-left:7.5px;marg=
+in:0 !important;padding-bottom:0 !important;margin:10px;">2 bdrm</h6>
+        </th>
+<th class=3D"expander" style=3D"padding:0;margin:0;visibility:hidden;width:=
+0;text-align:center;padding:0 !important"></th>
+</tr></table></th>
+      </tr></tbody></table>
+    </th></tr></table></th>
+  </tr></tbody></table>
+  <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:collap=
+se;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr styl=
+e=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" styl=
+e=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:au=
+to;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-ru=
+le:exactly;border-collapse:collapse !important;font-size:15px;line-height:1=
+5px;">=C2=A0</td></tr></tbody></table>
+
+              <table class=3D"preferences box collapse row" style=3D"border=
+-spacing:0;border-collapse:collapse;vertical-align:top;text-align:left;back=
+ground-color:#fefefe;height:48px;width:203.4px;padding:0;width:100%;positio=
+n:relative"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:lef=
+t">
+  <th class=3D"small-24 large-24 columns first last" style=3D"padding:0;mar=
+gin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;paddin=
+g-left:5px;padding-right:5px;padding-left:10px;padding-right:10px;padding-r=
+ight:0;padding-left:0;width:570px"><table style=3D"border-spacing:0;border-=
+collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%">=
+<tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"pad=
+ding:0;margin:0">
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar small-24 large-24 columns first last" style=3D"p=
+adding:0;margin:0;padding-bottom:0;background-color:#210d36;height:14px;wid=
+th:100%;border-radius:2px;margin:0 auto;padding-bottom:10px;width:560px;pad=
+ding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tabl=
+e style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-ali=
+gn:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:to=
+p;text-align:left"><th style=3D"padding:0;margin:0">
+        =C2=A0
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar-white small-24 large-24 columns first last" styl=
+e=3D"padding:0;margin:0;padding-bottom:0;background-color:#fefefe;border-ra=
+dius:2px;height:14px;width:100%;margin:0 auto;padding-bottom:10px;width:560=
+px;padding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"=
+><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertic=
+al-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-al=
+ign:top;text-align:left"><th style=3D"padding:0;margin:0">
+        =C2=A0
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-24 large-24 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tab=
+le style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-al=
+ign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><th style=3D"padding:0;margin:0">
+        <h4 class=3D"info-title" style=3D"padding:0;margin:0;text-align:lef=
+t;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue=
+, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;color:#333=
+333;font-size:20px;font-weight:500;letter-spacing:normal">Preferences</h4>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:coll=
+apse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" st=
+yle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:=
+auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-=
+rule:exactly;border-collapse:collapse !important;font-size:10px;line-height=
+:10px;">=C2=A0</td></tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-12 large-12 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tab=
+le style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-al=
+ign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><th style=3D"padding:0;margin:0">
+=20=20=20=20=20=20=20=20=20=20
+          <table class=3D"row" style=3D"border-spacing:0;border-collapse:co=
+llapse;vertical-align:top;text-align:left;padding:0;position:relative;width=
+:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D"small-12 large-6 columns first" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-left:10px"><table style=3D"borde=
+r-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-alig=
+n:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:lef=
+t"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-al=
+ign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;col=
+or:#333333;font-size:16px;font-weight:normal;line-height:normal">Amenities:=
+</h6></th></tr></table></th>
+            <th class=3D"small-12 large-6 columns last" style=3D"padding:0;=
+margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-a=
+lign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvet=
+ica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;co=
+lor:#333333;font-size:16px;font-weight:normal;line-height:normal">In unit l=
+aundry, Air conditioning, Balcony, Bathtub, Garage, Garbage disposal, Hardw=
+ood floors, Pool, Parking, Elevator, Dishwasher, Carpet, Accessible</h6></t=
+h></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #e6e6e6;width:96%">
+          <table class=3D"row" style=3D"border-spacing:0;border-collapse:co=
+llapse;vertical-align:top;text-align:left;padding:0;position:relative;width=
+:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D"small-12 large-6 columns first" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-left:10px"><table style=3D"borde=
+r-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-alig=
+n:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:lef=
+t"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-al=
+ign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;col=
+or:#333333;font-size:16px;font-weight:normal;line-height:normal">Location:<=
+/h6></th></tr></table></th>
+            <th class=3D"small-12 large-6 columns last" style=3D"padding:0;=
+margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-a=
+lign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvet=
+ica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;co=
+lor:#333333;font-size:16px;font-weight:normal;line-height:normal">Edina, MN=
+</h6></th></tr></table></th>
+          </tr></tbody></table>
+      </th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+  <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:collap=
+se;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr styl=
+e=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" styl=
+e=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:au=
+to;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-ru=
+le:exactly;border-collapse:collapse !important;font-size:15px;line-height:1=
+5px;">=C2=A0</td></tr></tbody></table>
+  <table class=3D"qualifications box collapse row" style=3D"border-spacing:=
+0;border-collapse:collapse;vertical-align:top;text-align:left;background-co=
+lor:#fefefe;height:48px;width:203.4px;padding:0;width:100%;position:relativ=
+e"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"small-24 large-24 columns first last" style=3D"padding:0;mar=
+gin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;paddin=
+g-left:5px;padding-right:5px;padding-left:10px;padding-right:10px;padding-r=
+ight:0;padding-left:0;width:570px"><table style=3D"border-spacing:0;border-=
+collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%">=
+<tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"pad=
+ding:0;margin:0">
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar small-24 large-24 columns first last" style=3D"p=
+adding:0;margin:0;padding-bottom:0;background-color:#210d36;height:14px;wid=
+th:100%;border-radius:2px;margin:0 auto;padding-bottom:10px;width:560px;pad=
+ding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tabl=
+e style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-ali=
+gn:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:to=
+p;text-align:left"><th style=3D"padding:0;margin:0">
+        =C2=A0
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar-white small-24 large-24 columns first last" styl=
+e=3D"padding:0;margin:0;padding-bottom:0;background-color:#fefefe;border-ra=
+dius:2px;height:14px;width:100%;margin:0 auto;padding-bottom:10px;width:560=
+px;padding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"=
+><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertic=
+al-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-al=
+ign:top;text-align:left"><th style=3D"padding:0;margin:0">
+        =C2=A0
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-24 large-24 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tab=
+le style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-al=
+ign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><th style=3D"padding:0;margin:0">
+        <h4 class=3D"info-title" style=3D"padding:0;margin:0;text-align:lef=
+t;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue=
+, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;color:#333=
+333;font-size:20px;font-weight:500;letter-spacing:normal">Qualifications</h=
+4>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:coll=
+apse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" st=
+yle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:=
+auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-=
+rule:exactly;border-collapse:collapse !important;font-size:10px;line-height=
+:10px;">=C2=A0</td></tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-12 large-12 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tab=
+le style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-al=
+ign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><th style=3D"padding:0;margin:0">
+=20=20=20=20=20=20=20=20=20=20
+          <table class=3D"row" style=3D"border-spacing:0;border-collapse:co=
+llapse;vertical-align:top;text-align:left;padding:0;position:relative;width=
+:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D"small-12 large-6 columns first" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-left:10px"><table style=3D"borde=
+r-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-alig=
+n:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:lef=
+t"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-al=
+ign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;col=
+or:#333333;font-size:16px;font-weight:normal;line-height:normal">Income:</h=
+6></th></tr></table></th>
+            <th class=3D"small-12 large-6 columns last" style=3D"padding:0;=
+margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-a=
+lign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvet=
+ica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;co=
+lor:#333333;font-size:16px;font-weight:normal;line-height:normal">Meets you=
+r income requirement</h6></th></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #e6e6e6;width:96%">
+          <table class=3D"row" style=3D"border-spacing:0;border-collapse:co=
+llapse;vertical-align:top;text-align:left;padding:0;position:relative;width=
+:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D"small-12 large-6 columns first" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-left:10px"><table style=3D"borde=
+r-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-alig=
+n:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:lef=
+t"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-al=
+ign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;col=
+or:#333333;font-size:16px;font-weight:normal;line-height:normal">Eviction h=
+istory:</h6></th></tr></table></th>
+            <th class=3D"small-12 large-6 columns last" style=3D"padding:0;=
+margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-a=
+lign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvet=
+ica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;co=
+lor:#333333;font-size:16px;font-weight:normal;line-height:normal">Never bee=
+n evicted</h6></th></tr></table></th>
+          </tr></tbody></table>
+      </th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+  <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:collap=
+se;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr styl=
+e=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"15px" styl=
+e=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:au=
+to;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-ru=
+le:exactly;border-collapse:collapse !important;font-size:15px;line-height:1=
+5px;">=C2=A0</td></tr></tbody></table>
+
+              <table class=3D"spacer " style=3D"border-spacing:0;border-col=
+lapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tb=
+ody><tr style=3D"padding:0;vertical-align:top;text-align:left"><td height=
+=3D"20px" style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:a=
+uto;hyphens:auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-=
+line-height-rule:exactly;border-collapse:collapse !important;font-size:20px=
+;line-height:20px;">=C2=A0</td></tr></tbody></table>
+  <table class=3D"renter insight box collapse row" style=3D"border-spacing:=
+0;border-collapse:collapse;vertical-align:top;text-align:left;background-co=
+lor:#fefefe;height:48px;width:203.4px;padding:0;width:100%;position:relativ=
+e"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D"small-24 large-24 columns first last" style=3D"padding:0;mar=
+gin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;paddin=
+g-left:5px;padding-right:5px;padding-left:10px;padding-right:10px;padding-r=
+ight:0;padding-left:0;width:570px"><table style=3D"border-spacing:0;border-=
+collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100%">=
+<tr style=3D"padding:0;vertical-align:top;text-align:left"><th style=3D"pad=
+ding:0;margin:0">
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar small-24 large-24 columns first last" style=3D"p=
+adding:0;margin:0;padding-bottom:0;background-color:#210d36;height:14px;wid=
+th:100%;border-radius:2px;margin:0 auto;padding-bottom:10px;width:560px;pad=
+ding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tabl=
+e style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-ali=
+gn:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:to=
+p;text-align:left"><th style=3D"padding:0;margin:0">
+        =C2=A0
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"top-bar-white small-24 large-24 columns first last" styl=
+e=3D"padding:0;margin:0;padding-bottom:0;background-color:#fefefe;border-ra=
+dius:2px;height:14px;width:100%;margin:0 auto;padding-bottom:10px;width:560=
+px;padding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"=
+><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertic=
+al-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-al=
+ign:top;text-align:left"><th style=3D"padding:0;margin:0">
+        =C2=A0
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-24 large-24 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:560px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tab=
+le style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-al=
+ign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><th style=3D"padding:0;margin:0">
+        <h4 class=3D"info-title" style=3D"padding:0;margin:0;text-align:lef=
+t;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvetica Neue=
+, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;color:#333=
+333;font-size:20px;font-weight:500;letter-spacing:normal">Renter insight</h=
+4>
+      </th></tr></table></th>
+    </tr></tbody></table>
+    <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:coll=
+apse;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"10px" st=
+yle=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:=
+auto;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-=
+rule:exactly;border-collapse:collapse !important;font-size:10px;line-height=
+:10px;">=C2=A0</td></tr></tbody></table>
+    <table class=3D"row" style=3D"border-spacing:0;border-collapse:collapse=
+;vertical-align:top;text-align:left;padding:0;position:relative;width:100%"=
+><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+      <th class=3D"small-12 large-12 columns first last" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:275px;pa=
+dding-left:5px;padding-right:5px;padding-left:10px;padding-right:10px"><tab=
+le style=3D"border-spacing:0;border-collapse:collapse;padding:0;vertical-al=
+ign:top;text-align:left;width:100%"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><th style=3D"padding:0;margin:0">
+=20=20=20=20=20=20=20=20=20=20
+          <table class=3D"row" style=3D"border-spacing:0;border-collapse:co=
+llapse;vertical-align:top;text-align:left;padding:0;position:relative;width=
+:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D"small-12 large-6 columns first" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-left:10px"><table style=3D"borde=
+r-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-alig=
+n:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:lef=
+t"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-al=
+ign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;col=
+or:#333333;font-size:16px;font-weight:normal;line-height:normal">Listings v=
+iewed:</h6></th></tr></table></th>
+            <th class=3D"small-12 large-6 columns last" style=3D"padding:0;=
+margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-a=
+lign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvet=
+ica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;co=
+lor:#333333;font-size:16px;font-weight:normal;line-height:normal">1 other p=
+roperty</h6></th></tr></table></th>
+          </tr></tbody></table>
+          <hr style=3D"border:1px solid #e6e6e6;width:96%">
+          <table class=3D"row" style=3D"border-spacing:0;border-collapse:co=
+llapse;vertical-align:top;text-align:left;padding:0;position:relative;width=
+:100%"><tbody><tr style=3D"padding:0;vertical-align:top;text-align:left">
+            <th class=3D"small-12 large-6 columns first" style=3D"padding:0=
+;margin:0;padding-bottom:0;margin:0 auto;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-left:10px"><table style=3D"borde=
+r-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-alig=
+n:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:lef=
+t"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-al=
+ign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helveti=
+ca Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;col=
+or:#333333;font-size:16px;font-weight:normal;line-height:normal">Has contac=
+ted:</h6></th></tr></table></th>
+            <th class=3D"small-12 large-6 columns last" style=3D"padding:0;=
+margin:0;margin:0 auto;padding-left:10px;padding-bottom:10px;width:132.5px;=
+padding-left:5px;padding-right:5px;padding-right:10px"><table style=3D"bord=
+er-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-ali=
+gn:left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:le=
+ft"><th style=3D"padding:0;margin:0"><h6 style=3D"padding:0;margin:0;text-a=
+lign:left;line-height:1.3;color:#35464B;word-wrap:normal;font-family:Helvet=
+ica Neue, Helvetica, Arial, sans-serif;font-weight:300;margin-bottom:2px;co=
+lor:#333333;font-size:16px;font-weight:normal;line-height:normal">1 other p=
+roperties</h6></th></tr></table></th>
+          </tr></tbody></table>
+      </th></tr></table></th>
+    </tr></tbody></table>
+  </th></tr></table></th>
+</tr></tbody></table>
+
+  <div style=3D"width: 553px; margin: auto;">
+    <!--[if mso]>
+    <center>
+    <![endif]-->
+    <table class=3D"expanded radius button" style=3D"border-spacing:0;borde=
+r-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:auto=
+;margin:0 0 0px 0;width:100% !important"><tr style=3D"padding:0;vertical-al=
+ign:top;text-align:left"><td style=3D"word-wrap:break-word;-webkit-hyphens:=
+auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;text-align:left;padd=
+ing:0;margin:0;border-collapse:collapse !important"><table style=3D"border-=
+spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:=
+left;width:100%"><tr style=3D"padding:0;vertical-align:top;text-align:left"=
+><td style=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;h=
+yphens:auto;vertical-align:top;padding:0;margin:0;text-align:left;color:#fe=
+fefe;background:#8434d6;border:2px solid #8434d6;border-radius:4px;border:n=
+one;border-collapse:collapse !important"><a href=3D"mailto:progressive1827@=
+gmail.com" style=3D"color:#35464B;font-weight:300;padding:0;margin:0;text-a=
+lign:left;line-height:1.3;color:#2199e8;font-family:Helvetica Neue, Helveti=
+ca, Arial, sans-serif;font-size:14px;font-weight:normal;color:#fefefe;text-=
+decoration:none;display:inline-block;padding:16px 16px 16px 16px;border:0 s=
+olid #8434d6;border-radius:4px;text-align:center;width:100%;padding-left:0;=
+padding-right:0">Contact Renter Now</a></td></tr></table></td></tr></table>
+    <!--[if mso]>
+    </center>
+    <![endif]-->
+  </div>
+  <table class=3D"spacer " style=3D"border-spacing:0;border-collapse:collap=
+se;padding:0;vertical-align:top;text-align:left;width:100%"><tbody><tr styl=
+e=3D"padding:0;vertical-align:top;text-align:left"><td height=3D"50px" styl=
+e=3D"word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:au=
+to;vertical-align:top;text-align:left;padding:0;margin:0;mso-line-height-ru=
+le:exactly;border-collapse:collapse !important;font-size:50px;line-height:5=
+0px;">=C2=A0</td></tr></tbody></table>
+
+          </td></tr></tbody></table>
+        </td></tr></table>
+      </center>
+    </td>
+  </tr>
+</table>
+<!-- prevent Gmail on iOS font size manipulation -->
+<div style=3D"display:none; white-space:nowrap; font:15px courier; line-hei=
+ght:0;"> =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </div>
+
+
+<img src=3D"http://clicks.apartmentlist.com/wf/open?upn=3Di5YPVX7ohE7hqbI4Q=
+C10ldSTZpdi2DHt-2BQvaPw7rbizYQu2ib81Q-2BMUcJtNfzHKR0vMNpCtM06g76ugcJRNkkhnm=
+7v0hVHk8NOjmIUSIuulFJjqHINd5DCdFfTeexz9pKRfSt56oe6QS7GlV2hAkAtGy1hqjYBd8jLg=
+vL-2FN-2F8OMfonHkC59Hr25lbZS-2FvHNcOhu6-2Ffw-2B1oEokNWBLLi19IVSkwYRIxZ2Qlwp=
+c9gLv3jujCEqHgaaHaFdEYMA7KMVaBTuFGS5ONOs8QfBz2ZF1IVDb1QuCxVdwUKkYIY609VD-2B=
+3RNy-2BeTXHTj095O6BbxEu15pVo6UJo9FTgqDv3bVdCLpbl4JovY7y-2FONsmvp2dz554zAkU8=
+fOGvgFORIDKYVpxME39jRKDtQ7xrERxHwPqF0da6KXiuG4JT90QGgd1Tc0HbEcO7cCqblavgmnt=
+rLCmaZQbs6xFR1UT04ASr6SpqT-2FR5DLeP3rqV-2FTDpro2qVeAIzXxnP5C-2FylAHkAgZQ95b=
+DYgRJvNJDStl19gxa-2Fo2J3h9DcuQlCReysV0054-3D" alt=3D"" width=3D"1" height=
+=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important;bor=
+der-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;m=
+argin-right:0 !important;margin-left:0 !important;padding-top:0 !important;=
+padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !impo=
+rtant;"/>
+</body>
+</html>
+
+
+--28d0f890e805b6719273e52ad9c9257aa9da341e4d6ef6d0be3e427cfa97--

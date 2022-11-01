@@ -1,0 +1,72 @@
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.container {
+  overflow: auto;
+  height: calc(100% - (64rem/16));
+  background: $grey50;
+}
+
+:global {
+  #inventoryPage {
+    height: 100vh;
+  }
+}
+
+.content {
+  max-width: (800rem/16);
+  margin: 0 auto;
+  padding: (32rem/16) (32rem/16) (64rem/16) (32rem/16);
+}
+
+.starting-at {
+  p {
+    @include textTitle();
+    @include textSecondary();
+
+    font-weight: 500;
+    display: inline;
+    margin: 0;
+  }
+
+  [data-part='integer'] {
+    @include textPrimary();
+  }
+}
+
+.sub-block {
+  padding-top: (16rem/16);
+}
+
+.first-paragraph {
+  padding-bottom: (10rem/16);
+}
+
+.section-block {
+  padding-bottom: (24rem/16);
+}
+
+.amenities-block {
+  padding-top: (36rem/16);
+}
+
+.complimentary-item {
+  margin-left: (8rem/16);
+}
+
+.image-container {
+  position: relative;
+  min-height: (200rem/16);
+
+  .status {
+    position: absolute;
+    top: (8rem/16);
+    left: (8rem/16);
+    display: inline-block;
+    padding: (6rem/16) (8rem/16);
+    border-radius: 3px;
+    background: rgba($black, .5);
+  }
+}

@@ -1,0 +1,10 @@
+.scrollable-area {
+  overflow: auto;
+  height: 100%;
+
+  -webkit-overflow-scrolling: touch;
+
+  &.noOverflow {
+    overflow: hidden;
+  }
+}

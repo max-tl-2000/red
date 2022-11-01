@@ -1,0 +1,57 @@
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_colors.scss';
+
+.list-content {
+  padding-bottom: .5rem;
+
+  > div > [data-component='list-item'] {
+    padding-left: .3rem;
+  }
+}
+
+.group-separator {
+  > div > div {
+    padding: 0;
+  }
+
+  &:after {
+    border-bottom: none;
+  }
+}
+
+.group-item {
+  padding: (8rem/16) 0;
+
+  .line-divider {
+    border-bottom: 1px solid $grey300;
+  }
+}
+
+.no-results {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: (24rem/16);
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: (48rem/16);
+    height: (48rem/16);
+    border-radius: 50%;
+    background-color: #d8d8d8;
+  }
+
+  .icon {
+    opacity: .54;
+  }
+
+  .info {
+    text-align: center;
+
+    strong {
+      @include textPrimary();
+    }
+  }
+}

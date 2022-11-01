@@ -1,0 +1,54 @@
+.page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .field-padding {
+    padding: 0 (10rem/16);
+  }
+
+  .action-button {
+    padding: (48rem/16) (10rem/16) 0;
+    text-align: right;
+  }
+
+  .margin-bottom {
+    margin-bottom: 2rem;
+  }
+
+  .conditions {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .card-actions {
+    padding: 0 (48rem/16) (48rem/16);
+  }
+
+  .text-link {
+    cursor: pointer;
+  }
+
+  .error-message {
+    display: flex;
+  }
+}
+
+.card-register {
+  width: (408rem/16);
+  height: (235rem/16);
+  padding: (48rem/16);
+}
+
+.card-sent {
+  width: (504rem/16);
+  height: (236rem/16);
+  padding: (48rem/16);
+}
+
+.card-confirm {
+  width: (408rem/16);
+  height: (355rem/16);
+  padding: (48rem/16);
+}

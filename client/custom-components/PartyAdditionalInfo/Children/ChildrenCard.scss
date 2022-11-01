@@ -1,0 +1,12 @@
+.children-card {
+  display: flex;
+  flex-direction: row;
+  min-width: 14em;
+  padding: 1rem;
+
+  flex-wrap: wrap;
+
+  .avatar {
+    width: (48rem/16);
+  }
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  height: 90%;
+}
+
+div {
+  text-align: center;
+}
+
+.message {
+  margin: 24px 0;
+}
+
+i {
+  font-size: 40px !important;
+  color: green;
+}
+
+i.red {
+  font-size: 2.875rem !important;
+  color: red;
+}
+
+.btn,
+.btn-large,
+.btn-flat {
+  font-size: .875rem;
+  font-weight: bold;
+  line-height: 1.15em;
+  line-height: 1.15em;
+  display: inline-block;
+  height: 2.25rem;
+  padding: 0 2rem;
+  cursor: pointer;
+  vertical-align: middle;
+  letter-spacing: .00625em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: .125rem;
+  outline: 0;
+}
+
+.btn,
+.primary {
+  color: #fff;
+  background: #2196f3;
+}
+
+.btn:hover,
+.primary:hover {
+  background: #1d84d5;
+}
+
+#continue-link {
+  cursor: pointer;
+  color: #2196f3;
+}

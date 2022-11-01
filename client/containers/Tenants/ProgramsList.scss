@@ -1,0 +1,23 @@
+@import '../../components/Table/table.scss';
+
+.row {
+  &.inactiveRowFont {
+    > [data-component='cell'] {
+      > div,
+      div p {
+        color: rgba($black, .26);
+      }
+    }
+  }
+}
+
+.boldHeaderRow {
+  > [data-component='cell'] {
+    > div,
+    div p {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba($black, .87);
+    }
+  }
+}

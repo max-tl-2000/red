@@ -1,0 +1,247 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.step {
+  display: block;
+}
+
+.step-content {
+  display: block;
+  min-height: (120rem/16);
+
+  &.container {
+    padding: 1rem 1.25rem;
+  }
+}
+
+.stepper {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: (39rem/16);
+  bottom: (-5rem/16);
+  left: (36rem/16);
+  width: (1rem/16);
+  background: $grey400;
+}
+
+.step-summary {
+  display: block;
+  padding: (12rem/16) (59rem/16);
+}
+
+.step-wrapper {
+  position: relative;
+  display: block;
+  padding: (1em/16) 0;
+
+  &:last-of-type {
+    &[data-step-open='true'] {
+      .line {
+        bottom: (40rem/16);
+        display: block;
+      }
+    }
+
+    .line {
+      display: none;
+    }
+  }
+}
+
+.nonLinear {
+  .step-header .icon-holder {
+    [data-red-icon] {
+      display: block;
+    }
+  }
+}
+
+.hoverable {
+  [data-next-available='true'] {
+    .step-header {
+      &:hover {
+        background: $hoverBGColor;
+
+        .icon-holder {
+          background: $grey600;
+
+          &.missedRequiredStep {
+            background: $redA400;
+          }
+
+          [data-red-icon] {
+            display: block;
+          }
+        }
+      }
+
+      &:active {
+        background: $activeBGColor;
+
+        .icon-holder {
+          background: $blue500;
+
+          &.missedRequiredStep {
+            background: $redA400;
+          }
+        }
+      }
+
+      &[data-visited='true'],
+      &[data-open='true'] {
+        &:hover {
+          .icon-holder {
+            background: $blue500;
+
+            &.missedRequiredStep {
+              background: $redA400;
+            }
+          }
+        }
+      }
+
+      &[data-disabled='true'] {
+        &:hover,
+        &:active {
+          background: none;
+
+          .icon-holder {
+            opacity: .26;
+            background: $grey500;
+
+            &.missedRequiredStep {
+              background: $redA400;
+            }
+
+            [data-red-icon] {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .step-header {
+    &[data-visited='true']:hover {
+      background: $hoverBGColor;
+
+      [data-red-icon] {
+        display: block;
+      }
+    }
+  }
+}
+
+.step-header {
+  position: relative;
+  padding: .5em .5em .5em (56em/16);
+  cursor: pointer;
+  transition: background .5s ease-out;
+
+  &[data-visited='true'],
+  &[data-open='true'] {
+    .icon-holder {
+      background: $blue500;
+
+      &.missedRequiredStep {
+        background: $redA400;
+      }
+    }
+  }
+
+  &[data-open='true'] {
+    .icon-holder {
+      [data-red-icon] {
+        display: block;
+      }
+    }
+  }
+
+  &[data-disabled],
+  &[data-disabled]:hover {
+    background: none;
+
+    .icon-holder {
+      opacity: .26;
+
+      [data-red-icon] {
+        display: none;
+      }
+    }
+  }
+
+  .icon-holder {
+    position: absolute;
+    top: (9rem/16);
+    left: (24rem/16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: (24rem/16);
+    height: (24rem/16);
+    border-radius: 100%;
+    background: $grey500;
+
+    &.missedRequiredStep {
+      background: $redA400;
+    }
+
+    [data-red-icon] {
+      display: none;
+      width: .85rem;
+      height: .85rem;
+      animation: fadeIn .3s ease-out;
+    }
+  }
+}
+
+[data-component='card'] {
+  .extra-button {
+    margin-right: auto;
+  }
+}
+
+.title {
+  margin-top: .15rem;
+  margin-bottom: .15rem;
+}
+
+.helper-text {
+  margin-bottom: .4rem;
+}
+
+.card {
+  margin: 0 (24rem/16) 1.5em;
+}
+
+.card-actions {
+  border-top: 1px solid rgba(0, 0, 0, .12);
+}
+
+.content-wrapper[data-actions-visible='true'] {
+  padding: 0 0 (48rem/16) 0;
+}
+
+.dialog-overlay {
+  [data-component='dialog-body'] {
+    max-width: 85vw;
+    padding: 0;
+  }
+}

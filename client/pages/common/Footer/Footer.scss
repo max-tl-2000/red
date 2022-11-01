@@ -1,0 +1,19 @@
+.footer {
+  min-height: (65rem/16);
+  margin-top: 4rem;
+  padding-top: (5rem/16);
+  text-align: center;
+}
+
+.links {
+  margin-bottom: (10rem/16);
+
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .54);
+  }
+
+  .spacer {
+    margin: 0 .5rem;
+  }
+}

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`assetsReader provided a list of manifest files that are different from the ones used the first time should read the content of the file that was not in the cache and add the results to the cache 1`] = `
+Object {
+  "leasing.js": "leasing-1231231.js",
+  "main.css": "main-1231231.css",
+  "main.js": "main-1231231.js",
+  "vendors.js": "vendors-1231231.js",
+}
+`;
+
+exports[`assetsReader provided a list of manifest files, when none of them fails to be read should cache the results of the reads so no no more reads are performed 1`] = `
+Object {
+  "leasing.js": "leasing-1231231.js",
+  "main.css": "main-1231231.css",
+  "main.js": "main-1231231.js",
+  "vendors.js": "vendors-1231231.js",
+}
+`;
+
+exports[`assetsReader provided a list of manifest files, when one of them fails to be read should not cache the results of the reads until all manifests are valid 1`] = `
+Object {
+  "leasing.js": "leasing-1231231.js",
+  "main.css": "main-1231231.css",
+  "main.js": "main-1231231.js",
+  "vendors.js": "vendors-1231231.js",
+}
+`;

@@ -1,0 +1,34 @@
+{
+    "id": "40afd8c1-3f01-4883-b61a-2aa922ddc744",
+    "created_at": "3/25/2020 18:12:48 GMT",
+    "assignedProperty": "6fa82121-4d09-4e03-806a-dd3b8dca490f",
+    "noResponseCounter": 0,
+    "partyOwnerUUID": "a149d2e2-eed4-4076-b945-0d9e6f643b23",
+    "eventCommRecord": [],
+    "comms": [],
+    "partyMembers": [{
+        "id": "9bfd327e-6697-48b9-b76d-5acc8780283a",
+        "created_at": "3/25/2020 18:12:49 GMT",
+        "personApplication": {},
+        "personId": "5b532654-21df-495e-9c42-dbe3d6fd3e26",
+        "modifiedBy": "a149d2e2-eed4-4076-b945-0d9e6f643b23",
+        "hasContactInfo": true,
+        "isActive": true,
+        "partyMemberTasks": [],
+        "hasAnonymousEmail": false
+    }],
+    "tasks": [],
+    "createdFromCommId": null,
+    "workflowState": "active",
+    "leaseType": "traditional",
+    "workflowName": "renewal",
+    "activeLeaseData": {
+        "id": "92b20ddb-7548-4145-80a1-bc7966246d9c",
+        "created_at": "3/25/2020 18:11:21 GMT",
+        "state": "none",
+        "leaseEndDate": "3/24/2022 17:59:40 GMT"
+    },
+    "quotes": [],
+    "propertyTimeZone": "America/Los_Angeles",
+    "moveoutNoticePeriodDays": 60
+}

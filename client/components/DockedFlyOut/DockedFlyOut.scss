@@ -1,0 +1,92 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+.docked-flyout-container {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &.on {
+    display: flex;
+  }
+}
+
+.docked-flyout-wrapper {
+  display: block;
+  margin-right: .5em;
+  pointer-events: auto;
+
+  &:last-of-type {
+    margin-right: 1.3em;
+  }
+}
+
+.docked-window {
+  min-width: 300px;
+  border-top-left-radius: (3rem/16);
+  border-top-right-radius: (3rem/16);
+  background: $white;
+}
+
+.window-header {
+  display: flex;
+  flex-direction: row;
+  min-height: (40rem/16);
+  border-top-left-radius: (3rem/16);
+  border-top-right-radius: (3rem/16);
+  background: $blue800;
+
+  [data-red-icon] svg {
+    fill: rgba($white, .87);
+  }
+}
+
+.icon-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: (40rem/16);
+  height: (40rem/16);
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+
+  [data-component='text'],
+  [data-component='title'],
+  [data-component='subheader'] {
+    color: rgba($white, .87);
+
+    > span {
+      color: rgba($white, .87); // force google voice links to be white
+    }
+  }
+}
+
+.title-section {
+  width: 100%;
+}
+
+.controls-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-content {
+  background: $white;
+}
+
+.window-minimized {
+  display: none;
+}

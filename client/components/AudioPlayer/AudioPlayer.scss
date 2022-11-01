@@ -1,0 +1,82 @@
+@import '../../sass/_colors';
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  padding-top: .3rem;
+  padding-right: 1rem;
+  padding-bottom: .3rem;
+  padding-left: .8rem;
+  cursor: default;
+  border-radius: (4rem/16);
+  background-color: rgba(117, 117, 117, .08);
+
+  flex-grow: 1;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.progress-background {
+  position: relative;
+  display: flex;
+  height: .125rem;
+  margin-right: 1rem;
+  margin-left: .5rem;
+  cursor: pointer;
+  background-color: #ccc;
+
+  flex-grow: 1;
+}
+
+.progress {
+  background-color: $grey900;
+}
+
+input[type=range] {
+  position: absolute;
+  top: -.312rem;
+  left: 0;
+  width: 100%;
+  background: transparent;
+
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-range-track {
+    opacity: 0;
+  }
+
+  &::-webkit-slider-thumb {
+    width: .75rem;
+    height: .75rem;
+    border: solid .125rem $grey400;
+    border-radius: 50%;
+    background-color: $white;
+
+    -webkit-appearance: none;
+  }
+
+  &::-moz-range-thumb {
+    width: .5rem;
+    height: .5rem;
+    border: solid .125rem $grey400;
+    background-color: $white;
+
+    -moz-appearance: none;
+  }
+}
+
+@-moz-document url-prefix() {
+  input[type=range] {
+    top: -.562rem;
+    left: -.125rem;
+    width: 104%;
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<mri_s-pmrm_modifyrentdetails>	
+    <entry>	
+        <Month />	
+        <Year />	
+        <Rent>1000</Rent>	
+        <Concession>0</Concession>	
+    </entry>	
+</mri_s-pmrm_modifyrentdetails> 

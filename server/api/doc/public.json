@@ -1,0 +1,504 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+  "host": "#HOST#",
+  "basePath": "/api",
+  "produces": ["application/json"],
+  "paths": {
+    "/activityLogs": {
+      "$ref": "public/activityLogs.json#/paths/~1activityLogs"
+    },
+    "/activityLogs/{id}": {
+      "$ref": "public/activityLogs.json#/paths/~1activityLogs~1{id}"
+    },
+    "/activityLog": {
+      "$ref": "public/activityLogs.json#/paths/~1activityLog"
+    },
+
+    "/amenities": {
+      "$ref": "public/amenities.json#/paths/~1amenities"
+    },
+
+    "/parties/{partyId}/demoteApplication": {
+      "$ref": "public/applications.json#/paths/~1parties~1{partyId}~1demoteApplication"
+    },
+    "/partyApplications/{partyApplicationId}": {
+      "$ref": "public/applications.json#/paths/~1partyApplications~1{partyApplicationId}"
+    },
+    "/personApplications/current/screeningData": {
+      "$ref": "public/applications.json#/paths/~1personApplications~1current~1screeningData"
+    },
+    "/personApplications/current": {
+      "$ref": "public/applications.json#/paths/~1personApplications~1current"
+    },
+    "/personApplications/current/additionalData": {
+      "$ref": "public/applications.json#/paths/~1personApplications~1current~1additionalData"
+    },
+    "/screeningSummary/{partyId}": {
+      "$ref": "public/applications.json#/paths/~1screeningSummary~1{partyId}"
+    },
+    "/screeningSummary/{partyId}/view/report": {
+      "$ref": "public/applications.json#/paths/~1screeningSummary~1{partyId}~1view~1report"
+    },
+    "/personApplications/{personApplicationId}": {
+      "$ref": "public/applications.json#/paths/~1personApplications~1{personApplicationId}"
+    },
+    "/personApplications/{personApplicationId}/fees": {
+      "$ref": "public/applications.json#/paths/~1personApplications~1{personApplicationId}~1fees"
+    },
+    "/party/{partyId}/personApplications": {
+      "$ref": "public/applications.json#/paths/~1screeningSummary~1{partyId}"
+    },
+    "/applications": {
+      "$ref": "public/applications.json#/paths/~1applications"
+    },
+    "/parties/{partyId}/holdApplicationStatus": {
+      "$ref": "public/applications.json#/paths/~1parties~1{partyId}~1holdApplicationStatus"
+    },
+    "/parties/{partyId}/screeningResult": {
+      "$ref": "public/applications.json#/paths/~1parties~1{partyId}~1screeningResult"
+    },
+    "/parties/{partyId}/members/{memberId}/applicationInvitation": {
+      "$ref": "public/applications.json#/paths/~1parties~1{partyId}~1members~1{memberId}~1applicationInvitation"
+    },
+    "/disclosures": {
+      "$ref": "public/applications.json#/paths/~1disclosures"
+    },
+    "/applicant": {
+      "$ref": "public/applications.json#/paths/~1applicant"
+    },
+    "/applicationFeeWaivers": {
+      "$ref": "public/applications.json#/paths/~1applicationFeeWaivers"
+    },
+
+    "/login": {
+      "$ref": "public/authorization.json#/paths/~1login"
+    },
+    "/registerWithInvite": {
+      "$ref": "public/authorization.json#/paths/~1registerWithInvite"
+    },
+    "/resetPassword": {
+      "$ref": "public/authorization.json#/paths/~1resetPassword"
+    },
+    "/requestResetPassword/generateToken": {
+      "$ref": "public/authorization.json#/paths/~1requestResetPassword"
+    },
+
+    "/blacklist": {
+      "$ref": "public/blacklist.json#/paths/~1blacklist"
+    },
+
+    "/buildings": {
+      "$ref": "public/buildings.json#/paths/~1buildings"
+    },
+
+    "/parties/communications": {
+      "$ref": "public/communications.json#/paths/~1parties~1communications"
+    },
+    "/persons/{personId}/communication": {
+      "$ref": "public/communications.json#/paths/~1persons~1{personId}~1communication"
+    },
+    "/communications": {
+      "$ref": "public/communications.json#/paths/~1communications"
+    },
+    "/communications/{commId}": {
+      "$ref": "public/communications.json#/paths/~1communications~1{commId}"
+    },
+    "/communications/phone": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone"
+    },
+    "/communications/phone/makeCallFromPhone": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1makeCallFromPhone"
+    },
+    "/communications/phone/{commId}/transfer": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1{commId}~1transfer"
+    },
+    "/communications/phone/{commId}/activeCallData": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1{commId}~1activeCallData"
+    },
+    "/communications/phone/{threadId}/inactiveCallData": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1{threadId}~1inactiveCallData"
+    },
+    "/communications/phone/{commId}/stopRecording": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1{commId}~1stopRecording"
+    },
+    "/communications/phone/{commId}/holdCall": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1{commId}~1holdCall"
+    },
+    "/communications/phone/{commId}/unholdCall": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1{commId}~1unholdCall"
+    },
+    "/communications/phone/externalPhones": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1externalPhones"
+    },
+    "/communications/phone/{commId}/incomingCallInfo": {
+      "$ref": "public/communications.json#/paths/~1communications~1phone~1{commId}~1incomingCallInfo"
+    },
+    "/communications/sms/computeThreadId": {
+      "$ref": "public/communications.json#/paths/~1communications~1sms~1computeThreadId"
+    },
+    "/parties/{partyId}/communication": {
+      "$ref": "public/communications.json#/paths/~1parties~1{partyId}~1communication"
+    },
+    "/marketing/session": {
+      "$ref": "public/communications.json#/paths/~1marketing~1session"
+    },
+
+    "/config": {
+      "$ref": "public/config.json#/paths/~1config"
+    },
+
+    "/dashboard": {
+      "$ref": "public/dashboard.json#/paths/~1dashboard"
+    },
+    "/dashboard/party/{partyId}": {
+      "$ref": "public/dashboard.json#/paths/~1dashboard~1party~1{partyId}"
+    },
+    "/navigationHistory": {
+      "$ref": "public/dashboard.json#/paths/~1navigationHistory"
+    },
+
+    "/partyApplications/{partyApplicationId}/documents": {
+      "$ref": "public/documents.json#/paths/~1partyApplications~1{partyApplicationId}~1documents"
+    },
+    "/personApplications/current/documents/{documentId}/retrieve": {
+      "$ref": "public/documents.json#/paths/~1personApplications~1current~1documents~1{documentId}~1retrieve"
+    },
+    "/personApplications/{personApplicationId}/documents": {
+      "$ref": "public/documents.json#/paths/~1personApplications~1{personApplicationId}~1documents"
+    },
+    "/documents": {
+      "$ref": "public/documents.json#/paths/~1documents"
+    },
+    "/documents/{documentId}/download": {
+      "$ref": "public/documents.json#/paths/~1documents~1{documentId}~1download"
+    },
+    "/documents/{documentId}/metadata": {
+      "$ref": "public/documents.json#/paths/~1documents~1{documentId}~1metadata"
+    },
+
+    "/inventories": {
+      "$ref": "public/inventories.json#/paths/~1inventories"
+    },
+    "/inventories/{inventoryId}": {
+      "$ref": "public/inventories.json#/paths/~1inventories~1{inventoryId}"
+    },
+    "/inventories/{inventoryId}/holds": {
+      "$ref": "public/inventories.json#/paths/~1inventories~1{inventoryId}~1holds"
+    },
+    "/inventories/{inventoryId}/details": {
+      "$ref": "public/inventories.json#/paths/~1inventories~1{inventoryId}~1details"
+    },
+    "/inventories/{inventoryId}/amenities": {
+      "$ref": "public/inventories.json#/paths/~1inventories~1{inventoryId}~1amenities"
+    },
+
+    "/layouts": {
+      "$ref": "public/layouts.json#/paths/~1layouts"
+    },
+
+    "/parties/{partyId}/leases": {
+      "$ref": "public/leases.json#/paths/~1parties~1{partyId}~1leases"
+    },
+    "/parties/{partyId}/leases/{leaseId}": {
+      "$ref": "public/leases.json#/paths/~1parties~1{partyId}~1leases~1{leaseId}"
+    },
+    "/parties/{partyId}/leases/{leaseId}/publish": {
+      "$ref": "public/leases.json#/paths/~1parties~1{partyId}~1leases~1{leaseId}~1publish"
+    },
+    "/parties/{partyId}/leases/{leaseId}/email": {
+      "$ref": "public/leases.json#/paths/~1parties~1{partyId}~1leases~1{leaseId}~1email"
+    },
+    "/parties/{partyId}/leases/{leaseId}/void": {
+      "$ref": "public/leases.json#/paths/~1parties~1{partyId}~1leases~1{leaseId}~1void"
+    },
+    "/parties/{partyId}/leases/{leaseId}/additionalData": {
+      "$ref": "public/leases.json#/paths/~1parties~1{partyId}~1leases~1{leaseId}~1additionalData"
+    },
+    "/parties/{partyId}/leases/{leaseId}/status": {
+      "$ref": "public/leases.json#/paths/~1parties~1{partyId}~1leases~1{leaseId}~1status"
+    },
+
+    "/templates/mjmlToHtml": {
+      "$ref": "public/templates.json#/paths/~1templates~1mjmlToHtml"
+    },
+    "/templates/mjmlComponentToHtml": {
+      "$ref": "public/templates.json#/paths/~1templates~1mjmlComponentToHtml"
+    },
+    "/templates/{propertyId}/shortCodes": {
+      "$ref": "public/templates.json#/paths/~1templates~1{propertyId}~1shortCodes"
+    },
+
+    "/templates/{templateId}/render": {
+      "$ref": "public/templates.json#/paths/~1templates~1{templateId}~1render"
+    },
+
+    "/leases/updateEnvelopeStatus": {
+      "$ref": "public/leases.json#/paths/~1leases~1updateEnvelopeStatus"
+    },
+    "/leases/signature-token": {
+      "$ref": "public/leases.json#/paths/~1leases~1signature-token"
+    },
+    "/leases/{envelopeId}/token/{clientUserId}": {
+      "$ref": "public/leases.json#/paths/~1leases~1{envelopeId}~1token~1{clientUserId}"
+    },
+    "/leases/{leaseId}/download": {
+      "$ref": "public/leases.json#/paths/~1leases~1{leaseId}~1download"
+    },
+    "/leases/download": {
+      "$ref": "public/leases.json#/paths/~1leases~1download"
+    },
+
+    "/contactUs": {
+      "$ref": "public/parties.json#/paths/~1contactUs"
+    },
+    "/parties": {
+      "$ref": "public/parties.json#/paths/~1parties"
+    },
+    "/parties/{partyId}": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}"
+    },
+    "/parties/{partyId}/additionalInfo": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1additionalInfo"
+    },
+    "/parties/{partyId}/additionalInfo/{additionalInfoId}": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1additionalInfo~1{additionalInfoId}"
+    },
+    "/parties/{partyId}/assign": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1assign"
+    },
+    "/parties/{partyId}/close": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1close"
+    },
+    "/parties/{partyId}/reopen": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1reopen"
+    },
+    "/partyDetails/{partyId}": {
+      "$ref": "public/parties.json#/paths/~1partyDetails~1{partyId}"
+    },
+    "/parties/{partyId}/agent": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1agent"
+    },
+    "/leads": {
+      "$ref": "public/parties.json#/paths/~1leads"
+    },
+    "/public/party/{partyId}/score": {
+      "$ref": "public/parties.json#/paths/~1public~1party~1{partyId}~1score"
+    },
+    "/parties/{partyId}/export": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1export"
+    },
+    "/parties/{partyId}/markAsSpam": {
+      "$ref": "public/parties.json#/paths/~1parties~1{partyId}~1markAsSpam"
+    },
+
+    "/parties/{partyId}/members": {
+      "$ref": "public/partyMembers.json#/paths/~1parties~1{partyId}~1members"
+    },
+    "/parties/{partyId}/members/{memberId}/linkMember": {
+      "$ref": "public/partyMembers.json#/paths/~1parties~1{partyId}~1members~1{memberId}~1linkMember"
+    },
+    "/parties/{partyId}/members/{memberId}": {
+      "$ref": "public/partyMembers.json#/paths/~1parties~1{partyId}~1members~1{memberId}"
+    },
+    "/parties/{partyId}/members/{memberId}/proxyToken": {
+      "$ref": "public/partyMembers.json#/paths/~1parties~1{partyId}~1members~1{memberId}~1proxyToken"
+    },
+
+    "/parties/{partyId}/transactions": {
+      "$ref": "public/payments.json#/paths/~1parties~1{partyId}~1transactions"
+    },
+
+    "/mergePartySessions": {
+      "$ref": "public/parties.json#/paths/~1mergePartySessions"
+    },
+    "/mergePartySessions/{sessionId}/matches": {
+      "$ref": "public/parties.json#/paths/~1mergePartySessions~1{sessionId}~1matches"
+    },
+    "/mergePartySessions/{sessionId}/matches/{matchId}/resolve": {
+      "$ref": "public/parties.json#/paths/~1mergePartySessions~1{sessionId}~1matches~1{matchId}~1resolve"
+    },
+
+    "/personDetails/{personId}": {
+      "$ref": "public/persons.json#/paths/~1personDetails~1{personId}"
+    },
+    "/persons": {
+      "$ref": "public/persons.json#/paths/~1persons"
+    },
+    "/persons/{personId}": {
+      "$ref": "public/persons.json#/paths/~1persons~1{personId}"
+    },
+    "/persons/merge": {
+      "$ref": "public/persons.json#/paths/~1persons~1merge"
+    },
+
+    "/properties": {
+      "$ref": "public/properties.json#/paths/~1properties"
+    },
+    "/propertiesByTeams": {
+      "$ref": "public/properties.json#/paths/~1propertiesByTeams"
+    },
+
+    "/quotes": {
+      "$ref": "public/quotes.json#/paths/~1quotes"
+    },
+    "/quotes/{quoteId}": {
+      "$ref": "public/quotes.json#/paths/~1quotes~1{quoteId}"
+    },
+    "/quotes/draft/{quoteId}": {
+      "$ref": "public/quotes.json#/paths/~1quotes~1draft~1{quoteId}"
+    },
+    "/quotes/draft": {
+      "$ref": "public/quotes.json#/paths/~1quotes~1draft"
+    },
+    "/quotes/published/{quoteId}": {
+      "$ref": "public/quotes.json#/paths/~1quotes~1published~1{quoteId}"
+    },
+    "/parties/{partyId}/quotePromotions": {
+      "$ref": "public/quotes.json#/paths/~1parties~1{partyId}~1quotePromotions"
+    },
+    "/parties/{partyId}/quotePromotions/{quotePromotionId}": {
+      "$ref": "public/quotes.json#/paths/~1parties~1{partyId}~1quotePromotions~1{quotePromotionId}"
+    },
+    "/printQuote": {
+      "$ref": "public/quotes.json#/paths/~1printQuote"
+    },
+    "/quotes/{quoteId}/emailContent": {
+      "$ref": "public/quotes.json#/paths/~1quotes~1{quoteId}~1emailContent"
+    },
+
+    "/schedule/overview": {
+      "$ref": "public/schedule.json#/paths/~1schedule~1overview"
+    },
+    "/schedule": {
+      "$ref": "public/schedule.json#/paths/~1schedule"
+    },
+
+    "/search/persons": {
+      "$ref": "public/search.json#/paths/~1search~1persons"
+    },
+    "/search/personMatches": {
+      "$ref": "public/search.json#/paths/~1search~1personMatches"
+    },
+    "/globalSearch": {
+      "$ref": "public/search.json#/paths/~1globalSearch"
+    },
+    "/search/units": {
+      "$ref": "public/search.json#/paths/~1search~1units"
+    },
+    "/users/{userId}/search-history": {
+      "$ref": "public/search.json#/paths/~1users~1{userId}~1search-history"
+    },
+
+    "/parties/{partyId}/tasks": {
+      "$ref": "public/tasks.json#/paths/~1parties~1{partyId}~1tasks"
+    },
+    "/tasks": {
+      "$ref": "public/tasks.json#/paths/~1tasks"
+    },
+    "/tasks/{taskId}": {
+      "$ref": "public/tasks.json#/paths/~1tasks~1{taskId}"
+    },
+    "/public/party/{partyId}/tasks": {
+      "$ref": "public/tasks.json#/paths/~1public~1party~1{partyId}~1tasks"
+    },
+    "/tasks/{userId}/{teamId}/{year}/{month}/{day}/events": {
+      "$ref": "public/tasks.json#/paths/~1tasks~1{userId}~1{teamId}~1{year}~1{month}~1{day}~1events"
+    },
+    "/tasks/{teamId}/{year}/{month}/{day}/{numberOfDays}/teamCalendarSlots": {
+      "$ref": "public/tasks.json#/paths/~1tasks~1{teamId}~1{year}~1{month}~1{day}~1{numberOfDays}~1teamCalendarSlots"
+    },
+
+    "/users": {
+      "$ref": "public/users.json#/paths/~1users"
+    },
+    "/users/{userId}": {
+      "$ref": "public/users.json#/paths/~1users~1{userId}"
+    },
+    "/sendInvite": {
+      "$ref": "public/users.json#/paths/~1sendInvite"
+    },
+    "/sendRegistrationEmail": {
+      "$ref": "public/users.json#/paths/~1sendRegistrationEmail"
+    },
+    "/sendInviteImportedUsers": {
+      "$ref": "public/users.json#/paths/~1sendInviteImportedUsers"
+    },
+    "/sendResetPasswordMail": {
+      "$ref": "public/users.json#/paths/~1sendResetPasswordMail"
+    },
+    "/validateResetToken": {
+      "$ref": "public/users.json#/paths/~1validateResetToken"
+    },
+    "/validateToken": {
+      "$ref": "public/users.json#/paths/~1validateToken"
+    },
+    "/users/{userId}/ipPhoneCredentials": {
+      "$ref": "public/users.json#/paths/~1users~1{userId}~1ipPhoneCredentials"
+    },
+    "/public/party/{partyId}/users/{role}": {
+      "$ref": "public/users.json#/paths/~1public~1party~1{partyId}~1users~1{role}"
+    },
+    "/guestCard/availableSlots": {
+      "$ref": "public/webInquire.json#/paths/~1guestCard~1availableSlots"
+    },
+    "/guestCard": {
+      "$ref": "public/webInquire.json#/paths/~1guestCard"
+    },
+    "/floatingAgents/availability/{userId}/{startDate}/{endDate}": {
+      "$ref": "public/floatingAgent.json#/paths/~1floatingAgents~1availability~1{userId}~1{startDate}~1{endDate}"
+    },
+    "/floatingAgents/availability": {
+      "$ref": "public/floatingAgent.json#/paths/~1floatingAgents~1availability"
+    },
+    "/images/{assetType}/{entityId}": {
+      "$ref": "public/assets.json#/paths/~1images~1{assetType}~1{entityId}"
+    },
+    "/marketing/assets/global/{pathToFile}": {
+      "$ref": "public/assets.json#/paths/~1marketing~1assets~1global~1{pathToFile}"
+    },
+    "/marketing/assets/{propertyName}/{pathToFile}": {
+      "$ref": "public/assets.json#/paths/~1marketing~1assets~1{propertyName}~1{pathToFile}"
+    },
+    "/marketing/properties/sitemap": {
+      "$ref": "public/assets.json#/paths/~1marketing~1properties~1sitemap"
+    },
+    "/marketing/properties": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1properties"
+    },
+    "/marketing/properties/search": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1properties~1search"
+    },
+    "/marketing/properties/{propertyId}/search": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1properties~1{propertyId}~1search"
+    },
+    "/marketing/property/{propertyId}": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1property~1{propertyId}"
+    },
+    "/marketing/inventory/{inventoryId}": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1inventory~1{inventoryId}"
+    },
+    "/marketing/inventory/{inventoryId}/pricing": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1inventory~1{inventoryId}~1pricing"
+    },
+    "/marketing/properties/{propertyId}/layoutGroup/{marketingLayoutGroupId}/layouts": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1properties~1{propertyId}~1layoutGroup~1{marketingLayoutGroupId}~1layouts"
+    },
+    "/marketing/inventory/{inventoryId}/quoteQuestions": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1inventory~1{inventoryId}~1quoteQuestions"
+    },
+    "/marketing/forms": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1forms"
+    },
+    "/marketing/inventory": {
+      "$ref": "public/marketing.json#/paths/~1marketing~1inventory"
+    },
+    "/public/party/{partyId}/partyMember": {
+      "$ref": "public/parties.json#/paths/~1public~1party~1{partyId}~1partyMember"
+    }
+  }
+}

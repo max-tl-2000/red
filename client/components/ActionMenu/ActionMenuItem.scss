@@ -1,0 +1,72 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.menu-item {
+  position: relative;
+  height: (56rem/16);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .text > span {
+      background: #d1d1d1; // TODO: Color not in the palette!
+    }
+  }
+
+  &:active {
+    .text > span {
+      background: #bebebe; // TODO: Color not in the palette!
+    }
+  }
+
+  &.disabled {
+    opacity: .3;
+  }
+
+  &.rightAligned {
+    .icon {
+      right: 0;
+      left: auto;
+    }
+
+    .text {
+      text-align: right;
+
+      > span {
+        padding: (8rem/16) (55rem/16) (8rem/16) (15rem/16);
+      }
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: (56rem/16);
+  height: (56rem/16);
+}
+
+.text {
+  @include body();
+
+  line-height: (56rem/16);
+  user-select: none;
+  text-align: left;
+
+  > span {
+    margin: 0 (10rem/16);
+    padding: (8rem/16) (15rem/16) (8rem/16) (55rem/16);
+    transition: background .5s ease-out;
+    white-space: nowrap;
+    border-radius: (15rem/16);
+    background: rgba($grey200, .9);
+  }
+}
+
+.action-button {
+  fill: rgba($black, .5);
+}

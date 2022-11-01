@@ -1,0 +1,45 @@
+@import '../../sass/_typography-mixins.scss';
+
+.mainContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.internContainer {
+  margin: (24rem/16) 0 0 2.5rem;
+}
+
+.title {
+  @include subHeader();
+
+  opacity: .5;
+}
+
+.item-row {
+  display: inline-block;
+  padding: (20em/16) (38em/16) (31em/16) 0;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: (18em/16);
+    opacity: .4;
+  }
+
+  > p {
+    @include caption();
+
+    opacity: .5;
+  }
+}
+
+.text {
+  @include body();
+
+  opacity: .5;
+}
+
+.second {
+  display: block;
+}

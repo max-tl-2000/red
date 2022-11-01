@@ -1,0 +1,39 @@
+@import '../../../../client/sass/_responsive.mixins.scss';
+@import '../../../../client/sass/_colors.scss';
+
+ul.properties {
+  li {
+    padding: (14em/16) 0;
+    border-top: 1px solid rgba($black, .12);
+
+    button:hover,
+    button:focus {
+      background: none;
+    }
+  }
+
+  li:last-child {
+    border-bottom: 1px solid rgba($black, .12);
+  }
+}
+
+@include to('small2') {
+  ul.reflow {
+    width: (376rem/16);
+    margin: 0 auto;
+
+    li {
+      text-align: center;
+      border-top: 1px solid $grey200;
+    }
+
+    li:last-child {
+      border-bottom: 1px solid $grey200;
+    }
+  }
+}
+@include to('xsmall1') {
+  ul.reflow {
+    width: 90%;
+  }
+}

@@ -1,0 +1,110 @@
+@import '../../../../../client/sass/_colors.scss';
+@import '../../../../../client/sass/_typography-mixins.scss';
+
+.stepper {
+  margin-top: (26em/16);
+  padding: (22em/16) 0;
+
+  .start-message {
+    text-align: center;
+  }
+
+  .stepper-inner {
+    position: relative;
+    margin: 2em 0 (20em/16) 0;
+
+    .connecting-line {
+      position: absolute;
+      z-index: 1;
+      top: (40em/16);
+      left: 15%;
+      width: 70%;
+      margin: 0 auto;
+      opacity: .12;
+      border-top: (2em/16) dashed $black;
+    }
+  }
+
+  .stepper-actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: (18em/16);
+
+    align-content: center;
+
+    button {
+      &.continue {
+        margin: (32em/16) 0 (20em/16) 0;
+      }
+    }
+
+    .attestation-container {
+      .rectangle {
+        width: calc(100% - 35em/16);
+        height: (1em/16);
+        margin-left: (10em/16);
+        background-color: rgba(0, 0, 0, .12);
+
+        &.top {
+          margin-bottom: (10em/16);
+        }
+
+        &.bottom {
+          margin-top: (38em/16);
+        }
+      }
+
+      .attestation {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: .6em;
+
+        .checkbox {
+          width: (40rem/16);
+          padding: 0;
+        }
+
+        div.label {
+          display: flex;
+          width: calc(100% - 60rem/16);
+
+          flex-wrap: wrap;
+
+          > * {
+            padding-right: .3em;
+          }
+
+          a {
+            @include textButton();
+
+            line-height: (19.5rem/16);
+            text-transform: uppercase;
+            color: $blue500;
+
+            &.noRightPadding {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+
+      .attestation-description {
+        width: calc(100% - 60rem/16);
+        max-width: 500px;
+        margin-left: (40rem/16);
+      }
+
+      &.small {
+        .checkbox {
+          align-self: flex-start;
+        }
+      }
+    }
+
+    .note {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,555 @@
+Return-Path: <bounces+7040359-b828-rentbits=parkmerced.com@sendgrid.net>
+Received: from NAM03-BY2-obe.outbound.protection.outlook.com (mail-eopbgr780059.outbound.protection.outlook.com [40.107.78.59])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id l8j8kgf2o0v1vg3ommmp1s0v6f98i45f25nvrgo1
+ for rentbits.parkmerced.vanity@maximus.mail.reva.tech;
+ Thu, 15 Nov 2018 08:20:04 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of sendgrid.net does not designate 40.107.78.59 as permitted sender) client-ip=40.107.78.59; envelope-from=bounces+7040359-b828-rentbits=parkmerced.com@sendgrid.net; helo=mail-eopbgr780059.outbound.protection.outlook.com;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of sendgrid.net does not designate 40.107.78.59 as permitted sender) client-ip=40.107.78.59; envelope-from=bounces+7040359-b828-rentbits=parkmerced.com@sendgrid.net; helo=mail-eopbgr780059.outbound.protection.outlook.com;
+ dkim=pass header.i=@sendgrid.net;
+ dkim=pass header.i=@maximusrepartners.onmicrosoft.com;
+ dmarc=none header.from=rentbits.io;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHVmlXRlMvem9oZXhzeUdzSkhLc25pY2ZVaUFWNE9zRHd2S0lkaERrRHVuZGRwcGdFZVRETEk5eHdiVnhmVUtHei9IbkpIZVE2eGNaMTJNZko3VUh2WWVMMlFFZGlNeG1Cd2hnRldLNk03OTVWbUQ2cWxuSmVQWkZ3SG9PYmk4NCtqREJOcFEwOHgxRTFzaElEcndIZzA3UjBZMmcwSFlFa1BVUUtJVHdEMGtGMjVmU1lDV2l2NjNwb21PV3h2L0JrSHp6Tm1nbWhvQ1NTdFFVaGdPR1JSR2dhaHpXNWxIWHU4MzRCYWJDenhRT0JLOW1BZXVyZlZJZ0NJZ3RkbWVSNllQaVhQNXRLdmVzWlFML05HSUNMM0R0dkdaMmVTdmZEZGJSQTBpTlJoMjc4Vk1peHp6djNsMHJSVTNSd3Z2UHVQVXpIeC9kb3FLZ05hMXRubSs2cGU=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=bIhOhj8Qo9iqJKn3AsSZ1g6odqsGQy13ivZHezfN8Ktq6B1W233uhtalBLJoRGK1jyIcR5rLxaH0AGFO+0MdIFyYQhSzRKCYzghoK0rEtZcd8IiLS+Xj3/cYne8g5S26FrTRWSNLnZIvUXRPi3nJ78h2Z+llNIvmaCnGFO3PDiw=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1542270005; v=1; bh=69GKCFLyWHhypgqLgEMIDd7CpBuxbd7NMqhirJFneyo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=maximusrepartners.onmicrosoft.com;
+ s=selector1-maximusrepartners-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=G+BsZK4j3fRRlx3Lnh0woxQr82KWhUA9ycRdJEuYM4A=;
+ b=g8Dn0Gy/h+YBYRSNWKBsVQVparEnJqpiq3zxA2O+MKyHfjuItnjwkWPoPNcxwE+2l8HEf5BASzcz2yy0k6H1J37YKXz4oidGCeKZea9Lm+dEe1X6JNFdFqx46IZpzxqN9NfcKUj4VIYtw8IZMc5bTOZyMXm/Irt2MqJx/QizWbI=
+Received: from DM6PR06CA0026.namprd06.prod.outlook.com (2603:10b6:5:120::39)
+ by CY4PR06MB2901.namprd06.prod.outlook.com (2603:10b6:903:135::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1294.45; Thu, 15 Nov
+ 2018 08:20:02 +0000
+Received: from SN1NAM01FT010.eop-nam01.prod.protection.outlook.com
+ (2a01:111:f400:7e40::206) by DM6PR06CA0026.outlook.office365.com
+ (2603:10b6:5:120::39) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.1339.21 via Frontend
+ Transport; Thu, 15 Nov 2018 08:20:02 +0000
+Authentication-Results: spf=softfail (sender IP is 67.231.154.164)
+ smtp.mailfrom=sendgrid.net; parkmerced.com; dkim=pass (signature was
+ verified) header.d=sendgrid.net;parkmerced.com; dmarc=none action=none
+ header.from=rentbits.io;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ sendgrid.net discourages use of 67.231.154.164 as permitted sender)
+Received: from dispatch1-us1.ppe-hosted.com (67.231.154.164) by
+ SN1NAM01FT010.mail.protection.outlook.com (10.152.65.128) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.1339.10 via Frontend Transport; Thu, 15 Nov 2018 08:20:02 +0000
+X-Virus-Scanned: Proofpoint Essentials engine
+Received: from o168-245-101-56.outbound-mail.sendgrid.net (o168-245-101-56.outbound-mail.sendgrid.net [168.245.101.56])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1-us2.ppe-hosted.com (Proofpoint Essentials ESMTP Server) with ESMTPS id 8B02180057
+	for <rentbits@parkmerced.com>; Thu, 15 Nov 2018 08:19:57 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.net; 
+	h=content-transfer-encoding:content-type:from:mime-version:reply-to:to:subject; 
+	s=smtpapi; bh=bPT85zhrImDt0jC7+qFAD8Vuico=; b=QO1TdEP1znv5BHUIDB
+	VtUtWpkSdIDs03DCJbUHQC2kmJX52Zgz5hdkjIHuUVJyneJ2k763x2Y/VRaHL1At
+	NmkUSFT4Z+1g/wCiEOgVtQ44DtIaiI1swv+m8wUMXzN7cFB3tOFakeKbraIrX4Dc
+	/SXwVGPmv4NkUL/Qf/pMsLk9I=
+Received: by filter0126p3las1.sendgrid.net with SMTP id filter0126p3las1-11046-5BED2C27-A
+        2018-11-15 08:19:51.382449048 +0000 UTC m=+22343.793544764
+Received: from NzA0MDM1OQ (ec2-34-208-149-183.us-west-2.compute.amazonaws.com [34.208.149.183])
+	by ismtpd0009p1sjc2.sendgrid.net (SG) with HTTP id w_hneinwTz-ykInqXnfJlA
+	Thu, 15 Nov 2018 08:19:51.405 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 15 Nov 2018 08:19:51 +0000
+From: "RentBits" <noreply@rentbits.io>
+Mime-Version: 1.0
+Reply-To: "Miranda" <miranda.sandheaver@gmail.com>
+To: Owner <rentbits@parkmerced.com>
+Message-ID: <w_hneinwTz-ykInqXnfJlA@ismtpd0009p1sjc2.sendgrid.net>
+Subject: You have a lead from Miranda for Parkmerced
+X-SG-EID: m1g5hE90vRuHPbryLSzwc0Zpx6CidA+xPhRQd2XOuZF/ThNFC8JJy4gFbPWbR+hRDtQo+mFFfiEpbe
+ i+dLrsl2tMYqn1C6TjVTSkLcjLmQuJDq37gpwTGq+70sMHn+y1Sdhs0SeMuKC5MEr41vfn3C0xrdsf
+ rynIRoAEwNZ/7WNm3oZBJdst752PkOjtXEB4D2Dp2ysMdpY7LFoypTlfWNSwOwR1k40ZI5wkofxl4q
+ o=
+X-MDID: 1542269998-9jclR0eR5Y1H
+Return-Path: bounces+7040359-b828-rentbits=parkmerced.com@sendgrid.net
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: a1213313-39a4-470f-9cea-e824afd0357d:0
+X-Forefront-Antispam-Report:
+ CIP:67.231.154.164;IPV:CAL;SCL:-1;CTRY:US;EFV:NLI;SFV:NSPM;SFS:(10009020)(8156002)(39850400004)(136003)(376002)(396003)(346002)(2980300002)(52284002)(189003)(199004)(23676004)(606006)(23846002)(126002)(345774005)(356004)(6666004)(7596002)(16003)(218223001)(42882007)(336012)(76236002)(476003)(14444005)(105004)(486006)(26826003)(498600001)(2860700004)(26005)(64026002)(50466002)(246002)(19630485002)(8746002)(2906002)(43066004)(53376002)(5660300001)(8676002)(6862004)(18926415007)(316002)(22416003)(9686003)(7636002)(733005)(236005)(74482002)(105596002)(6306002)(19627405001)(106466001)(104016004);DIR:OUT;SFP:1101;SCL:1;SRVR:CY4PR06MB2901;H:dispatch1-us1.ppe-hosted.com;FPR:;SPF:SoftFail;LANG:en;PTR:dispatch1-us1.ppe-hosted.com;MX:1;A:1;
+X-Microsoft-Exchange-Diagnostics:
+ 1;SN1NAM01FT010;1:YiUEwrXmXlt1iYNLo4tbO/Ldv+ex/u/rpUgc8HF7rIUA5f0Bkg/JgPrsVY9QDwu/k/o674J4PddkazG+L4Wku4O/mjqDxvfnT6R1dZNS1oN0Dt09Xk0rrHvfTGDMWJ2y
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 2a670862-6e29-4014-c5f6-08d64ad3240e
+X-Microsoft-Antispam:
+ BCL:0;PCL:0;RULEID:(2390098)(7020095)(4652040)(5600074)(711020)(4605076)(1401272)(8001031)(1421009)(1405069)(71702078);SRVR:CY4PR06MB2901;
+X-Microsoft-Exchange-Diagnostics:
+ 1;CY4PR06MB2901;3:pBozN+K1QtudP8qNV/TqqRUz8xrd6fweWYivSYcl6ZszMjfmcdjqD10FZ/JK9vKfJitu51tTjkfReD6Z4aKeCO6hAMVZCK8my2caE+iOJzmHu+vi9QVkqfgwHx7LdHPu+hHzP29zzXC0pLE1sT5Rdn/M/naW0LjZRjLgOGFZ1zeDL7BLna8Ai/QI8ZZuGMFp7gjniaYM6Nhl+X3Ib/P/Dd3IpgWbS1hvaGbElmLxebeRnYhTlC2zFOCzb6j1uL1hqyqdBeMqRL3yUIsMafpEM82A1esNoyNSYZbu4sRvzvVwvD37AYdTFvsBdaailZXjg3lYEcAqBCFWqNu4aaFYT5/8DE97xsIuvdXdOxceWWk=;25:5I51zxrpNC+pYtTrK49irs2sQz1/OqJyvB9AuwjyKO2BprwWdLWC4BbuOitIv9mGW+ddu5bHZupZ99h2rAuOiv+KAktHbV0g+FHAqfHvaFZtacudsBH4DHmmGUx3NlOyZEwoUlqwPGi4ydgqaEcHKm89FFnx2gnQq/cUY/EQZ9VjFD6GVRyTEAhmoAXVE/Ms2OKgAFtZQh7X3RY4zetvIAwPBp6Z2bXZL9jd9+1iwUMkH3eUJjr21lRPqN7+4t2dXySiT85vizpEtMPHbBsNM4PuVCSMeTRB2KfLLiz72M2z+9bGCtG/CUeYHYtA7S7hDPQ3gO6flxNYi7pLfBdW8w==
+X-MS-TrafficTypeDiagnostic: CY4PR06MB2901:
+X-LD-Processed: a1213313-39a4-470f-9cea-e824afd0357d,ExtAddr
+X-Microsoft-Exchange-Diagnostics:
+ 1;CY4PR06MB2901;31:1HPAcS+J/3osCK8IpB8bnYnJjhcjLo+O0g9p+eu1UK87HsPopZFE/0X9ecmkLnu+R18uRP75u38zcPeiQnQEsWXEnk53blaRS67OO8hndsuuAXiHXBx9QwdWZR7d3Uvco2CpZNbda4QIwGKEweWlXLFhdT4p3E65aEbP7+DA+nljW2UAJDa3WTZb57llKyVVM0FVY09chwYfvxQ2a+se+sjTIY5PZ7WAJ+izrjKIY88=;20:gpL25bpt1iX3LWQeTCao0EcnPmY519ytekHuciHhslcO+AQaAzvcTO0s+YB5mOLkaypqQsuz6ucol9VqUJ2CDHkRTBmwm+h14BGtz9thu3zAefksmBlO436ti7zfUgvtrEgYWoyAxl/x6s2RW3sdeWDtd3koB+OTLZr5Se7jM2uf9dNy1gHWO4LZhL44zOdT498yDdasJwyFI8EGqfpJS8x+JNL45Q/UC7yWGx7aqpjyoNUdIJyMdINNR0a1PhRIJkADv+xtrAfFWd6LBPiKd7JEsaiPU9JbmhFOuO78BDO2JFCHNmViVQMnBagM++Gtod6miSPxRrIaBWxSvxUePQsa4pqva740NMi1u57FG8MCrxu27fYq6InxgheTogsAj2tlmo3QG7be9vATpEYND/bDBCwSxdDEJsm/pHwURNDX3iDfMdHOr3mZ9BvLp1yYngCu9wzWVx9SJb9lqg5JSWA20MXK8PnmFGLIr1058h4rBWZ3DzhZJgIHydDjvt29
+X-Microsoft-Antispam-PRVS:
+ <CY4PR06MB290136DF44FDB88423C5E0DCE8DC0@CY4PR06MB2901.namprd06.prod.outlook.com>
+X-Exchange-Antispam-Report-Test:
+ UriScan:(85827821059158)(199454328027089)(231181664957973)(166708455590820)(131327999870524)(249539061802966)(23927327406638);
+X-MS-Exchange-SenderADCheck: 0
+X-Exchange-Antispam-Report-CFA-Test:
+ BCL:0;PCL:0;RULEID:(6040522)(2401047)(5005006)(8121501046)(9101536074)(93006095)(93005095)(3231415)(944501410)(52105112)(10201501046)(3002001)(148016)(149066)(6041310)(20161123562045)(20161123564045)(20161123560045)(201703131423095)(201702281528075)(20161123555045)(201703061421075)(201703061750153)(20161123558120)(2016111802025)(6043046)(201708071742011)(7699051)(76991095);SRVR:CY4PR06MB2901;BCL:0;PCL:0;RULEID:;SRVR:CY4PR06MB2901;
+X-Microsoft-Exchange-Diagnostics:
+ 1;CY4PR06MB2901;4:A79wsyNWVE5wBOmE7VslodlcDo37GdD7ReBcJG5vliWQiTmEqNdvdFwAs1vsCEHHc7/qM2RAwEZmnL4R4NoxgUQS7HYzH9RwibjZTV3xFPavuEgFujw0+GPDcK2PnWCDT373svo5KvNTzoM7BQ55sxFt+QHFQSTQiYeiPliavgblBWePdu6SNROUQiuXwBl+PYRFS6iNG8A615izuWC/GcIjQ0TbvIwHJ63chxT8tzkfElsYNawm1ZKbnD8978dmTf3w0vGh/S2W0MOrdFb/QDVTThJIhWu1xXo6xTAI1JPuZ+ZlGRPg5IAgfaLtEAvqQNGzZlAn3CJQM/bfthisDfT1/dWdqbac2q6zTXS6istNVYDlsvQ8MV/DNesKCp5CFldT8S1jGYhZPnJJX+WoXoKEPoBZvb8FQ33rlNaaej2tMZO8MuX6gtw72ju5mdWBS6apb1nywnZ2D7Ol7emFBVHdvfdvulFiYWdnjODL+k59t18pDeajCIGLWlswENWM4PUNrhsq8S0Aoh7OixC4lw==
+X-Forefront-PRVS: 08572BD77F
+X-Microsoft-Exchange-Diagnostics:
+ =?utf-8?B?MTtDWTRQUjA2TUIyOTAxOzIzOmFnWXRnUVJFVXRoSUt2Q1R5bmNrQlA3UWZl?=
+ =?utf-8?B?V1hib3pDZzZIZzdiWkp4M2U0dWlpR2pPRWtRNk5ZaHZ5VDFjbWVwNDFRY3Ni?=
+ =?utf-8?B?MXg4bzNEeFBscW10MEJLbnM1TVRqZ1VjREYrcXZDNGZzVEM4MzJrakMwZHJw?=
+ =?utf-8?B?aGh6V1djZXQwU1pNTmFqWnlkeWlMYmZsZVY3SWMzTWhFK3JoaXd4T0I2Mkhp?=
+ =?utf-8?B?Qm5MaFA1TkZMOHllcWVJMk1DNFNNNkw4VWhuMmt5amNTV1pCOXM5SHVQTktp?=
+ =?utf-8?B?aUhhR1VudlV2NnR5NW94VzRHVU1iRTZaNVBTSVZDSlRqMHZxT3VJMnBkc21a?=
+ =?utf-8?B?aUcwZ0lTK21YOUE4QiswMFlXWllIeVhYZjFOb1liNkJlclNYVHRaQThzYjMy?=
+ =?utf-8?B?VUZMWUFNWmcwWUpKUXU0YWxtVks2SVVFOXN3V1FsekFJOUhWbnJPemxlcklN?=
+ =?utf-8?B?WW1HU1p4cDFrVU1IOFBJRDcwODgweExCcGtsUmJyQ0FGQmZBbzVpVWxENHoy?=
+ =?utf-8?B?NEd2RFBYRDR3SEZNNG5FTVlmdWVlTlVRSHMrSEdRWHlFMGQ4RkNVNy9yZ0tz?=
+ =?utf-8?B?ZnNWcVh2ZzhGcTdZeWxSYnlxU3Bod2FHNXI1eUN3NFVxSTVFc3VpbGR3Vi9k?=
+ =?utf-8?B?bWM1WEZjbWJoWktWRFNjUlorNnJEZjk3ZzcrbTRvT2lOd3lXY05EOEpxM2FT?=
+ =?utf-8?B?T2ZRRnk5bm9NWFpWQkJHc2JPdkplQXkyT21GQnVEQ250NU8vUlRaTWVuT0V5?=
+ =?utf-8?B?bTR4MG43Z3dFMU5rYzdtVDA4eXJwZVg1QVhmWm1KS1p3UWdtazBoYlY2VCsr?=
+ =?utf-8?B?NHkwby85cG9KR283dEJ2NFNyRFZ6dVIyQzN4OVBHeTQ3WU9CWjVjSkd6T0Ra?=
+ =?utf-8?B?TmJOd1prcjVLc1UwY3FMT2drZUhyVHZ5VW9UT3FJbFVjMVk3T29CTHgwbHEz?=
+ =?utf-8?B?aEExcEJtRk4vOGxMeEd2V0xIcVVXa0owa28rTEsyWUl1N3llZUdYbDdjZS80?=
+ =?utf-8?B?WGV3enZ6VjFRanRiSjJkaFN1ckpVakhBZE9yZGJnZG5zZnQveXNMRmtvTXor?=
+ =?utf-8?B?cTkrZGFsWUU4RHYxTktnb1doREd5dVFEQWVkRzMxa2dNVm03Um9OTVdMQmNo?=
+ =?utf-8?B?K1FNVzNGaFhQS2JUbEdRTk13Rk5rYWdBenVIaW0rNkc0dmhETmNTUnlPR0VD?=
+ =?utf-8?B?SnhnOEVXRDVkSStKeDFNQSsvdFFkMHlwWGxQQzhCelRSa21YaytNcWYwTTdz?=
+ =?utf-8?B?Mnl4M0psUkw3anpkelNTMnN6SHh0eTVYTHdNU3hDK3YvOTJKZHRZQzVEdVYv?=
+ =?utf-8?B?bkhHUDlKOHZpUGxOeFEzM21LSHo1Q29pL1k2OEI0NUN0T1VWNTJSeWpobito?=
+ =?utf-8?B?eE8yQmVGaENMdjk3cXRqRGxEVjlEZnp5aVU2VSsyOFQ2a24rVXA0bzN4Q2pu?=
+ =?utf-8?B?ZzF4UmhFSUN6MTlWa3BreldYNUdVaE9pM1lJMjZJdmVFcjFCU2l6ZGJ1MHo0?=
+ =?utf-8?B?VGpmVmxxQzk5VkEzdUFEd0w1RDJaSkRiQWYzVjJmbjBPalZMd3dTejlRTHZs?=
+ =?utf-8?B?L3FmT3YydVFXa09wbld0SHc1SEtNYzBTZEpKQmR5Ty85Z3lQeFBRbmorZmdN?=
+ =?utf-8?B?d1NTSGhxV1ZlT1ltRktlUG5ZcXZmbW4yZ1BFVS9TT2NvTE4wU3oxcjB3PT0=?=
+X-Microsoft-Antispam-Message-Info:
+ AKI8/Jsfo97frKIbNJ9pLd1h4Hj2s4lF1/cSDzTqwU5Mg7M4bthWiONGGUxsaiEE4tXAEINOZDCBX53WRk7uadwD10kn+w2zCvIC1KW8z+ecvLJhH7c+gQ9jNlZDvy+RwKiTdm4ThLp78vGaCzYJ+zGQhbFNDCkpEt+NVnFF7SYTTx8Vx3oII3Rpc3ZOqC6mn4wJuIe4UiUOiRLYasgxRQ5E2QV/hqGDJrxohya6llyqLAzKjaC4WiF1uC46iraCz85I/LX13U7vvumZBi10VfaR1+1TiS8M+wYhCFFa4x6WbkAJmRY2YNqEGEXYToW4DhzakaYPJ06l/VDTDCkn6WRRcF6tvkkatAsS27k9vbU=
+X-Microsoft-Exchange-Diagnostics:
+ 1;CY4PR06MB2901;6:oYu0YepDGb24AoXNMz5N9zezghermntA+RAWkztKP2IdYWG4AOPyCMSVm6okW2u3yUvLC9Jlvw31A4EyeZT92lxHmCnbUo1jN65ORJIGjs8vVSxWUSp+yH1zr7m+hCNU61c1ehCZM4Rh0bsoDujn3gJ8Uk1V79zILdeeu9StReKIhZpI9aBe+YLF9ilf5muWcOlVwqbJ9PGRnDBtOuD1qJqsP5OP/N0CLoHPRfBiwzN/Bi5+EPmcmcPrw0F0WJl8FnJQZpKLtEgzmA5PnDa4A70fH35tDtxCQanBjSqPkr5TzBaanyd+Jg0MrBFcpZGQoYDgJ5/DjXpIrzsIriUa7qXl4vptD+Gh4Msl5SnoaqxVbMFhZf11DH/sMCYG/sZbjyHXHPL9XcLRr/T8GqbB3vsADOdZkmYmCImQcO++SyZ33zJ3uQMBcjhSvVFophogQ6K8tiPQc5fFo8cKocC9pQ==;5:qo8RgtJhq3nd+b9dUWmsUMr5dUjzuttTpZniuLf6tL8/5jADpRUKKviKpIGUOuI4ViHocm7Glk7fgaNNq94OmJ5TlOGSeHFhS6n3WhNAWttthIDVwalDRGajSUccwsjHXe0NnxRtdKs1SabUjgzPhGbQ/BUtfXNbfKr8shluZVM=;7:xOmxlF9Zu6UX3MU+/LH3yuYybLZ+yqrnLe9vHJdPc95nMJDbqiiZCT0e410YQ8poj7Kj0p3wmtrxHcpBldS8l/UHXImQvdVPAsDUFkBKsmlalhicSMxNov8z6kn/ofx5JF9PuwZWfDeQ3OYWjR63KA==
+X-ExternalRecipientOutboundConnectors: a1213313-39a4-470f-9cea-e824afd0357d
+SpamDiagnosticOutput: 1:99
+SpamDiagnosticMetadata: NSPM
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-OriginatorOrg: maximusrepartners.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Nov 2018 08:20:02.1131
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2a670862-6e29-4014-c5f6-08d64ad3240e
+X-MS-Exchange-CrossTenant-Id: a1213313-39a4-470f-9cea-e824afd0357d
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR06MB2901
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+    <meta charset=3D"utf-8"> <!-- utf-8 works for most cases -->
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width"> <!-- Forcing =
+initial-scale shouldn't be necessary -->
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> <!-- Use th=
+e latest (edge) version of IE rendering engine -->
+    <meta name=3D"x-apple-disable-message-reformatting">  <!-- Disable auto=
+-scale in iOS 10 Mail entirely -->
+    <title>RentBits.io</title> <!-- The title tag shows in email notificati=
+ons, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely r=
+emoved. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Time=
+s New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the =
+font and others will silently fail to the fallbacks. More on that here: htt=
+p://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href=3D'https://fonts.googlea=
+pis.com/css?family=3DRoboto:400,700' rel=3D'stylesheet' type=3D'text/css'> =
+-->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+
+        /* What it does: Remove spaces around the email design added by som=
+e email clients. */
+        /* Beware: It can remove the padding / margin and add a background =
+color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*=3D"margin: 16px 0"] {
+            margin:0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables.=
+ */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail tab=
+le alignment bug. Applies table-layout to the first 2 tables then removes f=
+or anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        table table table {
+            table-layout: auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing image=
+s in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: A work-around for iOS meddling in triggered links.=
+ */
+        *[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        /* What it does: A work-around for Gmail meddling in triggered link=
+s. */
+        .x-gmail-data-detectors,
+        .x-gmail-data-detectors *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying an download button =
+on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        /* If the above doesn't work, add a .g-img class to any image in qu=
+estion. */
+        img.g-img + div {
+            display:none !important;
+        }
+
+        /* What it does: Prevents underlining the button text in Windows 10=
+ */
+        .button-link {
+            text-decoration: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://git=
+hub.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport s=
+ize you'd like to fix */
+        /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting =
+*/
+        @media only screen and (min-device-width: 375px) and (max-device-wi=
+dth: 413px) { /* iPhone 6 and 6+ */
+            .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+    </style>
+
+    <!-- Progressive Enhancements -->
+    <style>
+
+        /* What it does: Hover styles for buttons */
+        .button-a {
+            transition: all 200ms ease-in;
+        }
+
+        .button-a:hover {
+            background: #05c5bd !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 480px) {
+
+            /* What it does: Forces elements to resize to the full width of=
+ their container. Useful for resizing images beyond their max-width. */
+            .fluid {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful fo=
+r images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+        }
+
+    </style>
+
+    <link href=3D"https://fonts.googleapis.com/css?family=3DNoto+Sans:400,7=
+00&amp;subset=3Dlatin-ext" rel=3D"stylesheet">
+</head>
+
+<body width=3D"100%" style=3D"margin: 0; mso-line-height-rule: exactly;padd=
+ing: 90px 0 30px 0;background-color:#f1f3f5;">
+<center style=3D"width:100%;text-align:left">
+    <!--    <div style=3D"display:none;font-size:1px;line-height:1px;max-he=
+ight:0px;max-width:0px;opacity:0;overflow:hidden;font-family:sans-serif">-->
+    <!--        New Lead-->
+    <!--    </div>-->
+    <div style=3D"max-width:680px;margin:auto">
+        <table role=3D"presentation" aria-hidden=3D"true" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center" width=3D"100%" style=3D"ma=
+x-width:680px;background: #fff;">
+            <tbody>
+            <tr>
+                <td valign=3D"middle" style=3D"text-align:center;color: #22=
+2;">
+                    <div style=3D"border-spacing: 0 !important;border-botto=
+m-left-radius: 5px;border-bottom-right-radius: 5px;background: white;border=
+: 1px solid rgba(0,0,0,.1);border-collapse: separate !important;border-bott=
+om: 4px solid rgba(0,0,0,.1);">
+                        <table role=3D"presentation" aria-hidden=3D"true" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" width=3D"1=
+00%" style=3D"margin:auto">
+                            <tbody>
+                            <tr>
+                                <td valign=3D"middle" style=3D"position: re=
+lative;text-align: left;margin-left: 30px;padding-top: 50px;font-family:san=
+s-serif;font-size: 14px;color:#ffffff;background: linear-gradient(9deg,#636=
+9b0 25%,#634BA6);border-top-left-radius: 3px;border-top-right-radius: 3px; =
+border-bottom: 4px solid #10cfbd;">
+                                    <img src=3D"https://s3-us-west-2.amazon=
+aws.com/rentbitspro/pro-assets/img/rb_logo_v2_new_two.png" aria-hidden=3D"t=
+rue" width=3D"120" alt=3D"Rentbits Logo" border=3D"0" style=3D"height: auto=
+; font-family: sans-serif; font-size: 15px; line-height: 20px;margin-left:3=
+5px;">
+                                    <p style=3D"font-size: 14px;color: #fff=
+;font-family: 'Noto Sans', Helvetica,Arial,sans-serif;margin-top: 0;font-we=
+ight: 200;padding-left: 35px;padding-top: 0;text-shadow: -4px 1px 5px rgba(=
+0,0,0,.45); text-transform: uppercase; letter-spacing: 1px;">
+                                        New Lead
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style=3D"padding:35px;text-align:left;f=
+ont-family: 'Noto Sans', sans-serif;font-size: 14px;line-height: 1.4;color:=
+ #333;opacity: .85;font-weight: 500;">
+
+                                    <p style=3D"margin-bottom:30px;">
+                                        You have a new lead for
+                                        <br>
+                                        <span style=3D"font-weight: 600">Pa=
+rkmerced</span>.
+                                    </p>
+
+                                    <ul style=3D"list-style:none;padding-le=
+ft:0;margin-bottom: 0;">
+                                        <li style=3D"margin-bottom: 10px;ma=
+rgin-left:0;">
+                                            <ul style=3D"list-style: none;p=
+adding: 15px 15px 15px 5px; margin-right: 35px; border-left: 1px solid rgba=
+(0,0,0,.1);border-right: 1px solid rgba(0,0,0,.1); border-top: 1px solid rg=
+ba(0,0,0,.075); border-bottom: 3px solid rgba(0,0,0,.135);">
+                                                <li style=3D"margin:5px 15p=
+x;">
+                                                    <p style=3D"margin-bott=
+om: 5px; margin-top: 0; text-transform: uppercase;font-size:14px;">
+                                                        <strong>Message</st=
+rong>
+                                                    </p>
+                                                    <p style=3D"margin-bott=
+om: 20px;">
+                                                        Hello Parkmerced,Th=
+is is just a test. Please do not close the leasing party. We will close the=
+ party after completing the test.Thank you for your patience.Regards,Ganesh=
+.                                                    </p>
+
+                                                    <hr style=3D"border: 1p=
+x solid #eee;">
+
+                                                    <p style=3D"margin-bott=
+om: 5px; margin-top: 20px; text-transform: uppercase;font-size:14px;">
+                                                        <strong>From</stron=
+g>
+                                                    </p>
+                                                    <p style=3D"margin-bott=
+om: 20px;">
+                                                        Miranda            =
+                                            <br>
+                                                        <span style=3D"font=
+-size: 11px; font-weight: 600;">miranda.sandheaver@gmail.com</span>
+                                                    </p>
+
+                                                    <hr style=3D"border: 1p=
+x solid #eee;">
+
+                                                    <p style=3D"margin-bott=
+om: 5px; margin-top:20px; text-transform: uppercase;font-size:14px;">
+                                                        <strong>Listing</st=
+rong>
+                                                    </p>
+
+                                                    <a href=3D"https://u704=
+0359.ct.sendgrid.net/wf/click?upn=3Dn3-2BqzuzbTzkXRxMOE6bzV5Vl9AbK-2BcsRvdc=
+YmWriUIRqT6aMc2oSZnkIo21joyg2_Zdv8hLyH0ka-2BrM91N3OG5NHsUaxcPjPzWLdLOaHYJdt=
+Tldpl2omk9lkmyVsobQ8flulIemP719axXjNnpAy2qV6663pJOoiLM9EJ8ujhxBYBSJzuAaNZ27=
+iaOcf4tkfgLOU9sh5Y2AFOeCQrrByOD0wRIffvNXRDgLmdWkvCxTl62UqjsB9xIXKpopHxHR361=
+AeQguO5u7WtFgEU94fEAnswBg9aCYYt40KeJCBkYPg-3D" style=3D"text-decoration: no=
+ne;">
+                                                        <table width=3D"100=
+%">
+                                                            <thead>
+                                                            <tr>
+                                                                <td style=
+=3D"width: 40%"></td>
+                                                                <td style=
+=3D"width: 60%"></td>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img sr=
+c=3D"https://d2lvq60hfobb4n.cloudfront.net/media/properties/110533/943de1ae=
+a970047f388cab242f247f0ed44bcfc3_small.jpg" alt=3D"" width=3D"160" style=3D=
+"margin-top:10px;">
+                                                                </td>
+                                                                <td style=
+=3D"vertical-align: top;">
+                                                                    <div st=
+yle=3D"font-size:12px;">
+                                                                        <p =
+style=3D"margin-bottom: 5px;margin-top: 10px;font-size:12px; font-weight: 6=
+00;">
+                                                                           =
+ Parkmerced                                                                =
+        </p>
+                                                                        <p =
+style=3D"margin-bottom: 0;margin-top: 5px;font-size: 11px; color: rgba(0,0,=
+0, .75);">
+                                                                           =
+ 3711 19th Avenue                                                          =
+               </p>
+                                                                        <p =
+style=3D"margin-bottom: 5px;margin-top: 0;font-size: 11px; color: rgba(0,0,=
+0, .75);">
+                                                                           =
+ San Francisco, CA 94132                                                   =
+                     </p>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <p style=3D"margin-top: 5px; font-size:=
+ 10px; opacity: .8">To respond to this lead, simply click on 'Reply' within=
+ your email application.</p>
+                                </td>
+                            </tr>
+
+                            <tr style=3D"text-align:left;">
+                                <td>
+                                    <p style=3D"margin-left:35px; font-size=
+: 14px;line-height: 1.4;color: #333;opacity: .85;font-weight: 500;margin-bo=
+ttom:30px; margin-top:0;">The RentBits Team</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table role=3D"presentation" aria-hidden=3D"true" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center" width=3D"100%" style=3D"ma=
+x-width:680px">
+            <tbody>
+            <tr>
+                <td style=3D"padding: 15px 20px 20px 35px;width:100%;font-s=
+ize: 10px;font-family: 'Noto Sans', sans-serif;line-height:18px;text-align:=
+ center;color: #000;opacity: .6;font-weight: 300;">
+                    <span style=3D"opacity: .75;">
+                        Dash Local LLC (303) 626-2020
+                    </span>
+                    3440 Youngfield St. #253, Wheat Ridge, CO, 80033 US
+                    <br>
+                    <br>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</center>
+
+<img src=3D"https://u7040359.ct.sendgrid.net/wf/open?upn=3DZdv8hLyH0ka-2BrM=
+91N3OG5NHsUaxcPjPzWLdLOaHYJdtTldpl2omk9lkmyVsobQ8fTSLslmM5WOBkUyh0tOP3rjYx2=
+QscLCbU-2FWmfYuHJ9zbqCKNye7OoIera-2BXQO1JX-2F7WybE-2Fi6fYdv1-2F7Uj2YIQpJAjm=
+KAm8PIHsz67xboTRLFJA-2BcwbPDh-2BXuMFDjeIjWaGgRzAZmo8Lew0Oi2OoixcKbyEmEnMDAR=
+G4ccVQgGdo-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heig=
+ht:1px !important;width:1px !important;border-width:0 !important;margin-top=
+:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-l=
+eft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddi=
+ng-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+

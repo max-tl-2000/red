@@ -1,0 +1,222 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/login": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The user's data that includes email and password",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": {
+                  "description": "User email",
+                  "type": "string"
+                },
+                "password": {
+                  "description": "User password",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email",
+                "password"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data about the authenticated user",
+            "schema": {
+              "$ref": "users.json#/definitions/User"
+            }
+          },
+          "401": {
+            "description": "Account blocked",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "default": {
+            "description": "Email and password mismatch",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Log into the system",
+        "tags": [
+          "Authorization"
+        ]
+      }
+    },
+    "/registerWithInvite": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The user's data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "fullName": {
+                  "description": "New user's full name",
+                  "type": "string"
+                },
+                "preferredName": {
+                  "description": "New user's preferred name",
+                  "type": "string"
+                },
+                "password": {
+                  "description": "New user's password",
+                  "type": "string"
+                },
+                "token": {
+                  "description": "Valid token ",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "token",
+                "fullName",
+                "preferredName",
+                "password"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data about the authenticated user",
+            "schema": {
+              "$ref": "users.json#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Register a new user into the system",
+        "tags": [
+          "Authorization"
+        ]
+      }
+    },
+    "/resetPassword": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The user's data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "token": {
+                  "type": "string"
+                },
+                "isRegisterMode": {
+                  "type": "boolean",
+                  "description": "If this is set to true, this is a password registration for an imported user."
+                }
+              },
+              "required": [
+                "email",
+                "password",
+                "token"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data about the authenticated user",
+            "schema": {
+              "$ref": "users.json#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Reset the password of a given user",
+        "tags": [
+          "Authorization"
+        ]
+      }
+    },
+    "/requestResetPassword": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The roommate user's data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "userId": {
+                  "description": "User's id",
+                  "type": "string"
+                },
+                "emailAddress": {
+                  "description": "User's email",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "userId",
+                "emailAddress"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Token generated to reset password",
+            "schema": {
+              "description": "Common user token",
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Generate a common user token to reset passoword",
+        "tags": [
+          "Authorization"
+        ]
+      }
+    }
+  }
+}

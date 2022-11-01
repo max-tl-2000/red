@@ -1,0 +1,10 @@
+@import '../../sass/_typography-mixins';
+@import '../../sass/_flyout-sizes';
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: $smallFlyoutWidth;
+  height: $smallFlyoutHeight;
+}

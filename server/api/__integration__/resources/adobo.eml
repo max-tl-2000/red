@@ -1,0 +1,249 @@
+Return-Path: <bounce-md_4608894.5b5756cd.v1-34dc29d754c046bdbf2fbc8ccd6b42d9@mandrillapp.com>
+Received: from NAM01-BN3-obe.outbound.protection.outlook.com (mail-bn3nam01on0045.outbound.protection.outlook.com [104.47.33.45])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id i8t1f8kqnhd0mekba4a8vn4vbmue99i6eu110bg1
+ for abodo.parkmerced.vanity@maximus.mail.reva.tech;
+ Tue, 24 Jul 2018 16:41:53 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of mandrillapp.com does not designate 104.47.33.45 as permitted sender) client-ip=104.47.33.45; envelope-from=bounce-md_4608894.5b5756cd.v1-34dc29d754c046bdbf2fbc8ccd6b42d9@mandrillapp.com; helo=mail-bn3nam01on0045.outbound.protection.outlook.com;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of mandrillapp.com does not designate 104.47.33.45 as permitted sender) client-ip=104.47.33.45; envelope-from=bounce-md_4608894.5b5756cd.v1-34dc29d754c046bdbf2fbc8ccd6b42d9@mandrillapp.com; helo=mail-bn3nam01on0045.outbound.protection.outlook.com;
+ dkim=pass header.i=@abodoapts.com;
+ dkim=pass header.i=@maximusrepartners.onmicrosoft.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHaEt3dEhpSXI4Z3BSaGVCV2tpYWxwUXRBcDdHODcxVmNDYkR5a1FLcmFhbnkxQ0RxTVBEdVV0VmpjR1JCU0ZjQ2VwK3UrT0ZxSEY0czVvUDkzQjlQTHNPd0JrOGxmOTZyYngxNkVrbkcvRDVPTVlmc1RDZS9KQWRiSVZmZ3JYbGQ0NWo3cU81S1l1Sittd2h4ODZWa1o3WGZ4MHlEVWlmQ2JsOGd4WFFMcXBjZmdYeXdEMTJUYWxEdWxUM3l1V0JnbUkvYmFCNmVkUEdFYUJkNDJKbzBsYVo3eWNobWxVWDlHZ3BCZ0RjTzhPSGRzL3E3ZXVLcHBrQUlSbUhDSXFSd1U5aHloZ3VGb210WEw2dXNPcWQ0QWhtRGNEQUtNZzVVTFZhQnd1K042OGZkSzNEUk04eVZCZTlWY2NkdkJyZFRtUCtHdzlxbGhlMWw5QU55WmpKNTgwcnRtMHAycmp2Q3Q4bjdHWllVU1ZUbXFySlhuT1B1S1hkRlpLUWYvRTNVPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=JDAXGc8spbdf8nOmWP5w3lk/nkQ7QtbFDosxxcraDaE2YGfj8e9h0qAIOjSnOhxeuxUfBHjspXrsCdou4JXf3CHsaPVneJRsG0zAeWhN8cxdebCAhE0wCMuuCNvVd4l3jPhWcwNRqmvb1kZyv6wl5Lg+B9BuXMaFu4iksLahIT0=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1532450513; v=1; bh=AX3nFa7w5u6B5Ijm7PdqAiNJ4nHEGMFVP18y7FRMEow=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=maximusrepartners.onmicrosoft.com;
+ s=selector1-maximusrepartners-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=PDplreEovFYCJlQ7sNlOljgfLgIkMGDqdEVgOBwMQ28=;
+ b=XGZLlrW2JE8iJgFRT2x9T0XfnU2KK0iTcdrrnWh6vx0+NrGjSEnVRbDn3LrktOzkkq9I374sx9a3DVMNViHhZqpb9z0rvQXMOV/WBDbGwZxYZP2Yr640XDoAhm9O3UjVnxzxWz/dmKzVxLZq148OeJHqYre0LXVssFyT0qc+gJQ=
+Received: from CY4PR06CA0071.namprd06.prod.outlook.com (2603:10b6:903:13d::33)
+ by BY2PR06MB614.namprd06.prod.outlook.com (2a01:111:e400:2c4d::23) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.973.21; Tue, 24 Jul
+ 2018 16:41:51 +0000
+Received: from BY2NAM01FT041.eop-nam01.prod.protection.outlook.com
+ (2a01:111:f400:7e42::207) by CY4PR06CA0071.outlook.office365.com
+ (2603:10b6:903:13d::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.995.16 via Frontend
+ Transport; Tue, 24 Jul 2018 16:41:51 +0000
+Authentication-Results: spf=pass (sender IP is 198.2.186.9)
+ smtp.mailfrom=mandrillapp.com; parkmerced.com; dkim=pass (signature was
+ verified) header.d=abodoapts.com;parkmerced.com; dmarc=bestguesspass
+ action=none header.from=abodoapts.com;
+Received-SPF: Pass (protection.outlook.com: domain of mandrillapp.com
+ designates 198.2.186.9 as permitted sender) receiver=protection.outlook.com;
+ client-ip=198.2.186.9; helo=mail186-9.suw21.mandrillapp.com;
+Received: from mail186-9.suw21.mandrillapp.com (198.2.186.9) by
+ BY2NAM01FT041.mail.protection.outlook.com (10.152.68.167) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id
+ 15.20.995.12 via Frontend Transport; Tue, 24 Jul 2018 16:41:50 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mandrill; d=abodoapts.com;
+ h=From:Subject:Reply-To:To:Message-Id:Date:MIME-Version:Content-Type; i=abodoleads+9k6mxo85i4ql@abodoapts.com;
+ bh=PDplreEovFYCJlQ7sNlOljgfLgIkMGDqdEVgOBwMQ28=;
+ b=XDqLmBIzEppFOu1sIoo4LvTgl0OtSw8SeIWTaNPlv91GWvc09KfWITeTaAvriK42O9owDL/npK1R
+   ZmPHl4jm5JN8JNJdMzwXhONIdpVrk4aYu8biphgdzfDlPGt3bqJux6A6GYLiWK+EqSUTD59SI+tj
+   FCWGHZ+apVIYufPA8y0=
+Received: from pmta02.mandrill.prod.suw01.rsglab.com (127.0.0.1) by mail186-9.suw21.mandrillapp.com id hatbcs174bk0 for <abodo@parkmerced.com>; Tue, 24 Jul 2018 16:41:49 +0000 (envelope-from <bounce-md_4608894.5b5756cd.v1-34dc29d754c046bdbf2fbc8ccd6b42d9@mandrillapp.com>)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com; 
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1532450509; h=From : 
+ Subject : Reply-To : To : Message-Id : Date : MIME-Version : 
+ Content-Type : From : Subject : Date : X-Mandrill-User : 
+ List-Unsubscribe; bh=PDplreEovFYCJlQ7sNlOljgfLgIkMGDqdEVgOBwMQ28=; 
+ b=c9lMuIhG2qLpekb5I8Gi3DVYdZ4iYGMb9KHlOb+1gdTkXTEIFTUKRqAmVgaPeusAe8wx0G
+ oRdvrK8ZJI0vU1DYpNenfWEw7I9Gwq+3LO5/cvVOTGPe613CE7siCmAkbP2B2ggJ8raw5zjv
+ yAZjAQgm8Ml0xQLmt6UlLKNCwltho=
+From: Sandra Hefner via ABODO <abodoleads+9k6mxo85i4ql@abodoapts.com>
+Subject: Interested in Parkmerced on ABODO
+Return-Path:
+ bounce-md_4608894.5b5756cd.v1-34dc29d754c046bdbf2fbc8ccd6b42d9@mandrillapp.com
+Received: from [54.237.72.6] by mandrillapp.com id 34dc29d754c046bdbf2fbc8ccd6b42d9; Tue, 24 Jul 2018 16:41:49 +0000
+Reply-To: <abodoleads+7ox1m0hgd67l@abodoapts.com>
+To: <abodo@parkmerced.com>
+Message-Id: <5b5756cd20ca1_2f3c5184084786e6@falcon.mail>
+X-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com
+X-Report-Abuse: You can also report abuse here: http://mandrillapp.com/contact/abuse?id=4608894.34dc29d754c046bdbf2fbc8ccd6b42d9
+X-Mandrill-User: md_4608894
+Date: Tue, 24 Jul 2018 16:41:49 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_av-QyOiPrdQBH_YSmwQlgd8Ww"
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: a1213313-39a4-470f-9cea-e824afd0357d:0
+X-Forefront-Antispam-Report:
+ CIP:198.2.186.9;IPV:NLI;CTRY:;EFV:NLI;SFV:NSPM;SFS:(10009020)(8156002)(31610200002)(136003)(396003)(39850400004)(346002)(376002)(2980300002)(438002)(286005)(189003)(63404003)(199004)(106466001)(9686003)(107056004)(606006)(345774005)(43066004)(42882007)(7636002)(33964004)(33896004)(336012)(966005)(36756003)(15409205004)(106002)(246002)(1390100006)(236005)(2906002)(6306002)(8676002)(733005)(956004)(16003)(84326002)(316002)(498600001)(486006)(18926415007)(126002)(16586007)(26005)(6862004)(1720100001)(620700001)(4290100001)(325944009)(356003)(107046003)(121206001)(2351001)(7596002)(110476001)(476003)(270700001)(16799955002);DIR:OUT;SFP:1101;SCL:1;SRVR:BY2PR06MB614;H:mail186-9.suw21.mandrillapp.com;FPR:;SPF:Pass;LANG:en;PTR:mail186-9.suw21.mandrillapp.com;MX:1;A:1;
+X-Microsoft-Exchange-Diagnostics: 1;BY2NAM01FT041;1:HrLK4vwMrbtJ3DtgGqVMLFylxQ6WJLj6eITGB0VYfipqOvVzAGqRQRpnZ3uXSaXCwbI/di63+4T9RIWktfDaCJwe58nqwV+Paj91ksbn//zDQLpCWud8UlUUCzEdRkbS
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 5719c2b8-40f0-4ba5-ad60-08d5f1845b1d
+X-Microsoft-Antispam:
+ BCL:5;PCL:0;RULEID:(7020095)(4652040)(5600073)(711020)(4605076)(4608076)(1401180)(8001031)(1414027)(71702078);SRVR:BY2PR06MB614;
+X-Microsoft-Exchange-Diagnostics:
+ 1;BY2PR06MB614;3:muD2o2v819AWR8sWMwVMK0FtMv3FLR15QOsb2cYXMBsSjJXYJyMD5XNu8H97tWJma/pbbDCFI6rCgJkfE/7p0eA0zT0Qh0R2XbrrMgycbYb2aU/PLY68aaCGiO96c3LmsbuZbeRg0b+U8aHO47E37DePk2oGak7jbRmrBLCpmhrmHowT3/q80B4Hqy7kbsOGkm7ln91wkBa4BGvCrnD+iIUjaJz3u6jH3KVBcnRjJWoYqs5QHEvMIQl4cjfU9zERyGWroD9oZgqM2M50UusLNfW2TKn3u9Nde3qUqS/6gOHJa02LfB9Jt8/g06dm91v56Lkc6py3hJEkwy5DaOc+4w==;25:1mg/b/UNR9KbJu6S4rmL0qShgd0bH8XKpPb3i+rtxO4yFPBmSxRUx9Hr7G0YuP/nqE5rp5LIDCC/Fsz0O/K7VUjtcV3+nvYBgesHZSH/2e5VZBfGmCmkogOljQZmpClRMZTOB7eHzLmcugqoXf5cxHRFzCEyb0m4QD54wrkTeBoLiLfWY1zkquhoEeapCQZZESxH48ruwrDoUZ1vpYB1DqpXnz9GJqVWnIF0ychTNtN0YgROFdJERuLNazVpVbgXliFQL7nkTS17Z01KDWRX7pDbK1V1JFA6+mOoQgrDIFp49AzeL5aUvSnPQfymE/YLK86j57feyuVA6oD3b4fQjw==;31:t3e0j/EOujJqAwk2EEQFb7NB2hBYAcKokSqoyAEhXQYnw+aDzfPu38/fPY34vH76SDq0mrd/K91+CHW6o6wvEJDvOhe8llSR2ZYfrar3DM1xeqiVGPjlY2idCU10KrXr/4FTGewZbosrcSNhA1BRSnfj79OSAwTqWR2uhN95nz64piXu3/5yBj/1VdvstiBRwqPOm4e/2BQ9PKwXyGBho9KUXxKzqFqTVNNh1HliY80=
+X-MS-TrafficTypeDiagnostic: BY2PR06MB614:
+X-LD-Processed: a1213313-39a4-470f-9cea-e824afd0357d,ExtAddr
+X-Microsoft-Exchange-Diagnostics:
+ 1;BY2PR06MB614;20:rd80CSAcWxE1CYeE2OXKXUmLbrsEEMIl6MC135C2oALX//9HiA6JrKYfVi7EbyOvitEOtXBQYZrh0qQA5l1JpKu4qoL1q77dxWFr4p/ITb3dhAilScncec9VUOfgk6ENpQFQ8OnZkRufhaROCphrftYuVWMdAumhkmDPCKOhJRot8tJZmrqjAFxDw1RneoE9o4qnaxYYsK+wWDo/uVNsCZf79x6jCt6aZ6jhDcRgqdNtSToBhN16GM9m7CiHDXWnyJ4/igKZ0srw7c1ySyVsL+besWQ1ZsfDA63AnEVhYQDmR9Lokk0ngsw14m7iSADXn+S2Emb6oUZuVN+CEcoSmybh8nvniev8CXsA2qVTdD2lEt6qGSbxOwIUdh6M4gqFZUdZ21eJmQAgSKtWvn4Z/qncmfU057wpe+DJb2SkfGwyMga36eB0+6qeFCWwKxL41uQjQYX9aR9C0bRZcfbGKg4h5auoI61M5h+c/jtSjVd2yVKfBgmFNNwzYYp2cZ0O;4:VkW6g43ySuwpBSJcnSMovBB+fsUflpu5NaI1mPxbs2p7LdYxxlK3jsb1+F+f9oCuO6Odnv+Xhp8o6KI4gvL6zDBF4ERQWW8lcoop9TDpxDYgEujJfhL2I41bz6s+/gvdlTBg7poFzTbSg2KZSiA9AmmINKk1kqqweN7gAtOed7jmovsZy7//SZMtgGS4yovB6FIjTcEDc3T/aj3L1qj06u/4/7UyXyTyc70LIXBm6aktzInRGfujuwT2oGgjIDbmwC74GNhXzgvhxy1fJTM0jHSuIj+0xoHEst8W/dZidsMe1lm2f8pEyvTsAXmMHy1yiHM2yTPfqVRaPybTDwTDclZzkjhFzzY+XFXxVaixUoQ=
+X-Microsoft-Antispam-PRVS:
+ <BY2PR06MB61401229BF6F85CD7F90764AA550@BY2PR06MB614.namprd06.prod.outlook.com>
+X-Exchange-Antispam-Report-Test: UriScan:(187274545019280)(201166117486090);
+X-MS-Exchange-SenderADCheck: 0
+X-Exchange-Antispam-Report-CFA-Test:
+ BCL:5;PCL:0;RULEID:(6040522)(2401047)(701105)(8121501046)(5005006)(9101536074)(3231311)(944501410)(52105095)(93006095)(93005095)(10201501046)(3002001)(149027)(6041310)(201703131423095)(201702281528075)(20161123555045)(201703061421075)(201703061750153)(20161123558120)(20161123564045)(20161123560045)(20161123562045)(6072148)(201708071742011)(7699016);SRVR:BY2PR06MB614;BCL:5;PCL:0;RULEID:;SRVR:BY2PR06MB614;
+X-Forefront-PRVS: 0743E8D0A6
+X-Microsoft-Exchange-Diagnostics:
+ =?us-ascii?Q?1;BY2PR06MB614;23:qzUZSP+ZRKoBw1LmURiEmGGQZULpXpSPeEjmgis04u?=
+ =?us-ascii?Q?gA8nTJVZNKKsI7hfSZygUAN4wryEmT33IFKqRDO7NXA3IGqP/tW/8lKMa6MF?=
+ =?us-ascii?Q?uSURufS7A8sfWYrIKF5JdCwpvCQefpY7T63jPdPr1Yc3g8imlJnsrL/xZnMV?=
+ =?us-ascii?Q?eXjRHUelelvJdx/gD0K3W8UtYToIbBgG8zI7SgNPmesTB/h1oG0um3mqrn7i?=
+ =?us-ascii?Q?SWyJok82XCVonjWeEaW90g8i6mA4ATgvMDcAP50s8YS1jpdT6rDlebU+w3R5?=
+ =?us-ascii?Q?I6CpF9E0KE9W2g6QUca/9G/bKdQRY3j1cmGol99kayKGJ9ItjBAwWQsVOoc6?=
+ =?us-ascii?Q?a99cAPSVk/HysuiWw+87ZA/1romAG8fZ6MEhVFXNeDJzsc0L8BMpKKHdD4k7?=
+ =?us-ascii?Q?qZ5uKo/InmsW2gIAGecHpCHk3969/1IWz40iQPCC+ZZ50kphocCsV8FVZFCx?=
+ =?us-ascii?Q?vDazn2VdwS9cjq5m75+WjVCzgDVfsmH/mr9MFdxvfgr5mPotHyYCC8oKOVwT?=
+ =?us-ascii?Q?hkoWE7x7/t61JpYqMalgn6X3WoQp9oEz5+qy5JMmr7Lcc9EJ/xHkw/1xECMd?=
+ =?us-ascii?Q?vist50xlX4Im5qZe6zZmxogOkb5+zLTajM+Wp+ecYDQIDZKuAZt6Ho/HWPf/?=
+ =?us-ascii?Q?oNsgGDgqb0Mqd4qttw+k/76h57CCud5a3PPES0KpvTM9vPlwaCdZxvZ5Rugx?=
+ =?us-ascii?Q?SwUqAYUWnPYHWYPGeZfiIZhvw75f0eKL6U/DoMBJbzmetJKE/xSj7ZVSCDPh?=
+ =?us-ascii?Q?n2ob50DTkZaaDflAF8YRDG2yd1NIVtYlugv+cHQkwgk5lCu5dtBExlst7QOM?=
+ =?us-ascii?Q?DMVocYACKf9l7QstsA7Ad7QKb1Gl1S5E6y3ze54E7ub4c165xBCj+XvYuQb/?=
+ =?us-ascii?Q?rPOos8YVlwqhD1SoSqmpkpWQzSrpN5RWULUPlb8DsVAPjtHpu7UuPn7u+mOX?=
+ =?us-ascii?Q?EuJpk3qpRtVtiU+TX+as9KyiZO4jXzI+888NdH5Dj2pBuSqwAKiV2d4zMoBa?=
+ =?us-ascii?Q?Gx5iWhnfgG8XCmhBQIDanQucv1ASmW5rGTW6Vi6BuW4aNaTKENJ7eRkHBK2D?=
+ =?us-ascii?Q?pP2Q7hlqwqVajLD0r4GOUNwYn82oJVrTa6oEwPjJ4QuXdMpB+1J5tWS6iL6n?=
+ =?us-ascii?Q?AnVb1Rizs+E+U+2fBEHAc3QBHXlfII9QNrkNZ+U+TT0wi5M1KiFEAKowQDk6?=
+ =?us-ascii?Q?HOmEmts8pUyMh3p+RzyDscgMzofE2MoK2bLwemEuaNKnLbQVBqZewgJDPOFs?=
+ =?us-ascii?Q?hfjw/DjaLIHf/NLf6uun94Qjq7gruSP5fQvINZeg6aDzsNWjpwf+7qhiozHR?=
+ =?us-ascii?Q?p0gfD/2BvxtoCMcRmqYbw=3D?=
+X-Microsoft-Antispam-Message-Info:
+ oI5ZPGk0e4Cyt/z8yzAyeUX2OIuh7zDkWCabTe6SqDggGUIOpVJ3UoGjLGEDYrjtVrmyNo6LLhUQi03VZ+I9bRmgMiJXEPAEM4FTs2OLe91WMBRcQ64hc+eVz0dNLq6vDA2W2+EaEc2I5DouaiFsfVUGIKIl/xyrnqcK0N1Up4kE7gJkU49PxJX1P1forVc596d3uxwm1ZMUJ5Csz8wNSvo17XXn9MgY+FF+5zxqsGJtHk0TWV9+EDCpYk0aYH1k27chv014f1QJwxvk0w8fvml51DwnWLko3qa2kh7NRjFkipVMCyXaMxCnwF9z15xrRud8gVosz5nJpxinN7pJhGGyuoDoYcJ1BJ9PNWLddPWDIbx/jPhhjXMrheKSC1Xj
+X-Microsoft-Exchange-Diagnostics:
+ 1;BY2PR06MB614;6:t7X7Z/NauXggqcL70pXUePhk+dANUVMSOuBThaR662FEMRLST64mvZwFIFR9tfkfag5+wQak9yHu6EVF2G06HLKsImZ+3mffSwl3BSg6LLMXDnaIoHuL6Dd1dIM267MDm4IurRWaOfz2PVKVp2VbceDpwUkc0l/OMAiR0dFWDsrxrXQDrTI1y7uvuHBMvkh3eRLnh7YU6kUyG1/+sd3NmIXuaDmMAJVPfNjap2Yap2mJdi5Q6yDQxLOKyOFqZjD1QFby2clYa8Eey+ozzaCxeDj2YSYtHRXPFXHhJZKadwGXBdcBmiOYepBXomzK+Pp657lk+m5vrqXcbM5EYRs5yMPOFKLiNTZEHvaNJO4S3Pr+QnlQW5wkqWhrDkQ2qop2cjf0QLvnCU+TpKU66r+/0/sXz4diZeThAHT6gFQDcXJhSfHjKtEm3wnLQIEfMci7tXJz3jIJc3QIqb/bSeNGQA==;5:W58wR8OlcTYJ3qi9bZs7+MoqLgXk91RbP5V8wlbcZ6H4IV5oDDe+6vF1gJyKfxk00x8i/sbPmyfMWUyeU+tcHCj/8feLoL9wlNNW9kjdjEbaXhTwZM/vqE/KGo5O/wcS4BaatRluuii92//4oBa5p+n1bje24m0YMe37wCOfDv8=;7:GFvVuwU3dc89hquCfludVp1tVO6wr7GNPTSzZaVEaHj7XZB7QQgGa/AbtdMsQpEj0F76VVMzCPbfWfyT+m+itBDGeF3r77UnEWO4Ro7oBv8xNCaL2nCMugmZ4M2zC8gz3iSawuCcKqDaNSVGT80aHo6gND+9YEi//woiQ4o7BnJbWM9PBPmP4PwoAXfS+UzLydYmZcotKckPGyt+EMIn7GEqDFyUeOH+eXZkwgFC9pTZiflDj9ilBR8l1TsHNj3J
+X-ExternalRecipientOutboundConnectors: a1213313-39a4-470f-9cea-e824afd0357d
+SpamDiagnosticOutput: 1:5
+SpamDiagnosticMetadata: :5
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-OriginatorOrg: maximusrepartners.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Jul 2018 16:41:50.6473
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5719c2b8-40f0-4ba5-ad60-08d5f1845b1d
+X-MS-Exchange-CrossTenant-Id: a1213313-39a4-470f-9cea-e824afd0357d
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY2PR06MB614
+
+--_av-QyOiPrdQBH_YSmwQlgd8Ww
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+You have an interested renter from ABODO!
+
+Simply hit reply to respond to the renter.
+
+-------
+Name: Sandra Hefner
+Email: dustycoe@yahoo.com
+Phone Number: 4153451592
+
+In Regards to Property: 3711 19th Avenue
+
+
+interested in the 2 bedroom apartments.  Do you accept section 8 voucher. I am a senior with a service animal and a live in care taker
+
+
+-------
+View Additional Information: http://www.abodo.com/landlords/80564/lead-insights/1058949
+-------
+
+Thank you for being a loyal ABODO customer. If you have any feedback, suggestions or praise, we would love to hear from you!
+
+And, if you are looking for new opportunities to gain more exposure to renters in San Francisco and generate more leads, contact your sales executive or call us at (800) 488-0074.
+
+
+Thanks,
+
+
+The ABODO Team
+
+p.s. Responding to a lead in five minutes instead of thirty makes it 2.5x more likely you'll get their business.
+
+
+--_av-QyOiPrdQBH_YSmwQlgd8Ww
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content=3D"text/html; charset=3DUTF-8" http-equiv=3D"Content-Type=
+" />
+  </head>
+  <body>
+    You have an interested renter from ABODO!<br /><br />
+    Simply hit reply to respond to the renter
+    <br />-------<br /><br />
+    <b>Name:</b> Sandra Hefner<br />
+      <b>Email:</b>&nbsp;
+        <a href=3D"mailto:abodoleads+7ox1m0hgd67l@abodoapts.com" target=3D"=
+_blank">
+          dustycoe@yahoo.com
+        </a>
+      <br />
+      <b>Phone Number:</b> 4153451592<br />
+
+
+
+    <br />
+    <b>In Regards to Property:</b>
+    <a href=3D"https://mandrillapp.com/track/click/4608894/www.abodo.com?p=
+=3DeyJzIjoiOTMwM2F3dVJQcWk4ZjFyN0hMVlU2TGljZ2tZIiwidiI6MSwicCI6IntcInVcIjo0=
+NjA4ODk0LFwidlwiOjEsXCJ1cmxcIjpcImh0dHA6XFxcL1xcXC93d3cuYWJvZG8uY29tXFxcL3N=
+hbi1mcmFuY2lzY28tY2FcXFwvcHJvcGVydGllc1xcXC8yNzg3NzI0XCIsXCJpZFwiOlwiMzRkYz=
+I5ZDc1NGMwNDZiZGJmMmZiYzhjY2Q2YjQyZDlcIixcInVybF9pZHNcIjpbXCJiMjA0OTY1N2VhM=
+DYxYTFmNjgyNDUzMmUzOWIxODQyNTJhM2U0YzE0XCJdfSJ9">
+      3711 19th Avenue
+    </a>
+    <br />
+
+
+
+    <br />
+    <br />
+
+
+    interested in the 2 bedroom apartments.  Do you accept section 8 vouche=
+r. I am a senior with a service animal and a live in care taker
+
+    <br /><br />-------<br />
+
+      <p><a href=3D"https://mandrillapp.com/track/click/4608894/www.abodo.c=
+om?p=3DeyJzIjoiTlcxQW5HUDNXNDJzOWk3NW12U3ZZYU84aUtFIiwidiI6MSwicCI6IntcInVc=
+Ijo0NjA4ODk0LFwidlwiOjEsXCJ1cmxcIjpcImh0dHA6XFxcL1xcXC93d3cuYWJvZG8uY29tXFx=
+cL2xhbmRsb3Jkc1xcXC84MDU2NFxcXC9sZWFkLWluc2lnaHRzXFxcLzEwNTg5NDlcIixcImlkXC=
+I6XCIzNGRjMjlkNzU0YzA0NmJkYmYyZmJjOGNjZDZiNDJkOVwiLFwidXJsX2lkc1wiOltcIjY5Z=
+TY5ZDk0ODI4Mjg0MzNjYjFlM2IyZjU0MjZmNTZjZGYwMmUyM2JcIl19In0">View Additional=
+ Information</a></p>
+      <br />-------<br />
+
+    <br />
+
+      <p>Thank you for being a loyal ABODO customer. If you have any feedba=
+ck, suggestions or praise, we=E2=80=99d love to hear from you!</p>
+
+      <p>And, if you are looking for new opportunities to gain more exposur=
+e to renters in San Francisco and generate more leads, contact your sales e=
+xecutive or call us at (800) 488-0074.</p>
+
+    Thanks,<br /><br />
+    The ABODO Team<br />
+    <a href=3D"mailto:info@abodo.com">info@abodo.com</a><br /><br />
+    p.s. Responding to a lead in five minutes instead of thirty makes it 2.=
+5x more likely you'll get their business.
+
+      <img src=3D"http://www.abodo.com/track_email_event/open?email_hash=3D=
+7ox1m0hgd67l" height=3D"1" width=3D"1">
+  <img src=3D"https://mandrillapp.com/track/open.php?u=3D4608894&id=3D34dc2=
+9d754c046bdbf2fbc8ccd6b42d9" height=3D"1" width=3D"1"></body>
+</html>
+
+
+
+--_av-QyOiPrdQBH_YSmwQlgd8Ww--

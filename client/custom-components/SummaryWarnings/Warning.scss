@@ -1,0 +1,30 @@
+@import '../../sass/_colors.scss';
+
+.warning {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: (32em/16);
+  padding-top: '0';
+  background: rgba($red500, .1);
+
+  .icon {
+    margin-right: (17rem/16);
+    margin-left: (25rem/16);
+
+    fill: $red400;
+  }
+
+  .message {
+    flex: 1 0 75%;
+    color: $redA400;
+  }
+
+  .link {
+    flex: 1 0 (150em/16);
+    margin-left: .3em;
+    color: $redA400;
+  }
+}

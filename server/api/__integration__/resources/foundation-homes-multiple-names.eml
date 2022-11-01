@@ -1,0 +1,335 @@
+Received: from BN6PR06MB3394.namprd06.prod.outlook.com
+ (2a01:111:e400:5312::44) by CY1PR0601MB1115.namprd06.prod.outlook.com with
+ HTTPS via CY1PR0801CA0034.NAMPRD08.PROD.OUTLOOK.COM; Mon, 9 Apr 2018 19:05:29
+ +0000
+Received: from DM5PR06CA0054.namprd06.prod.outlook.com (2603:10b6:3:37::16) by
+ BN6PR06MB3394.namprd06.prod.outlook.com (2603:10b6:405:47::24) with Microsoft
+ SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.20.653.12; Mon, 9
+ Apr 2018 19:05:26 +0000
+Received: from BN3NAM01FT022.eop-nam01.prod.protection.outlook.com
+ (2a01:111:f400:7e41::201) by DM5PR06CA0054.outlook.office365.com
+ (2603:10b6:3:37::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.653.12 via Frontend
+ Transport; Mon, 9 Apr 2018 19:05:26 +0000
+Authentication-Results: spf=pass (sender IP is 54.71.80.132)
+ smtp.mailfrom=bounces.wufoo.com; thecoveattiburon.com; dkim=pass (signature
+ was verified) header.d=wufoo.com;thecoveattiburon.com; dmarc=pass action=none
+ header.from=wufoo.com;
+Received-SPF: Pass (protection.outlook.com: domain of bounces.wufoo.com
+ designates 54.71.80.132 as permitted sender) receiver=protection.outlook.com;
+ client-ip=54.71.80.132; helo=mta1d2.outbound.surveymonkey.com;
+Received: from mta1d2.outbound.surveymonkey.com (54.71.80.132) by
+ BN3NAM01FT022.mail.protection.outlook.com (10.152.67.153) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id
+ 15.20.653.8 via Frontend Transport; Mon, 9 Apr 2018 19:05:25 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=wufoo.com;
+	s=scph0817; t=1523300724; i=@wufoo.com;
+	bh=kGznoxpQKS6M6d/kSs0eSZTh01YcmVnheFQUxWW4eBw=;
+	h=To:Date:Reply-To:Subject:From;
+	b=L6+AJFk7lC7lhvK4U9JsHVUdGoabwsGpxMeyOMCUY+jHUI6pMmq9ZHj0Wdlbhw7xp
+	 jj6Wg+yqMEfOVWeE0s5bdVA1D4W2UvN6sJAMDfMYM06Z8L3VEM4GQcSl+GVusr1oX5
+	 Lh9TGvgRL8qDn/jkxVAWznfpy66EINIT4B7UIzrc=
+X-MSFBL: i/HRmB/ElOtalH2zScmWCOU5Fk3HbTK3tu0Rklo5cKk=|eyJjdXN0b21lcl9pZCI
+	6IjEiLCJtZXNzYWdlX2lkIjoiMDAwNzc0YjljYjVhMGVhOGI4NGMiLCJyIjoibGV
+	hc2luZ0B0aGVjb3ZlYXR0aWJ1cm9uLmNvbSIsInRlbmFudF9pZCI6InN1cnZleW1
+	vbmtleSIsInN1YmFjY291bnRfaWQiOiI1In0=
+To: db@foundationhomes.com, leasing@thecoveattiburon.com
+Message-ID: <8B.C4.43022.479BBCA5@g.mta2vrest.cc.prd.sparkpost>
+Date: Mon, 09 Apr 2018 19:05:24 +0000
+MIME-Version: 1.0
+Reply-To: no-reply@wufoo.com
+Subject: The Cove MLS Referral
+From: "Foundation Rentals" <no-reply@wufoo.com>
+Return-Path: bounces@bounces.wufoo.com
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Apr 2018 19:05:25.9875
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: Original Submit
+X-MS-Exchange-Organization-ExpirationInterval: 2:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: Original Submit
+X-MS-Exchange-Organization-Network-Message-Id: 24534a55-94b1-431b-789c-08d59e4cda4b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: a1213313-39a4-470f-9cea-e824afd0357d:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report: CIP:54.71.80.132;IPV:NLI;CTRY:US;EFV:NLI;SFV:NSPM;SFS:(8046002)(31600200002)(1060300004)(2980300002)(438002)(596005)(286005)(189003)(199004)(33656002)(6306002)(14003)(25786009)(126002)(1096003)(89072002)(6486002)(3450700001)(246002)(50466002)(18926415007)(476003)(4743002)(956004)(4290100001)(3480700004)(230700001)(8676002)(486006)(5820100001)(36736006)(43066004)(336012)(7416002)(59450400001)(106002)(356003)(110466001)(33896004)(26005)(9686003)(6512007)(236005)(733005)(6506007)(7636002)(23846002)(106466001)(23676004)(7596002)(42262002);DIR:INB;SFP:;SCL:1;SRVR:BN6PR06MB3394;H:mta1d2.outbound.surveymonkey.com;FPR:;SPF:Pass;LANG:en;PTR:mta1d2.outbound.surveymonkey.com;MX:1;A:1;
+X-Microsoft-Exchange-Diagnostics: 1;BN3NAM01FT022;1:lx4GYWcjsO7uVUBXeCJr8JurvA7WhFbaGHVBtTWMy2/UP+0gEogfUBuiCGt6NnauRMZRM+QkNhbSv8flsCQvw125471KJQjFIimjHiyOoODxKuqsN3r4Ux5n/Tiag4cL
+X-MS-Exchange-Organization-AuthSource: BN3NAM01FT022.eop-nam01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 24534a55-94b1-431b-789c-08d59e4cda4b
+X-Microsoft-Antispam: UriScan:;BCL:4;PCL:0;RULEID:(7020095)(5600026)(4604075)(4605076)(4608076)(4614076)(1401123)(8001031)(1402068)(71702078);SRVR:BN6PR06MB3394;
+X-Microsoft-Exchange-Diagnostics: 1;BN6PR06MB3394;3:Srs3jMyTTXYVEJ30H7+nD8b1C3VEvolg+vWTESf3gWIZq5kea6gNOvc6WrDRpEoFHW2nmX3iTw8ZBXhR4EfObPdPCdc+3cvaEJgq+0v99wCAroed7+UmoAgkO7oxzjmkVEklH8yrk/iH2AAl4JE/FVaPk4OUTYlzQx2AfKu3998yxdcbihzPX3mu2xrDsULlQapuVI9GSdlrhocfsReNV0fJHwvuQmsun4VchLSFOgBBeK9poGCi4lcl8JXrqjHCumE8KF3xz7EkIiwH4X/hlGJtEpFJUgUJ/QamFofG+MU+HnqaSNS8mwRmKZp4wcSjnUDx/iv18A6KK7i1Gc495oTIslZEXIoUJRXMWBaetAA=;25:tDelYXIpB31fwtXjQor/8MHdsQHBvck2UrPXGN/wYno0/yLrGm1X4RqY0ItIlgiADPoPdRBVp8bd27Dm9gizx2VFKphVqEKGu7IN5SF28wCTmZu4wqZLWaHHNI/RwBMrDwUpcgdkO0YlSd+6C+4cT21DSm1DQ/Gg+51aGNuEvDTBLeKhgy3a8Aoo54NwxBN4I+zcNgYrYxNrHSxZjReRDGcqya7BS3jnrFX19t8thHCNyCFhlxdTz7IAZ+51AOP2lRIUoR9uovamBetR46QeI0AQ+yJriSKGSxVG99zIsRCy/xKmMgeGocb/lxusqk6KkmF+Zzj07zJyuQ+1kiFIFw==
+X-MS-TrafficTypeDiagnostic: BN6PR06MB3394:
+X-Microsoft-Exchange-Diagnostics: 1;BN6PR06MB3394;31:VWCIVJ2x779QVsX1Ifayc4B5CrfQ33IznCqhFqKVTranuLQeXiZqYfEjxBoBqzeIvto0T8MINt5g9gzm9LRgVr2D4K6aKhNsWNwxZWo7vTETO0vgTvXzOb4NhurWmP5IQ92DFhxZLwNQKtApmWuscorC1DSRnIGg8m81ooMEKjcO9aOphzXihd+i9oVDCW2FaCYiw+DsGOa6bUIx7Xk9+/7V7WgBuvneMKOcwQj9D/g=;20:S3EWGTfi3EtCyUXY4f9oyPVIIuAY6/hvFk10MFCnw0cYgIe2Gdf+3w4LQ/y9byV5jYBovnvLBKOKy45Qz3qhRv+wh7sxqpBIUCyrvh2jVpxNPqkw6shPnb0lZTFe+pJUIoQcp5nZbsRa/RjCn0stXjEsQbMaYfQZKAu5X9+dr3z3MkvRcBv/Zb8lrAKy+eQNOhBfZ03DVYZjt01Qfnek74+lbNnbzYWynsyhe+V3GPrGfRuvY+aM5CNfcs5InDUCH+ewsJB3efHqCJ8iH0VEAQYxJabewO8VOEV+xacdp7nk2g489Om43GK1dMSvgNrA895VETa4sqzD1SX62jWhGgmIUI4xjjZYmCKJnhRRygdk0gFIYt/JV7ytkI77G/xPvuzz5i4NpfDvkzr7mVMBtVVLnzp0J30FVx6kldYVvyqaaj8lBsg9PowV+67Di63qZeJ99100RJh4OMGcI73jMgrXou0JPUvmx3zqb95TMCaAquqN2szJT5kIuIMRX1JA
+X-Exchange-Antispam-Report-Test: UriScan:(249743533935495);
+X-Exchange-Antispam-Report-CFA-Test: BCL:4;PCL:0;RULEID:(701105)(2401047)(8121501046)(1430347)(1431041)(1432103)(1551027)(9101536074)(3231221)(902075)(913088)(7045084)(944501327)(52103095)(52105095)(52106095)(52401095)(52505095)(52406095)(10201501046)(3002001)(93006095)(93005095)(1610001)(8301001075)(8301003183)(9300000083)(9301000104)(201708071742011);SRVR:BN6PR06MB3394;BCL:4;PCL:0;RULEID:;SRVR:BN6PR06MB3394;
+X-Microsoft-Exchange-Diagnostics: 1;BN6PR06MB3394;4:EVtCyIgtFXNBPd4eHsES9WKR0AQh+xhs0+9AUaDUEGC50y3YVHfpKVQFzT18eBeBMwe2044ywLfYmNJJqIpYWrir4oIdgrbHMkR3rbBR+kQPw3BXxnixvf3qqNBAfJgBcl5OBOqP8gPF+7BYVYnRH7prTTJu/Iu0yUvnhrlRo/EGPvNmirHFbfv0MhObEjO5Zu/jED06Q55oqLBCpdz4Ky5fUiv9spC4oMaJ0/b+IQkE6Hvpq4/sXtMn5wXKb/OGmo16M89Kjas88nsqfy8xkSZiBLLvJelD3T1b2Rm3dvxMEiB4ehD5RFDmgcVQ7i2L
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Exchange-Diagnostics: =?utf-8?B?MTtCTjZQUjA2TUIzMzk0OzIzOllQL0duOFU5bTVmbnRVdy96UHIyZE1XWnJ1?=
+ =?utf-8?B?cnNFY2pOWDlEMEI1anBNK2JBTHdXSWpoRnJWSlprUFFxaG9nbE1qL3FienE0?=
+ =?utf-8?B?RjJSUEZkMkc1UWVIclNkdnpGTURKdzNRMFhCUzdGSUoyb1pKVzhSN1RQZFhu?=
+ =?utf-8?B?ZFU1Z041MEtncEpXWlRxSE43a2RPbUtGLzNYTDFzZHJ5WEZSSy9ia3JHalM3?=
+ =?utf-8?B?WXJ3VlZhOVBVUlk2Y1pQeGY4cmdDKytNOUgwMG1WYnF3NDBHNjV1eitiMHhM?=
+ =?utf-8?B?UnYwazU1Z1FxaWludFVGY3dTY0cxdm5ZS0hMbWpQYWNqQkRaTUJyeGM3MGZT?=
+ =?utf-8?B?ZXBLT25LVlEzcFE4S1NIcjlIMVNOakJOMzIvbHM0QTAvWXdVbC9Qak0xd3dL?=
+ =?utf-8?B?SkVWWWR3WnNnR1FDMDAzMmZQSnhCd1FtK0paNTNnMkQya29hcjliekNYN3d2?=
+ =?utf-8?B?VENFOFFqbzJSNU9Jdys5OUlBMjJOMnVUNGRtUWozNlV3RS91eGRvYjZLd2l3?=
+ =?utf-8?B?MkwzK24xUE52UmxXOFFpUlBMY0lnNzFvblhjbGZLdmJsWU1EZVRUSXZjMzRB?=
+ =?utf-8?B?Ym9neW5ZTEdBM3JLdU5rUzdSTEpBK3hEdnBWdjZwZmp3WmV5SFJuQU5vdTJo?=
+ =?utf-8?B?WGhST3h3bGszSjJVMmtKL24xVlhjN1JQS3docXFlKzczRElnbGU5Qy93MW9v?=
+ =?utf-8?B?c0txUzBlRyt4alpJRjJBbHRXcHZTWUNBV3RqcXZLQWFpVnQ0NEhwVkFEOFQr?=
+ =?utf-8?B?OVA4azNraVJrUS9rQ0VDYlhKcFpGcDdyalVQbm9Kd2t0K3lRQXBnakZsZEg3?=
+ =?utf-8?B?OTFiMithaUpYTlVsRlhQMnBMV01aMmwyWGxkdFl2SDlmczEwWkQzVnNzbTc0?=
+ =?utf-8?B?enZVTGpUWjZMejBKcVljTmRmUWJvTkgvRDg3b3FEQnBRM1gvNWJNY0ZETGpl?=
+ =?utf-8?B?c3p4MVJBMTZpUkdsUDFocmlyUCtPaTRYdnhKNHhpRVdUaTRTVHdzR1YzdkxC?=
+ =?utf-8?B?UnBudG8rUFU5MnFlRzQ1MWVnYW1yYkNTcHFoelZyWVFpSnJ1UVlPbXZhVVNt?=
+ =?utf-8?B?anJzRk0vZVdvL1NUbG1iaVVvV1lkZ3JPS3BMeFp2c0pMRkU2endCRHBUb1dZ?=
+ =?utf-8?B?d3FuQytDaGxndThOMkgvK0RwNFA5ei9JMEFRRlIzbXJaMXhKMXFMUlJWRUlo?=
+ =?utf-8?B?TU1IeS85WXl3cXE4bnNhTGxMR0d4ODVtV2pvK2FnT3Nkb0pUUTB4T0p3REdU?=
+ =?utf-8?B?OHZQeE0wdWFhakNHekZwbzF0YjkzYjluNU5kc1NMSG1QekpxSDZWaDlZdGNQ?=
+ =?utf-8?B?WG9sTGhubFUzUWp4MEh3RFV2NHBINGRJdUd6ZlBncjE1d0krMDlGcWNSdjkr?=
+ =?utf-8?B?V0c4T254TVFvV2IreDUySWU4eFFMWUM3QmdZV0plcStRWTZ4QkY1WWRuWVhT?=
+ =?utf-8?B?L2RZRk9ZZFVLVU5EeDh1c1FLMU5KY1RZU1hNeEV0ZFp4ejFzSlYzVEx6aDhz?=
+ =?utf-8?Q?wJJHvlcBVQPk2O6T8hlVDUDF3KSt+JwO33MS0hTht7UxRn?=
+X-Microsoft-Exchange-Diagnostics: 1;BN6PR06MB3394;6:Vkvw9Yi2h6M11Q4SP3EKdl3xFYSFLp1XZS5ofDLgGMZzRKLChkkf92SuK5OZpfJOuR27+GMB2lNH+BIkWGPDBm9Hz+XBpAEPm2eUaP2VuaK/h0GkWmtRAxB6C4u+MyqdGTf10DAND6Gttjy79Igghrs3Plk+EGSO/4Pjh0WF/NdB81mnBWE9VKl65t3Eht/evaoYYVV2xkgcQlrv0B/InoRi5MxNilRH9lD5qmbztw/vLTbyKBH/qoo/Rj5FRvZx6qysZQqZ3bDpmLWGc4fn1kv+0ONguCJJGcC38d6zkISxYtwPunmCHoEdJW6eE47wgEd8RisYhckM3+k8VlHwQgSrR578waU24eN3MhkQSs1m/Rqm9TTTaCMNXK4reEMUNTC9ltw8lOgc291l8PSOOoHDXva0/tqx98ZJAmqXmAAWpxi2/SwJV9ttSlxQ+oQaM+HDNkMKjxVF413gAjDoqA==;5:HAeqkCiNPfoxxc2/9cdnLpe9cb5Oj+Y8WD10w7n8ySiRveFyFhL9shpFVU8pJn8AHz0rBSaR7xyF241RjWtaNjXTEn/JP5EpuCDJL23SX+PzCvXiCGv1pYjYsO3WrrcivwKMU0qUTx0jTvYm4vgE9irsIcEFbQvnQSbyBfZ9MF8=;24:a3U3TQJQrCCIpzJ49b7dJBfU/bBtvdJwizW1+o9HkIAXfIJj4Mlt+D9vQ488j85lti3FNtVI8+6PznBrcLcbKvGvbK0954351zbWMuckQU0=
+SpamDiagnosticOutput: 1:5
+SpamDiagnosticMetadata: Default:4
+X-Microsoft-Exchange-Diagnostics: 1;BN6PR06MB3394;7:nqb4pMBXWjveSqhwe8xeranyT9V1v79lwB1Vh2Y38r5VySyFaAqL8lMqKGA8Q0oWQ6X3MN+4InyjsRdHAHKNXtv6wvnvDnXq9UgXKGFtSSCWw8l7P+C05riwjp1rN9in/I7TI/eDQTt08iYh8eUbXO9/CcjqxaHzVe7cHXE5TP3Vc6Tknx+QZfEe9BXGzY4H6PEuInxqmLF0exwj+QT9zE+BLp3kUBCqm7zMcv+SaJ6+9fMt9fzRaitFj+0Xvyfm
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Apr 2018 19:05:25.7219
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 24534a55-94b1-431b-789c-08d59e4cda4b
+X-MS-Exchange-CrossTenant-Id: a1213313-39a4-470f-9cea-e824afd0357d
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR06MB3394
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.8025069
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.0631.013
+X-Microsoft-Exchange-Diagnostics:
+	1;CY1PR0601MB1115;9:/29RawwtqkLPueb3+OFbAZTbizaGA4drOHf7ckAjXmH97a9i36nMkc2FS2Nm6oZrOfx1deAjqBf581M1PaAZDwqPLsnvvRAtJ0rp3kB9Bwqspt3fZ6xaGzTpey+eCmD8
+X-Microsoft-Antispam-Message-Info:
+	c3c+lOdA882GyYYaHY1zL/LD/8jRuMUlvAcBfk6x/dDz53Z8zOXPlCvocAQiXf5xlzvzf2Ym9SMvigMmZvDpIwcMw2bXvw4mcrx1YCvjaigVnJc2tIVDW2RX/jWj59R6r/cLypoNZXUnErlMZLT0RWXSmoS673RkmHy1DkEQk7EAGKtujWT6ZSafZSlcQkPQh46hLEGoAtJ5tJd8WCq/532li8hjU8NOa6t/c6rTtmr2Dm/luo9LgxrDh6Y98j9H36lxTXxMWnuLxZRoL7s+ERyVHYan6q/gZ1lr6LTtyyXXjJGM0yrRKrC8krGnS/3ujyqeaU5Pd+HO2pYt8rSPIrryFV0kA8WstDNEvn3uFO8tW6wiU6k9x4eaKkjSA8gQQh0fgZEzjzIFbWnvKmiGNRBfyrq3M4lJSCFRHBG6ryXPHwGhyckdz0wEkyMdDcuL
+X-Microsoft-Exchange-Diagnostics:
+	1;CY1PR0601MB1115;27:I6vgLnmWbxCi2nBavb8NpMi0yVCcpZJ4u3PeV7x9FW0fmos6fG2kRACl1FOsbDdVs9KQvThePEYuQIuHL2A4HcRiaYRT7gGyDew6JCUN/qcKuG1tPZjd46ihGdDix/w7
+Content-type: multipart/alternative;
+	boundary="B_3606120528_405765076"
+
+> This message is in MIME format. Since your mail reader does not understand
+this format, some or all of this message may not be legible.
+
+--B_3606120528_405765076
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: 7bit
+
+Client Name(s) First and Last: * Kate Roberts and Lou Gerstner
+Date of Client Referral to Foundation Rentals / The Cove: * Monday, April 9, 2018
+Client Email to schedule appointment (required) * kate@anotherplanetent.com
+Client Phone Number for appointment scheduling: * 415-640-3720
+Approximate Date of Move-In or Occupancy (if known): Tuesday, May 1, 2018
+Interested in (check as many as apply):
+1bd units
+2bd units
+Does your client have any pets? Labradoodle (Service Animal)
+Requested Appointment Time or Other Info (optional): Monday, 2:30-3:00
+Please confirm that your client intends to list you as the "referral source" when viewing this property. * Yes, my client will list me as the referral source.
+TERMS OF COMMISSION: See above. Please acknowledge agreement below. * Agree
+Listing Broker: * Foundation Rentals
+Referring Broker/Agent: * Dee Marotta/dm@foundationhomes.com
+
+
+--B_3606120528_405765076
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title></title>
+<meta http-equiv=3D"Content-Language" content=3D"en-us">
+<style type=3D"text/css">
+
+* .location a:hover address, * .location a:hover span {
+	color:blue !important;
+	text-decoration:underline;
+}
+* .file a:hover .file-name{
+	color:green !important;
+}
+.rtl .info .var{
+	float:left;
+	padding:0 10px 0 0;
+	margin:0 10px 12px 0;
+}
+.rtl .info h2{
+	clear:none;
+}
+.rtl .createTD{
+	padding:0 0 0 12px !important;
+}
+.rtl .updateTD{
+	padding:0 12px 0 0 !important;
+}
+.rtl #entryInfo *{
+	text-align:center !important;
+}
+.rtl table .h2{
+	padding:0 0 7px 10px !important;
+}
+.rtl table .var{
+	padding:0 10px 0 0 !important;
+}
+.rtl .mapicon{
+	float:right !important;
+}
+.rtl .adr{
+	padding:2px 25px 2px 0 !important;
+}
+
+</style>
+</head>
+<body title=3D"675472">
+<div style=3D"font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans=
+-serif;">
+<table class=3D"readonly" cellspacing=3D"0" cellpadding=3D"0" style=3D"width:100%;b=
+order-bottom:1px solid #eee;font-size:12px;line-height:135%;font-family:'Luc=
+ida Grande','Lucida Sans Unicode', Tahoma, sans-serif">
+<tbody>
+<tr style=3D"background-color:#F5F5F5">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Client Name(s) First and Last: <span class=3D"req" style=3D"color:red">*</span>=
+ </th>
+<td id=3D"roField117" style=3D"vertical-align:top;color:#333;width:60%;padding:=
+7px 9px 7px 0;border-top:1px solid #eee;">
+<div>Kate Roberts and Lou Gerstner</div>
+</td>
+</tr>
+<tr style=3D"background-color:#FFFFFF">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Date of Client Referral to Foundation Rentals / The Cove: <span class=3D"req"=
+ style=3D"color:red;">
+*</span> </th>
+<td style=3D"vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;bo=
+rder-top:1px solid #eee;">
+<abbr class=3D"dtstamp" title=3D"20180409" style=3D"font-style:normal;border:none=
+;">Monday, April 9, 2018</abbr>
+</td>
+</tr>
+<tr style=3D"background-color:#F5F5F5">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Client Email to schedule appointment (required) <span class=3D"req" style=3D"co=
+lor:red;">
+*</span> </th>
+<td style=3D"vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;bo=
+rder-top:1px solid #eee;">
+<a class=3D"email" href=3D"mailto:kate@anotherplanetent.com">kate@anotherplanet=
+ent.com</a>
+</td>
+</tr>
+<tr style=3D"background-color:#FFFFFF">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Client Phone Number for appointment scheduling: <span class=3D"req" style=3D"co=
+lor:red">
+*</span> </th>
+<td id=3D"roField133" style=3D"vertical-align:top;color:#333;width:60%;padding:=
+7px 9px 7px 0;border-top:1px solid #eee;">
+<div>415-640-3720</div>
+</td>
+</tr>
+<tr style=3D"background-color:#F5F5F5">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Approximate Date of Move-In or Occupancy (if known): </th>
+<td style=3D"vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;bo=
+rder-top:1px solid #eee;">
+<abbr class=3D"dtstamp" title=3D"20180501" style=3D"font-style:normal;border:none=
+;">Tuesday, May 1, 2018</abbr>
+</td>
+</tr>
+<tr class=3D"checkbox" style=3D"background-color:#FFFFFF">
+<th style=3D"border-top: 1px solid rgb(238, 238, 238); padding: 7px 9px; vert=
+ical-align: top; color: rgb(34, 34, 34); text-align: left;">
+Interested in (check as many as apply): </th>
+<td style=3D"border-top: 1px solid rgb(238, 238, 238); padding: 7px 9px 3px 0=
+; vertical-align: top; color: rgb(51, 51, 51); width: 60%;">
+<ul style=3D"list-style:inside;margin:0;padding:0;">
+<li style=3D"margin:0;padding:0 0 4px 0;">1bd units </li><li style=3D"margin:0;=
+padding:0 0 4px 0;">2bd units </li></ul>
+</td>
+</tr>
+<tr style=3D"background-color:#F5F5F5">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Does your client have any pets? </th>
+<td id=3D"roField131" style=3D"vertical-align:top;color:#333;width:60%;padding:=
+7px 9px 7px 0;border-top:1px solid #eee;">
+<div>Labradoodle (Service Animal)</div>
+</td>
+</tr>
+<tr style=3D"background-color:#FFFFFF">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Requested Appointment Time or Other Info (optional): </th>
+<td style=3D"vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;bo=
+rder-top:1px solid #eee;">
+<div>Monday, 2:30-3:00</div>
+</td>
+</tr>
+<tr style=3D"background-color:#F5F5F5">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Please confirm that your client intends to list you as the &quot;referral s=
+ource&quot; when viewing this property.
+<span class=3D"req" style=3D"color:red">*</span> </th>
+<td style=3D"vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;bo=
+rder-top:1px solid #eee;">
+<div>Yes, my client will list me as the referral source.</div>
+</td>
+</tr>
+<tr style=3D"background-color:#FFFFFF">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+TERMS OF COMMISSION: See above. Please acknowledge agreement below. <span c=
+lass=3D"req" style=3D"color:red">
+*</span> </th>
+<td style=3D"vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;bo=
+rder-top:1px solid #eee;">
+<div>Agree</div>
+</td>
+</tr>
+<tr style=3D"background-color:#F5F5F5">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Listing Broker: <span class=3D"req" style=3D"color:red">*</span> </th>
+<td style=3D"vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;bo=
+rder-top:1px solid #eee;">
+<div>Foundation Rentals</div>
+</td>
+</tr>
+<tr style=3D"background-color:#FFFFFF">
+<th style=3D"vertical-align:top;color:#222;text-align:left;padding:7px 9px 7p=
+x 9px;border-top:1px solid #eee;">
+Referring Broker/Agent: <span class=3D"req" style=3D"color:red">*</span> </th>
+<td id=3D"roField129" style=3D"vertical-align:top;color:#333;width:60%;padding:=
+7px 9px 7px 0;border-top:1px solid #eee;">
+<div>Dee Marotta/dm@foundationhomes.com</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://click.outbound.surv=
+eymonkey.com/q/LBBTa6PAwViAb2iAJ3BulA~~/AAAAAQA~/RgRcrj50PlcMc3VydmV5bW9ua2V=
+5WAQAAAAFQgoAB3S5y1oOqLhMUhxsZWFzaW5nQHRoZWNvdmVhdHRpYnVyb24uY29t">
+</body>
+</html>
+
+
+--B_3606120528_405765076--
+

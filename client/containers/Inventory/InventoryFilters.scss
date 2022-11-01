@@ -1,0 +1,29 @@
+@import '../../sass/_colors.scss';
+
+.selectedFilters {
+  padding: 0 0 .75em 0;
+
+  > div {
+    display: inline-block;
+    min-height: 22px;
+    margin: .25em;
+    padding: 1px .5em;
+    vertical-align: top;
+    border: 1px solid $grey500;
+    border-radius: .8em;
+  }
+}
+
+.priceSummary {
+  display: flex;
+  align-items: center;
+}
+
+.minusSymbol {
+  padding-left: .165em;
+}
+
+.marketRent {
+  font-size: .75rem;
+  padding-left: .165em;
+}

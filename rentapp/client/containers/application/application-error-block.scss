@@ -1,0 +1,21 @@
+.block_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: (760rem/16);
+  margin: 0 auto;
+  padding: (44em/16);
+
+  .message {
+    margin: (49em/16) 0 (80em/16) 0;
+  }
+
+  .block_description {
+    max-width: (465rem/16);
+
+    .title {
+      font-size: (30em/16);
+    }
+  }
+}

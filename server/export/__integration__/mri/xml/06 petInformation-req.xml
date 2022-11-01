@@ -1,0 +1,12 @@
+{{#with this}}
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MRI_S-PMRM_PetInformation>
+  <entry>
+    <ResidentID>{{nameId}}</ResidentID>
+    <PetType>O</PetType>
+    <PetName>Matty</PetName>
+    <PetSize>Medium</PetSize>
+    <ServiceAnimalForSpecialNeeds>N</ServiceAnimalForSpecialNeeds>
+  </entry>
+</MRI_S-PMRM_PetInformation>
+{{/with}}

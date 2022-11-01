@@ -1,0 +1,40 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_fonts.scss';
+@import '../../../../client/sass/_responsive.mixins.scss';
+
+.year-field {
+  padding-top: 1rem;
+}
+
+.block {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.overlay {
+  width: (350rem/8);
+}
+
+.overlay-wrapper {
+  overflow: auto;
+  max-height: (250rem/8);
+}
+
+.my-btn {
+  text-transform: none;
+}
+
+.field-title {
+  margin-bottom: .5rem;
+}
+
+.warning {
+  p {
+    margin-top: (-5rem/16);
+    margin-bottom: (8rem/16);
+  }
+}

@@ -1,0 +1,175 @@
+@import '../../sass/_colors';
+
+.loadingLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .35rem .825rem;
+  background: #eee;
+}
+
+.loadingLabelContainer {
+  position: relative;
+}
+
+.editor {
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 16px;
+  cursor: text;
+  color: rgb(85, 85, 85);
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background: #fefefe;
+
+  figure {
+    margin: 1rem 0;
+  }
+
+  :global(.public-DraftEditor-content) {
+    min-height: 140px;
+  }
+
+  :global(input[type=text]) {
+    font-family: inherit;
+    font-size: 15px;
+    width: 220px;
+    height: 34px;
+    padding: 0 12px;
+    color: #444;
+    border: none;
+    background-color: transparent;
+  }
+
+  &.readOnly {
+    color: rgba(0 ,0, 0, .26);
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  /* sideToolbar */
+
+  div[class^=draftJsToolbar__popup] {
+    width: 37px;
+
+    button {
+      background-color: #fbfbfb;
+
+      svg {
+        fill: $brown500;
+      }
+
+      &:hover {
+        background: #f3f3f3;
+      }
+    }
+  }
+
+  .toolbarButtonWrapper {
+    display: inline-block;
+
+    button {
+      width: 36px;
+      height: 34px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      vertical-align: bottom;
+      border: 0;
+    }
+  }
+
+  &.useFixedHeight {
+    :global(.DraftEditor-root) {
+      overflow-y: auto;
+      min-height: 360px;
+      max-height: 360px;
+    }
+  }
+
+  &.fitContent {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.transparent {
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+[data-component='flyout-content'].toolbar {
+  background-color: $brown500;
+
+  div[class^=draftJsToolbar__buttonWrapper] button {
+    color: $white;
+    background-color: $brown500;
+
+    &:hover {
+      background-color: $brown700;
+    }
+
+    svg {
+      color: $white;
+
+      fill: $white;
+    }
+  }
+
+  input.txt-add-link {
+    display: block;
+    min-width: 300px;
+    padding: 10px 15px;
+    color: white;
+  }
+
+  ::placeholder {
+    color: $brown100;
+  }
+
+  &:after {
+    border-top-color: $brown500;
+  }
+}
+
+.options {
+  padding-bottom: 10px;
+}
+
+.characterRemaining {
+  float: right;
+}
+
+.alignmentTool {
+  position: absolute;
+}
+
+div[class^=draftJsEmojiPlugin__alignmentTool] {
+  background-color: $brown500;
+
+  button {
+    color: $white;
+    background-color: $brown500;
+
+    &:hover {
+      background-color: $brown700;
+    }
+
+    svg {
+      color: $white;
+
+      fill: $white;
+    }
+  }
+
+  &:after {
+    border-top-color: $brown500;
+  }
+}

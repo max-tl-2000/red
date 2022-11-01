@@ -1,0 +1,32 @@
+version: v1.5.2
+ignore:
+  'npm:negotiator:20160616':
+    - socket.io > engine.io > accepts > negotiator:
+        reason: None given
+        expires: '2016-08-18T13:13:38.759Z'
+  'npm:node-uuid:20160328':
+    - csscomb > csscomb-core > vow-fs > node-uuid:
+        reason: None given
+        expires: '2016-08-18T13:13:38.759Z'
+patch:
+  'npm:minimatch:20160620':
+    - mocha > glob > minimatch:
+        patched: '2016-07-19T13:06:50.419Z'
+    - csscomb > csscomb-core > vow-fs > glob > minimatch:
+        patched: '2016-07-19T13:06:50.419Z'
+    - csscomb > csscomb-core > minimatch:
+        patched: '2016-07-19T13:06:50.419Z'
+    - shell-executor > clix > glob-expand > glob > minimatch:
+        patched: '2016-07-19T13:06:50.419Z'
+    - forever > forever-monitor > minimatch:
+        patched: '2016-07-19T13:06:50.419Z'
+  'npm:request:20160119':
+    - plivo > request:
+        patched: '2016-07-19T13:06:50.419Z'
+  'npm:ws:20160624':
+    - socket.io > socket.io-client > engine.io-client > ws:
+        patched: '2016-07-19T13:06:50.419Z'
+    - socket.io-client > engine.io-client > ws:
+        patched: '2016-07-19T13:06:50.419Z'
+    - socket.io > engine.io > ws:
+        patched: '2016-07-19T13:06:50.419Z'

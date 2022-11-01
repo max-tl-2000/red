@@ -1,0 +1,6 @@
+{
+    "reporterEnabled": "tap,mocha-junit-reporter",
+    "mochaJunitReporterReporterOptions": {
+	    "mochaFile": "./report_integration/test-results.xml"
+    }
+}

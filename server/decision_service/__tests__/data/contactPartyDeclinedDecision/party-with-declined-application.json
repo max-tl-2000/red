@@ -1,0 +1,353 @@
+{
+    "id": "3ad8f659-14f5-4c1c-b111-c35d70f72cd4",
+    "pets": null,
+    "comms": [],
+    "score": "prospect",
+    "state": "Applicant",
+    "tasks": null,
+    "teams": [
+      "733080bc-7462-4b81-8d24-aafcae69223c"
+    ],
+    "events": [
+      {
+        "id": "251608f1-c554-4afa-8ca8-90e0f0d1fe18",
+        "event": "application_status_updated",
+        "userId": null,
+        "partyId": "3ad8f659-14f5-4c1c-b111-c35d70f72cd4",
+        "metadata": {
+          "skipEmail": true,
+          "applicationId": "237764cf-6c0f-43a8-9d36-fafde997d403",
+          "applicationStatus": "canceled",
+          "createDeclinedTask": true
+        },
+        "created_at": "2022-02-07T10:24:50.709929+00:00",
+        "requestIds": [],
+        "updated_at": "2022-02-07T10:24:50.709929+00:00",
+        "partyMemberId": null,
+        "transaction_id": 42916
+      }
+    ],
+    "leases": null,
+    "quotes": [],
+    "userId": "a48ddad3-e8fa-4ea9-94ce-d9a20d9da7af",
+    "endDate": null,
+    "members": [
+      {
+        "person": {
+          "id": "ec4c2728-fc1a-4066-9826-fa3096ded450",
+          "dob": "1999-11-11T00:00:00+00:00",
+          "idType": "State",
+          "idState": null,
+          "idValue": null,
+          "fullName": "Claudiu no2",
+          "idCountry": null,
+          "created_at": "2022-02-07T10:21:55.105999+00:00",
+          "idProvince": null,
+          "mergedWith": null,
+          "updated_at": "2022-02-07T10:24:48.077136+00:00",
+          "modified_by": "a48ddad3-e8fa-4ea9-94ce-d9a20d9da7af",
+          "preferredName": null,
+          "isSuspiciousContent": false
+        },
+        "company": null,
+        "contactInfo": [
+          {
+            "id": "60ebdf36-f828-4217-a81e-2dd3ce9a7eeb",
+            "type": "email",
+            "value": "claudiu+no2@reva.tech",
+            "isSpam": false,
+            "imported": false,
+            "metadata": {},
+            "personId": "ec4c2728-fc1a-4066-9826-fa3096ded450",
+            "isPrimary": true,
+            "created_at": "2022-02-07T10:21:55.105999+00:00",
+            "updated_at": "2022-02-07T10:21:55.105999+00:00",
+            "markedAsSpamBy": null
+          }
+        ],
+        "partyMember": {
+          "id": "fdca844a-ac54-41b6-a9a6-88c1ea702e53",
+          "isSpam": false,
+          "endDate": null,
+          "partyId": "3ad8f659-14f5-4c1c-b111-c35d70f72cd4",
+          "personId": "ec4c2728-fc1a-4066-9826-fa3096ded450",
+          "companyId": null,
+          "startDate": "2022-02-07T10:21:55.105999+00:00",
+          "created_at": "2022-02-07T10:21:55.443+00:00",
+          "memberType": "Resident",
+          "updated_at": "2022-02-07T10:24:48.077136+00:00",
+          "vacateDate": null,
+          "memberState": "Applicant",
+          "modified_by": "a48ddad3-e8fa-4ea9-94ce-d9a20d9da7af",
+          "guaranteedBy": null
+        }
+      }
+    ],
+    "children": null,
+    "invoices": [
+      {
+        "id": "5df660ed-28ae-4712-9a90-59c93829a8a5",
+        "quoteId": "e6eaac0f-7d44-4a48-afe8-f4b97d65335e",
+        "created_at": "2022-02-07T10:24:29.383+00:00",
+        "propertyId": "45128d34-0188-4cd0-b448-8cd260ad0fb0",
+        "updated_at": "2022-02-07T10:24:48.077136+00:00",
+        "receiptPayload": {},
+        "applicationFeeId": "a9f86e52-1d8a-4c56-8494-51a923a696d3",
+        "holdDepositFeeId": null,
+        "paymentCompleted": true,
+        "partyApplicationId": "2920b698-f2cc-468a-9045-b560bafc752d",
+        "appFeeTransactionId": null,
+        "personApplicationId": "4090f8e5-8f29-4693-a2ec-5f0074a0259c",
+        "applicationFeeAmount": 43.50,
+        "holdDepositFeeIdAmount": null,
+        "holdDepositTransactionId": null,
+        "applicationFeeWaiverAmount": null
+      }
+    ],
+    "metadata": {
+      "creationType": "user",
+      "originalTeam": "733080bc-7462-4b81-8d24-aafcae69223c",
+      "favoriteUnits": [
+        "0becd0a0-47f9-4093-bd2a-66db2e1673e6"
+      ],
+      "screeningVersion": "v1",
+      "firstContactedDate": "2022-02-07T10:21:55.094Z",
+      "firstContactChannel": "Chat"
+    },
+    "property": [
+      {
+        "id": "45128d34-0188-4cd0-b448-8cd260ad0fb0",
+        "app": {
+          "id": "com.maximusrepartners.rxp",
+          "name": "Maximus Pulse",
+          "scheme": "maximusrep-rxp",
+          "autoInvite": false,
+          "allowAccess": true,
+          "appStoreUrl": "https://itunes.apple.com/us/app/maximus/id<app-ID>?mt=8",
+          "playStoreUrl": "https://play.google.com/store/apps/details?id=com.maximus.rxp"
+        },
+        "name": "swparkme",
+        "settings": {
+          "moveoutNoticePeriod": 30
+        },
+        "timeZone": "America/Los_Angeles",
+        "displayName": "Parkmerced Apartments",
+        "propertyLegalName": "Parkmerced LLC"
+      }
+    ],
+    "vehicles": null,
+    "leaseType": "traditional",
+    "ownerTeam": "733080bc-7462-4b81-8d24-aafcae69223c",
+    "startDate": "2022-02-07T10:21:55.105999+00:00",
+    "created_at": "2022-02-07T10:21:55.198+00:00",
+    "invOnHolds": null,
+    "mergedWith": null,
+    "promotions": [
+      {
+        "id": "237764cf-6c0f-43a8-9d36-fafde997d403",
+        "partyId": "3ad8f659-14f5-4c1c-b111-c35d70f72cd4",
+        "quoteId": "e6eaac0f-7d44-4a48-afe8-f4b97d65335e",
+        "approvedBy": null,
+        "created_at": "2022-02-07T10:24:50.786+00:00",
+        "updated_at": "2022-02-07T10:24:50.786+00:00",
+        "leaseTermId": "077361cd-5c3f-4986-86ac-d0fdc753a2b2",
+        "modified_by": null,
+        "approvalDate": null,
+        "promotionStatus": "canceled"
+      }
+    ],
+    "updated_at": "2022-02-07T10:24:48.077136+00:00",
+    "archiveDate": null,
+    "modified_by": "a48ddad3-e8fa-4ea9-94ce-d9a20d9da7af",
+    "seedPartyId": null,
+    "partyGroupId": "94d021e4-63d5-463c-b13c-d1a5c2a32123",
+    "transactions": null,
+    "workflowName": "newLease",
+    "collaborators": [
+      "a48ddad3-e8fa-4ea9-94ce-d9a20d9da7af"
+    ],
+    "ownerTeamData": [
+      {
+        "id": "733080bc-7462-4b81-8d24-aafcae69223c",
+        "name": "parkLeasing",
+        "module": "leasing",
+        "endDate": null,
+        "metadata": {
+          "call": {
+            "wrapUpDelayAfterCallEnds": 10
+          },
+          "comms": {
+            "nativeCommsEnabled": true,
+            "allowBlockContactFlag": false,
+            "sendCalendarCommsFlag": true
+          },
+          "teamId": "733080bc-7462-4b81-8d24-aafcae69223c",
+          "features": {
+            "disableNewLeasePartyCreation": false
+          },
+          "callQueue": {
+            "enabled": false,
+            "timeToVoiceMail": 50
+          },
+          "callRecordingSetup": "NO_RECORDING",
+          "associatedTeamNames": "theHUB, parkRS",
+          "callRoutingStrategy": "Owner",
+          "partyRoutingStrategy": "Round Robin"
+        },
+        "timeZone": "America/Los_Angeles",
+        "created_at": "2022-01-03T10:07:33.886+00:00",
+        "updated_at": "2022-01-03T10:08:30.259326+00:00",
+        "description": "",
+        "displayName": "Parkmerced Leasing",
+        "officeHours": {
+          "Friday": {
+            "endTimeOffsetInMin": 1080,
+            "startTimeOffsetInMin": 540
+          },
+          "Monday": {
+            "endTimeOffsetInMin": 1080,
+            "startTimeOffsetInMin": 540
+          },
+          "Sunday": {
+            "endTimeOffsetInMin": 1020,
+            "startTimeOffsetInMin": 600
+          },
+          "Tuesday": {
+            "endTimeOffsetInMin": 1080,
+            "startTimeOffsetInMin": 540
+          },
+          "Saturday": {
+            "endTimeOffsetInMin": 1080,
+            "startTimeOffsetInMin": 540
+          },
+          "Thursday": {
+            "endTimeOffsetInMin": 1080,
+            "startTimeOffsetInMin": 540
+          },
+          "Wednesday": {
+            "endTimeOffsetInMin": 1080,
+            "startTimeOffsetInMin": 540
+          }
+        },
+        "voiceMessageId": "4ffbef6d-1a53-4750-897e-c65f301ed7fe",
+        "externalCalendars": {},
+        "callCenterPhoneNumber": ""
+      }
+    ],
+    "workflowState": "active",
+    "activeLeaseData": null,
+    "emailIdentifier": "3ad8f65914f54c1cb111",
+    "isTransferLease": true,
+    "screeningResults": {
+      "submissionRequests": [
+        {
+          "id": "8f6d3cad-e3ed-4979-a705-b8f9ca9cf168",
+          "rentData": {
+            "rent": 3950,
+            "deposit": 1000,
+            "leaseNameId": "b03a45d2-7b8f-4b85-b2b5-2129cc4ca344",
+            "leaseTermMonths": 12
+          }
+        }
+      ],
+      "submissionResponses": [
+        {
+          "id": "8283530e-1dc0-4781-a602-37753c53e9ed",
+          "status": "Complete",
+          "submissionRequestId": "8f6d3cad-e3ed-4979-a705-b8f9ca9cf168"
+        }
+      ]
+    },
+    "createdFromCommId": null,
+    "partyApplications": [
+      {
+        "id": "2920b698-f2cc-468a-9045-b560bafc752d",
+        "isHeld": false,
+        "partyId": "3ad8f659-14f5-4c1c-b111-c35d70f72cd4",
+        "created_at": "2022-02-07T10:21:56.586+00:00",
+        "holdReason": "",
+        "updated_at": "2022-02-07T10:24:50.386445+00:00",
+        "minDeniedAt": null,
+        "maxApprovedAt": 5000.00,
+        "applicationData": {},
+        "screeningVersion": 1,
+        "overrideNewCountChecks": null
+      }
+    ],
+    "assignedPropertyId": "45128d34-0188-4cd0-b448-8cd260ad0fb0",
+    "personApplications": [
+      {
+        "id": "4090f8e5-8f29-4693-a2ec-5f0074a0259c",
+        "ssn": null,
+        "itin": null,
+        "partyId": "3ad8f659-14f5-4c1c-b111-c35d70f72cd4",
+        "personId": "ec4c2728-fc1a-4066-9826-fa3096ded450",
+        "tosEvents": null,
+        "copiedFrom": null,
+        "created_at": "2022-02-07T10:23:47.627+00:00",
+        "updated_at": "2022-02-07T10:24:48.077136+00:00",
+        "applicantId": "f87c4970-454d-411e-86a5-4b6670072f32",
+        "isFeeWaived": false,
+        "paymentLink": null,
+        "additionalData": {},
+        "sendSsnEnabled": false,
+        "applicationData": {
+          "id": "",
+          "email": "claudiu+no2@reva.tech",
+          "suffix": "",
+          "address": {
+            "enteredByUser": {
+              "city": "Baltimore",
+              "line1": "Collins Avenue",
+              "line2": "",
+              "state": "MD",
+              "address": "Collins Avenue",
+              "postalCode": "21229",
+              "unparsedAddress": "Collins Avenue Baltimore MD 21229"
+            }
+          },
+          "lastName": "no2",
+          "firstName": "Claudiu",
+          "guarantors": [],
+          "addressLine": "",
+          "dateOfBirth": "1999-11-11",
+          "grossIncome": 2,
+          "invitedToApply": "",
+          "otherApplicants": [],
+          "grossIncomeMonthly": 0,
+          "reportCopyRequested": false,
+          "grossIncomeFrequency": "YEARLY",
+          "haveInternationalAddress": false
+        },
+        "endedAsMergedAt": null,
+        "feeWaiverReason": null,
+        "paymentCompleted": true,
+        "applicationStatus": "paid",
+        "createdFromCommId": null,
+        "partyApplicationId": "2920b698-f2cc-468a-9045-b560bafc752d",
+        "applicationCompleted": null
+      }
+    ],
+    "storedUnitsFilters": {
+      "moveInDate": {
+        "max": "",
+        "min": "2022-06-07T07:00:00.000Z"
+      },
+      "numBedrooms": [
+        "TWO_BEDS"
+      ],
+      "propertyIds": [
+        "45128d34-0188-4cd0-b448-8cd260ad0fb0"
+      ]
+    },
+    "teamPropertyProgramId": null,
+    "qualificationQuestions": {
+      "moveInTime": "BEYOND_4_MONTHS",
+      "numBedrooms": [
+        "TWO_BEDS"
+      ],
+      "groupProfile": "STUDENTS",
+      "cashAvailable": "NO"
+    },
+    "fallbackTeamPropertyProgramId": null
+  }

@@ -1,0 +1,19 @@
+@import '../../sass/_colors.scss';
+
+.searchContainer {
+  [data-component='dropdown'] {
+    max-width: (875rem/16);
+  }
+
+  [data-component='textbox'] {
+    width: 100%;
+
+    [data-component='textbox-clear'] {
+      margin-right: .5rem;
+    }
+  }
+}
+
+.searchOverlay {
+  max-width: (875rem/16);
+}

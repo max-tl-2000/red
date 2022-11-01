@@ -1,0 +1,24 @@
+@import '../../sass/_colors.scss';
+
+.message-block {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: (32em/16);
+
+  .icon {
+    flex: 1 0 5%;
+  }
+
+  .message {
+    flex: 1 0 75%;
+    color: rgba($black, .54);
+  }
+
+  .date {
+    flex: 1 0 (150em/16);
+    color: rgba($black, .54);
+  }
+}

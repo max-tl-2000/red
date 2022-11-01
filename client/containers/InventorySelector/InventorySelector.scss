@@ -1,0 +1,49 @@
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_colors.scss';
+
+.dropdown-wrapper-item p {
+  display: inline;
+}
+
+.dropdown-item {
+  margin-right: .2rem;
+}
+
+.price-secondary p {
+  @include textSecondary();
+}
+
+.tags-box {
+  padding: (8rem/16);
+  border-radius: (2rem/16);
+  background-color: $grey200;
+}
+
+.inventory-overlay {
+  min-width: (330rem/16);
+
+  [data-component='list'] {
+    .item-list-header {
+      [data-component='main-section'] > div {
+        margin-top: (8rem/16);
+        padding: (8rem/16) 0 (8rem/16) 1rem;
+      }
+
+      &:first-child {
+        [data-component='main-section'] > div {
+          margin-top: 0;
+        }
+      }
+    }
+
+    [data-component='list-item'] {
+      max-width: (300rem/16);
+      max-height: (376rem/16);
+      padding: (10rem/16) 0 (10rem/16) 1rem;
+
+      [data-component='main-section'] > div {
+        padding: 0;
+      }
+    }
+  }
+}

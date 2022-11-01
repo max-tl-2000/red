@@ -1,0 +1,7 @@
+{
+  "unknown": {
+    "somekey": "object",
+    "boolean": true,
+    "arr": [1, 2, 3]
+  }
+}

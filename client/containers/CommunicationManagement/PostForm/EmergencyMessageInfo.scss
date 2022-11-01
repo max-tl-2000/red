@@ -1,0 +1,18 @@
+@import '../../../sass/_colors.scss';
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background-color: $amber200;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+
+  fill: rgba($black, .54);
+};

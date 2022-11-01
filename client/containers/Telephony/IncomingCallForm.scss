@@ -1,0 +1,112 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+.mainContainerStyle {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  width: (320rem/16);
+  min-height: (184rem/16);
+  max-height: 50vh;
+  margin: 2rem;
+  background: $grey900;
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, .24), 0 0 1rem 0 rgba(0, 0, 0, .12);
+
+  // order matters, this kind of selector should not be added without a
+  // a parent selector otherwise this will become a global css and will
+  // affect all p[data-component="caption"] elements inside the current view.
+  // defeating the purpose of using local styles in the first place.
+  // Other example of problematic selectors are:
+  //
+  // - [data-*] selectors
+  // - tag-selector (p, span, a, svg etc)
+  //
+  // even when used like this it is better to use a more specific selector
+  // For example
+  //
+  // .mainContainerStyle > p[data-component="caption"] {
+  //    // check the > on the selector which makes this selector be specific
+  // }
+  //
+
+  p[data-component='caption'] {
+    opacity: .7;
+  }
+}
+
+.callInfo {
+  display: flex;
+  height: (60rem/16);
+  margin: 1rem 1rem 0 1rem;
+  color: white;
+}
+
+.name {
+  padding-left: 1rem;
+
+  p[data-component='subheader'] {
+    margin-bottom: (4rem/16);
+  }
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  height: (24rem/16);
+  padding-left: 1rem;
+  background: $grey800;
+}
+
+.callerDetails {
+  min-height: (48rem/16);
+  margin: 0 1rem 1rem 1rem;
+  word-break: keep-all;
+}
+
+.callActions {
+  display: flex;
+  align-items: stretch;
+  height: (48rem/16);
+}
+
+.phoneButton {
+  font-size: (15rem/16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 50%;
+  cursor: pointer;
+  border-top: 1px solid $grey700;
+
+  span {
+    margin-left: (8rem/16);
+  }
+}
+
+.declineButton {
+  @extend .phoneButton;
+
+  color: $red700;
+  border-right: 1px solid $grey700;
+
+  svg {
+    fill: $red700;
+  }
+}
+
+.acceptButton {
+  @extend .phoneButton;
+
+  color: $green700;
+
+  svg {
+    fill: $green700;
+  }
+}
+
+.notSupportedDialog {
+  width: 23rem;
+  padding-top: 2rem;
+}

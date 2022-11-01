@@ -1,0 +1,62 @@
+@import '../../sass/_colors.scss';
+
+.alert-icon {
+  width: 3em;
+  height: 3em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+
+  svg {
+    fill: $amber500;
+  }
+}
+
+.check-icon {
+  margin-right: 1em;
+}
+
+.button-wrapper {
+  margin-top: .5em;
+}
+
+.charge-section {
+  padding: .75em 1.6em .75em 1.6em;
+  background-color: $amber50;
+
+  &.isNotExpanded {
+    cursor: pointer;
+  }
+}
+
+.charge-section-unchecked {
+  display: flex;
+
+  &.unchecked {
+    padding: .75em 1.6em .75em 1.6em;
+    background-color: $amber50;
+  }
+}
+
+.row {
+  min-height: 2em;
+}
+
+.charge-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.charge-table {
+  margin: .8em 0 1em 0;
+}
+
+.charge-section-checked {
+  display: flex;
+  justify-content: space-between;
+}
+
+.charge-section-checked-text {
+  display: flex;
+  align-items: center;
+}

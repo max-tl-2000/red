@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenewalOffer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  {{#with this}}
+  <NameID>{{nameID}}</NameID>
+  <EffectiveDate>{{leaseStartDate}}</EffectiveDate>
+  <Term>{{termLength}}</Term>
+  <ExpireDate>{{leaseExpireDate}}</ExpireDate>
+  {{/with}}
+  {{#if this.charges}}
+  <ChargeCodes>
+  {{/if}}
+  {{#each this.charges}}
+    <ChargeCode name={{{name}}} amount={{{amount}}}{{#if deposit}} deposit={{{deposit}}} {{/if}}/>
+  {{/each}}
+  {{#if this.charges}}
+  </ChargeCodes>
+  {{/if}}
+</RenewalOffer>

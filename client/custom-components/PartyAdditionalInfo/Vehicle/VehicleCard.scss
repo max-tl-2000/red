@@ -1,0 +1,22 @@
+@import '../../../sass/_colors.scss';
+
+.vehicle-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 14em;
+  padding: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.alert {
+  display: flex;
+}
+
+.alert-icon {
+  width: (14rem/16);
+  height: (14rem/16);
+  margin: (3rem/16) (9rem/16) 0 0;
+
+  fill: $red400;
+}

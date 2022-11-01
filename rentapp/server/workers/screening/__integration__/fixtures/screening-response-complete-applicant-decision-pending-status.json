@@ -1,0 +1,1099 @@
+{
+  "ApplicantScreening": {
+    "$": {
+      "xsi:noNamespaceSchemaLocation": "ResidentScreening3_0.xsd",
+      "xmlns": "",
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+    },
+    "Request": [
+      {
+        "PropertyID": [
+          {
+            "Identification": [
+              {
+                "$": {
+                  "IDType": "Property ID"
+                },
+                "IDValue": [
+                  "123456"
+                ]
+              }
+            ],
+            "MarketingName": [
+              "My Properties"
+            ]
+          }
+        ],
+        "RequestType": [
+          "View"
+        ],
+        "ReportOptions": [
+          {
+            "ReportName": [
+              "01"
+            ]
+          }
+        ],
+        "ReportID": [
+          "6490560"
+        ],
+        "OriginatorID": [
+          "26694"
+        ],
+        "MarketingSource": [
+          "Rent.com"
+        ],
+        "UserName": [
+          "rsuser"
+        ],
+        "UserPassword": [
+          "REDACTED"
+        ]
+      }
+    ],
+    "LeaseTerms": [
+      {
+        "MonthlyRent": [
+          "5000.00"
+        ],
+        "LeaseMonths": [
+          "12"
+        ],
+        "AffordableLease": [
+          {
+            "_": "true",
+            "$": {
+              "SubsidyAmount": "200.00"
+            }
+          }
+        ],
+        "SecurityDeposit": [
+          "500.00"
+        ]
+      }
+    ],
+    "Applicant": [
+      {
+        "Other": [
+          {
+            "CurrentRent": [
+              "1200.00"
+            ],
+            "ConsentObtained": [
+              "YES"
+            ]
+          }
+        ],
+        "Income": [
+          {
+            "EmploymentStatus": [
+              "Employed"
+            ],
+            "EmploymentType": [
+              "Current"
+            ],
+            "EmployerName": [
+              "Nordstrom"
+            ],
+            "EmploymentGrossIncome": [
+              "900.00"
+            ],
+            "EmploymentStartDate": [
+              "2000-10-15"
+            ],
+            "OtherIncomeAmount": [
+              "1500"
+            ],
+            "OtherIncomeType": [
+              "Child Support"
+            ],
+            "OtherIncomePeriod": [
+              "120 months"
+            ]
+          }
+        ],
+        "AS_Information": [
+          {
+            "ApplicantIdentifier": [
+              "b950fc38-f29f-49e9-b45d-ffab0e53b904:78a3019b-a119-4ccb-8bdf-579aa60d5872"
+            ],
+            "ApplicantType": [
+              "Applicant"
+            ],
+            "Spouse": [
+              "t0003505"
+            ],
+            "Birthdate": [
+              "1965-10-19"
+            ],
+            "SocSecNumber": [
+              "55555XXXX"
+            ],
+            "DriversLicenseID": [
+              "027239657"
+            ],
+            "DriversLicenseState": [
+              "GA"
+            ],
+            "AddressTerms": [
+              {
+                "$": {
+                  "MoveInDate": "2000-10-10"
+                },
+                "Address": [
+                  {
+                    "$": {
+                      "AddressType": "current"
+                    },
+                    "Address": [
+                      "404 NW Napp Street"
+                    ],
+                    "City": [
+                      "De Kalb"
+                    ],
+                    "State": [
+                      "TX"
+                    ],
+                    "PostalCode": [
+                      "75559"
+                    ],
+                    "UnparsedAddress": [
+                      "404 NW Napp St Dekalb TX 75559"
+                    ],
+                    "Email": [
+                      "testemail@gmail.com"
+                    ]
+                  }
+                ]
+              },
+              {
+                "$": {
+                  "MoveInDate": "1989-01-08",
+                  "MoveOutDate": "2000-10-10"
+                },
+                "Address": [
+                  {
+                    "$": {
+                      "AddressType": "previous"
+                    },
+                    "Address": [
+                      "5555 Hollister Avenue"
+                    ],
+                    "City": [
+                      "Goleta"
+                    ],
+                    "State": [
+                      "CA"
+                    ],
+                    "PostalCode": [
+                      "93117"
+                    ],
+                    "UnparsedAddress": [
+                      "5555 Hollister Avenue Goleta CA 93117"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Customers": [
+          {
+            "Customer": [
+              {
+                "Identification": [
+                  {
+                    "$": {
+                      "IDType": "applicant"
+                    },
+                    "IDValue": [
+                      "1234560"
+                    ]
+                  }
+                ],
+                "Name": [
+                  {
+                    "FirstName": [
+                      "Ivonne"
+                    ],
+                    "LastName": [
+                      "C"
+                    ]
+                  }
+                ],
+                "Phone": [
+                  {
+                    "$": {
+                      "PhoneType": "home"
+                    },
+                    "PhoneNumber": [
+                      "714-982-1000"
+                    ]
+                  }
+                ],
+                "Lease": [
+                  {
+                    "Identification": [
+                      {
+                        "IDValue": [
+                          "t0003504"
+                        ]
+                      }
+                    ],
+                    "ExpectedMoveInDate": [
+                      "2010-12-01"
+                    ],
+                    "ExpectedMoveOutDate": [
+                      "2011-11-30"
+                    ],
+                    "LeaseFromDate": [
+                      "2010-12-01"
+                    ],
+                    "LeaseToDate": [
+                      "2011-11-30"
+                    ],
+                    "ActualMoveIn": [
+                      "2010-12-01"
+                    ],
+                    "ResponsibleForLease": [
+                      "true"
+                    ],
+                    "LeaseSignDate": [
+                      "2010-11-15"
+                    ],
+                    "AccountNumber": [
+                      "123456"
+                    ],
+                    "CurrentNumberOccupants": [
+                      {
+                        "_": "3",
+                        "$": {
+                          "Total": "3",
+                          "Child": "1"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Response": [
+      {
+        "TransactionNumber": [
+          "1001"
+        ],
+        "ReportDate": [
+          "2011-04-08"
+        ],
+        "ApplicantDecision": [
+          "\nDoe, John - PENDING\n\n    "
+        ],
+        "ApplicationDecision": [
+          "Guarantor Required"
+        ],
+        "BackgroundReport": [
+          "Dummy report"
+        ],
+        "Status": [
+          "Complete"
+        ],
+        "RequestID_Returned": [
+          "414926"
+        ]
+      }
+    ],
+    "CustomRecords": [
+      {
+        "Record": [
+          {
+            "Name": [
+              "screeningRequestId"
+            ],
+            "Value": [
+              "00cbc545-1f0d-4f3a-8b73-71dcab48325b"
+            ]
+          }
+        ]
+      }
+    ],
+    "CustomRecordsExtended": [
+      {
+        "Record": [
+          {
+            "Name": [
+              "XMLReport"
+            ],
+            "Value": [
+              {
+                "AEROReport": [
+                  {
+                    "Header1": [
+                      {
+                        "ManagementName": [
+                          "RESIDENT DATA, INC"
+                        ],
+                        "Recommendation": [
+                          "DECLINED"
+                        ],
+                        "UnitAppID": [
+                          "20388988"
+                        ]
+                      }
+                    ],
+                    "Header2": [
+                      {
+                        "PropertyName": [
+                          "CD test account"
+                        ],
+                        "Phone": [
+                          "1  -   -    "
+                        ],
+                        "AccountingID": [
+                          "109667"
+                        ],
+                        "SubmittedBy": [
+                          "DerricCM"
+                        ],
+                        "UnitNumber": [
+                          ""
+                        ],
+                        "MonthlyRent": [
+                          "0"
+                        ],
+                        "PropertyId": [
+                          "116418"
+                        ],
+                        "StartTime": [
+                          "11/8/2016 4:47:49 PM"
+                        ],
+                        "EndTime": [
+                          "11/8/2016 4:51:48 PM"
+                        ],
+                        "ModifiedDate": [
+                          "11/8/2016 5:03:01 PM"
+                        ]
+                      }
+                    ],
+                    "Instructions": [
+                      {
+                        "InstructionalOverrideExists": [
+                          "False"
+                        ],
+                        "SafeScanExists": [
+                          "False"
+                        ],
+                        "UnitStandardOverrideExists": [
+                          "False"
+                        ]
+                      }
+                    ],
+                    "RentToIncomes": [
+                      {
+                        "CARI": [
+                          "False"
+                        ],
+                        "DisplayCreditScore": [
+                          "N"
+                        ],
+                        "Applicant": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantID": [
+                              "1234560"
+                            ],
+                            "ApplicantName": [
+                              "John  Doe "
+                            ],
+                            "ApplicantType": [
+                              "APPLICANT"
+                            ],
+                            "CreditScore": [
+                              ""
+                            ],
+                            "MonthlyIncome": [
+                              ""
+                            ],
+                            "RentToIncome": [
+                              "&#60; 1.00 %"
+                            ],
+                            "MinimumIncomeRequired": [
+                              "N/A"
+                            ],
+                            "NeutralCreditScore": [
+                              ""
+                            ],
+                            "CreditAdjustedIncome": [
+                              ""
+                            ],
+                            "CreditAdjustedRentToIncome": [
+                              "&#60; 1.00 %"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "Applicants": [
+                      {
+                        "Applicant": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "Index": [
+                              "1"
+                            ],
+                            "ApplicantID": [
+                              "1234560"
+                            ],
+                            "ApplicantName": [
+                              "Ivonne C"
+                            ],
+                            "ApplicantType": [
+                              "APPLICANT"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "PropertyCriteria": [
+                      {
+                        "Criteria": [
+                          {
+                            "PassFail": [
+                              "P"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "P",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Applicant has no VCAP records matched in the last 10 years."
+                            ],
+                            "CriteriaID": [
+                              "302"
+                            ],
+                            "CriteriaType": [
+                              "CM"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "P"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "P",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Applicant has no serious misdemeanor records matched in the last 7 years."
+                            ],
+                            "CriteriaID": [
+                              "303"
+                            ],
+                            "CriteriaType": [
+                              "CM"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "P"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "P",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "321"
+                            ],
+                            "CriteriaType": [
+                              "CM"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "100"
+                            ],
+                            "CriteriaType": [
+                              "CR"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "101"
+                            ],
+                            "CriteriaType": [
+                              "CR"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "102"
+                            ],
+                            "CriteriaType": [
+                              "CR"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "103"
+                            ],
+                            "CriteriaType": [
+                              "CR"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "104"
+                            ],
+                            "CriteriaType": [
+                              "CR"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "105"
+                            ],
+                            "CriteriaType": [
+                              "CR"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "107"
+                            ],
+                            "CriteriaType": [
+                              "CR"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "F"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "F",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "806"
+                            ],
+                            "CriteriaType": [
+                              "CO"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          },
+                          {
+                            "PassFail": [
+                              "P"
+                            ],
+                            "ApplicantResults": [
+                              {
+                                "Result": [
+                                  {
+                                    "_": "P",
+                                    "$": {
+                                      "applicantid": "1234560"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "CriteriaDescription": [
+                              "Application has rental collections in the past 24 months."
+                            ],
+                            "CriteriaID": [
+                              "900"
+                            ],
+                            "CriteriaType": [
+                              "SN"
+                            ],
+                            "ApplyOverride": [
+                              "False"
+                            ],
+                            "Override": [
+                              "None"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "Evictions": [
+                      {
+                        "DisplayVerified": [
+                          "True"
+                        ],
+                        "DisplayUnVerified": [
+                          "False"
+                        ],
+                        "Eviction": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantName": [
+                              "John Doe"
+                            ],
+                            "Description": [
+                              "No matching eviction records found"
+                            ]
+                          }
+                        ],
+                        "Note": [
+                          ""
+                        ],
+                        "InitNote": [
+                          ""
+                        ]
+                      }
+                    ],
+                    "Criminals": [
+                      {
+                        "DisplayCriminalOffense": [
+                          "Y"
+                        ],
+                        "DisplayNotesExist": [
+                          "False"
+                        ],
+                        "Criminal": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantID": [
+                              "1234560"
+                            ],
+                            "CriminalKeys": [
+                              ""
+                            ],
+                            "CriminalMatchKeys": [
+                              "Key|1234560|17189976"
+                            ],
+                            "CriminalRevisionsExist": [
+                              "False"
+                            ],
+                            "CriminalInfo": [
+                              {
+                                "RecordIndex": [
+                                  "1"
+                                ],
+                                "CaseNumber": [
+                                  "123cm456789"
+                                ],
+                                "County": [
+                                  "dallas"
+                                ],
+                                "State": [
+                                  ""
+                                ],
+                                "Source": [
+                                  "Test Source"
+                                ],
+                                "Name": [
+                                  "John Doe"
+                                ],
+                                "DOB": [
+                                  "10/10/XXXX"
+                                ],
+                                "SSN": [
+                                  "_____XXXX"
+                                ],
+                                "Sex": [
+                                  ""
+                                ],
+                                "Race": [
+                                  ""
+                                ],
+                                "Height": [
+                                  "6"
+                                ],
+                                "Weight": [
+                                  "0"
+                                ],
+                                "HairColor": [
+                                  ""
+                                ],
+                                "EyeColor": [
+                                  ""
+                                ],
+                                "Offense": [
+                                  "possession of other peoples money"
+                                ],
+                                "Category": [
+                                  "Theft"
+                                ],
+                                "Degree": [
+                                  "F"
+                                ],
+                                "DispositionDate": [
+                                  "2/1/2014"
+                                ],
+                                "SentenceDate": [
+                                  "2/1/2014"
+                                ],
+                                "OffenseDate": [
+                                  "1/1/2014"
+                                ],
+                                "Disposition": [
+                                  "convicted"
+                                ],
+                                "SentenceTerm": [
+                                  "20Y00M00D"
+                                ],
+                                "ProbationTerm": [
+                                  "00Y00M00D"
+                                ],
+                                "OffenseCode": [
+                                  ""
+                                ],
+                                "DisplayNotes": [
+                                  ""
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "CriminalSearches": [
+                      {
+                        "Applicant": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantName": [
+                              "John  Doe "
+                            ],
+                            "SearchesPerformed": [
+                              {
+                                "SearchPerformed": [
+                                  "Search of Texas State Criminal and Sex Offender Records."
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "ApplicationComments": [
+                      {
+                        "ApplicantCommentsExist": [
+                          "True"
+                        ],
+                        "ApplicantComment": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "ApplicantName": [
+                              "John  Doe "
+                            ],
+                            "Comment": [
+                              {
+                                "CommentText": [
+                                  "Rejected: Applicant failed criteria 331 which has no override."
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "ApplicationInformation": [
+                      {
+                        "SubmittedBy": [
+                          "Derriccm"
+                        ],
+                        "ApplicantInformation": [
+                          {
+                            "$": {
+                              "applicantid": "1234560"
+                            },
+                            "Applicant": [
+                              {
+                                "ApplicantName": [
+                                  "John  Doe "
+                                ],
+                                "DOB": [
+                                  "10/10/XXXX"
+                                ],
+                                "SSN": [
+                                  ""
+                                ],
+                                "DriversLicense": [
+                                  ""
+                                ],
+                                "DriversLicenseState": [
+                                  ""
+                                ],
+                                "ForeignId": [
+                                  ""
+                                ],
+                                "ForeignIdDesc": [
+                                  ""
+                                ],
+                                "CurrentAddress": [
+                                  "123    ANYSTREET      , Dallas, TX  75251"
+                                ],
+                                "CurrentAddressStreet": [
+                                  "123    ANYSTREET      "
+                                ],
+                                "CurrentAddressCSZ": [
+                                  "Dallas, TX  75251"
+                                ],
+                                "CreditSSN": [
+                                  ""
+                                ],
+                                "ExternalId": [
+                                  "b950fc38-f29f-49e9-b45d-ffab0e53b904:78a3019b-a119-4ccb-8bdf-579aa60d5872"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

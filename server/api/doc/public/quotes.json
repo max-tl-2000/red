@@ -1,0 +1,728 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/quotes": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote was retrieved successfully",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Quote"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Quotes"
+        ],
+        "parameters": [
+          {
+            "description": "Inventory id",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/InventoryId"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote was created successfully",
+            "schema": {
+              "$ref": "#/definitions/Quote"
+            }
+          },
+          "400": {
+            "description": "Invalid Inventory id"
+          }
+        }
+      }
+    },
+    "/quotes/{quoteId}": {
+      "delete": {
+        "tags": [
+          "Quotes"
+        ],
+        "parameters": [
+          {
+            "description": "Id of the quote",
+            "in": "path",
+            "name": "quoteId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote was deleted successfully"
+          },
+          "404": {
+            "description": "No quote for the given id"
+          }
+        }
+      }
+    },
+    "/quotes/draft/{quoteId}": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "parameters": [
+          {
+            "description": "Id of the quote",
+            "in": "path",
+            "name": "quoteId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote was retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/Quote"
+            }
+          },
+          "404": {
+            "description": "No quote for the given id"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Quotes"
+        ],
+        "parameters": [
+          {
+            "description": "Id of the quote",
+            "in": "path",
+            "name": "quoteId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote was updated successfully"
+          },
+          "404": {
+            "description": "No quote for the given id"
+          }
+        }
+      }
+    },
+    "/quotes/draft": {
+      "post": {
+        "tags": [
+          "Quotes"
+        ],
+        "parameters": [
+          {
+            "description": "Id of the published quote in which the duplicate quote will be based on",
+            "in": "query",
+            "name": "sourcePublishedQuoteId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote was retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/Quote"
+            }
+          },
+          "404": {
+            "description": "No quote for the given id"
+          }
+        }
+      }
+    },
+    "/quotes/published/{quoteId}": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "parameters": [
+          {
+            "description": "Id of the quote",
+            "in": "path",
+            "name": "quoteId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Quote was retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/PublishedQuote"
+            }
+          },
+          "404": {
+            "description": "No quote for the given id"
+          }
+        }
+      }
+    },
+    "/parties/{partyId}/quotePromotions": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the promotions of the quotes",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The promotions of the quotes for the party",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PartyQuotePromotion"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the promotions of the quotes for a party",
+        "tags": [
+          "Quotes"
+        ]
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the party to be updated",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "the new promotion of quote object",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PartyQuotePromotion"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "the promotion of the quote created",
+            "schema": {
+              "$ref": "#/definitions/PartyQuotePromotion"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Create a promotion of the quote for a party",
+        "tags": [
+          "Quotes"
+        ]
+      }
+    },
+    "/parties/{partyId}/quotePromotions/{quotePromotionId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the promotions of the quotes",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the promotion of the quote",
+            "in": "path",
+            "name": "quotePromotionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The promotion of the quote for the party",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PartyQuotePromotion"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the promotion of the quote for a party",
+        "tags": [
+          "Quotes"
+        ]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the party",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "the promotion of quote for update",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PartyQuotePromotion"
+            }
+          },
+          {
+            "description": "The id of the promotion of the quote",
+            "in": "path",
+            "name": "quotePromotionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "the promotion of the quote updated",
+            "schema": {
+              "$ref": "#/definitions/PartyQuotePromotion"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Update a promotion of the quote for a party",
+        "tags": [
+          "Quotes"
+        ]
+      }
+    },
+    "/printQuote": {
+      "post": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Quote were printed successfully"
+          },
+          "400": {
+            "description": "Invalid/missing data",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Print a Quote",
+        "tags": [
+          "Quotes"
+        ]
+      }
+    },
+    "/quotes/{quoteId}/emailContent": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the quote to render",
+            "in": "path",
+            "name": "quoteId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The context of the template to be render",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "context": {
+                  "description": "The type of template to render",
+                  "type": "string"
+                },
+                "partyId": {
+                  "description": "The id of the party where the request is comming",
+                  "type": "string"
+                },
+                "templateDataOverride": {
+                  "description": "The tokens to replace on the template",
+                  "type": "object"
+                },
+                "templateArgs": {
+                  "description": "The required arguments to replace the tokens of a template",
+                  "type": "object"
+                },
+                "options": {
+                  "description": "The mjml options to apply when rendering to html",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "partyId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The rendered template",
+            "schema": {
+              "properties": {
+                "subject": {
+                  "description": "The converted subject",
+                  "type": "string"
+                },
+                "body": {
+                  "description": "The converted html",
+                  "type": "string"
+                },
+                "missingTokens": {
+                  "description": "The template missing tokens",
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameter",
+            "schema": {
+              "properties": {
+                "status": {
+                  "format": "int32",
+                  "type": "integer"
+                },
+                "token": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "summary": "Renders a quote template",
+        "tags": [
+          "Mjml"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "Quote": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Id of the quote"
+        },
+        "inventoryId": {
+          "type": "string",
+          "description": "Id of the inventory associated with the quote"
+        }
+      }
+    },
+    "PublishedQuote": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Id of the quote"
+        },
+        "leaseTerms": {
+          "items": {
+            "$ref": "#/definitions/LeaseTerm"
+          },
+          "type": "array",
+          "description": "Array of selected lease Terms"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "publishDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "expirationDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "leaseStartDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "confirmationNumber": {
+          "type": "string",
+          "description": "Confirmation number of the quote"
+        },
+        "additionalAndOneTimeCharges": {
+          "type": "object",
+          "properties": {
+            "additionalCharges": {
+              "type": "array",
+              "description": "Array of selected recurring Fees",
+              "items": {
+                "$ref": "#/definitions/Fee"
+              }
+            },
+            "oneTimeCharges": {
+              "type": "array",
+              "description": "Array of selected one time Fees",
+              "items": {
+                "$ref": "#/definitions/Fee"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Fee": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Fee id"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Fee name to use in UI"
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "How many items are being charged"
+        },
+        "amount": {
+          "type": "number",
+          "format": "float",
+          "description": "The amount that is being charged recurringly"
+        },
+        "isMinAndMaxRentDiff": {
+          "type": "boolean",
+          "description": "Flag indicating if an inventory group fee has different minRent and maxRent"
+        }
+      }
+    },
+    "LeaseTerm": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "LeaseTerm id"
+        },
+        "termLength": {
+          "type": "integer",
+          "description": "Duration of the term in number of periods"
+        },
+        "period": {
+          "type": "string",
+          "description": "length of period (month, week, day, hour)"
+        },
+        "concessions": {
+          "items": {
+            "$ref": "#/definitions/Concession"
+          },
+          "type": "array",
+          "description": "Concessions selected for this LeaseTerm"
+        },
+        "specials": {
+          "type": "boolean",
+          "description": "Flag indicating if the lease contains specials offers selected"
+        },
+        "adjustedMarketRent": {
+          "type": "number",
+          "format": "float",
+          "description": "The market rent with the adjustments and amenities charges applied"
+        },
+        "paymentSchedule": {
+          "items": {
+            "$ref": "#/definitions/PaymentSchedule"
+          },
+          "type": "array",
+          "description": "The payment schedule for this LeaseTerm"
+        }
+      }
+    },
+    "Concession": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Concession id"
+        },
+        "optional": {
+          "type": "boolean",
+          "description": "Indicates if the concession was optional at draft"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Name of the concession for UI"
+        },
+        "computedValue": {
+          "type": "number",
+          "format": "float",
+          "description": "The calculated amount that the user saves with this concesssion"
+        },
+        "recurring": {
+          "type": "boolean",
+          "description": "Indicates if the concession is recurring"
+        },
+        "variableAdjustment": {
+          "type": "boolean",
+          "description": "Indicates if the concession value is editable"
+        },
+        "absoluteAdjustment": {
+          "type": "number",
+          "format": "float",
+          "description": "Represents the amount to be adjust for the concession value"
+        },
+        "excludeFromRentFlag": {
+          "type": "boolean",
+          "description": "If a concession has excludeFromRentFlag as TRUE then do NOT include it in payment schedule adjustments"
+        },
+        "recurringCount": {
+          "type": "integer",
+          "description": "The number of times a relative or absolute adjustment should be applied"
+        },
+        "amountVariableAdjustment": {
+          "type": "number",
+          "format": "float",
+          "description": "Represents the amount of an variable concession"
+        },
+        "relativeAmount": {
+          "type": "number",
+          "format": "float",
+          "description": "Represents the amount of an relative concession"
+        }
+      }
+    },
+    "PaymentSchedule": {
+      "type": "object",
+      "properties": {
+        "timeframe": {
+          "type": "string",
+          "description": "A timeframe in which the payment is the same in each of the periods. Ex. Aug 2016 - Jul 2017"
+        },
+        "amount": {
+          "type": "number",
+          "format": "float",
+          "description": "The amount that the client have to pay in each period of the timeframe"
+        }
+      }
+    },
+    "InventoryId": {
+      "type": "object",
+      "properties": {
+        "inventoryId": {
+          "type": "string",
+          "description": "Inventory id"
+        }
+      }
+    },
+    "ApplicationStatus": {
+      "properties": {
+        "id": {
+          "description": "The id of the member",
+          "type": "string"
+        },
+        "applicationStatus": {
+          "description": "the status of the member",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "PartyQuotePromotion": {
+      "properties": {
+        "id": {
+          "description": "The id of the promotion of the quote",
+          "type": "string"
+        },
+        "quoteId": {
+          "description": "The id of the quote",
+          "type": "string"
+        },
+        "leaseTermId": {
+          "description": "The id of the lease term",
+          "type": "string"
+        },
+        "promotionStatus": {
+          "description": "the promotion status",
+          "enum": [
+            "pending_approval",
+            "canceled",
+            "approved"
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+.validator {
+  font-size: .75rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: (4rem/16);
+  padding-left: (19rem/16);
+  transition: .2s opacity ease-out, .2s color ease-out;
+  opacity: 0;
+
+  &.error {
+    color: $red500;
+
+    svg {
+      fill: $red500;
+    }
+  }
+
+  &.warning {
+    color: $orange500;
+
+    svg {
+      fill: $orange500;
+    }
+  }
+
+  &.inherit_warning {
+    color: inherit;
+
+    svg {
+      fill: $amber500;
+    }
+  }
+
+  &.on {
+    opacity: 1;
+  }
+
+  .icon-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: (24rem/16);
+    height: 1.3rem;
+  }
+
+  .error-icon {
+    display: block;
+    width: .85rem;
+    height: .85rem;
+  }
+}

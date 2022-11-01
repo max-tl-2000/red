@@ -1,0 +1,255 @@
+{
+  "id": "40afd8c1-3f01-4883-b61a-2aa922ddc744",
+  "pets": null,
+  "comms": null,
+  "score": "prospect",
+  "state": "Prospect",
+  "tasks": null,
+  "teams": [
+    "9d944328-8e04-46e9-ad8a-9ddf173e8076"
+  ],
+  "events": [
+    {
+      "id": "718c2992-24fd-40e9-98ba-14a11c4d5865",
+      "event": "lease_renewal_created",
+      "userId": null,
+      "partyId": "40afd8c1-3f01-4883-b61a-2aa922ddc744",
+      "metadata": {
+        "activeLeaseWorkflowDataId": "92b20ddb-7548-4145-80a1-bc7966246d9c"
+      },
+      "created_at": "2020-03-25T18:12:49.258458+00:00",
+      "requestIds": [
+        "07c9a2f0-51fb-4fe5-be5b-cda3018a9303"
+      ],
+      "updated_at": "2020-03-25T18:12:49.258458+00:00",
+      "partyMemberId": null,
+      "transaction_id": 25094
+    }
+  ],
+  "leases": null,
+  "quotes": null,
+  "userId": "a149d2e2-eed4-4076-b945-0d9e6f643b23",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "5b532654-21df-495e-9c42-dbe3d6fd3e26",
+        "dob": "1984-07-07T00:00:00+00:00",
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "John Doe",
+        "idCountry": null,
+        "created_at": "2020-03-25T17:58:14.449283+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2020-03-25T18:00:22.062558+00:00",
+        "modified_by": "a149d2e2-eed4-4076-b945-0d9e6f643b23",
+        "preferredName": null,
+        "isSuspiciousContent": false
+      },
+      "contactInfo": [
+        {
+          "id": "22739f85-f02e-4eba-971c-37131f6d215d",
+          "type": "email",
+          "value": "johndoe@reva.tech",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {},
+          "personId": "5b532654-21df-495e-9c42-dbe3d6fd3e26",
+          "isPrimary": true,
+          "created_at": "2020-03-25T17:58:14.449283+00:00",
+          "updated_at": "2020-03-25T17:58:14.449283+00:00",
+          "markedAsSpamBy": null
+        }
+      ],
+      "partyMember": {
+        "id": "9bfd327e-6697-48b9-b76d-5acc8780283a",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "40afd8c1-3f01-4883-b61a-2aa922ddc744",
+        "external": {},
+        "personId": "5b532654-21df-495e-9c42-dbe3d6fd3e26",
+        "startDate": "2020-03-25T18:12:49.072452+00:00",
+        "created_at": "2020-03-25T18:12:49.073+00:00",
+        "memberType": "Resident",
+        "updated_at": "2020-03-25T18:12:49.073+00:00",
+        "vacateDate": null,
+        "memberState": "Applicant",
+        "modified_by": "a149d2e2-eed4-4076-b945-0d9e6f643b23",
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "children": null,
+  "invoices": null,
+  "metadata": {
+    "creationType": "user",
+    "originalTeam": "9d944328-8e04-46e9-ad8a-9ddf173e8076",
+    "favoriteUnits": [
+      "3dcfb4a9-cd40-4388-b1b7-e15cd2c4cf3c"
+    ],
+    "screeningVersion": "v1",
+    "firstCollaborator": "a149d2e2-eed4-4076-b945-0d9e6f643b23",
+    "firstContactedDate": "2020-03-25T17:58:14.433Z",
+    "firstContactChannel": "Chat",
+    "qualQuestionsCompleted": "2020-03-25T17:58:21.932Z"
+  },
+  "vehicles": null,
+  "leaseType": "traditional",
+  "ownerTeam": "9d944328-8e04-46e9-ad8a-9ddf173e8076",
+  "startDate": "2020-03-25T18:12:48.878664+00:00",
+  "created_at": "2020-03-25T18:12:48.88+00:00",
+  "invOnHolds": null,
+  "mergedWith": null,
+  "promotions": null,
+  "updated_at": "2020-03-25T18:12:48.88+00:00",
+  "archiveDate": null,
+  "modified_by": "a149d2e2-eed4-4076-b945-0d9e6f643b23",
+  "seedPartyId": "2e6d0756-b3b4-4475-915b-47beea5441ec",
+  "partyGroupId": "c21bd1cf-2a8c-4a97-be79-618e866af588",
+  "transactions": null,
+  "workflowName": "renewal",
+  "collaborators": [
+    "a149d2e2-eed4-4076-b945-0d9e6f643b23"
+  ],
+  "workflowState": "active",
+  "activeLeaseData": [
+    {
+      "id": "92b20ddb-7548-4145-80a1-bc7966246d9c",
+      "state": "none",
+      "leaseId": "d84386d3-f96a-4759-9fb9-2f435a2b462b",
+      "partyId": "2e6d0756-b3b4-4475-915b-47beea5441ec",
+      "metadata": {},
+      "leaseData": {
+        "unitName": "350 Arballo-1015",
+        "unitRent": 3838,
+        "leaseTerm": 24,
+        "moveInDate": "2020-03-25T17:59:40.448Z",
+        "inventoryId": "3dcfb4a9-cd40-4388-b1b7-e15cd2c4cf3c",
+        "leaseEndDate": "2022-03-24T17:59:40.448Z",
+        "inventoryType": "unit",
+        "leaseStartDate": "2020-03-25T17:59:40.448Z"
+      },
+      "created_at": "2020-03-25T18:11:21.406872+00:00",
+      "isImported": false,
+      "updated_at": "2020-03-25T18:11:21.406872+00:00",
+      "concessions": [
+        {
+          "code": "brconces",
+          "amount": 7676,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-25T07:00:00.000Z",
+          "description": "",
+          "displayName": "2 months free"
+        }
+      ],
+      "isExtension": false,
+      "rentableItems": {},
+      "rolloverPeriod": "none",
+      "externalLeaseId": null,
+      "recurringCharges": [
+        {
+          "code": "trash",
+          "amount": 20,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-25T07:00:00.000Z",
+          "description": "",
+          "displayName": "Trash"
+        },
+        {
+          "code": "reimwatr",
+          "amount": 25,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-25T07:00:00.000Z",
+          "description": "",
+          "displayName": "Water"
+        },
+        {
+          "code": "brcredit",
+          "amount": 0,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-25T07:00:00.000Z",
+          "description": "",
+          "displayName": "Locker"
+        },
+        {
+          "code": "reimswer",
+          "amount": 10,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-25T07:00:00.000Z",
+          "description": "",
+          "displayName": "Sewer"
+        },
+        {
+          "code": "gaspass",
+          "amount": 25,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-25T07:00:00.000Z",
+          "description": "",
+          "displayName": "Gas"
+        },
+        {
+          "code": "furnish",
+          "amount": 0,
+          "endDate": null,
+          "quantity": 1,
+          "startDate": "2020-03-25T07:00:00.000Z",
+          "description": "",
+          "displayName": "Door Fob"
+        }
+      ]
+    }
+  ],
+  "emailIdentifier": "40afd8c13f014883b61a",
+  "isTransferLease": false,
+  "screeningResults": {
+    "submissionRequests": null,
+    "submissionResponses": null
+  },
+  "createdFromCommId": null,
+  "partyApplications": null,
+  "assignedPropertyId": "6fa82121-4d09-4e03-806a-dd3b8dca490f",
+  "personApplications": null,
+  "storedUnitsFilters": {
+    "moveInDate": {
+      "max": "2020-04-25T07:00:00.000Z",
+      "min": "2020-03-25T07:00:00.000Z"
+    },
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS"
+    ],
+    "propertyIds": [
+      "6fa82121-4d09-4e03-806a-dd3b8dca490f"
+    ]
+  },
+  "teamPropertyProgramId": null,
+  "qualificationQuestions": {
+    "moveInTime": "NEXT_4_WEEKS",
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS"
+    ],
+    "groupProfile": "FAIR_MARKET",
+    "cashAvailable": "YES"
+  },
+  "property": [
+    {
+      "id": "6fa82121-4d09-4e03-806a-dd3b8dca490f",
+      "name": "swparkme",
+      "settings": {
+        "moveoutNoticePeriod": 60
+      },
+      "timeZone": "America/Los_Angeles",
+      "displayName": "Parkmerced Apartments",
+      "propertyLegalName": "Parkmerced LLC"
+    }
+  ]
+}

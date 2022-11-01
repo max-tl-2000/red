@@ -1,0 +1,132 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+.divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: (20rem/16);
+
+  > div {
+    z-index: 1;
+    padding: 0 1em;
+    background: #fff;
+  }
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    content: ' ';
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.message {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  padding: 0 .5em;
+
+  .username {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1em;
+    margin-bottom: 2px;
+  }
+
+  .time {
+    font-size: 10px;
+    line-height: 1em;
+  }
+
+  .body-section {
+    display: block;
+    max-width: 75%;
+    padding: 10px 5px;
+
+    > div {
+      padding: .5em 1em;
+      border-radius: 5px 5px 0 5px;
+      background: $grey300;
+    }
+  }
+
+  .meta-section {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+
+  &.owner {
+    flex-direction: row;
+
+    .time,
+    .username {
+      text-align: right;
+    }
+
+    .body-section {
+      > div {
+        border-radius: 5px 5px 5px 0;
+        background: #cfd8dc;
+      }
+    }
+  }
+}
+
+.form-section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  height: (37rem/16);
+  padding-left: (10rem/16);
+
+  [data-component='textbox'] {
+    display: block;
+    flex: 1;
+
+    :global(.input-field) {
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.messages-section {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.messages {
+  position: absolute;
+  bottom: (38rem/16);
+  overflow: auto;
+  width: 100%;
+  max-height: calc(100% - 2.375rem);
+  border-bottom: 1px solid #eee;
+}
+
+.communications {
+  width: 40vw;
+  max-width: 700px;
+  height: 50vh;
+  max-height: 600px;
+}
+
+.tabs-section {
+  height: 100%;
+}

@@ -1,0 +1,30 @@
+GET: https://api.cronofy.com/v1/calendars
+Authorization: Bearer {access_token}
+
+response:
+{
+  "calendars": [
+    {
+      "provider_name": "google",
+      "profile_id": "pro_n23kjnwrw2",
+      "profile_name": "example@cronofy.com",
+      "calendar_id": "cal_n23kjnwrw2_jsdfjksn234",
+      "calendar_name": "Home",
+      "calendar_readonly": false,
+      "calendar_deleted": false,
+      "calendar_primary": true,
+      "permission_level": "sandbox"
+    },
+    {
+      "provider_name": "google",
+      "profile_id": "pro_n23kjnwrw2",
+      "profile_name": "example@cronofy.com",
+      "calendar_id": "cal_n23kjnwrw2_n1k323nkj23",
+      "calendar_name": "Work",
+      "calendar_readonly": true,
+      "calendar_deleted": true,
+      "calendar_primary": false,
+      "permission_level": "sandbox"
+    },
+  ],
+}

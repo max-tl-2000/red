@@ -1,0 +1,597 @@
+Return-Path: <0100015ece15f8ee-ff599326-9f8b-4081-b1f8-ff16f86ed257-000000@amazonses.com>
+Received: from a11-24.smtp-out.amazonses.com (a11-24.smtp-out.amazonses.com [54.240.11.24])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 3387lkikelqlvnb50sfsf5u7r0slm6m45tmftg01
+ for zillow.serenity@maximus.mail.reva.tech;
+ Fri, 29 Sep 2017 14:41:40 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of amazonses.com designates 54.240.11.24 as permitted sender) client-ip=54.240.11.24; envelope-from=0100015ece15f8ee-ff599326-9f8b-4081-b1f8-ff16f86ed257-000000@amazonses.com; helo=a11-24.smtp-out.amazonses.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of amazonses.com designates 54.240.11.24 as permitted sender) client-ip=54.240.11.24; envelope-from=0100015ece15f8ee-ff599326-9f8b-4081-b1f8-ff16f86ed257-000000@amazonses.com; helo=a11-24.smtp-out.amazonses.com;
+ dkim=pass header.i=@amazonses.com;
+ dkim=pass header.i=@zillowrentals.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFNzBTbnA0cXdmTStJMGc3TVJNSnUra2JYZ1lZSHd5aDdtempoY0gzYmFuYWVVcG1qK2JTU3l3SHMrUytwc3g5cXJadFR2S251c1h4RmNGUU45Vk5abFQvMm0wSVJOOGJzcmd1UzJyRTBVd0l2VGxVN20vc3EydmVLQ0o5Rk50L3E1eHYxOUgxKy80OG55eFpVczhzQjFmSHZCVlV2b1h2R0tkM0NGNFpZam1LbExEdFl6MjFzYy9QRE5pcVRJSndFNW5vMGl1cVFZMlBUN3k3L25xckIraHBpU1JETDdQV1FMQmhTblN3cjNvcDAwMmsvL24yRHBtc3BVdjlpTVZWbVdoU2EybU9SQlhiY09RM2E1amVVQUJTd1h1Tk9LL1IzVnBuUGxpS0p6MkVsT2lPUUJsRWl4bER6aEgwZGc3U0UvMVV3b2tFMjNPRmpyalBvMjdGdCs=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Es76sxsv0peqsfEUPEEBhfbfeEjZLx1YjJSte5CEIYwa3XTevKpEFRK7tOVa/v+VIiY9BJ1JCOJ6CTp5/1Eo3KJpUIgD94Jzcg2+3t5ge5ei0EFXorbODti+qXCTEWqQ7dOsq/RBTmqScU5ly3Au5i5kG9XyKxdNAk9Vc3kfNI8=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1506696101; v=1; bh=9rwD7v4yfx5/kEXX6Zy6P/uRpInsSl+FejrA8ESiqDs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1506696100;
+	h=From:To:Message-ID:Subject:MIME-Version:Content-Type:Date:Feedback-ID;
+	bh=9rwD7v4yfx5/kEXX6Zy6P/uRpInsSl+FejrA8ESiqDs=;
+	b=G+zhIOUixcVBBGx30ej01H0Xpj5nAoWRSdsCnc4159QctQY8mv/dtuWOtf71UWHz
+	AEzNhzSs+SG5umrkxxcY7wvyy/SezVlb64fAqcFX9iwvx9OaLaKufn5ZmMmWZkYMhXd
+	2Z0cdUewbWSs21vjq0HgaAF017P299LvSbOn4Bh8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; t=1506696100;
+	s=zrnleads; d=zillowrentals.com;
+	h=From:To:Subject:MIME-Version:Content-Type;
+	bh=9rwD7v4yfx5/kEXX6Zy6P/uRpInsSl+FejrA8ESiqDs=;
+	b=k+2wfsXbdVhv7J1RUKej/1xzQ/ylSBHzOPSqAelk4/a4z4PUEL+v1j6WRu1QBXn4
+	mRzjij9l/FsEBHlsSvsMFkbNc7HIihCqyYjemABuKnwYwJ0KQ/TT3kRNlFmGWRPZlzH
+	c2FjKZ9H1InveaDGyhpHqGZ4Qv0WKiinE8FLWdkg=
+From: Zillow Group Rentals <rentalclientservices@zillowrentals.com>
+To: zillow.serenity@maximus.mail.reva.tech
+Message-ID: <0100015ece15f8ee-ff599326-9f8b-4081-b1f8-ff16f86ed257-000000@email.amazonses.com>
+Subject: New Zillow Group Rentals Contact: Serenity at Larkspur
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_Part_153697_1901645542.1506696100077"
+Date: Fri, 29 Sep 2017 14:41:40 +0000
+X-SES-Outgoing: 2017.09.29-54.240.11.24
+Feedback-ID: 1.us-east-1.VYfDSUunTafCfHv9uAuINOM04I5ALkGioPiDTkblwno=:AmazonSES
+
+------=_Part_153697_1901645542.1506696100077
+Content-Type: multipart/related;
+	boundary="----=_Part_153698_1512639952.1506696100077"
+
+------=_Part_153698_1512639952.1506696100077
+Content-Type: multipart/alternative;
+	boundary="----=_Part_153699_1611733377.1506696100077"
+
+------=_Part_153699_1611733377.1506696100077
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>Zillow - Your Edge in Real Estate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<style type="text/css">
+@media only screen and (max-device-width: 480px) {
+	table[class="table"],
+	td[class="cell"] {
+	    width: 100% !important;
+	}
+	table[class="table-inner"] {
+	    width: 100% !important;
+	}
+        table[class="main-container"] {
+            width: 100% !important;
+            border-right: none !important;
+            border-left: none !important;
+        }
+        td[class="cell-50"] {
+            width: 50% !important;
+        }
+	td[class*="cell-nav"] {
+	    width: 290px !important;
+        padding: 10px 0 10px 20px !important;
+	}
+	span[class="z-comma"]
+        {
+    	    display: none;
+	}
+	td[class="cell-facts"] strong {
+	    display: block;
+	}
+        td[class="cell center"] {
+            text-align: center !important;
+        }
+	div[class="spacer"] {
+            display: none;
+	}
+        span[class="showme"] {
+            display:block !important;
+        }
+        td[class="block"] {
+            display:block;
+        }
+        td[class="cell block"] {
+            width: 100% !important;
+            display:block !important;
+        }
+a[class="z-main-image"] {
+            background-image:url('https://filenet.hotpads.com/images/logos/zg_3logos_horizontal@2x.png') !important;
+            background-size: 450px 39px !important;
+            background-repeat:no-repeat !important;
+            display:block !important;
+            height:39px !important;
+            width:450px !important;
+        }
+        td[class="cell-logo"] {
+            vertical-align:top !important;
+            padding:0 !important;
+            width:450px !important;
+            height:39px !important;
+            background-color: #ffffff !important;
+        }
+        td[class="cell-logo"] img {
+            display:none !important;
+        }
+        div[class="zaddrcontainer"] a {
+            color:#ccc !important;
+            text-decoration:none !important;
+        }
+        html, body { margin:0 !important; padding:0 !important; }
+}
+@media only screen and (max-device-width: 320px) {
+	td[class*="cell-nav"] {
+	    width: 250px !important;
+	    padding-left: 20px;
+	}
+}
+@media screen {
+   @font-face{
+    font-family:"Open-Sans";
+    font-weight:bold;
+    src:url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+   }
+   @font-face {
+    font-family: "Open-Sans";
+    font-weight: 300;
+    src: url("https://www.zillowstatic.com/static/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.zillowstatic.com/static/fonts/OpenSans-Light-webfont.woff") format("woff"), url("https://www.zillowstatic.com/static/fonts/OpenSans-Light-webfont.ttf") format("truetype");
+   }
+   @font-face {
+    font-family: "Open-Sans";
+    font-weight: normal;
+    src: url("https://www.zillowstatic.com/static/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.zillowstatic.com/static/fonts/OpenSans-Regular-webfont.woff") format("woff"), url("https://www.zillowstatic.com/static/fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg"), url("https://www.zillowstatic.com/static/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+   }
+}
+</style>
+</head>
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased; width: 100% !important; background-color: #ffffff; -webkit-text-size-adjust: none;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr>
+     <td bgcolor="#ffffff" width="100%" style="vertical-align:top;" valign="top">
+	<div style="font-size: 13px; color: #ffffff;" class="spacer">&nbsp;</div>
+            <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#fff" style="border-left:1px solid #dddddd;border-right:1px solid #dddddd;mso-table-lspace:0pt; mso-table-rspace:0pt;height:54px;background-color:#fff;border-top:3px solid #0074e4;" align="center" class="main-container">
+            <tr>
+                <td class="cell-logo" style="border-collapse: collapse; vertical-align: top; padding:0 15px 0; mso-table-lspace:0pt; mso-table-rspace:0pt" valign="top">
+                    <a border="0" title="Go to Zillow" href="https://www.zillow.com/?utm_source=email&utm_medium=email&utm_campaign=zrn-contact-headerzillowlogo" class="z-main-image" style="color:#fff;text-decoration:none;">
+                        <img alt="Zillow" border="0" src="https://filenet.hotpads.com/images/logos/zg_3logos_horizontal@2x.png" width="450" height="39" style="vertical-align: top;display:block;font-family:arial;font-size:13px;color:#fff;"/>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+            	<td class="cell-nav" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;padding:20px 20px 0 20px;text-align: left; font-size: 27px;font-weight:900; font-family: Open-Sans,Arial; vertical-align: middle;color:#333333;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" align="left" valign="middle">
+					New Contact
+                </td>
+            </tr>
+        <tr><td bgcolor="#ffffff" width="100%" colspan="3" style="background-color:#ffffff;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF" id="container" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;background-color: #FFF;" align="center" class="table">
+            <tr>
+		<td class="cell" align="left" style="width:100%;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+@media only screen and (max-device-width: 480px) {
+	table[id="email-body"] {
+		padding: 0 !important;
+		border-collapse: collapse !important;
+	}
+	td[class="email-button-wrapper"], td[class="phone-button-wrapper"], td[class="cell-photo"],
+		td[class="cell-facts-new"] {
+		display: inline-block !important;
+		width: 100%;
+	}
+	td[class="email-button-wrapper"] {
+		position: relative;
+		top: 71px;
+		padding: 0 !important;
+		float: none !important;
+	}
+	td[class="phone-button-wrapper"] {
+		position: relative;
+		top: -17px;
+		padding: 0 !important;
+		float: none !important;
+	}
+	td[class="see-more-button-wrapper"] table, td[class="phone-button-wrapper"] table,
+		td[class="email-button-wrapper"] table, td[class="email-button-wrapper single-btn"] table,
+		table[class="email-button-tbl"] {
+		width: 100%;
+	}
+	td[class="email-button-wrapper single-btn"] {
+		float: none !important;
+		padding: 0 !important;
+		position: relative;
+		top: 16px;
+		width: 100%;
+	}
+	td[class="btn-img"], td[class="btn-text"] {
+		display: inline-block;
+	}
+	td[class="listing-details"] {
+		padding-top: 40px !important;
+	}
+	td[class="cell-photo"] {
+		padding-bottom: 10px !important;
+	}
+	td[class="cell-facts-new"] {
+		padding-top: 0 !important;
+	}
+}
+</style>
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="email-section h-card"
+			style="font-family: Open-Sans, Arial, sans-serif; font-size: 10pt; border-collapse: collapse; padding: 30px 20px 19px 20px;">
+			<table cellpadding="0" cellspacing="0" width="100%">
+
+
+				<tr>
+					<td
+						style="font-family: Open-Sans, Arial; font-size: 20px; padding-bottom: 13px;">
+						<span class="p-name">Linda Johnson says:</td>
+				</tr>
+
+				<tr>
+
+					<td style="font-family: Open-Sans, Arial; font-size: 15px; ">
+					&quot;I am interested in the Voyager floor plan and other available 1 bedrooms. I would like to schedule a viewing. Please let me know when this would be possible.&quot;
+					</td>
+				</tr>
+
+				<tr>
+					<td
+						style="padding-top: 15px">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td class="listing-details" style="font-family: Open-Sans, Arial, sans-serif; font-size: 15px; border-collapse: collapse; padding:20px 0px">
+
+
+
+
+
+
+					</td>
+				</tr>
+				<tr>
+					<td
+						style="font-family: Open-Sans, Arial; font-size: 15px; border-bottom: 1px solid #eee;">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<table class="email-button-tbl" cellpadding="0" cellspacing="0"
+							align="center" style="margin: 0 auto;">
+							<tr>
+								<td class="email-button-wrapper"
+									style="padding: 18px 10px 24px 0; display: inline-block;"
+									align="left">
+									<table cellspacing="0" cellpadding="0" border="0"
+										style="border-spacing: 0px; background-color: #0074e4; background-repeat: repeat-x; border-radius: 3px; border: 1px solid #0074e4; word-wrap: break-word; text-align: left;"
+										align="left">
+										<tr>
+											<td align="center"
+												style="padding: 5px 10px; text-align: center;">
+												<table cellspacing="0" cellpadding="0" border="0"
+													style="border-spacing: 0;">
+													<tr>
+														<td class="btn-img"
+															style="font-family: Open-sans, Arial; font-size: 15px; color: #fff; padding-left: 0px; padding-right: 10px; text-shadow: 0px 1px 0px #0074e4; line-height: 22px; white-space: nowrap;">
+															<a href="mailto:lsj9148@gmail.com?subject=Question+from+Linda+Johnson+about+Serenity+at+Larkspur&body=Listing+information+http%3A%2F%2Fhotpads.comhttp%3A%2F%2Fhotpads.com%2Fl%2F4r005p8n4mvcx"
+															style="text-decoration: none; border: none; color: #fff;">
+																<img width="20"
+																src="http://filenet.hotpads.com/images/icons/zrnMail.png"
+																style="width: 20px; vertical-align: middle; border: none;">
+														</a>
+														</td>
+														<td class="btn-text"
+															style="font-family: Open-sans, Arial; font-size: 15px; color: #fff; padding-left: 0px; padding-right: 0px; text-shadow: 0px 1px 0px #0074e4; line-height: 22px; white-space: nowrap; padding-bottom: 2px">
+															<a href="mailto:lsj9148@gmail.com?subject=Question+from+Linda+Johnson+about+Serenity+at+Larkspur&body=Listing+information+http%3A%2F%2Fhotpads.comhttp%3A%2F%2Fhotpads.com%2Fl%2F4r005p8n4mvcx"
+															style="text-decoration: none; border: none; color: #fff;"><font color="#fff" class="p-email">lsj9148@gmail.com</font></a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+
+									<td class="phone-button-wrapper"
+										style="padding: 18px 0 24px; display: inline-block;"
+										align="left">
+										<table cellspacing="0" cellpadding="0" border="0"
+											style="border-spacing: 0px; background-color: #0074e4; background-repeat: repeat-x; border-radius: 3px; border: 1px solid #0074e4; word-wrap: break-word; text-align: left;"
+											align="left">
+											<tr>
+												<td align="center"
+													style="padding: 5px 10px; text-align: center;">
+													<table cellspacing="0" cellpadding="0" border="0"
+														style="border-spacing: 0;">
+														<tr>
+															<td class="btn-img"
+																style="font-family: Open-sans, Arial; font-size: 15px; color: #fff; padding-left: 0px; padding-right: 10px; text-shadow: 0px 1px 0px #0074e4; line-height: 22px;">
+																<a href="tel:(970) 924-0423"
+																style="text-decoration: none; border: none; color: #fff;">
+																	<img width="20"
+																	src="http://filenet.hotpads.com/images/icons/zrnPhone.png"
+																	style="width: 20px; vertical-align: middle; border: none;">
+															</a>
+															</td>
+															<td class="btn-text"
+																style="font-family: Open-sans, Arial; font-size: 15px; color: #fff; padding-left: 0px; padding-right: 0px; text-shadow: 0px 1px 0px #0074e4; line-height: 22px;">
+																<a href="tel:(970) 924-0423"
+																style="text-decoration: none; border: none; color: #fff;"><font color="#fff" class="p-tel">970.924.0423</font></a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td
+						style="font-family: Open-Sans, Arial; font-size: 15px; border-bottom: 1px solid #eee;">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="listing-details"
+			style="font-family: Open-Sans, Arial, sans-serif; font-size: 15px; border-collapse: collapse; padding: 0 20px 0;">
+			<table cellpadding="0" cellspacing="0" width="100%">
+
+				<tr>
+					<td
+						style="font-family: Open-Sans, Arial, sans-serif; font-size: 20px;">
+						Your listing</td>
+				</tr>
+
+				<tr>
+					<td
+						style="font-family: Open-Sans, Arial, sans-serif; font-size: 15px;">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="cell-photo" width="150"
+									style="padding-top: 16px; width: 150px; padding-right: 10px; padding-bottom: 20px; vertical-align: top;"
+									valign="top">
+									<div style="border: 1px solid #eee; display: inline-block;">
+										<a
+											href="https://hotpads.com/serenity-at-larkspur-larkspur-ca-94939-skfhpr/pad?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376">
+											<img
+											src="https://hotpads.com/photo/listing/4r005p8n4mvcx.medium?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376"
+											width="150" height="112" style="border: 0; display: block;"
+											alt="Listing photo">
+										</a>
+									</div>
+								</td>
+								<td class="cell-facts-new"
+									style="vertical-align: top; padding-top: 20px; padding-bottom: 20px; color: #333; font-family: Open-Sans, Arial; font-size: 15px;"
+									valign="top">
+									<table cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td
+												style="font-size: 13px; font-weight: bold; text-transform: uppercase; font-family: Open-Sans, Arial; line-height: 19px;">
+												<a
+												href="http://hotpads.com/serenity-at-larkspur-larkspur-ca-94939-skfhpr/pad?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376"
+												style="color: #333; text-decoration: none;"> <img
+													valign="middle"
+													src="https://s3.amazonaws.com/emails.oc.zillowstatic.com/contact-request/prop-icon-for-rent.png"
+													width="10" border="0" style="border: 0;">&nbsp;FOR
+													RENT
+											</a>
+											</td>
+										</tr>
+										<tr>
+											<td
+												style="font-family: Open-Sans, Arial; font-size: 20px; line-height: 30px;">
+												<a
+												href="http://hotpads.com/serenity-at-larkspur-larkspur-ca-94939-skfhpr/pad?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376"
+												style="color: #333; text-decoration: none;">$3,175+</a>
+											</td>
+										</tr>
+										<tr>
+											<td
+												style="font-family: Open-Sans, Arial; font-size: 15px; line-height: 22px;">
+												<a
+												href="http://hotpads.com/serenity-at-larkspur-larkspur-ca-94939-skfhpr/pad?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376"
+												style="color: #333; text-decoration: none;">
+													1 to 2 bedrooms, 2.0 bathrooms</a>
+											</td>
+										</tr>
+										<tr>
+											<td
+												style="line-height: 22px; font-size: 15px; font-family: Open-Sans, Arial;">
+												<a
+												href="http://hotpads.com/serenity-at-larkspur-larkspur-ca-94939-skfhpr/pad?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376"
+												style="color: #0074e4; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-decoration: none; font-size: 15px; font-family: Open-Sans, Arial;">700 Lincoln Village Circle, Larkspur, CA</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="see-more-button-wrapper" style="padding: 0 20px 30px;"
+			align="left">
+			<table cellspacing="0" cellpadding="0" border="0"
+				style="border-spacing: 0px; background-color: #DDD; background-repeat: repeat-x; border-radius: 3px; border: 1px solid #DDD; word-wrap: break-word; text-align: left;"
+				align="left">
+				<tr>
+					<td align="center" style="padding: 5px 10px; text-align: center;">
+						<table cellspacing="0" cellpadding="0" border="0"
+							style="border-spacing: 0;">
+							<tr>
+								<td
+									style="font-family: Open-sans, Arial; font-size: 15px; color: #fff; padding-left: 0px; padding-right: 0px; text-shadow: 0px 1px 0px #DDD; line-height: 22px;">
+									<a
+									href="http://hotpads.com/serenity-at-larkspur-larkspur-ca-94939-skfhpr/pad?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376"
+									style="text-decoration: none; border: none; color: #fff;">
+										<span style="color: #333333;">See all listing details</span>
+								</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<style type="text/css">
+img {
+	border: 0 !important;
+}
+</style>
+
+<style type="text/css">
+img { border: 0 !important; }
+</style>
+
+                </td>
+             </tr>
+            <tr>
+                <td class="cell" align="left" style="width:100%;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+                        <td class="zrn-footer-td" style="font-family:Open-Sans, Arial; width:84px; padding:20px 50px 20px 50px; border-top:1px solid #eee;">
+                            <img width="120" src="https://filenet.hotpads.com/images/logos/zillow_group_rentals_logo.png"/>
+                        </td>
+                        <td class="zrn-footer-td-2" style="font-family:Open-Sans, Arial; font-size:13px; color:#eee; border-top:1px solid #eee;">
+                            <a href="https://www.zillow.com/?utm_source=email&utm_medium=email&utm_campaign=zrn-contact-footerlogo" style="text-decoration:none; color:#999 !important;">Zillow</a>
+                            | <a href="https://www.trulia.com/" style="text-decoration:none; color:#999 !important;">Trulia</a>
+                            | <a href="https://hotpads.com/?ref=inquiry&utm_source=inquiry&utm_medium=email&utm_campaign=inquiry&utm_hash=e10ec58511&item_id=7553800798347020850&nid=4dca2b70-a524-11e7-b08c-0a50853b9376" style="text-decoration:none; color:#999 !important;">HotPads</a>
+                            | <a style="text-decoration:none; color:#999 !important;">MyNewPlace</a>
+                        </td>
+                    </tr></table>
+                    <style type="text/css">
+                    @media only screen and (max-device-width: 480px) {
+                        td[class="zrn-footer-td"] {
+                            display:block;
+                            text-align:center;
+                            width:100% !important;
+                            padding:20px 0 16px !important;
+                        }
+                        td[class="zrn-footer-td-2"] {
+                            display:block;
+                            text-align:center;
+                            border:0 !important;
+                            width:100% !important;
+                            padding:0 0 18px !important;
+                        }
+                        td[class="zrn-footer-td-2"] a {
+                            font-size:13px !important;
+                        }
+                    }
+                    </style>
+                </td>
+            </tr>
+             <tr>
+	    <td style="width:100%;font-family: arial, verdana, sans-serif;padding: 0 0 10px 0;background: #000;color:#ffffff;border:none;" align="center" id="zmobilefooter">
+         <style type="text/css">
+            @media only screen and (max-device-width: 480px) {
+                div[class="zaddrcontainer"] a {
+                    color:#ccc !important;
+                    text-decoration:none !important;
+                }
+                td[id="zfooter"] {
+                    padding-left:10px !important;
+                    padding-right:10px !important;
+                }
+                span[class="zcopyright"] {
+                    display:block !important;
+                }
+           </style>
+           <style type="text/css">
+                @media only screen and (max-device-width: 480px) {
+                    td[class="zprivacy"], td[class="zunsub"] {
+                        width:auto !important;
+                    }
+                }
+            </style>
+            <table cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="center" width="100%" style="background-color:#eee;">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="zprivacy" align="center" style="color:#666;font-family: Open-Sans,arial, verdana, sans-serif;font-size: 13px;text-transform:uppercase;font-weight:bold;padding-bottom:10px;padding-top:10px;line-height:20px;"><a href="https://www.zillow.com/corp/Privacy.htm?utm_source=email&utm_medium=email&utm_campaign=zrn-contact-footerprivacy" style="color: #666;text-decoration:none;">PRIVACY POLICY</a></td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                <td width="600" class="cell-center" style="line-height:20px;text-align: center; font-family: Open-Sans,Arial, Verdana, sans-serif; font-size: 13px; color: #ccc;padding-top:10px;font-weight:regular;padding-left:20px;padding-right:20px;" align="left" id="zfooter">
+                    <div class="zaddrcontainer"><span class="zcopyright">&copy; 2017 Zillow, Inc. </span>
+                    <span class="zaddress">1301&nbsp;Second&nbsp;Avenue,&nbsp;Floor&nbsp;31,&nbsp;Seattle,&nbsp;WA&nbsp;98101</span></div>
+                </td>
+	        </tr>
+		</table>
+	    </td>
+            </tr>
+        </table>
+</td></tr></table></td></tr></table>
+
+
+	<img src="https://hotpads.com/t/4dca2b70-a524-11e7-b08c-0a50853b9376" height="0" width="0" style="display:none;width:0;height:0;" />
+
+</body></html>
+------=_Part_153699_1611733377.1506696100077--
+
+------=_Part_153698_1512639952.1506696100077--
+
+------=_Part_153697_1901645542.1506696100077--

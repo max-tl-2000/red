@@ -1,0 +1,84 @@
+diff --git a/node_modules/draft-js-inline-toolbar-plugin/lib/components/Toolbar/index.js b/node_modules/draft-js-inline-toolbar-plugin/lib/components/Toolbar/index.js
+index c4b2724..5e9bc90 100644
+--- a/node_modules/draft-js-inline-toolbar-plugin/lib/components/Toolbar/index.js
++++ b/node_modules/draft-js-inline-toolbar-plugin/lib/components/Toolbar/index.js
+@@ -55,6 +55,36 @@ var Toolbar = function (_React$Component) {
+       // need to wait a tick for window.getSelection() to be accurate
+       // when focusing editor with already present selection
+       setTimeout(function () {
++        if (_this.props.OverrideToolbar) {
++          // The editor root should be two levels above the node from
++          // `getEditorRef`. In case this changes in the future, we
++          // attempt to find the node dynamically by traversing upwards.
++          var editorRef = _this.props.store.getItem('getEditorRef')();
++          if (!editorRef) return;
++
++          // This keeps backwards compatibility with React 15
++          var editorRoot = editorRef.refs && editorRef.refs.editor ? editorRef.refs.editor : editorRef.editor;
++          while (editorRoot.className.indexOf('DraftEditor-root') === -1) {
++            editorRoot = editorRoot.parentNode;
++          }
++          var editorRootRect = editorRoot.getBoundingClientRect();
++
++          var selectionRect = (0, _draftJs.getVisibleSelectionRect)(window);
++          if (!selectionRect) return;
++
++          // The toolbar shouldn't be positioned directly on top of the selected text,
++          // but rather with a small offset so the caret doesn't overlap with the text.
++          var extraTopOffset = -5;
++
++          var position = {
++            top: editorRoot.offsetTop + (selectionRect.top - editorRootRect.top) + extraTopOffset,
++            left: editorRoot.offsetLeft + (selectionRect.left - editorRootRect.left) + selectionRect.width / 2
++          };
++
++          _this.setState({ position: position });
++          return;
++        }
++
+         if (!_this.toolbar) return;
+ 
+         // The editor root should be two levels above the node from
+@@ -81,6 +111,7 @@ var Toolbar = function (_React$Component) {
+           top: editorRoot.offsetTop - _this.toolbar.offsetHeight + (selectionRect.top - editorRootRect.top) + extraTopOffset,
+           left: editorRoot.offsetLeft + (selectionRect.left - editorRootRect.left) + selectionRect.width / 2
+         };
++
+         _this.setState({ position: position });
+       });
+     }, _this.handleToolbarRef = function (node) {
+@@ -136,7 +167,9 @@ var Toolbar = function (_React$Component) {
+     value: function render() {
+       var _props = this.props,
+           theme = _props.theme,
+-          store = _props.store;
++          store = _props.store,
++          OverrideToolbar = _props.OverrideToolbar;
++
+       var OverrideContent = this.state.overrideContent;
+ 
+       var childrenProps = {
+@@ -146,6 +179,23 @@ var Toolbar = function (_React$Component) {
+         onOverrideContent: this.onOverrideContent
+       };
+ 
++      if (OverrideToolbar) {
++        var selection = store.getItem('getEditorState')().getSelection();
++        // overrideContent could for example contain a text input, hence we always show overrideContent
++        // TODO: Test readonly mode and possibly set isVisible to false if the editor is readonly
++        var isVisible = !selection.isCollapsed() && selection.getHasFocus() || !!this.state.overrideContent;
++
++        return _react2.default.createElement(OverrideToolbar, {
++          ref: this.handleToolbarRef,
++          className: theme.toolbarStyles.toolbar,
++          isVisible: isVisible,
++          position: this.state.position,
++          overridingContent: !!OverrideContent,
++        }, 
++        OverrideContent ? _react2.default.createElement(OverrideContent, childrenProps) : this.props.children(childrenProps));
++      }
++
++
+       return _react2.default.createElement(
+         'div',
+         {

@@ -1,0 +1,204 @@
+Return-Path: <bounces@bounces.wufoo.com>
+Received: from mta1d2.outbound.surveymonkey.com (mta1d2.outbound.surveymonkey.com [54.71.80.132])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 817ibsr9gf7j53g5bvruh75d1flb9mshee8g6f81
+ for foundationhomes.cove@maximus.mail.reva.tech;
+ Fri, 20 Apr 2018 00:43:55 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of bounces.wufoo.com designates 54.71.80.132 as permitted sender) client-ip=54.71.80.132; envelope-from=bounces@bounces.wufoo.com; helo=mta1d2.outbound.surveymonkey.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of bounces.wufoo.com designates 54.71.80.132 as permitted sender) client-ip=54.71.80.132; envelope-from=bounces@bounces.wufoo.com; helo=mta1d2.outbound.surveymonkey.com;
+ dkim=pass header.i=@wufoo.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIQVExNU5LSmdHVmdtZlhNelpZc2ZmSFUzNDQyOU9JRFNpa2pDcDV6ME5JaW03Kyt6TllVMGlnQ2dudU0reWI5ZGtzN0pjQUpndXlMK3o2R2FYS1VHS3E4RndrN01LanMzdGJ1WnIrb2wxSG9rQ1V4WjBuU1BnMmszK1drWE5POHpxNXJOT2d1YlZWN3o2b0RBS2Z4ZVl1cEo3aXJ4ZDVvYWZWdkJ2OXc0ZldPS0R2TlV1bGt6QUdwUTFCSGNzUGRLUWV4M21VTjRoblRyekNBMXdWTDNWV0JWY090RXZ0Mi9aWGJwbWFtb2tlYmp3MEp3VzFHQ3VtY3NKaGd3Nk1XeWhvbTZGaG9mUFNMSW5rc2pNSUhsM1hVUVY5S2xoLzF0VWk5Q1ZvblJZQWc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=PJWyqzJ8youAyFldhvLjfG31U/llvrcbq2yG8b4H4wMovgEF9GFthyuMnhEafjPgX5xAM/SJ2yjB6bBgjwF3r8ZsTLHGKK6DiCHC6wxH7rRdYlnr+2R5Wu3J4v8FHOuruxaX8dD/bXDv4rsIYwrqZSKZ7ljtYpGYt1LHdpo+Vq0=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1524185035; v=1; bh=jlJ7sr370LZ83PVfNXnjGnMdzZPxNIWRkxlRDKhLgHc=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=wufoo.com;
+	s=scph0817; t=1524185032; i=@wufoo.com;
+	bh=ZwXxZQ2nWpsO869NFCwGldDLFoGxgpypuJMROVgkkqY=;
+	h=To:Date:Reply-To:Subject:From;
+	b=T3U6cVQX3EvuuuloSvWvwn7+Qdqm442IbDCgCtQXLD1l8E3yAtba1U/bdMzneIifL
+	 EAU59JHJw1xh6gIWSXXCpMZlV8lgkKeKn+trs6bHjjH29cpVtoRxG6V9fH8GIEzCeb
+	 MiC3lJUgwFgHd4lGmqWDkHIdqg4WdsJCbCJ3qRHY=
+X-MSFBL: yLygKPhUYwN7UIqyB/jxBox+WnKUC3ttxQiaQkZHeIo=|eyJyIjoiZm91bmRhdGl
+	vbmhvbWVzLmNvdmVAbWF4aW11cy5tYWlsLnJldmEudGVjaCIsInN1YmFjY291bnR
+	faWQiOiI1IiwiY3VzdG9tZXJfaWQiOiIxIiwibWVzc2FnZV9pZCI6IjAwMDZjODM
+	3ZDk1YWMyOWY3N2E5IiwidGVuYW50X2lkIjoic3VydmV5bW9ua2V5In0=
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset="UTF-8"
+To: db@foundationhomes.com, foundationhomes.cove@maximus.mail.reva.tech
+Message-ID: <77.9A.40898.8C739DA5@f.mta2vrest.cc.prd.sparkpost>
+Date: Fri, 20 Apr 2018 00:43:52 +0000
+MIME-Version: 1.0
+Reply-To: no-reply@wufoo.com
+Subject: The Cove MLS Referral 
+From: "Foundation Homes" <no-reply@wufoo.com>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+
+<style type="text/css">
+
+* .location a:hover address, * .location a:hover span {
+	color:blue !important;
+	text-decoration:underline;
+}
+* .file a:hover .file-name{
+	color:green !important;
+}
+.rtl .info .var{
+	float:left;
+	padding:0 10px 0 0;
+	margin:0 10px 12px 0;
+}
+.rtl .info h2{
+	clear:none;
+}
+.rtl .createTD{
+	padding:0 0 0 12px !important;
+}
+.rtl .updateTD{
+	padding:0 12px 0 0 !important;
+}
+.rtl #entryInfo *{
+	text-align:center !important;
+}
+.rtl table .h2{
+	padding:0 0 7px 10px !important;
+}
+.rtl table .var{
+	padding:0 10px 0 0 !important;
+}
+.rtl .mapicon{
+	float:right !important;
+}
+.rtl .adr{
+	padding:2px 25px 2px 0 !important;
+}
+
+</style>
+</head>
+
+<body title="675472">
+<div style="font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans-serif;">
+
+
+
+
+
+
+ 
+
+<table class="readonly" cellspacing="0" cellpadding="0" style="width:100%;border-bottom:1px solid #eee;font-size:12px;line-height:135%;font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans-serif">
+	<tr style="background-color:#F5F5F5" >
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Client Name(s) First and Last: 
+			<span class="req" style="color:red">*</span>		</th>
+		<td id="roField117" style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+			<div>PRIYA CLEMENS</div>
+		</td>
+	</tr>
+	<tr style="background-color:#FFFFFF">
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Date of Client Referral to Foundation Rentals / The Cove: 
+			<span class="req" style="color:red;">*</span>		</th>
+		<td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+		<abbr class="dtstamp" title="20180419" style="font-style:normal;border:none;">Thursday, April 19, 2018</abbr>
+		</td>
+	</tr>
+	<tr style="background-color:#F5F5F5">
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Client Email to schedule appointment (required) 
+			<span class="req" style="color:red;">*</span>		</th>
+		<td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+		<a class="email" href="mailto:priyaclemens@gmail.com">priyaclemens@gmail.com</a>
+		</td>
+	</tr>
+	<tr style="background-color:#FFFFFF" >
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Client Phone Number  for appointment scheduling: 
+			<span class="req" style="color:red">*</span>		</th>
+		<td id="roField133" style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+			<div>415-317-2222</div>
+		</td>
+	</tr>
+	<tr style="background-color:#F5F5F5">
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Approximate Date of Move-In or Occupancy (if known): 
+					</th>
+		<td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+		<abbr class="dtstamp" title="20180501" style="font-style:normal;border:none;">Tuesday, May  1, 2018</abbr>
+		</td>
+	</tr>
+	<tr style="background-color:#FFFFFF" >
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Does your client have any pets? 
+					</th>
+		<td id="roField131" style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+			<div>1 cat</div>
+		</td>
+	</tr>
+	
+			<tr style="background-color:#F5F5F5">
+			<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+				Requested Appointment Time or Other Info (optional):
+							</th>
+			<td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+				<div>Fri Apr 20 8:00 AM 2018<br />
+Fri Apr 20 8:30 AM 2018<br />
+</div>
+			</td>
+		</tr>
+		<tr style="background-color:#FFFFFF">
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Please confirm that your client intends to list you as the "referral source" when viewing this property. 
+			<span class="req" style="color:red">*</span>		</th>
+		<td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+			<div>Yes, my client will list me as the referral source.</div>
+		</td>
+	</tr>
+	<tr style="background-color:#F5F5F5">
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			TERMS OF COMMISSION: See above.  Please acknowledge agreement below. 
+			<span class="req" style="color:red">*</span>		</th>
+		<td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+			<div>Agree</div>
+		</td>
+	</tr>
+	<tr style="background-color:#FFFFFF">
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Listing Broker: 
+			<span class="req" style="color:red">*</span>		</th>
+		<td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+			<div>Foundation Rentals</div>
+		</td>
+	</tr>
+	<tr style="background-color:#F5F5F5" >
+		<th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+			Referring Broker/Agent: 
+			<span class="req" style="color:red">*</span>		</th>
+		<td id="roField129" style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+			<div>db</div>
+		</td>
+	</tr>
+
+</table>
+
+ 
+
+
+
+ 
+
+
+</div>
+
+<img border="0" width="1" height="1" alt="" src="http://click.outbound.surveymonkey.com/q/AYuopq0vXxXTow-CQH50Aw~~/AAAAAQA~/RgRcu7zIPlcMc3VydmV5bW9ua2V5WAQAAAAFQgoABsg32VrCn3epUitmb3VuZGF0aW9uaG9tZXMuY292ZUBtYXhpbXVzLm1haWwucmV2YS50ZWNo">
+</body>
+</html>
+

@@ -1,0 +1,4 @@
+FinCharges,,,,,,,,,,
+PROPERTY,PERSON,OFFSET,AMOUNT,DATE,POSTMONTH,ACCOUNT,ACCRUAL,NOTES,REF,UNIT
+"cove","0000001t","appfee","43.00","6/26/2017","6/1/2017","48916","12000","Application Fee (Lease Signed) :Reva",":Applic","01-BARB-23"
+"cove","0000001t","10005","-43.00","6/26/2017","6/1/2017","48916","12000","Application Concession",":Applic","01-BARB-23"

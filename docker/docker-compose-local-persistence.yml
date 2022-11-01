@@ -1,0 +1,9 @@
+version: '2.1'
+services:
+  coredb:
+    volumes:
+      - ${HOME}/.red/db/data:/var/lib/postgresql/data
+
+  rabbitmq:
+    volumes:
+      - ${HOME}/.red/rabbitmq:/var/lib/rabbitmq

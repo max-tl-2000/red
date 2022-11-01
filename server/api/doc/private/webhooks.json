@@ -1,0 +1,551 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/webhooks/email": {
+      "post": {
+        "parameters": [
+          {
+            "description": "an object containg S3 bucket and file key for an inbound email",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/S3EmailInfo"
+            }
+          }
+        ],
+        "summary": "Triggers the processing of a new inbound email, stored in the S3",
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "400": {
+            "description": "Bad input, can not process email with the given data"
+          }
+        }
+      }
+    },
+    "/webhooks/email/status": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containg tracking information about an outbound email",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/OutboundEmailStatus"
+            }
+          }
+        ],
+        "summary": "Updates the status of an outbound email",
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Email status was update was processed correctly"
+          },
+          "400": {
+            "description": "Bad input, can not update email with the given data"
+          }
+        }
+      }
+    },
+    "/webhooks/sms": {
+      "post": {
+        "parameters": [
+          {
+            "description": "an object containg the SMS message information",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/InboundSms"
+            }
+          }
+        ],
+        "summary": "Triggers the processing of a new inbound SMS, stored by Plivo",
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "400": {
+            "description": "Bad input, can not process SMS with the given data"
+          }
+        }
+      }
+    },
+    "/webhooks/sms/status": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containg tracking information about an outbound SMS",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/OutboundSmsStatus"
+            }
+          }
+        ],
+        "summary": "Updates the status of an outbound sms",
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "SMS status was processed correctly"
+          },
+          "400": {
+            "description": "Bad input, can not update SMS with the given data"
+          }
+        }
+      }
+    },
+    "/webhooks/directDial": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/CallInfo"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        }
+      }
+    },
+    "/webhooks/postDial": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony provider params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/CallInfo"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        }
+      }
+    },
+    "/webhooks/callRecording": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing call recording params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/CallRecording"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Acknowledgement"
+          }
+        }
+      }
+    },
+    "/webhooks/callbackDial": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony provider params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/CallInfo"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        }
+      }
+    },
+    "/webhooks/agentCallForQueue": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony provider params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/CallInfo"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        },
+        "summary": "Webhook called by Plivo on dequeueing a call from the call queue."
+      }
+    },
+    "/webhooks/callReadyForDequeue": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony provider params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/CallInfo"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        },
+        "summary": "Webhook called by Plivo after the welcome message, when the call is ready to be dequeued and transferred to an agent."
+      }
+    },
+    "/webhooks/conferenceCallback": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony provider conference params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/ConferenceCallback"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        },
+        "summary": "Webhook called by Plivo on conference events."
+      }
+    },
+    "/webhooks/digitsPressed": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony provider params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/DigitsPressed"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        },
+        "summary": "Webhook called by Plivo when the caller pressed any digits."
+      }
+    },
+    "/webhooks/transferFromQueue": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing telephony provider params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/communications.json#/definitions/CallInfo"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call parameters for telephony provider"
+          }
+        },
+        "summary": "Webhook called by Plivo when the call is dequeued and transferred to an agent."
+      }
+    },
+    "/webhooks/paymentNotification": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing payment info. Message format is specific to each provider",
+            "in": "body",
+            "name": "params"
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns { processed: true }"
+          }
+        },
+        "summary": "Webhook called by the payment provider, when a payment is confirmed."
+      }
+    },
+    "/webhooks/screeningResponse": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing FADV communication params",
+            "in": "body",
+            "name": "params",
+            "schema": {
+              "$ref": "../public/applications.json#/definitions/ScreeningResponse"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call FADV communication status was processed correctly"
+          }
+        }
+      }
+    },
+    "/webhooks/fakeApplicationPayment": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing a JSON object that contains a tenantId and personApplicationId",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/fakeApplicationPayment"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Call Application Payment communication status was processed correctly"
+          },
+          "400": {
+            "description": "Missing tenant id or person application id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/webhooks/paymentCallback": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing the invoice id",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/fakePaymentCallback"
+            }
+          }
+        ],
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "The transaction was verified"
+          },
+          "400": {
+            "description": "Missing invoice id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/webhooks/ringCentralNotificationCallback": {
+      "post": {
+        "tags": [
+          "Webhooks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Event was received"
+          }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "S3EmailInfo": {
+      "type": "object",
+      "properties": {
+        "Key": {
+          "description": "An amazon S3 file key",
+          "type": "string"
+        },
+        "Bucket": {
+          "description": "Amazon S3 bucket",
+          "type": "string"
+        }
+      }
+    },
+    "fakePaymentCallback": {
+      "type": "object",
+      "properties": {
+        "invoiceId": {
+          "description": "Invoice id of the transaction to be verified",
+          "type": "string",
+          "format": "uuid"
+        },
+        "tenantId": {
+          "description": "tenant ID containing the invoice",
+          "type": "string",
+          "format": "uuid"
+        },
+        "personApplicationId": {
+          "description": "Person application id associated with the invoice",
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    },
+    "fakeApplicationPayment": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "description": "Id of the tenant that will associate the data",
+          "type": "string"
+        },
+        "personApplicationId": {
+          "description": "The id of the person application to update the application payment",
+          "type": "string"
+        }
+      }
+    },
+    "OutboundEmailStatus": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "description": "Sender email address.It is used to determine the tenant",
+          "type": "string"
+        },
+        "type": {
+          "description": "Amazon SNS Notification type (Delivered / Bounced)",
+          "type": "string"
+        },
+        "messageId": {
+          "description": "Id used to identify outbound messages",
+          "type": "string"
+        },
+        "bouncedRecipients": {
+          "description": "Array of objects containg the emailAddress for which the message bounced",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "OutboundSmsStatus": {
+      "type": "object",
+      "properties": {
+        "From": {
+          "description": "Sender phone number.It is used to determine the tenant",
+          "type": "string"
+        },
+        "Status": {
+          "description": "Plivo message delivery status.",
+          "type": "string"
+        },
+        "MessageUUID": {
+          "description": "Id used to identify outbound and inbound messages",
+          "type": "string"
+        },
+        "To": {
+          "description": "Recipient phone number.",
+          "type": "string"
+        }
+      }
+    },
+    "InboundSms": {
+      "type": "object",
+      "properties": {
+        "From": {
+          "description": "Sender phone number. It is used to determine the tenant",
+          "type": "string"
+        },
+        "Text": {
+          "description": "The SMS text message.",
+          "type": "string"
+        },
+        "Type": {
+          "description": "The SMS type(sms or mms).",
+          "type": "string"
+        },
+        "MessageUUID": {
+          "description": "Id used to identify outbound and inbound messages",
+          "type": "string"
+        },
+        "To": {
+          "description": "Recipient phone number.",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

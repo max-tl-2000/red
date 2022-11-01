@@ -1,0 +1,66 @@
+@import '../../../../client/sass/_responsive.mixins.scss';
+@import '../../../../client/sass/_colors.scss';
+
+.application-panel {
+  padding-bottom: 1em;
+
+  .property-policies {
+    padding-top: (7em/16);
+  }
+}
+
+.no-policy {
+  margin: (14em/16) 0;
+  border-bottom: 1px solid rgba($black, .12);
+}
+
+.quote-summary {
+  padding: 1em 1em (6em/16);
+  border-radius: (3em/16);
+  background: $white;
+  box-shadow: 0 (2em/16) (2em/16) 0 rgba($black, .24), 0 0 (2em/16) 0 rgba($black, .12);
+
+  .quote {
+    margin-top: (6em/16);
+    padding-top: 1em;
+    border-top: 1px solid $grey200;
+  }
+
+  .quote-actions {
+    padding-top: (6em/16);
+    text-align: center;
+  }
+}
+
+@include to('small2') {
+  .reflow {
+    &.application-panel {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      align-content: center;
+
+      .property-policies {
+        padding-top: 1em;
+      }
+    }
+
+    .quote-summary {
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+
+      .quote {
+        border-top: none;
+
+        > div:first-child {
+          margin-top: (24rem/16);
+          padding-top: (24rem/16);
+          text-align: center;
+          border-top: 1px solid $grey200;
+        }
+      }
+    }
+  }
+}

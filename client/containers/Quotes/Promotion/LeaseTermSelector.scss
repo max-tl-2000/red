@@ -1,0 +1,47 @@
+.lease-term-selector {
+  // fixed size to avoid resizing issues on screening information changes on lease term selection.
+  width: 31.25em;
+
+  button {
+    width: 100%;
+  }
+
+  p {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-left: .5em;
+  }
+
+  p > span {
+    margin-left: .5em;
+
+    flex-basis: 17%;
+
+    &:last-child {
+      flex-basis: 60%;
+    }
+  }
+
+  &.isRenewal {
+    width: 25em;
+
+    p {
+      justify-content: space-between;
+      margin-right: .6em;
+    }
+
+    p > span {
+      margin-left: .5em;
+
+      &:last-child {
+        flex-basis: unset;
+      }
+    }
+  }
+
+  [data-component='dropdown-caret-affordance'] {
+    justify-content: center;
+    height: 3.2em;
+  }
+}

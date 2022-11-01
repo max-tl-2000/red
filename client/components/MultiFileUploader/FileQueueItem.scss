@@ -1,0 +1,28 @@
+@import '../../sass/_colors.scss';
+
+.file-wrapper {
+  position: relative;
+  margin-bottom: (4em/16);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.file-item {
+  &.queued {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &.invalid {
+    border-color: $redA700;
+  }
+
+  &.uploaded {
+    &.invalid-metadata {
+      border-color: $redA700;
+    }
+  }
+}

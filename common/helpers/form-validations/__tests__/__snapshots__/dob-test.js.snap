@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`isValidDOB when a date is before the min valid year should produce an error message and show the valid range 1`] = `
+Object {
+  "error": Array [
+    "INVALID_DATE_RANGE",
+    Object {
+      "max": "07/01/1999",
+      "min": 1900,
+    },
+  ],
+}
+`;
+
+exports[`isValidDOB when only a partial value of the date is entered should show the error message accordingly 1`] = `
+Object {
+  "error": Array [
+    "INVALID_DATE_FORMAT",
+    Object {
+      "format": "MM/DD/YYYY",
+    },
+  ],
+}
+`;
+
+exports[`isValidDOB when the applicant is not 18 years old should produce an error telling the user he needs to be at least 18 1`] = `
+Object {
+  "error": Array [
+    "YOU_MIGHT_BE_MIN_AGE_OR_OLDER",
+    Object {
+      "minAge": 18,
+    },
+  ],
+}
+`;

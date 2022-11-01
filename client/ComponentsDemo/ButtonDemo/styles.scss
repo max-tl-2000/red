@@ -1,0 +1,17 @@
+.buttons-table {
+  td {
+    text-align: center;
+  }
+}
+
+.regular-buttons {
+  :global(.btn-floating) {
+    margin: 0 6px;
+  }
+}
+
+.action-menu-trigger {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}

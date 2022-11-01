@@ -1,0 +1,26 @@
+@keyframes enterAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes exitAnim {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.enter {
+  animation: enterAnim .3s ease-out;
+}
+
+.exit {
+  animation: exitAnim .3s ease-out;
+}

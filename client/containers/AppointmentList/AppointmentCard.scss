@@ -1,0 +1,33 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_fonts.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.appointment-card {
+  position: relative;
+  padding: 1rem 1.5rem .5rem;
+  border-bottom: 1px solid $grey100;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.appointment-details {
+  position: relative;
+  width: 100%;
+
+  &.isCompleteOrCanceled {
+    opacity: .5;
+  }
+}
+
+.actions {
+  position: absolute;
+  top: .3rem;
+  right: 1rem;
+}
+
+.actions-overlay {
+  white-space: nowrap;
+}

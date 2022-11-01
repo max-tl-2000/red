@@ -1,0 +1,127 @@
+@import '../../sass/_colors';
+
+.icon-button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: top;
+  color: #666;
+  border: 0;
+  border-radius: 100%;
+  background: none;
+
+  &.compact {
+    .wrapper {
+      padding: (8rem/16);
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background: none;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: background .3s ease-out;
+    border-radius: 100%;
+    background: rgba(158, 158, 158, 0);
+  }
+
+  &:hover .wrapper {
+    background: rgba(158, 158, 158, .25);
+  }
+
+  &[disabled] {
+    opacity: .5;
+    color: #aaa;
+
+    &:active .wrapper,
+    &:focus .wrapper,
+    &:hover .wrapper {
+      background: none;
+    }
+  }
+
+  .icon {
+    display: block;
+  }
+
+  &.light {
+    color: #fff;
+
+    .wrapper {
+      background: rgba(255, 255, 255, 0);
+    }
+
+    &:hover .wrapper {
+      background: rgba(255, 255, 255, .125);
+    }
+
+    &[disabled] {
+      color: rgba(255,255,255,.5);
+
+      &:hover .wrapper {
+        background: none;
+      }
+    }
+  }
+
+  &.noHover:hover,
+  &.noHover.light:hover {
+    .wrapper {
+      background: none;
+    }
+  }
+}
+
+[data-input-method='keyboard'] {
+  .icon-button {
+    &:focus .wrapper {
+      background: rgba(158, 158, 158, .20);
+    }
+
+    &.light {
+      &:focus .wrapper {
+        background: rgba(255, 255, 255, .35);
+      }
+    }
+  }
+}
+
+.loading {
+  position: relative;
+
+  &.light {
+    span[data-component='loading-element'] {
+      > svg {
+        fill: rgba(#fff, .87);
+        stroke: rgba(#fff, .87);
+      }
+    }
+  }
+
+  .wrapper {
+    visibility: hidden;
+  }
+
+  span[data-component='loading-element'] {
+    > svg {
+      fill: rgba(#000, .87);
+      stroke: rgba(#000, .87);
+    }
+  }
+}

@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recordFormatter.format when format receives an object like: should format access-log-req as expected: access-log-req 1`] = `
+"[46m[30m[server]:[39m[49m 
+[36m⇠⇠ [eb246369-4996-4791-84c8-c05c2aed9282] ⇠⇠
+[39m[90m  GET /scripts-dev/__webpack_hmr
+[39m[90m  headers: 
+[39m[90m    host: red.localhost.com:3000
+    connection: keep-alive
+    pragma: no-cache
+    cache-control: no-cache
+    accept: text/event-stream
+    user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+    referer: http://red.localhost.com:3000/
+    accept-encoding: gzip, deflate, sdch
+    accept-language: en-US,en;q=0.8,es;q=0.6
+    cookie: i18next=en-US
+[39m[36m⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠
+[39m
+"
+`;
+
+exports[`recordFormatter.format when format receives an object like: should format access-log-res as expected: access-log-res 1`] = `
+"[46m[30m[server]:[39m[49m 
+[33m⇢⇢ [4dfcb8cd-4c30-46eb-bf1d-eca656a41982] ⇢⇢
+[39m[90m  status: [32m200[90m
+[39m[90m  duration (ms): 10
+[39m[90m  headers: 
+[39m[90m    HTTP/1.1 200 OK
+    X-Powered-By: Express
+    X-Request-Id: 4dfcb8cd-4c30-46eb-bf1d-eca656a41982
+    Set-Cookie: i18next=en-US; path=/; expires=Sun, 02 Jul 2017 03:15:14 GMT
+    Content-Type: text/html; charset=utf-8
+    ETag: W/\\"9db-cLcxPlPR976GFlmuXCJTvQ\\"
+    Vary: Accept-Encoding
+    Content-Encoding: gzip
+    Date: Sat, 02 Jul 2016 03:15:14 GMT
+    Connection: keep-alive
+    Transfer-Encoding: chunked
+[39m[33m⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢
+[39m
+"
+`;
+
+exports[`recordFormatter.format when format receives an object like: should format access-log-unknown as expected: access-log-unknown 1`] = `"[46m[30m[server]:[39m[49m unknown message in the access-log"`;
+
+exports[`recordFormatter.format when format receives an object like: should format amqp-publish as expected: amqp-publish 1`] = `
+"[46m[30m[integration-test]:[39m[49m [37m[t]: [AMQP] publishing to integration_app_exchange tenant_created
+[39m[90mamqpMessage: {
+  id: 'f342fdbe-4e6e-485e-8243-bbd0cb2864ec',
+  name: 'red',
+  authorization_token: 'edadbb9e-021b-4a8f-af95-37fe43fe396d'
+}[39m"
+`;
+
+exports[`recordFormatter.format when format receives an object like: should format amqp-received as expected: amqp-received 1`] = `
+"[46m[30m[integration-test]:[39m[49m [37m[t]: [AMQP] Received in consumer=0 from exchange: integration_app_exchange and topic: new_user_registered
+[39m[90mamqpMessage: {
+  content: '{\\"name\\":\\"Jon\\",\\"tenantId\\":\\"6ebd4b29-b6b4-4963-81e9-baaad9bb3c53\\",\\"userId\\":\\"48e0c910-2cfe-4660-907e-f2b871786fbe\\"}',
+  fields: {
+    consumerTag: 'amq.ctag-x-Yh19HWfz_SREl0-34Vhg',
+    deliveryTag: 1,
+    redelivered: false,
+    exchange: 'integration_app_exchange',
+    routingKey: 'new_user_registered'
+  },
+  properties: { headers: {}, deliveryMode: 2 }
+}[39m"
+`;
+
+exports[`recordFormatter.format when format receives an object like: should format default as expected: default 1`] = `
+"[46m[30m[integration-test]:[39m[49m [1m[34m08:53:32.379[39m[22m [33m[d]:[39m save tenant result
+ subType: 'tenantService'
+ result: {
+  created_at: null,
+  updated_at: null,
+  id: 'b075d0a6-d1ab-4477-9e5b-0a7961d1c5df',
+  name: 'red',
+  migrations_path: null,
+  phoneNumber: null,
+  authorization_token: '80907417-c664-4c10-b906-3c9fba0a62d8',
+  metadata: null,
+  refreshed_at: '2016-06-30T08:53:31.609Z'
+}
+"
+`;
+
+exports[`recordFormatter.format when format receives an object like: should format i18n as expected: i18n 1`] = `"[46m[30m[server]:[39m[49m [37m[t]: i18n - currentLng set to: en-US[39m"`;
+
+exports[`recordFormatter.format when format receives an object like: should format i18n--error as expected: i18n--error 1`] = `
+"[46m[30m[server]:[39m[49m [1m[34m03:15:14.420[39m[22m [31m[e]:[39m currentLng set to: en-US
+ subType: 'i18n'
+ args: []
+ [31mReferenceError: color is not defined
+    at getColorForRecordBasedOnLevel (record-formatter.js:22:5)
+    at Object.format (record-formatter.js:88:42)
+    at Logger.overrideLevel [as _emit] (logger.js:53:41)
+    at Server.<anonymous> (server.js:142:12)
+    at Server.g (events.js:273:16)
+    at emitNone (events.js:85:20)
+    at Server.emit (events.js:179:7)
+    at emitListeningNT (net.js:1253:10)
+    at nextTickCallbackWith1Arg (node.js:464:9)[39m
+
+ [90m  /Users/roy/royws/red/server/helpers/i18n.js:34[39m
+"
+`;
+
+exports[`recordFormatter.format when format receives an object like: should format uncaught-exception as expected: uncaught-exception 1`] = `
+"[46m[30m[server]:[39m[49m [31m[Unhandled exception][39m
+  [90mpid: 45712
+  [31mundefined [NO STACK PROVIDED][90m
+[39m
+"
+`;
+
+exports[`recordFormatter.format when format receives an object like: should format unhandled-rejection as expected: unhandled-rejection 1`] = `
+"[46m[30m[integration-test]:[39m[49m [31m[Unhandled rejection][39m
+  [90mpid: 56627
+  [31mReferenceError: color is not defined
+    at getColorForRecordBasedOnLevel (record-formatter.js:22:5)
+    at Object.format (record-formatter.js:88:42)
+    at Logger.overrideLevel [as _emit] (logger.js:53:41)
+    at Server.<anonymous> (server.js:142:12)
+    at Server.g (events.js:273:16)
+    at emitNone (events.js:85:20)
+    at Server.emit (events.js:179:7)
+    at emitListeningNT (net.js:1253:10)
+    at nextTickCallbackWith1Arg (node.js:464:9)[90m
+[39m
+"
+`;

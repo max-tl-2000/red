@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lease xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NameID>{{nameId}}</NameID>
+  <LeaseExpirationDate>{{leaseEndDate}}</LeaseExpirationDate>
+  <ChargeAmounts>
+    <ChargeAmount name='PET' type='NONREFUNDABLE'>0</ChargeAmount>
+    <ChargeAmount name='PET' type='RECURRING'>30</ChargeAmount>
+    <ChargeAmount name='PET' type='DEPOSIT'>75</ChargeAmount>
+    <ChargeAmount name='APP' type='NONREFUNDABLE'>0</ChargeAmount>
+    <ChargeAmount name='APP' type='RECURRING'>0</ChargeAmount>
+    <ChargeAmount name='APP' type='DEPOSIT'>0</ChargeAmount>
+    <ChargeAmount name='RNT' type='NONREFUNDABLE'>0</ChargeAmount>
+    <ChargeAmount name='RNT' type='RECURRING'>500</ChargeAmount>
+    <ChargeAmount name='RNT' type='DEPOSIT'>1000</ChargeAmount>
+  </ChargeAmounts>
+</Lease>

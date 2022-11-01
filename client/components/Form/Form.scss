@@ -1,0 +1,34 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.form {
+  padding: 0;
+
+  &.container {
+    padding: (24rem/16);
+  }
+}
+
+.title {
+  @include textTitle();
+}
+
+.actions-outer {
+  margin-top: .5rem;
+
+  [data-component='field-middle-wrapper'] {
+    min-height: (70rem/16);
+  }
+
+  .actions {
+    > * {
+      margin-right: (10rem/16);
+    }
+  }
+}
+
+.form-summary {
+  ul {
+    margin: 0;
+  }
+}

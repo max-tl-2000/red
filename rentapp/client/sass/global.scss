@@ -1,0 +1,19 @@
+:global {
+  @import '../../../client/sass/_waves.scss';
+  @import '../../../client/sass/_fonts.scss';
+
+  html {
+    font-family: $robotoRegular;
+    font-size: 16px; // ensure 1em === 1rem === 16px
+    background: #fff;
+  }
+
+  body,
+  html,
+  #content {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "html": "",
+  "text": "---------- Forwarded message ----------\nFrom: Darius Baba <darius@reva.tech>\nDate: Fri, Sep 2, 2016 at 3:24 PM\nSubject: test\nTo: Darius Baba <darius@craftingsoftware.com>\n\n\ntest\n",
+  "headers": {
+    "return-path": "<darius@craftingsoftware.com>",
+    "received": [
+      "from mail-pf0-f178.google.com (mail-pf0-f178.google.com [209.85.192.178]) by inbound-smtp.us-east-1.amazonaws.com with SMTP id nbv2hbvqir1avlrkncbprluh9elc19dlejbkauo1 for darius+dev1@blue.dev.mail.reva.tech; Fri, 02 Sep 2016 12:24:49 +0000 (UTC)",
+      "by mail-pf0-f178.google.com with SMTP id h186so42052587pfg.3 for <darius+dev1@blue.dev.mail.reva.tech>; Fri, 02 Sep 2016 05:24:49 -0700 (PDT)",
+      "by 10.66.67.12 with HTTP; Fri, 2 Sep 2016 05:24:48 -0700 (PDT)"
+    ],
+    "x-ses-spam-verdict": "PASS",
+    "x-ses-virus-verdict": "PASS",
+    "received-spf": "",
+    "authentication-results": ";",
+    "dkim-signature": "",
+    "x-google-dkim-signature": "",
+    "x-gm-message-state": "AE9vXwN/FIMh9bHmXhHNUDEKZM+XL0hrOKo4eH21HNrzCCmfWm6KMSs+fWE+568RH7o8ZaKdqPEZHxqOKgfj4w==",
+    "x-received": "by 10.98.7.80 with SMTP id b77mr35896460pfd.136.1472819088545; Fri, 02 Sep 2016 05:24:48 -0700 (PDT)",
+    "mime-version": "1.0",
+    "in-reply-to": "<CAAjT_z2ZwT9HXS=Bq0PwrhhZEq54VZM773ypAiEnh-aC6sspgg@mail.gmail.com>",
+    "references": "<CAAjT_z2ZwT9HXS=Bq0PwrhhZEq54VZM773ypAiEnh-aC6sspgg@mail.gmail.com>",
+    "from": "Darius Baba <darius@craftingsoftware.com>",
+    "date": "Fri, 2 Sep 2016 15:24:48 +0300",
+    "message-id": "<CA+TzT8z9ninYCym2gZEsEOjhih0kv7j0u6SAtMPWLW4gCnS+UA@mail.gmail.com>",
+    "subject": "Fwd: test",
+    "to": "darius+dev1@blue.dev.mail.reva.tech",
+    "content-type": "multipart/alternative; boundary=001a1143f694977109053b856a9b"
+  },
+  "subject": "Fwd: test",
+  "references": [
+    "CAAjT_z2ZwT9HXS=Bq0PwrhhZEq54VZM773ypAiEnh-aC6sspgg@mail.gmail.com"
+  ],
+  "messageId": "CA+TzT8z9ninYCym2gZEsEOjhih0kv7j0u6SAtMPWLW4gCnS+UA@mail.gmail.com",
+  "inReplyTo": [
+    "CAAjT_z2ZwT9HXS=Bq0PwrhhZEq54VZM773ypAiEnh-aC6sspgg@mail.gmail.com"
+  ],
+  "priority": "normal",
+  "from": [
+    {
+      "address": "darius@craftingsoftware.com",
+      "name": "Darius Baba"
+    }
+  ],
+  "to": [
+    {
+      "address": "darius+dev1@blue.dev.mail.reva.tech",
+      "name": ""
+    }
+  ],
+  "date": "2016-09-02T12:24:48.000Z",
+  "receivedDate": "2016-09-02T12:24:49.000Z"
+}

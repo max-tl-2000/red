@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+form label {
+  font-size: 14px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: .2rem;
+  color: #333;
+}
+
+form *,
+form *:before,
+form *:after {
+  box-sizing: border-box;
+}
+
+input,
+select {
+  font-size: 14px;
+  line-height: 18px;
+  box-sizing: border-box;
+  height: 37px;
+  margin-bottom: 10px;
+  padding-top: 2px;
+  letter-spacing: .1px;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: .3em;
+  box-shadow: none;
+}
+
+select {
+  width: calc(50% - 5px);
+  margin-right: 10px;
+  background-color: white;
+}
+
+select.last {
+  margin-right: 0;
+}
+
+input[type='submit'] {
+  margin-right: 12px;
+  color: white;
+  background: #1d84d5;
+}
+
+input[type='text'] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: .3em;
+}
+
+input[type='submit']:hover {
+  background-color: gray;
+}
+
+input[type='button'] {
+  color: gray;
+}
+
+input[type='button']:hover {
+  background-color: white;
+}
+
+.btn {
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 0;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2px;
+}
+
+.btn:disabled {
+  color: white;
+  background-color: CadetBlue;
+}
+
+.btn:disabled:hover {
+  background-color: CadetBlue;
+}
+
+.inline {
+  display: block;
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+}
+
+.wrapper {
+  padding-top: 22px;
+}
+
+.hide {
+  visibility: hidden;
+}

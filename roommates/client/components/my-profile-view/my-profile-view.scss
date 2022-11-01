@@ -1,0 +1,30 @@
+@import '../../../../client/sass/_colors.scss';
+
+.my-profile-view {
+  border: 0;
+  background-color: $white;
+
+  .details {
+    padding: (12rem/16) (16rem/16) (16rem/16);
+
+    :global(.full-profile-view) {
+      margin: (20rem/16) 0 0;
+    }
+  }
+
+  .actions {
+    padding: 0 0 (6rem/16);
+
+    .full-profile-btn {
+      margin-left: (8rem/16);
+
+      > svg {
+        width: (24rem/16);
+        height: (24rem/16);
+        margin-left: (3rem/16);
+        vertical-align: middle;
+        opacity: .54;
+      }
+    }
+  }
+}

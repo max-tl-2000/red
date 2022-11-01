@@ -1,0 +1,285 @@
+{
+  "data": [
+    {
+      "leaseTerms": {
+        "monthlyRent": 4577,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Ann",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Bob",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 1001,
+      "post": "scenario-ann-bob-denied.xml"
+    },
+    {
+      "leaseTerms": {
+        "monthlyRent": 4582,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Edgar",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Florence",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 2001,
+      "post": "scenario-edgar-florence-approved.xml"
+    },
+    {
+      "leaseTerms": {
+        "monthlyRent": 4577,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Edgar",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Florence",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 2002,
+      "post": "scenario-edgar-florence-denied.xml"
+    },
+    {
+      "leaseTerms": {
+        "monthlyRent": 4582,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Gary",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Hermione",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 3001,
+      "post": "scenario-gary-hermione-approved.xml"
+    },
+    {
+      "leaseTerms": {
+        "monthlyRent": 4577,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Gary",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Hermione",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 3002,
+      "post": "scenario-gary-hermione-denied.xml"
+    },
+    {
+      "leaseTerms": {
+        "monthlyRent": 4577,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Gary",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Hermione",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 4001,
+      "post": "scenario-roommates-denied.xml"
+    },
+    {
+      "leaseTerms": {
+        "monthlyRent": 4582,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Ann",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "David",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Mike",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 5001,
+      "post": "scenario-ann-david-mike-approved.xml"
+    },
+    {
+      "leaseTerms": {
+        "monthlyRent": 4582,
+        "leaseMonths": 12
+      },
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Ann",
+            "lastName": "Smith"
+          }
+        },
+        {
+          "name": {
+            "firstName": "Bob",
+            "lastName": "Smith"
+          }
+        }
+      ],
+      "transactionNumber": 6001,
+      "post": "scenario-ann-bob-denied-with-custom-records-extended.xml"
+    },
+    {
+      "includeServiceStatusOnFirstNew": true,
+      "areServicesComplete": true,
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Joe",
+            "lastName": "Stuck"
+          }
+        }
+      ],
+      "transactionNumber": 7001,
+      "post": "generic-incomplete-response-template.xml"
+    },
+    {
+      "includeServiceStatusOnFirstNew": true,
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Joe",
+            "lastName": "Delayed"
+          }
+        }
+      ],
+      "transactionNumber": 8001,
+      "post": "generic-incomplete-response-template.xml"
+    },
+    {
+      "includeServiceStatusOnFirstNew": true,
+      "areServicesComplete": true,
+      "isCreditServiceFrozen": true,
+      "applicants": [
+        {
+          "name": {
+            "firstName": "Joe",
+            "lastName": "Freeze"
+          }
+        }
+      ],
+      "transactionNumber": 9001,
+      "post": "generic-incomplete-response-template.xml"
+    },
+    {
+      "includeServiceStatusOnFirstNew": true,
+      "areServicesComplete": true,
+      "isCreditServiceFrozen": false,
+      "leaseTerms": {
+        "monthlyRent": 4577,
+        "leaseMonths": 1
+      },
+       "applicants": [
+        {
+          "name": {
+            "firstName": "Amya",
+            "lastName": "Abbott"
+          }
+        }
+      ],
+      "transactionNumber": 9002,
+      "post": "scenario-amya-conditional-705.xml"
+    },
+    {
+      "includeServiceStatusOnFirstNew": true,
+      "areServicesComplete": true,
+      "isCreditServiceFrozen": false,
+      "leaseTerms": {
+        "monthlyRent": 4577,
+        "leaseMonths": 1
+      },
+       "applicants": [
+        {
+          "name": {
+            "firstName": "Annie",
+            "lastName": "Robertston"
+          }
+        }
+      ],
+      "transactionNumber": 9003,
+      "post": "scenario-annie-conditional-732.xml"
+    },
+    {
+      "includeServiceStatusOnFirstNew": true,
+      "areServicesComplete": true,
+      "isCreditServiceFrozen": false,
+      "leaseTerms": {
+        "monthlyRent": 4577,
+        "leaseMonths": 1
+      },
+       "applicants": [
+        {
+          "name": {
+            "firstName": "Braelyn",
+            "lastName": "Patrick"
+          }
+        }
+      ],
+      "transactionNumber": 9004,
+      "post": "scenario-braelyn-conditional-800.xml"
+    }
+  ]
+}

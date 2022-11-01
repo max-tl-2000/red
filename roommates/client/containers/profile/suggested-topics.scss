@@ -1,0 +1,24 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_typography-mixins.scss';
+
+.suggested-topics {
+  width: (320rem/16);
+  padding: 1rem 1.25rem;
+}
+
+.title {
+  padding: .5rem 0 1rem;
+}
+
+.list-container ul {
+  display: block;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+li.list-item {
+  @include textSecondary();
+
+  margin-bottom: .3rem;
+  list-style-type: disc;
+}

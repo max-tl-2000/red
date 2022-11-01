@@ -1,0 +1,23 @@
+@import '../../../client/sass/colors';
+@import '../../../client/sass/typography-mixins';
+
+.card-main-content {
+  display: table;
+  min-width: 15rem;
+  padding: 1rem;
+}
+
+.avatar {
+  display: table-cell;
+  width: (40rem/16);
+}
+
+.card-info {
+  display: table-cell;
+  padding-left: (5rem/16);
+  vertical-align: middle;
+}
+
+.table-row {
+  display: table-row;
+}

@@ -1,0 +1,51 @@
+/*
+ * Copyright (c) 2022 Reva Technology Inc., all rights reserved.
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Licensed under the Elastic License 2.0; you may not use this file except
+ * in compliance with the Elastic License 2.0.
+ */
+
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { observer } from 'mobx-react';
+import { t } from 'i18next';
+import CollectionPanel from 'custom-components/CollectionPanel/CollectionPanel';
+import { toLowerCaseTransKey } from '../../../../common/helpers/i18next-utils';
+
+import VehicleForm from './VehicleForm';
+import VehicleCard from './VehicleCard';
+import { createVehicleFormModel } from './VehicleFormModel';
+
+@observer
+export default class VehicleCollection extends Component {
+  static propTypes = {
+    viewModel: PropTypes.object,
+    useRevealingPanel: PropTypes.bool,
+  };
+
+  setRef = (prop, instance) => {
+    this[prop] = instance;
+  };
+
+  render = ({ viewModel, useRevealingPanel = false, restrictAddOrRemoveItems = false, partyClosedOrArchived } = this.props) => (
+    <CollectionPanel
+      ref={node => this.setRef('collectionPanel', node)}
+      collectionPanelId="vehicleCollectionPanel"
+      entityLabel={'VEHICLE'}
+      FormComponent={VehicleForm}
+      EntityComponent={VehicleCard}
+      contextMenuDefaults={true}
+      collectionViewModel={viewModel}
+      emptyMessageStyle={{ padding: '1rem 1.5rem' }}
+      useRevealingPanel={useRevealingPanel}
+      createFormModel={createVehicleFormModel}
+      restrictAddOrRemoveItems={restrictAddOrRemoveItems}
+      restrictAddOrRemoveItemsTitle={t('CANNOT_ADD_COLLECTION_TITLE', { collection: toLowerCaseTransKey('VEHICLES') })}
+      restrictAddOrRemoveItemsMsg={
+        partyClosedOrArchived
+          ? t('CANNOT_ADD_MEMBERS_TEXT_CLOSED', { memberType: t('VEHICLES') })
+          : t('CANNOT_ADD_COLLECTION_TEXT_ACTIVE_LEASE', { collection: t('VEHICLES') })
+      }
+    />
+  );
+}

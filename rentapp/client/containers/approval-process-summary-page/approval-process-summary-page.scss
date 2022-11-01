@@ -1,0 +1,63 @@
+@import '../../../../client/sass/_colors.scss';
+
+.wrapper {
+  height: 100%;
+  background-color: $grey50;
+
+  div[data-component='section']:last-child {
+    margin-bottom: 0;
+    padding-bottom: (100em/16);
+  }
+}
+
+.recommended-action {
+  margin-top: (12rem/16);
+  margin-bottom: 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .decision-wrapper {
+    display: flex;
+  }
+
+  .status {
+    margin-bottom: (4rem/16);
+
+    &.decline {
+      color: rgba($redA400, .87);
+    }
+
+    &.require-guarantor {
+      color: $black;
+    }
+
+    &.approve {
+      color: $green900;
+    }
+
+    &.expired {
+      margin-right: .3em;
+      color: rgba($redA400, .87);
+    }
+  }
+
+  .status-icon-wrapper {
+    .check-icon {
+      fill: $grey600;
+    }
+
+    .alert-icon {
+      fill: $red500;
+    }
+  }
+}
+
+.warnings {
+  margin-bottom: (30em/16);
+  padding: (12em/16) 0;
+  background-color: $blueGrey50;
+}

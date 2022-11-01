@@ -1,0 +1,403 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/search/persons": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The filtering data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "emails": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "List of emails to search persons by"
+                },
+                "phones": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "List of phones to search persons by"
+                },
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "includeSpam": {
+                      "type": "boolean",
+                      "description": "Include persons that are part of parties closed as spam"
+                    },
+                    "onlyOrphans": {
+                      "type": "boolean",
+                      "description": "Get only persons that were removed from parties"
+                    },
+                    "excludedPersonId": {
+                      "type": "string",
+                      "description": "Exclude the person identified by this personId from results"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Contacts that match the filters",
+            "schema": {
+              "items": {
+                "$ref": "persons.json#/definitions/Contact"
+              },
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads contacts that match the filters in the search",
+        "tags": ["Search"]
+      }
+    },
+    "/search/personMatches": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The filtering data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Legal name to search matches for"
+                },
+                "personId": {
+                  "type": "string",
+                  "description": "Id of current person for which to load matches"
+                },
+                "emails": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "List of emails to match persons by"
+                },
+                "phones": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "List of phones to match persons by"
+                },
+                "searchId": {
+                  "type": "string",
+                  "description": "Id of current match process"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Contacts that match the filters",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/personMatchResult"
+              },
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads contacts that match the filters in the search",
+        "tags": ["Search"]
+      }
+    },
+    "/globalSearch": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The filtering data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "query": {
+                  "type": "string"
+                },
+                "filters": {
+                  "properties": {
+                    "hideClosedParties": {
+                      "type": "boolean"
+                    },
+                    "hideArchivedParties": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The search result objects that match the query",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/searchResult"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "summary": "Search result objects.",
+        "tags": ["Search"]
+      }
+    },
+    "/search/units": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The filtering data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "amenities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "highValueAmenities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "numBedrooms": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "numBathrooms": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "moveInData": {
+                  "type": "object"
+                },
+                "marketRent": {
+                  "type": "object"
+                },
+                "surfaceArea": {
+                  "type": "object"
+                },
+                "propertyIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "lifestyles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Inventories that match the filters",
+            "schema": {
+              "items": {
+                "$ref": "inventories.json#/definitions/Inventory"
+              },
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads units that match the filters in the search",
+        "tags": ["Search"]
+      }
+    },
+    "/users/{userId}/search-history": {
+      "get": {
+        "parameters": [
+          {
+            "description": "User's id",
+            "in": "path",
+            "required": true,
+            "name": "userId",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Object containig all the search history",
+            "schema": {
+              "$ref": "#/definitions/SearchHistory"
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "summary": "Retrieves the previous stored search history",
+        "tags": ["Search"]
+      },
+      "put": {
+        "summary": "Push new search histories",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "description": "User's id",
+            "in": "path",
+            "required": true,
+            "name": "userId",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SearchHistory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "400": {
+            "description": "Invalid/missing parameters",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "tags": ["Search"]
+      }
+    }
+  },
+  "definitions": {
+    "SearchHistory": {
+      "type": "object",
+      "properties": {
+        "searches": {
+          "description": "An array containing all the searches",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/HistoryItem"
+          }
+        }
+      }
+    },
+    "HistoryItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The search item id",
+          "type": "number"
+        },
+        "value": {
+          "description": "The search item value",
+          "type": "string"
+        }
+      }
+    },
+    "searchResult": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Id of the search result object",
+          "type": "string"
+        },
+        "type": {
+          "description": "Type of the search result object",
+          "type": "string"
+        }
+      }
+    },
+    "personMatchResult": {
+      "type": "object",
+      "properties": {
+        "matchedPersons": {
+          "description": "Person matches",
+          "type": "array",
+          "items": {
+            "properties": {
+              "rank": {
+                "type": "string",
+                "description": "Match rank"
+              },
+              "type": {
+                "type": "string",
+                "description": "Match type"
+              },
+              "personObject": {
+                "type": "object",
+                "description": "Matched person details"
+              },
+              "exactEmailMatch": {
+                "type": "boolean",
+                "description": "Result is an exact email match"
+              }
+            },
+            "type": "object"
+          }
+        },
+        "partiesForMatches": {
+          "description": "Party info for persons that match the search criteria ",
+          "type": "array"
+        },
+        "type": {
+          "description": "Type of the search result object",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

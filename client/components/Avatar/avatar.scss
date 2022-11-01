@@ -1,0 +1,75 @@
+@import '../../sass/_colors.scss';
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+div[data-part='badge'] {
+  position: absolute;
+  right: (-6rem/16);
+  bottom: (-6rem/16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: .6em;
+}
+
+.small {
+  width: 2rem;
+  height: 2rem;
+
+  [data-part='badge'] {
+    [data-red-icon] {
+      width: (14rem/16);
+      height: (14rem/16);
+    }
+  }
+}
+
+.normal {
+  width: (40rem/16);
+  height: (40rem/16);
+
+  [data-part='badge'] {
+    [data-red-icon] {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+.avatar {
+  position: relative;
+
+  [data-part='cutted-avatar'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    fill: $grey100;
+  }
+}
+
+.avatar-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  &.circle {
+    border-radius: 50%;
+  }
+}

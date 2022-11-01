@@ -1,0 +1,1 @@
+{"name":"integration-test","hostname":"Roys-MacBook-Pro.local","pid":58714,"subType":"AMQP","level":10,"amqpMessage":"{\"id\":\"f342fdbe-4e6e-485e-8243-bbd0cb2864ec\",\"name\":\"red\",\"authorization_token\":\"edadbb9e-021b-4a8f-af95-37fe43fe396d\"}","msg":"publishing to integration_app_exchange tenant_created","time":"2016-06-30T00:50:30.943Z","v":0}

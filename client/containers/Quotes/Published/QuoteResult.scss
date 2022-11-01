@@ -1,0 +1,447 @@
+@import '../../../sass/_typography-mixins.scss';
+@import '../../../sass/_colors.scss';
+@import '../../../sass/_typography.scss';
+@import '../../../sass/_responsive.mixins.scss';
+@import '../Draft/PaymentScheduleCard.scss';
+
+@mixin displayAsColumn() {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin bottomBorder() {
+  &:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: $blue800;
+
+  .branding {
+    @include displayAsColumn();
+
+    padding: (24rem/16);
+    background: $blue800;
+  }
+
+  .contact {
+    display: flex;
+    padding: (24rem/16);
+
+    span {
+      @include body();
+
+      font-weight: 300;
+      display: block;
+      color: $white;
+
+      &.contact-name {
+        font-weight: 500;
+      }
+
+      &.contact-title {
+        font-weight: 100;
+        color: rgba($white, .5);
+      }
+
+      &.contact-separator {
+        display: none;
+      }
+    }
+
+    .contact-info {
+      @include displayAsColumn();
+    }
+
+    .contact-avatar {
+      width: (60rem/16);
+      height: (60rem/16);
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: (100em/16);
+  background: $grey100;
+
+  @media print {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .container {
+    padding-top: (24rem/16);
+  }
+}
+
+.card {
+  @include body();
+
+  flex-direction: column;
+  width: (680rem/16);
+  color: $blueGrey100;
+  box-shadow: 0 2px 5px 0 $grey400;
+}
+
+.brand {
+  @include textTitle();
+
+  font-weight: 400;
+  color: rgba($white, .87);
+}
+
+.whiteTextPrimary {
+  @include body();
+
+  color: $white;
+}
+
+.whiteTextSecondary {
+  @include body();
+
+  line-height: 1rem;
+  color: rgba($white, .7);
+}
+
+.whiteTextDisabled {
+  @include body();
+
+  color: rgba($white, .3);
+}
+
+.logo {
+  width: (43rem/16);
+  height: (43rem/16);
+  background: #d8d8d8;
+}
+
+.avatar {
+  width: (48rem/16);
+  height: (48rem/16);
+  margin-right: (8rem/16);
+  margin-bottom: (8rem/16);
+}
+
+.body {
+  @include body();
+  @include textSecondary();
+
+  border-bottom: 1px solid $grey200;
+  background: $white;
+
+  .subsection-title {
+    @include textPrimary();
+    @include textTitle();
+  }
+
+  .subsection-label {
+    @include textPrimary();
+  }
+}
+
+.footer {
+  @include caption();
+  @include textSecondary();
+
+  padding: (24rem/16) (24rem/16) (56rem/16) (24rem/16);
+
+  .confirmation-number {
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  .policy-section {
+    p {
+      @include caption(false);
+      @include textSecondary();
+
+      margin-bottom: 1.25rem;
+    }
+
+    ul {
+      margin-left: .5rem;
+
+      li {
+        @include caption(false);
+        @include textSecondary();
+      }
+    }
+  }
+
+  @media print {
+    background: rgba(255, 255, 255, .87);
+  }
+}
+
+.quote-number {
+  @include textPrimary();
+}
+
+.card-title {
+  @include textTitle();
+}
+
+.card-subtitle {
+  @include subHeader();
+
+  display: block;
+}
+
+.section {
+  border-bottom: 1px solid $grey200;
+}
+
+.body-fluid {
+}
+
+.bottomBorder {
+  @include bottomBorder();
+
+  position: relative;
+}
+
+.simple-table {
+  position: relative;
+  padding-bottom: (16rem/16);
+
+  &:not(:last-child) {
+    @include bottomBorder();
+  }
+
+  caption {
+    height: (32rem/16);
+  }
+
+  .charge-title-row {
+    padding-top: (8rem/16);
+    padding-bottom: (8rem/16);
+  }
+
+  .simple-table-header {
+    min-height: (36rem/16);
+    padding: 0 0 (8rem/16) 0;
+  }
+}
+
+.simple-row {
+  min-height: (32rem/16);
+
+  &:hover {
+    background: none;
+  }
+
+  &:after {
+    border-bottom: none;
+  }
+
+  .total-label {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+}
+
+// --------------------
+
+.block-container {
+  display: flex;
+  padding: (24rem/16);
+
+  flex-wrap: wrap;
+}
+
+.unit-block-summary-section {
+  @include body();
+  @extend .block-container;
+
+  border-bottom: 1px solid #eee;
+  background-color: $white;
+
+  .button-container:first-of-type {
+    display: none;
+  }
+}
+
+.block {
+  width: 50%;
+
+  .simple-table {
+    .header {
+      background: green;
+    }
+  }
+
+  &:last-child:nth-child(odd) {
+    width: 100%;
+  }
+
+  &:nth-child(odd):not(:last-child) {
+    padding-right: (16rem/16);
+    border-right: 1px solid $grey200;
+  }
+
+  &:nth-child(even):not(:last-child) {
+    padding-left: (16rem/16);
+  }
+}
+
+.button-container {
+  width: 100%;
+  padding-top: (24rem/16);
+  text-align: center;
+}
+
+.responsive-only-button-container {
+  display: none;
+  width: 100%;
+  padding-top: (24rem/16);
+  text-align: center;
+}
+
+.no-padding,
+.no-padding-header > div,
+.no-padding-cell > div {
+  padding: 0;
+}
+
+.amenities {
+  .group:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+@include to('xsmall2') {
+  @media screen {
+    .header {
+      display: block;
+      background: $white;
+
+      .contact-container {
+        padding: 1.5rem;
+
+        .contact {
+          justify-content: center;
+          padding: 1rem;
+          border: (1rem/16) solid $grey200;
+          background: $white;
+
+          .contact-info {
+            span {
+              color: $black;
+
+              &.contact-title {
+                color: rgba(0, 0, 0, .87);
+              }
+
+              &.contact-phone,
+              &.contact-email,
+              &.contact-separator {
+                display: inline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .responsive-only-button-container {
+      display: block;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .button-container {
+      button {
+        width: 100%;
+      }
+    }
+
+    .block-container {
+      padding-top: 0;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .block {
+      width: 100%;
+
+      &:nth-child(odd):not(:last-child) {
+        padding-right: 0;
+        padding-left: 0;
+        border-right: 0;
+      }
+
+      &:nth-child(even):not(:last-child) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+:global {
+  @media print {
+    // this is global because I need to use classes and ids from another components
+
+    .quote-dialog-open {
+      #snackbar {
+        display: none;
+      }
+
+      #content {
+        display: none;
+      }
+
+      #quote-publish-card {
+        margin: 0 auto;
+        box-shadow: none;
+      }
+
+      #quote-dialog {
+        position: relative;
+
+        [data-component='dialog-header'] {
+          display: none;
+        }
+
+        [data-component='dialog-body'] {
+          > div {
+            display: block;
+            height: auto;
+          }
+        }
+
+        [data-component='fullscreen-content'] {
+          overflow: visible;
+          flex: none;
+        }
+
+        [data-component='button'] {
+          display: none;
+        }
+
+        [data-component='icon-button'] {
+          display: none;
+        }
+      }
+    }
+  }
+}

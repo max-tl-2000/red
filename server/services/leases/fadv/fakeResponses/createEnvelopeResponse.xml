@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <CreateEnvelopeResponse xmlns="http://tempuri.org/">
+      <CreateEnvelopeResult>
+        <ResidentFormApi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="" xsi:noNamespaceSchemaLocation="ResidentFormApi1_0.xsd">
+          <Request>
+            <PropertyID>
+              <Identification IDType="Property ID">
+                <IDValue>132660</IDValue>
+              </Identification>
+              <MarketingName>My Properties</MarketingName>
+            </PropertyID>
+            <RequestType>CreateEnvelope</RequestType>
+            <OriginatorID>100025</OriginatorID>
+            <UserName>RedisruptOne</UserName>
+            <UserPassword>Winter2016</UserPassword>
+            <Form>
+              <FormId>1299</FormId>
+              <FormDisplayName>Because We Care</FormDisplayName>
+              <FormName>DOCUSIGN</FormName>
+              <FormLink>DBC9570D-C078-4EA9-BFD9-0689C7C7E44A</FormLink>
+              <FormFieldsList>
+                <Field>
+                  <TabLabel>PROPERTYNAME</TabLabel>
+                  <value>TEST Property</value>
+                </Field>
+                <Field>
+                  <TabLabel>RESIDENTNAME01</TabLabel>
+                  <value>Aviansh</value>
+                </Field>
+                <Field>
+                  <TabLabel>RESIDENTNAME02</TabLabel>
+                  <value/>
+                </Field>
+                <Field>
+                  <TabLabel>RESIDENTNAME03</TabLabel>
+                  <value/>
+                </Field>
+                <Field>
+                  <TabLabel>RESIDENTNAME04</TabLabel>
+                  <value/>
+                </Field>
+                <Field>
+                  <TabLabel>RESIDENTNAME05</TabLabel>
+                  <value/>
+                </Field>
+              </FormFieldsList>
+            </Form>
+            <Recipients>
+              <Recipient>
+                <ID>26191b38-93e1-46b2-93f4-a6428f9a1009</ID>
+                <SignerName>Adrian Magdas</SignerName>
+                <Email>adrian@reva.tech</Email>
+                <Type>InPerson</Type>
+                <DeliveryMethod>Email</DeliveryMethod>
+                <RoutingOrder>1</RoutingOrder>
+                <RoleName>Resident1</RoleName>
+              </Recipient>
+            </Recipients>
+            <EnvelopeInfo>
+              <Subject>Reva Lease</Subject>
+              <EmailBlurb>Test Sb</EmailBlurb>
+              <SigningLocation>InPerson</SigningLocation>
+              <Url>http://application.demo.env.reva.tech</Url>
+              <CounterSignerUserName>CounterAdrian</CounterSignerUserName>
+              <TenatId>123</TenatId>
+            </EnvelopeInfo>
+          </Request>
+          <Response>
+            &lt;?xml version="1.0" encoding="utf-8"?&gt;
+            &lt;EnvelopeStatus xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+              &lt;RecipientStatuses xmlns="http://www.docusign.net/API/3.0"&gt;
+                RECIPIENTS_STATUSES_PLACEHOLDER
+                &lt;RecipientStatus&gt;
+                  &lt;Type&gt;Signer&lt;/Type&gt;
+                  &lt;Email&gt;countersigner@docusign.com&lt;/Email&gt;
+                  &lt;UserName&gt;RandomName&lt;/UserName&gt;
+                  &lt;RoutingOrder&gt;4&lt;/RoutingOrder&gt;
+                  &lt;DeclineReason xsi:nil="true"/&gt;
+                  &lt;Status&gt;Created&lt;/Status&gt;
+                  &lt;RecipientIPAddress/&gt;
+                  &lt;ClientUserId&gt;CounterSigner1&lt;/ClientUserId&gt;
+                  &lt;AccountStatus&gt;Active&lt;/AccountStatus&gt;
+                  &lt;RecipientId&gt;COUNTERSIGNER_RECIPIENT_ID_PLACEHOLDER&lt;/RecipientId&gt;
+                &lt;/RecipientStatus&gt;
+              &lt;/RecipientStatuses&gt;
+              &lt;TimeGenerated xmlns="http://www.docusign.net/API/3.0"&gt;2017-03-16T03:00:45.950376&lt;/TimeGenerated&gt;
+              &lt;EnvelopeID xmlns="http://www.docusign.net/API/3.0"&gt;ENVELOPE_ID_PLACEHOLDER&lt;/EnvelopeID&gt;
+              &lt;Subject xmlns="http://www.docusign.net/API/3.0"&gt;Reva Lease&lt;/Subject&gt;
+              &lt;UserName xmlns="http://www.docusign.net/API/3.0"&gt;FADVDocusignUser&lt;/UserName&gt;
+              &lt;Email xmlns="http://www.docusign.net/API/3.0"&gt;docusign.user@fadv.com&lt;/Email&gt;
+              &lt;Status xmlns="http://www.docusign.net/API/3.0"&gt;Sent&lt;/Status&gt;
+              &lt;Created xmlns="http://www.docusign.net/API/3.0"&gt;2017-03-16T03:00:43.317&lt;/Created&gt;
+              &lt;Sent xmlns="http://www.docusign.net/API/3.0"&gt;2017-03-16T03:00:43.647&lt;/Sent&gt;
+              &lt;ACStatus xmlns="http://www.docusign.net/API/3.0"&gt;Original&lt;/ACStatus&gt;
+              &lt;ACStatusDate xmlns="http://www.docusign.net/API/3.0"&gt;2017-03-16T03:00:43.317&lt;/ACStatusDate&gt;
+              &lt;ACHolder xmlns="http://www.docusign.net/API/3.0"&gt;FADVDocusignUser&lt;/ACHolder&gt;
+              &lt;ACHolderEmail xmlns="http://www.docusign.net/API/3.0"&gt;docusign.user@fadv.com&lt;/ACHolderEmail&gt;
+              &lt;ACHolderLocation xmlns="http://www.docusign.net/API/3.0"&gt;DocuSign&lt;/ACHolderLocation&gt;
+              &lt;SigningLocation xmlns="http://www.docusign.net/API/3.0"&gt;Online&lt;/SigningLocation&gt;
+              &lt;SenderIPAddress xmlns="http://www.docusign.net/API/3.0"&gt;202.45.11.80   &lt;/SenderIPAddress&gt;
+              &lt;EnvelopePDFHash xmlns="http://www.docusign.net/API/3.0"/&gt;
+              &lt;CustomFields xmlns="http://www.docusign.net/API/3.0"/&gt;
+              &lt;AutoNavigation xmlns="http://www.docusign.net/API/3.0"&gt;true&lt;/AutoNavigation&gt;
+              &lt;EnvelopeIdStamping xmlns="http://www.docusign.net/API/3.0"&gt;true&lt;/EnvelopeIdStamping&gt;
+              &lt;AuthoritativeCopy xmlns="http://www.docusign.net/API/3.0"&gt;false&lt;/AuthoritativeCopy&gt;
+              &lt;DocumentStatuses xmlns="http://www.docusign.net/API/3.0"&gt;
+                &lt;DocumentStatus&gt;
+                  &lt;ID&gt;1&lt;/ID&gt;
+                  &lt;Name&gt;BECAUSE WE CARE&lt;/Name&gt;
+                  &lt;TemplateName&gt;Because We Care&lt;/TemplateName&gt;
+                  &lt;Sequence&gt;1&lt;/Sequence&gt;
+                &lt;/DocumentStatus&gt;
+              &lt;/DocumentStatuses&gt;
+            &lt;/EnvelopeStatus&gt;
+            TOKENS_PLACEHOLDER
+          </Response>
+        </ResidentFormApi>
+      </CreateEnvelopeResult>
+    </CreateEnvelopeResponse>
+  </soap:Body>
+</soap:Envelope>

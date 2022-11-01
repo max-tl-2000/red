@@ -1,0 +1,49 @@
+@import '../../sass/_colors.scss';
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+
+  [data-component='dropdown-item-value'] {
+    font-size: (13rem/16);
+  }
+}
+
+.actions {
+  width: 180px;
+}
+
+.phoneNumberEditor {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 250px;
+
+  [data-component='dropdown'] {
+    width: 100%;
+  }
+}
+
+.phoneSection {
+  flex: 1;
+}
+
+.loading {
+  div {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+}
+
+.warningDialogLabel {
+  padding-top: (10rem/16);
+}
+
+.refreshWithTrimDownTeams,
+.blue-icon {
+  svg {
+    fill: $blue500;
+  }
+}

@@ -1,0 +1,89 @@
+@import '../../sass/_responsive.mixins.scss';
+
+.prop-meta {
+  margin-bottom: .5rem;
+}
+
+.props {
+  padding: 1rem;
+}
+
+.prop {
+  margin-bottom: .8rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid #eee;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-linkable='true'] {
+  position: relative;
+  margin-left: -26px !important;
+  padding-left: 26px !important;
+
+  &:hover {
+    .section-link {
+      display: block;
+    }
+  }
+}
+
+.demo-container {
+  position: relative;
+  padding: 1.5rem 0 0 0;
+
+  :global(.textTitle) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.mdblock {
+  p {
+    margin-bottom: 0;
+  }
+
+  pre {
+    font-size: 13px;
+    overflow: auto;
+    width: 100%;
+  }
+}
+
+.section-link {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+  display: none;
+  animation: fadeIn .5s ease-out;
+}
+
+.demo-page {
+  @include from('xsmall2') {
+    padding: 35px;
+  }
+  @include from('small2') {
+    padding: 40px 45px;
+  }
+
+  padding: 20px;
+}
+
+.subHeaderGroup {
+  position: relative;
+  padding: 10px 0;
+
+  > :global(.subHeader) {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+}

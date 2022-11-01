@@ -1,0 +1,22 @@
+@import '../../../../client/sass/_colors.scss';
+
+.suggested-conversation-topics {
+  width: (337rem/16);
+  height: 100%;
+  padding: (16rem/16);
+  background-color: rgba($grey600, .08);
+
+  .topic-title {
+    margin: (8rem/16) 0;
+    text-align: center;
+  }
+
+  .topic {
+    margin: (8rem/16) 0;
+  }
+
+  .topic-divider {
+    height: (1rem/16);
+    background-color: rgba($black, .12);
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography should render simple Text elements 1`] = `
+<text>
+  <p
+    className="text"
+    data-component="text"
+    data-typography-element={true}
+  >
+    Some simple text element
+  </p>
+</text>
+`;

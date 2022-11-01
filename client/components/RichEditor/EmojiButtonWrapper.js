@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2022 Reva Technology Inc., all rights reserved.
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Licensed under the Elastic License 2.0; you may not use this file except
+ * in compliance with the Elastic License 2.0.
+ */
+
+import React, { Component } from 'react';
+import { cf } from './EmojiButtonWrapper.scss';
+
+export default class EmojiButtonWrapper extends Component {
+  onMouseDown = event => event.preventDefault();
+
+  render() {
+    const { children } = this.props;
+    return (
+      <div onMouseDown={this.onMouseDown} className={cf('emojiButtonWrapper')}>
+        {children}
+      </div>
+    );
+  }
+}

@@ -1,0 +1,23 @@
+POST https: //api.cronofy.com/oauth/token
+    {
+        "client_id": "{CLIENT_ID}",
+        "client_secret": "{CLIENT_SECRET}",
+        "grant_type": "authorization_code",
+        "code": "{CODE}",
+        "redirect_uri": "{REDIRECT_URI}"
+    }
+
+response: {
+    "token_type": "bearer",
+    "access_token": "{your-cronofy-access-token}",
+    "expires_in": 3600,
+    "refresh_token": "{your-cronofy-refresh-token}",
+    "scope": "create_event delete_event",
+    "account_id": "{your-cronofy-account-id}",
+    "sub": "{your-cronofy-sub-account}",
+    "linking_profile": {
+        "provider_name": "google",
+        "profile_id": "pro_n23kjnwrw2",
+        "profile_name": "example@cronofy.com"
+    }
+}

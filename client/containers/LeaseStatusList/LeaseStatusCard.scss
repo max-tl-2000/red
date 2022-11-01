@@ -1,0 +1,13 @@
+@import '../../sass/_colors.scss';
+
+.lease-not-sent {
+  color: $red600;
+}
+
+.lease-sent {
+  color: $black;
+}
+
+.mark-as-wet-signed-dialog {
+  width: (490rem/16);
+}

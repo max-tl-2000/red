@@ -1,0 +1,447 @@
+{
+    "id": "82f24d12-8808-4576-9272-2356e4ff186f",
+    "pets": null,
+    "comms": [],
+    "score": "prospect",
+    "state": "Lease",
+    "tasks": [],
+    "teams": ["607dd118-b053-493b-b7d6-921ded319747"],
+    "events": [
+      {
+        "id": "675d3998-d241-4106-9d8c-4c8d7c47a70b",
+        "event": "lease_signed",
+        "userId": null,
+        "partyId": "82f24d12-8808-4576-9272-2356e4ff186f",
+        "metadata": {
+          "leaseId": "b32937f3-85a0-4a7e-94bf-39c576b95963",
+          "inOffice": true,
+          "envelopeId": "deb61343-5206-472a-b069-387806d8e36e",
+          "clientUserId": "Resident2"
+        },
+        "created_at": "2020-11-19T09:49:44.532896+00:00",
+        "requestIds": [
+          "4ccb6a9f-dd6f-44ac-8c45-6ce961b87eb0"
+        ],
+        "updated_at": "2020-11-19T09:49:44.532896+00:00",
+        "partyMemberId": "68b075cd-a614-4a66-ad70-00e4d79fce56",
+        "transaction_id": 114004
+      }
+    ],
+    "leases": [{
+        "id": "b32937f3-85a0-4a7e-94bf-39c576b95963",
+        "status": "submitted",
+        "partyId": "82f24d12-8808-4576-9272-2356e4ff186f",
+        "quoteId": "980986ed-fcaa-40d7-8b1a-45fb0926fccb",
+        "external": {},
+        "signDate": null,
+        "created_at": "2020-11-19T09:47:12.504+00:00",
+        "signatures": [
+          {
+            "id": "1f0f41ad-2546-4975-8cfa-839342c0f33f",
+            "status": "not_sent",
+            "userId": "15ddfb24-445c-4e68-8283-d25f32d16f91",
+            "leaseId": "b32937f3-85a0-4a7e-94bf-39c576b95963",
+            "signUrl": "https://claudiu.local.env.reva.tech/leases/bb1ed999-7380-44c1-b582-7f2a697a7197/sign/CounterSigner1",
+            "metadata": {
+              "email": "countersigner@docusign.com",
+              "token": "https://claudiu.local.env.reva.tech/leases/bb1ed999-7380-44c1-b582-7f2a697a7197/sign/CounterSigner1",
+              "status": "Created",
+              "userName": "Alice Altimes1",
+              "recipientId": "60c5ccb6-931e-4518-a680-2575d3a0b0f2",
+              "clientUserId": "CounterSigner1",
+              "counterSigner": true
+            },
+            "created_at": "2020-11-19T09:47:30.338+00:00",
+            "envelopeId": "bb1ed999-7380-44c1-b582-7f2a697a7197",
+            "updated_at": "2020-11-19T09:47:50.613667+00:00",
+            "clientUserId": "CounterSigner1",
+            "partyMemberId": null
+          },
+          {
+            "id": "9813881e-a341-4468-b2c0-706bb3c5cb88",
+            "status": "not_sent",
+            "userId": "15ddfb24-445c-4e68-8283-d25f32d16f91",
+            "leaseId": "b32937f3-85a0-4a7e-94bf-39c576b95963",
+            "signUrl": "https://claudiu.local.env.reva.tech/leases/deb61343-5206-472a-b069-387806d8e36e/sign/CounterSigner1",
+            "metadata": {
+              "email": "countersigner@docusign.com",
+              "token": "https://claudiu.local.env.reva.tech/leases/deb61343-5206-472a-b069-387806d8e36e/sign/CounterSigner1",
+              "status": "Created",
+              "userName": "Alice Altimes1",
+              "recipientId": "5dacdcfa-f452-4eef-b621-aa56f1768a96",
+              "clientUserId": "CounterSigner1",
+              "counterSigner": true
+            },
+            "created_at": "2020-11-19T09:47:30.338+00:00",
+            "envelopeId": "deb61343-5206-472a-b069-387806d8e36e",
+            "updated_at": "2020-11-19T09:47:50.822885+00:00",
+            "clientUserId": "CounterSigner1",
+            "partyMemberId": null
+          },
+          {
+            "id": "ffb8df4a-5b0e-4174-a425-a472a4267ee8",
+            "status": "signed",
+            "userId": null,
+            "leaseId": "b32937f3-85a0-4a7e-94bf-39c576b95963",
+            "signUrl": "https://claudiu.local.env.reva.tech/leases/deb61343-5206-472a-b069-387806d8e36e/sign/Resident1",
+            "metadata": {
+              "email": "inofficesigner@docusign.com",
+              "token": "https://claudiu.local.env.reva.tech/leases/deb61343-5206-472a-b069-387806d8e36e/sign/Resident1",
+              "status": "Sent",
+              "signDate": "2020-11-19T09:48:04.419Z",
+              "userName": "Claudiu Res2",
+              "recipientId": "0ddd4baf-0429-47a1-ba65-324e13bc26cb",
+              "clientUserId": "Resident1",
+              "counterSigner": false
+            },
+            "created_at": "2020-11-19T09:47:30.338+00:00",
+            "envelopeId": "deb61343-5206-472a-b069-387806d8e36e",
+            "updated_at": "2020-11-19T09:48:04.399952+00:00",
+            "clientUserId": "Resident1",
+            "partyMemberId": "28e83e12-1ff7-4b81-b8c9-d31275b16928"
+          },
+          {
+            "id": "3a656cf6-cff5-430f-9645-8897ea66128c",
+            "status": "signed",
+            "userId": null,
+            "leaseId": "b32937f3-85a0-4a7e-94bf-39c576b95963",
+            "signUrl": "https://claudiu.local.env.reva.tech/leases/bb1ed999-7380-44c1-b582-7f2a697a7197/sign/Guarantor1",
+            "metadata": {
+              "email": "inofficesigner@docusign.com",
+              "token": "https://claudiu.local.env.reva.tech/leases/bb1ed999-7380-44c1-b582-7f2a697a7197/sign/Guarantor1",
+              "status": "Sent",
+              "signDate": "2020-11-19T09:49:08.593Z",
+              "userName": "Claudiu Guar",
+              "recipientId": "f7fef443-6f2e-4e2c-ae6f-409e6b0db5b5",
+              "clientUserId": "Guarantor1",
+              "counterSigner": false
+            },
+            "created_at": "2020-11-19T09:47:30.338+00:00",
+            "envelopeId": "bb1ed999-7380-44c1-b582-7f2a697a7197",
+            "updated_at": "2020-11-19T09:49:08.578241+00:00",
+            "clientUserId": "Guarantor1",
+            "partyMemberId": "09e9f262-f9f3-4937-a5ff-c0bdb262755a"
+          },
+          {
+            "id": "0705437a-4d3a-46bc-8cc0-ce5800d8f77f",
+            "status": "signed",
+            "userId": null,
+            "leaseId": "b32937f3-85a0-4a7e-94bf-39c576b95963",
+            "signUrl": "https://claudiu.local.env.reva.tech/leases/deb61343-5206-472a-b069-387806d8e36e/sign/Resident2",
+            "metadata": {
+              "email": "inofficesigner@docusign.com",
+              "token": "https://claudiu.local.env.reva.tech/leases/deb61343-5206-472a-b069-387806d8e36e/sign/Resident2",
+              "status": "Sent",
+              "signDate": "2020-11-19T09:49:44.585Z",
+              "userName": "Claudiu Schuller",
+              "recipientId": "44a913d1-3b53-4b1b-85f2-5aeb7570839d",
+              "clientUserId": "Resident2",
+              "counterSigner": false
+            },
+            "created_at": "2020-11-19T09:47:30.338+00:00",
+            "envelopeId": "deb61343-5206-472a-b069-387806d8e36e",
+            "updated_at": "2020-11-19T09:49:44.532896+00:00",
+            "clientUserId": "Resident2",
+            "partyMemberId": "68b075cd-a614-4a66-ad70-00e4d79fce56"
+          }
+        ],
+        "updated_at": "2020-11-19T09:47:30.333222+00:00",
+        "leaseTermId": "f222e7bc-3cff-44fc-92c0-35adf08d336e",
+        "baselineData": { }
+    }],
+    "quotes": [],
+    "userId": "891541ca-5689-4148-85fe-248e94baac2e",
+    "endDate": null,
+    "members": [
+      {
+        "person": {
+          "id": "c0025b19-41c1-4016-8b06-d297880043e9",
+          "dob": null,
+          "idType": "State",
+          "idState": null,
+          "idValue": null,
+          "fullName": "Claudiu Guar",
+          "idCountry": null,
+          "created_at": "2020-11-18T10:19:56.726444+00:00",
+          "idProvince": null,
+          "mergedWith": null,
+          "updated_at": "2020-11-18T10:19:56.726444+00:00",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "preferredName": null,
+          "isSuspiciousContent": false
+        },
+        "contactInfo": [
+          {
+            "id": "7df0bf38-8c02-4d3f-8fbd-6755cf81d9a7",
+            "type": "email",
+            "value": "claudiu+g@reva.tech",
+            "isSpam": false,
+            "imported": false,
+            "metadata": {},
+            "personId": "c0025b19-41c1-4016-8b06-d297880043e9",
+            "isPrimary": true,
+            "created_at": "2020-11-18T10:19:56.726444+00:00",
+            "updated_at": "2020-11-18T10:19:56.726444+00:00",
+            "markedAsSpamBy": null
+          }
+        ],
+        "partyMember": {
+          "id": "09e9f262-f9f3-4937-a5ff-c0bdb262755a",
+          "isSpam": false,
+          "endDate": null,
+          "partyId": "82f24d12-8808-4576-9272-2356e4ff186f",
+          "personId": "c0025b19-41c1-4016-8b06-d297880043e9",
+          "startDate": "2020-11-19T09:46:51.132332+00:00",
+          "created_at": "2020-11-19T09:46:51.155+00:00",
+          "memberType": "Guarantor",
+          "updated_at": "2020-11-19T09:46:51.155+00:00",
+          "vacateDate": null,
+          "memberState": "Lead",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "guaranteedBy": null
+        }
+      },
+      {
+        "person": {
+          "id": "4ef59e1d-d2b6-49e4-9c69-e353a3bd285c",
+          "dob": null,
+          "idType": "State",
+          "idState": null,
+          "idValue": null,
+          "fullName": "Claudiu Res2",
+          "idCountry": null,
+          "created_at": "2020-11-19T09:46:41.511853+00:00",
+          "idProvince": null,
+          "mergedWith": null,
+          "updated_at": "2020-11-19T09:46:41.511853+00:00",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "preferredName": null,
+          "isSuspiciousContent": false
+        },
+        "contactInfo": [
+          {
+            "id": "adfe11d3-4f1e-45cd-b3b1-c80a0df3b9a6",
+            "type": "email",
+            "value": "claudiu+res2@reva.tech",
+            "isSpam": false,
+            "imported": false,
+            "metadata": {},
+            "personId": "4ef59e1d-d2b6-49e4-9c69-e353a3bd285c",
+            "isPrimary": true,
+            "created_at": "2020-11-19T09:46:41.511853+00:00",
+            "updated_at": "2020-11-19T09:46:41.511853+00:00",
+            "markedAsSpamBy": null
+          }
+        ],
+        "partyMember": {
+          "id": "28e83e12-1ff7-4b81-b8c9-d31275b16928",
+          "isSpam": false,
+          "endDate": null,
+          "partyId": "82f24d12-8808-4576-9272-2356e4ff186f",
+          "personId": "4ef59e1d-d2b6-49e4-9c69-e353a3bd285c",
+          "startDate": "2020-11-19T09:46:41.511853+00:00",
+          "created_at": "2020-11-19T09:46:41.528+00:00",
+          "memberType": "Resident",
+          "updated_at": "2020-11-19T09:47:00.229204+00:00",
+          "vacateDate": null,
+          "memberState": "Lead",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "guaranteedBy": "09e9f262-f9f3-4937-a5ff-c0bdb262755a"
+        }
+      },
+      {
+        "person": {
+          "id": "c0025b19-41c1-4016-8b06-d297880043e9",
+          "dob": null,
+          "idType": "State",
+          "idState": null,
+          "idValue": null,
+          "fullName": "Claudiu Guar",
+          "idCountry": null,
+          "created_at": "2020-11-18T10:19:56.726444+00:00",
+          "idProvince": null,
+          "mergedWith": null,
+          "updated_at": "2020-11-18T10:19:56.726444+00:00",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "preferredName": null,
+          "isSuspiciousContent": false
+        },
+        "contactInfo": [
+          {
+            "id": "7df0bf38-8c02-4d3f-8fbd-6755cf81d9a7",
+            "type": "email",
+            "value": "claudiu+g@reva.tech",
+            "isSpam": false,
+            "imported": false,
+            "metadata": {},
+            "personId": "c0025b19-41c1-4016-8b06-d297880043e9",
+            "isPrimary": true,
+            "created_at": "2020-11-18T10:19:56.726444+00:00",
+            "updated_at": "2020-11-18T10:19:56.726444+00:00",
+            "markedAsSpamBy": null
+          }
+        ],
+        "partyMember": {
+          "id": "d29a315a-8ab4-4ddb-b6e6-0eb3c6835fe8",
+          "isSpam": false,
+          "endDate": "2020-11-18T13:56:16.371+00:00",
+          "partyId": "82f24d12-8808-4576-9272-2356e4ff186f",
+          "personId": "c0025b19-41c1-4016-8b06-d297880043e9",
+          "startDate": "2020-11-18T10:19:56.726444+00:00",
+          "created_at": "2020-11-18T10:19:56.748+00:00",
+          "memberType": "Guarantor",
+          "updated_at": "2020-11-18T13:56:16.367434+00:00",
+          "vacateDate": null,
+          "memberState": "Lead",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "guaranteedBy": null
+        }
+      },
+      {
+        "person": {
+          "id": "a02d0d57-34ef-4c3f-826a-3bfedc595f99",
+          "dob": null,
+          "idType": "State",
+          "idState": null,
+          "idValue": null,
+          "fullName": "Claudiu Test2",
+          "idCountry": null,
+          "created_at": "2020-11-18T10:14:44.904588+00:00",
+          "idProvince": null,
+          "mergedWith": null,
+          "updated_at": "2020-11-18T10:14:44.904588+00:00",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "preferredName": null,
+          "isSuspiciousContent": false
+        },
+        "contactInfo": [
+          {
+            "id": "16c2dc00-6144-4fe4-903c-d03b3441aeba",
+            "type": "email",
+            "value": "claudiu+0009@reva.tech",
+            "isSpam": false,
+            "imported": false,
+            "metadata": {},
+            "personId": "a02d0d57-34ef-4c3f-826a-3bfedc595f99",
+            "isPrimary": true,
+            "created_at": "2020-11-18T10:14:44.904588+00:00",
+            "updated_at": "2020-11-18T10:14:44.904588+00:00",
+            "markedAsSpamBy": null
+          }
+        ],
+        "partyMember": {
+          "id": "0d4d77ee-017a-4af5-9643-8b82e0732f5f",
+          "isSpam": false,
+          "endDate": "2020-11-18T13:56:11.84+00:00",
+          "partyId": "82f24d12-8808-4576-9272-2356e4ff186f",
+          "personId": "a02d0d57-34ef-4c3f-826a-3bfedc595f99",
+          "startDate": "2020-11-18T10:14:44.904588+00:00",
+          "created_at": "2020-11-18T10:14:44.92+00:00",
+          "memberType": "Resident",
+          "updated_at": "2020-11-18T13:56:11.830021+00:00",
+          "vacateDate": null,
+          "memberState": "Lead",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "guaranteedBy": "d29a315a-8ab4-4ddb-b6e6-0eb3c6835fe8"
+        }
+      },
+      {
+        "person": {
+          "id": "f0bf2f33-3a51-4741-b362-ae963c69a12b",
+          "dob": "1999-11-11T00:00:00+00:00",
+          "idType": "State",
+          "idState": null,
+          "idValue": null,
+          "fullName": "Claudiu Schuller",
+          "idCountry": null,
+          "created_at": "2020-11-18T09:04:43.191042+00:00",
+          "idProvince": null,
+          "mergedWith": null,
+          "updated_at": "2020-11-18T13:57:10.220181+00:00",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "preferredName": null,
+          "isSuspiciousContent": false
+        },
+        "contactInfo": [
+          {
+            "id": "9bee1b04-cd55-483d-a8d4-a2ef7c594f2c",
+            "type": "email",
+            "value": "claudiu@reva.tech",
+            "isSpam": false,
+            "imported": false,
+            "metadata": {},
+            "personId": "f0bf2f33-3a51-4741-b362-ae963c69a12b",
+            "isPrimary": true,
+            "created_at": "2020-11-18T09:04:43.191042+00:00",
+            "updated_at": "2020-11-18T09:04:43.191042+00:00",
+            "markedAsSpamBy": null
+          }
+        ],
+        "partyMember": {
+          "id": "68b075cd-a614-4a66-ad70-00e4d79fce56",
+          "isSpam": false,
+          "endDate": null,
+          "partyId": "82f24d12-8808-4576-9272-2356e4ff186f",
+          "personId": "f0bf2f33-3a51-4741-b362-ae963c69a12b",
+          "startDate": "2020-11-18T09:04:43.191042+00:00",
+          "created_at": "2020-11-18T09:04:43.333+00:00",
+          "memberType": "Resident",
+          "updated_at": "2020-11-18T13:57:10.220181+00:00",
+          "vacateDate": null,
+          "memberState": "Applicant",
+          "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+          "guaranteedBy": null
+        }
+      }
+    ],
+    "children": null,
+    "invoices": [],
+    "metadata": {},
+    "property": [
+      {
+        "id": "619a69d5-ca4e-4964-a0ae-1ab9794088ca",
+        "app": {
+          "id": "com.maximusrepartners.rxp",
+          "name": "Maximus Pulse",
+          "scheme": "maximusrep-rxp",
+          "autoInvite": true,
+          "appStoreUrl": "https://itunes.apple.com/us/app/maximus/id<app-ID>?mt=8",
+          "playStoreUrl": "https://play.google.com/store/apps/details?id=com.maximus.rxp"
+        },
+        "name": "cove",
+        "settings": {
+          "moveoutNoticePeriod": 30
+        },
+        "timeZone": "America/Los_Angeles",
+        "displayName": "The Cove",
+        "propertyLegalName": "The Cove LLC"
+      }
+    ],
+    "vehicles": null,
+    "leaseType": "traditional",
+    "ownerTeam": "607dd118-b053-493b-b7d6-921ded319747",
+    "startDate": "2020-11-18T09:04:43.191042+00:00",
+    "invOnHolds": [],
+    "mergedWith": null,
+    "promotions": [ ],
+    "archiveDate": null,
+    "modified_by": "891541ca-5689-4148-85fe-248e94baac2e",
+    "seedPartyId": null,
+    "partyGroupId": "db21a043-e2f4-4141-a6a4-1e49c273e4d6",
+    "transactions": null,
+    "workflowName": "newLease",
+    "collaborators": ["891541ca-5689-4148-85fe-248e94baac2e"],
+    "workflowState": "active",
+    "activeLeaseData": null,
+    "emailIdentifier": "82f24d12880845769272",
+    "isTransferLease": false,
+    "screeningResults": { },
+    "createdFromCommId": null,
+    "partyApplications": [],
+    "assignedPropertyId": "619a69d5-ca4e-4964-a0ae-1ab9794088ca",
+    "personApplications": [ ],
+    "storedUnitsFilters": {},
+    "teamPropertyProgramId": null,
+    "qualificationQuestions": {},
+    "fallbackTeamPropertyProgramId": null
+  }

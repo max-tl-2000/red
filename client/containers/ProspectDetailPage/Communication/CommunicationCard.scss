@@ -1,0 +1,49 @@
+@import '../../../sass/_colors.scss';
+@import '../../../sass/_fonts.scss';
+
+.containerStyle {
+  width: 30em;
+  padding: .5em;
+
+  &.out {
+    float: left;
+    background: #87ceeb;
+  }
+
+  &.in {
+    float: right;
+    background: rgb(181, 232, 166);
+  }
+
+  .headerContainerStyle {
+    display: flex;
+    align-items: center;
+
+    .titleStyle {
+      font-size: 22px;
+      overflow: hidden;
+      flex: 1 1 auto;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      opacity: .9;
+      color: $black;
+    }
+  }
+
+  .subTitleStyle {
+    font-size: 13px;
+    display: flex;
+    height: 1.1em;
+    margin-top: 6px;
+    letter-spacing: .1px;
+  }
+
+  .statusContainer {
+    font-size: 9px;
+  }
+
+  .content {
+    padding-top: 1em;
+    white-space: pre-wrap;
+  }
+}

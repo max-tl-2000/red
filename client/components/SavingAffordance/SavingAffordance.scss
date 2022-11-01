@@ -1,0 +1,85 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.save-affordance {
+  position: relative;
+  display: inline-block;
+  min-height: (10rem/16);
+  padding: 0 .5rem;
+  white-space: nowrap;
+
+  .loader {
+    position: relative;
+    top: (-3rem/16);
+    left: 0;
+    width: (35rem/16);
+    height: (35rem/16);
+  }
+}
+
+.save-start-msg {
+  &:global(.on) {
+    display: block;
+
+    &:global(.enter) {
+      animation: fadeIn .5s ease-out;
+    }
+
+    &:global(.exit) {
+      animation: fadeOut .5s ease-out;
+    }
+  }
+}
+
+.save-done-msg {
+  &:global(.on) {
+    display: block;
+
+    &:global(.enter) {
+      animation: fadeIn .5s ease-out;
+    }
+
+    &:global(.exit) {
+      animation: fadeOut .5s ease-out;
+    }
+  }
+}
+
+.sizer {
+  visibility: hidden;
+}
+
+.save-done-msg,
+.save-start-msg {
+  position: absolute;
+  top: 0;
+  left: (8rem/16);
+  display: none;
+
+  p[data-component='caption'] {
+    margin-top: 3px;
+  }
+}
+
+.save-done-msg {
+  [data-red-icon] {
+    margin-top: (-3rem/16);
+  }
+}

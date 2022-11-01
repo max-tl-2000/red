@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>ig-additional-info</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="80" height="80" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M21.0010677,56 L19.0241618,54.0554439 L19,17.9767394 L21.1563793,16 L39.9119563,16 L42,18.0013192 L21.0010677,17.9767394 L21.0010677,56 Z M51.0049157,43.051373 L53,43.0329896 L53,27.0734683 L45.9899499,27.0156353 L45.9899499,20 L25.0133955,20.0630512 L23,22.0749219 L23,57.8806759 L25.1209303,60 L41.9718002,60 L41.9718002,58.0936904 L26.0111702,58.0936904 L24.9220794,57.0054244 L24.9220794,22.8872086 L25.9250101,22.0044672 L44.0362816,22.0044672 L44.0362816,29.0109167 L51.0458951,29.0109167 L51.0049157,43.051373 Z M47,26 L47,21 L52,26 L47,26 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="44" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M53,45 C48.0361,45 44,49.036095 44,54 C44,58.963905 48.0361,63 53,63 C57.9639,63 62,58.963905 62,54 C62,49.036095 57.9639,45 53,45 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Infographics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Infographics--FA-Start" transform="translate(-450.000000, -837.000000)">
+            <g id="ig-additional-info" transform="translate(450.000000, 837.000000)">
+                <use id="Rectangle-145-Copy-2" stroke="#000000" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                <rect id="bound" fill="#000000" opacity="0" x="16" y="16" width="48" height="48"></rect>
+                <use id="Combined-Shape" stroke="#000000" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                <path d="M29.0213778,50 L41.0213778,50 L41.0213778,52 L29.0213778,52 L29.0213778,50 Z M29.0213778,44 L45.0213778,44 L45.0213778,46 L29.0213778,46 L29.0213778,44 Z M36,34.0106889 C39.2307692,34.0106889 43,35.2106889 43,40.0106889 L29,40.0106889 C29,35.2106889 32.7692308,34.0106889 36,34.0106889 Z M36.0053445,27 C37.9383361,27 39.5053445,28.5670083 39.5053445,30.5 C39.5053445,32.4329917 37.9383361,34 36.0053445,34 C34.0723528,34 32.5053445,32.4329917 32.5053445,30.5 C32.5053445,28.5670083 34.0723528,27 36.0053445,27 Z" id="Combined-Shape" fill="#000000"></path>
+                <use id="Shape" stroke="#000000" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-5"></use>
+                <polygon id="Path-Copy-4" fill="#000000" points="54 59 54 53 52 53 52 59"></polygon>
+                <polygon id="Path-Copy-9" fill="#000000" points="54 51 54 49 52 49 52 51"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

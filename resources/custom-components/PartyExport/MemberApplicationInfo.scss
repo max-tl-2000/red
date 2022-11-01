@@ -1,0 +1,13 @@
+.member-application-info {
+  display: table;
+  margin-bottom: 1rem;
+
+  > div,
+  p {
+    display: table-row;
+
+    > p {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html * {
+        box-sizing: border-box;
+      }
+      header {
+        padding: 1rem 3rem;
+        background:#03a9f4;
+      }
+      h1 {
+        font-size: 3rem;
+        color: #fff;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      section {
+        padding: 1rem 3rem;
+      }
+
+      textarea {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+        font-family: "Operator Mono", "Consolas", "Monaco", sans-serif;
+        width: 100%;
+        height: 100px;
+      }
+
+      code {
+        font-size: 1.5rem;
+        font-family: "Operator Mono", "Consolas", "Monaco", sans-serif;
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Welcome to chrome debugger launcher</h1></header>
+    <section>
+      <p>For security restrictions we cannot open <code>chrome-devtools://</code> schemes directly so please <strong>click on the URL shown in the developer tools</strong> console to start debugging</p>
+      <p>In case that doesn't work here are a couple of other options:</p>
+    </section>
+    <section id="txtContainer"><label>Direct url to the debugger instance</label></section>
+    <section>
+    </section>
+    <section>
+      <label>url to list all debugging instances</label>
+      <textarea>chrome://inspect/#devices</textarea>
+    </section>
+  </body>
+  <script>
+    const query = location.search;
+    const debuggerUrl = query.replace('?debugUrl=', '');
+    const textArea = document.createElement('textarea');
+    textArea.value = debuggerUrl;
+    document.querySelector('#txtContainer').appendChild(textArea);
+
+    const elements = [].slice.call(document.querySelectorAll('textarea'));
+    elements.forEach(ele => ele.addEventListener('click', () => {
+      ele.focus();
+      ele.select();
+    }));
+
+    console.log('%c Open chrome debugger ', 'font-size: 2rem;background:#03a9f4;color:#fff;font-family: Arial, Helvetica, sans-serif');
+    console.log(`%c${debuggerUrl}`, 'font-size: 1.8rem; color: #03a9f4');
+    console.log('%c Open chrome inspect ', 'font-size: 2rem;background:#03a9f4;color:#fff;font-family: Arial, Helvetica, sans-serif');
+    console.log(`%cchrome://inspect`, 'font-size: 1.8rem; color: #03a9f4');
+
+  </script>
+</html>

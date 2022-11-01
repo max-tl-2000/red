@@ -1,0 +1,26 @@
+{
+    "leaseTerms": { "monthlyRent": 4582, "leaseMonths": 12 },
+    "applicants" : [
+        {
+            "income": { "employmentGrossIncome": 1500 },
+            "as_information" : { "applicantType" : "Applicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Gary", "lastName": "Smith" }
+                }
+            }
+        },
+        {
+            "income": { "employmentGrossIncome": 1500 },
+            "as_information" : { "applicantType" : "CoApplicant" },
+            "customers": {
+                "customer": {
+                    "name": { "firstName": "Hermione", "lastName": "Smith" }
+                }
+            }
+        }
+    ],
+    "transactionNumber": 3001,
+    "applicantDecision": "Smith, Gary - APPROVED\nSmith, Hermione - APPROVED",
+    "applicationDecision": "APPROVED"
+}

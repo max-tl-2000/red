@@ -1,0 +1,46 @@
+@import '../../../sass/_colors.scss';
+@import '../../../sass/animations/_fadeInRight.scss';
+
+.approval-form-options {
+  height: (56rem/16);
+}
+
+.approval-form-title {
+  margin-top: (24rem/16);
+  margin-bottom: (15rem/16);
+}
+
+.dialog-header {
+  width: (560rem/16);
+  height: (64rem/16);
+  padding-left: (24rem/16);
+  color: $white;
+  border-radius: 3px;
+}
+
+.approval-header {
+  @extend .dialog-header;
+
+  background-color: $green800;
+}
+
+.action-dialog {
+  margin-bottom: (18rem/16);
+  margin-left: (4rem/16);
+
+  [data-component='dropdown'] {
+    padding-left: (5rem/16);
+  }
+}
+
+.approval-condition {
+  align-self: flex-start;
+}
+
+.fade-in-right {
+  animation: fadeInRight .5s ease-out;
+
+  [data-component='dropdown-item-value'] {
+    white-space: nowrap;
+  }
+}

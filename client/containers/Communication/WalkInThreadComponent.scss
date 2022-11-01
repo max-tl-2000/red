@@ -1,0 +1,69 @@
+@import '../../sass/_colors';
+@import '../../sass/_flyout-sizes';
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: $smallFlyoutWidth;
+  height: $smallFlyoutHeight;
+
+  [data-component='dropdown-item-value'] {
+    padding-right: .5em;
+    padding-left: .5em;
+  }
+}
+
+.date-controls {
+  [data-component='date-selector'] {
+    width: 50%;
+    padding-top: 1em;
+    padding-right: .25em;
+    padding-left: .5em;
+
+    input[type='text'] {
+      padding-left: .45rem;
+    }
+  }
+
+  [data-component='dropdown'] {
+    width: 50%;
+  }
+}
+
+.collapseContent {
+  display: flex;
+  align-items: center;
+  height: (36em/16);
+}
+
+.replyContent {
+  background-color: white;
+}
+
+.header {
+  display: inline-block;
+  align-items: center;
+
+  [data-component='dropdown'] {
+    padding-top: 1em;
+    padding-right: .5em;
+    padding-left: .5em;
+
+    [data-component='dropdown-item-value'] {
+      padding: 0 .4em;
+    }
+  }
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1em .85em;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1em;
+}

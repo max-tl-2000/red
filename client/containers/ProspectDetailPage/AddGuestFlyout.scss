@@ -1,0 +1,86 @@
+$iconSize: 2rem;
+
+.overlay {
+  width: 500px;
+  color: black;
+}
+
+.resident {
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem;
+
+  div {
+    margin-left: 1rem;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  text-align: center;
+}
+
+.trigger-arrow {
+  display: inline-block;
+  margin-top: (2rem/16);
+  vertical-align: top;
+}
+
+.trigger {
+  display: inline-block;
+  height: (40rem/16);
+  padding: .475rem (4rem/16) .275rem (10rem/16);
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    background: rgba(#fff, .15);
+  }
+
+  [data-component='party-guests'] {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+  }
+
+  .residentList {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .cosignerList {
+    font-size: 20px;
+    color: rgba(#fff, .7);
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.avatarSize {
+  width: $iconSize;
+  height: $iconSize;
+}
+
+.names {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.guestsArea {
+  cursor: pointer;
+}

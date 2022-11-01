@@ -1,0 +1,177 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/properties": {
+      "get": {
+        "tags": [
+          "Properties"
+        ],
+        "responses": {
+          "200": {
+            "description": "All existing properties with their associated lifestyles",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/Property"
+              },
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "/propertiesByTeams": {
+      "post": {
+        "parameters": [
+          {
+            "description": "Team ids for defining what to retrieve ",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "teamIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "The ids of the teams for which we want to load their associated properties"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Hashmap with the propertyIds as keys, storing arrays of teamIds as values",
+            "schema": {
+              "$ref": "#/definitions/PropertyByTeam"
+            }
+          }
+        },
+        "summary": "Gets all the properties for the teams passed in the body, as a map groupped by properties",
+        "tags": [
+          "Properties"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "Property": {
+      "properties": {
+        "id": {
+          "description": "the id of the property",
+          "type": "string"
+        },
+        "name": {
+          "description": "the name of the property",
+          "type": "string"
+        },
+        "propertyLegalName": {
+          "description": "the legal name of the property",
+          "type": "string"
+        },
+        "owner": {
+          "description": "the id of the BusinessEntity owner",
+          "type": "string"
+        },
+        "operator": {
+          "description": "the id of the BusinessEntity operator",
+          "type": "string"
+        },
+        "propertyGroupId": {
+          "description": "the id of the PropertyGroup it belongs",
+          "type": "string"
+        },
+        "addressId": {
+          "description": "the id of the corresponding address entity",
+          "type": "string"
+        },
+        "startDate": {
+          "description": "the start time and date of the property",
+          "type": "string"
+        },
+        "endDate": {
+          "description": "the end time and date of the property",
+          "type": "string"
+        },
+        "APN": {
+          "description": "APN of the property",
+          "type": "string"
+        },
+        "MSANumber": {
+          "description": "MSANumber of the property",
+          "type": "string"
+        },
+        "MSAName": {
+          "description": "MSAName of the property",
+          "type": "string"
+        },
+        "description": {
+          "description": "the description of the property",
+          "type": "string"
+        },
+        "website": {
+          "description": "the website of the property",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "the display name of the property",
+          "type": "string"
+        },
+        "timezone": {
+          "description": "the timezone of the property",
+          "type": "object"
+        },
+        "lifestyleDisplayNames": {
+          "description": "an array containing the lifestyle names associated with the property",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "amenities": {
+          "description": "an array containing the amenities associated with the property with names and a flag to know if each amenity is high value",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "floors": {
+          "description": "an array containing the floors associated with the property",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "type": "object"
+    },
+    "Floor": {
+      "properties": {
+        "floor": {
+          "description": "floor level",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "floor"
+      ],
+      "type": "object"
+    },
+    "PropertyByTeam": {
+      "description": "A hashmap with propertyIds for keys and arrays of teamIds as values",
+      "properties": {
+      },
+      "additionalProperties": {
+        "type": "string"
+      },
+      "type": "object"
+    }
+  }
+}

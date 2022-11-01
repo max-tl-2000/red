@@ -1,0 +1,29 @@
+.wrapper-container {
+  max-width: (700em/16);
+  margin: (30em/16) auto;
+}
+
+.application-section {
+  display: flex;
+  flex-direction: column;
+  margin: (30em/16) 0;
+}
+
+.application-list {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.button-container {
+  margin: .5em .5em 3em (59em/16);
+}
+
+.error-container {
+  padding: (50rem/16) 0 (6rem/16) 0;
+}
+
+.footer-container {
+  padding-bottom: (30em/16);
+}

@@ -1,0 +1,821 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/parties/{partyId}/rerunScreening": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully rerun screening"
+          },
+          "400": {
+            "description": "Invalid party id"
+          }
+        },
+        "summary": "Rerun screening",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/parties/{partyId}/rescreen": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "description": "Request type information to force rescreening",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "requestType": {
+                  "description": "The request type to be used in the screening, e.g: New, Modify, ResetCredit",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "requestType"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request to rescreen was queued"
+          },
+          "400": {
+            "description": "Invalid party id or request type"
+          }
+        },
+        "summary": "Triggers rescreening of provided party id (if payment status is complete)",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/payment/initiate": {
+      "post": {
+        "parameters": [
+          {
+            "description": "An object containing application invoice data",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "../public/payments.json#/definitions/applicationInvoiceObject"
+            }
+          }
+        ],
+        "tags": [
+          "Tests"
+        ],
+        "responses": {
+          "200": {
+            "description": "Return invoice id and the mock payment form url"
+          },
+          "400": {
+            "description": "Missing tenant id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/test/availableCucumberPhoneNumber": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Tests"
+        ],
+        "summary": "Retrieves a phone number reserved for testing",
+        "responses": {
+          "200": {
+            "description": "The phone number were successfully retrieve",
+            "schema": {
+              "items": {
+                "type": "string"
+              },
+              "type": "string"
+            }
+          },
+          "404": {
+            "description": "There is no phone number available",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/test/updateInvite": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The user invite's data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "token": {
+                  "description": "The token used to find the user invite",
+                  "type": "string"
+                },
+                "organization": {
+                  "description": "Name of the organization that the user belongs to",
+                  "type": "string"
+                },
+                "updateData": {
+                  "description": "The fields to update",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "token",
+                "organization"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The invite was updated successfully"
+          },
+          "400": {
+            "description": "The invite is expired or already used",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The invite was not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a user invite",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/clearQueues": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The queues were cleared successfully"
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Triggers a queues cleanup",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/createGuestApplication": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "A tenant object",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "tenants.json#/definitions/Tenant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The action is enqueued for processing."
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Triggers the creationf of a Plivo application used to mimic the guest sending/receiving messages",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/deleteMessagesFromNumber": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Phone number from which to remove the received messages",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "from": {
+                  "description": "The phone number for which to remove the messages",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "from"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The messages were removed."
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Removes all the messages received by the guest endpoint from the specified phone number.",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/sendGuestSMS": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Sends a SMS message from guest to leasing phone number.",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "msg": {
+                  "description": "The SMS message to be sent",
+                  "type": "string"
+                },
+                "to": {
+                  "description": "The phone number to which the SMS to be sent",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "The tenant that holds the plivo authorization token",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "msg",
+                "to",
+                "tenantId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The SMS message is enqueued by Plivo to be sent."
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send a SMS message from Guest to the leasing app.",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/verifyGuestReceivedMessageFromNumber": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Sends a SMS message from guest to leasing phone number.",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "receivedMessage": {
+                  "description": "The SMS text that should have been received",
+                  "type": "string"
+                },
+                "from": {
+                  "description": "The phone number from which the SMS has be sent",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "receivedMessage",
+                "from"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The SMS message is received by guest."
+          },
+          "400": {
+            "description": "The message is not received.",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Verify if guest received the specified SMS message.",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/webhooks/guest-sms-receiver": {
+      "post": {
+        "parameters": [
+          {
+            "description": "an object containg the SMS message information",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "$ref": "../private/webhooks.json#/definitions/InboundSms"
+            }
+          }
+        ],
+        "tags": [
+          "Tests"
+        ],
+        "summary": "Stores in memory the messages received by a guest as part of the communication flow with the leasing application.",
+        "responses": {
+          "200": {
+            "description": "Request was processed correctly"
+          },
+          "400": {
+            "description": "Bad input, can not process SMS with the given data"
+          }
+        }
+      }
+    },
+    "/test/deassignPhoneNumbers": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "List of phone numbers to be deassigned",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The phone numbers were deassigned successfully"
+          },
+          "400": {
+            "description": "There are no phone numbers in request body",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Triggers a deassign phone numbers operation",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/program": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Returns a program based on the email identifier",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "directEmailIdentifier": {
+                  "description": "The email identifier",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "The tenant id",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "directEmailIdentifier",
+                "tenantId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully returned a program based on the email identifier",
+            "schema": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "displayName": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "keywords": {
+                  "type": "array"
+                },
+                "sourceId": {
+                  "type": "string"
+                },
+                "directEmailIdentifier": {
+                  "type": "string"
+                },
+                "outsideDedicatedEmails": {
+                  "type": "array"
+                },
+                "displayEmail": {
+                  "type": "string"
+                },
+                "directPhoneIdentifier": {
+                  "type": "string"
+                },
+                "displayPhoneNumber": {
+                  "type": "string"
+                },
+                "zip": {
+                  "type": "number"
+                },
+                "teamPropertyProgramId": {
+                  "type": "string"
+                },
+                "teamId": {
+                  "type": "number"
+                },
+                "propertyId": {
+                  "type": "number"
+                },
+                "sourceName": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Returns a program based on the email identifier",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/createDummyParty": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The request used for creating the party",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "authUser": {
+                  "description": "The authenticated user",
+                  "type": "object",
+                  "schema": {
+                    "properties": {
+                      "teams": {
+                        "description": "The authenticated user teams",
+                        "type": "array"
+                      }
+                    },
+                    "type": "object"
+                  }
+                },
+                "tenantId": {
+                  "description": "The tenant id",
+                  "type": "string"
+                },
+                "hostname": {
+                  "description": "The hostname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "authUser",
+                "tenantId",
+                "hostname"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "tags": [
+          "Tests"
+        ],
+        "summary": "Creates a dummy party",
+        "responses": {
+          "200": {
+            "description": "Dummy party was created"
+          }
+        }
+      }
+    },
+    "/test/replyToEmailWith": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Sends an email reply.",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "replyText": {
+                  "description": "The email reply text",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "The tenant that holds authorization token",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "replyText",
+                "tenantId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The reply was sent."
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The reply message was not processed",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send an email reply with a text.",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/sendGuestEmail": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Sends an email to a guest.",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "subject": {
+                  "description": "The email subject",
+                  "type": "string"
+                },
+                "body": {
+                  "description": "The email body",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "The tenant id",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "subject",
+                "body",
+                "tenantId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The email was sent."
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The email message was not processed",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Send an email to a guest.",
+        "tags": [
+          "Tests"
+        ]
+      }
+    },
+    "/test/verifyEmailIsDeliveredToGuest": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The api token",
+            "in": "query",
+            "name": "apiToken",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Verifies if an email is delivered.",
+            "in": "body",
+            "required": true,
+            "name": "body",
+            "schema": {
+              "properties": {
+                "subject": {
+                  "description": "The email subject",
+                  "type": "string"
+                },
+                "tenantId": {
+                  "description": "The tenant id",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "subject",
+                "tenantId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The email was delivered."
+          },
+          "403": {
+            "description": "The 'apiToken' query param is missing or is not valid",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The email message was not received",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Verifies if an email is delivered to a guest.",
+        "tags": [
+          "Tests"
+        ]
+      }
+    }
+  }
+}

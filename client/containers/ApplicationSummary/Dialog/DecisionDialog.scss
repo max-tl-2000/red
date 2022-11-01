@@ -1,0 +1,16 @@
+.action-dialog {
+  margin-bottom: (18rem/16);
+  margin-left: (4rem/16);
+}
+
+.dialog-subtitle {
+  width: (500rem/16);
+  margin-top: 1rem;
+  margin-left: (4rem/16);
+}
+
+.dialog-actions {
+  [data-component='button'] {
+    margin-left: (8rem/16);
+  }
+}

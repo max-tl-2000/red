@@ -1,0 +1,267 @@
+{
+  "created_at": "2018-10-24T23:13:24.468Z",
+  "leaseTerms": [
+      {
+          "id": "d60b6374-0760-45c3-a8d6-233c7e250fb2",
+          "period": "month",
+          "specials": true,
+          "termLength": 12,
+          "concessions": [
+              {
+                  "id": "2508939d-ef24-4fb8-91cc-a74cfb0e7f57",
+                  "optional": true,
+                  "recurring": true,
+                  "displayName": "Monthly lease incentive",
+                  "computedValue": 600,
+                  "recurringCount": 2,
+                  "relativeAmount": 300,
+                  "absoluteAdjustment": 0,
+                  "variableAdjustment": false,
+                  "bakedIntoAppliedFeeFlag": false
+              },
+              {
+                  "id": "755d9ccb-fe81-407c-88ee-c8cf54d6d3e4",
+                  "optional": false,
+                  "recurring": true,
+                  "displayName": "3 months free",
+                  "computedValue": 7500,
+                  "recurringCount": 3,
+                  "relativeAmount": 2500,
+                  "absoluteAdjustment": 0,
+                  "variableAdjustment": false,
+                  "bakedIntoAppliedFeeFlag": false
+              },
+              {
+                  "id": "a14010a9-d25a-4a73-80e1-7f3572392a48",
+                  "optional": false,
+                  "recurring": true,
+                  "displayName": "2 months free",
+                  "computedValue": 5000,
+                  "recurringCount": 2,
+                  "relativeAmount": 2500,
+                  "absoluteAdjustment": 0,
+                  "variableAdjustment": false,
+                  "bakedIntoAppliedFeeFlag": false
+              },
+              {
+                  "id": "a646b89b-6765-4ab3-9673-fcc001a8ede4",
+                  "optional": true,
+                  "recurring": false,
+                  "displayName": "1 month free",
+                  "computedValue": 2500,
+                  "recurringCount": 0,
+                  "absoluteAdjustment": 0,
+                  "variableAdjustment": false,
+                  "bakedIntoAppliedFeeFlag": false
+              },
+              {
+                  "id": "c2efe806-ff0b-4252-b4d2-a3783e61ebaa",
+                  "optional": false,
+                  "recurring": false,
+                  "displayName": "Upshift in market rent",
+                  "computedValue": 62.5,
+                  "recurringCount": 0,
+                  "absoluteAdjustment": 0,
+                  "variableAdjustment": false,
+                  "bakedIntoAppliedFeeFlag": true
+              }
+          ],
+          "leaseNameId": "fc17d0dd-0c32-4bbf-ae06-42356033cbc7",
+          "paymentSchedule": [
+              {
+                  "amount": "96.35",
+                  "timeframe": "Oct 2018"
+              },
+              {
+                  "amount": "413.00",
+                  "timeframe": "Nov 2018 - Apr 2019"
+              },
+              {
+                  "amount": "2896.33",
+                  "timeframe": "May 2019"
+              },
+              {
+                  "amount": "2913.00",
+                  "timeframe": "Jun - Sep 2019"
+              },
+              {
+                  "amount": "2233.32",
+                  "timeframe": "Oct 2019"
+              }
+          ],
+          "originalBaseRent": 2093,
+          "chargeConcessions": [],
+          "adjustedMarketRent": 2500,
+          "overwrittenBaseRent": 2500,
+          "maxBakedFeesAdjustment": "",
+          "minBakedFeesAdjustment": "",
+          "allowBaseRentAdjustment": false
+      }
+  ],
+  "updated_at": "2018-10-24T23:13:24.468Z",
+  "inventoryId": "1a4865b1-936c-4c43-80de-202c11bd641b",
+  "publishDate": "2018-10-24T23:14:42.425Z",
+  "expirationDate": "2018-10-27T06:59:59.999Z",
+  "leaseStartDate": "2018-10-24T07:00:00.000Z",
+  "propertyTimezone": "America/Los_Angeles",
+  "confirmationNumber": "497409e9-4a8b-4933-8112-0e07063dda61",
+  "additionalAndOneTimeCharges": {
+      "oneTimeCharges": [
+          {
+              "id": "3dd764a0-34d7-4ea2-883e-1ec49eeff31c--254fe4e1-e907-40d5-aaad-749db78efb48>>2",
+              "amount": 600,
+              "quantity": 1,
+              "estimated": false,
+              "displayName": "Pet deposit (Pet large (26-60 lb))",
+              "parentFeeAmount": 100,
+              "quoteSectionName": "deposit",
+              "isMinAndMaxRentDiff": false,
+              "parentFeeDisplayName": "Pet large (26-60 lb)"
+          },
+          {
+              "id": "f3810b69-c92d-4615-bc19-b7e03628e434",
+              "amount": 0,
+              "quantity": 1,
+              "estimated": false,
+              "displayName": "Security deposit",
+              "quoteSectionName": "deposit",
+              "isMinAndMaxRentDiff": false,
+              "relativeAmountsByLeaseTerm": [
+                  {
+                      "amount": 2302,
+                      "selected": true,
+                      "leaseTermId": "3f90fe6a-392e-4a5e-b570-64707eb7e598"
+                  },
+                  {
+                      "amount": 2500,
+                      "selected": true,
+                      "leaseTermId": "d60b6374-0760-45c3-a8d6-233c7e250fb2"
+                  }
+              ]
+          },
+          {
+              "id": "0224e707-2ac5-4d25-8006-45452d3d1cb3--e796d8f7-2b58-4fd2-820f-cae5f100721b--d3141506-ac93-43fc-b74f-ed086b43f6bd>>17",
+              "amount": 84,
+              "quantity": 1,
+              "estimated": false,
+              "displayName": "Storage deposit (Large storage space)",
+              "parentFeeAmount": 168,
+              "quoteSectionName": "deposit",
+              "isMinAndMaxRentDiff": false,
+              "parentFeeDisplayName": "Large storage space"
+          }
+      ],
+      "additionalCharges": [
+          {
+              "id": "ca890cc7-cac8-4d45-8067-a4cb24b1e78f",
+              "amount": 25,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Air conditioner (Window Unit)",
+              "quoteSectionName": "appliance",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "5c642396-ac33-4a62-9411-20049dbf392c",
+              "amount": 10,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Boat slip (per linear foot)",
+              "quoteSectionName": "parking",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "28092ea0-af1f-42de-86e6-4b0ef088a1b1--27e8ed95-93f5-4e13-8c35-3fb680ef3e34",
+              "amount": 30,
+              "quantity": 1,
+              "concessions": [],
+              "displayName": "Dryer",
+              "parentFeeAmount": "30.00",
+              "quoteSectionName": "appliance",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "e796d8f7-2b58-4fd2-820f-cae5f100721b--d3141506-ac93-43fc-b74f-ed086b43f6bd",
+              "amount": 168,
+              "quantity": 1,
+              "concessions": [],
+              "displayName": "Large storage space",
+              "parentFeeAmount": "150.00",
+              "quoteSectionName": "storage",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "254fe4e1-e907-40d5-aaad-749db78efb48",
+              "amount": 100,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Pet large (26-60 lb)",
+              "quoteSectionName": "pet",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "6a743312-0135-462c-befe-6d05e0237313--f5ee50a4-c021-4133-bc18-e01457334cb1",
+              "amount": 0,
+              "quantity": 1,
+              "concessions": [],
+              "displayName": "Door Fob",
+              "parentFeeAmount": "0.00",
+              "quoteSectionName": "appliance",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "42da7511-f4ff-4f7c-9b55-b224b967d15c",
+              "amount": 25,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Gas",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "1dd3a522-adf6-4221-b09f-23fda88b89a6",
+              "amount": 0,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Locker",
+              "quoteSectionName": "storage",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "940ff97c-c4c1-4135-bb92-a5f5297cfa60",
+              "amount": 10,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Sewer",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "5b5388d4-8f6d-4557-a640-59acbefd29b7",
+              "amount": 20,
+              "quantity": 1,
+              "estimated": false,
+              "concessions": [],
+              "displayName": "Trash",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+          },
+          {
+              "id": "1a44734a-1d9c-49d3-aed8-169cd76100c4",
+              "amount": 25,
+              "quantity": 1,
+              "estimated": true,
+              "concessions": [],
+              "displayName": "Water",
+              "quoteSectionName": "utility",
+              "isMinAndMaxRentDiff": false
+          }
+      ]
+  }
+}

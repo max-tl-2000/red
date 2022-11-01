@@ -1,0 +1,118 @@
+{
+  "soap:Envelope": {
+    "$": {
+      "xmlns:soap": "http://schemas.xmlsoap.org/soap/envelope/"
+    },
+    "soap:Body": [
+      {
+        "urn:CorticonResponse": [
+          {
+            "$": {
+              "xmlns:urn": "urn:Corticon",
+              "decisionServiceName": "R_RoutingRules"
+            },
+            "WorkDocuments": [
+              {
+                "$": {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+                },
+                "CorticonRule": [
+                  {
+                    "$": {
+                      "id": "CorticonRule_id_1",
+                      "xsi:type": "CorticonRule"
+                    },
+                    "eventName": [
+                      "contact_info_added"
+                    ],
+                    "ruleName": [
+                      "R_PartyMembers"
+                    ]
+                  },
+                  {
+                    "$": {
+                      "id": "CorticonRule_id_2",
+                      "xsi:type": "CorticonRule"
+                    },
+                    "eventName": [
+                      "person_updated"
+                    ],
+                    "ruleName": [
+                      "R_PartyMembers"
+                    ]
+                  },
+                  {
+                    "$": {
+                      "id": "CorticonRule_id_3",
+                      "xsi:type": "CorticonRule"
+                    },
+                    "eventName": [
+                      "contact_info_removed"
+                    ],
+                    "ruleName": [
+                      "R_PartyWorflowState"
+                    ]
+                  }
+                ],
+                "RevaEvent": [
+                  {
+                    "$": {
+                      "id": "RevaEvent_id_1"
+                    },
+                    "eventName": [
+                      "person_updated"
+                    ],
+                    "corticonRule": [
+                      {
+                        "$": {
+                          "href": "#CorticonRule_id_2"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$": {
+                      "id": "RevaEvent_id_2"
+                    },
+                    "eventName": [
+                      "contact_info_added"
+                    ],
+                    "corticonRule": [
+                      {
+                        "$": {
+                          "href": "#CorticonRule_id_1"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$": {
+                      "id": "RevaEvent_id_3"
+                    },
+                    "eventName": [
+                      "contact_info_removed"
+                    ],
+                    "corticonRule": [
+                      {
+                        "$": {
+                          "href": "#CorticonRule_id_3"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "Messages": [
+              {
+                "$": {
+                  "version": "1.0"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

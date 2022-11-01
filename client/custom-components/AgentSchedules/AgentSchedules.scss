@@ -1,0 +1,54 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.agents-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: (344rem/16);
+  height: 4rem;
+  margin: 3rem 0rem;
+  padding-left: 1rem;
+  cursor: pointer;
+  transition: background .3s ease-out, border .5s ease-out, box-shadow .5s ease-out;
+  text-align: left;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: none;
+
+  -webkit-appearance: none;
+
+  &:focus {
+    background: rgba($focusBGColor, .15);
+  }
+
+  &:hover {
+    background: rgba(0,0,0, .08);
+  }
+}
+
+.agent-card {
+  display: flex;
+}
+
+.agent-text {
+  margin-left: 1rem;
+}
+
+.icon-wrapper {
+  position: absolute;
+  right: (8rem/16);
+  opacity: .8;
+}
+
+.show-more-button {
+  margin: 3rem;
+}

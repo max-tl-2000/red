@@ -1,0 +1,48 @@
+@import '../../../client/sass/colors';
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  display: none;
+
+  &.open {
+    display: block;
+    animation: fadeInUp .5s ease-out;
+  }
+
+  &.corporate {
+    min-width: (759em/16);
+  }
+}
+
+.cards-section {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.missingCompanyContent {
+  display: flex;
+  align-items: center;
+  margin-top: .75em;
+  margin-bottom: 1em;
+  padding-left: .5em;
+}
+
+.missingCompanyText {
+  margin-left: .5em;
+}
+
+.alert-icon {
+  fill: $amber500;
+}

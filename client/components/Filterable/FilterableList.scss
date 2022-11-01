@@ -1,0 +1,12 @@
+.filterableList {
+  display: inline-block;
+
+  &.wide {
+    display: block;
+  }
+}
+
+.filter {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+}

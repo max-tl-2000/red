@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# MIT © Sindre Sorhus - sindresorhus.com
+
+# Modified by Reva Tech from https://gist.github.com/sindresorhus/7996717
+# To install: from anywhere in repo, execute:
+# (cd $(git rev-parse --show-toplevel)/.git/hooks ; ln -s ../../scripts/hooks/post-merge)
+
+. ./_common.sh
+log "Running post-merge"
+
+changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+
+check_run() {
+    echo "$changed_files" | egrep --quiet "$1" && (warn "Running $2 because change in $1 detected"; eval "$2")
+}
+
+check_run "package.json|yarn.lock" "./configure.sh"
+check_run "migrations" "scripts/migrate_database.sh"
+

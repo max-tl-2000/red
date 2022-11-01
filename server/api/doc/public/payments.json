@@ -1,0 +1,159 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/parties/{partyId}/transactions": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the screening results for",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Transactions of the party",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Transaction"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the transactions of the party",
+        "tags": [
+          "Payments"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "paymentObject": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "description": "Id of the tenant that will associate the data",
+          "type": "string"
+        },
+        "personId": {
+          "description": "Id of the person",
+          "type": "string"
+        },
+        "personApplicationId": {
+          "description": "The id of the person application to update the application payment",
+          "type": "string"
+        },
+        "signature": {
+          "description": "The signature of the application being used",
+          "type": "string"
+        }
+      }
+    },
+    "applicationInvoiceObject": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "description": "Id of the tenant that will associate the data",
+          "type": "string"
+        },
+        "applicationFeeId": {
+          "description": "The fee id of the application",
+          "type": "string"
+        },
+        "applicationFeeAmount": {
+          "description": "The amount of the fee",
+          "type": "string"
+        },
+        "holdDepositFeeId": {
+          "description": "The fee id of hold deposit if was checked",
+          "type": "string"
+        },
+        "holdDepositFeeIdAmount": {
+          "description": "The amount of hold deposit fee",
+          "type": "string"
+        },
+        "paymentCompleted": {
+          "description": "True if the payment was successful",
+          "type": "boolean"
+        }
+      }
+    },
+    "AptexxPaymentObject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the card holder",
+          "type": "string"
+        },
+        "cardnumber": {
+          "description": "Credit card number",
+          "type": "string"
+        },
+        "expirationdate": {
+          "description": "Expiration date of the credit card",
+          "type": "string"
+        }
+      }
+    },
+    "AptexxCancelPaymentObject": {
+      "type": "object",
+      "properties": {
+        "invoiceId": {
+          "description": "Invoice id of the transaction to be canceled",
+          "type": "string"
+        }
+      }
+    },
+    "Transaction": {
+      "type": "object",
+      "properties": {
+        "feeId": {
+          "description": "Fee's id",
+          "type": "string"
+        },
+        "feeName": {
+          "description": "Fee's name",
+          "type": "number",
+          "format": "float"
+        },
+        "amount": {
+          "description": "Transaction's amount",
+          "type": "string"
+        },
+        "date": {
+          "description": "Transaction's date",
+          "type": "string"
+        },
+        "payer": {
+          "description": "Name of the person who make the transaction",
+          "type": "string"
+        },
+        "unitName": {
+          "description": "Name of the unit person was charged for",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

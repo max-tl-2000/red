@@ -1,0 +1,42 @@
+@import '../../sass/colors';
+
+.list-item {
+  padding-left: .5rem !important; // simple hack to get around the extra padding added by Dropdown
+}
+
+.recipients-dropdown {
+  width: 100%;
+
+  &.readOnly {
+    pointer-events: none;
+  }
+}
+
+.heading {
+  height: (16rem/16);
+  vertical-align: middle;
+}
+
+.value {
+  font-size: (12rem/16);
+  color: $grey500;
+}
+
+.disabled {
+  color: $grey400;
+}
+
+.flyout-overlay {
+  width: 16rem;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.primary-contact {
+  font-size: (12rem/16);
+  margin-left: auto;
+  color: $grey500;
+}

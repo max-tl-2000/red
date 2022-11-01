@@ -1,0 +1,359 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+[data-input-method='keyboard'] {
+  .switch-outer,
+  .checkbox-outer {
+    &.noReadOnly {
+      &:focus .knob {
+        background: rgba(158, 158, 158, .13);
+      }
+
+      &:focus .affordance {
+        background: rgba(158, 158, 158, .13);
+      }
+    }
+  }
+
+  .switch-outer {
+    &.noReadOnly.light {
+      &:focus .knob {
+        background: rgba(255, 255, 255, .13);
+      }
+
+      &.checked {
+        &:focus .knob {
+          background: rgba(255, 255, 255, .13);
+        }
+      }
+    }
+  }
+
+  .checkbox-outer {
+    &.noReadOnly {
+      &.checked {
+        &:focus .affordance {
+          background: rgba(#0096f6, .13);
+        }
+      }
+    }
+  }
+}
+
+.switch-outer,
+.checkbox-outer {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: top;
+  border: 0;
+  background: none;
+
+  -webkit-appearance: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: none;
+  }
+
+  &.noReadOnly {
+    &:active .knob {
+      background: rgba(158, 158, 158, .25);
+    }
+
+    &:hover .knob {
+      background: rgba(158, 158, 158, .25);
+    }
+
+    &.checked {
+      &:focus .knob {
+        background: rgba(#0096f6, .13);
+      }
+
+      &:hover .knob {
+        background: rgba(#0096f6, .25);
+      }
+    }
+  }
+}
+
+.switch-outer {
+  &.reverse {
+    .switch-affordance {
+      right: 0;
+      left: auto;
+    }
+
+    .wrapper {
+      padding-right: 2.5rem;
+      padding-left: 0;
+    }
+  }
+
+  &.light {
+    .track {
+      transition: background .4s ease-out;
+      background: rgba(34, 31, 31, .26);
+    }
+
+    .switch-affordance {
+      + label {
+        @include textSecondary(light);
+      }
+    }
+
+    &.noReadOnly {
+      &:active .knob {
+        background: rgba(255, 255, 255, .25);
+      }
+
+      &:hover .knob {
+        background: rgba(255, 255, 255, .25);
+      }
+
+      &.checked {
+        &:focus .knob {
+          background: rgba(255, 255, 255, 0);
+        }
+
+        &:hover .knob {
+          background: rgba(255, 255, 255, .25);
+        }
+      }
+    }
+
+    &.checked {
+      .switch-affordance {
+        + label {
+          @include textPrimary(light);
+        }
+      }
+
+      .track {
+        background: rgba(255, 255, 255, .5);
+      }
+
+      .knob {
+        &:after {
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: .50;
+
+    .switch-affordance + label {
+      opacity: .50;
+    }
+
+    .track {
+      background: rgba(0,0,0, .13);
+    }
+
+    .knob {
+      cursor: disabled;
+      background: none;
+    }
+  }
+}
+
+.switch-affordance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: (40rem/16);
+  height: (40rem/16);
+
+  + label {
+    @include body();
+    @include textSecondary();
+
+    font-size: (13rem/16);
+    display: block;
+    padding: .65rem .5875rem .5875rem .5rem;
+    transition: color .5s ease-out;
+    text-align: left;
+  }
+}
+
+.checked {
+  .switch-affordance + label {
+    @include textPrimary();
+  }
+
+  .knob {
+    &:after {
+      background: #00a1f1;
+    }
+  }
+}
+
+.track {
+  width: (34rem/16);
+  height: (16rem/16);
+  border-radius: (32rem/16);
+  background: rgba(34, 31, 31, .26);
+}
+
+.knob {
+  position: absolute;
+  top: 0;
+  left: (-10rem/16);
+  width: (40rem/16);
+  height: (40rem/16);
+  transition: background .5s ease-out;
+  border-radius: 100%;
+  background: rgba(#00a5ef, 0);
+
+  &:after {
+    position: absolute;
+    top: (10rem/16);
+    left: (10rem/16);
+    width: (20rem/16);
+    height: (20rem/16);
+    content: ' ';
+    transition: background .5s ease-out;
+    border-width: (.5rem/16);
+    border-style: solid;
+    border-radius: 100%;
+    border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, .12), rgba(255, 255, 255, .06) 20%, rgba(255, 255, 255, .0));
+    border-image-slice: 1;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24), 0 0 2px 0 rgba(0, 0, 0, .12);
+  }
+}
+
+.checked {
+  .track {
+    background: rgba(#00a1f1, .5);
+  }
+}
+
+.checkbox-outer {
+  &:focus,
+  &:hover,
+  &:active {
+    background: none;
+  }
+
+  &.noReadOnly {
+    &:active .affordance {
+      background: rgba(158, 158, 158, .22);
+    }
+
+    &:hover .affordance {
+      background: rgba(158, 158, 158, .22);
+    }
+
+    &.checked {
+      &:hover .affordance {
+        background: rgba(#0096f6, .22);
+      }
+    }
+  }
+
+  .affordance + label {
+    text-align: left;
+  }
+
+  &.disabled {
+    opacity: .26;
+
+    &:hover,
+    &:focus,
+    &:active {
+      .affordance {
+        background: rgba(158, 158, 158, 0);
+      }
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: block;
+  min-height: (40rem/16);
+  padding-left: (40rem/16);
+}
+
+.checked .affordance {
+  svg {
+    fill: #0096f6;
+  }
+}
+
+.leftAligned {
+  .wrapper {
+    padding-left: 1.75rem;
+  }
+
+  .affordance {
+    left: (-10rem/16);
+  }
+}
+
+.affordance-helper {
+  position: absolute;
+  top: calc(50% - .5625rem);
+  left: calc(50% - .5625rem);
+  width: (18rem/16);
+  height: (18rem/16);
+  border-radius: 2px;
+  background: #fff;
+
+  &.rounded {
+    border-radius: 100%;
+  }
+}
+
+.affordance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: (40rem/16);
+  height: (40rem/16);
+  transition: background .5s ease-out;
+  border-radius: 100%;
+
+  svg {
+    position: relative;
+    transition: fill .5s ease-out;
+  }
+
+  + label {
+    @include body();
+    @include textSecondary();
+
+    font-size: (13rem/16);
+    display: block;
+    padding: .6rem (9.4rem/16) (9.4rem/16) 0;
+    transition: color .5s ease-out;
+  }
+
+  &.radio + label {
+    padding: .55rem (9.4rem/16) (9.4rem/16) 0;
+  }
+}
+
+.checked .affordance + label {
+  @include textPrimary();
+}
+
+.compact {
+  .affordance + label,
+  .switch-affordance + label {
+    font-size: (13rem/16);
+  }
+}

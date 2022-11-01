@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CityStateLookupRequest USERID="{{userId}}">
+  <ZipCode ID='0'>
+    <Zip5>{{zipCode.zip5}}</Zip5>
+  </ZipCode>
+</CityStateLookupRequest>

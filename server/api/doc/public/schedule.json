@@ -1,0 +1,191 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/schedule/overview": {
+      "post": {
+        "summary": "Loads the schedule overview + optionally preloads schedules for some days",
+        "tags": [
+          "Schedule"
+        ],
+        "parameters": [
+          {
+            "description": "Number of days for which to return tasks in the response",
+            "in": "query",
+            "name": "preloadDays",
+            "required": false,
+            "type": "number"
+          },
+          {
+            "description": "Time Zone Hour Difference in this format: -/+HH:MM",
+            "in": "query",
+            "name": "timeZoneDifference",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "users": {
+                  "description": "List of user IDs to be used in the filter",
+                  "items": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The communications for the party",
+            "schema": {
+              "$ref": "#/definitions/ScheduleOverview"
+            }
+          }
+        }
+      }
+    },
+    "/schedule": {
+      "get": {
+        "summary": "Loads the schedule for some days",
+        "tags": [
+          "Schedule"
+        ],
+        "parameters": [
+          {
+            "description": "List of days (in the format YYYY-M-D) for which to return tasks",
+            "in": "query",
+            "name": "days",
+            "required": false,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The communications for the party",
+            "schema": {
+              "$ref": "#/definitions/ScheduleDays"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AppointmentView": {
+      "properties": {
+        "id": {
+          "description": "the id of the appointment",
+          "type": "string"
+        },
+        "partyId": {
+          "description": "the party id",
+          "type": "string"
+        },
+        "state": {
+          "description": "whether the appointment was marked as complete or not",
+          "type": "string"
+        },
+        "metadata": {
+          "description": "additional information specific to appointments like startDate, endDate, note, partyMembers, inventories",
+          "properties": {
+            "startDate": {
+              "description": "the start time and date of the appointment",
+              "type": "string"
+            },
+            "endDate": {
+              "description": "the start time and date of the appointment",
+              "type": "string"
+            },
+            "partyMembers": {
+              "description": "the ids of the party members included in the appointment",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "inventories": {
+              "description": "the ids of the units included in the appointment",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "note": {
+              "description": "any notes taken for the appointment",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "guests": {
+          "description": "the display names of the party members included in the appointment",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "units": {
+          "description": "the display names of the units included in the appointment",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "partyId",
+        "state",
+        "metadata",
+        "guests",
+        "units"
+      ],
+      "type": "object"
+    },
+    "ScheduleOverview": {
+      "type": "object",
+      "properties": {
+        "daysWithTasks": {
+          "description": "the list of days for which the user has tasks scheduled, each item is a day in the format YYYY-M-D",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "tasks": {
+          "$ref": "#/definitions/ScheduleDays"
+        }
+      },
+      "required": [
+        "daysWithTasks"
+      ]
+    },
+    "ScheduleDays": {
+      "properties": {
+        "YYYY-M-D": {
+          "description": "a mapping from YYYY-M-D day to array of appointments for the given day",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AppointmentView"
+          }
+        }
+      }
+    }
+  }
+}

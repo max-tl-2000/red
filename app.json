@@ -1,0 +1,15 @@
+{
+  "name": "core-property-management",
+  "description": "Core Property Management",
+  "repository": "https://github.com/redisrupt/red",
+  "keywords": [
+    "react",
+    "universal",
+    "webpack",
+    "express",
+    "hot reloading",
+    "react-hot-reloader",
+    "redux",
+    "babel"
+  ]
+}

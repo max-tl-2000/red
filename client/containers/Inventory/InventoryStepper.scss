@@ -1,0 +1,74 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.lifestylesSummary,
+.propertiesSummary,
+.unitsSummary {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.lifestylesSummary {
+  @include span(3, 10, 0);
+}
+
+.propertiesSummary {
+  @include span(7, 10, 0);
+}
+
+.unitsSummary {
+  @include span(3, 10, 0);
+
+  &:nth-child(even) {
+    @include span(7, 10, 0);
+  }
+
+  &:nth-child(n+3) {
+    margin-top: (12rem/16);
+  }
+}
+
+.container {
+  position: relative;
+
+  .lifestyle {
+    @include span(4, 10, 0);
+  }
+
+  .properties {
+    @include span(6, 10, 0);
+
+    position: relative;
+    min-height: 450px;
+  }
+
+  &.twoPanel:before {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    content: ' ';
+    background-color: $grey50;
+  }
+}
+
+.selectedLifestyle,
+.selectedProperty {
+  margin: (8rem/16) 0;
+}
+
+.expanded {
+  [data-component='dialog-body'] {
+    width: (900rem/16);
+  }
+
+  .lifestyle {
+    height: (700rem/16);
+  }
+
+  .properties {
+    height: (700rem/16);
+  }
+}

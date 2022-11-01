@@ -1,0 +1,4 @@
+FinCharges,,,,,,,,,,
+PROPERTY,PERSON,OFFSET,AMOUNT,DATE,POSTMONTH,ACCOUNT,ACCRUAL,NOTES,REF,UNIT
+"cove","0000002t","secdep","1000.00","8/9/2022","8/1/2022","24000","12000","Security Deposit",":MoveIn","01-BARB-23"
+"cove","0000003t","secdep","1000.00","8/9/2022","8/1/2022","24000","12000","Security Deposit",":MoveIn","01-BARB-23"

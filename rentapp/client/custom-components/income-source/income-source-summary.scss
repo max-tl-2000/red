@@ -1,0 +1,14 @@
+.income-source-summary {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  > div {
+    width: 33%;
+  }
+}
+
+.income-source-card {
+  padding: 0;
+}

@@ -1,0 +1,29 @@
+@import '../../../sass/_colors.scss';
+
+.main-content {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid $grey300;
+
+  [data-component=title] {
+    margin-bottom: 1.2em;
+  }
+
+  .leftPanel {
+    width: 50%;
+    padding: 1.2em;
+    border-right: 1px solid $grey300;
+  }
+
+  .rightPanel {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1.2em;
+  }
+}
+
+.dialogTitle {
+  margin-bottom: 1em;
+}

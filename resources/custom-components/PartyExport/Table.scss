@@ -1,0 +1,13 @@
+.records {
+  display: table;
+  margin: (15rem/16) 0 1rem;
+}
+
+.table-record {
+  display: table-row;
+
+  > * {
+    display: table-cell;
+    padding: 0 1rem;
+  }
+}

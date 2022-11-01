@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+{{#with this}}
+  <ProspectID>{{ProspectID}}</ProspectID>
+  <ItemAssignments>
+    {{#each this.inventories}}
+      <ItemAssignment>
+        <ItemType>{{itemType}}</ItemType>
+        <ItemID>{{itemId}}</ItemID>
+        <ItemRate>{{itemRate}}</ItemRate>
+      </ItemAssignment>
+    {{/each}}
+  </ItemAssignments>
+{{/with}}
+</AssignItem>

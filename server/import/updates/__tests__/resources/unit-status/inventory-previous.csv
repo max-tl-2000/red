@@ -1,0 +1,9 @@
+externalId,property,unitCode,state,startDate,availabilityDate
+100-0101,lark,100-0101,occupiedNotice,1/1/2016,8/30/2018
+100-0102,lark,100-0102,occupiedNotice,1/1/2016,7/4/2018
+100-0103,lark,100-0103,vacantReadyReserved,1/1/2016,7/30/2018
+100-0104,lark,100-0104,vacantReadyReserved,1/1/2016,6/4/2018
+001-BARB,cove,001-BARB,occupiedNotice,1/1/2016,8/30/2018
+001-CAPT,cove,001-CAPT,occupiedNotice,1/1/2016,7/4/2018
+001-CHAN,cove,001-CHAN,vacantReadyReserved,1/1/2016,7/30/2018
+001-SALT,cove,001-SALT,vacantReadyReserved,1/1/2016,6/4/2018

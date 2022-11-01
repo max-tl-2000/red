@@ -1,0 +1,22 @@
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  width: 80%;
+  padding-right: 60px;
+}
+
+.json {
+  display: flex;
+  overflow: auto;
+  width: 30%;
+
+  code {
+    font-family: Consolas, Monaco;
+    font-size: 12px;
+    display: block;
+    padding: .5em 1em;
+  }
+}

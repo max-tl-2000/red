@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>ig-payments</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="80" height="80" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M54,44 C49.0361,44 45,48.036095 45,53 C45,57.963905 49.0361,62 54,62 C58.9639,62 63,57.963905 63,53 C63,48.036095 58.9639,44 54,44 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Infographics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Infographics--FA-Start" transform="translate(-290.000000, -837.000000)">
+            <g id="ig-payments" transform="translate(290.000000, 837.000000)">
+                <use id="Rectangle-145-Copy" stroke="#000000" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                <rect id="bound" fill="#000000" opacity="0" x="16" y="16" width="48" height="48"></rect>
+                <path d="M21,40 L21,38 L53,38 C53,38 53.1869387,40 53,40 L21,40 Z M21,46 L21,44 L38,44 C38,44 38.194449,46 38,46 L21,46 Z M16,26 L16,49 C16,49 15.8521946,49.8263946 17,51 C18.1428755,52.0791234 19,52 19,52 L42,52 L42,50 L19,50 L18,49 L18,35 L56,35 L56,42 L58,42 L58,26 L58,24 C58,24 57.891089,22.8127516 57,22 C55.9664411,20.8984942 55,21 55,21 L37,21 L37,23 L55,23 L56,24 L56,26 L18,26 L18,24 L19,23 L37,23 L37,21 L19,21 C19,21 17.8484559,21.0061223 17,22 C16.1466141,22.7051235 16,24 16,24 L16,26 Z" id="Combined-Shape" fill="#000000"></path>
+                <use id="Shape" stroke="#000000" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                <path d="M58.114569,50.0003568 C58.4691534,49.9903408 58.7937361,50.1919474 58.9319675,50.5080639 C59.070199,50.8241805 58.9937337,51.1899846 58.7394045,51.4292707 L53.234108,56.7563118 C52.8981707,57.0812294 52.3536647,57.0812294 52.0177274,56.7563118 L49.2648658,54.0925847 C49.0399315,53.8838613 48.949244,53.5737492 49.027802,53.2819285 C49.1063601,52.9901079 49.3418782,52.7622156 49.6434639,52.6862012 C49.9450495,52.6101868 50.2655387,52.6979379 50.4812465,52.9155891 L52.6259177,54.9908182 L57.5230237,50.2522751 C57.6788746,50.0971015 57.8910445,50.0067458 58.114569,50.0003568 L58.114569,50.0003568 Z" id="Path" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

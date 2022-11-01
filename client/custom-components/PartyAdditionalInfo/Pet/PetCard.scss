@@ -1,0 +1,18 @@
+@import '../../../sass/_colors.scss';
+
+.pet-card {
+  min-width: 14em;
+  padding: 1em 1.6em;
+}
+
+.alert {
+  display: flex;
+}
+
+.alert-icon {
+  width: (14rem/16);
+  height: (14rem/16);
+  margin: (3rem/16) (9rem/16) 0 0;
+
+  fill: $red400;
+}

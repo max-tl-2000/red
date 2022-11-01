@@ -1,0 +1,1119 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/contactUs": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The contactUs data",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ContactUsData"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "no data is returned"
+          },
+          "400": {
+            "description": "Missing or invalid email and phone number",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "The team with the specified email was not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "tags": [
+          "Parties"
+        ],
+        "summary": "Creates a new lead using the data from contactUs form and saves the communication entry"
+      }
+    },
+    "/parties": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "The parties",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          }
+        },
+        "summary": "Retrieves all parties",
+        "tags": [
+          "Parties"
+        ]
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": "The added entity",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          }
+        },
+        "summary": "Creates a party",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/parties/{partyId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The party",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads a party",
+        "tags": [
+          "Parties"
+        ]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the party to update",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The party",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a party",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/parties/{partyId}/additionalInfo": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the additional info for",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The type of the additional info to load",
+            "in": "query",
+            "name": "type",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The additional info of the party",
+            "schema": {
+              "items": {
+                "$ref": "#/definitions/PartyAdditionalInfo"
+              },
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the party additional info",
+        "tags": [
+          "Parties"
+        ]
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the party it belongs to",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The created party additional info object",
+            "schema": {
+              "$ref": "#/definitions/PartyAdditionalInfo"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Creates a party additional info",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/parties/{partyId}/additionalInfo/{additionalInfoId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load the additional info for",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the additional info to load",
+            "in": "path",
+            "name": "additionalInfoId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The specific additional info of the party",
+            "schema": {
+              "$ref": "#/definitions/PartyAdditionalInfo"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the specific party additional info",
+        "tags": [
+          "Parties"
+        ]
+      },
+      "patch": {
+        "parameters": [
+          {
+            "description": "The id of the party it belongs to",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the additional info to modify",
+            "in": "path",
+            "name": "additionalInfoId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The modified additional info object",
+            "in": "body",
+            "name": "additionalInfo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PartyAdditionalInfo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The modified member",
+            "schema": {
+              "$ref": "#/definitions/PartyAdditionalInfo"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a party additional info",
+        "tags": [
+          "Parties"
+        ]
+      },
+      "delete": {
+        "parameters": [
+          {
+            "description": "The id of the party it belongs to",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the additional info to remove from the party",
+            "in": "path",
+            "name": "additionalInfoId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The removed party additional info object",
+            "schema": {
+              "$ref": "#/definitions/PartyAdditionalInfo"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Removes a party additional info from a party",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/parties/{partyId}/assign": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "to",
+            "required": true,
+            "schema": {
+              "properties": {
+                "userId": {
+                  "description": "The assignee user id for the party.",
+                  "type": "string"
+                },
+                "teamId": {
+                  "description": "The assignee team id for the party. This triggers party routing to a user in the team.",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated party",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          },
+          "400": {
+            "description": "The user or team assignee is missing from the request body."
+          },
+          "403": {
+            "description": "The caller is not authorized to perform this operation."
+          },
+          "404": {
+            "description": "The party was not found."
+          }
+        },
+        "summary": "Assigns a party to a user or to a team. The caller needs to be party owner or have at LM role (or above) in the at least one of the teams associated with the party.",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/parties/{partyId}/close": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated party",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          },
+          "400": {
+            "description": "Invalid party id or missing close reason."
+          },
+          "404": {
+            "description": "The party was not found."
+          }
+        },
+        "summary": "Closes a party.",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/parties/{partyId}/reopen": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated party",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          },
+          "400": {
+            "description": "Invalid party id"
+          },
+          "403": {
+            "description": "Forbidden action for the user"
+          },
+          "404": {
+            "description": "The party was not found"
+          }
+        },
+        "summary": "Reopens a closed party",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/partyDetails/{partyId}": {
+      "get": {
+        "tags": [
+          "Parties"
+        ],
+        "parameters": [
+          {
+            "description": "Id of the party",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Party Details Page data was load succesfully",
+            "schema": {
+              "$ref": "applications.json#/definitions/ApplicationData"
+            }
+          }
+        }
+      }
+    },
+    "/parties/{partyId}/agent": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to load primary agent for",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The primary agent of the party",
+            "schema": {
+              "$ref": "users.json#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the primary party agent",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/parties/{partyId}/export": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party to export",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "no data is returned"
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Exports the party",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/public/party/{partyId}/score": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the party to set the score of",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The score to set for the party",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "score": {
+                  "description": "The score to set for the partye",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "score"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "no data is returned"
+          },
+          "400": {
+            "description": "The partyId is missing",
+          }
+        },
+        "tags": [
+          "Parties"
+        ],
+        "summary": "Updates the score according to the given parameter for the given party"
+      }
+    },
+    "/parties/{partyId}/markAsSpam": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the party to be marked as spam",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The marked as spam party",
+            "schema": {
+              "$ref": "#/definitions/Party"
+            }
+          },
+          "401": {
+            "description": "Unauthorized user"
+          },
+          "404": {
+            "description": "The partyId is missing"
+          }
+        },
+        "tags": [
+          "Parties"
+        ],
+        "summary": "Marks the given party as spam"
+      }
+    },
+    "/leads": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "All the active leads",
+            "schema": {
+              "$ref": "persons.json#/definitions/Person"
+            }
+          }
+        },
+        "summary": "Loads all the lead entities",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/mergePartySessions": {
+      "post": {
+        "parameters": [
+          {
+            "description": "Merging two parties can be initiated manually by the user or as a result of other two actions: merging two persons, changing the assigned property for a party.",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "mergeContext": {
+                  "description": "The context from where the merge context was initiated. Should be one of the following values: party, person, propertyChange.",
+                  "type": "string"
+                },
+                "partyId": {
+                  "description": "The id of the party from where the merge parties was initiated. This field is mandatory regardless of the merge context.",
+                  "type": "string"
+                },
+                "personId": {
+                  "description": "The id of the person from where the merge parties was initiated. This needs to be set only when mergeContext is set to 'person'.",
+                  "type": "string"
+                },
+                "propertyId": {
+                  "description": "The new assigned propertyId of the party. This needs to be set only when mergeContext is set to 'propertyChange'",
+                  "type": "string"
+                },
+                "oldPropertyId": {
+                  "description": "The previous assigned propertyId of the party. This needs to be set only when mergeContext is set to 'propertyChange'",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "mergeContext",
+                "partyId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The newly created session",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "The id of the newly created session",
+                  "type": "string"
+                },
+                "context": {
+                  "type": "object",
+                  "properties": {
+                    "userId": {
+                      "description": "The id of the user who initiated the merge parties session request",
+                      "type": "string"
+                    },
+                    "partyId": {
+                      "description": "partyId from the request body",
+                      "type": "string"
+                    },
+                    "personId": {
+                      "description": "personId from the request body",
+                      "type": "string"
+                    },
+                    "propertyId": {
+                      "description": "propertyId from the request body",
+                      "type": "string"
+                    },
+                    "oldPropertyId": {
+                      "description": "oldPropertyId from the request body",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid party id, person id, property id or merge context"
+          },
+          "404": {
+            "description": "The party, person or property was not found."
+          }
+        },
+        "summary": "Creates a new merge parties session",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/mergePartySessions/{sessionId}/matches": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The session id",
+            "in": "path",
+            "name": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The possible match for the current merge session",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "matchId": {
+                  "description": "This is the id of the possible match",
+                  "type": "object"
+                },
+                "sessionId": {
+                  "description": "This is the id of the current merge parties session",
+                  "type": "object"
+                },
+                "isMergeConflict": {
+                  "description": "Flag indicating whether the parties can be merged",
+                  "type": "boolean"
+                },
+                "firstParty": {
+                  "$ref": "#/definitions/MergePartyData"
+                },
+                "secondParty": {
+                  "$ref": "#/definitions/MergePartyData"
+                },
+                "result": {
+                  "$ref": "#/definitions/MergePartyResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid session id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Session not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Returns a possible match for the current merge parties session",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/mergePartySessions/{sessionId}/matches/{matchId}/resolve": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The session id",
+            "in": "path",
+            "name": "sessionId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The party match id",
+            "in": "path",
+            "name": "matchId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The merge parties response",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "response": {
+                  "description": "The user's response for the current possible party match",
+                  "enum": [
+                    "merge",
+                    "dont merge"
+                  ],
+                  "type": "string"
+                },
+                "partyOwnerId": {
+                  "description": "The owner user of the result party",
+                  "type": "string"
+                },
+                "ownerTeamId": {
+                  "description": "The owner team of the result party",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "response",
+                "partyOwnerId",
+                "ownerTeamId"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The parties were merged successfully",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "resultPartyId": {
+                  "description": "The id of the result party",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid session id, match id, response or party owner is not set",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Session or match was not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Merges two parties",
+        "tags": [
+          "Parties"
+        ]
+      }
+    },
+    "/public/party/{partyId}/partyMember": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The id of the party to add the externalPartyMemberInfo",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The score to set for the party",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "propertyId": {
+                  "description": "The propertyId related to the party",
+                  "type": "string"
+                },
+                "propertyName": {
+                  "description": "The propertyName related to the party",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "propertyId",
+                "propertyName"
+              ],
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "no data is returned"
+          },
+          "400": {
+            "description": "Some of the params (partyId, propertyId, propertyName) is missing"
+          }
+        },
+        "tags": [
+          "Parties"
+        ],
+        "summary": "Add a fake ExternalPartyMemberInfo only applicable to real test aptexx and no integration turned on"
+      }
+    }
+  },
+  "definitions": {
+    "Party": {
+      "properties": {
+        "id": {
+          "description": "the id of the amenity",
+          "type": "string"
+        },
+        "state": {
+          "description": "the party state (Prospect, Resident ...)",
+          "type": "string"
+        },
+        "qualificationQuestions": {
+          "description": "the qualification questions for the party",
+          "type": "string"
+        },
+        "score": {
+          "description": "the score of the party",
+          "type": "string"
+        },
+        "storedUnitsFilters": {
+          "$ref": "#/definitions/UnitsFilters"
+        }
+      },
+      "type": "object"
+    },
+    "PartyAdditionalInfo": {
+      "properties": {
+        "id": {
+          "description": "The id of the party additional info",
+          "type": "string"
+        },
+        "partyId": {
+          "description": "The id of the party it belongs to",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of party additional info",
+          "type": "string"
+        },
+        "info": {
+          "description": "An object containing the additional info associated to the party",
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "UnitsFilters": {
+      "type": "object",
+      "properties": {
+        "numBathrooms": {
+          "description": "An array containing the number of bathrooms",
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "numBedrooms": {
+          "description": "An array containing the number of bedrooms",
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "marketRent": {
+          "description": "An object containing a max and min",
+          "type": "object"
+        },
+        "surfaceArea": {
+          "description": "An object containing a max and min",
+          "type": "object"
+        },
+        "amenities": {
+          "description": "An array of objects",
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "ContactUsData": {
+      "properties": {
+        "name": {
+          "description": "the name of the customer",
+          "type": "string"
+        },
+        "phone": {
+          "description": "the customer's phone number (phone or email are required)",
+          "type": "string"
+        },
+        "email": {
+          "description": "the customer's email address (phone or email are required)",
+          "type": "string"
+        },
+        "message": {
+          "description": "the message from the customer",
+          "type": "string"
+        },
+        "teamId": {
+          "description": "the team the message is addressed to",
+          "type": "string"
+        },
+        "source": {
+          "description": "the source of the message (e.g. the website or company name that called the endpoint)",
+          "type": "string"
+        }
+      },
+      "required": [
+        "teamId"
+      ],
+      "type": "object"
+    },
+    "MergePartyData": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Party"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "lastContactedDate": {
+              "description": "The last contacted date",
+              "type": "string"
+            },
+            "partyOwner": {
+              "description": "Owner of the party",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "MergePartyResult": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Party"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "partyMembers": {
+              "type": "array",
+              "items": {
+                "$ref": "partyMembers.json#/definitions/PartyMember"
+              },
+              "description": "Array of party members"
+            },
+            "appointments": {
+              "type": "array",
+              "items": {
+                "$ref": "tasks.json#/definitions/Task"
+              },
+              "description": "Array of tasks. This will contains only appointments."
+            },
+            "quotes": {
+              "type": "array",
+              "items": {
+                "$ref": "quotes.json#/definitions/Quote"
+              },
+              "description": "Array of quotes"
+            },
+            "lastContactedDate": {
+              "description": "Last contacted date of the result party",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+  }
+}

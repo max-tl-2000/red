@@ -1,0 +1,27 @@
+.card-list {
+  position: relative;
+  margin-top: (16rem/16);
+  margin-bottom: (10rem/16);
+  padding-bottom: (5rem/16);
+}
+
+.sign-in-note-container {
+  width: 50%;
+  margin: auto;
+  padding: (40rem/16) 0 (89rem/16);
+  text-align: center;
+}
+
+.sign-in-note {
+  height: 100%;
+
+  > svg {
+    width: (80rem/16);
+    height: (80rem/16);
+    opacity: .26;
+  }
+
+  > p {
+    margin-top: 1rem;
+  }
+}

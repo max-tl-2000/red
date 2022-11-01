@@ -1,0 +1,13 @@
+diff --git a/node_modules/knex/lib/migrate/Migrator.js b/node_modules/knex/lib/migrate/Migrator.js
+index 2e57f60..4180266 100644
+--- a/node_modules/knex/lib/migrate/Migrator.js
++++ b/node_modules/knex/lib/migrate/Migrator.js
+@@ -526,7 +526,7 @@ class Migrator {
+           trxOrKnex.enableProcessing();
+           return checkPromise(
+             this.knex.client.logger,
+-            migrationContent[direction](trxOrKnex),
++            migrationContent[direction](trxOrKnex, trxOrKnex.context.userParams),
+             name
+           );
+         })

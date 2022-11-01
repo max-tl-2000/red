@@ -1,0 +1,23 @@
+@import '../../../../client/sass/_colors.scss';
+@import '../../../../client/sass/_typography-mixins.scss';
+
+:global(.pac-logo::after) {
+  display: none;
+}
+
+:global(.pac-item) {
+  padding: .6em 1em;
+  border-top: 0;
+
+  &:hover {
+    background-color: $hoverBGColor;
+  }
+}
+
+:global(.pac-icon) {
+  display: none;
+}
+
+:global(.pac-matched) {
+  @include lightHighlight(light);
+}

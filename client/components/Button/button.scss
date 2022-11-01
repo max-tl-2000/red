@@ -1,0 +1,372 @@
+@import '../../sass/_colors';
+@import '../../sass/_typography-mixins.scss';
+
+:global {
+  .btn,
+  .btn-large,
+  .btn-flat {
+    line-height: 36px;
+    display: inline-block;
+    height: 36px;
+    padding: 0 2rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    outline: 0;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn.disabled,
+  .disabled.btn-large,
+  .btn-floating.disabled,
+  .btn-large.disabled,
+  .btn:disabled,
+  .btn-large:disabled,
+  .btn-large:disabled,
+  .btn-floating:disabled {
+    cursor: default;
+    color: #9f9f9f !important;
+    background-color: #dfdfdf !important;
+    box-shadow: none;
+  }
+
+  .btn.disabled *,
+  .disabled.btn-large *,
+  .btn-floating.disabled *,
+  .btn-large.disabled *,
+  .btn:disabled *,
+  .btn-large:disabled *,
+  .btn-large:disabled *,
+  .btn-floating:disabled * {
+    pointer-events: none;
+  }
+
+  .btn.disabled:hover,
+  .disabled.btn-large:hover,
+  .btn-floating.disabled:hover,
+  .btn-large.disabled:hover,
+  .btn:disabled:hover,
+  .btn-large:disabled:hover,
+  .btn-large:disabled:hover,
+  .btn-floating:disabled:hover {
+    color: #9f9f9f;
+    background-color: #dfdfdf;
+  }
+
+  .btn,
+  .btn-large {
+    cursor: pointer;
+    transition: .2s ease-out;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .5px;
+    color: #fff;
+  }
+
+  .btn-floating {
+    line-height: 37px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    cursor: pointer;
+    transition: .3s;
+    vertical-align: middle;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #26a69a;
+  }
+
+  .btn-floating:before {
+    border-radius: 0;
+  }
+
+  .btn-floating.btn-large {
+    width: 55.5px;
+    height: 55.5px;
+  }
+
+  .btn-floating.btn-large i {
+    line-height: 55.5px;
+  }
+
+  button.btn-floating {
+    border: none;
+  }
+
+  .btn-flat {
+    cursor: pointer;
+    color: #343434;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .btn-flat.disabled {
+    cursor: default;
+    color: #b3b3b3;
+  }
+
+  .btn-large {
+    line-height: 56px;
+    height: 54px;
+  }
+}
+
+:global(.btn).custom-btn,
+:global(.btn-large).custom-btn {
+  padding: 0 1rem;
+}
+
+:global(.btn-flat).custom-btn {
+  padding: 0 .5rem;
+}
+
+:global(.waves-effect) {
+  z-index: auto;
+}
+
+button:global(.btn) {
+  &.primary {
+    &:global(.focused) {
+      background: #1565c0;
+    }
+  }
+
+  &.secondary {
+    &:global(.focused) {
+      background: rgba($grey400, .6);
+    }
+  }
+}
+
+button:global(.btn-flat) {
+  &.primary:global(.focused),
+  &:global(.focused) {
+    background: rgba($grey500, .33);
+  }
+
+  &.secondary {
+    &:global(.focused) {
+      background: rgba($grey500, .33);
+    }
+  }
+}
+
+[data-input-method='keyboard'] {
+  button:global(.btn) {
+    &.primary {
+      &:global(.focused),
+      &:focus {
+        background: #1565c0;
+      }
+    }
+
+    &.secondary {
+      &:global(.focused),
+      &:focus {
+        background: rgba($grey400, .6);
+      }
+    }
+  }
+
+  button:global(.btn-flat) {
+    &:global(.focused),
+    &:focus {
+      background: rgba($grey500, .33);
+    }
+
+    &.secondary {
+      &:global(.focused),
+      &:focus {
+        background: rgba($grey500, .33);
+      }
+    }
+  }
+}
+
+button:global(.btn),
+button:global(.btn-flat) {
+  > span {
+    position: relative;
+  }
+
+  [data-red-icon] {
+    position: relative;
+  }
+}
+
+button:global(.btn) {
+  @include textButton();
+
+  overflow: hidden;
+  min-width: (64rem/16);
+  transition: background .5s ease-out, box-shadow .5s ease-out;
+  opacity: 1;
+  // math in sass is a bit weird I initially attempt (2px/16px)rem
+  // but this was render incorrectly as:
+  //
+  //    .125 rem
+  //         ^
+  //         ^ > the extra space breaks the css value
+  //
+  // the following did produced the expected result: 2rem/16 ===> .125rem
+  border-radius: (2rem/16);
+
+  &.wide {
+    width: 100%;
+  }
+
+  &.primary {
+    @include textPrimary(light);
+
+    background: $blue500;
+
+    // TODO: this should be done in a theme level
+
+    &.isCohort {
+      background: $brown500;
+
+      &:hover {
+        background: $brown500;
+      }
+    }
+
+    &:global(.hovered),
+    &:hover {
+      background: #1d84d5;
+    }
+
+    &:global(.pressed),
+    &:active {
+      background: #1a78c2;
+    }
+
+    &[disabled],
+    &.disabled {
+      color: rgba(0 ,0, 0, .26);
+      background: rgba($grey500, .26);
+
+      &:global(.hovered),
+      &:hover,
+      &:global(.focused),
+      &:focus {
+        color: rgba($black, .3);
+        background: rgba($grey500, .26);
+      }
+    }
+  }
+
+  &.secondary {
+    color: rgba(0, 0, 0, .87);
+    background: $grey200;
+
+    &:global(.hovered),
+    &:hover {
+      background: #d1d1d1; // TODO: Color not in the palette!
+    }
+
+    &:global(.pressed),
+    &:active {
+      background: #bebebe; // TODO: Color not in th paletter
+    }
+
+    &[disabled],
+    &.disabled {
+      color: rgba(0, 0, 0, .26);
+      background: rgba($grey500, .26);
+
+      &:global(.hovered),
+      &:hover,
+      &:global(.focused),
+      &:focus {
+        background: rgba($grey500, .26);
+      }
+    }
+  }
+}
+
+button.btn-flat {
+  @include textButton();
+
+  min-width: (64rem/16);
+  padding: 0 .5rem;
+  // math in sass is a bit weird I initially attempt (2px/16px)rem
+  // but this was render incorrectly as:
+  //
+  //    .125 rem
+  //         ^
+  //         ^ > the extra space breaks the css value
+  //
+  // the following did produced the expected result: 2rem/16 ===> .125rem
+  border-radius: (2rem/16);
+
+  &.primary {
+    color: $blue500;
+    background: none;
+  }
+
+  &.secondary {
+    color: rgba(0, 0, 0, .87);
+  }
+
+  &.isCohort {
+    color: $brown500;
+  }
+
+  &:global(.focused),
+  &:focus {
+    background: none;
+  }
+
+  &:global(.hovered),
+  &:hover {
+    background: rgba($grey500, .2);
+  }
+
+  &:global(.pressed),
+  &:active {
+    background: rgba($grey500, .4);
+  }
+
+  &[disabled],
+  &.disabled {
+    color: rgba($black, .26);
+    background: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.label {
+  animation: fade-in .3s ease-out;
+}
+
+.loading {
+  position: relative;
+
+  > * {
+    visibility: hidden;
+  }
+
+  > [data-component='loading-wrapper'] {
+    position: absolute;
+  }
+
+  span[data-component='loading-element'] {
+    visibility: visible;
+  }
+}

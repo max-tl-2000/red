@@ -1,0 +1,68 @@
+@import '../../../sass/_colors.scss';
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: (88em/16);
+  padding: 0 !important;
+  box-shadow: none;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba($grey800, .12);
+  }
+
+  .avatarSection {
+    display: flex;
+    justify-content: center;
+    width: (72em/16);
+    padding-top: (18em/16);
+  }
+
+  .dataSection {
+    width: 100%;
+    max-width: (240em/16);
+    padding-top: .75em;
+    padding-right: .5em;
+    padding-bottom: .75em;
+
+    align-content: flex-start;
+
+    [data-component='caption'] {
+      line-height: 1.25rem;
+    }
+
+    .topRow {
+      display: flex;
+      overflow: hidden;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-bottom: .25em;
+      padding-right: (15em/16);
+    }
+  }
+
+  .timestampSection {
+    width: (74em/16);
+    padding-top: 1em;
+    padding-right: (17em/16);
+    text-align: right;
+  }
+}
+
+.dark {
+  background: rgba($grey600, .08);
+}
+
+.blueBadge {
+  svg {
+    fill: $blue600;
+  }
+}
+
+.lightBlueBadge {
+  svg {
+    fill: $blue200;
+  }
+}

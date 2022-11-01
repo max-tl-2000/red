@@ -1,0 +1,6 @@
+{
+  "delay": 60000,
+  "ruleName": "LackOfInboundComms",
+  "customPayload": "[Some custom string]",
+  "partyID": "76e2a2e8-f431-11e9-ae2b-6f90233d2346"
+}

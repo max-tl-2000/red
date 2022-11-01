@@ -1,0 +1,10 @@
+.answers-area {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.answer-card {
+  min-width: 15rem;
+  padding: 1rem;
+}

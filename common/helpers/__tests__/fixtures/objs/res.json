@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "hostname": "Roys-MacBook-Pro.local",
+  "pid": 43422,
+  "type": "middleware",
+  "subType": "access-log",
+  "reqId": "31150b4a-a680-430f-8a30-095cac9c1506",
+  "level": 10,
+  "url": "/users",
+  "res": {
+    "statusCode": 200,
+    "header": "HTTP/1.1 200 OK\r\nX-Request-Id: 31150b4a-a680-430f-8a30-095cac9c1506\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 1972\r\nETag: W/\"7b4-gQ9mq+61b//bdnqoDPDz4A\"\r\nDate: Sat, 02 Jul 2016 03:15:24 GMT\r\nConnection: close\r\n\r\n"
+  },
+  "duration": 19,
+  "msg": "request finish",
+  "time": "2016-07-02T03:15:24.082Z",
+  "src": {
+    "file": "/Users/roy/royws/red/common/helpers/logger-middleware.js",
+    "line": 122
+  },
+  "v": 0
+}

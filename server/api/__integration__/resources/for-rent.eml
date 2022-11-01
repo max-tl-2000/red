@@ -1,0 +1,671 @@
+Return-Path: <bounces+1964667-9d14-forrent.wood=maximus.mail.reva.tech@tem.forrent.com>
+Received: from o2.tem.forrent.com (o2.tem.forrent.com [50.31.39.21])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 290hf0q6vgl9ao7cvffiklutg1gg78nc4kirf281
+ for forrent.wood@maximus.mail.reva.tech;
+ Tue, 29 Aug 2017 15:04:37 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of tem.forrent.com designates 50.31.39.21 as permitted sender) client-ip=50.31.39.21; envelope-from=bounces+1964667-9d14-forrent.wood=maximus.mail.reva.tech@tem.forrent.com; helo=o2.tem.forrent.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of tem.forrent.com designates 50.31.39.21 as permitted sender) client-ip=50.31.39.21; envelope-from=bounces+1964667-9d14-forrent.wood=maximus.mail.reva.tech@tem.forrent.com; helo=o2.tem.forrent.com;
+ dkim=pass header.i=@forrent.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGdVFlSS83UHVXdWViUUJRR1JrWEw4YjJjcXFoNXMra0d2M2xQRndQOE50NnFyUDJBRTU0U0pCT05rNE1YbTN1ZUE0bnU3U0xNRk5SNE8rSkhMOSsvcllubmVra2h4ZFdod3hPQXd2eVFpaldYVkxyaHg5YlVFRFp0NllQaGpkbVA2TDlqbXRSRWpIMC96NFFFVTB4cVRrbFk4UVVDMEpMdHJ1aVlPa0ozcHA3M2x1WlFrYkU5OWdKK0l5RTl6UTV3aUJ3dlZGMk9VbVhSQitjV1lxaG45djVIWERCMldOVWplOHQ3czZKd3VPcm0reFlORGcrYk9tNlhPZGl0V3doYXlNVkkzNnNLSk5WSEJZTlkrcDZuWTVXbWMrUGpsQzFlbkxZODgzRS80SDNTUDRmWnZta2h3Sm5Jejg2cDBXb0ZLVXNkWjJpL09LNTBGWVp0NXBsSnU=
+X-SES-DKIM-SIGNATURE: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1504019078;
+	h=X-SES-RECEIPT:Content-Type:Date:From:Mime-Version:Subject:To:Message-ID;
+	bh=YK1UvFdWBIVB1jWF8PT3SuvXXxfOFwbTO0kzx407/4w=;
+	b=quwbT2tVM4OObr2Nvw/LZYlLCwatf2HFPo129c/9qrY25G1kpljyNh97YvxTwDjd
+	FqbS4SuCjNEEhKz0ni+3h2/oy5Lv4CGjdj1HL4AQ0y937fqxtNKbGlxoA9geq3GwIt2
+	Qn/P1Tmx/WniU1F39vWf2PZ3iTbDwNheSU54p5/o=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=forrent.com; 
+	h=content-type:from:mime-version:reply-to:subject:to; s=s1; 
+	bh=nLyzX8fvDx+e/fR1r65NUEPAomo=; b=bFbNZ81VLB2z53RlaV4rCpjVIldf2
+	Z42spKG5aag4G0y3z7Ror9XJnjAjLq9quY0j1nNaBSLdhwFj/UnSq7ydJ4P7TP9A
+	HxOdPKK4r6jS6C5DjTUID6XD804oVii+lCIP6qstDuCDSipumVv5kUtzkORXxod/
+	UtzroBhXSatoUY=
+Received: by filter0238p1las1.sendgrid.net with SMTP id filter0238p1las1-10395-59A58284-14
+        2017-08-29 15:04:36.370252367 +0000 UTC
+Received: from MTk2NDY2Nw (outbound-mail.forrent.com [204.154.41.228])
+	by ismtpd0001p1iad1.sendgrid.net (SG) with HTTP id 6B7Ba9IMT-CHZj0cPyaQow
+	for <forrent.wood@maximus.mail.reva.tech>; Tue, 29 Aug 2017 15:04:36.229 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=758a0b0b061ef962437e91c29f1f61fd421c75a5fc74f0013011c6b6d574
+Date: Tue, 29 Aug 2017 15:04:36 +0000 (UTC)
+From: "ForRent.com | Lead Insights" <guestcards@forrent.com>
+Mime-Version: 1.0
+Reply-To: largo.took@teleworm.us
+Subject: =?UTF-8?Q?=F0=9F=93=8C_New_ForRent_Lead_|_Largo_Took_-_Woodchase?=
+To: forrent.wood@maximus.mail.reva.tech
+Message-ID: <6B7Ba9IMT-CHZj0cPyaQow@ismtpd0001p1iad1.sendgrid.net>
+X-SG-EID: NkAXwVQL5yWK22PThkbm7IEWLOLgZSjRfFUlPtj1c7akQEFM03R5cgvrCR8R/OJchOkTgR4IpE5C7I
+ nmVGZFslpbXier84hvwnSACc7CrE+pJuWrPnNZQVP1WnVg+KpubzRDZvkyY49JQ/iB3KFSvf9SumSk
+ ylug7GTFvrfeaaA4VCOSJJWFUYw9324xsnxsQoL/rh/pW4P3w4AXY1RtAo1pvf8WBIFD6Nsnmg0QPk
+ cKMUJ6x0Jh7lccq9dKYfaAjViIVOjAjjY0xImE/FrEng==
+
+--758a0b0b061ef962437e91c29f1f61fd421c75a5fc74f0013011c6b6d574
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+---------------------------------------------------------------------------=
+---
+FORRENT.COM GUESTCARD & LEAD INSIGHTS
+---------------------------------------------------------------------------=
+---
+
+The following LEAD is a direct result of your property listing on ForRent.c=
+om:
+
+Woodchase / 2795 San Leandro Blvd, San Leandro CA 94578
+ForRent.com Site ID: 1022985
+___________________________________________________________________________=
+__________
+[Prospect Name]  Largo Took
+[Email]  largo.took@teleworm.us
+[Phone]  (650) 991-8351
+[# Beds]  Any Bed
+[# Baths]  Any Bath
+[Moving Date]  immediately
+[Comments]  =E2=80=9CHello Woodchase,
+This is just a test; please do not close the party. We will close the party=
+ after completing the test.
+
+Thanks and regards,
+Largo.=E2=80=9D
+[Submitted] 08/29/2017 11:03:53 am
+___________________________________________________________________________=
+__________
+
+
+---------------------------------------------------------------------------=
+---
+LEAD INSIGHTS BY FORRENT.COM
+---------------------------------------------------------------------------=
+---
+
+>> See these consumer insights as easy-to-read graphics! Visit this link:
+http://www.forrent.com/lead-insights-email/?token=3D17a8f915-2faf-4e51-9968=
+-79fc97758dd0-leadinsight-html
+
+
+
+
+
+___________________________________________________________________________=
+__________
+
+>> View My Property:
+http://www.forrent.com/apartment-community-profile/1022985
+>> View My LEADs:
+https://manage.forrent.com/reports/leads-dashboard-report?Sites=3D1022985
+
+--758a0b0b061ef962437e91c29f1f61fd421c75a5fc74f0013011c6b6d574
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<html>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <link href=3D'https://fonts.googleapis.com/css?family=3DOpen+Sans:400,6=
+00italic,600,400italic,700,700italic' rel=3D'stylesheet' type=3D'text/css'>
+    <link href=3D'https://fonts.googleapis.com/css?family=3DLato:300,700,40=
+0' rel=3D'stylesheet' type=3D'text/css'>
+    <title>Insights By ForRent.com</title>
+    <style type=3D"text/css">
+        /*Hotmail and Yahoo specific code*/
+        .ReadMsgBody {
+            width: 100%;
+        }
+        .ExternalClass {
+            width: 100%;
+        }
+        .yshortcuts {
+            color: #ffffff;
+        }
+        .yshortcuts a span {
+            color: #ffffff;
+            border-bottom: none !important;
+            background: none !important;
+        }
+        /*Hotmail and Yahoo specific code*/
+        body {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+        p {
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        th {
+            font-weight: normal !important;
+        }
+        @media only screen and (max-width:649px) {
+            body {
+                width: auto !important;
+            }
+            table[class=3D"table610"] {
+                max-width: 500px !important;
+                width: 100% !important;
+            }
+            img[class=3D"banner"] {
+                max-width: 500px !important;
+                width: 100% !important;
+                height: auto;
+                display: block;
+            }
+            img[class=3D"logo"] {
+                max-width: 150px !important;
+                width: 100% !important;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            th[class=3D"stack1"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+            }
+            th[class=3D"stack2"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                margin-top: 20px !important;
+            }
+            th[class=3D"stack3"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+                margin-top: 10px !important;
+            }
+            th[class=3D"sphide22"] {
+                display: none !important;
+                width: 0px;
+            }
+            table[class=3D"box270"] {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            table[class=3D"box1"] {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            table[class=3D"box2"] {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-top: 20px;
+                height: auto !important;
+            }
+            td[class=3D"center"] {
+                text-align: center !important;
+            }
+            td[class=3D"center2"] {
+                text-align: center !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+            td[class=3D"hide01"] {
+                display: none !important;
+                width: 0px;
+            }
+            td[class=3D"space01"] {
+                height: 30px !important;
+            }
+            table[class=3D"box011"]{ max-width:100% !important; width: 100%=
+ !important; margin:0 auto !important;}
+            table[class=3D"box022"]{ max-width:100% !important; width: 100%=
+ !important; margin:20px auto !important; margin-bottom:inherit !important;}
+        }
+        @media only screen and (max-width: 479px) {
+            body {
+                width: auto !important;
+            }
+            table[class=3D"table610"] {
+                max-width: 500px !important;
+                width: 100% !important;
+            }
+            img[class=3D"image22"] {
+                max-width: 80px !important;
+                width: 100% !important;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+            td[class=3D"box011"]{ max-width:100% !important; width: 100% !i=
+mportant; margin:0 auto !important; display:block; text-align:center !impor=
+tant;}
+            td[class=3D"box022"]{ max-width:100% !important; width: 100% !i=
+mportant; margin:25px auto !important; margin-bottom:inherit !important; di=
+splay:block; text-align:center !important;}
+            th[class=3D"stack1"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+            }
+            th[class=3D"stack2"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                margin-top: 20px !important;
+            }
+            th[class=3D"stack3"] {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+                margin-top: 10px !important;
+            }
+            th[class=3D"sphide22"] {
+                display: none !important;
+                width: 0px;
+            }
+            td[class=3D"space"] {
+                width: 30px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style=3D"margin:0px;" bgcolor=3D"#eeeeee">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#eeeeee">
+    <tr>
+        <td align=3D"center"><table width=3D"600" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#ffffff" class=3D"tabl=
+e610">
+            <tr>
+                <td valign=3D"top"><table width=3D"100%" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td bgcolor=3D"#1b7aba"><table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                            <tr>
+                                <td width=3D"50" class=3D"space"></td>
+                                <td valign=3D"top"><table width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                        <td height=3D"20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><table width=3D"100%" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+                                            <tr>
+                                                <th width=3D"40" class=3D"s=
+phide22"></th>
+                                                <th class=3D"stack1" width=
+=3D"110" style=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-si=
+ze:12px; line-height:20px; color:#ffffff; text-align:center;"><a href=3D"ht=
+tps://u1964667.ct.sendgrid.net/wf/click?upn=3D4xGLmJFbrAaJm8KZu5S2sF0pH0Hmd=
+cYbAzllEAwY9tdezT38wUIAM2mCxEuTmKuNoagT6H3L-2BvrYqZz-2FPYwXjndrOvFftYBWSBy-=
+2FILnxrHw-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI2=
+7-2BvEk-2BfEE7yZFT884XtNEsX888rKE-2BQ2VoFvN-2FjQOn-2BB2vvGkJ6Z5-2BSwrQSvzOt=
+Fucrepo3I4-2BMgxYSKF-2FS65cjVJEgP273lO0bzaMbu8iDPrxoVBRrtrunMFu6AMEnQOVhKFg=
+U9V9aeaS92Xs-2FO9YpNyOd1TrTYqWno5eJ2uXRaS2st6HFVLxqGF2cGErYaSAlr" target=3D=
+"_blank" style=3D"color:#ffffff; text-decoration:none;">View my Property</a=
+></th>
+                                                <th width=3D"40" class=3D"s=
+phide22"></th>
+                                                <th class=3D"stack3"><table=
+ width=3D"270" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"bo=
+x270">
+                                                    <tr>
+                                                        <td><table width=3D=
+"120" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" clas=
+s=3D"box011">
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:12px; line-=
+height:20px; color:#ffffff; text-align:center;"><a href=3D"https://u1964667=
+.ct.sendgrid.net/wf/click?upn=3DgvGj87S0CuIMJCX42y1rURJdgc4-2F2fRDvz-2BW3zW=
+7lSGfZON2GdC-2Foc6EoECa8zYEU-2BJ6DspFOtYKHe-2FOnVeRzJcbganouygFsrzlFoi3DeM-=
+3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEk-2B=
+fEE7yZFT884XtNEsX88-2F25XuohITNp3ezmplQjl4FXu11qELGy078Rr7WHcE0HcFBD0YWxZz6=
+kW7nzYacDpjvLZAn-2Bed4KJyJfqFzsEbh7IDesKp3FK43HJjPVQc3tYKvdQVn8YWcXxC-2FIID=
+JHr4Dg5bRCksjI93eO42POTInBgd8dtCGJrvugQjX1ELlj" target=3D"_blank" style=3D"=
+color:#ffffff; text-decoration:none;">View my LEADS&trade;</a></td>
+                                                            </tr>
+                                                        </table>
+                                                            <table width=3D=
+"125" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" class=
+=3D"box022">
+                                                                <tr>
+                                                                    <td ali=
+gn=3D"center"><a href=3D"https://u1964667.ct.sendgrid.net/wf/click?upn=3D4x=
+GLmJFbrAaJm8KZu5S2sEqmPqV3irrYZoOBZ85C7WQ-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfy=
+IdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEk-2BfEE7yZFT884XtNEsX881eBLfjRCvEMb24=
+dnt5l7fXNmH-2Fl-2FQoQVqawY35nq7qoZUQXyQSCC60hfU4Ntz9QRrvdoGCfbSyKw-2FBide94=
+f7Hht7NmukzuJ7W8zjHEGEtlPCSuwRozfzr5PAuB6CtsKvVRgJa749VHTkgDSutIGcYvwdAG6sk=
+PU7FrBpa-2B2a7Z" target=3D"_blank"><img style=3D"display:block;" src=3D"htt=
+ps://images.frmonline.com/sites/frc/design/leadInsightsEmail/logo.png" widt=
+h=3D"125" height=3D"16" alt=3D"Logo" border=3D"0" class=3D"logo"></a></td>
+                                                                </tr>
+                                                            </table></td>
+                                                    </tr>
+                                                </table>
+                                                </th>
+                                                <th width=3D"40" class=3D"s=
+phide22"></th>
+                                            </tr>
+                                        </table></td>
+                                    </tr>
+                                    <tr>
+                                        <td height=3D"30"></td>
+                                    </tr>
+                                    <tr>
+                                        <td valign=3D"top"><table width=3D"=
+100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff" =
+style=3D"border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2=
+px;">
+                                            <tr>
+                                                <td width=3D"20"></td>
+                                                <td valign=3D"top"><table w=
+idth=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                    <tr>
+                                                        <td height=3D"20"><=
+/td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><table width=3D=
+"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:18px; line-=
+height:22px; color:#000000; text-align:center; font-weight:300;">Woodchase =
+Guest Card</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height=
+=3D"15"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:30px; line-=
+height:32px; color:#333333; text-align:center;">Largo Took</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height=
+=3D"4"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:20px; line-=
+height:28px; color:#024c96; text-align:center; font-weight:300;"><a href=3D=
+"mailto:largo.took@teleworm.us" style=3D"color:#024c96; text-decoration:non=
+e;">largo.took@teleworm.us</a> <br>
+                                                                    <a styl=
+e=3D"color:#024c96; text-decoration:none;">(650) 991-8351</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height=
+=3D"12"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style=
+=3D"font-family:'Lato', Arial, Helvetica, sans-serif; font-size:16px; line-=
+height:22px; color:#070707; text-align:center;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                                                    <span s=
+tyle=3D"font-weight:300; color:#959595">Looking to Move:</span> Immediately=
+<br>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                                                    <span s=
+tyle=3D"font-weight:300; color:#959595">Beds:</span> Any Bed<br>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                                                    <span s=
+tyle=3D"font-weight:300; color:#959595">Baths:</span> Any Bath<br>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                                                    <span s=
+tyle=3D"font-weight:300; color:#959595">Comments:</span> Hello Woodchase,
+This is just a test; please do not close the party. We will close the party=
+ after completing the test.
+
+Thanks and regards,
+Largo.
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height=
+=3D"25"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align=
+=3D"center"><table width=3D"127" style=3D"border:1px solid #c5772b;" bgcolo=
+r=3D"#ec7200" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"cen=
+ter">
+                                                                    <tr>
+                                                                        <td=
+ height=3D"38" style=3D"font-family:'Open Sans', Arial, Helvetica, sans-ser=
+ifS; font-size:14px; color:#ffffff; text-align:center; line-height:22px; fo=
+nt-weight:600;"><a style=3D"color: #ffffff; text-align:center;text-decorati=
+on: none;" href=3D"https://u1964667.ct.sendgrid.net/wf/click?upn=3DgvGj87S0=
+CuIMJCX42y1rURJdgc4-2F2fRDvz-2BW3zW7lSFR2jNHUckxhAgGid5RpwDeLZrhx9so1nc-2FO=
+w9Rsdf1cO9ALO8s-2FC0m47xDWo8gOdgdzYKQIBCQemiWUavVp-2BnRCz47hpZeGHHQlX8kiiK0=
+sA-3D-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2B=
+vEk-2BfEE7yZFT884XtNEsX883eCon8srSWV0gBMFJizI9FEB8UfMj8E0Tvo9B70kMON9zaQiRx=
+aFh-2FyDX7bEiE-2BrJX0-2F-2BTmgMIosBQrjhkOjrbfyEpWr1DIZFbS6XD9Ns69LRy2y4dOb-=
+2FeXKkTegX0l8VL1DZ3ZDiOehofGMSprpH6Ik4hN3ypz6fxVC5bT4ayg" target=3D"_blank"=
+>REPLY NOW</a></td>
+                                                                    </tr>
+                                                                </table></t=
+d>
+                                                            </tr>
+                                                        </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height=3D"25"><=
+/td>
+                                                    </tr>
+                                                </table></td>
+                                                <td width=3D"20"></td>
+                                            </tr>
+                                        </table></td>
+                                    </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                    <tr>
+                                        <td height=3D"30"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"font-family:'Lato', Ar=
+ial, Helvetica, sans-serif; font-size:22px; line-height:28px; color:#ffffff=
+; text-align:center; text-transform:uppercase;">Largo is looking to move <s=
+pan style=3D"font-weight:700;">immediately</span> into an apartment.</td>
+                                    </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                </table></td>
+                                <td width=3D"50" class=3D"space"></td>
+                            </tr>
+                        </table></td>
+                    </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                    <tr>
+                        <td bgcolor=3D"#1b7aba"><table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                            <tr>
+                                <td width=3D"50" class=3D"space"></td>
+                                <td valign=3D"top"><table width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                        <td height=3D"32"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"font-family:'Lato', Ar=
+ial, Helvetica, sans-serif; font-size:22px; line-height:28px; color:#ffffff=
+; text-align:center; text-transform:uppercase;">
+                                            Largo contacted you first in th=
+eir apartment search.<br>
+                                            be the first to follow up!</td>
+                                    </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20
+                                    <tr>
+                                        <td height=3D"35"></td>
+                                    </tr>
+                                </table></td>
+                                <td width=3D"50" class=3D"space"></td>
+                            </tr>
+                        </table></td>
+                    </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                    <tr>
+                        <td><table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+                            <tr>
+                                <td width=3D"50" class=3D"space"></td>
+                                <td valign=3D"top"><table width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                        <td height=3D"40"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"font-family:'Open Sans=
+', Arial, Helvetica, sans-serifS; font-size:11px; color:#999999; text-align=
+:center;">This message was sent to <a style=3D"text-decoration: none; color=
+: #1b7aba;" href=3D"mailto:forrent.wood@maximus.mail.reva.tech">forrent.woo=
+d@maximus.mail.reva.tech</a></span>
+                                            <br/>
+                                            Copyright &copy; 2015 Dominion =
+Enterprises, All Rights Reserved. <a href=3D"#" style=3D"cursor: text; text=
+-decoration: none; color: #818181;">150 Granby St. Norfolk, VA 23510</a><br=
+/>
+                                            All photographs copyrighted by =
+United Advertising Publications, Inc. dba <a href=3D"https://u1964667.ct.se=
+ndgrid.net/wf/click?upn=3D4xGLmJFbrAaJm8KZu5S2sDfYq6mrHPJnENNFwtSfwL0-3D_2j=
+9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEk-2BfEE7y=
+ZFT884XtNEsX88z7qbCd5xuQGJ4epKVvtRRyTeGDA31TdxgC9ImU8n6iG0ok-2F5zXqKZ7LzbCr=
+kLE4PCpXQTCmYahZ2pnErUgfO4UWXqxwdN4LMpqx9VGcFA62LjqqCVv3CbnsUmwNc-2FuucArVM=
+14jQh85adhffb3cqnPe-2BKKBmf-2FbxYNlqJ-2B45XSZ" style=3D"text-decoration: no=
+ne; color: #818181;">ForRent.com&trade;</a>.<br/>
+                                            <a style=3D"text-decoration: no=
+ne; color: #1b7aba;" href=3D"https://u1964667.ct.sendgrid.net/wf/click?upn=
+=3D4xGLmJFbrAaJm8KZu5S2sJwFDTJDL6cl7L49C3-2FOGpuC0T8bQgcNtU5rl4mX8DJTvydC4d=
+tWtnwmUXb1g8R1Ig-3D-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5u=
+eC1LMQmwI27-2BvEk-2BfEE7yZFT884XtNEsX888UB6wDCjnZHVq573L9POAknvLP-2FZN0i4NH=
+0WwPVlL58vHEWHD39kOXEwmEzFZ8Ig5kHfg-2Fj1ziC00QfSjf2afwPbEzPxAChh94cjOvfaG8Z=
+DuCiyaRTtkK8v84WvFIxeo5WWgHVsOVmpattaOzZBZHnq6TnNVwjvgi0a-2BBaZCU7">Privacy=
+ Policy</a>&nbsp;=E2=80=A2&nbsp;<a style=3D"text-decoration: none; color: #=
+1b7aba;" href=3D"https://u1964667.ct.sendgrid.net/wf/click?upn=3D4xGLmJFbrA=
+aJm8KZu5S2sJwFDTJDL6cl7L49C3-2FOGps9qxf70onT6hnhfHrFT-2FLLoVG6efA5q7vequNyr=
+3E2Jg-3D-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27=
+-2BvEk-2BfEE7yZFT884XtNEsX88-2FFnrA0au1y8XQfcUSCkWfJrCZUzvo-2BiHdhp3-2F4V62=
+3wzJ41GCtmQiqwFusAuwSmo7UZtdWeZby0uS10RJrbxomy3g3kCZHYSkxRQAnkTAU70m2Kjh9rU=
+gJ0NKw0ropcTxulEfIrE-2FqN5SIsHUNjPDP2XTv-2Bqd95jEE1z06YMcx7">Terms and Cond=
+itions</a>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td height=3D"15"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=3D"font-family:'Open Sans=
+', Arial, Helvetica, sans-serifS; font-size:11px; color:#999999; text-align=
+:center;">
+                                            If you believe have received a =
+fraudulent message or have a concern about fraudulent activity
+                                            regarding <a href=3D"https://u1=
+964667.ct.sendgrid.net/wf/click?upn=3D4xGLmJFbrAaJm8KZu5S2sDfYq6mrHPJnENNFw=
+tSfwL0-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2=
+BvEk-2BfEE7yZFT884XtNEsX8891Tq-2FjQk0Qcwr4-2F4M42V1PzJAJI07Drq8NG9A5IzZHOsB=
+GLmgEJ7JgEtC0YQxPp18QpbEIEP7wVE1KQ9IaVDwdyoOkpAt5PvVlSAF5NNWPeMDhWd4WA29QFX=
+DIEYfY8WgYLV0JDNLabPXbFmVGw3JtGhKpmkuEqcFJiDqX-2B8iOY" style=3D"text-decora=
+tion: none; color: #818181;">ForRent.com</a>, <a href=3D"https://u1964667.c=
+t.sendgrid.net/wf/click?upn=3D4xGLmJFbrAaJm8KZu5S2sH-2B-2FLs7Bz7l15Xo6cgbbf=
+HUVJzHyyNEcCWan2ycr05CX_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5=
+ueC1LMQmwI27-2BvEk-2BfEE7yZFT884XtNEsX882noJOKSuc0ntM0t4jUPnAPdl6QisAgKxx8d=
+Ez47eSMdbzuoLLvHm54RemwihYyXNAuyUtFjtdeW93198NrgcD0ao6drzjLaq1sfNkhuiR9iWck=
+720hb6yojNF3HZ0ir8V3h4IUJPFWbxKLQA-2BwDf3ky9zvuiobrMwvrI2uk47ax" style=3D"t=
+ext-decoration: none; color: #818181;">CorporateHousing.com</a>, or <a href=
+=3D"https://u1964667.ct.sendgrid.net/wf/click?upn=3D4xGLmJFbrAaJm8KZu5S2sG7=
+Yp2asXrvYVcuxRIAB-2FkY-3D_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85Fq=
+W5ueC1LMQmwI27-2BvEk-2BfEE7yZFT884XtNEsX883lPZQOYn-2BJUUMtkeTcteFx3ah9r4mGj=
+8XdVgIWu7t-2BIXW8gQLhswIh3c0YM5lyuaHtmgcy3LkAWSfGCjsKDHhvMIXgxHYpGnekQPmb9f=
+SJ39f8F9iUvBoaNkUfX3kp3NpFeCd-2FXXXB8To7E6y8H-2BwfC-2B0fKZQ4HgDmtX4CdtjkL" =
+style=3D"text-decoration: none; color: #818181;">After55.com</a>, get infor=
+mation on how to
+                                            <a style=3D"text-decoration: no=
+ne; color: #1b7aba;" href=3D"https://u1964667.ct.sendgrid.net/wf/click?upn=
+=3D4xGLmJFbrAaJm8KZu5S2sK1cVOToiMoqV-2BLUw1b3k40u78ynWynVTbM8goDGHG-2Fk_2j9=
+DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEk-2BfEE7yZ=
+FT884XtNEsX888-2FeHRQFoMrVRkpqPxT-2Bh8PsObOheco8cGs36VUs8ILF06ilt-2FrKFZ8FR=
+a61vM7gdVNIvCF7SlKORhRvda4LpsnygQjYFRw5oDrvD8n9kAe3-2BsVjBblHGVgakXcMScUheJ=
+WoIzIZxq5-2BjuX6t9EGR-2FwkXwrJ19ITY4M4X6tnGNU-2B">report fraud</a>
+                                            or contact us at <a href=3D"tel=
+:888-539-1150" value=3D"+888-539-1150" target=3D"_blank" style=3D"vertical-=
+align: top; text-decoration: none; color: #1b7aba;">888-539-1150</a>
+                                            <br/>
+                                            Please visit <a style=3D"text-d=
+ecoration: none; color: #1b7aba;" href=3D"https://u1964667.ct.sendgrid.net/=
+wf/click?upn=3D4xGLmJFbrAaJm8KZu5S2sK1cVOToiMoqV-2BLUw1b3k40u78ynWynVTbM8go=
+DGHG-2Fk_2j9DhfBTGFK9slNUD01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2B=
+vEk-2BfEE7yZFT884XtNEsX884rfGoBAgxd9hnbB-2FL0RECYVsiYFcsSXraNJDhYVcToSVLJrZ=
+2YrOHSBuZO6meU36YU6cPjNC5VAC-2BUaPana0KprUohUMkDOdYZAkO0taqziXsA5KKjwP-2B-2=
+FDgo-2BLJ1-2BCXucwuSdUxDRg0X-2FYoPErF8juVOQmiLoZSA2mz06u79AV">Dominion Ente=
+rprises Fraud Prevention Tips</a> to learn how to protect yourself from fra=
+udulent activity.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height=3D"40"></td>
+                                    </tr>
+                                </table></td>
+                                <td width=3D"50" class=3D"space"></td>
+                            </tr>
+                        </table></td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table></td>
+    </tr>
+</table>
+
+<img src=3D"https://u1964667.ct.sendgrid.net/wf/open?upn=3D2j9DhfBTGFK9slNU=
+D01hz1L-2FsWfyIdckwP19V2zDMfp85FqW5ueC1LMQmwI27-2BvEk-2BfEE7yZFT884XtNEsX88=
+16cLJqfcvi-2F88unu55-2FXo9mNiJj6-2BOF7b7D8U9Sni1R6HBJRkWAaPCNhfHin-2FI8VK30=
+JJjzpmiuAeFBgUaHLqKBL22bcPpW4wBThqoK-2FaLNMpaDP9rUiF62LM2DGO5uNE0JQ1iOEFktj=
+WepjDp4JyZWrpRtWuJWaMXIKYsDIoqT" alt=3D"" width=3D"1" height=3D"1" border=
+=3D"0" style=3D"height:1px !important;width:1px !important;border-width:0 !=
+important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0=
+ !important;margin-left:0 !important;padding-top:0 !important;padding-botto=
+m:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+--758a0b0b061ef962437e91c29f1f61fd421c75a5fc74f0013011c6b6d574--

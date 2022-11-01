@@ -1,0 +1,362 @@
+{
+  "id": "5973dd0c-adde-4fa1-ad5d-722209448bbd",
+  "pets": null,
+  "comms": [],
+  "score": "prospect",
+  "state": "FutureResident",
+  "tasks": [],
+  "teams": [
+    "5ec022a4-3d0f-42ec-974d-bd12ba123fdc"
+  ],
+  "events": [
+    {
+      "id": "2145f7dd-f418-4aab-a16c-34cfe29ec7d9",
+      "event": "lease_executed",
+      "userId": "59ed22a0-6cf1-46a8-844e-87d078f3d65c",
+      "partyId": "5973dd0c-adde-4fa1-ad5d-722209448bbd",
+      "metadata": {
+        "leaseId": "b94d3aab-d07b-4755-8962-b95a2a61807c",
+        "showEmergencyContactTask": true
+      },
+      "created_at": "2021-10-20T11:16:35.575748+00:00",
+      "requestIds": [
+        "557e2b26-88dc-4507-bef1-cb1561eb3aea"
+      ],
+      "updated_at": "2021-10-20T11:16:35.575748+00:00",
+      "partyMemberId": null,
+      "transaction_id": 5678
+    }
+  ],
+  "leases": [
+    {
+      "id": "b94d3aab-d07b-4755-8962-b95a2a61807c",
+      "status": "executed",
+      "partyId": "5973dd0c-adde-4fa1-ad5d-722209448bbd",
+      "quoteId": "67c79a69-5985-48e0-aa98-3cd3325c929e",
+      "external": {},
+      "signDate": "2021-10-20T11:16:36.611+00:00",
+      "created_at": "2021-10-20T11:15:04.327+00:00",
+      "signatures": [
+        {
+          "id": "da20fd28-57aa-4dc9-b3db-5467cb0aa83d",
+          "status": "signed",
+          "userId": "59ed22a0-6cf1-46a8-844e-87d078f3d65c",
+          "leaseId": "b94d3aab-d07b-4755-8962-b95a2a61807c",
+          "signUrl": "https://claudiu.local.env.reva.tech/leases/46a35085-c1d1-4e42-8252-30f494557e9f/sign/CounterSigner1",
+          "metadata": {
+            "email": "admin@reva.tech",
+            "token": "https://claudiu.local.env.reva.tech/leases/46a35085-c1d1-4e42-8252-30f494557e9f/sign/CounterSigner1",
+            "status": "Created",
+            "signDate": "2021-10-20T11:16:35.607Z",
+            "userName": "Reva Admin",
+            "recipientId": "2eb5fced-44ec-4e38-9598-1a102c7605b2",
+            "clientUserId": "CounterSigner1",
+            "counterSigner": true
+          },
+          "created_at": "2021-10-20T11:15:21.491+00:00",
+          "envelopeId": "46a35085-c1d1-4e42-8252-30f494557e9f",
+          "updated_at": "2021-10-20T11:16:35.575748+00:00",
+          "clientUserId": "CounterSigner1",
+          "partyMemberId": null
+        },
+        {
+          "id": "5fc884af-2aec-46bc-a13a-d0a8d798997e",
+          "status": "signed",
+          "userId": null,
+          "leaseId": "b94d3aab-d07b-4755-8962-b95a2a61807c",
+          "signUrl": "https://claudiu.local.env.reva.tech/leases/46a35085-c1d1-4e42-8252-30f494557e9f/sign/Resident1",
+          "metadata": {
+            "email": "inofficesigner@docusign.com",
+            "token": "https://claudiu.local.env.reva.tech/leases/46a35085-c1d1-4e42-8252-30f494557e9f/sign/Resident1",
+            "status": "Sent",
+            "signDate": "2021-10-20T11:16:16.446Z",
+            "userName": "Claudiu Schuller",
+            "recipientId": "f5b76141-013b-445b-a122-8881a4772d19",
+            "clientUserId": "Resident1",
+            "counterSigner": false
+          },
+          "created_at": "2021-10-20T11:15:21.491+00:00",
+          "envelopeId": "46a35085-c1d1-4e42-8252-30f494557e9f",
+          "updated_at": "2021-10-20T11:16:16.407382+00:00",
+          "clientUserId": "Resident1",
+          "partyMemberId": "837d2783-f240-40b8-a49e-f743e98a2041"
+        }
+      ],
+      "updated_at": "2021-10-20T11:16:35.575748+00:00",
+      "leaseTermId": "aaabd6c8-04cb-4d1e-b38d-8b3399fd6de9",
+      "baselineData": {
+        "pets": [],
+        "quote": {
+          "nsfFee": 75,
+          "petFee": 0,
+          "lateFee": 75,
+          "petRent": 0,
+          "adminFee": 0,
+          "unitName": "350 Arballo-1014",
+          "unitRent": 1838,
+          "leaseTerm": "24 months",
+          "moveInDate": "2021-10-20T11:08:57.304Z",
+          "moveInRent": 711.48,
+          "petDeposit": 0,
+          "rentDueDay": "first (1st)",
+          "inventoryId": "ed0dc4ce-8e50-43db-86c1-97ef80c3e8c2",
+          "leaseLength": 24,
+          "monthlyRate": 1838,
+          "totalPetFee": 0,
+          "unitAddress": "3711-101 19th Ave, Unit 1014, San Francisco, CA 94132",
+          "unitDeposit": 0,
+          "leaseEndDate": "2023-10-19T11:08:57.304Z",
+          "propertyName": "Parkmerced Apartments",
+          "totalPetRent": 0,
+          "inventoryType": "unit",
+          "moveInPetRent": 0,
+          "parkingSpaces": [],
+          "propertyPhone": "(415) 405-4690",
+          "storageSpaces": [
+            {
+              "marketRent": 0,
+              "displayName": "Locker",
+              "complimentary": false
+            }
+          ],
+          "barbecuePolicy": "",
+          "leaseStartDate": "2021-10-20T11:08:57.304Z",
+          "otherLeaseTerm": 24,
+          "totalUpcharges": 0,
+          "buildingAddress": "3711-101 19th Ave, San Francisco, CA 94132",
+          "petRentQuantity": 0,
+          "propertyAddress": "4 Jersey St, Boston, MA 02215",
+          "recurrenceCount": 2,
+          "totalPetDeposit": 0,
+          "numberOfBedrooms": "2BR",
+          "serviceAnimalFee": 0,
+          "totalHoldDeposit": 0,
+          "totalMonthlyRent": 1918,
+          "totalParkingRent": 0,
+          "totalStorageRent": 0,
+          "asbestosLocations": "in the tile floors on the second through top floors, halls and elevators of all the high-rise apartment buildings; insulation on the piping and heaters in the boiler rooms, laundry rooms and in the basement hallways; insulation for the heating system duct work in garden apartments in the heater closets; and in some apartment kitchen floor coverings",
+          "moveinRentEndDate": "2021-10-31T00:00:00-07:00",
+          "serviceAnimalRent": 0,
+          "otherLeaseTermFlag": "X",
+          "totalMoveInCharges": 68.5200000000001,
+          "totalAdditionalRent": 80,
+          "totalUtilityCharges": 0,
+          "accountActivationFee": 0,
+          "applicationFeeAmount": 50,
+          "moveinAdditionalRent": 30.97,
+          "concessionInstallment": 153.16666666666666,
+          "hasOneTimeConcessions": "",
+          "serviceAnimalQuantity": 0,
+          "unitFullQualifiedName": "swparkme-350 Arballo-1014",
+          "concessionsDescription": [
+            "Recurring concession from Oct 2021 through Dec 2021"
+          ],
+          "concessionsAmountPeriod": [
+            "Resident shall receive a prorated concession of $1,838.00 per month off the rent from Oct 2021 through Dec 2021."
+          ],
+          "hasRecurringConcessions": "X",
+          "subTotalOfMoveinCharges": 68.5200000000001,
+          "monthToMonthLeaseTermFlag": "",
+          "totalPetOneTimeServiceFee": 0,
+          "accept12MonthLeaseTermFlag": "",
+          "reject12MonthLeaseTermFlag": "X",
+          "totalPetDNARegistrationFee": 0,
+          "oneTimeTotalConcessionAmount": 0,
+          "recurringTotalConcessionAmount": 3676,
+          "totalConcessionOnMoveinCharges": 673.93
+        },
+        "hasPets": false,
+        "children": [],
+        "timezone": "America/Los_Angeles",
+        "vehicles": [],
+        "documents": { },
+        "occupants": [],
+        "residents": [
+          {
+            "id": "837d2783-f240-40b8-a49e-f743e98a2041",
+            "name": "Claudiu Schuller",
+            "email": "claudiu@reva.tech",
+            "location": ""
+          }
+        ],
+        "guarantors": [],
+        "isEmployee": false,
+        "companyName": "",
+        "propertyName": "swparkme",
+        "hasConcessions": true,
+        "isRenewalLease": false,
+        "publishedLease": {
+          "unitRent": 1838,
+          "moveInDate": "2021-10-20T11:08:57.304Z",
+          "termLength": 24,
+          "concessions": {
+            "08f05d41-fd97-4f04-a514-48b877b1de60": {
+              "amount": 1838,
+              "relativeAmount": 1838
+            }
+          },
+          "leaseEndDate": "2023-10-19T11:08:57.304Z",
+          "leaseStartDate": "2021-10-20T11:08:57.304Z",
+          "oneTimeCharges": {},
+          "additionalCharges": {},
+          "selectedOccupants": [],
+          "rentersInsuranceFacts": "buyInsuranceFlag",
+          "selectedPartyRepresentativeId": ""
+        },
+        "buyInsuranceFlag": "X",
+        "isCorporateParty": false,
+        "officeWorkingTime": {
+          "officeDays1": "Mon - Fri",
+          "officeDays2": "Sat",
+          "officeDays3": "",
+          "officeHours1": "9am - 6pm",
+          "officeHours2": "",
+          "officeHours3": ""
+        },
+        "waterProvidedFlag": "",
+        "cableTvProvidedFlag": "",
+        "partyRepresentative": [],
+        "utilityAddendumFlag": "",
+        "waterSubmeteredFlag": "X",
+        "additionalConditions": {
+          "sureDeposit": false,
+          "additionalNotes": "",
+          "npsRentAssurance": false,
+          "additionalDeposit": false,
+          "additionalDepositAmount": 0
+        },
+        "internetProvidedFlag": "",
+        "leadDisclosureClause": "",
+        "submeterAddendumFlag": "",
+        "naturalGasProvidedFlag": "",
+        "takeOwnerInsuranceFlag": "",
+        "countersignerDescriptor": "Owner or Owner's Representative",
+        "electricityProvidedFlag": "",
+        "naturalGasSubmeteredFlag": "",
+        "electricitySubmeteredFlag": ""
+      },
+      "externalLeaseId": null,
+      "leaseTemplateId": "e985e429-4e50-42a9-87e8-8d0ddd1ccd4a"
+    }
+  ],
+  "quotes": [],
+  "userId": "59ed22a0-6cf1-46a8-844e-87d078f3d65c",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "c2a5a588-7ec9-418e-8761-b397931780b6",
+        "dob": null,
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "Claudiu Schuller",
+        "idCountry": null,
+        "created_at": "2021-10-20T11:08:44.299442+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2021-10-20T11:08:44.299442+00:00",
+        "modified_by": "59ed22a0-6cf1-46a8-844e-87d078f3d65c",
+        "preferredName": null,
+        "isSuspiciousContent": false
+      },
+      "company": null,
+      "contactInfo": [
+        {
+          "id": "ea292fe4-f140-48cd-9430-cdd121ffa89b",
+          "type": "email",
+          "value": "claudiu@reva.tech",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {},
+          "personId": "c2a5a588-7ec9-418e-8761-b397931780b6",
+          "isPrimary": true,
+          "created_at": "2021-10-20T11:08:44.299442+00:00",
+          "updated_at": "2021-10-20T11:08:44.299442+00:00",
+          "markedAsSpamBy": null
+        }
+      ],
+      "partyMember": {
+        "id": "837d2783-f240-40b8-a49e-f743e98a2041",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "5973dd0c-adde-4fa1-ad5d-722209448bbd",
+        "personId": "c2a5a588-7ec9-418e-8761-b397931780b6",
+        "companyId": null,
+        "startDate": "2021-10-20T11:08:44.299442+00:00",
+        "created_at": "2021-10-20T11:08:44.487+00:00",
+        "memberType": "Resident",
+        "updated_at": "2021-10-20T11:08:44.487+00:00",
+        "vacateDate": null,
+        "memberState": "Contact",
+        "modified_by": "59ed22a0-6cf1-46a8-844e-87d078f3d65c",
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "children": null,
+  "invoices": null,
+  "metadata": {
+    "creationType": "user",
+    "originalTeam": "5ec022a4-3d0f-42ec-974d-bd12ba123fdc",
+    "favoriteUnits": [
+      "ed0dc4ce-8e50-43db-86c1-97ef80c3e8c2"
+    ],
+    "screeningVersion": "v1",
+    "firstContactedDate": "2021-10-20T11:08:44.292Z",
+    "firstContactChannel": "Chat"
+  },
+  "property": [
+    {
+      "id": "0d9a0c37-8df8-4e3b-bdcc-1e125138e2c1",
+      "app": {
+        "id": "tech.reva.rxp",
+        "name": "Maximus Pulse",
+        "scheme": "reva-rxp",
+        "autoInvite": true,
+        "allowAccess": true,
+        "appStoreUrl": "https://itunes.apple.com/<country>/app/<app–name>/id<app-ID>?mt=8",
+        "playStoreUrl": "https://play.google.com/store/apps/details?id=tech.reva.rxp"
+      },
+      "name": "swparkme",
+      "settings": {
+        "moveoutNoticePeriod": 60
+      },
+      "timeZone": "America/Los_Angeles",
+      "displayName": "Parkmerced Apartments",
+      "propertyLegalName": "Parkmerced LLC"
+    }
+  ],
+  "vehicles": null,
+  "leaseType": "traditional",
+  "ownerTeam": "5ec022a4-3d0f-42ec-974d-bd12ba123fdc",
+  "startDate": "2021-10-20T11:08:44.299442+00:00",
+  "created_at": "2021-10-20T11:08:44.343+00:00",
+  "invOnHolds": [],
+  "mergedWith": null,
+  "promotions": [ ],
+  "updated_at": "2021-10-20T11:16:35.575748+00:00",
+  "archiveDate": null,
+  "modified_by": "59ed22a0-6cf1-46a8-844e-87d078f3d65c",
+  "seedPartyId": null,
+  "partyGroupId": "8427573f-d913-4a5c-a5d5-b9c5461147a8",
+  "transactions": null,
+  "workflowName": "newLease",
+  "collaborators": [
+    "59ed22a0-6cf1-46a8-844e-87d078f3d65c"
+  ],
+  "workflowState": "active",
+  "activeLeaseData": null,
+  "emailIdentifier": "5973dd0cadde4fa1ad5d",
+  "isTransferLease": false,
+  "screeningResults": {
+    "submissionRequests": null,
+    "submissionResponses": null
+  },
+  "createdFromCommId": null,
+  "partyApplications": [],
+  "assignedPropertyId": "0d9a0c37-8df8-4e3b-bdcc-1e125138e2c1",
+  "personApplications": null,
+  "storedUnitsFilters": { },
+  "fallbackTeamPropertyProgramId": null
+}

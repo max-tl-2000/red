@@ -1,0 +1,31 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  min-width: 15rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  flex-wrap: wrap;
+
+  &:hover {
+    cursor: pointer;
+    background: $hoverBGColor;
+  }
+}
+
+.selected {
+  background: $hoverBGColor;
+}
+
+.avatar {
+  float: left;
+  width: (48rem/16);
+}
+
+.duplicateLabel {
+  line-height: 1.25em;
+  color: rgba($purpleA400, 1);
+}

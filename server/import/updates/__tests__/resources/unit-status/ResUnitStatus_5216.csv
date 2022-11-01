@@ -1,0 +1,10 @@
+ResUnitStatus
+Property_Code,Ref_Property_ID,StartDate,EndDate,Unit_Code,Date,Status,Tenant_Code,Ext_Ref_Tenant_Id,ApplyDate,ApproveDate,SignDate,MoveInDate,MoveOutDate,LeaseFromDate,LeaseToDate,NoticeDate,AvailableDate,RentReady,VacantDate,ReadyDate,Ref_Unit_Id
+"sharon",,06/05/2018,06/06/2018,"M-004",06/05/2018,"Vacant Rented Ready",,,,,,,,,,,,1,05/24/2018,06/05/2018,
+"sharon",,06/07/2018,06/15/2018,"N-209",06/07/2018,"Vacant Rented Ready",,,,,,06/16/2018,,06/11/2018,11/10/2018,,,1,05/30/2018,06/07/2018,
+"sharon",,06/07/2018,06/07/2018,"J-023",06/07/2018,"Vacant Rented Ready",,,,,,,,,,,,1,06/01/2018,06/07/2018,
+"sharon",,09/15/2018,09/22/2018,"L-211",09/15/2018,"Vacant Rented Ready",,,,,,,,,,,,1,09/07/2018,09/15/2018,
+"sharon",,12/09/2015,12/16/2015,"L-101",12/09/2015,"Vacant Unrented Ready",,,,,,,,,,,11/23/2015,-1,12/09/2015,11/30/2015,
+"sharon",,12/09/2015,12/16/2015,"L-203",12/09/2015,"Vacant Unrented Ready",,,,,,,,,,,12/09/2015,-1,12/09/2015,12/09/2015,
+"sharon",,12/09/2015,03/15/2016,"M-022",12/09/2015,"Vacant Unrented Ready",,,,,,,,,,,12/09/2015,-1,12/09/2015,12/09/2015,
+"lark",,01/18/2017,01/31/2017,"130

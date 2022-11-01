@@ -1,0 +1,31 @@
+@import '../../sass/_colors';
+
+.addVideoPrompt {
+  display: flex;
+  width: 28rem;
+  max-width: calc(75vw - 2.50rem);
+
+  > div {
+    flex: 1;
+  }
+
+  button.addButton {
+    margin-left: 15px;
+    background-color: $brown500;
+
+    &:active {
+      background-color: $brown700;
+    }
+
+    &:hover {
+      background-color: $brown700;
+    }
+  }
+
+  :global(.input-field) {
+    &:after {
+      border-bottom: 1px solid $brown500;
+      box-shadow: 0 1px 0 0 $brown500;
+    }
+  }
+}

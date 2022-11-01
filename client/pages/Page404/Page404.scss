@@ -1,0 +1,52 @@
+.page {
+  text-align: center;
+}
+
+[data-component='markdown'].block {
+  p {
+    font-size: (15rem/16);
+    line-height: 1.5rem;
+    padding-right: (40rem/16);
+    padding-left: (40rem/16);
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: (34rem/16);
+  margin-bottom: (30rem/16);
+
+  &.xsmall {
+    font-size: (22rem/16);
+  }
+}
+
+.image404 {
+  margin-bottom: (60rem/16);
+}
+
+.link {
+  text-decoration: none;
+  color: #30c2ff;
+}
+
+.signInBlock {
+  padding-top: (60rem/16);
+  padding-right: (40rem/16);
+  padding-left: (40rem/16);
+
+  &.inline {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+.signInTitle {
+  font-size: (24rem/16);
+  margin-bottom: (5rem/16);
+}
+
+.signInBlocksSection {
+  max-width: (1000rem/16);
+  margin: 0 auto;
+}

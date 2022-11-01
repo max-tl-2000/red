@@ -1,0 +1,19 @@
+@import '../../sass/_colors';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .74;
+}
+
+.line {
+  height: (1rem/16);
+  border-bottom: (1rem/16) solid rgba(0, 0, 0, .12);
+
+  flex-grow: 1;
+}
+
+.text {
+  padding: .5rem 1rem;
+}

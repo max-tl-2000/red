@@ -1,0 +1,31 @@
+@import '../../sass/_responsive.mixins.scss';
+
+.fullscreen-overlay {
+  > div > [data-component='dialog-body'] {
+    overflow: initial;
+    max-width: initial;
+    max-height: initial;
+    padding: 0;
+  }
+
+  [data-component='dialog-header'] {
+    z-index: 2;
+  }
+}
+
+@include to('xsmall2') {
+  .fullscreen-overlay {
+    [data-component='dialog-header'] {
+      > [data-component='title'] {
+        line-height: 0; // Collapse the original line
+        text-indent: -9999px;
+      }
+
+      > [data-component='title']:after {
+        display: block;
+        content: attr(data-title);
+        text-indent: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+diff --git a/node_modules/draft-js-side-toolbar-plugin/.DS_Store b/node_modules/draft-js-side-toolbar-plugin/.DS_Store
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/draft-js-side-toolbar-plugin/lib/components/BlockTypeSelect/index.js b/node_modules/draft-js-side-toolbar-plugin/lib/components/BlockTypeSelect/index.js
+index 6b08a1a..d35a21c 100644
+--- a/node_modules/draft-js-side-toolbar-plugin/lib/components/BlockTypeSelect/index.js
++++ b/node_modules/draft-js-side-toolbar-plugin/lib/components/BlockTypeSelect/index.js
+@@ -42,16 +42,21 @@ var BlockTypeSelect = function (_React$Component) {
+         transform: 'translate(-50%) scale(0)'
+       }
+     }, _this.onMouseEnter = function () {
++      /*
++        In order to have the floating popup displaying above of the sidebar button
++        We are rotating the floating popup by 180deg an move up by 188%
++        also on plugin.css we are rotating back buttons to fix the icons rotation
++      */
+       _this.setState({
+         style: {
+-          transform: 'translate(-50%) scale(1)',
++          transform: 'translate(-50%, -118%) rotate(180deg) scale(1)',
+           transition: 'transform 0.15s cubic-bezier(.3,1.2,.2,1)'
+         }
+       });
+     }, _this.onMouseLeave = function () {
+       _this.setState({
+         style: {
+-          transform: 'translate(-50%) scale(0)'
++          transform: 'translate(-50%, -118%) rotate(180deg) scale(0)'
+         }
+       });
+     }, _this.onMouseDown = function (clickEvent) {
+@@ -75,17 +80,6 @@ var BlockTypeSelect = function (_React$Component) {
+           onMouseLeave: this.onMouseLeave,
+           onMouseDown: this.onMouseDown
+         },
+-        _react2.default.createElement(
+-          'div',
+-          { className: theme.blockTypeSelectStyles.blockType },
+-          _react2.default.createElement(
+-            'svg',
+-            { height: '24', viewBox: '0 0 24 24', width: '24', xmlns: 'http://www.w3.org/2000/svg' },
+-            _react2.default.createElement('path', { d: 'M0 0h24v24H0z', fill: 'none' }),
+-            _react2.default.createElement('path', { d: 'M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z' })
+-          )
+-        ),
+-        _react2.default.createElement('div', { className: theme.blockTypeSelectStyles.spacer }),
+         _react2.default.createElement(
+           'div',
+           { className: theme.blockTypeSelectStyles.popup, style: this.state.style },
+@@ -94,6 +88,17 @@ var BlockTypeSelect = function (_React$Component) {
+             setEditorState: setEditorState,
+             theme: theme.buttonStyles
+           })
++        ),
++        _react2.default.createElement('div', { className: theme.blockTypeSelectStyles.spacer }),
++        _react2.default.createElement(
++          'div',
++          { className: theme.blockTypeSelectStyles.blockType },
++          _react2.default.createElement(
++            'svg',
++            { height: '24', viewBox: '0 0 24 24', width: '24', xmlns: 'http://www.w3.org/2000/svg' },
++            _react2.default.createElement('path', { d: 'M0 0h24v24H0z', fill: 'none' }),
++            _react2.default.createElement('path', { d: 'M19,13h-6v6h-2v-6H5v-2h6V5h2v6h6V13z' })
++          )
+         )
+       );
+     }
+diff --git a/node_modules/draft-js-side-toolbar-plugin/lib/components/Toolbar/index.js b/node_modules/draft-js-side-toolbar-plugin/lib/components/Toolbar/index.js
+index a0a78f4..00b08cd 100644
+--- a/node_modules/draft-js-side-toolbar-plugin/lib/components/Toolbar/index.js
++++ b/node_modules/draft-js-side-toolbar-plugin/lib/components/Toolbar/index.js
+@@ -53,7 +53,19 @@ var Toolbar = function (_React$Component) {
+       }
+     }, _this.onEditorStateChange = function (editorState) {
+       var selection = editorState.getSelection();
+-      if (!selection.getHasFocus()) {
++      var currentContent = editorState.getCurrentContent();
++      var currentBlock = currentContent.getBlockForKey(selection.getStartKey());
++      var currentBlockHasText = !!((currentBlock.getText() || '').trim());
++
++      var cursorIsNotOnBeginningOnText = !(selection.getFocusOffset() === 0 && selection.getHasFocus());
++      var hasSelectionRange = selection.getStartKey() !== selection.getEndKey() || selection.getAnchorOffset() > 0;
++      /*
++      We are adding conditionals to NOT show the sidebar when
++        - Cursor is not at the begining
++        - Some text are selected (prevent show sidebar when inlineToolbar is displayed)
++        - Current line/block has text (allows to show sidebar button only when is a new line)
++      */
++      if (cursorIsNotOnBeginningOnText || hasSelectionRange || currentBlockHasText) {
+         _this.setState({
+           position: {
+             transform: 'scale(0)'
+@@ -61,14 +73,12 @@ var Toolbar = function (_React$Component) {
+         });
+         return;
+       }
+-
+-      var currentContent = editorState.getCurrentContent();
+-      var currentBlock = currentContent.getBlockForKey(selection.getStartKey());
+       // TODO verify that always a key-0-0 exists
+       var offsetKey = _DraftOffsetKey2.default.encode(currentBlock.getKey(), 0, 0);
+       // Note: need to wait on tick to make sure the DOM node has been create by Draft.js
+       setTimeout(function () {
+         var node = document.querySelectorAll('[data-offset-key="' + offsetKey + '"]')[0];
++        if (!node) return;
+ 
+         // The editor root should be two levels above the node from
+         // `getEditorRef`. In case this changes in the future, we
+@@ -82,8 +92,9 @@ var Toolbar = function (_React$Component) {
+           editorRoot = editorRoot.parentNode;
+         }
+ 
++        var offsetTopAlignmentFix = 10;
+         var position = {
+-          top: node.offsetTop + editorRoot.offsetTop,
++          top: node.offsetTop + editorRoot.offsetTop - offsetTopAlignmentFix,
+           transform: 'scale(1)',
+           transition: 'transform 0.15s cubic-bezier(.3,1.2,.2,1)'
+         };
+diff --git a/node_modules/draft-js-side-toolbar-plugin/lib/plugin.css b/node_modules/draft-js-side-toolbar-plugin/lib/plugin.css
+index 55022a9..fef51ea 100644
+--- a/node_modules/draft-js-side-toolbar-plugin/lib/plugin.css
++++ b/node_modules/draft-js-side-toolbar-plugin/lib/plugin.css
+@@ -19,10 +19,10 @@
+ .draftJsToolbar__spacer__2Os2z {
+   position: absolute;
+   left: 50%;
+-  -webkit-transform: translate(-50%);
+-          transform: translate(-50%);
++  -webkit-transform: translate(-50%, -70%);
++          transform: translate(-50%, -70%);
+   width: 74px;
+-  height: 8px;
++  height: 16px;
+ }
+ 
+ .draftJsToolbar__popup__GHzbY {
+@@ -30,9 +30,8 @@
+   left: 50%;
+   -webkit-transform: translate(-50%);
+           transform: translate(-50%);
+-  background: #efefef;
++  background: #fbfbfb;
+   border: 1px solid #ddd;
+-  background: #fff;
+   border-radius: 2px;
+   box-shadow: 0px 1px 3px 0px rgba(220,220,220,1);
+   z-index: 3;
+@@ -41,6 +40,10 @@
+   margin-top: 8px;
+ }
+ 
++.draftJsToolbar__popup__GHzbY > div > div {
++  transform: rotate(180deg);
++}
++
+ .draftJsToolbar__popup__GHzbY:after, .draftJsToolbar__popup__GHzbY:before {
+   bottom: 100%;
+   left: 50%;

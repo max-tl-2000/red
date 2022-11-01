@@ -1,0 +1,329 @@
+{
+  "id": "2561586b-7adf-4cf1-99e6-220873f115c5",
+  "pets": null,
+  "comms": [
+    {
+      "id": "8e5c5b49-be6f-479d-b9c3-3ada4b3a454c",
+      "type": "ContactEvent",
+      "teams": [],
+      "status": null,
+      "unread": false,
+      "userId": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+      "message": {
+        "text": "",
+        "type": "Chat",
+        "eventDateTime": "2019-10-16T17:00:00.000Z"
+      },
+      "parties": [
+        "2561586b-7adf-4cf1-99e6-220873f115c5"
+      ],
+      "persons": [
+        "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b"
+      ],
+      "category": "User communication",
+      "threadId": "dfc35b52-fc34-46a2-8a60-a7650935109c",
+      "direction": "in",
+      "messageId": "3a7991f6-c6f9-4928-9073-08315ffae126",
+      "created_at": "2019-10-16T17:23:45.03+00:00"
+    },
+    {
+      "id": "0509d5d5-caa8-4ace-821d-77c9ca4f707c",
+      "type": "Email",
+      "teams": [
+        "298a302d-ef44-4349-aaa2-bb9d3d3aa819"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Delivery",
+            "address": "roberto+local@reva.tech",
+            "statusDate": "2019-10-16T17:28:00.640Z"
+          }
+        ]
+      },
+      "unread": false,
+      "userId": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+      "message": {
+        "to": [
+          "roberto+local@reva.tech"
+        ],
+        "from": "Felicia Sutton 2561586b7adf4cf199e6@phone.local.envmail.reva.tech",
+        "text": "First outbound comm.\n\nFelicia Sutton\nLeasing Consultant\n\nParkmerced Apartments\n(209) 680-2336\nagents@parkmerced.com\n\n<small>Any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Employees of the company are expressly required not to make defamatory statements and not to infringe or authorize any infringement of copyright or any other legal right by email communications. Any such communication is contrary to company policy and outside the scope of the employment of the individual concerned. The company will not accept any liability in respect of such communication, and the employee responsible will be personally liable for any damages or other liability arising.</small>",
+        "files": [],
+        "unread": false,
+        "replyTo": "2561586b7adf4cf199e6@phone.local.envmail.reva.tech",
+        "subject": "First outbound",
+        "requestQuote": false,
+        "notificationMessage": ""
+      },
+      "parties": [
+        "2561586b-7adf-4cf1-99e6-220873f115c5"
+      ],
+      "persons": [
+        "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b"
+      ],
+      "category": "User communication",
+      "threadId": "68964ef8-dfa7-432e-918e-fa0731f8dede",
+      "direction": "out",
+      "messageId": "0100016dd59c1d2e-8d21ad3f-3483-4382-b7db-2d4f4cd39747-000000",
+      "created_at": "2019-10-16T17:27:20.692+00:00"
+    },
+    {
+      "id": "ab6f5b4d-69f8-45b6-b05c-ad54b33ebbcb",
+      "type": "Sms",
+      "teams": [
+        "298a302d-ef44-4349-aaa2-bb9d3d3aa819"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "sent",
+            "address": "16502736663",
+            "errorCode": "",
+            "messageId": "8f55e092-f03a-11e9-9518-0242ac110007",
+            "statusDate": "2019-10-16T17:30:07.198Z"
+          }
+        ]
+      },
+      "unread": false,
+      "userId": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+      "message": {
+        "to": [
+          "16502736663"
+        ],
+        "from": "12096802336",
+        "text": "Second outbound comm.",
+        "sendingResult": "success"
+      },
+      "parties": [
+        "2561586b-7adf-4cf1-99e6-220873f115c5"
+      ],
+      "persons": [
+        "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b"
+      ],
+      "category": "User communication",
+      "threadId": "1dbb5ad3e88e1019c0c79daa416b0f2c",
+      "direction": "out",
+      "messageId": null,
+      "created_at": "2019-10-16T17:29:50.849+00:00"
+    },
+    {
+      "id": "32a81010-923d-470d-b563-857409910666",
+      "type": "Sms",
+      "teams": [
+        "298a302d-ef44-4349-aaa2-bb9d3d3aa819"
+      ],
+      "status": {
+        "status": [
+          {
+            "status": "Pending",
+            "address": "16502736663"
+          }
+        ]
+      },
+      "unread": false,
+      "userId": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+      "message": {
+        "to": [
+          "16502736663"
+        ],
+        "from": "12096802336",
+        "text": "Third outbound comm.",
+        "sendingResult": "success"
+      },
+      "parties": [
+        "2561586b-7adf-4cf1-99e6-220873f115c5"
+      ],
+      "persons": [
+        "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b"
+      ],
+      "category": "User communication",
+      "threadId": "1dbb5ad3e88e1019c0c79daa416b0f2c",
+      "direction": "out",
+      "messageId": null,
+      "created_at": "2019-10-16T17:31:10.006+00:00"
+    }
+  ],
+  "score": "bronze",
+  "stage": "prospect",
+  "state": "Lead",
+  "tasks": null,
+  "teams": [
+    "298a302d-ef44-4349-aaa2-bb9d3d3aa819"
+  ],
+  "events": [
+    {
+      "id": "afc25f07-1710-482d-8c96-af6b382399f7",
+      "event": "communication_sent",
+      "userId": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+      "partyId": "2561586b-7adf-4cf1-99e6-220873f115c5",
+      "metadata": {
+        "communicationId": "32a81010-923d-470d-b563-857409910666"
+      },
+      "created_at": "2019-10-16T17:31:10.785459+00:00",
+      "requestIds": [
+        "18c58e6d-ba35-4138-9451-34e52831908d"
+      ],
+      "updated_at": "2019-10-16T17:31:10.785459+00:00",
+      "partyMemberId": null,
+      "transaction_id": 4270
+    }
+  ],
+  "leases": null,
+  "quotes": null,
+  "userId": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+  "endDate": null,
+  "members": [
+    {
+      "person": {
+        "id": "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b",
+        "dob": null,
+        "idType": "State",
+        "idState": null,
+        "idValue": null,
+        "fullName": "Roberto Velasquez",
+        "idCountry": null,
+        "created_at": "2019-10-16T17:23:44.191499+00:00",
+        "idProvince": null,
+        "mergedWith": null,
+        "updated_at": "2019-10-16T17:23:44.191499+00:00",
+        "modified_by": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+        "preferredName": null,
+        "isSuspiciousContent": false
+      },
+      "contactInfo": [
+        {
+          "id": "e874e6cf-241e-4322-916e-150c41dcdb9d",
+          "type": "phone",
+          "value": "16502736663",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {
+            "sms": true,
+            "thirdPartyCallResult": {
+              "url": "https://lookups.twilio.com/v1/PhoneNumbers/+16502736663?Type=carrier",
+              "add_ons": null,
+              "carrier": {
+                "name": "Google (Grand Central) BWI - Bandwidth.com - SVR",
+                "type": "voip",
+                "error_code": null,
+                "mobile_country_code": null,
+                "mobile_network_code": null
+              },
+              "caller_name": null,
+              "country_code": "US",
+              "phone_number": "+16502736663",
+              "national_format": "(650) 273-6663"
+            }
+          },
+          "personId": "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b",
+          "isPrimary": true,
+          "created_at": "2019-10-16T17:23:44.191499+00:00",
+          "updated_at": "2019-10-16T17:23:44.191499+00:00",
+          "markedAsSpamBy": null
+        },
+        {
+          "id": "b036b1b7-ddc4-48d9-82e6-22c25deff21e",
+          "type": "email",
+          "value": "roberto+local@reva.tech",
+          "isSpam": false,
+          "imported": false,
+          "metadata": {},
+          "personId": "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b",
+          "isPrimary": true,
+          "created_at": "2019-10-16T17:23:44.191499+00:00",
+          "updated_at": "2019-10-16T17:23:44.191499+00:00",
+          "markedAsSpamBy": null
+        }
+      ],
+      "partyMember": {
+        "id": "dcd48eee-6aef-4b99-bb9c-9d8a2d9bed64",
+        "isSpam": false,
+        "endDate": null,
+        "partyId": "2561586b-7adf-4cf1-99e6-220873f115c5",
+        "external": {},
+        "personId": "87eaebe1-46f3-4e9a-98e8-0c15f67d7b4b",
+        "startDate": "2019-10-16T17:23:44.191499+00:00",
+        "created_at": "2019-10-16T17:23:44.268+00:00",
+        "externalId": null,
+        "memberType": "Resident",
+        "updated_at": "2019-10-16T17:23:44.268+00:00",
+        "memberState": "Contact",
+        "modified_by": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+        "guaranteedBy": null
+      }
+    }
+  ],
+  "children": null,
+  "invoices": null,
+  "metadata": {
+    "creationType": "user",
+    "screeningVersion": "v1",
+    "firstContactedDate": "2019-10-16T17:23:44.184Z",
+    "firstContactChannel": "Chat",
+    "qualQuestionsCompleted": "2019-10-16T17:23:50.027Z"
+  },
+  "vehicles": null,
+  "leaseType": "traditional",
+  "ownerTeam": "298a302d-ef44-4349-aaa2-bb9d3d3aa819",
+  "startDate": "2019-10-16T17:23:44.191499+00:00",
+  "created_at": "2019-10-16T17:23:44.225+00:00",
+  "invOnHolds": null,
+  "mergedWith": null,
+  "promotions": null,
+  "updated_at": "2019-10-16T17:27:20.918033+00:00",
+  "modified_by": "4578f1e9-0e8e-45e9-ac64-60f09969688d",
+  "partyGroupId": "39e4cf1e-6916-4910-a3cf-0bc23af365f2",
+  "transactions": null,
+  "workflowName": "leasing",
+  "collaborators": [
+    "4578f1e9-0e8e-45e9-ac64-60f09969688d"
+  ],
+  "workflowState": "active",
+  "emailIdentifier": "2561586b7adf4cf199e6",
+  "isTransferLease": false,
+  "screeningResults": {
+    "submissionRequests": null,
+    "submissionResponses": null
+  },
+  "partyApplications": [
+    {
+      "id": "d08cbbda-60e9-43ef-8f5d-70057b35fc6a",
+      "isHeld": false,
+      "partyId": "2561586b-7adf-4cf1-99e6-220873f115c5",
+      "created_at": "2019-10-16T17:23:45.175+00:00",
+      "holdReason": "",
+      "updated_at": "2019-10-16T17:23:45.175+00:00",
+      "minDeniedAt": null,
+      "maxApprovedAt": null,
+      "applicationData": {},
+      "screeningVersion": 1,
+      "overrideNewCountChecks": null
+    }
+  ],
+  "assignedPropertyId": "97d549b0-756e-43e5-9ea9-62fab7e395cb",
+  "personApplications": null,
+  "storedUnitsFilters": {
+    "moveInDate": {
+      "max": "2019-11-16T08:00:00.000Z",
+      "min": "2019-10-16T07:00:00.000Z"
+    },
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS"
+    ],
+    "propertyIds": [
+      "97d549b0-756e-43e5-9ea9-62fab7e395cb"
+    ]
+  },
+  "teamPropertyProgramId": null,
+  "qualificationQuestions": {
+    "moveInTime": "NEXT_4_WEEKS",
+    "numBedrooms": [
+      "ONE_BED",
+      "TWO_BEDS"
+    ],
+    "groupProfile": "FAIR_MARKET",
+    "cashAvailable": "YES"
+  }
+}

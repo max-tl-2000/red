@@ -1,0 +1,35 @@
+{
+  "pets": [],
+  "status": "Resident",
+  "unitId": "223",
+  "leaseNo": null,
+  "members": [
+    {
+      "id": "H000000001",
+      "type": "Resident",
+      "email": "user1+test@test.com",
+      "phone": "+12025550130",
+      "birthDay": "1977-12-27T00:00:00",
+      "lastName": "Levine",
+      "firstName": "Adam",
+      "vacateDate": null,
+      "middleInitial": "Noah"
+    }
+  ],
+  "vehicles": [],
+  "leaseTerm": "12",
+  "unitRent": "2202.00",
+  "buildingId": null,
+  "leaseMoveIn": "2019-05-30T05:00:00Z",
+  "leaseEndDate": "2030-07-29T05:00:00Z",
+  "leasingAgent": null,
+  "leaseStartDate": "2020-07-30T05:00:00Z",
+  "leaseVacateDate": "",
+  "recurringCharges": [],
+  "leaseVacateReason": null,
+  "primaryExternalId": "H000000001",
+  "leaseVacateNotificationDate": "",
+  "wasExternalRenewalLetterSent": null,
+  "externalRenewalLetterSentDate": null
+}
+  

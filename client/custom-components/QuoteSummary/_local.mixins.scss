@@ -1,0 +1,40 @@
+@mixin bottomBorder($color) {
+  &:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    border-bottom: 1px solid $color;
+  }
+}
+
+@mixin unit-info($screen-size) {
+  @include to($screen-size) {
+    .description {
+      text-align: center;
+
+      .unit-name {
+        line-height: 1rem;
+      }
+    }
+
+    .image-container {
+      text-align: center;
+
+      .status {
+        line-height: 1rem;
+        position: relative;
+        right: 0;
+        display: block;
+        height: 1rem;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        padding: 0;
+        background: none;
+        border-radius: none;
+      }
+    }
+  }
+}

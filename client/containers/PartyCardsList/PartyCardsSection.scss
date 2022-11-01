@@ -1,0 +1,23 @@
+.day {
+  position: relative;
+  margin-top: (10rem/16);
+  margin-bottom: (10rem/16);
+  padding-bottom: (5rem/16);
+  border-bottom: 1px solid #ddd;
+
+  > [data-component='caption'] {
+    margin-left: .5rem;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: -(3rem/16);
+  bottom: -(3rem/16);
+}
+
+.helper-text {
+  position: absolute;
+  right: (5rem/16);
+  bottom: (8rem/16);
+}

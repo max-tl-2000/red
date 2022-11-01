@@ -1,0 +1,49 @@
+# standalone selenium grid + chrome/firefox browsers
+# debug versions of images include a VNC server
+version: '2.1'
+services:
+  # we just need this in the image to start new containers dynamically
+  # this does not need a start command
+  selenium: 
+    image: elgalu/selenium:3.11.0-p13
+    container_name: selenium
+    command:
+      echo "just needed to pull the image. Nothing to see here"
+
+  zalenium:
+    image: dosel/zalenium:3.14.0g
+    container_name: zalenium
+    privileged: true
+    tty: true
+    ports:
+      - 4444:4444
+    volumes:
+      # This is a workaround to chrome crash in docker container issue
+      # https://code.google.com/p/chromium/issues/detail?id=519952
+      # chrome can be memory intensive so this shares the host machine's
+      # shared memory with the container
+      - /dev/shm:/dev/shm
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/videos:/home/seluser/videos
+    command: >
+        start --desiredContainers 1
+              --maxDockerSeleniumContainers 8
+              --screenWidth 1920 --screenHeight 1080
+              --timeZone "Europe/Berlin"
+              --videoRecordingEnabled true
+              --sauceLabsEnabled false
+              --browserStackEnabled false
+              --testingBotEnabled false
+              --startTunnel false
+    depends_on: 
+      - selenium
+    extra_hosts:
+      # add these entries to /etc/hosts since http proxy
+      # is running in host network mode
+      - "cucumber.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      - "admin.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      - "ws.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      - "application.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      - "resident.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      - "auth.local.env.reva.tech:${LOCAL_IP_ADDRESS}"
+      - "static.local.env.reva.tech:${LOCAL_IP_ADDRESS}"

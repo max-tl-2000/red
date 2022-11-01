@@ -1,0 +1,842 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Move your app forward with the Reva API. In order to generate the api_key please perform a login with swagger and copy the returned token in the api_key textbox at the top.",
+    "title": "Reva API",
+    "version": "1.0.0"
+  },
+
+  "paths": {
+    "/parties/{partyId}/leases": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party for which to the leases are retrieved",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The leases for the party",
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Party not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the leases for a party",
+        "tags": [
+          "Leases"
+        ]
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The new lease object",
+            "in": "body",
+            "name": "lease",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The newly created lease",
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          },
+          "400": {
+            "description": "Invalid lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Creates a new lease entity",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/parties/{partyId}/leases/{leaseId}": {
+      "patch": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the lease",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The modified lease object",
+            "in": "body",
+            "name": "lease",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The modified lease",
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          },
+          "400": {
+            "description": "Invalid lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Updates a lease entity",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/parties/{partyId}/leases/{leaseId}/publish": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the lease",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The modified lease",
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          },
+          "400": {
+            "description": "Invalid lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Publishes a lease",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/parties/{partyId}/leases/{leaseId}/email": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the lease",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The payload",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "properties": {
+                "partyMemberId": {
+                  "description": "The party member id to whom the lease is emailed",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The lease was emailed successfully"
+          },
+          "400": {
+            "description": "Invalid lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease id not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Emails a lease",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/parties/{partyId}/leases/{leaseId}/void": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The party id",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the lease",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The voided lease",
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          },
+          "400": {
+            "description": "Invalid lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Voids a lease",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/parties/{partyId}/leases/{leaseId}/additionalData": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party for which the lease additional data is retrieved",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the lease for which the additional data is retrieved",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The lease additional data",
+            "schema": {
+              "$ref": "#/definitions/AdditionalData"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the lease additional data for a party",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/parties/{partyId}/leases/{leaseId}/status": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the party for which the lease status is retrieved",
+            "in": "path",
+            "name": "partyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The id of the lease for which the status is retrieved",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The lease additional data",
+            "schema": {
+              "$ref": "#/definitions/Lease"
+            }
+          },
+          "400": {
+            "description": "Invalid party id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412": {
+            "description": "Lease signatures do not exist",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Loads the lease lease status for a lease in a given party",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+		"/leases/{leaseId}/download": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The id of the lease",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The lease exported as pdf.",
+            "schema": {
+              "$ref": "#/definitions/BinaryLease"
+            }
+          },
+          "400": {
+            "description": "Invalid lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412": {
+            "description": "No signed lease document found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Downloads a lease for leasing agent",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/leases/download": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The JWT received via email",
+            "in": "query",
+            "name": "token",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The lease exported as pdf.",
+            "schema": {
+              "$ref": "#/definitions/BinaryLease"
+            }
+          },
+          "400": {
+            "description": "Invalid lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412": {
+            "description": "No signed lease document found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Downloads a lease for party member",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/leases/{leaseId}/syncLeaseSignatures": {
+      "get": {
+        "description": "A sync with latest state of leases from the digital lease provider",
+        "parameters": [
+          {
+            "description": "The lease id",
+            "in": "path",
+            "name": "leaseId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The party id",
+            "in": "body",
+            "name": "partyId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "description": "The clientUserId, one of (Resident1, Guarantor1, Countersigner1)",
+            "in": "body",
+            "name": "clientUserId",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The signature for the clientUserId",
+            "schema": {
+              "$ref": "#/definitions/Signature"
+            },
+            "type": "object"
+          },
+          "400": {
+            "description": "Incorrect lease id",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Lease not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          },
+          "412": {
+            "description": "Lease provider is not Bluemoon",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Called when an agent wants to do an in-office signature or send the lease email",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+
+    "/leases/{envelopeId}/token/{clientUserId}": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The envelope id",
+            "in": "path",
+            "name": "envelopeId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "The clientUserId, one of (Resident1, Guarantor1, Countersigner1)",
+            "in": "path",
+            "name": "clientUserId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A valid docusign signature token",
+            "schema": {
+              "$ref": "#/definitions/FetchTokenStatus"
+            }
+          },
+          "412": {
+            "description": "Signature not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "Called when an agent wants to do an in-office signature and we need a fresh Docusing token",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+
+
+    "/leases/signature-token": {
+      "get": {
+        "parameters": [
+          {
+            "description": "The JWT received via email",
+            "in": "query",
+            "name": "token",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A valid docusign signature token",
+            "schema": {
+              "$ref": "#/definitions/FetchTokenStatus"
+            }
+          },
+          "412": {
+            "description": "Signature not found",
+            "schema": {
+              "$ref": "../commons.json#/definitions/Error"
+            }
+          }
+        },
+        "summary": "This is called when the party member or agent wants to sign a contract in Docusign, we need to fetch a valid token first as they expire pretty fast.",
+        "tags": [
+          "Leases"
+        ]
+      }
+    },
+    "/leases/updateEnvelopeStatus": {
+      "post": {
+        "parameters": [
+          {
+            "description": "The JWT having the actual payload",
+            "in": "query",
+            "name": "token",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The status of the update operation.",
+            "schema": {
+              "$ref": "#/definitions/UpdadeEnvelopeStatusResponse"
+            }
+          }
+        },
+        "summary": "This is called when the signature in docusign is completed and we redirect to our site to mark that signature as signed for the respective signer.",
+        "tags": [
+          "Leases"
+        ]
+      }
+    }
+  },
+  "definitions": {
+		"FetchTokenStatus": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Signature status"
+        },
+        "token": {
+          "type": "string",
+          "description": "Valid Docusign token"
+        }
+      }
+    },
+    "UpdadeEnvelopeStatusResponse": {
+      "type": "object",
+      "properties": {
+        "envelopeStatusUpdateResponse": {
+          "description": "Boolean flag to mark the successful update",
+          "type": "boolean"
+        },
+        "property": {
+          "description": "Property display name",
+          "type": "string"
+        },
+        "user": {
+          "type": "object",
+          "properties": {
+            "fullName": {
+              "description": "Full name of the party owner",
+              "type": "string"
+            },
+            "title": {
+              "description": "Bussiness title of the party owner",
+              "type": "string"
+            },
+            "phone": {
+              "description": "Primary phone number of the party owner",
+              "type": "string"
+            },
+            "email": {
+              "description": "Primary email number of the party owner",
+              "type": "string"
+            },
+            "avatar": {
+              "description": "Avatar URL for the party owner",
+              "type": "string"
+            }
+          }
+        },
+        "updateStatus": {
+          "description": "Lease status",
+          "type": "string"
+        }
+      }
+    },
+    "BinaryLease": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Streaming type, defaults to stream",
+          "type": "string"
+        },
+        "filename": {
+          "description": "The lease file name",
+          "type": "string"
+        },
+        "stream": {
+          "description": "Lease binary stream",
+          "type": "string"
+        }
+      }
+    },
+    "Lease": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Id of the lease object",
+          "type": "string"
+        },
+        "partyId": {
+          "description": "Party id for the lease",
+          "type": "string"
+        },
+        "quoteId": {
+          "description": "Quote id for the lease",
+          "type": "string"
+        },
+        "leaseTermId": {
+          "description": "LeaseTerm id for the promoted quote",
+          "type": "string"
+        },
+        "leaseTemplateId": {
+          "description": "Lease template to be used as base for the lease",
+          "type": "string"
+        },
+        "leaseData": {
+          "description": "Json Object containing lease data",
+          "type": "object"
+        },
+        "version": {
+          "description": "Json Object containing lease versions",
+          "type": "object"
+        },
+        "status": {
+          "description": "Lease status",
+          "type": "string"
+        }
+      }
+    },
+    "AdditionalData": {
+      "type": "object",
+      "properties": {
+        "publishedTerm": {
+          "description": "The published term of the lease",
+          "type": "object"
+        },
+        "leaseTerm": {
+          "description": "The lease terms",
+          "type": "object"
+        },
+        "additionalAndOneTimeCharges": {
+          "description": "The additional and one time charges of the promoted quote",
+          "type": "object"
+        },
+        "selections": {
+          "description": "The selections of the promoted quote",
+          "type": "object"
+        },
+        "inventory": {
+          "description": "The inventory data for the promoted quote",
+          "type": "object"
+        },
+        "concessions": {
+          "description": "The concessions for the promoted quote",
+          "type": "object"
+        },
+        "propertyAddress": {
+          "description": "The property address for the lease",
+          "type": "string"
+        },
+        "unitAddress": {
+          "description": "The unit address for the lease",
+          "type": "string"
+        }
+      }
+    },
+    "Signature": {
+      "type": "object",
+      "properties": {
+        "clientUserId": {
+          "description": "The clientUserId, one of (Resident1, Guarantor1, Countersigner1)",
+          "type": "string"
+        },
+        "created_at": {
+          "description": "The date the signature was created",
+          "type": "string"
+        },
+        "updated_at": {
+          "description": "Date when the signature was updated",
+          "type": "string"
+        },
+        "envelopeId": {
+          "description": "The envelope id",
+          "type": "string"
+        },
+        "id": {
+          "description": "Signature id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "leaseId": {
+          "description": "Lease id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "metadata": {
+          "description": "Additional information specific to each signature",
+          "type": "object",
+          "properties": {
+            "clientUserId": {
+              "description": "The client user id",
+              "type": "string"
+            },
+            "counterSigner": {
+              "description": "Countersigner flag",
+              "type": "boolean"
+            },
+            "status": {
+              "description": "Signature status",
+              "type": "string"
+            },
+            "token": {
+              "description": "Signature token",
+              "type": "string"
+            },
+            "userName": {
+              "description": "The agent name",
+              "type": "string"
+            }
+          }
+        },
+        "partyMemberId": {
+          "description": "Party member id",
+          "type": "string",
+          "format": "uuid"
+        },
+        "signUrl": {
+          "description": "Sign URL",
+          "type": "string"
+        },
+        "status": {
+          "description": "Signature status",
+          "type": "string"
+        },
+        "userId": {
+          "description": "Lease id",
+          "type": "string",
+          "format": "uuid"
+        }
+      }
+    }
+  }
+}

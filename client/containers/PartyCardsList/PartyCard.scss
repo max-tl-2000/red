@@ -1,0 +1,147 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+@import '../../sass/_responsive.mixins.scss';
+
+.subheader {
+  margin-right: 1rem;
+  margin-bottom: (4rem/16);
+
+  [data-component='subheader'] {
+    line-height: (20rem/16);
+    display: inline-block;
+  }
+}
+
+.tasks-section {
+  position: relative;
+  padding: .15rem 0;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+
+  &.hasLaterTasks {
+    padding-bottom: (28rem/16);
+  }
+}
+
+.collapse-trigger {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+  background: $grey50;
+
+  &:hover {
+    background: $hoverBGColor;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: (24rem/16);
+  }
+}
+
+.card {
+  margin-bottom: 1rem;
+  padding: 0;
+
+  &.showOwner {
+    display: block;
+  }
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  height: (24rem/16);
+  background: $grey100;
+}
+
+.top-bar-wrapper {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.details {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.info {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 4.65rem;
+  margin: .8rem 1rem (4rem/16) 1rem;
+
+  [data-component='avatar'] {
+    position: absolute;
+  }
+}
+
+.renewalPartyIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: (60rem/16);
+  height: (60rem/16);
+  margin-top: auto;
+
+  svg {
+    fill: $grey200;
+  }
+}
+
+.blueBadge {
+  svg {
+    fill: $blue600;
+  }
+}
+
+.lightBlueBadge {
+  svg {
+    fill: $blue200;
+  }
+}
+
+.meta {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-top: (0rem/16);
+  padding-right: 1rem;
+  padding-bottom: (10rem/16);
+  padding-left: (60rem/16);
+
+  [data-component='caption'] {
+    line-height: (20rem/16);
+  }
+}
+
+.message-preview-wrapper {
+  cursor: pointer;
+  background: #deeffc;
+
+  &:hover {
+    background: rgba(#deeffc, .7);
+  }
+
+  .message-preview {
+    > div {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.bounce-icon {
+  svg {
+    fill: $red500;
+  }
+}
+
+.mergeHighlight {
+  height: (4rem/16);
+  border-top-left-radius: (2rem/16);
+  border-top-right-radius: (2rem/16);
+  background-color: $purpleA400;
+}

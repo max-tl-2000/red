@@ -1,0 +1,29 @@
+@import '../../../../client/sass/_colors.scss';
+
+.fee {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.secondary-text {
+  margin-left: .3rem;
+}
+
+.feeDisclaimer {
+  padding-bottom: (10rem/16);
+}
+
+.feeAmount {
+  padding-top: .5rem;
+
+  &.extraPaddingTop {
+    padding-top: .625rem;
+  }
+}
+
+.disclaimerText {
+  margin-top: (-6rem/16);
+  padding-left: (28rem/16);
+}

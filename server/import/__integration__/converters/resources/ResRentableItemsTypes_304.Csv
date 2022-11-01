@@ -1,0 +1,7 @@
+ResRentableItemsTypes
+Property_Code,Ref_Property_ID,Charge_Code,RentableItemType_Code,Description,Rent,Taxable,Service_Charge
+"lark",,"baserent","Bikerack","Bike Rack",0.00,0,0
+"lark",,"baserent","wineroom","Wine Room Cabinet",0.00,0,0
+"cove",,"boat","boat","boat slip",0.00,0,0
+"cove",,"boat","kayak","Kayak Stand",0.00,0,0
+"cove",,"brstorag","Storage","Storage Unit",0.00,0,0

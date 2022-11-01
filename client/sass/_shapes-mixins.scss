@@ -1,0 +1,55 @@
+/* functions */
+@function opposite-direction($direction) {
+  $direction-map: (
+    'top':    'bottom',
+    'right':  'left',
+    'bottom': 'top',
+    'left':   'right',
+  );
+
+  $direction: to-lower-case($direction);
+  $opposite-direction: 'top';
+
+  @if map-has-key($direction-map, $direction) {
+    $opposite-direction: map-get($direction-map, $direction);
+  }
+
+  @return $opposite-direction;
+}
+
+/* shapes */
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  background: $color;
+  -webkit-border-radius: $width/2;
+  -moz-border-radius: $width/2;
+  border-radius: $width/2;
+}
+
+@mixin square($size, $color) {
+  width: $size;
+  height: $size;
+  background: $color;
+}
+
+@mixin triangle($direction, $size, $color) {
+  @if not index(top right bottom left, $direction) {
+    @error "Direction must be either `top`, `right`, `bottom` or `left`.";
+  }
+
+  width: 0;
+  height: 0;
+  content: '';
+  border-#{opposite-direction($direction)}: ($size * 1.5) solid $color;
+
+  $perpendicular-borders: $size solid transparent;
+
+  @if $direction == top or $direction == bottom {
+    border-left: $perpendicular-borders;
+    border-right: $perpendicular-borders;
+  } @else if $direction == right or $direction == left {
+    border-bottom: $perpendicular-borders;
+    border-top: $perpendicular-borders;
+  }
+}

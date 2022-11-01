@@ -1,0 +1,122 @@
+/* This stylesheet (in addition to static/libs/zurb/foundation.css) is used as the base style
+ for all of our e-mail templates */
+
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
+th,
+a {
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto, sans-serif;
+}
+
+table.button table td a {
+  font-family: Roboto, sans-serif;
+}
+
+hr {
+  border-bottom: 1px solid #eee;
+}
+
+center {
+  min-width: 680px;
+}
+
+table.container {
+  width: 680px;
+}
+
+.collapse > tbody > tr > th.large-12 {
+  width: 680px;
+}
+
+.block-grid {
+  max-width: 680px;
+}
+
+table.hr th {
+  max-width: 680px;
+}
+
+table.menu {
+  width: 680px;
+}
+
+th.column {
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+
+th.column.last {
+  padding-right: 24px;
+}
+
+td.large-1.first,
+th.large-1.first {
+  padding-left: 24px;
+}
+
+td.large-1.last,
+th.large-1.last {
+  padding-right: 24px;
+}
+
+td.large-6.first,
+th.large-6.first {
+  padding-left: 24px;
+}
+
+td.large-6.last,
+th.large-6.last {
+  padding-right: 24px;
+}
+
+td.large-12.first,
+th.large-12.first {
+  padding-left: 24px;
+}
+
+td.large-12.last,
+th.large-12.last {
+  padding-right: 24px;
+}
+
+td.large-1,
+th.large-1 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+td.large-6,
+th.large-6 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+td.large-12,
+th.large-12 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+table.button table td a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: .5px;
+}

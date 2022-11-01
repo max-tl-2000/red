@@ -1,0 +1,97 @@
+[
+    {   
+        "id": "73dccd96-8503-43ff-a21f-bdf083bb437e",
+        "created_at": "2016-06-15T18:21:10.968Z",
+        "memberType": "Guarantor",
+        "personId": "b07771c7-7d90-43d1-89d6-a873f279c2db",
+        "person": {
+            "fullName": "Janet Asimov",
+            "preferredName": "Janet A.",
+            "contactInfo": {
+                "phones": [{
+                    "value": "4084809389"
+                }],
+                "emails": [
+                    {
+                        "value": "qatest+janet@reva.tech"
+                    }
+                ]
+            }
+        }
+    },
+    {   
+        "id": "59dccd96-8503-43ff-a21f-bdf083bb437e",
+        "created_at": "2016-06-15T18:21:10.968Z",
+        "memberType": "Guarantor",
+        "personId": "ad7771c7-7d90-43d1-89d6-a873f279c2db",
+        "person": {
+            "fullName": "Jhon Asimov",
+            "preferredName": "Jhon A.",
+            "contactInfo": {
+                "phones": [{
+                    "value": "4084809389"
+                }],
+                "emails": [
+                    {
+                        "value": "qatest+jhon@reva.tech"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "54dccd96-8503-43ff-a21f-bdf083bb437e",
+        "created_at": "2016-06-14T18:21:10.902Z",
+        "memberType": "Resident",
+        "personId": "67c4c666-9b97-4c6b-9dcd-2e31aae040d3",
+        "guaranteedBy": "73dccd96-8503-43ff-a21f-bdf083bb437e",
+        "person": {
+            "fullName": "Hilary Bailey",
+            "preferredName": "Hilary B.",
+            "contactInfo": {
+                "phones": [],
+                "emails": [
+                    {
+                        "value": "qatest+hilary@reva.tech"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "23dccd96-8503-43ff-a21f-bdf083bb437e",
+        "created_at": "2016-06-17T18:21:10.922Z",
+        "memberType": "Resident",
+        "personId": "84996871-6551-4b6c-8689-cd2b60c1f7fd",
+        "person": {
+            "fullName": "Arthur Barnes",
+            "preferredName": "Arthur B.",
+            "contactInfo": {
+                "phones": [],
+                "emails": [
+                    {
+                        "value": "qatest+arthur@reva.tech"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "78dccd96-8503-43ff-a21f-bdf083bb437e",
+        "created_at": "2016-06-15T18:21:10.944Z",
+        "memberType": "Occupant",
+        "personId": "094ec4b3-105b-43e4-9585-9e9a7bcdc6e2",
+        "person": {
+            "fullName": "John Barnes",
+            "preferredName": "John B.",
+            "contactInfo": {
+                "phones": [],
+                "emails": [
+                    {
+                        "value": "qatest+john@reva.tech"
+                    }
+                ]
+            }
+        }
+    }
+]

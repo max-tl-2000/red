@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:us-east-1:865217022307:SNS-Email-Delivered:7340c3c3-09bf-4f66-ad77-5f3fe8534ca3",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "72968294-b204-53c3-9c9b-d396e5f72a6e",
+        "TopicArn": "arn:aws:sns:us-east-1:865217022307:SNS-Email-Delivered",
+        "Subject": null,
+        "Message": "{\"notificationType\":\"Delivery\",\"mail\":{\"timestamp\":\"2017-01-25T07:37:22.477Z\",\"source\":\"Bill Smith <bay_leasing@red.local.mail.reva.tech>\",\"sourceArn\":\"arn:aws:ses:us-east-1:865217022307:identity/mail.reva.tech\",\"sendingAccountId\":\"865217022307\",\"messageId\":\"01000159d48ec12d-cc1be9d9-49fb-450c-8aea-735af16769de-000000\",\"destination\":[\"qatest+ivy@reva.tech\",\"move@email.com\",\"qatest+angelina@reva.tech\"]},\"delivery\":{\"timestamp\":\"2017-01-25T07:37:23.730Z\",\"processingTimeMillis\":1253,\"recipients\":[\"christophe_bounce@reva.tech\"],\"smtpResponse\":\"250 Requested mail action okay, completed: id=0LlD4C-1bysXF2MPm-00azqX\",\"remoteMtaIp\":\"74.208.5.20\",\"reportingMTA\":\"a8-90.smtp-out.amazonses.com\"}}",
+        "Timestamp": "2017-01-25T07:37:23.812Z",
+        "SignatureVersion": "1",
+        "Signature": "H3pD4PZoOIj5/V+wpRGINTjl9fmxhlLCGSMJfAJgIfa3tfWOfv9kwIiRc4Ui9I+AjxfuLMztAv0egXEx72el5yeyKn1fQSm1YAju2hi9d3r9zSTgu0aqND6diIRRuVCTOkKghgAVTk6J4hTT9HV2q/u6Y7ucpwhoL3YPgdQzOO5qevBwLxtXHGhHaLU3GGuKEl5Adyn9+0IK2IokvdCn0L+28+wmLYR6dpZRlNvdOf9LVGP1j/PDR01MOT1m6aK8v5pv09BJEGSLokn9nkN+IO1x+eyQZ9Fb07kqxIB9T0XFaLmmKInngaAN/xI51NLV2hvCFLTIQl/erwF8JTP1NA==",
+        "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-b95095beb82e8f6a046b3aafc7f4149a.pem",
+        "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:865217022307:SNS-Email-Delivered:7340c3c3-09bf-4f66-ad77-5f3fe8534ca3",
+        "MessageAttributes": {}
+      }
+    }
+  ]
+}

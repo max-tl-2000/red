@@ -1,0 +1,3 @@
+ResProspects,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Prospect_Code,Ref_Prospect_Id,Tenant_Code,Ext_Ref_Tenant_Id,FirstName,MiddleName,LastName,Address1,City,State,Zipcode,HowLong,CellPhone,Email,LeaseStep,Status,Preferred_Rent,Preferred_Bedrooms,Preferred_Bath,Preferred_MoveIn,Property_Code,UnitType_Code,Unit_Code,LeaseFrom,LeaseTo,Source,Agent,First_Contacted_On,Date_Show,Date_Applied,Date_Approved,Date_Canceled,Date_Denied,Notes,LeaseTerm,FirstContactType
+"0001000p",,"0000001t",,"Luke Skywalker ""Jedi",,"house""","P. Sherman 42 Wallaby Way","Sidney",,"IDK","12","2025550163","luke@reva.tech","90","7",,"0",,"6/27/2017","cove","ig-exter","01-BARB-","6/27/2017","8/16/2017","Reva","Foo","6/27/2017",,,"6/27/2017",,,":Reva","12","Other"

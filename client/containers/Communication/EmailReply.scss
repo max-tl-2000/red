@@ -1,0 +1,52 @@
+@import '../../sass/_colors.scss';
+
+.collapseContent {
+  display: flex;
+  align-items: center;
+  height: (36rem/16);
+  padding-top: 1rem;
+}
+
+.replyContent {
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  border: 1px solid rgba(0, 0, 0, .26);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.reply {
+  padding: 0 1rem 1rem 1rem;
+
+  &.readOnly {
+    pointer-events: none;
+  }
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -1rem;
+}
+
+.bottomSection {
+  .dropzone {
+    display: none;
+  }
+
+  .fileQueue {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  [data-component='button'] {
+    float: right;
+  }
+}

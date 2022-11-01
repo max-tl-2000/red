@@ -1,0 +1,56 @@
+@import '../../sass/_colors.scss';
+@import '../../sass/_colors.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.selection-group {
+  position: relative;
+
+  > label {
+    @include caption();
+    @include textSecondary();
+
+    display: inline-block;
+    padding-bottom: (10rem/16);
+    animation: color .5s ease-out;
+  }
+
+  &.focused {
+    > label {
+      color: $blue500;
+    }
+  }
+
+  &.readOnly {
+    &.focused {
+      > label {
+        color: initial;
+      }
+    }
+  }
+}
+
+.pick-group {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.group-wrapper {
+  width: 100%;
+}
+
+.pick-element {
+  display: block;
+  margin-right: 1.25rem;
+
+  > span {
+    margin-left: (-10em/16);
+  }
+}
+
+.group-title {
+  display: flex;
+  align-items: center;
+  min-height: (35em/16);
+  padding: (6em/16) 0;
+}

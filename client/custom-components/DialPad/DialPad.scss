@@ -1,0 +1,48 @@
+@import '../../sass/colors';
+
+.main-content {
+  width: (208rem/16);
+}
+
+.dial-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: (64rem/16);
+  height: (64rem/16);
+  cursor: pointer;
+  border-radius: 50%;
+
+  &:hover {
+    background: $blueGrey50;
+  }
+
+  &:active {
+    background: $blueGrey100;
+  }
+}
+
+.dial-symbol {
+  height: (40rem/16);
+  text-align: center;
+}
+
+.dial-alias {
+  height: (16rem/16);
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  flex-wrap: wrap;
+
+  .list-item {
+    cursor: pointer;
+  }
+}

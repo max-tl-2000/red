@@ -1,0 +1,28 @@
+{{#with this}}
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mri_s-pmrm_guestcardsbysiteid>
+	<entry>
+		<NameID></NameID>
+		<FirstName>Anakin</FirstName>
+		<LastName>Skywalker</LastName>
+		<PropertyId>cove</PropertyId>
+		<Notes/>
+		<PrimaryMarketingSource>@</PrimaryMarketingSource>
+		<LeasingConsultant>{{userExternalUniqueId}}</LeasingConsultant>
+		<Email>lukeg@reva.tech</Email>
+		<Phone>2025550163</Phone>
+		<Type>P</Type>
+		<PrimaryNameID>{{nameId}}</PrimaryNameID>
+		<ApplicantStatus>Co-Resident</ApplicantStatus>
+		<Guarantor>Y</Guarantor>
+		<ProspectiveTenant>
+			<entry>
+				<DesiredMoveInDate>{{today}}</DesiredMoveInDate>
+				<PropertyPreference>{{property}}</PropertyPreference>
+				<UnitTypePreference>ig-external-id</UnitTypePreference>
+				<VisitDate>{{today}}</VisitDate>
+			</entry>
+		</ProspectiveTenant>
+	</entry>
+</mri_s-pmrm_guestcardsbysiteid>
+{{/with}}

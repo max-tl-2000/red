@@ -1,0 +1,89 @@
+@import '../../sass/_colors.scss';
+
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  > div:last-child {
+    > div:last-child {
+      > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.blue-header {
+  background: $blue500;
+}
+
+.page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+}
+
+.icon-section {
+  width: auto;
+  padding: 0 (10rem/16) 0 (24rem/16);
+}
+
+.icon {
+  width: (32rem/16);
+  height: (32rem/16);
+  background: $grey50;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: rgba($grey50, .92);
+  }
+
+  [data-component='icon'] {
+    fill: $grey700;
+  }
+}
+
+.stepper-inner {
+  position: relative;
+
+  .connecting-line {
+    position: absolute;
+    top: (40em/16);
+    left: 15%;
+    width: 70%;
+    margin: 0 auto;
+    opacity: .12;
+    border-top: (2em/16) dotted $black;
+  }
+}
+
+.info-messages {
+  width: (530rem/16);
+  margin: 0 auto;
+
+  [data-component='text'] {
+    margin-bottom: (32em/16);
+    text-align: center;
+
+    &:first-child {
+      margin-top: (42em/16);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

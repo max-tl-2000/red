@@ -1,0 +1,164 @@
+@import './_fonts.scss';
+@import './_colors.scss';
+
+@mixin textPrimary($mode: dark) {
+  @if $mode == light {
+    color: $white;
+  }
+  @else {
+    color: rgba($black, .87);
+  }
+}
+
+@mixin textSecondary($mode: dark) {
+  @if $mode == light {
+    color: rgba($white, .7);
+  }
+  @else {
+    color: rgba($black, .54);
+  }
+}
+
+@mixin textDisabled($mode: dark) {
+  @if $mode == light {
+    color: rgba($white, .3);
+  }
+  @else {
+    color: rgba($black, .38);
+  }
+}
+
+@mixin baseProps($setMargin: true) {
+  font-family: $robotoRegular;
+  line-height: 1.1em;
+  font-weight: 400;
+
+  @if $setMargin == true {
+    margin: 0;
+  }
+
+  color: rgba($black, .87);
+}
+
+@mixin display4($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (112rem/ 16);
+  font-weight: 300;
+}
+
+@mixin display3($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (56rem/16);
+}
+
+@mixin display2($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (45rem/16);
+}
+
+@mixin display1($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (34rem/16);
+  line-height: 1.2em;
+}
+
+@mixin headline($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (24rem/16);
+  line-height: 1.3em;
+}
+
+@mixin textTitle($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (20rem/16);
+  line-height: 1.4em;
+  letter-spacing: (.1em/16);
+}
+
+@mixin subHeader($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (15rem/16);
+  line-height: 1.6em;
+  letter-spacing: (.1em/16);
+}
+
+@mixin bodyHeavy($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (13rem/16);
+  font-weight: 500;
+  line-height: 1.8em;
+  letter-spacing: (.1em/16);
+}
+
+@mixin body($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (13rem/16);
+  line-height: 1.5em;
+  letter-spacing: (.1em/16);
+}
+
+@mixin caption($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (12rem/16);
+  line-height: 1.3em;
+  letter-spacing: (.2em/16);
+}
+
+@mixin link() {
+  color: $blue500;
+
+  &:hover {
+    color: rgba($blue500, .87);
+  }
+}
+
+@mixin textButton($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (14rem/16);
+  font-weight: 500;
+  line-height: 1.15em;
+  letter-spacing: (.5rem/16);
+}
+
+@mixin textButtonDense($setMargin: true) {
+  @include baseProps($setMargin);
+
+  font-size: (13rem/16);
+  font-weight: 500;
+  line-height: 1.15em;
+  letter-spacing: (.1em/16);
+}
+
+@mixin lightError($mode: dark) {
+  @if $mode == light {
+    color: $redA100;
+  }
+  @else {
+    color: $redA400;
+  }
+}
+
+@mixin lightHighlight($mode: dark) {
+  @if $mode == light {
+    color: $purpleA100;
+  }
+  @else {
+    color: rgba($purpleA400, .87);
+  }
+}
+
+$focusBGColor: rgba($grey600, .08);
+$hoverBGColor: rgba($grey600, .08);
+$activeBGColor: rgba($grey800, .12);
+$selectedBGColor: rgba($grey800, .12);

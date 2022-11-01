@@ -1,0 +1,726 @@
+CommUnits
+Property_Code,Bldg_Code,Floor_Code,Unit_Code,Rental_Type,Country,Ext_Ref_Unit_Id,Ref_Property_Id,Ref_Building_Id,Ref_Floor_Id,Available_Date,Date_Ready,Address_1,Address_2,Address_3,Address_4,City,State,Zip_Code,Rent,SQFT,Rent_Ready,Exclude,Unit_Type,Location,BedRooms,Attributes_1,Attributes_2,Attributes_3,Attributes_4,Attributes_5,Attributes_6,Attributes_7,Attributes_8,Attributes_9,Attributes_10,MLA,Lease_Type,Userdefined_1,Userdefined_2,Userdefined_3,Userdefined_4,Userdefined_5,Userdefined_6,Userdefined_7,Userdefined_8,Userdefined_9,Userdefined_10,Notes
+"cove",,,"001-BARB","Residential","us",,,,,09/18/2016,09/18/2016,"1 Barbaree Way",,,,"Tiburon","CA","94920",5845.00,1335.000000,0,0,"2x2.5ath",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"001-CAPT","Residential","us",,,,,,03/06/2016,"1 Captains Landing",,,,"Tiburon","CA","94920",3275.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"001-CHAN","Residential","us",,,,,,08/28/2015,"1 Channel Landing",,,,"Tiburon","CA","94920",6200.00,1375.000000,1,0,"3x3-a",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"001-SALT","Residential","us",,,,,,04/27/2015,"1 Salt Landing",,,,"Tiburon","CA","94920",3175.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"001-SEAD","Residential","us",,,,,,11/20/2015,"1 Seadrift Landing",,,,"Tiburon","CA","94920",4645.00,1020.000000,1,0,"2x2-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"002-BARB","Residential","us",,,,,,04/14/2015,"2 Barbaree Way",,,,"Tiburon","CA","94920",3095.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"002-CAPT","Residential","us",,,,,,12/05/2014,"2 Captains Landing",,,,"Tiburon","CA","94920",3070.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"002-CHAN","Residential","us",,,,,,08/28/2015,"2 Channel Landing",,,,"Tiburon","CA","94920",4900.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"002-SALT","Residential","us",,,,,07/31/2016,07/31/2016,"2 Salt Landing",,,,"Tiburon","CA","94920",2970.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"010-CAPT","Residential","us",,,,,,12/12/2014,"10 Captains Landing",,,,"Tiburon","CA","94920",4380.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"010-CHAN","Residential","us",,,,,,08/31/2015,"10 Channel Landing",,,,"Tiburon","CA","94920",4850.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"010-GNWD","Residential","us",,,,,,07/13/2014,"10 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4775.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"010-SALT","Residential","us",,,,,,06/24/2016,"10 Salt Landing",,,,"Tiburon","CA","94920",4530.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"010-SEAD","Residential","us",,,,,,03/30/2016,"10 Seadrift Landing",,,,"Tiburon","CA","94920",6425.00,1335.000000,1,0,"3x2.5th",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"011-BARB","Residential","us",,,,,,01/21/2016,"11 Barbaree Way",,,,"Tiburon","CA","94920",3570.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"011-CAPT","Residential","us",,,,,,12/12/2014,"11 Captains Landing",,,,"Tiburon","CA","94920",4380.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"011-CHAN","Residential","us",,,,,,08/07/2016,"11 Channel Landing",,,,"Tiburon","CA","94920",4850.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"011-GNWD","Residential","us",,,,,,05/08/2016,"11 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4850.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"011-SALT","Residential","us",,,,,,04/19/2015,"11 Salt Landing",,,,"Tiburon","CA","94920",4530.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"011-SEAD","Model","us",,,,,10/27/2014,10/27/2014,"11 Seadfift Landing",,,,"Tiburon","CA","94920",4850.00,1020.000000,-1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"012-BARB","Residential","us",,,,,,08/11/2016,"12 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"012-CAPT","Residential","us",,,,,,10/30/2015,"12 Captains Landing",,,,"Tiburon","CA","94920",4380.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"012-CHAN","Residential","us",,,,,,07/06/2016,"12 Channel Landing",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"012-GNWD","Residential","us",,,,,07/31/2016,07/31/2016,"12 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4850.00,1080.000000,0,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"012-SALT","Residential","us",,,,,,04/09/2014,"12 Salt Landing",,,,"Tiburon","CA","94920",4580.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"012-SEAD","Residential","us",,,,,,06/29/2016,"12 Seadrift Landing",,,,"Tiburon","CA","94920",4850.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"014-BARB","Residential","us",,,,,,08/20/2016,"14 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,0,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"014-CAPT","Residential","us",,,,,,03/31/2016,"14 Captains Landing",,,,"Tiburon","CA","94920",4380.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"014-CHAN","Residential","us",,,,,,08/31/2015,"14 Channel Landing",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"014-GNWD","Residential","us",,,,,,03/30/2016,"14 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4775.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"014-SALT","Residential","us",,,,,,12/05/2014,"14 Salt Landing",,,,"Tiburon","CA","94920",6425.00,1375.000000,1,0,"3x3-a",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"014-SEAD","Residential","us",,,,,,08/22/2016,"14 Seadrift Landing",,,,"Tiburon","CA","94920",6425.00,1335.000000,0,0,"3x2.5th",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"015-BARB","Residential","us",,,,,,04/24/2015,"15 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"015-CAPT","Residential","us",,,,,,03/30/2016,"15 Captains Landing",,,,"Tiburon","CA","94920",6070.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"015-CHAN","Residential","us",,,,,,08/31/2015,"15 Channel Landing",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"015-GNWD","Residential","us",,,,,08/24/2016,08/24/2016,"15 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4750.00,1080.000000,0,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"015-SALT","Residential","us",,,,,,08/03/2016,"15 Salt Landing",,,,"Tiburon","CA","94920",5125.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"015-SEAD","Residential","us",,,,,,03/19/2015,"15 Seadrift Landing",,,,"Tiburon","CA","94920",4795.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"016-BARB","Residential","us",,,,,,04/25/2015,"16 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"016-CAPT","Residential","us",,,,,,12/12/2014,"16 Captains Landing",,,,"Tiburon","CA","94920",6020.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"016-CHAN","Residential","us",,,,,,07/09/2016,"16 Channel Landing",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"016-GNWD","Residential","us",,,,,,10/14/2014,"16 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4825.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"016-SALT","Residential","us",,,,,,11/17/2015,"16 Salt Landing",,,,"Tiburon","CA","94920",5125.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"016-SEAD","Residential","us",,,,,,08/04/2014,"16 Seadrift Landing",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"023-BARB","Residential","us",,,,,,06/26/2016,"23 Barbaree Way",,,,"Tiburon","CA","94920",3595.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"023-CAPT","Residential","us",,,,,,08/28/2015,"23 Captains Landing",,,,"Tiburon","CA","94920",5870.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"023-CHAN","Residential","us",,,,,,09/28/2015,"23 Channel Landing",,,,"Tiburon","CA","94920",5050.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"023-GNWD","Residential","us",,,,,,09/30/2015,"23 Greenwood Cove Drive",,,,"Tiburon","CA","94920",3200.00,640.000000,-1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"023-SALT","Residential","us",,,,,,12/14/2015,"23 Salt Landing",,,,"Tiburon","CA","94920",3070.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"023-SEAD","Residential","us",,,,,,07/19/2015,"23 Seadrift Landing",,,,"Tiburon","CA","94920",3095.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"024-BARB","Residential","us",,,,,,08/14/2016,"24 Barbaree Way",,,,"Tiburon","CA","94920",3545.00,700.000000,0,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"024-CHAN","Residential","us",,,,,,04/18/2016,"24 Channel Landing",,,,"Tiburon","CA","94920",5050.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"024-GNWD","Residential","us",,,,,,03/22/2016,"24 Greenwood Cove Drive",,,,"Tiburon","CA","94920",3250.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"024-SALT","Residential","us",,,,,,11/30/2014,"24 Salt Landing",,,,"Tiburon","CA","94920",3070.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"024-SEAD","Residential","us",,,,,,08/04/2016,"24 Seadrift Landing",,,,"Tiburon","CA","94920",3095.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"025-BARB","Residential","us",,,,,,05/15/2015,"25 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"025-CHAN","Residential","us",,,,,,09/28/2015,"25 Channel Landing",,,,"Tiburon","CA","94920",6300.00,1375.000000,1,0,"3x3-a",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"025-GNWD","Residential","us",,,,,,08/29/2014,"25 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4330.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"025-SALT","Residential","us",,,,,,06/30/2016,"25 Salt Landing",,,,"Tiburon","CA","94920",3225.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"025-SEAD","Residential","us",,,,,,03/13/2015,"25 Seadrift Landing",,,,"Tiburon","CA","94920",3300.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"026-BARB","Residential","us",,,,,09/11/2016,09/11/2016,"26 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,0,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"026-GNWD","Residential","us",,,,,,06/30/2016,"26 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4280.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"026-SALT","Residential","us",,,,,,12/05/2014,"26 Salt Landing",,,,"Tiburon","CA","94920",4555.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"026-SEAD","Residential","us",,,,,,02/24/2016,"26 Seadrift Landing",,,,"Tiburon","CA","94920",4405.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"027-BARB","Residential","us",,,,,,08/26/2016,"27 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,0,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"027-GNWD","Residential","us",,,,,,08/29/2014,"27 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4280.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"027-SALT","Residential","us",,,,,,12/05/2014,"27 Salt Landing",,,,"Tiburon","CA","94920",4505.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"027-SEAD","Residential","us",,,,,,03/13/2015,"27 Seadrift Landing",,,,"Tiburon","CA","94920",4230.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,"Shawn and his wife are interested in transferring to 131 Barbaree in August- RA"
+"cove",,,"027-SEAD","Residential","us",,,,,,03/13/2015,"27 Seadrift Landing",,,,"Tiburon","CA","94920",4230.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"028-BARB","Residential","us",,,,,,10/27/2014,"28 Barbaree Way",,,,"Tiburon","CA","94920",3405.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"028-GNWD","Residential","us",,,,,,05/01/2016,"28 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4280.00,1275.000000,0,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"028-SALT","Residential","us",,,,,,12/05/2014,"28 Salt Landing",,,,"Tiburon","CA","94920",4505.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"028-SEAD","Residential","us",,,,,,08/13/2016,"28 Seadrift Landing",,,,"Tiburon","CA","94920",4230.00,1140.000000,0,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"029-BARB","Residential","us",,,,,,10/19/2015,"29 Barbaree Way",,,,"Tiburon","CA","94920",3545.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"029-GNWD","Residential","us",,,,,,04/16/2014,"29 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4280.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"029-SALT","Residential","us",,,,,,04/14/2016,"29 Salt Landing",,,,"Tiburon","CA","94920",4555.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,"left message for Joanna regarding the lease break fee"
+"cove",,,"029-SALT","Residential","us",,,,,,04/14/2016,"29 Salt Landing",,,,"Tiburon","CA","94920",4555.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"029-SEAD","Residential","us",,,,,,03/13/2015,"29 Seadrift Landing",,,,"Tiburon","CA","94920",4230.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"030-BARB","Residential","us",,,,,,05/15/2015,"30 Barbaree Way",,,,"Tiburon","CA","94920",3595.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"030-GNWD","Residential","us",,,,,,11/04/2015,"30 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4330.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,0.00,,0.00,,,,,,,,
+"cove",,,"058-BARB","Residential","us",,,,,09/09/2016,09/09/2016,"58 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,0,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"059-BARB","Residential","us",,,,,,08/03/2015,"59 Barbaree Way",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"060-BARB","Residential","us",,,,,,08/11/2014,"60 Barbaree Way",,,,"Tiburon","CA","94920",6145.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"061-BARB","Residential","us",,,,,,08/03/2015,"61 Barbaree Way",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"062-BARB","Residential","us",,,,,,08/03/2015,"62 Barbaree Way",,,,"Tiburon","CA","94920",6245.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"063-BARB","Residential","us",,,,,,02/26/2016,"63 Barbaree Way",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"064-BARB","Residential","us",,,,,,02/26/2016,"64 Barbaree Way",,,,"Tiburon","CA","94920",4455.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"065-BARB","Residential","us",,,,,,02/26/2016,"65 Barbaree Way",,,,"Tiburon","CA","94920",4455.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"066-BARB","Residential","us",,,,,,02/26/2016,"66 Barbaree Way",,,,"Tiburon","CA","94920",4480.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"067-BARB","Residential","us",,,,,,03/21/2016,"67 Barbaree Way",,,,"Tiburon","CA","94920",4480.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"068-BARB","Residential","us",,,,,,09/25/2014,"68 Barbaree Way",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"069-BARB","Residential","us",,,,,,02/26/2016,"69 Barbaree Way",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"070-BARB","Residential","us",,,,,,07/31/2016,"70 Barbaree Way",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"071-BARB","Residential","us",,,,,,04/08/2015,"71 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"072-BARB","Residential","us",,,,,,02/20/2016,"72 Barbaree Way",,,,"Tiburon","CA","94920",4950.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"073-BARB","Residential","us",,,,,,02/06/2015,"73 Barbaree Way",,,,"Tiburon","CA","94920",4950.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"074-BARB","Residential","us",,,,,,02/20/2016,"74 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"075-BARB","Residential","us",,,,,,02/20/2016,"75 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"076-BARB","Residential","us",,,,,,02/20/2016,"76 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"077-BARB","Residential","us",,,,,,03/21/2015,"77 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"078-BARB","Residential","us",,,,,,02/20/2016,"78 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"079-BARB","Residential","us",,,,,,02/20/2016,"79 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"080-BARB","Residential","us",,,,,,02/20/2016,"80 Barbaree Way",,,,"Tiburon","CA","94920",4950.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"081-BARB","Residential","us",,,,,,02/20/2016,"81 Barbaree Way",,,,"Tiburon","CA","94920",4950.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"082-BARB","Residential","us",,,,,,05/05/2015,"82 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"083-BARB","Residential","us",,,,,,02/20/2016,"83 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"084-BARB","Residential","us",,,,,,02/20/2016,"84 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"085-BARB","Residential","us",,,,,,02/20/2016,"85 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"086-BARB","Residential","us",,,,,,02/20/2016,"86 Barbaree Way",,,,"Tiburon","CA","94920",4945.00,1020.000000,1,0,"2x2-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"087-BARB","Residential","us",,,,,,06/17/2016,"87 Barbaree Way",,,,"Tiburon","CA","94920",5105.00,1310.000000,1,0,"2x2-f",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"088-BARB","Residential","us",,,,,,11/30/2015,"88 Barbaree Way",,,,"Tiburon","CA","94920",5105.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"089-BARB","Residential","us",,,,,,11/30/2015,"89 Barbaree Way",,,,"Tiburon","CA","94920",5105.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"090-BARB","Residential","us",,,,,,11/30/2015,"90 Barbaree Way",,,,"Tiburon","CA","94920",5105.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"091-BARB","Residential","us",,,,,,11/30/2015,"91 Barbaree Way",,,,"Tiburon","CA","94920",5155.00,1310.000000,1,0,"2x2-f",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"092-BARB","Residential","us",,,,,,11/30/2015,"92 Barbaree Way",,,,"Tiburon","CA","94920",5205.00,1310.000000,1,0,"2x2-f",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"093-BARB","Residential","us",,,,,,11/30/2015,"93 Barbaree Way",,,,"Tiburon","CA","94920",5155.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"131-BARB","Residential","us",,,,,,02/26/2016,"131 Barbaree Way",,,,"Tiburon","CA","94920",3370.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"132-BARB","Residential","us",,,,,,02/26/2016,"132 Barbaree Way",,,,"Tiburon","CA","94920",4750.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"133-BARB","Residential","us",,,,,,02/26/2016,"133 Barbaree Way",,,,"Tiburon","CA","94920",4725.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"134-BARB","Residential","us",,,,,,02/26/2016,"134 Barbaree Way",,,,"Tiburon","CA","94920",4750.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"135-BARB","Residential","us",,,,,,02/26/2016,"135 Barbaree Way",,,,"Tiburon","CA","94920",4725.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"136-BARB","Residential","us",,,,,,03/14/2016,"136 Barbaree Way",,,,"Tiburon","CA","94920",3395.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"137-BARB","Residential","us",,,,,,03/14/2016,"137 Barbaree Way",,,,"Tiburon","CA","94920",3445.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"138-BARB","Admin","us",,,,,07/24/2015,07/24/2015,"138 Barbaree Way",,,,"Tiburon","CA","94920",3395.00,700.000000,-1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"139-BARB","Residential","us",,,,,,03/14/2016,"139 Barbaree Way",,,,"Tiburon","CA","94920",3445.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"140-BARB","Residential","us",,,,,,03/14/2016,"140 Barbaree Way",,,,"Tiburon","CA","94920",4275.00,980.000000,1,0,"2x2-a",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"141-BARB","Residential","us",,,,,,03/14/2016,"141 Barbaree Way",,,,"Tiburon","CA","94920",4250.00,980.000000,1,0,"2x2-a",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"142-BARB","Residential","us",,,,,,03/14/2016,"142 Barbaree Way",,,,"Tiburon","CA","94920",3370.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"143-BARB","Residential","us",,,,,,03/14/2016,"143 Barbaree Way",,,,"Tiburon","CA","94920",3345.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"144-BARB","Residential","us",,,,,,08/04/2016,"144 Barbaree Way",,,,"Tiburon","CA","94920",3345.00,700.000000,-1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"145-BARB","Residential","us",,,,,,03/14/2016,"145 Barbaree Way",,,,"Tiburon","CA","94920",3420.00,700.000000,-1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"146-BARB","Admin","us",,,,,09/01/2015,09/01/2015,"146 Barbaree Way",,,,"Tiburon","CA","94920",4700.00,1020.000000,-1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"147-BARB","Residential","us",,,,,08/22/2016,08/22/2016,"147 Barbaree Way",,,,"Tiburon","CA","94920",4775.00,1020.000000,0,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"148-BARB","Admin","us",,,,,09/18/2015,09/18/2015,"148 Barbaree Way",,,,"Tiburon","CA","94920",3295.00,700.000000,-1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"149-BARB","Residential","us",,,,,,03/26/2016,"149 Barbaree Way",,,,"Tiburon","CA","94920",3370.00,700.000000,-1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"150-BARB","Residential","us",,,,,10/05/2016,10/05/2016,"150 Barbaree Way",,,,"Tiburon","CA","94920",3295.00,700.000000,0,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"151-BARB","Residential","us",,,,,,03/26/2016,"151 Barbaree Way",,,,"Tiburon","CA","94920",3370.00,700.000000,-1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"152-BARB","Residential","us",,,,,,03/26/2016,"152 Barbaree Way",,,,"Tiburon","CA","94920",3370.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"153-BARB","Residential","us",,,,,08/18/2016,08/18/2016,"153 Barbaree Way",,,,"Tiburon","CA","94920",3370.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1-A","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",1850.00,595.000000,0,-1,"1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1-B","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",1820.00,635.000000,0,-1,"1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1-C","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",1830.00,640.000000,0,-1,"1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1-D","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",1910.00,660.000000,0,-1,"1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1-E","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",1821.00,700.000000,0,-1,"1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1D-A","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4340.00,980.000000,0,-1,"1d-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1D-C","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",2345.00,1020.000000,0,-1,"1d-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1D-D","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3560.00,1140.000000,0,-1,"1d-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2-A","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",2320.00,1020.000000,0,-1,"2-a",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2-B","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",2521.00,1080.000000,0,-1,"2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2-D","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3260.00,1300.000000,0,-1,"2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2-E","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3055.00,1310.000000,0,-1,"2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2D-A","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3250.00,1375.000000,0,-1,"2d-a",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2D-B","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3250.00,1375.000000,0,-1,"2d-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2THA","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",2411.00,1075.000000,0,-1,"2th-a",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2THC","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",2646.00,1275.000000,0,-1,"2th-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2THD","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3450.00,1335.000000,0,-1,"2th-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3B","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4450.00,1500.000000,0,-1,"3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3-C","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4450.00,1500.000000,0,-1,"3-c",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3THA","Residential","us",,,,,11/25/2013,11/25/2013,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3450.00,1335.000000,0,-1,"3th-a",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"NON-RES","Residential","us",,,,,03/23/2015,06/26/2015,"The Cove","Boat Slip Rental",,,"Tiburon","CA","94920",0.00,0.000000,0,-1,"misc",,0,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"002-SEAD","Residential","us",,,,,,10/29/2015,"2 Seadrift Landing",,,,"Tiburon","CA","94920",4725.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"003-BARB","Residential","us",,,,,,10/21/2015,"3 Barbaree Way",,,,"Tiburon","CA","94920",3095.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"003-CAPT","Residential","us",,,,,,11/13/2015,"3 Captains Landing",,,,"Tiburon","CA","94920",3195.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"003-CHAN","Residential","us",,,,,,08/28/2015,"3 Channel Landing",,,,"Tiburon","CA","94920",4900.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"003-SALT","Residential","us",,,,,,10/23/2014,"3 Salt Landing",,,,"Tiburon","CA","94920",2970.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"003-SEAD","Residential","us",,,,,,03/19/2015,"3 Seadrift Landing",,,,"Tiburon","CA","94920",4725.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"004-BARB","Residential","us",,,,,,04/25/2015,"4 Barbaree Way",,,,"Tiburon","CA","94920",3095.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"004-CAPT","Residential","us",,,,,,12/04/2015,"4 Captains Landing",,,,"Tiburon","CA","94920",3400.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"004-CHAN","Residential","us",,,,,,02/08/2016,"4 Channel Landing",,,,"Tiburon","CA","94920",6095.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"004-SALT","Residential","us",,,,,,10/23/2014,"4 Salt Landing",,,,"Tiburon","CA","94920",3220.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"004-SEAD","Residential","us",,,,,,03/19/2015,"4 Seadrift Landing",,,,"Tiburon","CA","94920",4795.00,1020.000000,1,0,"2x2-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"005-BARB","Residential","us",,,,,,09/02/2014,"5 Barbaree Way",,,,"Tiburon","CA","94920",3220.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"005-CAPT","Residential","us",,,,,,05/27/2016,"5 Captains Landing",,,,"Tiburon","CA","94920",4430.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"005-CHAN","Residential","us",,,,,09/01/2016,09/01/2016,"5 Channel Landing",,,,"Tiburon","CA","94920",6200.00,1375.000000,1,0,"3x3-a",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"005-SALT","Residential","us",,,,,,01/06/2016,"5 Salt Landing",,,,"Tiburon","CA","94920",3220.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"005-SEAD","Residential","us",,,,,,07/10/2015,"5 Seadrift Landing",,,,"Tiburon","CA","94920",4720.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"006-BARB","Residential","us",,,,,,07/01/2014,"6 Barbaree Way",,,,"Tiburon","CA","94920",5920.00,1335.000000,1,0,"2x2.5ath",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"006-CAPT","Residential","us",,,,,,12/05/2014,"6 Captains Landing",,,,"Tiburon","CA","94920",4305.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"006-CHAN","Residential","us",,,,,,07/19/2016,"6 Channel Landing",,,,"Tiburon","CA","94920",4950.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"006-SALT","Residential","us",,,,,,04/29/2014,"6 Salt Landing",,,,"Tiburon","CA","94920",3425.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"006-SEAD","Residential","us",,,,,,11/10/2015,"6 Seadrift Landing",,,,"Tiburon","CA","94920",4775.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"007-BARB","Residential","us",,,,,09/18/2016,09/18/2016,"7 Barbaree Way",,,,"Tiburon","CA","94920",3145.00,595.000000,0,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"007-CAPT","Residential","us",,,,,,12/04/2014,"7 Captains Landing",,,,"Tiburon","CA","94920",4430.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"007-CHAN","Residential","us",,,,,,08/28/2015,"7 Channel Landing",,,,"Tiburon","CA","94920",4950.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"007-SALT","Residential","us",,,,,,12/05/2014,"7 Salt Landing",,,,"Tiburon","CA","94920",4330.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"007-SEAD","Residential","us",,,,,,04/04/2016,"7 Seadrift Landing",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"008-BARB","Residential","us",,,,,,04/12/2016,"8 Barbaree Way",,,,"Tiburon","CA","94920",3145.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"008-CAPT","Residential","us",,,,,,12/05/2014,"8 Captains Landing",,,,"Tiburon","CA","94920",4480.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"008-CHAN","Residential","us",,,,,,02/19/2016,"8 Channel Landing",,,,"Tiburon","CA","94920",6095.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"008-SALT","Residential","us",,,,,,12/05/2014,"8 Salt Landing",,,,"Tiburon","CA","94920",4280.00,1275.000000,1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"008-SEAD","Residential","us",,,,,,05/07/2016,"8 Seadrift Landing",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"009-BARB","Residential","us",,,,,,11/03/2014,"9 Barbaree Way",,,,"Tiburon","CA","94920",3270.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"009-CAPT","Residential","us",,,,,,07/12/2014,"9 Captains Landing",,,,"Tiburon","CA","94920",6045.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"009-CHAN","Residential","us",,,,,,05/02/2016,"9 Channel Landing",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"009-SALT","Residential","us",,,,,,05/22/2016,"9 Salt Landing",,,,"Tiburon","CA","94920",4280.00,1275.000000,-1,0,"2x2.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"009-SEAD","Residential","us",,,,,,05/07/2016,"9 Seadfrift Landing",,,,"Tiburon","CA","94920",4820.00,1020.000000,1,0,"2x2-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"010-BARB","Residential","us",,,,,,04/14/2015,"10 Barbaree Way",,,,"Tiburon","CA","94920",3270.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"017-BARB","Residential","us",,,,,,04/25/2015,"17 Barbaree Way",,,,"Tiburon","CA","94920",3545.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"017-CAPT","Residential","us",,,,,,01/15/2016,"17 Captains Landing",,,,"Tiburon","CA","94920",6045.00,1375.000000,1,0,"3x3-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"017-CHAN","Residential","us",,,,,,06/10/2016,"17 Channel Landing",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"017-GNWD","Residential","us",,,,,,10/14/2014,"17 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4825.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"017-SALT","Residential","us",,,,,,08/08/2016,"17 Salt Landing",,,,"Tiburon","CA","94920",6200.00,1375.000000,1,0,"3x3-a",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"017-SEAD","Residential","us",,,,,,01/16/2016,"17 Seadrift Landing",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"018-BARB","Residential","us",,,,,,05/31/2016,"18 Barbaree Way",,,,"Tiburon","CA","94920",3620.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"018-CAPT","Residential","us",,,,,,11/27/2015,"18 Captains Landing",,,,"Tiburon","CA","94920",6045.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"018-CHAN","Residential","us",,,,,,09/28/2015,"18 Channel Landing",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"018-GNWD","Residential","us",,,,,,04/01/2015,"18 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4750.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"018-SALT","Residential","us",,,,,,01/15/2016,"18 Salt Landing",,,,"Tiburon","CA","94920",6145.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"018-SEAD","Residential","us",,,,,,03/13/2015,"18 Seadrift Landing",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"019-BARB","Residential","us",,,,,,11/11/2014,"19 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"019-CAPT","Residential","us",,,,,06/02/2016,06/02/2016,"19 Captains Landing",,,,"Tiburon","CA","94920",6300.00,1335.000000,1,0,"3x2.5th",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"019-CHAN","Residential","us",,,,,09/12/2016,09/12/2016,"19 Channel Landing",,,,"Tiburon","CA","94920",5000.00,1080.000000,0,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"019-GNWD","Residential","us",,,,,,04/14/2014,"19 Greenwood Cove Drive",,,,"Tiburon","CA","94920",3300.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"019-SALT","Residential","us",,,,,,12/04/2014,"19 Salt Landing",,,,"Tiburon","CA","94920",5175.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"019-SEAD","Residential","us",,,,,,08/24/2016,"19 Seadrift Landing",,,,"Tiburon","CA","94920",4845.00,1020.000000,0,0,"2x2-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"020-BARB","Residential","us",,,,,,04/07/2016,"20 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"020-CAPT","Residential","us",,,,,,08/17/2015,"20 Captains Landing",,,,"Tiburon","CA","94920",6275.00,1335.000000,1,0,"3x2.5th",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"020-CHAN","Residential","us",,,,,,09/28/2015,"20 Channel Landing",,,,"Tiburon","CA","94920",5000.00,1080.000000,-1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"020-GNWD","Residential","us",,,,,07/31/2016,07/31/2016,"20 Greenwood Cove Drive",,,,"Tiburon","CA","94920",3200.00,640.000000,0,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"020-SALT","Residential","us",,,,,,12/05/2014,"20 Salt Landing",,,,"Tiburon","CA","94920",5175.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"020-SEAD","Residential","us",,,,,,05/08/2016,"20 Seadrift Landing",,,,"Tiburon","CA","94920",3425.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"021-BARB","Residential","us",,,,,,04/17/2015,"21 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"021-CAPT","Residential","us",,,,,,04/08/2016,"21 Captains Landing",,,,"Tiburon","CA","94920",6000.00,1375.000000,1,0,"3x3-a",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"021-CHAN","Residential","us",,,,,,09/28/2015,"21 Channel Landing",,,,"Tiburon","CA","94920",6300.00,1375.000000,1,0,"3x3-a",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"021-GNWD","Residential","us",,,,,,03/06/2014,"21 Greenwood Cove Drive",,,,"Tiburon","CA","94920",3200.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,"Brandie reporeted moisure and Pedro measured and got a high moisture reading.  Digging deeper into this today Fred"
+"cove",,,"021-GNWD","Residential","us",,,,,,03/06/2014,"21 Greenwood Cove Drive",,,,"Tiburon","CA","94920",3200.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"021-SALT","Residential","us",,,,,,11/10/2014,"21 Salt Landing",,,,"Tiburon","CA","94920",6145.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"021-SEAD","Residential","us",,,,,,08/31/2015,"21 Seadrift Landing",,,,"Tiburon","CA","94920",3095.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"022-BARB","Residential","us",,,,,,11/30/2014,"22 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"022-CAPT","Residential","us",,,,,,06/13/2016,"22 Captains Landing",,,,"Tiburon","CA","94920",6020.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"022-CHAN","Residential","us",,,,,,03/03/2016,"22 Channel Landing",,,,"Tiburon","CA","94920",6195.00,1375.000000,1,0,"3x3-b",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"022-GNWD","Residential","us",,,,,,11/13/2015,"22 Greenwood Cove Drive",,,,"Tiburon","CA","94920",3200.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"022-SALT","Residential","us",,,,,,06/03/2014,"22 Salt Landing",,,,"Tiburon","CA","94920",3400.00,640.000000,1,0,"1x1-c",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"022-SEAD","Residential","us",,,,,,03/28/2016,"22 Seadrift Landing",,,,"Tiburon","CA","94920",3095.00,595.000000,1,0,"1x1-a",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"030-SEAD","Residential","us",,,,,,11/03/2015,"30 Seadrift Landing",,,,"Tiburon","CA","94920",4230.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"031-BARB","Residential","us",,,,,,05/15/2015,"31 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"031-GNWD","Residential","us",,,,,,12/19/2014,"31 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4825.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"031-SEAD","Residential","us",,,,,,01/02/2016,"31 Seadrift Landing",,,,"Tiburon","CA","94920",4280.00,1140.000000,1,0,"1x1.5lof",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"032-BARB","Residential","us",,,,,,05/15/2015,"32 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"032-GNWD","Residential","us",,,,,,07/31/2016,"32 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4775.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"033-BARB","Residential","us",,,,,,08/03/2016,"33 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"033-GNWD","Residential","us",,,,,,03/11/2015,"33 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4825.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"034-BARB","Residential","us",,,,,,12/01/2014,"34 Barbaree Way",,,,"Tiburon","CA","94920",3455.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"034-GNWD","Residential","us",,,,,,04/22/2014,"34 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4275.00,1075.000000,1,0,"2x1.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"035-BARB","Residential","us",,,,,,05/24/2016,"35 Barbaree Way",,,,"Tiburon","CA","94920",3595.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"035-GNWD","Residential","us",,,,,,02/29/2016,"35 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4350.00,1075.000000,1,0,"2x1.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"036-BARB","Residential","us",,,,,,07/22/2016,"36 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"036-GNWD","Residential","us",,,,,,01/11/2016,"36 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4350.00,1075.000000,1,0,"2x1.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"037-BARB","Residential","us",,,,,,05/27/2015,"37 Barbaree Way",,,,"Tiburon","CA","94920",4900.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"037-GNWD","Residential","us",,,,,,01/04/2016,"37 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4350.00,1075.000000,1,0,"2x1.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"038-BARB","Residential","us",,,,,08/31/2016,08/31/2016,"38 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1080.000000,0,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"038-GNWD","Residential","us",,,,,02/29/2016,02/29/2016,"38 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4350.00,1075.000000,1,0,"2x1.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"039-BARB","Residential","us",,,,,,05/27/2015,"39 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1080.000000,1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"039-GNWD","Residential","us",,,,,,12/22/2015,"39 Greenwood Cove Drive",,,,"Tiburon","CA","94920",4400.00,1075.000000,1,0,"2x1.5th",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"040-BARB","Residential","us",,,,,,08/05/2016,"40 Barbaree Way",,,,"Tiburon","CA","94920",4950.00,1080.000000,-1,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"041-BARB","Residential","us",,,,,,08/09/2016,"41 Barbaree Way",,,,"Tiburon","CA","94920",5000.00,1080.000000,0,0,"2x2-d",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"042-BARB","Residential","us",,,,,,06/20/2016,"42 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"043-BARB","Residential","us",,,,,,09/30/2015,"43 Barbaree Way",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"044-BARB","Residential","us",,,,,,07/02/2015,"44 Barbaree Way",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"045-BARB","Residential","us",,,,,08/11/2016,08/11/2016,"45 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,0,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"046-BARB","Residential","us",,,,,,07/02/2015,"46 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,-1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"047-BARB","Residential","us",,,,,09/20/2016,09/20/2016,"47 Barbaree Way",,,,"Tiburon","CA","94920",4950.00,1020.000000,0,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"048-BARB","Residential","us",,,,,,10/31/2014,"48 Barbaree Way",,,,"Tiburon","CA","94920",4950.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"049-BARB","Residential","us",,,,,,09/22/2016,"49 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,0,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"051-BARB","Residential","us",,,,,,07/22/2015,"51 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"052-BARB","Residential","us",,,,,,07/22/2015,"52 Barbaree Way",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"053-BARB","Residential","us",,,,,,02/18/2015,"53 Barbaree Way",,,,"Tiburon","CA","94920",4900.00,1020.000000,-1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"054-BARB","Residential","us",,,,,,03/31/2016,"54 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"055-BARB","Residential","us",,,,,,07/22/2015,"55 Barbaree Way",,,,"Tiburon","CA","94920",4845.00,1020.000000,1,0,"2x2-b",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"056-BARB","Residential","us",,,,,,07/22/2015,"56 Barbaree Way",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"057-BARB","Residential","us",,,,,,07/22/2015,"57 Barbaree Way",,,,"Tiburon","CA","94920",4900.00,1020.000000,1,0,"2x2-c",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"094-BARB","Residential","us",,,,,,11/30/2015,"94 Barbaree Way",,,,"Tiburon","CA","94920",5155.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"095-BARB","Residential","us",,,,,,11/30/2015,"95 Barbaree Way",,,,"Tiburon","CA","94920",5155.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"096-BARB","Residential","us",,,,,,11/30/2015,"96 Barbaree Way",,,,"Tiburon","CA","94920",5205.00,1310.000000,1,0,"2x2-f",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"097-BARB","Admin","us",,,,,12/22/2013,12/22/2013,"97 Barbaree Way",,,,"Tiburon","CA","94920",7390.00,1500.000000,1,0,"3x3-c",,3,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"098-BARB","Admin","us",,,,,08/10/2015,08/10/2015,"98 Barbaree Way",,,,"Tiburon","CA","94920",5405.00,1310.000000,0,0,"2x2-f",,2,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"099-BARB","Down","us",,,,,06/30/2015,06/30/2015,"99 Barbaree Way",,,,"Tiburon","CA","94920",5405.00,1300.000000,0,0,"2x2-e",,2,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"100-BARB","Down","us",,,,,03/31/2015,03/31/2015,"100 Barbaree Way",,,,"Tiburon","CA","94920",7090.00,1500.000000,0,0,"3x3-c",,3,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"101-BARB","Down","us",,,,,05/31/2015,05/31/2015,"101 Barbaree Way",,,,"Tiburon","CA","94920",7365.00,1500.000000,0,0,"3x3-c",,3,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"102-BARB","Down","us",,,,,08/03/2015,08/03/2015,"102 Barbaree Way",,,,"Tiburon","CA","94920",5380.00,1310.000000,0,0,"2x2-f",,2,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"103-BARB","Down","us",,,,,07/31/2015,07/31/2015,"103 Barbaree Way",,,,"Tiburon","CA","94920",5380.00,1300.000000,0,0,"2x2-e",,2,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"104-BARB","Down","us",,,,,03/07/2015,03/07/2015,"104 Barbaree Way",,,,"Tiburon","CA","94920",7065.00,1500.000000,0,0,"3x3-c",,3,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"105-BARB","Down","us",,,,,01/20/2015,01/20/2015,"105 Barbaree Way",,,,"Tiburon","CA","94920",7440.00,1500.000000,1,0,"3x3-c",,3,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"106-BARB","Down","us",,,,,07/27/2015,07/27/2015,"106 Barbaree Way",,,,"Tiburon","CA","94920",5455.00,1310.000000,0,0,"2x2-f",,2,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"107-BARB","Down","us",,,,,02/04/2015,02/04/2015,"107 Barbaree Way",,,,"Tiburon","CA","94920",5455.00,1300.000000,0,0,"2x2-e",,2,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"108-BARB","Down","us",,,,,07/10/2015,07/10/2015,"108 Barbaree Way",,,,"Tiburon","CA","94920",7140.00,1500.000000,0,0,"3x3-c",,3,,,"No",,,,,,,,,,,,,,,,,,,,
+"cove",,,"109-BARB","Residential","us",,,,,,02/17/2016,"109 Barbaree Way",,,,"Tiburon","CA","94920",7115.00,1500.000000,1,0,"3x3-d",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"110-BARB","Admin","us",,,,,08/01/2014,08/01/2014,"110 Barbaree Way",,,,"Tiburon","CA","94920",7040.00,1500.000000,-1,0,"3x3-c",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"111-BARB","Residential","us",,,,,,02/17/2016,"111 Barbaree Way",,,,"Tiburon","CA","94920",5155.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"112-BARB","Residential","us",,,,,,06/02/2016,"112 Barbaree Way",,,,"Tiburon","CA","94920",7065.00,1500.000000,1,0,"3x3-d",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"113-BARB","Residential","us",,,,,,02/17/2016,"113 Barbaree Way",,,,"Tiburon","CA","94920",6990.00,1500.000000,1,0,"3x3-c",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"114-BARB","Admin","us",,,,,07/11/2015,07/11/2015,"114 Barbaree Way",,,,"Tiburon","CA","94920",5130.00,1300.000000,-1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"115-BARB","Residential","us",,,,,,05/28/2016,"115 Barbaree Way",,,,"Tiburon","CA","94920",7140.00,1500.000000,1,0,"3x3-d",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"116-BARB","Residential","us",,,,,,02/16/2016,"116 Barbaree Way",,,,"Tiburon","CA","94920",7090.00,1500.000000,1,0,"3x3-c",,3,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"117-BARB","Residential","us",,,,,,02/17/2016,"117 Barbaree Way",,,,"Tiburon","CA","94920",5205.00,1300.000000,1,0,"2x2-e",,2,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"118-BARB","Residential","us",,,,,,08/18/2015,"118 Barbaree Way",,,,"Tiburon","CA","94920",3275.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"119-BARB","Residential","us",,,,,,02/18/2016,"119 Barbaree Way",,,,"Tiburon","CA","94920",3275.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"120-BARB","Residential","us",,,,,,01/31/2016,"120 Barbaree Way",,,,"Tiburon","CA","94920",3250.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"121-BARB","Residential","us",,,,,,01/23/2016,"121 Barbaree Way",,,,"Tiburon","CA","94920",3250.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"122-BARB","Residential","us",,,,,,02/17/2016,"122 Barbaree Way",,,,"Tiburon","CA","94920",3275.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"123-BARB","Residential","us",,,,,,02/17/2016,"123 Barbaree Way",,,,"Tiburon","CA","94920",3275.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"124-BARB","Residential","us",,,,,,02/17/2016,"124 Barbaree Way",,,,"Tiburon","CA","94920",3250.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"125-BARB","Residential","us",,,,,,02/17/2016,"125 Barbaree Way",,,,"Tiburon","CA","94920",3250.00,635.000000,1,0,"1x1-b",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"126-BARB","Residential","us",,,,,,02/26/2016,"126 Barbaree Way",,,,"Tiburon","CA","94920",3305.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"127-BARB","Residential","us",,,,,,02/26/2016,"127 Barbaree Way",,,,"Tiburon","CA","94920",3355.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"128-BARB","Residential","us",,,,,,02/26/2016,"128 Barbaree Way",,,,"Tiburon","CA","94920",3255.00,660.000000,1,0,"1x1-d",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"129-BARB","Residential","us",,,,,,02/26/2016,"129 Barbaree Way",,,,"Tiburon","CA","94920",3395.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"130-BARB","Residential","us",,,,,,02/26/2016,"130 Barbaree Way",,,,"Tiburon","CA","94920",3395.00,700.000000,1,0,"1x1-e",,1,,,"Yes",,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1X1A","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3252.00,595.000000,0,-1,"1x1-a",,1,"1","1",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1X1B","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",2800.00,635.000000,0,-1,"1x1-b",,1,"1","1",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1X1C","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3000.00,640.000000,0,-1,"1x1-c",,1,"1","1",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1X1D","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3450.00,660.000000,0,-1,"1x1-d",,1,"1","1",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1X1E","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",3400.00,700.000000,0,-1,"1x1-e",,1,"1","1",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT1X15","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4100.00,1140.000000,0,-1,"1x1.5lof",,1,"1","1.5",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2X15","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4400.00,1075.000000,0,-1,"2x1.5th",,2,"2","1.5",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2X2A","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4300.00,980.000000,0,-1,"2x2-a",,2,"2","2",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2X2B","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4400.00,1020.000000,0,-1,"2x2-b",,2,"2","2",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2X2C","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4400.00,1020.000000,0,-1,"2x2-c",,2,"2","2",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2X2D","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4600.00,1080.000000,0,-1,"2x2-d",,2,"2","2",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2X2E","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4700.00,1300.000000,0,-1,"2x2-e",,2,"2","2",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT2X2F","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4700.00,1310.000000,0,-1,"2x2-f",,2,"2","2",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT225A","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",5000.00,1335.000000,0,-1,"2x2.5ath",,2,"2","2.5",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT225T","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",4800.00,1275.000000,0,-1,"2x2.5th",,2,"2","2.5",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3X25","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",6300.00,1335.000000,0,-1,"3x2.5th",,3,"3","2.5",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3X3A","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",6350.00,1375.000000,0,-1,"3x3-a",,3,"3","3",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3X3B","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",5350.00,1375.000000,0,-1,"3x3-b",,3,"3","3",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3X3C","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",6300.00,1500.000000,0,-1,"3x3-c",,3,"3","3",,,,,,,,,,,,,,,,,,,,,
+"cove",,,"WAIT3X3D","Residential","us",,,,,05/10/2016,05/10/2016,"The Cove","50 Barbaree Way",,,"Tiburon","CA","94920",6300.00,1500.000000,0,-1,"3x3-d",,3,"3","3",,,,,,,,,,,,,,,,,,,,,
+"lark",,,"100-0101","Residential","us",,,,,,11/09/2014,"100 Lincoln Village Circle","Apt. 101",,,"Larkspur","CA","94939",2785.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Called: Tenant will only be able to bring proof of renters insurance on the weekend of 8/12-8/14."
+"lark",,,"100-0101","Residential","us",,,,,,11/09/2014,"100 Lincoln Village Circle","Apt. 101",,,"Larkspur","CA","94939",2785.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0102","Residential","us",,,,,,02/18/2016,"100 Lincoln Village Circle","Apt. 102",,,"Larkspur","CA","94939",2760.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0103","Residential","us",,,,,,04/09/2016,"100 Lincoln Village Circle","Apt. 103",,,"Larkspur","CA","94939",3985.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"0100",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"100-0104","Residential","us",,,,,,09/29/2013,"100 Lincoln Village Circle","Apt. 104",,,"Larkspur","CA","94939",3160.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0105","Residential","us",,,,,,,"100 Lincoln Village Circle","Apt. 105",,,"Larkspur","CA","94939",2660.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0106","Residential","us",,,,,,11/17/2015,"100 Lincoln Village Circle","Apt. 106",,,"Larkspur","CA","94939",3410.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0100",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"100-0107","Residential","us",,,,,,,"100 Lincoln Village Circle","Apt. 107",,,"Larkspur","CA","94939",2660.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0108","Residential","us",,,,,,12/12/2014,"100 Lincoln Village Circle","Apt. 108",,,"Larkspur","CA","94939",2660.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0109","Residential","us",,,,,,10/08/2015,"100 Lincoln Village Circle","Apt. 109",,,"Larkspur","CA","94939",2710.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0110","Residential","us",,,,,,01/22/2016,"100 Lincoln Village Circle","Apt. 110",,,"Larkspur","CA","94939",2710.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0111","Residential","us",,,,,,06/30/2015,"100 Lincoln Village Circle","Apt. 111",,,"Larkspur","CA","94939",3985.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"0100",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"100-0112","Residential","us",,,,,,06/06/2016,"100 Lincoln Village Circle","Apt. 112",,,"Larkspur","CA","94939",3210.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"0100",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"100-0113","Residential","us",,,,,,11/30/2015,"100 Lincoln Village Circle,","Apt. 113",,,"Larkspur","CA","94939",2760.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0114","Residential","us",,,,,,05/31/2016,"100 Lincoln Village Circle","Apt. 114",,,"Larkspur","CA","94939",3485.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0201","Residential","us",,,,,08/11/2016,08/11/2016,"100 Lincoln Village Circle","Apt. 201",,,"Larkspur","CA","94939",4025.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0202","Residential","us",,,,,,,"100 Lincoln Village Circle","Apt. 202",,,"Larkspur","CA","94939",3225.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0203","Residential","us",,,,,,02/13/2016,"100 Lincoln Village Circle","Apt. 203",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0204","Residential","us",,,,,,05/19/2015,"100 Lincoln Village Circle","Apt. 204",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0205","Residential","us",,,,,07/07/2016,07/07/2016,"100 Lincoln Village Circle","Apt. 205",,,"Larkspur","CA","94939",3425.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0100",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"100-0206","Residential","us",,,,,,10/31/2015,"100 Lincoln Village Circle","Apt. 206",,,"Larkspur","CA","94939",3425.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0100",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"100-0207","Residential","us",,,,,,04/30/2015,"100 Lincoln Village Circle","Apt. 207",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Called: Tenant will contact renters insurance company to request proof of insurance and will bring into the leasing office as soon as he receives it."
+"lark",,,"100-0207","Residential","us",,,,,,04/30/2015,"100 Lincoln Village Circle","Apt. 207",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0208","Residential","us",,,,,,05/06/2015,"100 Lincoln Village Circle","Apt. 208",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0209","Residential","us",,,,,,10/03/2013,"100 Lincoln Village Circle","Apt. 209",,,"Larkspur","CA","94939",3575.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0210","Residential","us",,,,,,12/12/2014,"100 Lincoln Village Circle","Apt. 210",,,"Larkspur","CA","94939",3250.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0301","Residential","us",,,,,,07/29/2014,"100 Lincoln Village Circle","Apt. 301",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Message: Please bring in proof of there most recent renters insurance."
+"lark",,,"100-0301","Residential","us",,,,,,07/29/2014,"100 Lincoln Village Circle","Apt. 301",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"100-0302","Residential","us",,,,,07/07/2016,07/07/2016,"100 Lincoln Village Circle","Apt. 302",,,"Larkspur","CA","94939",3425.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0100",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"100-0303","Residential","us",,,,,07/28/2016,07/28/2016,"100 Lincoln Village Circle","Apt 303",,,"Larkspur","CA","94939",3425.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0100",,,,,,,,,,,,,,,"Scheduled for Renovation"
+"lark",,,"100-0304","Residential","us",,,,,,06/19/2016,"100 Lincoln Village Circle","Apt. 304",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0143","Residential","us",,,,,,02/18/2016,"1100 Lincoln Village Circle","Apt. 143",,,"Larkspur","CA","94939",3525.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0144","Residential","us",,,,,,05/20/2015,"1100 Lincoln Village Circle","Apt. 144",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0145","Down","us",,,,,07/29/2016,07/29/2016,"1100 Lincoln Village Circle","Apt. 145",,,"Larkspur","CA","94939",3500.00,946.000000,0,0,"l-lsb1",,2,"2","2","Yes",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0146","Residential","us",,,,,09/17/2016,09/17/2016,"1100 Lincoln Village Circle","Apt. 146",,,"Larkspur","CA","94939",3200.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0147","Residential","us",,,,,,,"1100 Lincoln Village Circle","Apt. 147",,,"Larkspur","CA","94939",2650.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0148","Residential","us",,,,,,09/30/2016,"1100 Lincoln Village Circle","Apt. 148",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0247","Residential","us",,,,,,11/15/2013,"1100 Lincoln Village Circle","Apt. 247",,,"Larkspur","CA","94939",3650.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0248","Residential","us",,,,,,08/11/2016,"1100 Lincoln Village Circle","Apt. 248",,,"Larkspur","CA","94939",3650.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0249","Residential","us",,,,,,05/23/2016,"1100 Lincoln Village Circle","Apt. 249",,,"Larkspur","CA","94939",4000.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1100",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"110-0250","Residential","us",,,,,,,"1100 Lincoln Village Circle","Apt. 250",,,"Larkspur","CA","94939",3225.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0251","Residential","us",,,,,,,"1100 Lincoln Village Circle","Apt. 251",,,"Larkspur","CA","94939",2775.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1100",,,,,,,,,,,,,,,"Called: Tenant is no longer occupying the garden plot."
+"lark",,,"110-0251","Residential","us",,,,,,,"1100 Lincoln Village Circle","Apt. 251",,,"Larkspur","CA","94939",2775.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0252","Residential","us",,,,,,07/18/2016,"1100 Lincoln Village Circle","Apt. 252",,,"Larkspur","CA","94939",2750.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0309","Residential","us",,,,,,12/05/2014,"1100 Lincoln Village Circle","Apt. 309",,,"Larkspur","CA","94939",3650.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"110-0310","Residential","us",,,,,,06/12/2016,"1100 Lincoln Village Circle","Apt. 310",,,"Larkspur","CA","94939",3725.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0149","Residential","us",,,,,,,"1300 Lincoln Village Circle","Apt. 149",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0150","Residential","us",,,,,,01/11/2016,"1300 Lincoln Village Circle","Apt. 150",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0151","Residential","us",,,,,,09/26/2013,"1300 Lincoln Village Circle","Apt. 151",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0152","Residential","us",,,,,,09/24/2014,"1300 Lincoln Village Circle","Apt. 152",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0153","Residential","us",,,,,09/03/2016,09/03/2016,"1300 Lincoln Village Circle","Apt. 153",,,"Larkspur","CA","94939",3500.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0154","Residential","us",,,,,,05/01/2016,"1300 Lincoln Village Circle","Apt. 154",,,"Larkspur","CA","94939",3200.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0155","Residential","us",,,,,,04/14/2016,"1300 Lincoln Village Circle","Apt. 155",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0156","Residential","us",,,,,,11/15/2013,"1300 Lincoln Village Circle","Apt. 156",,,"Larkspur","CA","94939",3160.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0157","Residential","us",,,,,,01/14/2016,"1300 Lincoln Village Circle","Apt. 157",,,"Larkspur","CA","94939",3975.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"130-0158","Residential","us",,,,,,02/18/2015,"1300 Lincoln Village Circle","Apt. 158",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0253","Residential","us",,,,,,07/01/2016,"1300 Lincoln Village Circle","Apt. 253",,,"Larkspur","CA","94939",2700.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0254","Residential","us",,,,,,05/09/2016,"1300 Lincoln Village Circle","Apt. 254",,,"Larkspur","CA","94939",3375.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1300",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"130-0255","Residential","us",,,,,,09/03/2015,"1300 Lincoln Village Circle","Apt. 255",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0256","Residential","us",,,,,,01/26/2016,"1300 Lincoln Village Circle","Apt. 256",,,"Larkspur","CA","94939",3375.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"130-0257","Residential","us",,,,,,07/29/2015,"1300 Lincoln Village Circle","Apt. 257",,,"Larkspur","CA","94939",4000.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"130-0258","Residential","us",,,,,,11/15/2013,"1300 Lincoln Village Circle","Apt. 258",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0259","Residential","us",,,,,,01/23/2016,"1300 Lincoln Village Circle","Apt. 259",,,"Larkspur","CA","94939",3575.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0260","Residential","us",,,,,,07/27/2015,"1300 Lincoln Village Circle","Apt. 260",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0261","Residential","us",,,,,,03/20/2016,"1300 Lincoln Village Circle","Apt. 261",,,"Larkspur","CA","94939",3585.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0262","Residential","us",,,,,,,"1300 Lincoln Village Circle","Apt. 262",,,"Larkspur","CA","94939",3300.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1300",,,,,,,,,,,,,,,"Called: Spoke with Kelley and they are still occupying the plot, it is being maintained by there 4 year old son and they will be tending to it in the next two weeks."
+"lark",,,"130-0262","Residential","us",,,,,,,"1300 Lincoln Village Circle","Apt. 262",,,"Larkspur","CA","94939",3300.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0311","Residential","us",,,,,,08/07/2014,"1300 Lincoln Village Circle","Apt. 311",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0312","Residential","us",,,,,08/25/2016,08/25/2016,"1300 Lincoln Village Circle","Apt. 312",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0313","Residential","us",,,,,08/26/2016,08/26/2016,"1300 Lincoln Village Circle","Apt. 313",,,"Larkspur","CA","94939",2700.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"130-0314","Residential","us",,,,,,04/27/2016,"1300 Lincoln Village Circle","Apt. 314",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2151","Residential","us",,,,,,01/04/2016,"1400 Lincoln Village Circle","Apt. 2151",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2152","Residential","us",,,,,08/12/2016,08/12/2016,"1400 Lincoln Village Circle","Apt. 2152",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2153","Residential","us",,,,,,08/31/2015,"1400 Lincoln Village Circle","Apt. 2153",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2154","Residential","us",,,,,,11/16/2015,"1400 Lincoln Village Circle","Apt. 2154",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2155","Residential","us",,,,,,04/30/2015,"1400 Lincoln Village Circle","Apt. 2155",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2156","Residential","us",,,,,10/09/2015,10/09/2015,"1400 Lincoln Village Circle","Apt. 2156",,,"Larkspur","CA","94939",3360.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1400",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"140-2157","Residential","us",,,,,,11/12/2015,"1400 Lincoln Village Circle","Apt. 2157",,,"Larkspur","CA","94939",2660.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2158","Residential","us",,,,,,07/21/2016,"1400 Lincoln Village Circle","Apt. 2158",,,"Larkspur","CA","94939",2635.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2255","Residential","us",,,,,,07/20/2016,"1400 Lincoln Village Circle","Apt. 2255",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2256","Residential","us",,,,,,07/25/2016,"1400 Lincoln Village Circle","Apt. 2256",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2257","Residential","us",,,,,09/30/2016,09/30/2016,"1400 Lincoln Village Circle","Apt. 2257",,,"Larkspur","CA","94939",2650.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2258","Residential","us",,,,,,,"1400 Lincoln Village Circle","Apt. 2258",,,"Larkspur","CA","94939",2650.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2259","Residential","us",,,,,,08/19/2015,"1400 Lincoln Village Circle","Apt. 2259",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Message: For tenant to notify the leasing office if there garden plot is still occupied."
+"lark",,,"140-2259","Residential","us",,,,,,08/19/2015,"1400 Lincoln Village Circle","Apt. 2259",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2260","Residential","us",,,,,,09/21/2015,"1400 Lincoln Village Circle","Apt. 2260",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2261","Residential","us",,,,,,12/03/2015,"1400 Lincoln Village Circle","Apt. 2261",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1400",,,,,,,,,,,,,,,"Called: Talk to Veronica from Pioneer Productions to request most recent renters insurance for tenant Karina Ramierz. Veronica will email proof as soon as possible."
+"lark",,,"140-2261","Residential","us",,,,,,12/03/2015,"1400 Lincoln Village Circle","Apt. 2261",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1400",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"140-2262","Residential","us",,,,,08/20/2016,08/20/2016,"1400 Lincoln Village Circle","Apt. 2262",,,"Larkspur","CA","94939",2625.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2327","Residential","us",,,,,,06/19/2015,"1400 Lincoln Village Circle","Apt. 2327",,,"Larkspur","CA","94939",3425.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2328","Residential","us",,,,,,02/24/2014,"1400 Lincoln Village Circle","Apt. 2328",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2329","Residential","us",,,,,,,"1400 Lincoln Village Circle","Apt. 2329",,,"Larkspur","CA","94939",2700.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2330","Residential","us",,,,,,11/10/2015,"1400 Lincoln Village Circle","Apt. 2330",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2331","Residential","us",,,,,,07/18/2016,"1400 Lincoln Village Circle","Apt. 2331",,,"Larkspur","CA","94939",2710.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"140-2332","Residential","us",,,,,,08/08/2016,"1400 Lincoln Village Circle","Apt. 2332",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1400",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2121","Residential","us",,,,,,12/07/2015,"1500 Lincoln Village Circle","Apt. 2121",,,"Larkspur","CA","94939",3210.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2122","Residential","us",,,,,,01/12/2016,"1500 Lincoln Village Circle","Apt. 2122",,,"Larkspur","CA","94939",3525.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1500",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"150-2123","Residential","us",,,,,,01/12/2016,"1500 Lincoln Village Circle","Apt. 2123",,,"Larkspur","CA","94939",2735.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2124","Residential","us",,,,,,07/29/2014,"1500 Lincoln Village Circle","Apt. 2124",,,"Larkspur","CA","94939",2685.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1500",,,,,,,,,,,,,,,"Called: Tenant is requesting his most recent proof of renters insurance and will be emailing it as soon as possible."
+"lark",,,"150-2124","Residential","us",,,,,,07/29/2014,"1500 Lincoln Village Circle","Apt. 2124",,,"Larkspur","CA","94939",2685.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2125","Residential","us",,,,,,03/11/2016,"1500 Lincoln Village Circle","Apt. 2125",,,"Larkspur","CA","94939",3610.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2126","Residential","us",,,,,,01/20/2016,"1500 Lincoln Village Circle","Apt. 2126",,,"Larkspur","CA","94939",3585.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2127","Down","us",,,,,07/31/2016,07/31/2016,"1500 Lincoln Village Circle","Apt. 2127",,,"Larkspur","CA","94939",3660.00,896.000000,0,0,"lark_lsb",,2,"2","1","Yes",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2128","Residential","us",,,,,,,"1500 Lincoln Village Circle","Apt. 2128",,,"Larkspur","CA","94939",3560.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2225","Residential","us",,,,,,10/13/2015,"1500 Lincoln Village Circle","Apt. 2225",,,"Larkspur","CA","94939",3685.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1500",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"150-2226","Residential","us",,,,,,,"1500 Lincoln Village Circle","Apt. 2226",,,"Larkspur","CA","94939",3585.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Message: For tenant to contact the leasing office to let us know if there garden plot is being occupied or not."
+"lark",,,"150-2226","Residential","us",,,,,,,"1500 Lincoln Village Circle","Apt. 2226",,,"Larkspur","CA","94939",3585.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2227","Residential","us",,,,,,11/04/2015,"1500 Lincoln Village Circle","Apt. 2227",,,"Larkspur","CA","94939",3385.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1500",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"150-2228","Residential","us",,,,,,08/06/2016,"1500 Lincoln Village Circle","Apt. 2228",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2229","Residential","us",,,,,,07/26/2015,"1500 Lincoln Village Circle","Apt. 2229",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1500",,,,,,,,,,,,,,,"Message: For tenant to contact the leasing office if they are occupying the garden plot or not."
+"lark",,,"150-2229","Residential","us",,,,,,07/26/2015,"1500 Lincoln Village Circle","Apt. 2229",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2230","Residential","us",,,,,,10/08/2015,"1500 Lincoln Village Circle","Apt. 2230",,,"Larkspur","CA","94939",3575.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2231","Residential","us",,,,,,,"1500 Lincoln Village Circle","Apt. 2231",,,"Larkspur","CA","94939",3175.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2232","Residential","us",,,,,,,"1500 Lincoln Village Circle","Apt. 2232",,,"Larkspur","CA","94939",3550.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Called: Tenant will email proof of his renters insurance as soon as possible."
+"lark",,,"150-2232","Residential","us",,,,,,,"1500 Lincoln Village Circle","Apt. 2232",,,"Larkspur","CA","94939",3550.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2307","Residential","us",,,,,,07/01/2016,"1500 Lincoln Village Circle","Apt. 2307",,,"Larkspur","CA","94939",2750.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2308","Residential","us",,,,,,10/14/2015,"1500 Lincoln Village Circle","Apt. 2308",,,"Larkspur","CA","94939",2750.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1500",,,,,,,,,,,,,,,"Message: For tenant to contact the leasing office if there garden plot is being occupied."
+"lark",,,"150-2308","Residential","us",,,,,,10/14/2015,"1500 Lincoln Village Circle","Apt. 2308",,,"Larkspur","CA","94939",2750.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2309","Residential","us",,,,,,01/17/2015,"1500 Lincoln Village Circle","Apt. 2309",,,"Larkspur","CA","94939",3250.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"150-2310","Residential","us",,,,,,06/29/2016,"1500 Lincoln Village Circle","Apt. 2310",,,"Larkspur","CA","94939",3600.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2129","Down","us",,,,,07/30/2016,07/30/2016,"1600 Lincoln Village Circle","Apt. 2129",,,"Larkspur","CA","94939",3375.00,772.000000,0,0,"l-lsa1",,1,"1","1","Yes",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2130","Residential","us",,,,,,09/30/2014,"1600 Lincoln Village Circle","Apt. 2130",,,"Larkspur","CA","94939",3025.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2131","Residential","us",,,,,,12/16/2015,"1600 Lincoln Village Circle","Apt. 2131",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2132","Residential","us",,,,,,11/11/2015,"1600 Lincoln Village Circle","Apt. 2132",,,"Larkspur","CA","94939",3400.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"1600",,,,,,,,,,,,,,,"Renovation"
+"lark",,,"160-2133","Residential","us",,,,,,12/03/2015,"1600 Lincoln Village Circle","Apt. 2133",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2134","Residential","us",,,,,,01/14/2016,"1600 Lincoln Village Circle","Apt. 2134",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2135","Residential","us",,,,,,01/07/2015,"1600 Lincoln Village Circle","Apt. 2135",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2136","Residential","us",,,,,,07/24/2014,"1600 Lincoln Village Circle","Apt. 2136",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of most current renters insurance."
+"lark",,,"160-2136","Residential","us",,,,,,07/24/2014,"1600 Lincoln Village Circle","Apt. 2136",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2137","Residential","us",,,,,,12/03/2015,"1600 Lincoln Village Circle","Apt. 2137",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2138","Residential","us",,,,,,03/30/2015,"1600 Lincoln Village Circle","Apt. 2138",,,"Larkspur","CA","94939",3150.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2233","Residential","us",,,,,,02/27/2016,"1600 Lincoln Village Circle","Apt. 2233",,,"Larkspur","CA","94939",3150.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2234","Residential","us",,,,,,07/14/2016,"1600 Lincoln Village Circle","Apt. 2234",,,"Larkspur","CA","94939",3075.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2235","Residential","us",,,,,,12/17/2015,"1600 Lincoln Village Circle","Apt. 2235",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2236","Residential","us",,,,,,12/15/2015,"1600 Lincoln Village Circle","Apt. 2236",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2237","Residential","us",,,,,,,"1600 Lincoln Village Circle","Apt. 2237",,,"Larkspur","CA","94939",3075.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Called: Tenant will bring in proof of most recent renters insurance as soon as possible."
+"lark",,,"160-2237","Residential","us",,,,,,,"1600 Lincoln Village Circle","Apt. 2237",,,"Larkspur","CA","94939",3075.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2238","Residential","us",,,,,,,"1600 Lincoln Village Circle","Apt. 2238",,,"Larkspur","CA","94939",3075.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Called: Tenant will be requesting proof of most recent renters insurance and forwarding it to our office as soon as possible."
+"lark",,,"160-2238","Residential","us",,,,,,,"1600 Lincoln Village Circle","Apt. 2238",,,"Larkspur","CA","94939",3075.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2239","Residential","us",,,,,,11/16/2013,"1600 Lincoln Village Circle","Apt. 2239",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2240","Residential","us",,,,,,07/01/2014,"1600 Lincoln Village Circle","Apt. 2240",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Called: Tenant is no longer occupying the garden plot."
+"lark",,,"160-2240","Residential","us",,,,,,07/01/2014,"1600 Lincoln Village Circle","Apt. 2240",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2241","Residential","us",,,,,,08/31/2015,"1600 Lincoln Village Circle","Apt. 2241",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2242","Residential","us",,,,,,,"1600 Lincoln Village Circle","Apt. 2242",,,"Larkspur","CA","94939",3150.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2311","Residential","us",,,,,08/27/2016,08/27/2016,"1600 Lincoln Village Circle","Apt. 2311",,,"Larkspur","CA","94939",3475.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"1600",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"160-2312","Residential","us",,,,,,11/22/2013,"1600 Lincoln Village Circle","Apt. 2312",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2313","Residential","us",,,,,,,"1600 Lincoln Village Circle","Apt. 2313",,,"Larkspur","CA","94939",3125.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2314","Residential","us",,,,,,01/24/2016,"1600 Lincoln Village Circle","Apt. 2314",,,"Larkspur","CA","94939",3175.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2315","Residential","us",,,,,,,"1600 Lincoln Village Circle","Apt. 2315",,,"Larkspur","CA","94939",3125.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2316","Residential","us",,,,,,07/16/2016,"1600 Lincoln Village Circle","Apt. 2316",,,"Larkspur","CA","94939",3450.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2317","Residential","us",,,,,,07/31/2015,"1600 Lincoln Village Circle","Apt. 2317",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"160-2318","Residential","us",,,,,,01/31/2016,"1600 Lincoln Village Circle","Apt. 2318",,,"Larkspur","CA","94939",3150.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1600",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2117","Residential","us",,,,,,06/27/2016,"1700 Lincoln Village Circle","Apt. 2117",,,"Larkspur","CA","94939",3175.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2118","Residential","us",,,,,,06/04/2014,"1700 Lincoln Village Circle","Apt. 2118",,,"Larkspur","CA","94939",3500.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1700",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of renters insurance as soon as possible."
+"lark",,,"170-2118","Residential","us",,,,,,06/04/2014,"1700 Lincoln Village Circle","Apt. 2118",,,"Larkspur","CA","94939",3500.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2119","Residential","us",,,,,,03/23/2016,"1700 Lincoln Village Circle","Apt. 2119",,,"Larkspur","CA","94939",3650.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2120","Residential","us",,,,,,10/08/2015,"1700 Lincoln Village Circle","Apt. 2120",,,"Larkspur","CA","94939",3600.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2221","Residential","us",,,,,,03/08/2014,"1700 Lincoln Village Circle","Apt. 2221",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1700",,,,,,,,,,,,,,,"Called: tenant will be bringing in proof of most recent renters insurance by the end of this week."
+"lark",,,"170-2221","Residential","us",,,,,,03/08/2014,"1700 Lincoln Village Circle","Apt. 2221",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2222","Residential","us",,,,,,12/02/2015,"1700 Lincoln Village Circle","Apt. 2222",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2223","Residential","us",,,,,,01/20/2014,"1700 Lincoln Village Circle","Apt. 2223",,,"Larkspur","CA","94939",3175.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2224","Residential","us",,,,,,03/15/2016,"1700 Lincoln Village Circle","Apt. 2224",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2305","Residential","us",,,,,,,"1700 Lincoln Village Circle","Apt. 2305",,,"Larkspur","CA","94939",3250.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1700",,,,,,,,,,,,,,,"Called: Tenant will be emailing or bringing in proof of most current renters insurance by Saturday 8/13/16"
+"lark",,,"170-2305","Residential","us",,,,,,,"1700 Lincoln Village Circle","Apt. 2305",,,"Larkspur","CA","94939",3250.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"170-2306","Residential","us",,,,,,10/09/2015,"1700 Lincoln Village Circle","Apt. 2306",,,"Larkspur","CA","94939",3600.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2139","Residential","us",,,,,,10/30/2015,"1800 Lincoln Village Circle","Apt. 2139",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2140","Residential","us",,,,,,11/11/2015,"1800 Lincoln Village Circle","Apt. 2140",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2141","Residential","us",,,,,07/28/2016,07/28/2016,"1800 Lincoln Village Circle","Apt. 2141",,,"Larkspur","CA","94939",3550.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2142","Residential","us",,,,,,08/27/2015,"1800 Lincoln Village Circle","Apt. 2142",,,"Larkspur","CA","94939",3985.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1800",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"180-2143","Residential","us",,,,,,05/31/2016,"1800 Lincoln Village Circle","Apt. 2143",,,"Larkspur","CA","94939",3550.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2144","Residential","us",,,,,,03/15/2016,"1800 Lincoln Village Circle","Apt. 2144",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2145","Residential","us",,,,,,12/21/2015,"1800 Lincoln Village Circle","Apt. 2145",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2146","Residential","us",,,,,06/28/2016,06/28/2016,"1800 Lincoln Village Circle","Apt. 2146",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2147","Residential","us",,,,,06/25/2016,06/25/2016,"1800 Lincoln Village Circle","Apt. 2147",,,"Larkspur","CA","94939",3975.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2148","Residential","us",,,,,06/26/2016,06/26/2016,"1800 Lincoln Village Circle","Apt. 2148",,,"Larkspur","CA","94939",3600.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"180-2149","Residential","us",,,,,05/25/2016,05/25/2016,"1800 Lincoln Village Circle","Apt. 2149",,,"Larkspur","CA","94939",3975.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2150","Residential","us",,,,,01/15/2016,01/15/2016,"1800 Lincoln Village Circle","Apt. 2150",,,"Larkspur","CA","94939",3625.00,896.000000,-1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2243","Residential","us",,,,,,06/21/2014,"1800 Lincoln Village Circle","Apt. 2243",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Called: tenant will have his wife drop off proof of most recent renters insurance as soon as possible."
+"lark",,,"180-2243","Residential","us",,,,,,06/21/2014,"1800 Lincoln Village Circle","Apt. 2243",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2244","Residential","us",,,,,,06/02/2015,"1800 Lincoln Village Circle","Apt. 2244",,,"Larkspur","CA","94939",3400.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"GE will be replacing the dented microwave 9/28, unit is ready otherwise"
+"lark",,,"180-2244","Residential","us",,,,,,06/02/2015,"1800 Lincoln Village Circle","Apt. 2244",,,"Larkspur","CA","94939",3400.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"180-2245","Residential","us",,,,,,11/06/2015,"1800 Lincoln Village Circle","Apt. 2245",,,"Larkspur","CA","94939",3550.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"180-2246","Residential","us",,,,,,06/30/2015,"1800 Lincoln Village Circle","Apt. 2246",,,"Larkspur","CA","94939",3500.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2247","Residential","us",,,,,,01/25/2016,"1800 Lincoln Village Circle","Apt. 2247",,,"Larkspur","CA","94939",3500.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2248","Residential","us",,,,,,,"1800 Lincoln Village Circle","Apt. 2248",,,"Larkspur","CA","94939",3150.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2249","Residential","us",,,,,07/23/2016,07/23/2016,"1800 Lincoln Village Circle","Apt. 2249",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2250","Residential","us",,,,,,05/31/2016,"1800 Lincoln Village Circle","Apt. 2250",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2251","Residential","us",,,,,,01/22/2016,"1800 Lincoln Village Circle","Apt. 2251",,,"Larkspur","CA","94939",3500.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2252","Residential","us",,,,,08/31/2016,08/31/2016,"1800 Lincoln Village Circle","Apt. 2252",,,"Larkspur","CA","94939",3550.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"180-2253","Residential","us",,,,,,11/06/2015,"1800 Lincoln Village Circle","Apt. 2253",,,"Larkspur","CA","94939",3925.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1800",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"180-2254","Residential","us",,,,,,01/27/2015,"1800 Lincoln Village Circle","Apt. 2254",,,"Larkspur","CA","94939",3175.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2319","Residential","us",,,,,,06/24/2014,"1800 Lincoln Village Circle","Apt. 2319",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1800",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"180-2319","Residential","us",,,,,,06/24/2014,"1800 Lincoln Village Circle","Apt. 2319",,,"Larkspur","CA","94939",3225.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2320","Residential","us",,,,,,12/15/2015,"1800 Lincoln Village Circle","Apt. 2320",,,"Larkspur","CA","94939",3975.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1800",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"180-2321","Residential","us",,,,,07/18/2016,07/18/2016,"1800 Lincoln Village Circle","Apt. 2321",,,"Larkspur","CA","94939",3975.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2322","Residential","us",,,,,,03/06/2016,"1800 Lincoln Village Circle","Apt. 2322",,,"Larkspur","CA","94939",3650.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2323","Residential","us",,,,,,01/30/2015,"1800 Lincoln Village Circle","Apt. 2323",,,"Larkspur","CA","94939",3575.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1800",,,,,,,,,,,,,,,"Called: To leave a message and the mail box is full, will need to follow up to request proof of there most recent renters insurance."
+"lark",,,"180-2323","Residential","us",,,,,,01/30/2015,"1800 Lincoln Village Circle","Apt. 2323",,,"Larkspur","CA","94939",3575.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2324","Residential","us",,,,,,,"1800 Lincoln Village Circle","Apt. 2324",,,"Larkspur","CA","94939",3200.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"1800",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2325","Residential","us",,,,,,04/07/2015,"1800 Lincoln Village Circle","Apt. 2325",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"1800",,,,,99.00,,,,,,,,,,"Unrenovated"
+"lark",,,"180-2326","Residential","us",,,,,,10/01/2015,"1800 Lincoln Village Circle","Apt. 2326",,,"Larkspur","CA","94939",3650.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"180-2326","Residential","us",,,,,,10/01/2015,"1800 Lincoln Village Circle","Apt. 2326",,,"Larkspur","CA","94939",3650.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"1800",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"190-2109","Residential","us",,,,,,10/12/2015,"1900 Lincoln Village Circle","Apt. 2109",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2110","Residential","us",,,,,,08/18/2015,"1900 Lincoln Village Circle","Apt. 2110",,,"Larkspur","CA","94939",3050.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2111","Residential","us",,,,,,06/20/2016,"1900 Lincoln Village Circle","Apt. 2111",,,"Larkspur","CA","94939",3425.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2112","Residential","us",,,,,,09/30/2015,"1900 Lincoln Village Circle","Apt. 2112",,,"Larkspur","CA","94939",3050.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Cort to Pick up furniture on 10/26/15"
+"lark",,,"190-2112","Residential","us",,,,,,09/30/2015,"1900 Lincoln Village Circle","Apt. 2112",,,"Larkspur","CA","94939",3050.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2113","Residential","us",,,,,,10/30/2014,"1900 Lincoln Village Circle","Apt. 2113",,,"Larkspur","CA","94939",3050.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Message: For tenant to bring proof of there most recent renters insurance as soon as possible."
+"lark",,,"190-2113","Residential","us",,,,,,10/30/2014,"1900 Lincoln Village Circle","Apt. 2113",,,"Larkspur","CA","94939",3050.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2114","Down","us",,,,,08/09/2016,08/09/2016,"1900 Lincoln Village Circle","Apt. 2114",,,"Larkspur","CA","94939",3400.00,772.000000,0,0,"l-lsa1",,1,"1","1","Yes",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2115","Residential","us",,,,,,09/01/2015,"1900 Lincoln Village Circle","Apt. 2115",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2116","Residential","us",,,,,,01/10/2015,"1900 Lincoln Village Circle","Apt. 2116",,,"Larkspur","CA","94939",3050.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"190-2116","Residential","us",,,,,,01/10/2015,"1900 Lincoln Village Circle","Apt. 2116",,,"Larkspur","CA","94939",3050.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2209","Residential","us",,,,,,05/05/2014,"1900 Lincoln Village Circle","Apt. 2209",,,"Larkspur","CA","94939",3725.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2210","Down","us",,,,,08/14/2016,08/14/2016,"1900 Lincoln Village Circle","Apt. 2210",,,"Larkspur","CA","94939",4150.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2211","Residential","us",,,,,,06/10/2016,"1900 Lincoln Village Circle","Apt. 2211",,,"Larkspur","CA","94939",4150.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2212","Residential","us",,,,,,12/11/2015,"1900 Lincoln Village Circle","Apt. 2212",,,"Larkspur","CA","94939",3700.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2213","Residential","us",,,,,,04/30/2015,"1900 Lincoln Village Circle","Apt. 2213",,,"Larkspur","CA","94939",3700.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2214","Residential","us",,,,,08/18/2016,08/18/2016,"1900 Lincoln Village Circle","Apt. 2214",,,"Larkspur","CA","94939",4150.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2215","Residential","us",,,,,,05/25/2015,"1900 Lincoln Village Circle","Apt. 2215",,,"Larkspur","CA","94939",4150.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"1900",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"190-2216","Residential","us",,,,,08/18/2016,08/18/2016,"1900 Lincoln Village Circle","Apt. 2216",,,"Larkspur","CA","94939",4150.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2217","Residential","us",,,,,,07/30/2015,"1900 Lincoln Village Circle","Apt. 2217",,,"Larkspur","CA","94939",3700.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"1900",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"190-2218","Residential","us",,,,,,10/27/2015,"1900 Lincoln Village Circle","Apt. 2218",,,"Larkspur","CA","94939",3700.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2219","Residential","us",,,,,,08/21/2015,"1900 Lincoln Village Circle","Apt. 2219",,,"Larkspur","CA","94939",3700.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"190-2220","Residential","us",,,,,,,"1900 Lincoln Village Circle","Apt. 2220",,,"Larkspur","CA","94939",3725.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Called: Spoke with Rina to bring in proof of her most recent renters insurance. She will speak with her husband and they drop it off as soon as possible."
+"lark",,,"190-2220","Residential","us",,,,,,,"1900 Lincoln Village Circle","Apt. 2220",,,"Larkspur","CA","94939",3725.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"1900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2101","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2101",,,"Larkspur","CA","94939",3500.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Called: Tenant will be requesting proof of her most recent renters insurance and will bring it in as soon as possible."
+"lark",,,"210-2101","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2101",,,"Larkspur","CA","94939",3500.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2102","Residential","us",,,,,,07/05/2016,"2100 Lincoln Village Circle","Apt. 2102",,,"Larkspur","CA","94939",3625.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2103","Down","us",,,,,08/20/2016,08/20/2016,"2100 Lincoln Village Circle","Apt. 2103",,,"Larkspur","CA","94939",3925.00,946.000000,0,0,"l-lsb1",,2,"2","2","Yes",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2104","Residential","us",,,,,,07/27/2015,"2100 Lincoln Village Circle","Apt. 2104",,,"Larkspur","CA","94939",3150.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2105","Residential","us",,,,,,08/07/2015,"2100 Lincoln Village Circle","Apt. 2105",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Called: Tenant will request proof of his most recent renters insurance on line and drop it off in the morning 8/11/16"
+"lark",,,"210-2105","Residential","us",,,,,,08/07/2015,"2100 Lincoln Village Circle","Apt. 2105",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2106","Residential","us",,,,,,01/12/2016,"2100 Lincoln Village Circle","Apt. 2106",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2107","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2107",,,"Larkspur","CA","94939",2650.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2108","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2108",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"210-2108","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2108",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Tenant called back and will forwarding proof of most recent renters insurance as soon as she receives it"
+"lark",,,"210-2108","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2108",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2201","Residential","us",,,,,,04/30/2016,"2100 Lincoln Village Circle","Apt. 2201",,,"Larkspur","CA","94939",4000.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"2100",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"210-2202","Residential","us",,,,,,07/07/2016,"2100 Lincoln Village Circle","Apt. 2202",,,"Larkspur","CA","94939",3625.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2203","Residential","us",,,,,,12/23/2013,"2100 Lincoln Village Circle","Apt. 2203",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2204","Residential","us",,,,,,06/19/2015,"2100 Lincoln Village Circle","Apt. 2204",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2100",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of most recent renters insurance as soon as possible."
+"lark",,,"210-2204","Residential","us",,,,,,06/19/2015,"2100 Lincoln Village Circle","Apt. 2204",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2205","Residential","us",,,,,,09/06/2015,"2100 Lincoln Village Circle","Apt. 2205",,,"Larkspur","CA","94939",3500.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2206","Residential","us",,,,,08/15/2016,08/15/2016,"2100 Lincoln Village Circle","Apt. 2206",,,"Larkspur","CA","94939",3575.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2207","Residential","us",,,,,,10/29/2015,"2100 Lincoln Village Circle","Apt. 2207",,,"Larkspur","CA","94939",3350.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"2100",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"210-2208","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2208",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"210-2208","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2208",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Called: Renters insurance recieved"
+"lark",,,"210-2208","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2208",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2301","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2301",,,"Larkspur","CA","94939",3575.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Message: For tenant to bring proof of there most recent renters insurance as soon as possible."
+"lark",,,"210-2301","Residential","us",,,,,,,"2100 Lincoln Village Circle","Apt. 2301",,,"Larkspur","CA","94939",3575.00,946.000000,0,0,"l-lsb1",,2,"2","2","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2302","Residential","us",,,,,,11/18/2014,"2100 Lincoln Village Circle","Apt. 2302",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2100",,,,,,,,,,,,,,,"Called: tenant will be emailing proof of her most recent renters insurance as soon as possible."
+"lark",,,"210-2302","Residential","us",,,,,,11/18/2014,"2100 Lincoln Village Circle","Apt. 2302",,,"Larkspur","CA","94939",3200.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2303","Residential","us",,,,,,09/29/2015,"2100 Lincoln Village Circle","Apt. 2303",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"210-2304","Residential","us",,,,,,06/08/2015,"2100 Lincoln Village Circle","Apt. 2304",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"2100",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0159","Residential","us",,,,,,05/31/2016,"2300 Lincoln Village Circle","Apt. 159",,,"Larkspur","CA","94939",3525.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0160","Residential","us",,,,,07/11/2016,07/11/2016,"2300 Lincoln Village Circle","Apt. 160",,,"Larkspur","CA","94939",3425.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0161","Residential","us",,,,,,10/09/2015,"2300 Lincoln Village Circle","Apt. 161",,,"Larkspur","CA","94939",3450.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2300",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"230-0161","Residential","us",,,,,,10/09/2015,"2300 Lincoln Village Circle","Apt. 161",,,"Larkspur","CA","94939",3450.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"230-0162","Residential","us",,,,,,09/28/2015,"2300 Lincoln Village Circle","Apt. 162",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0163","Residential","us",,,,,,05/23/2014,"2300 Lincoln Village Circle","Apt. 163",,,"Larkspur","CA","94939",3075.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0164","Residential","us",,,,,,01/28/2016,"2300 Lincoln Village Circle","Apt. 164",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0165","Residential","us",,,,,,06/11/2015,"2300 Lincoln Village Circle","Apt. 165",,,"Larkspur","CA","94939",3425.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"230-0166","Residential","us",,,,,,12/02/2015,"2300 Lincoln Village Circle","Apt. 166",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0263","Residential","us",,,,,,,"2300 Lincoln Village Circle","Apt. 263",,,"Larkspur","CA","94939",3850.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0264","Residential","us",,,,,,01/11/2016,"2300 Lincoln Village Circle","Apt. 264",,,"Larkspur","CA","94939",3750.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0265","Residential","us",,,,,,07/11/2016,"2300 Lincoln Village Circle","Apt. 265",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"Future Renovation"
+"lark",,,"230-0266","Residential","us",,,,,,07/04/2016,"2300 Lincoln Village Circle","Apt. 266",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0267","Residential","us",,,,,,05/02/2016,"2300 Lincoln Village Circle","Apt. 267",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"230-0268","Residential","us",,,,,,01/12/2016,"2300 Lincoln Village Circle","Apt. 268",,,"Larkspur","CA","94939",3775.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0269","Residential","us",,,,,08/11/2016,08/11/2016,"2300 Lincoln Village Circle","Apt. 269",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0270","Residential","us",,,,,,04/08/2016,"2300 Lincoln Village Circle","Apt. 270",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"230-0271","Residential","us",,,,,,06/02/2016,"2300 Lincoln Village Circle","Apt. 271",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0272","Residential","us",,,,,,05/26/2015,"2300 Lincoln Village Circle","Apt. 272",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"Message: For tenant to bring proof of there most recent renters insurance as soon as possible."
+"lark",,,"230-0272","Residential","us",,,,,,05/26/2015,"2300 Lincoln Village Circle","Apt. 272",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"230-0273","Residential","us",,,,,,01/20/2015,"2300 Lincoln Village Circle","Apt. 273",,,"Larkspur","CA","94939",3750.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"230-0274","Residential","us",,,,,,07/05/2016,"2300 Lincoln Village Circle","Apt. 274",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0167","Residential","us",,,,,,11/10/2015,"2500 Lincoln Village Circle","Apt. 167",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0168","Residential","us",,,,,,09/18/2015,"2500 Lincoln Village Circle","Apt. 168",,,"Larkspur","CA","94939",3175.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0169","Residential","us",,,,,,03/23/2016,"2500 Lincoln Village Circle","Apt. 169",,,"Larkspur","CA","94939",3950.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0170","Residential","us",,,,,,11/23/2015,"2500 Lincoln Village Circle","Apt. 170",,,"Larkspur","CA","94939",3600.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"2500",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"250-0171","Residential","us",,,,,05/09/2016,05/09/2016,"2500 Lincoln Village Circle","Apt. 171",,,"Larkspur","CA","94939",3350.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"2500",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"250-0172","Residential","us",,,,,,06/11/2016,"2500 Lincoln Village Circle","Apt. 172",,,"Larkspur","CA","94939",2675.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2500",,,,,,,,,,,,,,,"Future Renovation"
+"lark",,,"250-0275","Residential","us",,,,,,09/15/2016,"2500 Lincoln Village Circle","Apt. 275",,,"Larkspur","CA","94939",3975.00,946.000000,0,0,"l-lsb1",,2,"2","2","Yes",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0276","Residential","us",,,,,,03/29/2016,"2500 Lincoln Village Circle","Apt. 276",,,"Larkspur","CA","94939",3600.00,896.000000,1,0,"lark_lsb",,2,"2","1","Yes",,,,,"2500",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"250-0277","Residential","us",,,,,,05/02/2016,"2500 Lincoln Village Circle","Apt. 277",,,"Larkspur","CA","94939",3925.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"2500",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"250-0278","Residential","us",,,,,,05/23/2016,"2500 Lincoln Village Circle","Apt. 278",,,"Larkspur","CA","94939",3150.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0279","Residential","us",,,,,,11/23/2015,"2500 Lincoln Village Circle","Apt. 279",,,"Larkspur","CA","94939",3350.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"2500",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"250-0280","Residential","us",,,,,,05/27/2014,"2500 Lincoln Village Circle","Apt. 280",,,"Larkspur","CA","94939",2675.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0315","Residential","us",,,,,,07/12/2016,"2500 Lincoln Village Circle","Apt. 315",,,"Larkspur","CA","94939",4025.00,946.000000,1,0,"l-lsb1",,2,"2","2","Yes",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0316","Residential","us",,,,,,,"2500 Lincoln Village Circle","Apt. 316",,,"Larkspur","CA","94939",3225.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"2500",,,,,,,,,,,,,,,"Message: Mail box is full, will need to follow up in regards to renters insurance."
+"lark",,,"250-0316","Residential","us",,,,,,,"2500 Lincoln Village Circle","Apt. 316",,,"Larkspur","CA","94939",3225.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0317","Residential","us",,,,,,04/04/2015,"2500 Lincoln Village Circle","Apt. 317",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"250-0318","Residential","us",,,,,,,"2500 Lincoln Village Circle","Apt. 318",,,"Larkspur","CA","94939",2750.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"2500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0173","Residential","us",,,,,,05/16/2014,"2700 Lincoln Village Circle","Apt. 173",,,"Larkspur","CA","94939",3175.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0174","Residential","us",,,,,07/28/2016,07/28/2016,"2700 Lincoln Village Circle","Apt. 174",,,"Larkspur","CA","94939",3475.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0175","Residential","us",,,,,,12/31/2015,"2700 Lincoln Village Circle","Apt. 175",,,"Larkspur","CA","94939",3150.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0176","Residential","us",,,,,05/08/2016,05/08/2016,"2700 Lincoln Village Circle","Apt. 176",,,"Larkspur","CA","94939",3475.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0177","Residential","us",,,,,,03/31/2016,"2700 Lincoln Village Circle","Apt. 177",,,"Larkspur","CA","94939",3475.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0178","Residential","us",,,,,,12/23/2014,"2700 Lincoln Village Circle","Apt. 178",,,"Larkspur","CA","94939",3150.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0179","Residential","us",,,,,,01/29/2016,"2700 Lincoln Village Circle","Apt. 179",,,"Larkspur","CA","94939",3150.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0180","Residential","us",,,,,,09/03/2015,"2700 Lincoln Village Circle","Apt. 180",,,"Larkspur","CA","94939",3175.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0281","Residential","us",,,,,,04/11/2015,"2700 Lincoln Village Circle","Apt. 281",,,"Larkspur","CA","94939",3800.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0282","Residential","us",,,,,,01/09/2015,"2700 Lincoln Village Circle","Apt. 282",,,"Larkspur","CA","94939",3750.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0283","Residential","us",,,,,,02/29/2016,"2700 Lincoln Village Circle","Apt. 283",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0284","Residential","us",,,,,,08/28/2015,"2700 Lincoln Village Circle","Apt. 284",,,"Larkspur","CA","94939",3750.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0285","Residential","us",,,,,08/26/2016,08/26/2016,"2700 Lincoln Village Circle","Apt. 285",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2700",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"270-0286","Residential","us",,,,,,06/02/2014,"2700 Lincoln Village Circle","Apt. 286",,,"Larkspur","CA","94939",3750.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0287","Down","us",,,,,08/02/2016,08/02/2016,"2700 Lincoln Village Circle","Apt. 287",,,"Larkspur","CA","94939",4200.00,1096.000000,0,0,"l-lsb2",,2,"2","2","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0288","Residential","us",,,,,,01/07/2016,"2700 Lincoln Village Circle","Apt. 288",,,"Larkspur","CA","94939",3750.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0289","Residential","us",,,,,,07/20/2016,"2700 Lincoln Village Circle","Apt. 289",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0290","Residential","us",,,,,,04/01/2016,"2700 Lincoln Village Circle","Apt. 290",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0291","Residential","us",,,,,,10/13/2014,"2700 Lincoln Village Circle","Apt. 291",,,"Larkspur","CA","94939",3750.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"270-0292","Residential","us",,,,,,02/09/2016,"2700 Lincoln Village Circle","Apt. 292",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"2700",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0115","Residential","us",,,,,05/19/2016,05/19/2016,"300 Lincoln Village Circle","Apt. 115",,,"Larkspur","CA","94939",3375.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0116","Residential","us",,,,,,,"300 Lincoln Village Circle","Apt. 116",,,"Larkspur","CA","94939",2600.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0117","Residential","us",,,,,,05/31/2014,"300 Lincoln Village Circle","Apt. 117",,,"Larkspur","CA","94939",3450.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"0300",,,,,,,,,,,,,,,"Called: Tenant will be emailing proof of his most recent renters insurance as soon as possible."
+"lark",,,"300-0117","Residential","us",,,,,,05/31/2014,"300 Lincoln Village Circle","Apt. 117",,,"Larkspur","CA","94939",3450.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0118","Residential","us",,,,,,08/03/2015,"300 Lincoln Village Circle","Apt. 118",,,"Larkspur","CA","94939",3150.00,896.000000,1,0,"lark_lsb",,2,"2","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0119","Residential","us",,,,,,01/01/2016,"300 Lincoln Village Circle","Apt. 119",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0120","Residential","us",,,,,,02/14/2016,"300 Lincoln Village Circle","Apt. 120",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0121","Residential","us",,,,,,01/07/2016,"300 Lincoln Village Circle","Apt. 121",,,"Larkspur","CA","94939",3350.00,708.000000,-1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0300",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"300-0122","Residential","us",,,,,07/17/2016,07/17/2016,"300 Lincoln Village Circle","Apt. 122",,,"Larkspur","CA","94939",3350.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0300",,,,,500.00,,,,,,,,,,"Future Renovation"
+"lark",,,"300-0123","Residential","us",,,,,,08/01/2015,"300 Lincoln Village Circle","Apt. 123",,,"Larkspur","CA","94939",3450.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0124","Residential","us",,,,,09/16/2016,09/16/2016,"300 Lincoln Village Circle","Apt. 124",,,"Larkspur","CA","94939",3150.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0124","Residential","us",,,,,09/16/2016,09/16/2016,"300 Lincoln Village Circle","Apt. 124",,,"Larkspur","CA","94939",3150.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0125","Residential","us",,,,,,09/24/2013,"300 Lincoln Village Circle","Apt. 125",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of his most recent renters insurance as soon as possible."
+"lark",,,"300-0125","Residential","us",,,,,,09/24/2013,"300 Lincoln Village Circle","Apt. 125",,,"Larkspur","CA","94939",2600.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0126","Residential","us",,,,,,06/01/2014,"300 Lincoln Village Circle","Apt. 126",,,"Larkspur","CA","94939",2625.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0211","Residential","us",,,,,,08/14/2016,"300 Lincoln Village Circle","Apt. 211",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0212","Residential","us",,,,,,07/10/2016,"300 Lincoln Village Circle","Apt. 212",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Scheduled for Renovation"
+"lark",,,"300-0213","Residential","us",,,,,,02/28/2015,"300 Lincoln Village Circle","Apt. 213",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"0300",,,,,,,,,,,,,,,"Called: Tenant is in LA and will return Monday, he will bring in proof of his most recent renters insurance as soon as he returns."
+"lark",,,"300-0213","Residential","us",,,,,,02/28/2015,"300 Lincoln Village Circle","Apt. 213",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0214","Residential","us",,,,,,,"300 Lincoln Village Circle","Apt. 214",,,"Larkspur","CA","94939",3100.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0215","Residential","us",,,,,,01/22/2016,"300 Lincoln Village Circle","Apt. 215",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0216","Residential","us",,,,,,,"300 Lincoln Village Circle","Apt. 216",,,"Larkspur","CA","94939",2660.00,708.000000,0,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0217","Residential","us",,,,,,07/22/2016,"300 Lincoln Village Circle","Apt. 217",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0218","Residential","us",,,,,,01/23/2016,"300 Lincoln Village Circle","Apt. 218",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"300-0218","Residential","us",,,,,,01/23/2016,"300 Lincoln Village Circle","Apt. 218",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0219","Residential","us",,,,,,12/04/2015,"300 Lincoln Village Circle","Apt. 219",,,"Larkspur","CA","94939",3550.00,946.000000,1,0,"l-lsb1",,2,"2","2","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0220","Residential","us",,,,,,,"300 Lincoln Village Circle","Apt. 220",,,"Larkspur","CA","94939",3125.00,896.000000,0,0,"lark_lsb",,2,"2","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0221","Residential","us",,,,,,08/27/2015,"300 Lincoln Village Circle","Apt. 221",,,"Larkspur","CA","94939",2650.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0222","Residential","us",,,,,,08/06/2015,"300 Lincoln Village Circle","Apt. 222",,,"Larkspur","CA","94939",2625.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Called: Tenant will bring in proof of her most recent renters insurance first thing in the morning of 8/11/16"
+"lark",,,"300-0222","Residential","us",,,,,,08/06/2015,"300 Lincoln Village Circle","Apt. 222",,,"Larkspur","CA","94939",2625.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0305","Residential","us",,,,,,07/24/2014,"300 Lincoln Village Circle","Apt. 305",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Message: For tenant to bring in proof of there most recent renters insurance as soon as possible."
+"lark",,,"300-0305","Residential","us",,,,,,07/24/2014,"300 Lincoln Village Circle","Apt. 305",,,"Larkspur","CA","94939",2725.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0306","Residential","us",,,,,,10/31/2015,"300 Lincoln Village Circle","Apt. 306",,,"Larkspur","CA","94939",3400.00,708.000000,1,0,"lark_lsa",,1,"1","1","Yes",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0307","Residential","us",,,,,,02/09/2016,"300 Lincoln Village Circle","Apt. 307",,,"Larkspur","CA","94939",2700.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"300-0308","Residential","us",,,,,,07/13/2016,"300 Lincoln Village Circle","Apt. 308",,,"Larkspur","CA","94939",2775.00,708.000000,1,0,"lark_lsa",,1,"1","1","No",,,,,"0300",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0127","Residential","us",,,,,01/08/2016,01/08/2016,"500 Lincoln Village Circle","Apt. 127",,,"Larkspur","CA","94939",3450.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0128","Residential","us",,,,,09/10/2016,09/10/2016,"500 Lincoln Village Circle","Apt. 128",,,"Larkspur","CA","94939",3175.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0129","Residential","us",,,,,,,"500 Lincoln Village Circle","Apt. 129",,,"Larkspur","CA","94939",3175.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0130","Residential","us",,,,,,02/21/2016,"500 Lincoln Village Circle","Apt. 130",,,"Larkspur","CA","94939",3175.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0131","Residential","us",,,,,,,"500 Lincoln Village Circle","Apt. 131",,,"Larkspur","CA","94939",3125.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"0500",,,,,,,,,,,,,,,"Called: This person is not accepting calls at this time. Will need to follow up in regards to there renters insurance."
+"lark",,,"500-0131","Residential","us",,,,,,,"500 Lincoln Village Circle","Apt. 131",,,"Larkspur","CA","94939",3125.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0132","Residential","us",,,,,09/15/2016,09/15/2016,"500 Lincoln Village Circle","Apt. 132",,,"Larkspur","CA","94939",3500.00,772.000000,0,0,"l-lsa1",,1,"1","1","Yes",,,,,"0500",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"500-0133","Residential","us",,,,,,01/07/2016,"500 Lincoln Village Circle","Apt. 133",,,"Larkspur","CA","94939",3175.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0134","Residential","us",,,,,05/09/2016,05/09/2016,"500 Lincoln Village Circle","Apt. 134",,,"Larkspur","CA","94939",3525.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0223","Residential","us",,,,,,08/31/2014,"500 Lincoln Village Circle","Apt. 223",,,"Larkspur","CA","94939",3800.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0224","Residential","us",,,,,,09/30/2015,"500 Lincoln Village Circle","Apt. 224",,,"Larkspur","CA","94939",3775.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0225","Residential","us",,,,,,05/09/2016,"500 Lincoln Village Circle","Apt. 225",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"0500",,,,,,,,,,,,,,,"Renovated"
+"lark",,,"500-0226","Residential","us",,,,,,,"500 Lincoln Village Circle","Apt. 226",,,"Larkspur","CA","94939",3775.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Called: Spoke with tenant about garden plot to not note that his daughters are the ones who maintain the plot and where away for the summer. Tenant will follow up with the leasing office by the end of the month to let us know if they will continue to occupy the plot."
+"lark",,,"500-0226","Residential","us",,,,,,,"500 Lincoln Village Circle","Apt. 226",,,"Larkspur","CA","94939",3775.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0227","Residential","us",,,,,,,"500 Lincoln Village Circle","Apt. 227",,,"Larkspur","CA","94939",3775.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0228","Residential","us",,,,,,12/14/2015,"500 Lincoln Village Circle","Apt. 228",,,"Larkspur","CA","94939",3775.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0229","Residential","us",,,,,,06/11/2016,"500 Lincoln Village Circle","Apt. 229",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0230","Residential","us",,,,,,04/08/2016,"500 Lincoln Village Circle","Apt. 230",,,"Larkspur","CA","94939",4225.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0231","Residential","us",,,,,,02/02/2016,"500 Lincoln Village Circle","Apt. 231",,,"Larkspur","CA","94939",3775.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0232","Residential","us",,,,,,,"500 Lincoln Village Circle","Apt. 232",,,"Larkspur","CA","94939",3775.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0233","Residential","us",,,,,,01/30/2015,"500 Lincoln Village Circle","Apt. 233",,,"Larkspur","CA","94939",3775.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0500",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"500-0234","Residential","us",,,,,,09/24/2015,"500 Lincoln Village Circle","Apt. 234",,,"Larkspur","CA","94939",4250.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"0500",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"900-0135","Residential","us",,,,,,06/30/2015,"900 Lincoln Village Circle","Apt. 135",,,"Larkspur","CA","94939",3200.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0136","Residential","us",,,,,08/30/2016,08/30/2016,"900 Lincoln Village Circle","Apt. 136",,,"Larkspur","CA","94939",3125.00,772.000000,0,0,"l-lsa1",,1,"1","1","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0137","Residential","us",,,,,,06/29/2014,"900 Lincoln Village Circle","Apt. 137",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0138","Residential","us",,,,,,09/16/2015,"900 Lincoln Village Circle","Apt. 138",,,"Larkspur","CA","94939",3450.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"0900",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"900-0139","Model","us",,,,,04/11/2015,04/11/2015,"900 Lincoln Village Circle","Apt. 139",,,"Larkspur","CA","94939",3125.00,772.000000,-1,0,"l-lsa1",,1,"1","1","Yes",,,,,"0900",,,,,,,,,,,,,,,"In renovation"
+"lark",,,"900-0140","Residential","us",,,,,,11/19/2015,"900 Lincoln Village Circle","Apt. 140",,,"Larkspur","CA","94939",3450.00,772.000000,1,0,"l-lsa1",,1,"1","1","Yes",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0141","Residential","us",,,,,,09/07/2015,"900 Lincoln Village Circle","Apt. 141",,,"Larkspur","CA","94939",3125.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0142","Residential","us",,,,,,01/13/2015,"900 Lincoln Village Circle","Apt. 142",,,"Larkspur","CA","94939",3150.00,772.000000,1,0,"l-lsa1",,1,"1","1","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0235","Residential","us",,,,,,12/11/2015,"900 Lincoln Village Circle","Apt. 235",,,"Larkspur","CA","94939",3800.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0236","Residential","us",,,,,07/28/2016,07/28/2016,"900 Lincoln Village Circle","Apt. 236",,,"Larkspur","CA","94939",4175.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0237","Residential","us",,,,,,12/17/2015,"900 Lincoln Village Circle","Apt. 237",,,"Larkspur","CA","94939",3725.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0238","Residential","us",,,,,,,"900 Lincoln Village Circle","Apt. 238",,,"Larkspur","CA","94939",3725.00,1096.000000,0,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0239","Model","us",,,,,05/31/2015,05/31/2015,"900 Lincoln Village Circle","Apt. 239",,,"Larkspur","CA","94939",4175.00,1096.000000,-1,0,"l-lsb2",,2,"2","2","Yes",,,,,"0900",,,,,,,,,,,,,,,"In Renovation"
+"lark",,,"900-0240","Residential","us",,,,,,07/13/2014,"900 Lincoln Village Circle","Apt. 240",,,"Larkspur","CA","94939",3725.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0241","Residential","us",,,,,,03/04/2016,"900 Lincoln Village Circle","Apt. 241",,,"Larkspur","CA","94939",3735.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0242","Residential","us",,,,,,09/30/2015,"900 Lincoln Village Circle","Apt. 242",,,"Larkspur","CA","94939",3725.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0243","Down","us",,,,,06/10/2016,06/10/2016,"900 Lincoln Village Circle","Apt. 243",,,"Larkspur","CA","94939",4175.00,1096.000000,0,0,"l-lsb2",,2,"2","2","Yes",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0244","Residential","us",,,,,,06/30/2016,"900 Lincoln Village Circle","Apt. 244",,,"Larkspur","CA","94939",3725.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0245","Residential","us",,,,,,09/10/2015,"900 Lincoln Village Circle","Apt. 245",,,"Larkspur","CA","94939",3725.00,1096.000000,1,0,"l-lsb2",,2,"2","2","No",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"900-0246","Residential","us",,,,,,04/24/2016,"900 Lincoln Village Circle","Apt. 246",,,"Larkspur","CA","94939",4200.00,1096.000000,1,0,"l-lsb2",,2,"2","2","Yes",,,,,"0900",,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"WAITSAND","Residential","us",,,,,10/23/2013,10/23/2013,"Serenity at Larkspur","700 Lincoln Village Circle",,,"Larkspur","CA","94939",422.00,708.000000,0,-1,"lark_lsa",,1,,,"No",,,,,,,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"WAITVOYA","Residential","us",,,,,10/23/2013,10/23/2013,"Serenity at Larkspur","700 Lincoln Village Circle",,,"Larkspur","CA","94939",400.00,772.000000,0,-1,"l-lsa1",,1,,,"No",,,,,,,,,,500.00,,,,,,,,,,"Unrenovated"
+"lark",,,"WAITCLIP","Residential","us",,,,,10/23/2013,10/23/2013,"Serenity at Larkspur","700 Lincoln Village Circle",,,"Larkspur","CA","94939",404.00,896.000000,0,-1,"lark_lsb",,2,,,"No",,,,,,,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"WAITMARI","Residential","us",,,,,10/23/2013,10/23/2013,"Serenity at Larkspur","700 Lincoln Village Circle",,,"Larkspur","CA","94939",350.00,946.000000,0,-1,"l-lsb1",,2,,,"No",,,,,,,,,,,,,,,,,,,,"Unrenovated"
+"lark",,,"WAITCASP","Residential","us",,,,,10/23/2013,10/23/2013,"Serenity at Larkspur","700 Lincoln Village Circle",,,"Larkspur","CA","94939",206.00,1096.000000,0,-1,"l-lsb2",,2,,,"No",,,,,,,,,,,,,,,,,,,,"Unrenovated"

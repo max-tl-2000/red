@@ -1,0 +1,131 @@
+{
+	"unitUserInfo": {
+		"inventoryId": "03e055ad-80a2-478e-abcc-9014f34187f0",
+		"buildingDisplayName": "300",
+		"unitDisplayName": "121",
+		"fullyQualifiedName": "lark-300-121",
+		"balanceDueAmount": 180.00,
+		"balanceDueDate": "2020-08-20T00:00:00-05:00",
+		"paymentStatus": "ACCEPT",
+		"isPastResident": false
+	},
+	"currentCharges": [
+		{
+			"type": "RENT",
+			"description": "May rent",
+			"dueDate": "2020-05-05T00:00:00-05:00",
+			"balanceAmount": 800.00
+		},
+		{
+			"type": "PET",
+			"description": "May pet rent",
+			"dueDate": "2020-05-05T00:00:00-05:00",
+			"balanceAmount": 20.00
+		}
+	],
+	"transactions": {
+		"payments": [
+			{
+				"method": {
+					"channelType": "DEBIT",
+					"brand": "VISA",
+					"lastFour": "5555"
+				},
+				"date": "2020-05-05T00:00:00-05:00",
+				"amount": 500.00,
+				"fee": 4.95,
+				"totalAmount": 504.95,
+				"providerTransactionId": "20589129",
+				"reason": "201:FAILURE:InvalidExpDate",
+				"inventoryId": "03e055ad-80a2-478e-abcc-9014f34187f0"
+			},
+			{
+				"method": {
+					"channelType": "ACH",
+					"brand": "VISA",
+					"lastFour": "1234"
+				},
+				"date": "2020-06-05T00:00:00-05:00",
+				"amount": 500.00,
+				"fee": 0,
+				"totalAmount": 500.00,
+				"providerTransactionId": "20589112",
+				"inventoryId": "03e055ad-80a2-478e-abcc-9014f34187f0"
+			}
+		],
+		"declines": [],
+		"voids": [],
+		"refunds": [],
+		"reversals": []
+	},
+	"paymentMethods": [
+		{
+			"id": "fe1d9ce7-be71-47f6-90b7-4bda012121ff",
+			"brand": "VISA",
+			"channelType": "DEBIT",
+			"lastFour": "4747",
+			"expirationMonth": "01/21",
+			"relativeServiceFeePrice": 2.5,
+			"isDefault": false,
+			"userId": "1dc3bbf2-0155-4aac-bb41-8060549d13d6",
+			"externalId": "12345",
+			"created_at": "2020-08-20T00:00:00"
+		},
+		{
+			"id": "d61a6471-2b48-4c9d-80be-831dd7194886",
+			"brand": "VISA",
+			"channelType": "CREDIT",
+			"lastFour": "1234",
+			"expirationMonth": "02/22",
+			"relativeServiceFeePrice": 2.5,
+			"isDefault": false,
+			"userId": "1dc3bbf2-0155-4aac-bb41-8060549d13d6",
+			"externalId": "23456",
+			"created_at": "2020-08-20T00:00:00"
+		},
+		{
+			"id": "e61a6471-2b48-4c9d-80be-831dd7194886",
+			"brand": "VISA",
+			"channelType": "DEBIT",
+			"lastFour": "1234",
+			"expirationMonth": "02/23",
+			"relativeServiceFeePrice": 2.5,
+			"isDefault": true,
+			"userId": "1dc3bbf2-0155-4aac-bb41-8060549d13d6",
+			"externalId": "34567",
+			"created_at": "2020-08-20T00:00:00"
+		}
+	],
+	"scheduledPayments": [
+		{
+			"providerId": 231,
+			"frequency": "MONTHLY",
+			"startMonth": "2020-10",
+			"endMonth": "2021-05",
+			"dayOfMonth": "15",
+			"paymentMethodProviderId": 12345,
+			"paymentAmount": 1238,
+			"paymentAccountName": "RENT"
+		},
+		{
+			"providerId": 232,
+			"frequency": "MONTHLY",
+			"startMonth": "2020-12",
+			"endMonth": "2021-05",
+			"dayOfMonth": "LAST_DAY",
+			"paymentMethodProviderId": 23456,
+			"paymentAmount": 4238,
+			"paymentAccountName": "RENT"
+		},
+		{
+			"providerId": 233,
+			"frequency": "MONTHLY",
+			"startMonth": "2020-11",
+			"endMonth": "2021-05",
+			"dayOfMonth": "FIRST_DAY",
+			"paymentMethodProviderId": 34567,
+			"paymentAmount": 7238,
+			"paymentAccountName": "RENT"
+		}
+	]
+}

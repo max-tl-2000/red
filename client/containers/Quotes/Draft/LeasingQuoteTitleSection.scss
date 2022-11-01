@@ -1,0 +1,91 @@
+@import '../../../sass/_typography-mixins.scss';
+@import '../../../sass/_colors.scss';
+@import '../../../sass/_typography.scss';
+@import '../../../sass/_responsive.mixins.scss';
+
+.section-content {
+  display: flex;
+
+  & > div:first-child {
+    display: flex;
+  }
+
+  & > div:last-child {
+    width: 100%;
+    margin-left: (16rem/16);
+  }
+}
+
+.info {
+  position: absolute;
+  width: (376rem/16);
+  padding: (8rem/16) (16rem/16);
+  border-radius: (2rem/16);
+  background-color: rgba($white, .54);
+}
+
+.image {
+  width: (376rem/16);
+  height: (264rem/16);
+  border-radius: (2rem/16);
+}
+
+@include to('xsmall2') {
+  .section-content {
+    flex-direction: column;
+
+    & > div:first-child {
+      position: relative;
+      overflow: hidden;
+    }
+
+    & > div:last-child {
+      margin-left: 0;
+
+      .body {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
+
+@include at('xsmall2') {
+  .image {
+    height: auto;
+  }
+}
+
+.field {
+  margin-top: 2rem;
+
+  & > div {
+    width: 100%;
+  }
+}
+
+.complimentaryItems {
+  margin-top: (16rem/16);
+  margin-bottom: (8rem/16);
+
+  & > div:first-child {
+    margin-bottom: (6rem/16);
+  }
+}
+
+.left-space {
+  margin-left: .25em;
+}
+
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

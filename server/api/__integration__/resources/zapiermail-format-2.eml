@@ -1,0 +1,57 @@
+Return-Path: <bounce+ed1a7b.dacf-facebook-ad.colonialvilla.vanity=customerold.mail.reva.tech@zapiermail.com>
+Received: from m70-147.zapiermail.com (m70-147.zapiermail.com [166.78.70.147])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id pl08po1oednsk91klft9s1naaapu3nvfnec0kd01
+ for facebook-ad.colonialvilla.vanity@customerold.mail.reva.tech;
+ Thu, 28 Nov 2019 12:27:44 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of zapiermail.com designates 166.78.70.147 as permitted sender) client-ip=166.78.70.147; envelope-from=bounce+ed1a7b.dacf-facebook-ad.colonialvilla.vanity=customerold.mail.reva.tech@zapiermail.com; helo=m70-147.zapiermail.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of zapiermail.com designates 166.78.70.147 as permitted sender) client-ip=166.78.70.147; envelope-from=bounce+ed1a7b.dacf-facebook-ad.colonialvilla.vanity=customerold.mail.reva.tech@zapiermail.com; helo=m70-147.zapiermail.com;
+ dkim=pass header.i=@zapiermail.com;
+ dmarc=none header.from=zapiermail.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIalpoaDdtdzBRR05aUUE4ZW9jd1ZTUkpIdjExVWlTOVhKWW16bnpNd1hCZExERHpIZVNIWkpqSXpScjhDNTg5NmszVHRaMHc3NmZGSXBrc2RYVWhOZm54SmVHbUdDdU9GUkE5c3dsN2djcDFiL1JjcnVFVEp5U3cwd1c5bmxBcnJ2OGlSQU5xUXRhWVBHanhJTk80S1Byc2k5ZVJBbXZNa2FNZlNHQVMzc3ZzRVZZOEtLRG93RzJtbU01RENaUHZuR0xzODlkR1hWREs4OCtXL3VPb1FWSTlNTXZxZ3h1b2dPWjEyN3hyN0NVV3pGMk5vWS83dHVHRjZqTlJDQUNyazNSRHFleStSVFhZUlV1WGZmMytIRmtJZ3hhTG1ZTzBpYWVxL1g2c1dqUU9aVmZIdHRqdmdUUkJjc3dDcUxUSWg5RlA1NW5La1ZOQnp6WjVQVVoxM1lYSlNjUlVZUmtON01QcTdRTGR0eGl4TW12UVFkUlFGZno4NlN3OE5wS0JJPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=DBANgHhxNhAcOOj6fZz/yNPiu5+R25pdG1Od+VVMy14/VwxKBCz73UU1adJ0+74uUEwaC5mBlTtWFs2Ztwr7mizeSj9z0NvtDyOoY9hu2ZWeAMbX4QVmjCeePbaUGpvtJt/KHd+Q46CxBVfbkqjhe823uJ4wHEzhhXEEX1n07gU=; c=relaxed/simple; s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1574944065; v=1; bh=7ebsGJAS2nVfNcpJ6OnTVR+bZeLttd7+riZWAJm9yu4=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=zapiermail.com; q=dns/txt;
+ s=pic; t=1574944064; h=Message-ID: Date: To: From: Subject:
+ MIME-Version: Content-Type: Sender;
+ bh=7ebsGJAS2nVfNcpJ6OnTVR+bZeLttd7+riZWAJm9yu4=; b=g2lq/UUCap4I+FQaRoS1eY0Bh0kJgQxCkO1m1ADnwfpvaFTX7GWAPHbbOeZkcmXGb1kt57P5
+ rAk8SDk6fkHYiKne7kFVYJwLDuI2ICS7ZxZTO15PVgBA/5aydw8jcACOuQlUe/xBgZcj4P+V
+ nXyoTXrPerRFq3GXWfEToqKsQfU=
+X-Mailgun-Sending-Ip: 166.78.70.147
+X-Mailgun-Sid: WyI3YTJjNCIsICJmYWNlYm9vay1hZC5jb2xvbmlhbHZpbGxhLnZhbml0eUBpcmV0Lm1haWwucmV2YS50ZWNoIiwgImRhY2YiXQ==
+Received: by luna.mailgun.net with HTTP; Thu, 28 Nov 2019 12:27:43 +0000
+Sender: no-reply.o0pqmc@zapiermail.com
+Content-Type: multipart/alternative;
+ boundary="===============4320366411318468109=="
+MIME-Version: 1.0
+Subject: New Facebook Lead
+From: no-reply.o0pqmc@zapiermail.com
+To: facebook-ad.colonialvilla.vanity@customerold.mail.reva.tech
+Date: Thu, 28 Nov 2019 12:27:43 -0000
+Message-ID: <20191128122743.19.33764@zapier-worker-node-worker-node-5dc969b587-d9d9d>
+
+--===============4320366411318468109==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello,
+You have received a new lead from a Facebook ad:
+Kim
+Fleckenstein
++16126699451
+kdfeck@delegardtool.com
+
+
+---------------------------------------------------------------------------
+Visit this link to stop these emails: http://zpr.io/tYjCh
+--===============4320366411318468109==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<p>Hello,<br />You have received a new lead from a Facebook ad:<br />Kim<br />Fleckenstein<br />+16126699451<br />kdfeck@delegardtool.com</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/tYjCh</p>
+--===============4320366411318468109==--

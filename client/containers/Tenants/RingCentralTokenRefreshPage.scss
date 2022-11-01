@@ -1,0 +1,15 @@
+@import '../../sass/_responsive.mixins.scss';
+@import '../../sass/_typography-mixins.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem;
+
+  .action-button {
+    width: 13rem;
+    margin: .2rem;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../sass/_colors.scss';
+
+.lease-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lease-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lease-description {
+  padding-top: (16rem/16);
+}
+
+.inline {
+  display: inline;
+}
+
+.lease-voided {
+  padding-bottom: (16rem/16);
+}
+
+.lease-actions-container {
+  margin-top: 1rem;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+:global(.icon-alert) {
+  fill: $redA400;
+}

@@ -1,0 +1,413 @@
+<html lang="en-US">
+
+<head>
+    <title>Reva website widgets</title>
+    <meta charset="utf-8" />
+    <style>
+        html {
+            /* theme example: Note that accent color (--reva-global-accent-color) is usually sufficient */
+            --reva-typography-font-family: 'Lato';
+            --reva-global-control-font-family: 'Lato';
+            --reva-global-accent-color: #5093a4;
+            --reva-global-control-border-color: #bbb;
+            --reva-global-control-border-color-disabled: #eee;
+            --reva-global-text-error-color: #c45268;
+            --reva-global-attention-note-bg: #ffebd6;
+            --reva-global-text-primary-color: rgba(0, 0, 0, .70);
+            --reva-global-control-color: rgba(0, 0, 0, .70);
+        }
+    </style>
+
+    <!-- Scripts used in the test page only -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        // Random number used in submissions, so we can easily submit the same party multiple times.  This is NOT needed or used in a production environment.
+        const random = Math.floor(Math.random() * 10000);
+    </script>
+
+    <!-- BEGIN Reva Website Utilities initialization -->
+    <!-- Production Reva Website Utilities -->
+    <script src="/thirdparty/website-utils/website-utils.min.js" type="text/javascript"></script>
+
+    <!-- Set important Reva variables and configuration options, then initialize the Reva DSA -->
+    <script type="text/javascript">
+        // Reva token, tenant URL, and property ID
+        window.__revaToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJib2R5Ijoie0VOQ1JZUFRFRH06bjRrdlFmZXE0bitabUxVVjp2cGFERGRoNFpDY1hVbHB1TUZpUXp1cDYya1NnTEpXTFZlWFQ0aDdIbVEzTHF5VVJ3R00xQ1QrNWkwazdIb3JmK05oOHpqZElXaEpQa0dUOWluNEp2aWF6NU1TRWJ2a3hmeXhhVUN3YTlJK3oxS1JwWkxsa29Ka1hQRFZLSUxiZjJIT08yS2szOUdYY2hnM1NUamlOeXVtdHplcEQvUngrcUhTYWtkbkw1M1NyY0d4SXlVZkVBTU9NUVovdGx2dUloWW9xcGc9PSIsImlhdCI6MTYzNzA4Nzk4NiwiZXhwIjoxNzAwMjAzMTg2fQ.RYSmxEjTmpFmhf5vD19aawORbuLeWG0Fk2RbEmy_PM8";
+        window.__revaHost = "https://website-docs.staging.env.reva.tech";
+        window.__revaPropertyId = "999d6801-fa06-43d3-9522-d37ceeea1dc1";
+
+        // Function to initialize the Reva DSA
+        function initReva() {
+            // initUtils options
+            //   fontURL: the css font styles (default 'https://fonts.googleapis.com/css?family=Heebo:400,700,500|Lato')
+            //   styleURL: the main css file
+            //   host: the api endpoint hostname, it must include the protocol. Example https://{tenantName}.reva.tech
+            //   token: the token to use to authorize the endpoint
+            //   loadCSS: whether to autoload the styles or not. If true the styles will be autoloaded otherwise is the responsability of the consumer to include the css file (default: true),
+            //   googleMapsApiToken
+            //   defaultPhoneFormat = default phone format (default: 'hyphen', values: 'hyphen', 'dot', 'parentheses')
+
+            Reva.initUtils({
+                host: window.__revaHost,
+                token: window.__revaToken,
+                autoLoadProperties: false
+            });
+
+            // Set the current property
+            const s = Reva.stores.getWebSiteStore();
+            s.setCurrentPropertyId(window.__revaPropertyId);
+
+            // This is another way to get the phone number replaced different than waiting for teh document ready ourselves like it is done below
+            // Reva.ui.replaceMarkupInDOM({ waitForDOMReady: true });
+        }
+
+        // Initialize the Reva DSA
+        initReva();
+    </script>
+    <!-- END Reva Website Utilities initialization -->
+</head>
+
+<body>
+    <h1>Reva Website Utilities and Dynamic Source Attribution (DSA)</h1>
+    <div>
+        <h2>Simple DSA</h2>
+        <h3>Phone</h3>
+        <ul>
+            <li>Replace content-only with the phone: <span class="reva-phone-class">555-555-5555</span></li>
+            <li>Replace link and content with the phone: <a class="reva-phone-class" href="tel:15555555555">555-555-5555</a></li>
+            <li>Replace link-only with the phone: <a class="reva-phone-link-class" href="tel:15555555555">Call now!</a></li>
+            <li>Replace link and content with the SMS: <a class="reva-sms-class" href="sms:15555555555">555-555-5555</a></li>
+            <li>Replace link-only with the SMS: <a class="reva-sms-link-class" href="sms:15555555555">Send an sms!</a></li>
+        </ul>
+        <h3>Email</h3>
+        <ul>
+            <li>Replace link-only with the email: <a class="reva-email-link-class" href="mailto:email-to-replace@reva.tech">rentnow@property.com</a></li>
+        </ul>
+        <script>
+            // NOTE: This advanced example also depends upon jQuery, but any DOM manipulation technique could be used.
+
+            // On document ready, replace the phone, email, etc.
+            $(document).ready(function() {
+                // The following selectors can be added to your DOM elements,
+                // or pass new ones in the argument object below
+                //    phoneSelector: Replace both content and href information with Reva program phone number (default = '.reva-phone-class')
+                //    phoneLinkSelector: Replace only the href information with Reva program phone number (default = '.reva-phone-link-class')
+                //    smsSelector: Replace both content and href information with Reva program phopne number (default = '.reva-sms-class')
+                //    smsLinkSelector: Replace both content and href information with Reva program phone number (default = '.reva-sms-link-class')
+                //    emailSelector: Replace both content and href information with Reva program email (default = '.reva-email-link-class')
+                // In the example below, both {PropertyContactName} and {PropertyName} should be replaced with the property information (the latter needs to be url encoded)
+                Reva.ui.replaceMarkupInDOM({
+                    waitForDOMReady: false,
+                    processEmail: function(el, email) {
+                        const emailString = "mailto:{PropertyContactName}<" + email + ">?Subject=I'd%20like%20to%20learn%20more%20about%20{PropertyName}";
+                        el.setAttribute("href", emailString);
+                    }
+                });
+            });
+        </script>
+    </div>
+
+    <div>
+        <h2>Contact Us Forms</h2>
+        <!-- Contact us form inline on a page -->
+        <button id="btnInlineContactUs" style="padding:5px;">Show inline "Contact Us"</button>
+        <div style="width:800px;border:2px;padding:10px">
+            <div id="inlineContactUs"></div>
+        </div>
+        <script type="text/javascript">
+            (function() {
+                const btnInlineContactUs = document.querySelector('#btnInlineContactUs');
+                const inlineContactUs = document.querySelector('#inlineContactUs')
+                inlineContactUs.style.display = 'none';
+
+                const toggleContactForm = () => {
+                    if (inlineContactUs.style.display === 'none') {
+                        inlineContactUs.style.display = 'inline';
+                        btnInlineContactUs.innerHTML = 'Hide inline "Contact Us"';
+                    } else {
+                        inlineContactUs.style.display = 'none';
+                        btnInlineContactUs.innerHTML = 'Show inline "Contact Us"';
+                    }
+                };
+
+                // --------------------------------------------
+                // Create the inline contactUs form. This is the only line needed to add the form to a website page
+                Reva.ui.createContactUsForm('#inlineContactUs', {
+                    onResetRequest: () => {
+                        toggleContactForm();
+                    }
+                });
+                // --------------------------------------------
+
+                btnInlineContactUs.addEventListener('click', toggleContactForm);
+            })();
+        </script>
+
+        <!-- Contact us form via an on-page dialog using a light-box effect -->
+        <button id="btnContactUsDialog" type="button" style="padding:5px;">Show "Contact Us" dialog</button>
+        <div id="contactUsDialog"></div>
+        <script type="text/javascript">
+            (function() {
+
+                // --------------------------------------------
+                // Create the contact dialog that can then be shown or hidden
+                const dlg = Reva.ui.createContactDialog('#contactUsDialog');
+                // --------------------------------------------
+
+                const btnContactUsDialog = document.querySelector('#btnContactUsDialog');
+                btnContactUsDialog.addEventListener('click', () => {
+                    if (dlg.isOpen) {
+                        dlg.close();
+                    } else {
+                        dlg.open();
+                    }
+                });
+            })();
+        </script>
+    </div>
+
+    <div>
+        <h2>Self-book Scheduling Forms</h2>
+        <!-- Self-book scheduling inline on a page -->
+        <button id="btnInlineScheduler" style="padding:5px;">Show inline "Scheduler"</button>
+        <div style="width:80%;left:10%;border:2px;margin:10px">
+            <div id="inlineScheduler"></div>
+        </div>
+        <script type="text/javascript">
+            (function() {
+
+                const btnInlineScheduler = document.querySelector('#btnInlineScheduler');
+                const inlineScheduler = document.querySelector('#inlineScheduler');
+                inlineScheduler.style.display = 'none';
+
+                // --------------------------------------------
+                // Create the inline contactUs form.
+                // onAppointmentSave, dynamicFields allow to add a couple more fields to the default form (which is shown in the inline form above)
+                Reva.ui.createBookerWidget("#inlineScheduler", {
+                    mode: "create",
+                    onAppointmentSave: function onAppointmentSave(appointment) {
+                        Object.assign(appointment.requestAppointment, {
+                            tourType: appointment.inPersonSelfGuidedTour ? 'inPersonSelfGuidedTour' : 'inPersonTour',
+                        });
+                        return Object.assign(appointment, {
+                            qualificationQuestions: {
+                                numBedrooms: [appointment.numBedrooms],
+                                moveInTime: appointment.moveInTime,
+                                // hardcoded values
+                                groupProfile: 'NOT_YET_DETERMINED',
+                                cashAvailable: 'UNKNOWN'
+                            },
+                            requestVideoLink: appointment.requestVideoLink,
+                        });
+                    },
+                    dynamicFields: [{
+                        name: 'numBedrooms',
+                        value: undefined,
+                        required: '# of bedrooms is required',
+                        meta: {
+                            type: 'Dropdown',
+                            label: '# of Bedrooms',
+                            items: [{
+                                id: 'ONE_BED',
+                                value: 'One bed'
+                            }, {
+                                id: 'TWO_BEDS',
+                                value: 'Two beds'
+                            }, {
+                                id: 'THREE_BEDS',
+                                value: 'Three beds'
+                            }, {
+                                id: 'FOUR_PLUS_BEDS',
+                                value: 'Four beds'
+                            }],
+                        },
+                    }, {
+                        name: 'moveInTime',
+                        value: undefined,
+                        required: 'Move-in range is required',
+                        meta: {
+                            type: 'Dropdown',
+                            label: 'When do you plan to rent?',
+                            items: [{
+                                id: 'NEXT_4_WEEKS',
+                                value: 'Next 4 weeks'
+                            }, {
+                                id: 'NEXT_2_MONTHS',
+                                value: 'Next 2 months'
+                            }, {
+                                id: 'NEXT_4_MONTHS',
+                                value: 'Next 4 months'
+                            }, {
+                                id: 'BEYOND_4_MONTHS',
+                                value: 'Beyond 4 months'
+                            }, {
+                                id: 'I_DONT_KNOW',
+                                value: "I don't know"
+                            }, ],
+                        },
+                    }, {
+                        name: 'requestVideoLink',
+                        value: false,
+                        meta: {
+                            type: 'CheckBox',
+                            label: 'Send me a recorded video tour of the property',
+                        },
+                    }, {
+                        name: 'inPersonSelfGuidedTour',
+                        value: false,
+                        meta: {
+                            type: 'CheckBox',
+                            label: 'I prefer to tour the model unit at my leisure without an agent to guide me.',
+                        },
+                    }, ]
+                });
+                // --------------------------------------------
+
+                btnInlineScheduler.addEventListener('click', () => {
+                    if (inlineScheduler.style.display === 'none') {
+                        inlineScheduler.style.display = 'inline';
+                        btnInlineScheduler.innerHTML = 'Hide inline scheduler';
+                    } else {
+                        inlineScheduler.style.display = 'none';
+                        btnInlineScheduler.innerHTML = 'Show inline scheduler';
+                    }
+                });
+            })();
+        </script>
+
+        <!-- Self-book scheduling via an on-page dialog using a light-box effect -->
+        <button id="btnSchedulerDialog" type="button" style="padding:5px;">Show Self-book Scheduling Dialog</button>
+        <div id="schedulerDialog" style="width:800px;border:2px;padding:10px"></div>
+        <script type="text/javascript">
+            (function() {
+
+                // --------------------------------------------
+                // Create scheduler dialog that can then be shown or hidden
+                const dlgModel = Reva.ui.createScheduleTourWidget('#schedulerDialog', {
+                    opts: {
+                        useDialog: true,
+                        dynamicFields: []
+                    }
+                });
+                // --------------------------------------------
+
+                const btnSchedulerDialog = document.querySelector('#btnSchedulerDialog');
+                btnSchedulerDialog.addEventListener('click', () => {
+                    if (dlgModel.isOpen) {
+                        dlgModel.close();
+                    } else {
+                        dlgModel.open();
+                    }
+                });
+            }());
+        </script>
+    </div>
+
+    <div>
+        <h2>Scheduling API</h2>
+        <h3>Get Scheduling slots</h3>
+        <button id="btnSlotsRequest" type="button" style="padding:5px;">Request slots data</button>
+        <div id="slotsResponse" style="width:800px;border:2px;padding:10px"></div>
+        <script type="text/javascript">
+            let firstAvailableSlot;
+            (function() {
+                const btnSlotsRequest = document.querySelector('#btnSlotsRequest');
+                btnSlotsRequest.addEventListener('click', async() => {
+                    const s = Reva.stores.getWebSiteStore();
+
+                    // --------------------------------------------
+                    // Retrieve the list of available appointment slots
+                    const result = await s.selfServeService.getSlots({
+                            noOfDays: 14,
+                            propertyId: window.__revaPropertyId
+                        })
+                        // --------------------------------------------
+
+                    console.log('getSlots', result);
+                    document.querySelector('#slotsResponse').innerHTML = JSON.stringify(result);
+
+                    const day = result.calendar.slice(1).find(d => !d.officeClosed);
+                    firstAvailableSlot = day.slots[0];
+                    console.log('First available slot', firstAvailableSlot);
+                    btnCreateAppointmentRequest.disabled = !firstAvailableSlot;
+                });
+            }());
+        </script>
+
+        <h3>Create a guest and request the appointment</h3>
+        <div>To enable the button to create an appointment, first request the slots</div>
+        <button id="btnCreateAppointmentRequest" type="button" style="padding:5px;">Request appointment</button>
+        <div id="createAppointmentResponse" style="width:800px;border:2px;padding:10px"></div>
+        <script type="text/javascript">
+            const btnCreateAppointmentRequest = document.querySelector('#btnCreateAppointmentRequest');
+            (function() {
+                btnCreateAppointmentRequest.disabled = !firstAvailableSlot;
+                btnCreateAppointmentRequest.addEventListener('click', () => {
+                    const s = Reva.stores.getWebSiteStore();
+
+                    // --------------------------------------------
+                    // RequestApppointment startDate is the date string coming from the response of getSlots
+                    // To simply create a guest, the same call can be used, but omit the "requestAppointment" from the object below
+                    const prospectName = `John Smith ${random}`;
+                    const guestData = {
+                        "name": prospectName, // (required) Prospect full name as collected in your form
+                        "_name_": "Mary-Jane Smith", // (required) Part of the Reva honey pot
+                        "_userName_": "", // (required) Part of the Reva honey pot
+                        "email": `john.smith+${random}@reva.tech`, // (required) Prospect email as collected in your form
+                        "numBedrooms": "ONE_BED", // (optional) Number of beds requested in your form. Must match ONE_BED, TWO_BEDS, THREE_BEDS, FOUR_PLUS_BEDS, or STUDIO
+                        "moveInTime": "NEXT_4_WEEKS", // (optional) Expected move-in range. Must match NEXT_4_WEEKS, NEXT_2_MONTHS, NEXT_4_MONTHS, BEYOND_4_MONTHS, or I_DONT_KNOW
+                        "requestAppointment": {
+                            "startDate": firstAvailableSlot, // (required for tour) UTC date/time for the appointment requested
+                        },
+                        // Optional answers to qualification questions to qualify the lead and assist leasing agents
+                        "qualificationQuestions": {
+                            "numBedrooms": [
+                                "ONE_BED", // Same options as above, and can select multiple
+                            ],
+                            "cashAvailable": "UNKNOWN",
+                            "groupProfile": "NOT_YET_DETERMINED", // Must be INDIVIDUAL, COUPLE_OR_FAMILY, ROOMMATES, STUDENTS, CORPORATE, or NOT_YET_DETERMINED
+                        },
+                        // phone: '650-555-5555',  Not adding the phone number for docs to prevent sending SMS
+                        "propertyId": window.__revaPropertyId, // (required) Reva property ID pulled from the utilities local store
+                    };
+
+                    // POST the guest card to Reva for processing
+                    // 202 -> Successfull addition
+                    // 400 -> Missing or invalid email, phone number, or startDate
+                    // 404 -> The program for the specified email was not found
+                    // 412 -> The selected slot is no longer available  (if token==DUPLICATE_APPOINTMENT, it may be a duplicate submission for same person)
+                    s.selfServeService.guestCard(guestData)
+                        .then(r => {
+                            console.log(r);
+                            document.querySelector('#createAppointmentResponse').innerHTML = `Prospect: ${prospectName}<br/>${JSON.stringify(r)}`;
+                        });
+                    // --------------------------------------------
+
+                    firstAvailableSlot = null;
+                    btnCreateAppointmentRequest.disabled = true;
+                });
+            }());
+        </script>
+    </div>
+
+    <div>
+        <h2>Reva ChatGarden (aka WestEgg)</h2>
+        <p>Reva chat tool</p>
+        <button id="btnInitChatGardenWidget" type="button" style="padding:5px;">Launch ChatGarden tool</button>
+        <div id="chatGardenWidget"></div>
+        <script>
+            const btnInitChatGarden = document.querySelector('#btnInitChatGardenWidget');
+
+            (function() {
+                btnInitChatGarden.addEventListener('click', () => {
+                    Reva.ui.createChatGardenWidget('#chatGardenWidget');
+                });
+            })();
+        </script>
+    </div>
+
+    <div style="padding: 48px 0"></div>
+
+</body>
+
+</html>

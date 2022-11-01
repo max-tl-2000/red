@@ -1,0 +1,101 @@
+@import '../../sass/_colors';
+@import '../../sass/_flyout-sizes';
+
+.expander {
+  flex: 1;
+}
+
+.mainContent {
+  width: $smallFlyoutWidth;
+  height: $smallFlyoutHeight;
+}
+
+.recipients-section {
+  width: 100%;
+  background: $grey100;
+}
+
+.form-section {
+  width: 100%;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  min-height: (38rem/16);
+  padding-left: (10rem/16);
+
+  [data-component='textbox'] {
+    display: block;
+    flex: 1;
+
+    :global(.input-field) {
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.send-button {
+  svg {
+    fill: rgba(#2196f3, .9);
+  }
+
+  &.disabled {
+    svg {
+      fill: rgba($black, .54);
+    }
+  }
+}
+
+.messages-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  [data-component='dropdown-item-value'] {
+    padding-right: (8rem/16);
+    padding-left: (8rem/16);
+  }
+}
+
+.messages {
+  overflow: auto;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  max-height: calc(100% - 4.875rem);
+  border-bottom: (1rem/16) solid rgba(0, 0, 0, .12);
+  background: $grey50;
+}
+
+.participants {
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.communications {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 20em;
+  margin: .8em 0;
+}
+
+.message {
+  width: 100%;
+  padding-right: 1.3em;
+}
+
+.send {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.1em;
+}
